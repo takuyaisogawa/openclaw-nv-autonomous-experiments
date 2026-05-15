@@ -1,0 +1,27 @@
+{
+  "evidence_id": "ramsey_det1p25_autosave_reimage1804_c02_14avg_review_20260515_0615",
+  "category": "analysis",
+  "summary": "Bridge-free 14-average autosave review of running det=1.25 MHz third-det Ramsey job nv23_ramsey_20260515_030822_auto_ramsey. The bridge remained running at 14/16 completed averages with Final about 42.441 kcps, monitor active, no last_error, and stop_requested=false; queued/staging were untouched. Autosave raw export verified ramsey.xml, tau 0..10 us, 51 points, 14 stored averages x 50000 reps (700k shots/point of 800k planned), snake scan order, and no drift flags. Provisional readout2/self-baseline FFT target bins: direct 13C 0.54%, det-13C 0.82%, carrier 0.94%, det+13C 1.02%, old det=1 high/static 0.28%, static low 0.54%, previous 1.9 MHz 0.23%. This remains nonterminal/provisional; no T2star or 13C claim is made, and the next action is to wait for terminal/anomaly evidence.",
+  "tags": [
+    "ramsey",
+    "t2star",
+    "13c",
+    "det-shift",
+    "det1p25",
+    "autosave",
+    "running",
+    "14avg",
+    "bridge-free",
+    "reimage1804_c02"
+  ],
+  "paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1p25_autosave_even_subset_review_20260515_0615.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_raw_even_subset_20260515_0615.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0615.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_drift_even_subset_20260515_0615.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_even_subset_20260515_0615.png",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_status_before_autosave_review_20260515_0615.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_status_after_autosave_review_20260515_0615.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_even_subset_analysis_20260515_0615.py"
+  ]
+}

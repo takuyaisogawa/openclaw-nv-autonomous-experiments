@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T00:20:30-04:00",
+  "status": "completed",
+  "summary": "Processed the cron wake for the running det=1.0 MHz Ramsey/T2star/13C discriminator. Advice inbox was empty. Performed a read-only bridge check: job nv23_ramsey_20260514_230820_auto_ramsey remains running at 5/16 averages, queued/staging are empty, monitor last_error is empty, stop_requested=false, and Final = 37.673 kcps. Copied status/control/compact artifacts, recorded evidence ramsey_det1_running_status_latest_reimage1804_c02_20260515_0019, and updated work/state.md plus the in-progress backlog item. No terminal evidence or hard anomaly was present, and the data were not yet a preferred later even autosave subset, so no autosave analysis or bridge queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge",
+    "bridge_job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "reason": "Bridge job is healthy and running. Wait for terminal/anomaly evidence, or review a later even autosave subset such as 6/16 or 8/16 only if useful before terminal. Do not submit or mutate the bridge queue while this job is running."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_det1_claim_grade_reimage1804_c02"
+  ]
+}

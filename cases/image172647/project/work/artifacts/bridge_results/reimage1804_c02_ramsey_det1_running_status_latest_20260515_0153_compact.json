@@ -1,0 +1,33 @@
+{
+  "autosave_checked": "on",
+  "autosave_target_exists_status_field": false,
+  "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-14-231101",
+  "control_stop_requested": false,
+  "copied_paths": {
+    "control.json": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0153_control.json",
+    "job.json": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0153_job.json",
+    "status.json": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0153.json"
+  },
+  "date_time": "2026-05-14-231101",
+  "elapsed_seconds": 9875,
+  "experiment_status_text": "(12/16) averages completed for 1 scans",
+  "final_counts_text": "Final = 42.576 kcps",
+  "interpretation": "Read-only status snapshot. The det=1.0 MHz Ramsey/T2star/13C discriminator is still running, with healthy counts and no monitor/control anomaly; bridge-touching work remains blocked until terminal or hard-anomaly evidence.",
+  "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+  "monitor_active": true,
+  "monitor_last_error": "",
+  "monitor_last_tick_at": "2026-05-15T01:53:07",
+  "phase": "run_experiment_scan_point",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "queued_count": 0,
+  "repetitions": 50000,
+  "running_dir": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey",
+  "runtime_average_index": 13,
+  "runtime_averages_total_field": 12,
+  "scan_points_total": 51,
+  "sequence_name": "ramsey.xml",
+  "staging_count": 0,
+  "started_at": "2026-05-14T23:08:32",
+  "state": "running",
+  "updated_at": "2026-05-15T01:53:07"
+}

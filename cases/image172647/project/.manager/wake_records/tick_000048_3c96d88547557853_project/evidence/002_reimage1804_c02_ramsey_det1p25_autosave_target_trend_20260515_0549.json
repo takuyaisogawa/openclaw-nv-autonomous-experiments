@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "created_at": "2026-05-15T05:50:11.169630-04:00",
+  "kind": "det1p25_running_autosave_target_bin_trend",
+  "bridge_job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+  "input_summary_paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0338.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0407.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0443.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0513.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0547.json"
+  ],
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0549.png",
+  "note_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0549.md",
+  "rows": [
+    {
+      "summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0338.json",
+      "created_at": "2026-05-15T03:41:36.697502-04:00",
+      "averages_available": 2,
+      "averages_used": 2,
+      "current_shots_per_point_used": 100000,
+      "planned_shots_per_point": 800000,
+      "status_message": "(2/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+      "final_counts_text": "Final = 43.106 kcps",
+      "target_bins_percent": {
+        "direct_13C_larmor_hz": 0.9723957853195337,
+        "det_minus_13C_hz": 1.2220596810526638,
+        "det_carrier_hz": 1.2865984445148313,
+        "det_plus_13C_hz": 0.7076304146919901,
+        "old_det1_static_high_region_hz": 0.7078922083773259,
+        "static_low_region_hz": 1.3275607120848527,
+        "previous_det1p5_high_region_hz": 1.1282895046851849
+      },
+      "target_bin_hz": {
+        "direct_13C_larmor_hz": 400000.00000000047,
+        "det_minus_13C_hz": 900000.000000001,
+        "det_carrier_hz": 1200000.0000000014,
+        "det_plus_13C_hz": 1600000.0000000019,
+        "old_det1_static_high_region_hz": 1400000.0000000016,
+        "static_low_region_hz": 700000.0000000008,
+        "previous_det1p5_high_region_hz": 1900000.0000000023
+      },
+      "top_peaks": [
+        {
+          "frequency_hz": 600000.0000000007,
+          "amplitude_percent": 1.9212102577003423
+        },
+        {
+          "frequency_hz": 2000000.0000000023,
+          "amplitude_percent": 1.44492556716976
+        },
+        {
+          "frequency_hz": 1800000.000000002,
+          "amplitude_percent": 1.4160978618519389
+        },
+        {
+          "frequency_hz": 700000.0000000008,
+          "amplitude_percent": 1.3275607120848527
+        },
+        {
+          "frequency_hz": 1200000.0000000014,
+          "amplitude_percent": 1.2865984445148313
+        },
+        {
+          "frequency_hz": 900000.000000001,
+          "amplitude_percent": 1.2220596810526638
+        },
+        {
+          "frequency_hz": 1900000.0000000023,
+          "amplitude_percent": 1.1282895046851849
+        },
+        {
+          "frequency_hz": 1700000.0000000019,
+          "amplitude_percent": 1.097742869784677
+        }
+      ]
+    },
+    {
+      "summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0407.json",
+      "created_at": "2026-05-15T04:08:50.479691-04:00",
+      "averages_available": 4,
+      "averages_used": 4,
+      "current_shots_per_point_used": 200000,
+      "planned_shots_per_point": 800000,
+      "status_message": "(4/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+      "final_counts_text": "Final = 43.224 kcps",
+      "target_bins_percent": {
+        "direct_13C_larmor_hz": 0.21044170316637417,
+        "det_minus_13C_hz": 0.9611995939500706,
+        "det_carrier_hz": 1.0950018259811058,
+        "det_plus_13C_hz": 1.0365036433864536,
+        "old_det1_static_high_region_hz": 0.5156138815492227,
+        "static_low_region_hz": 0.8424968896688698,
+        "previous_det1p5_high_region_hz": 0.8902891565679428
+      },
+      "target_bin_hz": {
+        "direct_13C_larmor_hz": 400000.00000000047,
+        "det_minus_13C_hz": 900000.000000001,
+        "det_carrier_hz": 1200000.0000000014,
+        "det_plus_13C_hz": 1600000.0000000019,
+        "old_det1_static_high_region_hz": 1400000.0000000016,
+        "static_low_region_hz": 700000.0000000008,
+        "previous_det1p5_high_region_hz": 1900000.0000000023
+      },
+      "top_peaks": [
+        {
+          "frequency_hz": 600000.0000000007,
+          "amplitude_percent": 1.4601622977637696
+        },
+        {
+          "frequency_hz": 1200000.0000000014,
+          "amplitude_percent": 1.0950018259811058
+        },
+        {
+          "frequency_hz": 1600000.0000000019,
+          "amplitude_percent": 1.0365036433864536
+        },
+        {
+          "frequency_hz": 100000.00000000012,
+          "amplitude_percent": 0.9633689866786834
+        },
+        {
+          "frequency_hz": 900000.000000001,
+          "amplitude_percent": 0.9611995939500706
+        },
+        {
+          "frequency_hz": 200000.00000000023,
+          "amplitude_percent": 0.923303019834492
+        },
+        {
+          "frequency_hz": 1900000.0000000023,
+          "amplitude_percent": 0.8902891565679428
+        },
+        {
+          "frequency_hz": 500000.0000000006,
+          "amplitude_percent": 0.8712572503479664
+        }
+      ]
+    },
+    {
+      "summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0443.json",
+      "created_at": "2026-05-15T04:43:52.873353-04:00",
+      "averages_available": 7,
+      "averages_used": 6,
+      "current_shots_per_point_used": 300000,
+      "planned_shots_per_point": 800000,
+      "status_message": "(7/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+      "final_counts_text": "Final = 43.404 kcps",
+      "target_bins_percent": {
+        "direct_13C_larmor_hz": 0.13065725281988164,
+        "det_minus_13C_hz": 1.1304652805189082,
+        "det_carrier_hz": 1.403276370442363,
+        "det_plus_13C_hz": 1.1007044489009237,
+        "old_det1_static_high_region_hz": 0.4955692893236269,
+        "static_low_region_hz": 0.6462019968619509,
+        "previous_det1p5_high_region_hz": 0.6376220700448922
+      },
+      "target_bin_hz": {
+        "direct_13C_larmor_hz": 400000.00000000047,
+        "det_minus_13C_hz": 900000.000000001,
+        "det_carrier_hz": 1200000.0000000014,
+        "det_plus_13C_hz": 1600000.0000000019,
+        "old_det1_static_high_region_hz": 1400000.0000000016,
+        "static_low_region_hz": 700000.0000000008,
+        "previous_det1p5_high_region_hz": 1900000.0000000023
+      },
+      "top_peaks": [
+        {
+          "frequency_hz": 1200000.0000000014,
+          "amplitude_percent": 1.403276370442363
+        },
+        {
+          "frequency_hz": 200000.00000000023,
+          "amplitude_percent": 1.2008183458983313
+        },
+        {
+          "frequency_hz": 100000.00000000012,
+          "amplitude_percent": 1.149370725634513
+        },
+        {
+          "frequency_hz": 900000.000000001,
+          "amplitude_percent": 1.1304652805189082
+        },
+        {
+          "frequency_hz": 1600000.0000000019,
+          "amplitude_percent": 1.1007044489009237
+        },
+        {
+          "frequency_hz": 2500000.000000003,
+          "amplitude_percent": 1.028268613273505
+        },
+        {
+          "frequency_hz": 1300000.0000000014,
+          "amplitude_percent": 1.0282676262843997
+        },
+        {
+          "frequency_hz": 800000.0000000009,
+          "amplitude_percent": 0.9147719037332771
+        }
+      ]
+    },
+    {
+      "summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0513.json",
+      "created_at": "2026-05-15T05:14:13.238799-04:00",
+      "averages_available": 9,
+      "averages_used": 8,
+      "current_shots_per_point_used": 400000,
+      "planned_shots_per_point": 800000,
+      "status_message": "(9/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+      "final_counts_text": "Final = 43.869 kcps",
+      "target_bins_percent": {
+        "direct_13C_larmor_hz": 0.2652531181391532,
+        "det_minus_13C_hz": 0.9866713738197551,
+        "det_carrier_hz": 1.3096274432774007,
+        "det_plus_13C_hz": 1.224685477421133,
+        "old_det1_static_high_region_hz": 0.1445561706786715,
+        "static_low_region_hz": 0.7126465665795547,
+        "previous_det1p5_high_region_hz": 0.3560308219393995
+      },
+      "target_bin_hz": {
+        "direct_13C_larmor_hz": 400000.00000000047,
+        "det_minus_13C_hz": 900000.000000001,
+        "det_carrier_hz": 1200000.0000000014,
+        "det_plus_13C_hz": 1600000.0000000019,
+        "old_det1_static_high_region_hz": 1400000.0000000016,
+        "static_low_region_hz": 700000.0000000008,
+        "previous_det1p5_high_region_hz": 1900000.0000000023
+      },
+      "top_peaks": [
+        {
+          "frequency_hz": 1200000.0000000014,
+          "amplitude_percent": 1.3096274432774007
+        },
+        {
+          "frequency_hz": 1600000.0000000019,
+          "amplitude_percent": 1.224685477421133
+        },
+        {
+          "frequency_hz": 900000.000000001,
+          "amplitude_percent": 0.9866713738197551
+        },
+        {
+          "frequency_hz": 1500000.0000000019,
+          "amplitude_percent": 0.9854654824958657
+        },
+        {
+          "frequency_hz": 800000.0000000009,
+          "amplitude_percent": 0.9546472842092816
+        },
+        {
+          "frequency_hz": 1300000.0000000014,
+          "amplitude_percent": 0.893272421054461
+        },
+        {
+          "frequency_hz": 1000000.0000000012,
+          "amplitude_percent": 0.7721482426322086
+        },
+        {
+          "frequency_hz": 2500000.000000003,
+          "amplitude_percent": 0.7174494997248027
+        }
+      ]
+    },
+    {
+      "summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0547.json",
+      "created_at": "2026-05-15T05:48:39.231623-04:00",
+      "averages_available": 11,
+      "averages_used": 10,
+      "current_shots_per_point_used": 500000,
+      "planned_shots_per_point": 800000,
+      "status_message": "(12/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+      "final_counts_text": "Final = 44.078 kcps",
+      "target_bins_percent": {
+        "direct_13C_larmor_hz": 0.5809964259315071,
+        "det_minus_13C_hz": 1.0803848794264432,
+        "det_carrier_hz": 1.3646349328173963,
+        "det_plus_13C_hz": 1.1669347602919342,
+        "old_det1_static_high_region_hz": 0.21176744840591127,
+        "static_low_region_hz": 0.5586567096453381,
+        "previous_det1p5_high_region_hz": 0.19516491831464522
+      },
+      "target_bin_hz": {
+        "direct_13C_larmor_hz": 400000.00000000047,
+        "det_minus_13C_hz": 900000.000000001,
+        "det_carrier_hz": 1200000.0000000014,
+        "det_plus_13C_hz": 1600000.0000000019,
+        "old_det1_static_high_region_hz": 1400000.0000000016,
+        "static_low_region_hz": 700000.0000000008,
+        "previous_det1p5_high_region_hz": 1900000.0000000023
+      },
+      "top_peaks": [
+        {
+          "frequency_hz": 1200000.0000000014,
+          "amplitude_percent": 1.3646349328173963
+        },
+        {
+          "frequency_hz": 1600000.0000000019,
+          "amplitude_percent": 1.1669347602919342
+        },
+        {
+          "frequency_hz": 900000.000000001,
+          "amplitude_percent": 1.0803848794264432
+        },
+        {
+          "frequency_hz": 1300000.0000000014,
+          "amplitude_percent": 1.0140501145459144
+        },
+        {
+          "frequency_hz": 800000.0000000009,
+          "amplitude_percent": 0.9220017081750931
+        },
+        {
+          "frequency_hz": 1000000.0000000012,
+          "amplitude_percent": 0.7681514440041981
+        },
+        {
+          "frequency_hz": 1500000.0000000019,
+          "amplitude_percent": 0.7583202722835566
+        },
+        {
+          "frequency_hz": 1700000.0000000019,
+          "amplitude_percent": 0.6451599612163255
+        }
+      ]
+    }
+  ],
+  "provisional_interpretation": {
+    "summary": "Reviewed 5 det=1.25 MHz running-autosave snapshots from 2 to 10 balanced averages. The carrier bin stayed about 1.29, 1.10, 1.40, 1.31, 1.36% and det+13C about 0.71, 1.04, 1.10, 1.22, 1.17%, while the previous 1.9 MHz region fell to 1.13, 0.89, 0.64, 0.36, 0.20% and the old det=1 high/static region to 0.71, 0.52, 0.50, 0.14, 0.21%. This favors continued attention to the det=1.25 carrier/high-sideband model over the old static/high-region explanation, but it remains running-autosave provenance only because target amplitudes are about-percent/sub-percent and terminal 16-average data are still required.",
+    "claim_policy": "Do not promote a T2star scalar or 13C present/absent conclusion from running-autosave trend evidence. Use it to focus terminal review."
+  }
+}

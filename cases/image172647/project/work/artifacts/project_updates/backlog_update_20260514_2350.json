@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-05-14T23:50:00-04:00",
+  "updated_item_ids": [
+    "ramsey_t2star_scout_reimage1804_c02_rev1",
+    "weak_pi_podmr_refine_reimage1804_c02",
+    "ramsey_det1_claim_grade_reimage1804_c02"
+  ],
+  "reason": "Reconcile durable backlog after terminal det=1.5 Ramsey, terminal weak-pi pODMR, and running det=1.0 Ramsey autosave review."
+}

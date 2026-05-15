@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "job_id": "nv23_image172647_c01_retrack_after_podmr_alignfail_20260514_1801",
+  "job_path": "<NV_BRIDGE_ROOT>/queued/nv23_image172647_c01_retrack_after_podmr_alignfail_20260514_1801/job.json"
+}

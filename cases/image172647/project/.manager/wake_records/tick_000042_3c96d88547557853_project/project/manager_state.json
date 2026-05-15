@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-15T03:35:05",
+  "tick_count": 42,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 85,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_023309_452615_1f8e19b964",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0227.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 det=1 Ramsey 14-average autosave review: Bridge-free reviewed a late 14-average even autosave subset of running job nv23_ramsey_20260514_230820_auto_ramsey. The bridge remained running, later at 15/16 averages, with monitor active, no last_error, and stop_requested=false; latest read-only status at 02:32 EDT showed Final = 42.702 kcps. Scan-order-aware drift used snake order and found no flagged averages. Readout2/self-baseline target bins remain weak/provisional: direct 13C 0.19%, det-13C 0.79%, carrier 0.41%, det+13C 0.82%, previous 1.9 MHz ambiguity 0.48%. No T2star or 13C claim; wait for terminal 16-average data or hard anomaly evidence.",
+          "tags": [],
+          "timestamp": "2026-05-15T02:33:09"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_det1_terminal_reimage1804_c02_16avg_review_20260515_0245",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1_terminal_16avg_review_20260515_0245.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_raw_16avg_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_summary_16avg_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_drift_16avg_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_terminal_16avg_20260515_0245.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_terminal_result_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_terminal_status_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_terminal_job_20260515_0245.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_16avg_analysis_20260515_0245.py"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Terminal 16-average det=1.0 MHz Ramsey/T2star/13C discriminator completed successfully. Raw export and scan-order-aware drift review verified ramsey.xml, tau 0..10 us, 51 points, 16x50000 reps, snake order, no flagged averages, pre/post counts 40.445/42.702 kcps, no stop request, safe shutdown ok. Readout2/self-baseline target FFT amplitudes: direct 13C 0.14%, det-13C 0.73%, carrier 0.41%, det+13C 0.84%, previous 1.9 MHz 0.56%. The det+13C-compatible component is a weak candidate but incomplete; T2* is short/few-us order only, not a final scalar; 13C is not yet well-supported.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "det-shift",
+            "terminal",
+            "reimage1804_c02",
+            "analysis",
+            "bridge-free"
+          ],
+          "timestamp": "2026-05-15T03:02:36"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_det_shift_synthesis_det1p25_plan_reimage1804_c02_20260515_0302",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det_shift_synthesis_and_det1p25_plan_20260515_0302.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_intent.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_execute_submit_spec.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Bridge-free weak-signal follow-up synthesis after terminal det=1.0 Ramsey. Compared det=1.5 and det=1.0 Ramsey plus terminal weak-pi pODMR. T2star remains short/few-us order but scalar-sensitive. 13C is not well-supported yet, but the high-sideband-compatible component is a plausible weak candidate because it moves with programmed det; planned a targeted det=1.25 MHz Ramsey artifact-rejection discriminator with explicit model targets 0.865/1.250/1.635 MHz and 800k shots/point, pending verifier/advisory gates.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "det-shift",
+            "plan",
+            "weak-signal-followup",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-15T03:05:32"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "ramsey_det1p25_followup_reimage1804_c02_running_20260515_0315",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_advisory_stdout.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_advisory_stderr.txt",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_execute_wait_stdout.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_execute_wait_stderr.txt",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_running_status_20260515_0315.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_running_status_compact_20260515_0315.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_running_job_20260515_0315.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1p25_running_control_20260515_0315.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_execute_submit_spec.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Targeted third-det Ramsey follow-up at det=1.25 MHz was verified, advisory-checked, and launched. Pre-enqueue advisory ok=true with no blockers; estimated 692.6 s per average under the 900 s nighttime cap. Running bridge job nv23_ramsey_20260515_030822_auto_ramsey is active at average 1/16, monitor active with no last_error, stop_requested=false, Final text about 43.7 kcps, queued/staging otherwise empty. This touched the bridge queue; no further bridge mutation until terminal/anomaly evidence.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "det-shift",
+            "det1p25",
+            "running",
+            "bridge",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-15T03:16:45"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_031658_481286_949b6a26f9",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_terminal_16avg_20260515_0245.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 det=1 terminal review and det=1.25 follow-up launched: Terminal 16-average det=1.0 MHz Ramsey completed cleanly (pre/post counts 40.445/42.702 kcps, no stop request, no drift flags). Readout2/self-baseline target bins: direct 13C 0.14%, det-13C 0.73%, carrier 0.41%, det+13C 0.84%, previous 1.9 MHz 0.56%. This supports short/few-us T2star order but not a final scalar; 13C remains weak/incomplete. Because the high-sideband-compatible component shifted with det from the prior det=1.5 run, a targeted third-det Ramsey at det=1.25 MHz was modeled, verifier/advisory passed, and job nv23_ramsey_20260515_030822_auto_ramsey is now running (avg 1/16, Final about 43.7 kcps, monitor active, no stop request). No further bridge mutation while it runs.",
+          "tags": [],
+          "timestamp": "2026-05-15T03:16:58"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 8
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "c02 det=1 terminal review and det=1.25 follow-up launched",
+    "event": "lab_log_note",
+    "summary": "Terminal 16-average det=1.0 MHz Ramsey completed cleanly (pre/post counts 40.445/42.702 kcps, no stop request, no drift flags). Readout2/self-baseline target bins: direct 13C 0.14%, det-13C 0.73%, carrier 0.41%, det+13C 0.84%, previous 1.9 MHz 0.56%. This supports short/few-us T2star order but not a final scalar; 13C remains weak/incomplete. Because the high-sideband-compatible component shifted with det from the prior det=1.5 run, a targeted third-det Ramsey at det=1.25 MHz was modeled, verifier/advisory passed, and job nv23_ramsey_20260515_030822_auto_ramsey is now running (avg 1/16, Final about 43.7 kcps, monitor active, no stop request). No further bridge mutation while it runs.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260515_031658_481286_949b6a26f9",
+    "category": "figure",
+    "summary": "c02 det=1 terminal review and det=1.25 follow-up launched: Terminal 16-average det=1.0 MHz Ramsey completed cleanly (pre/post counts 40.445/42.702 kcps, no stop request, no drift flags). Readout2/self-baseline target bins: direct 13C 0.14%, det-13C 0.73%, carrier 0.41%, det+13C 0.84%, previous 1.9 MHz 0.56%. This supports short/few-us T2star order but not a final scalar; 13C remains weak/incomplete. Because the high-sideband-compatible component shifted with det from the prior det=1.5 run, a targeted third-det Ramsey at det=1.25 MHz was modeled, verifier/advisory passed, and job nv23_ramsey_20260515_030822_auto_ramsey is now running (avg 1/16, Final about 43.7 kcps, monitor active, no stop request). No further bridge mutation while it runs.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_terminal_16avg_20260515_0245.png"
+    ],
+    "timestamp": "2026-05-15T03:16:58"
+  },
+  "last_backlog_update": {
+    "item_id": "ramsey_det1p25_third_det_reimage1804_c02",
+    "status": "in_progress",
+    "summary": "Targeted det=1.25 MHz third-det Ramsey artifact-rejection follow-up was verified, advisory-checked, and launched as running bridge job nv23_ramsey_20260515_030822_auto_ramsey. Advisory had no blockers and estimated 692.6 s per-average tracking window under the active 900 s nighttime cap. Initial running snapshot: average 1/16, Final about 43.7 kcps, monitor active with no last_error, stop_requested=false. Wait for terminal/anomaly evidence; bridge-touching work is blocked while it runs."
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

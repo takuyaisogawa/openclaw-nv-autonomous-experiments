@@ -1,0 +1,12 @@
+{
+  "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+  "mode": "execute",
+  "state": "running",
+  "phase": "scheduled_tracking_prepared",
+  "message": "Prepared Imaging scheduled tracking state for the execute route.",
+  "started_at": "2026-05-14T18:21:06",
+  "updated_at": "2026-05-14T18:21:07",
+  "finished_at": "",
+  "elapsed_seconds": 1,
+  "running_dir": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1"
+}

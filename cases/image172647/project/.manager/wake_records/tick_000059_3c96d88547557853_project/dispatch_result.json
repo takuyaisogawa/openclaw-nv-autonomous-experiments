@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-05-15T09:30:08",
+  "dispatch": {
+    "attempted": true,
+    "sent": true,
+    "reason": "bridge_running_parallel_project_work_opportunity_review",
+    "wake_key": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728:advance_project:39d25cc937313a6e",
+    "result": "http_200 run_id=fec4578c-58ee-4247-af27-a361d2cfc731",
+    "hook_path": "/hooks/agent",
+    "gateway_url": "http://127.0.0.1:18789",
+    "mode": "now",
+    "dispatch_mode": "agent",
+    "agent_backend": "openclaw-hook",
+    "marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/agent_runs/tick_000059_3c96d88547557853_project.done.json",
+    "run_id": "fec4578c-58ee-4247-af27-a361d2cfc731",
+    "agent_id": "nv-researcher",
+    "agent_session_key": "agent:nv-researcher:hook:nv-project-manager:nv23_aligned_nv_t2star_13c_image172647_20260514_1728:wake:ticked-000059-3c96d88547557853",
+    "agent_model": "openai-codex/gpt-5.5",
+    "agent_thinking": "xhigh",
+    "hook_name": "NV Project Step - nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "wake_record_dir": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/wake_records/tick_000059_3c96d88547557853_project",
+    "wake_record_manifest_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/wake_records/tick_000059_3c96d88547557853_project/context_manifest.json"
+  }
+}

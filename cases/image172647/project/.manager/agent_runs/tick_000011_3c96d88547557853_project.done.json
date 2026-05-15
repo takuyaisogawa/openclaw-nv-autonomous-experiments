@@ -1,0 +1,21 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T20:14:30-04:00",
+  "status": "submitted_running_handoff",
+  "summary": "Accepted reimage1804_c02 as the aligned-NV branch from terminal strong-pi pODMR evidence, superseded the initial Ramsey/T2star scout because advisory exceeded the daytime tracking-window cap, verified and submitted a revised Ramsey/T2star scout, and recorded running status. Bridge job nv23_ramsey_20260514_201034_auto_ramsey is running at average 1/8 with healthy initial counts; no T2star or 13C conclusion yet.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "bridge_job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+    "details": "Do not submit or mutate other bridge jobs while this Ramsey scout is queued/running. When terminal, export the savedexperiment raw data, review raw readouts and fitted-reference/pointwise normalization views, fit T2star only if a real Ramsey signal is visible, and FFT-check for 13C sidebands near det +/- 384 kHz without claiming 13C from isolated low-SNR peaks. If terminal failure before data, distinguish route/hardware/code failure from tracking/count freshness evidence."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_t2star_scout_reimage1804_c02_rev1"
+  ],
+  "evidence_ids": [
+    "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+    "ramsey_t2star_scout_rev1_plan_advisory_reimage1804_c02_20260514_2008",
+    "ramsey_t2star_scout_reimage1804_c02_running_20260514_2011",
+    "ramsey_t2star_scout_reimage1804_c02_avg_start_snapshot_20260514_2013"
+  ]
+}

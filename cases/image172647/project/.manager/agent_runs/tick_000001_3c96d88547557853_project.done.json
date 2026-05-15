@@ -1,0 +1,18 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T18:38:15-04:00",
+  "status": "handoff_bridge_running",
+  "summary": "Intended reimage1804_c01 strong-pi pODMR is still running as nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1. Cleaned a stale queued duplicate old image172647_c01 pODMR from an interrupted single-submit batch before it executed, stop-requested/terminated the stale old local runner, and preserved the current runner. Raw-exported the first autosaved average; XML review confirms readout1=mS0 reference and readout2=signal for full_expt=0. First-average data show only provisional few-percent fluctuations vs the expected 22% strong-pi contrast, so no alignment/rejection verdict yet; terminal 4-average raw/readout-aware review is required.",
+  "touched_bridge_queue": true,
+  "next_action": "On next wake, inspect bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1 first. If complete, export final savedexperiment and decide resonance/alignment from raw reference/signal plus safe normalizations. If still running, do not enqueue or mutate bridge jobs; only inspect autosaves/notes. If failed before data, treat as count/freshness evidence, not no-resonance.",
+  "updated_backlog_item_ids": [
+    "screen_image172647_c01_strong_podmr",
+    "screen_reimage1804_c01_strong_podmr"
+  ],
+  "evidence_ids": [
+    "stale_image172647_c01_duplicate_queue_superseded_20260514_1830",
+    "podmr_execute_reimage1804_c01_running_snapshot_20260514_1830",
+    "podmr_autosave_reimage1804_c01_1avg_raw_review_20260514_1832"
+  ],
+  "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1"
+}

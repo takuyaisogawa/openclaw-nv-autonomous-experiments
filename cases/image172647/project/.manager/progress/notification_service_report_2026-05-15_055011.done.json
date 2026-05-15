@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T05:53:30-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report for the running det=1.25 MHz Ramsey job: status 12/16 averages, monitor active/no error/no stop request, latest bridge-free 10-of-11 autosave review provisional with no drift flags and no T2star/13C claim, no explicit bridge-free task pending, next step terminal/anomaly or later even-subset review.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-15_055011.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0549.png",
+      "caption": "det=1.25 MHz Ramsey running autosave target-bin trend (provisional)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

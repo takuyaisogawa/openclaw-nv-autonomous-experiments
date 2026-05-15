@@ -1,0 +1,151 @@
+{
+  "mode": "execute",
+  "recipe": "xml_generic_v1",
+  "sample_id": "NV23",
+  "sequence_manifest_id": "auto__ramsey",
+  "sequence_manifest_status": "validated",
+  "sequence_manifest_scope": "validated",
+  "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\ramsey.xml",
+  "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\validated\\auto__ramsey.json",
+  "job_id_prefix": "nv23_ramsey",
+  "job_id_suffix": "reimage1804_c02_det1p25mhz_10us51pt_16x50k",
+  "requested_by": "nv-researcher",
+  "intent": "Third-det Ramsey discriminator at det=1.25 MHz for weak 13C-candidate artifact rejection on accepted aligned candidate reimage1804_c02.",
+  "submission_path": "single_item_measurement_plan",
+  "measurement_plan_verified": true,
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin": [
+      0.0
+    ],
+    "end": [
+      1e-05
+    ],
+    "points": [
+      51
+    ]
+  },
+  "float_vars": {
+    "sample_rate": 250000000.0,
+    "mw_freq": 3876501336.7539,
+    "det": 1250000.0,
+    "mod_depth": 1.0,
+    "length_pi_pulse": 5.2e-08,
+    "tau": 1e-06,
+    "switch_delay": 1e-07,
+    "delay_wrt_1mus": 2e-07,
+    "wait_time": 2e-06,
+    "mw_ampl": -5,
+    "ampIQ": 5,
+    "freqIQ": 50000000.0,
+    "sweep_range": 100000000.0,
+    "sweep_time": 1e-06,
+    "full_experiment": 0
+  },
+  "acquisition": {
+    "average_continuously": false,
+    "averages": 16,
+    "repetitions": 50000
+  },
+  "allow_seed_fallback": true,
+  "nv_position": [
+    117.46898278273697,
+    117.50254910098927,
+    116.03879377431909
+  ],
+  "metadata": {
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "auto_align_nv": true,
+    "minimum_final_kcps": 8,
+    "allow_seed_fallback": true,
+    "allow_search_scan": false,
+    "require_landmark_match": false,
+    "search_scan_on_tracking_failure": false,
+    "local_fine_search_before_tracking": false,
+    "target_label": "reimage1804_c02",
+    "target_role": "third_det_shift_weak_13c_candidate_artifact_rejection",
+    "intent": "Third-det Ramsey discriminator at det=1.25 MHz for weak 13C-candidate artifact rejection on accepted aligned candidate reimage1804_c02.",
+    "route_policy": "Validated auto__ramsey route; execute only after queue idle, intent verifier passes, MATLAB pre-enqueue advisory has no blockers, and per-average drift window is within the active nighttime cap.",
+    "analysis_plan": {
+      "raw_export_and_plot_required": true,
+      "review_raw_readouts_and_reference_normalization": true,
+      "fit_t2star_only_after_visible_ramsey_signal": true,
+      "fft_det_shift_13c_check_after_signal_review": true,
+      "compare_to_previous_det1p5_and_det1p0_ramsey": true,
+      "do_not_claim_13c_from_isolated_low_snr_fft_peak": true,
+      "no_automatic_fit_in_bridge_job": true
+    },
+    "comparison_targets": [
+      "weak_pi_podmr_terminal_reimage1804_c02_4avg_review_20260514_2251",
+      "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+      "ramsey_det1_terminal_reimage1804_c02_16avg_review_20260515_0245"
+    ],
+    "expected_signal_model": {
+      "candidate_label": "reimage1804_c02",
+      "sequence_family": "electron_ramsey_t2star_third_det_shift_discriminator",
+      "transition": "ms=+1",
+      "zero_field_splitting_hz_assumed": 2870000000.0,
+      "electron_gyromagnetic_hz_per_T": 28024951640.0,
+      "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+      "mw_freq_hz_from_terminal_weak_pi_podmr_fit": 3876501336.7539,
+      "mw_freq_uncertainty_hz_from_terminal_weak_pi_fit": null,
+      "B_T_from_weak_pi_center": 0.035914471849340185,
+      "expected_13C_larmor_hz": 384586.5303514744,
+      "det_hz": 1250000.0,
+      "expected_fft_carrier_hz": 1250000.0,
+      "expected_13C_sidebands_hz": [
+        865413.4696485256,
+        1634586.5303514744
+      ],
+      "direct_13C_larmor_check_hz": 384586.5303514744,
+      "previous_det1p5_programmed_det_hz": 1500000.0,
+      "previous_det1p5_high_sideband_target_hz": 1884586.5303514744,
+      "previous_det1p5_observed_high_region_hz": 1900000.0,
+      "previous_det1p0_programmed_det_hz": 1000000.0,
+      "previous_det1p0_high_sideband_target_hz": 1384586.5303514744,
+      "previous_det1p0_observed_high_bin_hz": 1400000.0,
+      "det_shift_test_rationale": "A weak high-sideband-compatible component has now appeared near det+f13 for both det=1.5 MHz and det=1.0 MHz, but it is low contrast and incomplete. A third det=1.25 MHz Ramsey should move a true 13C sideband to about 1.635 MHz and the low sideband to about 0.865 MHz, while static analysis/apparatus artifacts near 0.7 or 1.4 MHz should not move with det.",
+      "scan_tau_begin_s": 0.0,
+      "scan_tau_end_s": 1e-05,
+      "scan_points": 51,
+      "tau_step_s": 2.0000000000000002e-07,
+      "fft_resolution_hz": 100000.0,
+      "fft_nyquist_hz": 2500000.0,
+      "sideband_separation_bins": 3.8458653035147443,
+      "high_sideband_margin_to_nyquist_hz": 865413.4696485256,
+      "averages": 16,
+      "repetitions_per_average": 50000,
+      "shots_per_point": 800000,
+      "binomial_floor_fraction": 0.001118033988749895,
+      "observed_det1p0_det_plus_candidate_percent": 0.8392021317763944,
+      "observed_det1p0_det_minus_candidate_percent": 0.7297369299254884,
+      "one_percent_feature_over_floor": 8.944271909999157,
+      "observed_0p8_percent_feature_over_floor": 7.155417527999327,
+      "distinguishability": "At 800k shots/point the binomial floor is about 0.112%; the observed det=1.0 high-sideband-scale amplitude (~0.84%) is about 7.5x this floor before drift/systematics. The third-det purpose is not precision T2* fitting; it is artifact rejection by checking whether weak sideband power moves with the programmed detuning.",
+      "drift_basis": "The terminal det=1.0 Ramsey had 16 even averages, snake scan-order drift diagnostic with no flagged averages, and pre/post counts 40.445/42.702 kcps. The same 16x50000, 51-point grid should be accepted only if the live MATLAB advisory keeps per-average tracking window inside the active nighttime cap."
+    },
+    "terminal_ramsey_det1p5_summary": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+    "terminal_ramsey_det1p0_summary": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_summary_16avg_20260515_0245.json",
+    "terminal_weak_pi_podmr_summary": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_4avg_summary_20260514_2251.json",
+    "verified_intent_id": "reimage1804_c02_ramsey_det1p25_followup_20260515_0302",
+    "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\validated\\auto__ramsey.json",
+    "sequence_manifest_status": "validated",
+    "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\ramsey.xml",
+    "sequence_xml_review": {
+      "manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\validated\\auto__ramsey.json",
+      "manifest_status": "validated",
+      "xml_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\ramsey.xml",
+      "active_instruction": "ramsey(PSeq,sample_rate,length_pi_over_2,tau,det,switch_delay,mod_depth,ch_on)",
+      "full_experiment": 0,
+      "readout_roles": "full_experiment=0: readout 1 is mS=0 reference; readout 2 is Ramsey signal after Ramsey pulses; mS=+1 reference branch disabled.",
+      "boolean_note": "do_adiabatic_inversion exists but only affects the disabled full_experiment branch for this Ramsey follow-up."
+    },
+    "sequence_bool_vars": {
+      "do_adiabatic_inversion": true
+    }
+  }
+}

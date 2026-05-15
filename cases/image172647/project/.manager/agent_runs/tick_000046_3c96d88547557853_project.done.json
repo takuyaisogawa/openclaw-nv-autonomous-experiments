@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T05:52:33.981668-04:00",
+  "status": "completed",
+  "summary": "Bridge-free progress during running det=1.25 MHz Ramsey execute: copied current status, raw-exported the autosave, reviewed a 10-of-11 balanced even subset (500k/800k planned shots per point), found no scan-order-aware drift flags or hard anomaly, recorded provisional FFT target bins (direct 13C 0.58%, det-13C 1.08%, carrier 1.36%, det+13C 1.17%, old det=1 high/static 0.21%, static low 0.56%, previous 1.9 MHz 0.20%), created a 2/4/6/8/10-average target-bin trend note/figure, updated work/state.md and lab log/evidence. No T2star or 13C claim was made; bridge remains running and untouched.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_terminal_or_later_even_autosave",
+    "bridge_job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+    "reason": "Bridge job was still running at 12/16 averages with monitor active, no last_error, and stop_requested=false. Bridge-touching work remains blocked until terminal/anomaly evidence. A later 12- or 14-balanced-average autosave may be reviewed bridge-free if available before terminal data; otherwise perform terminal raw/readout-aware review."
+  },
+  "updated_backlog_item_ids": []
+}

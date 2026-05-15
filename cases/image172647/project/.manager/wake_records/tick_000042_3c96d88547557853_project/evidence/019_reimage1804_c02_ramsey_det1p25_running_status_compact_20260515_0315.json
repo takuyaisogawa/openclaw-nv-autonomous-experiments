@@ -1,0 +1,80 @@
+{
+  "job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+  "state": "running",
+  "phase": "run_experiment_scan_point",
+  "message": "Experiment Started Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "started_at": "2026-05-15T03:08:31",
+  "updated_at": "2026-05-15T03:16:06",
+  "runtime": {
+    "figure_valid": true,
+    "has_experiment_handles": true,
+    "has_aborted": false,
+    "average_index": 1,
+    "averages_total": 16,
+    "average_fraction": 0.0625,
+    "scan_points_total": 51,
+    "repetitions": 50000,
+    "sequence_name": "ramsey.xml",
+    "date_time": "2026-05-15-031116",
+    "experiment_status_text": "Experiment Started",
+    "final_counts_text": "Final = 43.727 kcps",
+    "experiment_data_present": false,
+    "experiment_data_size": [],
+    "pulse_mode": 4,
+    "autosave_checked": "on",
+    "saved_exp_dir": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-15-031116",
+    "autosave_target_exists": false,
+    "live_average_results_possible": true,
+    "live_average_results_available": false,
+    "live_average_results_hint": "Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes."
+  },
+  "monitor": {
+    "active": true,
+    "update_period_seconds": 5,
+    "timer_tag": "nv_bridge_runtime_monitor_nv23_ramsey_20260515_030822_auto_ramsey",
+    "started_at": "2026-05-15T03:11:15",
+    "last_tick_at": "2026-05-15T03:16:06",
+    "tick_count": 31,
+    "last_error": "",
+    "stop_requested_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "requested_by": "",
+    "requested_at": "",
+    "updated_at": "2026-05-15T03:08:31",
+    "stop_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "expected_runtime": [
+    {
+      "ok": true,
+      "estimator_mode": "siglent",
+      "total_seconds": 12306.4256,
+      "per_average_seconds": 767.5891,
+      "tracking_window_seconds": 767.5891,
+      "averages": 16,
+      "repetitions": 50000,
+      "num_scan_points": 51,
+      "notes": "Siglent per-average overhead is estimated from a fixed track-per-average housekeeping term, an empirically calibrated per-scan-point programming/GUI term, and a weaker average-waveform-length term."
+    },
+    {
+      "ok": true,
+      "estimator_mode": "siglent",
+      "total_seconds": 12306.4256,
+      "per_average_seconds": 767.5891,
+      "tracking_window_seconds": 767.5891,
+      "averages": 16,
+      "repetitions": 50000,
+      "num_scan_points": 51,
+      "notes": "Tracking runs once per average, so drift planning should use per_average_seconds / tracking_window_seconds rather than total_seconds. Changing averages does not shorten the untracked window."
+    }
+  ]
+}

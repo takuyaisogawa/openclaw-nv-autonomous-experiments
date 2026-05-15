@@ -1,0 +1,465 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "project_dir": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "project_lifecycle": "active",
+  "operational_state": "active",
+  "legacy_project_status": "active",
+  "legacy_state_status": "active",
+  "ticked": true,
+  "reason": "bridge_running_parallel_project_work_discovery_interval:interval_due",
+  "tick_count": 34,
+  "blocking_request_id": "",
+  "blocking_code_change_request_id": "",
+  "next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 76,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_234929_655930_11682ad815",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_midrun_20260514_2345.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 det=1 Ramsey 2-average autosave review: Raw-exported, drift-checked, plotted, and FFT-reviewed the 2-average autosave of the running det=1.0 MHz Ramsey/T2star/13C discriminator. The bridge remains running at 2/16 averages with Final = 42.180 kcps, no monitor error, and stop_requested=false. No drift flags. Target-bin amplitudes are weak/provisional (direct 13C 0.26%, det-13C 0.19%, carrier 0.91%, det+13C 0.71%, prior 1.9 MHz ambiguity 0.43%) at only 100k shots/point, so no T2star or 13C claim is made; wait for terminal 16-average data or hard anomaly evidence.",
+          "tags": [],
+          "timestamp": "2026-05-14T23:49:29"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "ramsey_det1_running_status_latest_reimage1804_c02_20260514_2351",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260514_2351.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Read-only latest bridge status after the det=1.0 MHz Ramsey 2-average autosave review. Job nv23_ramsey_20260514_230820_auto_ramsey remains running and has progressed to 3/16 averages, queued/staging are empty, Final = 42.180 kcps, monitor last_error is empty, and stop_requested=false. No bridge queue mutation was performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T23:51:11"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "ramsey_det1_running_status_latest_reimage1804_c02_20260515_0019",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0019.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_control_latest_20260515_0019.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_compact_20260515_0019.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Read-only latest bridge status for det=1.0 MHz Ramsey/T2star/13C discriminator. Job nv23_ramsey_20260514_230820_auto_ramsey remains running at 5/16 averages (currently average index 6), queued/staging are empty, monitor is active with no last_error, stop_requested=false, and Final = 37.673 kcps. This was not terminal evidence and not yet the preferred later even autosave subset, so no autosave analysis or bridge queue mutation was performed.",
+          "tags": [],
+          "timestamp": "2026-05-15T00:19:27"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_det1_autosave_reimage1804_c02_6of7_even_subset_review_20260515_0048",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1_autosave_even_subset_review_20260515_0048.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_raw_even_subset_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_summary_even_subset_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_drift_even_subset_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0048.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_before_autosave_review_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_after_autosave_review_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_control_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_job_20260515_0048.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_even_subset_analysis_20260515_0048.py"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Bridge-free 6-of-7 even-subset autosave review of running det=1.0 MHz Ramsey/T2star/13C discriminator. The job remained running at 7/16 averages with Final = 44.147 kcps, monitor active with no last_error, and stop_requested=false. Six selected averages give 300k shots/point versus 800k planned; scan-order-aware drift over the current 7-average autosave used Scan.ScanOrderEachAvg/snake and found no flags. Combined readout2/self-baseline target bins remain weak/provisional: direct 13C 0.46%, det-13C 0.28%, carrier 0.41%, det+13C 1.09%, previous 1.9 MHz ambiguity 0.51%. No T2star or 13C claim is made and no bridge queue mutation was performed.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "det-shift",
+            "autosave",
+            "running",
+            "reimage1804_c02",
+            "bridge-free"
+          ],
+          "timestamp": "2026-05-15T00:50:42"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_005050_603195_588b14c0a8",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0048.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 det=1 Ramsey 6-of-7 autosave even-subset review: Bridge-free reviewed the largest even subset (6 averages, 300k shots/point) from the current 7-average autosave of running job nv23_ramsey_20260514_230820_auto_ramsey. The bridge stayed running at 7/16 averages with Final = 44.147 kcps, no monitor error, and no stop request. Scan-order-aware drift over the 7-average autosave found no flagged averages. Readout2/self-baseline target bins remain weak/provisional: direct 13C 0.46%, det-13C 0.28%, carrier 0.41%, det+13C 1.09%, previous 1.9 MHz ambiguity 0.51%. No T2star or 13C claim; wait for terminal 16-average data or hard anomaly evidence.",
+          "tags": [],
+          "timestamp": "2026-05-15T00:50:50"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 7
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "research_context": {
+    "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+    "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+    "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+    "evidence_count": 76,
+    "recent_evidence": [
+      {
+        "actor": "openclaw-project-manager",
+        "category": "figure",
+        "evidence_id": "figure_20260514_234929_655930_11682ad815",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_midrun_20260514_2345.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 det=1 Ramsey 2-average autosave review: Raw-exported, drift-checked, plotted, and FFT-reviewed the 2-average autosave of the running det=1.0 MHz Ramsey/T2star/13C discriminator. The bridge remains running at 2/16 averages with Final = 42.180 kcps, no monitor error, and stop_requested=false. No drift flags. Target-bin amplitudes are weak/provisional (direct 13C 0.26%, det-13C 0.19%, carrier 0.91%, det+13C 0.71%, prior 1.9 MHz ambiguity 0.43%) at only 100k shots/point, so no T2star or 13C claim is made; wait for terminal 16-average data or hard anomaly evidence.",
+        "tags": [],
+        "timestamp": "2026-05-14T23:49:29"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "artifact",
+        "evidence_id": "ramsey_det1_running_status_latest_reimage1804_c02_20260514_2351",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260514_2351.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Read-only latest bridge status after the det=1.0 MHz Ramsey 2-average autosave review. Job nv23_ramsey_20260514_230820_auto_ramsey remains running and has progressed to 3/16 averages, queued/staging are empty, Final = 42.180 kcps, monitor last_error is empty, and stop_requested=false. No bridge queue mutation was performed.",
+        "tags": [],
+        "timestamp": "2026-05-14T23:51:11"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "artifact",
+        "evidence_id": "ramsey_det1_running_status_latest_reimage1804_c02_20260515_0019",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0019.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_control_latest_20260515_0019.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_compact_20260515_0019.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Read-only latest bridge status for det=1.0 MHz Ramsey/T2star/13C discriminator. Job nv23_ramsey_20260514_230820_auto_ramsey remains running at 5/16 averages (currently average index 6), queued/staging are empty, monitor is active with no last_error, stop_requested=false, and Final = 37.673 kcps. This was not terminal evidence and not yet the preferred later even autosave subset, so no autosave analysis or bridge queue mutation was performed.",
+        "tags": [],
+        "timestamp": "2026-05-15T00:19:27"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "analysis",
+        "evidence_id": "ramsey_det1_autosave_reimage1804_c02_6of7_even_subset_review_20260515_0048",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1_autosave_even_subset_review_20260515_0048.md",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_raw_even_subset_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_summary_even_subset_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_drift_even_subset_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0048.png",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_before_autosave_review_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_after_autosave_review_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_control_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_job_20260515_0048.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1_autosave_even_subset_analysis_20260515_0048.py"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Bridge-free 6-of-7 even-subset autosave review of running det=1.0 MHz Ramsey/T2star/13C discriminator. The job remained running at 7/16 averages with Final = 44.147 kcps, monitor active with no last_error, and stop_requested=false. Six selected averages give 300k shots/point versus 800k planned; scan-order-aware drift over the current 7-average autosave used Scan.ScanOrderEachAvg/snake and found no flags. Combined readout2/self-baseline target bins remain weak/provisional: direct 13C 0.46%, det-13C 0.28%, carrier 0.41%, det+13C 1.09%, previous 1.9 MHz ambiguity 0.51%. No T2star or 13C claim is made and no bridge queue mutation was performed.",
+        "tags": [
+          "ramsey",
+          "t2star",
+          "13c",
+          "det-shift",
+          "autosave",
+          "running",
+          "reimage1804_c02",
+          "bridge-free"
+        ],
+        "timestamp": "2026-05-15T00:50:42"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "figure",
+        "evidence_id": "figure_20260515_005050_603195_588b14c0a8",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0048.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 det=1 Ramsey 6-of-7 autosave even-subset review: Bridge-free reviewed the largest even subset (6 averages, 300k shots/point) from the current 7-average autosave of running job nv23_ramsey_20260514_230820_auto_ramsey. The bridge stayed running at 7/16 averages with Final = 44.147 kcps, no monitor error, and no stop request. Scan-order-aware drift over the 7-average autosave found no flagged averages. Readout2/self-baseline target bins remain weak/provisional: direct 13C 0.46%, det-13C 0.28%, carrier 0.41%, det+13C 1.09%, previous 1.9 MHz ambiguity 0.51%. No T2star or 13C claim; wait for terminal 16-average data or hard anomaly evidence.",
+        "tags": [],
+        "timestamp": "2026-05-15T00:50:50"
+      }
+    ],
+    "experiment_intents": {
+      "queued": 0,
+      "verified": 1,
+      "rejected": 0,
+      "done": 7
+    },
+    "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+    "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+  },
+  "cron_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/project_cron/nv23_aligned_nv_t2star_13c_image172647_20260514_1728.json",
+  "objective": "Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion.",
+  "sample_id": "NV23",
+  "planning_horizon": {},
+  "success_metrics": [],
+  "autonomy": {},
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "startup_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_required_for": [
+      "nv-researcher",
+      "nv_project_work",
+      "nv-project-manager"
+    ],
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "scope": "compact_startup_contract_and_detailed_nv_knowledge_router",
+    "source": "NV_RESEARCH_MEMORY.md",
+    "detailed_source": "NV_RESEARCH_KNOWLEDGE.md",
+    "exists": true,
+    "updated_epoch": 1778784582.8272047,
+    "size_bytes": 16486,
+    "snapshot_char_limit": 16000,
+    "snapshot_truncated": true,
+    "snapshot": "# NV Research Memory\n\nCompact every-wake contract for NV project-execution agents.\n\nThis file is separate from `MEMORY.md`. Direct-chat sessions may use\n`MEMORY.md`; `nv-researcher` project wakes use this file as startup policy and\nrouter. Detailed NV practice lives in\n`<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md` and should be read\nby relevant section only.\n\n## Core Wake Contract\n\nOn every NV project wake, read:\n\n- This file.\n- The current project's `brief.md`, `human_advice.md`, and `work/state.md`.\n- Compact state, wake reason, `next_action`, blocker ids, and latest evidence\n  pointers supplied by the scheduler.\n\nDo not routinely read broad `AGENTS.md` files. Consult them only for visible\ncode/policy conflicts, explicit wake instructions, or hardware/protocol/code\nquestions.\n\nConflict priority:\n\n1. Explicit human `STOP`, pause, cancel, do-not-continue, or must-first\n   instructions.\n2. Hard bridge queue, hardware, code-safety, manifest, execute, and local lab\n   opt-in gates.\n3. Current project `human_advice.md`.\n4. Current project brief, state, compact state, and latest evidence.\n5. This file.\n6. Historical examples and optional references.\n\nRule strengths:\n\n- `HARD`: fail-closed. Includes STOP/pause/cancel orders, queue mutation rules,\n  hardware/code/manifest/execute uncertainty, local lab opt-in, and completion\n  markers.\n- `DEFAULT`: normal lab practice. Follow unless current evidence or human advice\n  justifies a safer, more specific choice.\n- `SOFT`: scientific interpretation guidance. Use for caveats, provenance,\n  finding scope, and follow-up design; do not make it an external blocker by\n  itself.\n- `PROVENANCE`: evidence used for reasoning. Not a hard gate by itself.\n- `HISTORICAL`: old context. Do not revive as current policy without a specific\n  reason.\n\n## Hard Safety Baseline\n\n- Do not submit, mutate, stop, or mark terminal any bridge job unless the bridge\n  queue/running state and requested action satisfy the bridge policy.\n- Bridge occupancy blocks new bridge-touching submission or queue mutation.\n  Bridge-free analysis, notes, planning, and evidence cleanup may continue.\n- Hardware/safety uncertainty, non-trackable manual apparatus uncertainty,\n  code-safety uncertainty, manifest-limit uncertainty, missing local lab opt-in,\n  or execute-gate failure blocks the affected action.\n- Before materializing a new bridge-touching experiment, prefer an\n  agent-authored experiment intent and parse the verifier JSON verdict. A zero\n  process return code is not enough if the JSON verdict is blocked.\n- Preserve the MATLAB bridge safety model. Do not widen hardware limits,\n  manifest limits, execute gates, or instrument-driver behavior from an NV\n  project wake.\n- Before ending any cron-triggered project-execution wake, write the required\n  JSON completion marker at the exact path from the wake prompt.\n\n## Working Defaults\n\n- Treat prior conclusions as hypotheses, not facts; re-check primary evidence\n  before building further decisions on them.\n- `next_action` is a state pointer, not the full research plan. Python owns\n  durable state, queue safety, audit logs, wake pacing, and hard safety gates.\n  The agent owns research judgment, chunk planning, evidence synthesis,\n  literature/prior-result comparison, pulse-sequence protocol inspection, and\n  experiment design.\n- Use a same-wake runnable work loop. Continue safe grounded project work until\n  bridge state, hard gates, real external blockers, exhausted runnable work, or\n  the required handoff stops the wake.\n- From current experiment data, calculation/analysis results, and literature\n  findings, form scientific hypotheses and then perform or plan experiments,\n  calculations/analysis, and literature review to test them.\n- For signals observed in experiment results, evaluate whether they plausibly\n  arise from a physical phenomenon or from apparatus artifacts, analysis\n  artifacts, or noise.\n- The 23-C quick starter PDF is available to OpenClaw agents at\n  `<OPENCLAW_WORKSPACE>/docs/Quick_Starter_Guide.pdf`.\n- Current 23-C setup context: the Tektronix AWG5014B has been replaced by two\n  Siglent SDG6032X units; experiments use the `ms = +1` transition; the DC\n  magnetic field corresponds to resonance near 3.875 GHz.\n- Current setup contrast reference: photoluminescence contrast between\n  `m_S = 0` and `m_S = +1` is about 22%; use measurement-specific expected\n  contrast when deciding signal presence.\n- When judging a candidate signal, compare the observed effect size with the\n  measurement-specific expected contrast; features far below the expected\n  contrast need stronger supporting evidence before being promoted.\n- Also compare the observed effect size with its noise/uncertainty; low-SNR\n  features need stronger supporting evidence before being promoted.\n- Readout roles are sequence-dependent; inspect the actual XML before\n  interpreting reference/signal channels. Signal contrast can be evaluated from\n  the signal readout alone, relative to its own off-resonant or fitted baseline;\n  reference normalization is not required to obtain signal contrast. Use\n  reference-based normalization mainly for drift correction and plotting.\n  Normalization amplifies noise and denominator artifacts. When using\n  normalization, evaluate and record both required views: point-wise\n  normalization and normalization against a fitted line or curve to the\n  reference readout. Compare both with raw readouts to capture slow\n  reference/baseline variation from drift without adding more noise.\n- Do not use point-wise normalization values as the signal-presence criterion.\n  Do not treat normalization-only features as candidate physical signals.\n- Keep candidate signal presence, physical interpretation, and derived\n  parameter claims separate.\n- Calibration/scout are usually fine at `2e5-3e5` total shots. Use at least\n  `2e5` total shots to secure minimum SNR. Cleaner\n  quantitative data can require more than `2e5-3e5` total shots, and\n  publication-quality data generally requires at least `1e6` total shots,\n  because this setup has error sources beyond shot noise, including drift and\n  laser-power fluctuations.\n- The experiment code has also been substantially revised for the two-Siglent\n  route; do not assume old Tektronix AWG5014B code paths or timing behavior are\n  protocol-equivalent to the current setup without inspecting the active code\n  and sequence XML/manifest.\n- For this setup, use the working approximation that Rabi frequency is about\n  10 MHz at `mod_depth = 1` and scales approximately linearly with `mod_depth`.\n- External blocking is only for cases where progress requires a human, robot, or\n  other physical-world action, or where hardware/safety/queue/code uncertainty\n  makes an action unsafe. Scientific uncertainty should be handled by the agent.\n- After meaningful evidence review, terminal results, model comparison, or\n  bridge-free synthesis, update Current Findings with what is supported, useful\n  for the next decision, downgraded, unresolved, and what evidence would change\n  the finding.\n- Always establish the expected signal from the relevant physical model before\n  planning or interpreting measurements; always perform a simulation or explicit\n  model calculation. When experiment results disagree with the current model,\n  consider revising the model or explicitly record why it is being kept.\n- Always assess whether the expected signal from the relevant physical model\n  should be distinguishable from noise/uncertainty.\n- First decide whether a signal is present from raw/readout-aware evidence; fit\n  only after signal presence is supported, using an appropriate physical or\n  empirical function for that measurement type. Estimate downstream calibrated\n  parameters with an appropriate fit/model. Do not silently use a simple grid\n  maximum, minimum, argmax, or argmin when a valid fit/model-derived estimate is\n  possible. If using an extremum fallback, record why and propagate its\n  uncertainty.\n- Stored averages are often primarily a tracking cadence, not a strong\n  independent-repeatability test; do not overweight average-to-average agreement\n  unless repetitions per average are large enough for that comparison.\n- Recent-average drift under snake scan order is advisory provenance. Do not\n  stop, wake, or block solely for drift flags. Stop only for hard anomalies such\n  as tracking loss, count collapse, hardware/safety uncertainty, explicit STOP,\n  or monitor errors that make continuing unsafe.\n- On drift, count collapse, TrackCenter failure, imaging-frame shift, or\n  resonance shift, check TSP01 logs and record temp/RH deltas as provenance.\n- For snake-ordered scans with stored averages, use an even number of averages\n  by default so forward and reverse acquisition directions are balanced. If an\n  odd average count is intentionally used, record the explicit exception reason.\n- Use recent drift-score evidence, including usable measurement-derived drift\n  scores from the last 1 hour when available, and the MATLAB/OpenClaw advisory\n  when choosing repetitions, averages, and scan points. Cite the last-hour drift\n  evidence in the plan when it affects the choice. Good drift can justify a\n  longer per-average window only within the active advisory cap. If the advisory\n  estimated per-average/tracking window exceeds the cap, revise before execute:\n  reduce repetitions per average and/or scan points first, raise averages only\n  when doing so preserves useful total shots without violating the cap, and\n  reduce total shots when the task is a screening/triage measurement that does\n  not require precision. Drift conditions continuously change; do not blindly\n  reuse averages/repetitions from past data without reassessing current drift\n  evidence and advisory caps.\n- Consider drift before relying on saved Imaging positions. If the sample or\n  focus may have moved enough that the saved image no longer points to the\n  current target locations, repeat Imaging or run an expanded re-image before\n  using those positions.\n- If TrackCenter fails repeatedly from saved or image-derived seeds, suspect\n  that drift has shifted the Imaging frame relative to the current target\n  locations. Re-image before treating the candidate as absent or non-trackable.\n- Quantitative follow-up guidance applies only after prerequisite\n  signal/resonance evidence is established. Do not use it to rescue failed\n  signal-presence.\n- For substantive scientific decisions and experiment-result interpretation,\n  compare current evidence with relevant literature and this lab's past data\n  before finalizing the next scientific decision or interpretation. Use a\n  targeted web literature search when needed to keep the\n  comparison current and well sourced. Prefer primary sources and record the\n  search queries, sources, and decision-relevant takeaway used.\n- For pulse-sequence-dependent plans or scientific statements, inspect the\n  actual sequence XML/manifest, active instruction path, timing definitions,\n  typed/boolean variables, comments/disabled blocks, saved metadata, and\n  readout roles before relying on shortcut names or stating protocol parity.\n- Use targeted evidence access. Start from compact state and latest pointers;\n  read large logs by tail or id/keyword search.\n- Durable project notes, advice records, backlog text, completion markers, and\n  other machine-consumed records should be plain English and preferably ASCII.\n  User-facing chat and notification_service reports may be Japanese.\n\n## Memory Index\n\nUse this router for `NV_RESEARCH_KNOWLEDGE.md`:\n\n- `Shared Literature`: web literature search, papers, DOI/arXiv/publisher\n  pages, local paper library, prior-result comparison, Hamiltonian/model\n  interpretation, coupling extraction, old hardware assumptions.\n- `Experiment Defaults`: sequence defaults, strong-pi pulsed ODMR, resonance\n  validity, Rabi/weak-pi, CPMG/Hahn/XY8/DDRF, XML/protocol\n  inspection, weak signal follow-up.\n- `Drift, Tracking, And Environment`: Imaging, TrackCenter, usual NV/NV23\n  identity, nearby-NV recovery, position freshness, TSP01/environment drift,\n  count/tracking interpretation.\n- `Shot Budget And Data Quality`: shot credit, SEM scaling, stored averages,\n  visual review, fit validity, snake scan, recent-average drift.\n- `OpenClaw Project Operation`: route policy, same-wake work, running-execute\n  bridge-free work, project layout, advice inbox, verifier verdicts, WSL\n  canonical state, Imaging/TrackCenter helpers, queue staging, completion\n  markers, code auto-resume, notification_service reports/media.\n- `Research Practice And Closeout`: literature/prior-result comparison,\n  non-experiment findings that affect design, LaTeX closeout reports, manual\n  experiment evidence.\n\n## Wake Digest\n\n- `HARD`: Human STOP/pause/cancel/must-first instructions and bridge/hardware/\n  code/manifest/execute failures override autonomy.\n- `HARD`: Parse verifier JSON before enqueue; return code alone is insufficient.\n- `HARD`: Every cron-triggered wake must write the completion marker.\n- `HARD`: Before planning or interpreting any measurement, establish the\n  expected signal from the relevant physical model and always perform a\n  simulation or explicit quantitative model calculation. Qualitative\n  expected-signal prose is not a model calculation. If this is missing, do not\n  enqueue the measurement or promote the interpretation.\n- `HARD`: Design each measurement from a simulation or explicit quantitative\n  model so the target effect should be distinguishable from noise/uncertainty.\n  Before enqueue, record the expected effect size/scale, the chosen scan range,\n  spacing, repetitions/averages, and why those settings should make the effect\n  visible. If the target effect is not expected to be resolvable, redesign the\n  measurement before enqueue.\n- `DEFAULT`: Do not put automatic fit requests such as `analysis.fit_kind` into\n  ordinary bridge jobs. Use terminal savedexperiment raw export plus plots\n  first.\n- `DEFAULT`: For substantive scientific decisions and experiment-result\n  interpretation, compare current evidence with relevant literature and this\n  lab's past data before finalizing the next scientific decision or\n  interpretation. Web-search the literature as needed to make that comparison\n  current and well sourced.\n- `DEFAULT`: Inspect actual sequence XML/manifest content before protocol-based\n  plans or scientific statements.\n- `SOFT`: Use SEM/SEM-scaling only when planning or reviewing long acquisitions\n  intended to improve statistics by accumulating more shots.\n- `HARD`: Under snake scan order, use even average counts by default and\n  record any odd-count exception. Tune repetitions, averages, and scan points\n  from recent drift scores, including last-hour measurement-derived drift scores\n  when available, plus advisory drift risk. Good drift can justify a longer\n  per-average window only within the active advisory cap; if the advisory\n  exceeds that cap, revise before execute by reducing repetitions per average\n  and/or scan points before considering a capped, shot-preserving average split.\n  Drift conditions continuously change; do not blindly reuse averages/\n  repetitions from past data without reassessing current drift evidence and\n  advisory caps.\n- `HARD`: Consider drift before relying on saved Imaging positions. If the\n  sample or focus may have moved enough that the saved image no longer points to\n  the current target locations, repeat Imaging or run an expanded re-image\n  before using those positions.\n- `HARD`: If TrackCenter fails repeatedly from saved or image-derived seeds,\n  suspect Imaging-frame drift and re-image before treating the candidate as\n  absent or non-trackable.\n- `HARD`: Do not infer or transpose SavedImages axes from array shape. Python\n  image analysis must use an explicit `ImageData_YXZ`/`axis_order` contract\n  before candidate coordinates are used for TrackCenter.\n- `PROVENANCE`: Usual-NV/NV23 labeled imaging/tracking data informs identit",
+    "detailed_knowledge_exists": true,
+    "detailed_knowledge_updated_epoch": 1778785464.3217745,
+    "detailed_knowledge_size_bytes": 30021
+  },
+  "budgets": {},
+  "stop_conditions": [],
+  "inbox_auto_activate": {
+    "attempted": false,
+    "resumed": false,
+    "activated": false,
+    "reason": "project_already_active",
+    "project_lifecycle": "active"
+  },
+  "inbox_auto_resume": {
+    "attempted": false,
+    "resumed": false,
+    "activated": false,
+    "reason": "project_already_active",
+    "project_lifecycle": "active"
+  },
+  "bridge_activity": {
+    "bridge_root": "<NV_BRIDGE_ROOT>",
+    "running": true,
+    "running_count": 1,
+    "running_job_ids": [
+      "nv23_ramsey_20260514_230820_auto_ramsey"
+    ],
+    "running_jobs": [
+      {
+        "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+        "state": "running",
+        "path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey",
+        "job_path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey/job.json",
+        "status_path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey/status.json",
+        "control_path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey/control.json",
+        "result_path": "",
+        "recipe": "xml_generic_v1",
+        "status": "running",
+        "mode": "execute",
+        "started_at": "2026-05-14T23:08:32",
+        "finished_at": "",
+        "updated_at": "2026-05-15T01:19:59",
+        "mtime_epoch": 1778822399.6542134,
+        "error_code": "",
+        "error_message": "",
+        "stop_requested": false,
+        "stop_applied": false,
+        "stop_apply_error": "",
+        "monitor_last_error": "",
+        "safety_aborted": false,
+        "anomalous": false
+      }
+    ],
+    "queued_count": 0,
+    "queued_job_ids": [],
+    "previous_running_job_ids": [
+      "nv23_ramsey_20260514_230820_auto_ramsey"
+    ],
+    "ended_job_ids": [],
+    "terminal_jobs": [],
+    "terminal_jobs_requiring_immediate_wake": [],
+    "terminal_transition": false,
+    "terminal_transition_requires_immediate_wake": false,
+    "anomalous_running": false,
+    "anomalous_running_jobs": [],
+    "runtime_monitor": {
+      "enabled": true,
+      "ok": true,
+      "checked_at": "2026-05-15T05:20:05.438344Z",
+      "queue_root": "<NV_BRIDGE_ROOT>",
+      "state_root": "<OPENCLAW_WORKSPACE>/.openclaw/experiment_monitor",
+      "jobs_checked": 1,
+      "jobs": [
+        {
+          "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+          "queue_state": "running",
+          "submission_path": "single_item_measurement_plan",
+          "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-231101.mat",
+          "average_count": 9,
+          "latest_average_index": 9,
+          "anomaly": {
+            "detected": false,
+            "error_code": "",
+            "retry_recommended": false
+          },
+          "advisory": {
+            "detected": false,
+            "code": "",
+            "agent_review_recommended": false,
+            "message": ""
+          },
+          "matlab_command_log": {
+            "available": true,
+            "path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey/matlab_command_window.log",
+            "mtime_age_seconds": 7893.436688423157,
+            "fatal_detected": false,
+            "fatal_line": "",
+            "latest_line": "PB bit 4"
+          },
+          "drift_decision": {
+            "enabled": false,
+            "decision_required": false,
+            "decision_key": "",
+            "reason": "advisory_only",
+            "source": "analyze_savedexperiment_average_drift.m",
+            "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-231101.mat",
+            "analysis_ok": true,
+            "basis": "analyze_savedexperiment_average_drift.common_mode_raw_brightness_flagged",
+            "threshold": 0.15,
+            "required_count": 3,
+            "latest_average_index": null,
+            "num_averages": null,
+            "num_traces": null,
+            "num_points": null,
+            "window_average_indices": [],
+            "worst_score": null,
+            "reference_method": "",
+            "trace_aggregation_method": "",
+            "entries": [],
+            "recommended_agent_decision": ""
+          },
+          "stop_request": {
+            "requested": false,
+            "requested_at": ""
+          },
+          "stop_confirmation": {
+            "confirmed": false,
+            "final_state": "",
+            "overdue": false
+          },
+          "actions": [],
+          "new_actions": [],
+          "error": "",
+          "missing": false
+        }
+      ],
+      "actions": [],
+      "errors": [],
+      "returncode": 0
+    },
+    "runtime_monitor_alert": false,
+    "runtime_monitor_alert_jobs": [],
+    "runtime_monitor_error": false
+  },
+  "codex_runtime_lease": {
+    "enabled": true,
+    "available": true,
+    "ok": true,
+    "action": "status",
+    "runtime_root": "<OPENCLAW_WORKSPACE>/.openclaw/project_cron",
+    "lease_path": "<OPENCLAW_WORKSPACE>/.openclaw/project_cron/supervisor_lease.json",
+    "active": false,
+    "remaining_seconds": 0,
+    "pid_alive": null,
+    "stale_reason": "",
+    "lease": {}
+  },
+  "bridge_tick_policy": {
+    "reason": "bridge_running_parallel_project_work_discovery_interval",
+    "effective_min_tick_interval_seconds": 1800,
+    "force_tick": false,
+    "parallel_project_work_pending": false,
+    "parallel_project_work_item_ids": []
+  }
+}

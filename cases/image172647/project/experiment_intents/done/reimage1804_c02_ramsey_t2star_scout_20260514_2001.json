@@ -1,0 +1,111 @@
+{
+  "agent_authored": true,
+  "bridge_action": "execute_sequence_job",
+  "comparison_targets": [
+    "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+    "conditional_ramsey_t2star_13c_model_plan_reimage1804_c02_20260514_1948"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw readout export and plot",
+    "readout-aware Ramsey signal review",
+    "T2star fit only if signal visible",
+    "FFT check near det +/- expected 13C Larmor"
+  ],
+  "expected_signal_model": {
+    "B_T_from_podmr_center": 0.03591303290758529,
+    "binomial_floor_fraction": 0.0015811388300841895,
+    "candidate_label": "reimage1804_c02",
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "conservative_amplitude_over_floor": 31.6227766016838,
+    "conservative_ramsey_visible_amplitude_fraction": 0.05,
+    "default_det_5MHz_would_alias": true,
+    "det_hz": 2000000.0,
+    "distinguishability": "A 5% Ramsey oscillation or half of the terminal pODMR contrast should be tens of shot-noise floors at 4x100000 shots/point before drift/systematics; terminal review must still inspect raw data, drift, and residuals.",
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "expected_13C_larmor_hz": 384571.1215875863,
+    "expected_13C_sidebands_hz": [
+      1615428.8784124136,
+      2384571.121587586
+    ],
+    "expected_fft_carrier_hz": 2000000.0,
+    "fft_nyquist_hz": 3125000.0,
+    "fft_resolution_hz": 125000.0,
+    "mw_freq_hz_from_terminal_podmr_fit": 3876461010.4808064,
+    "mw_freq_uncertainty_hz_from_podmr_covariance": 688021.1247002708,
+    "scan_points": 51,
+    "scan_tau_begin_s": 0.0,
+    "scan_tau_end_s": 8e-06,
+    "sequence_family": "electron_ramsey_t2star",
+    "shots_per_point": 400000,
+    "tau_step_s": 1.6e-07,
+    "terminal_half_contrast_over_floor": 44.324708146786136,
+    "terminal_podmr_depth_fraction": 0.14016703436606515,
+    "terminal_podmr_half_contrast_fraction": 0.07008351718303257,
+    "transition": "ms=+1",
+    "zero_field_splitting_hz_assumed": 2870000000.0
+  },
+  "intent_id": "reimage1804_c02_ramsey_t2star_scout_20260514_2001",
+  "kind": "experiment_intent",
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_t2star_scout_20260514_2001_execute_submit_spec.json",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "python_role": "safety_verifier_not_research_planner",
+  "requires_bridge_idle": true,
+  "safety_contract": {
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "must_use_existing_bridge_validation": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "schema_version": 1,
+  "scientific_rationale": "Terminal strong-pi pODMR accepted reimage1804_c02 as the aligned-NV branch. A Ramsey/T2star scout is needed to measure dephasing and Fourier-check for nearby 13C. The model uses the terminal pODMR center, det=2 MHz, and an 8 us / 51 point tau grid so the expected 13C sidebands are below Nyquist.",
+  "sequence_manifest_id": "auto__ramsey",
+  "sequence_manifest_status": "validated",
+  "status": "superseded",
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "verifier/advisory/execute blocks or fails",
+    "per-average tracking window exceeds current advisory cap and cannot be revised safely",
+    "tracking/count gate fails before data; treat as freshness evidence",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with saved data and healthy counts",
+    "raw/readout-aware review shows a Ramsey oscillation/decay suitable for T2star fitting or a well-supported non-observation",
+    "FFT review can support or rule out obvious 13C sidebands without relying on isolated low-SNR peaks"
+  ],
+  "summary": "Bounded Ramsey/T2star scout for accepted aligned candidate reimage1804_c02.",
+  "touches_bridge_queue": true,
+  "tracked_position_um": [
+    117.42784583301543,
+    117.38460134788026,
+    115.46922663207951
+  ],
+  "created_at": "2026-05-14T20:03:41",
+  "safety_verification": {
+    "checked_at": "2026-05-14T20:03:41",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728"
+  },
+  "updated_at": "2026-05-14T20:03:41",
+  "completed_at": "2026-05-14T20:06:42",
+  "result": {
+    "status": "superseded",
+    "reason": "MATLAB pre-enqueue advisory estimated 742.3475 s per-average tracking window, above the 600 s daytime cap; revised to 43 tau points, det=1.5 MHz, 8 averages x 50000 reps before any execute.",
+    "superseded_by": "reimage1804_c02_ramsey_t2star_scout_rev1_20260514_2006"
+  }
+}

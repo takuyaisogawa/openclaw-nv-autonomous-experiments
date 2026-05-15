@@ -5,6 +5,7 @@ Sanitized sequence manifests used by the public case studies.
 Included in this pass:
 
 - `staging/pulsed_odmr_rabimodulated_v1.json`
+- `validated/auto__cpmg.json`
 - `validated/auto__ramsey.json`
 
 Only the case-relevant manifests are included here. The broader manifest dump is

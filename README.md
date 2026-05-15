@@ -25,24 +25,27 @@ For a quick review, read these in order:
 
 1. [System overview](docs/system_overview.md)
 2. [Case walkthrough](docs/case_walkthrough.md)
-3. [image145844 case README](cases/image145844/README.md)
-4. [image231924 case README](cases/image231924/README.md)
-5. [Code inventory](docs/code_inventory.md)
-6. [Safety boundary](docs/safety_boundary.md)
+3. [image172647 case README](cases/image172647/README.md)
+4. [image145844 case README](cases/image145844/README.md)
+5. [image231924 case README](cases/image231924/README.md)
+6. [Code inventory](docs/code_inventory.md)
+7. [Safety boundary](docs/safety_boundary.md)
 
 ## What This Repository Shows
 
 - A safety-bounded LLM research agent operating real NV-center experiments.
 - Deterministic MATLAB bridge records for experiment validation and execution.
 - Human-readable project state, evidence logs, and closeout reports.
-- pODMR, Ramsey, drift, and model-comparison analyses from completed runs.
-- Two completed case studies: `image145844` and `image231924`.
+- pODMR, Ramsey, CPMG, drift, and model-comparison analyses from completed runs.
+- Three completed case studies: `image145844`, `image172647`, and
+  `image231924`.
 
 ## Case Studies
 
 | Case | Summary | Status |
 | --- | --- | --- |
 | [image145844](cases/image145844/README.md) | Aligned NV selection, pODMR screening, repeated Ramsey diagnostics, shifted-sideband 13C candidate reanalysis | Completed |
+| [image172647](cases/image172647/README.md) | Fresh re-image recovery, pODMR candidate rejection/acceptance, multi-detuning Ramsey, CPMG N=8 nearby-13C-like corroboration | Completed |
 | [image231924](cases/image231924/README.md) | Aligned NV selection, pODMR center refinement, corrected-center Ramsey, T2star closeout | Completed |
 
 ## Repository Layout
@@ -50,6 +53,8 @@ For a quick review, read these in order:
 ```text
 cases/
   image145844/
+    project/
+  image172647/
     project/
   image231924/
     project/

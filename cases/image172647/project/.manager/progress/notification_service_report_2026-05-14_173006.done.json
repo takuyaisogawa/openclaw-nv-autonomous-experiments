@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T17:30:00-04:00",
+  "status": "completed",
+  "summary": "Japanese notification_service progress report written; direct read found c02 pODMR still in running/ with stale status, c01 rejected by terminal pODMR, no bridge mutation performed.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_173006.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_terminal_4avg_20260514_1859.png",
+      "caption": "reimage1804_c01 terminal strong-pi pODMR review plot (candidate rejected)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

@@ -1,0 +1,124 @@
+{
+  "agent_authored": true,
+  "bridge_action": "execute_sequence_job",
+  "comparison_targets": [
+    "weak_pi_podmr_terminal_reimage1804_c02_4avg_review_20260514_2251",
+    "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+    "conditional_ramsey_t2star_13c_model_plan_reimage1804_c02_20260514_1948"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw savedexperiment export and raw/readout-aware plot",
+    "scan-order-aware drift diagnostic",
+    "Ramsey signal-presence review from raw signal and reference-aware views",
+    "T2star fit only after visible Ramsey signal is supported",
+    "FFT/model comparison at det, det +/- expected 13C Larmor, direct 13C Larmor, and the old ~1.9 MHz ambiguity"
+  ],
+  "expected_signal_model": {
+    "B_T_from_weak_pi_center": 0.03591447184933961,
+    "averages": 16,
+    "binomial_floor_fraction": 0.001118033988749895,
+    "candidate_label": "reimage1804_c02",
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "conservative_amplitude_over_floor": 44.721359549995796,
+    "conservative_ramsey_visible_amplitude_fraction": 0.05,
+    "det_hz": 1000000.0,
+    "det_shift_test_rationale": "The terminal weak-pi center is only about +40 kHz from the prior strong-pi center, so the previous ~1.9 MHz Ramsey component is not explained by a +0.4 MHz electron-resonance mis-centering. Changing the programmed Ramsey detuning from 1.5 MHz to 1.0 MHz moves true 13C sidebands to about det +/- 0.3846 MHz (0.615/1.385 MHz), separating them from the prior 1.9 MHz ambiguity and testing whether spectral power follows the programmed carrier/sidebands.",
+    "direct_13C_larmor_check_hz": 384586.53035146825,
+    "distinguishability": "At 800k shots per point, the binomial floor is about 0.112%; a conservative 5% Ramsey oscillation is ~44.7x that floor, and a 1% sideband-scale feature is ~8.9x before drift/systematics. The 10 us span gives 100 kHz FFT bins, separating the carrier and 13C sidebands by about 3.85 bins.",
+    "drift_basis": "Terminal 8-average Ramsey and terminal 4-average weak-pi pODMR both had scan-order-aware snake drift diagnostics with no flagged averages; the planned 16 even averages preserve forward/reverse balance, with 50k reps per average to keep the per-average tracking window inside the nighttime advisory cap if MATLAB advisory agrees.",
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "expected_13C_larmor_hz": 384586.53035146825,
+    "expected_13C_sidebands_hz": [
+      615413.4696485318,
+      1384586.5303514684
+    ],
+    "expected_fft_carrier_hz": 1000000.0,
+    "fft_nyquist_hz": 2500000.0,
+    "fft_resolution_hz": 99999.99999999999,
+    "high_sideband_margin_to_nyquist_hz": 1115413.4696485316,
+    "mw_freq_hz_from_terminal_weak_pi_podmr_fit": 3876501336.753884,
+    "mw_freq_uncertainty_hz_from_terminal_weak_pi_fit": 46992.85025737643,
+    "one_percent_feature_over_floor": 8.944271909999157,
+    "previous_ramsey_empirical_frequency_hz": 1923000.0,
+    "previous_ramsey_programmed_det_hz": 1500000.0,
+    "repetitions_per_average": 50000,
+    "scan_points": 51,
+    "scan_tau_begin_s": 0.0,
+    "scan_tau_end_s": 1e-05,
+    "sequence_family": "electron_ramsey_t2star_det_shift_discriminator",
+    "shots_per_point": 800000,
+    "sideband_separation_bins": 3.845865303514683,
+    "tau_step_s": 2.0000000000000002e-07,
+    "terminal_weak_pi_podmr_depth_fraction": 0.11379944773925088,
+    "terminal_weak_pi_podmr_fwhm_mhz": 0.937466712539232,
+    "transition": "ms=+1",
+    "zero_field_splitting_hz_assumed": 2870000000.0
+  },
+  "intent_id": "reimage1804_c02_ramsey_det1_claim_grade_20260514_2258",
+  "kind": "experiment_intent",
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_det1_claim_grade_20260514_2258_execute_submit_spec.json",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "python_role": "safety_verifier_not_research_planner",
+  "requires_bridge_idle": true,
+  "safety_contract": {
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "must_use_existing_bridge_validation": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "schema_version": 1,
+  "scientific_rationale": "Terminal weak-pi pODMR refined the c02 resonance to 3.876501337 GHz with a clear signal-only dip. The previous det=1.5 MHz Ramsey showed weak power near 1.9 MHz while the nominal carrier was weak; because the refined pODMR center is not shifted by 0.4 MHz, the next useful test is a det-shift Ramsey at det=1.0 MHz. A real 13C modulation should move the expected sidebands to ~0.615 and ~1.385 MHz, while the refined resonance and higher 800k shots/point improve the T2* and non/observation conclusion.",
+  "sequence_manifest_id": "auto__ramsey",
+  "sequence_manifest_status": "validated",
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "verifier/advisory/execute blocks or fails",
+    "MATLAB advisory per-average tracking window exceeds the active nighttime cap",
+    "tracking/count gate fails before data; treat as freshness/route evidence before retrying",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with saved data and healthy counts",
+    "Det=1.0 MHz carrier/sideband model can be compared against the previous det=1.5 MHz Ramsey",
+    "T2star is either fit-supported with caveats or ruled non-claim-grade with explicit evidence",
+    "13C has a supported present/absent/ambiguous conclusion from det-shift spectral behavior rather than an isolated low-SNR peak"
+  ],
+  "summary": "Claim-grade det-shift Ramsey/T2star/13C follow-up for accepted aligned candidate reimage1804_c02 after terminal weak-pi pODMR refined the electron resonance.",
+  "touches_bridge_queue": true,
+  "tracked_position_um": [
+    117.46898278273697,
+    117.50254910098927,
+    116.03879377431909
+  ],
+  "status": "completed",
+  "created_at": "2026-05-14T23:03:53",
+  "safety_verification": {
+    "checked_at": "2026-05-14T23:04:10",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728"
+  },
+  "updated_at": "2026-05-14T23:04:10",
+  "completed_at": "2026-05-15T03:03:12",
+  "result": {
+    "status": "completed",
+    "bridge_job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "terminal_result_path": "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_230820_auto_ramsey/result.json",
+    "analysis_evidence_id": "ramsey_det1_terminal_reimage1804_c02_16avg_review_20260515_0245",
+    "summary": "Bridge execute completed successfully and terminal 16-average readout-aware review was recorded. The run supports only short/few-us T2star order and a weak/incomplete det+13C-compatible candidate; 13C is not yet well-supported."
+  }
+}

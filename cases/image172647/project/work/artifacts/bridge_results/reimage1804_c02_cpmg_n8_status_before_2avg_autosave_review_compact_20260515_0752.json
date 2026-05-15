@@ -1,0 +1,35 @@
+{
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "state": "running",
+  "phase": "run_experiment_scan_point",
+  "updated_at": "2026-05-15T07:53:37",
+  "message": "(2/12) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "monitor": {
+    "active": true,
+    "last_tick_at": "2026-05-15T07:53:37",
+    "tick_count": 195,
+    "last_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "stop_applied": false
+  },
+  "runtime": {
+    "average_index": 3,
+    "averages_total": 2,
+    "scan_points_total": 37,
+    "repetitions": 50000,
+    "sequence_name": "CPMG.xml",
+    "date_time": "2026-05-15-072537",
+    "experiment_status_text": "(2/12) averages completed for 1 scans",
+    "final_counts_text": "Final = 43.000 kcps",
+    "experiment_data_present": true,
+    "experiment_data_size": [
+      1,
+      1
+    ],
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537",
+    "autosave_target_exists": false
+  }
+}

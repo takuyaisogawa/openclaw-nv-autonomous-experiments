@@ -1,0 +1,119 @@
+{
+  "job_id_prefix": "nv23_pulsed_odmr_rabimodulated_v1",
+  "job_id_suffix": "reimage1804_c02_weak_pi_refine",
+  "mode": "execute",
+  "recipe": "xml_generic_v1",
+  "sample_id": "NV23",
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "requested_by": "nv-researcher",
+  "submission_path": "single_item_measurement_plan",
+  "measurement_plan_verified": true,
+  "scan": {
+    "vary_prop": [
+      "mw_freq"
+    ],
+    "begin": [
+      3873461010.4808064
+    ],
+    "end": [
+      3879461010.4808064
+    ],
+    "points": [
+      31
+    ]
+  },
+  "float_vars": {
+    "mw_freq": 3876461010.4808064,
+    "length_rabi_pulse": 1e-06,
+    "mod_depth": 0.05,
+    "mw_ampl": -5,
+    "ampIQ": 5,
+    "freqIQ": 50000000.0,
+    "switch_delay": 1e-07,
+    "full_expt": 0,
+    "detuning": 0
+  },
+  "acquisition": {
+    "average_continuously": false,
+    "averages": 4,
+    "repetitions": 50000
+  },
+  "nv_position": [
+    117.42784583301543,
+    117.38460134788026,
+    115.46922663207951
+  ],
+  "allow_seed_fallback": true,
+  "metadata": {
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "target_label": "reimage1804_c02",
+    "target_role": "weak_pi_podmr_resonance_refinement_before_repeat_ramsey_13c",
+    "auto_align_nv": true,
+    "require_landmark_match": false,
+    "allow_seed_fallback": true,
+    "minimum_final_kcps": 8,
+    "local_fine_search_before_tracking": false,
+    "search_scan_on_tracking_failure": false,
+    "allow_search_scan": false,
+    "queue_execute_opt_in": true,
+    "requested_by": "nv-researcher",
+    "sequence_manifest_status": "staging",
+    "sequence_manifest_scope": "staging",
+    "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+    "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+    "sequence_bool_vars": {
+      "do_adiabatic_inversion": true
+    },
+    "expected_signal_model": {
+      "sequence_family": "weak_pi_pulsed_odmr_rabimodulated",
+      "transition": "ms=+1 near the accepted c02 resonance",
+      "candidate_label": "reimage1804_c02",
+      "scan_center_hz": 3876461010.4808064,
+      "scan_begin_hz": 3873461010.4808064,
+      "scan_end_hz": 3879461010.4808064,
+      "scan_points": 31,
+      "scan_spacing_hz": 200000.0,
+      "strong_pi_center_uncertainty_hz": 688021.1247002708,
+      "ramsey_empirical_carrier_hz": 1923000.0,
+      "ramsey_programmed_det_hz": 1500000.0,
+      "ramsey_inferred_center_shift_hz": 423000.0,
+      "why_this_window": "The +/-3 MHz window covers the broad strong-pi pODMR center uncertainty and the ~+0.4 MHz Ramsey carrier shift that could masquerade as the 13C high sideband.",
+      "length_rabi_pulse_s": 1e-06,
+      "mod_depth": 0.05,
+      "operating_point_basis": "NV_RESEARCH_KNOWLEDGE: current calibrated weak-pi pulsed-ODMR operating point is length_rabi_pulse=1 us with mod_depth=0.05.",
+      "conservative_expected_signal_dip_fraction": 0.05,
+      "expected_setup_contrast_fraction_reference": 0.22,
+      "averages": 4,
+      "repetitions_per_average": 50000,
+      "total_shots": 200000,
+      "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+      "expected_dip_to_binomial_floor_ratio": 22.360679774997898,
+      "distinguishability": "A conservative 5 percent weak-pi dip is about 22.4x the 200k-shot binomial floor; 200 kHz spacing gives several points across a ~0.8-1 MHz weak-pi feature."
+    },
+    "sequence_xml_review": {
+      "xml_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+      "manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+      "manifest_status": "staging",
+      "full_expt": 0,
+      "readout_roles": "first detection mS=0 reference; final detection after length_rabi_pulse is signal; intermediate mS=+1 reference block disabled because full_expt=0",
+      "active_pulse": "rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay) before signal detection"
+    },
+    "analysis_plan": {
+      "raw_export_and_plot_required": true,
+      "no_automatic_fit_in_bridge_job": true,
+      "review_raw_readouts_and_reference_normalization": true,
+      "fit_center_after_raw_review": true,
+      "use_refined_center_to_design_repeat_ramsey": true,
+      "do_not_claim_13c_from_this_podmr": true
+    },
+    "comparison_targets": [
+      "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+      "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+      "reimage1804_c02_ramsey_terminal_review_and_weak_pi_redesign_20260514_2205"
+    ],
+    "route_policy": "Staging pulsed_odmr_rabimodulated_v1 route succeeded earlier this wake with strong-pi settings. Execute only after current queue idle, intent verifier passes, and MATLAB pre-enqueue advisory has no blockers.",
+    "intent": "Weak-pi pulsed ODMR resonance refinement for accepted aligned candidate reimage1804_c02 before any claim-grade repeat Ramsey/13C test.",
+    "verified_intent_id": "reimage1804_c02_weak_pi_podmr_refine_20260514_2206"
+  },
+  "intent": "Weak-pi pulsed ODMR resonance refinement for accepted aligned candidate reimage1804_c02 before any claim-grade repeat Ramsey/13C test."
+}

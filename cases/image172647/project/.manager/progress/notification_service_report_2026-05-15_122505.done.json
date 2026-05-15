@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T12:26:00-04:00",
+  "status": "completed",
+  "summary": "notification_service progress report written: project objective satisfied; bridge idle; reimage1804_c02 accepted aligned NV; T2star short/few-us order; Ramsey plus terminal CPMG target-region evidence supports likely weak/moderate nearby-13C-like coupling without precise coupling extraction; no pending explicit bridge-free task; optional refinement only if requested.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-15_122505.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png",
+      "caption": "CPMG N=8 terminal target-region check: tau=0.6736 us dip supporting weak nearby-13C-like signature",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

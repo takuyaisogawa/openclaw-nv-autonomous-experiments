@@ -20,7 +20,7 @@ Real completed case artifacts are included.
   batch-runner, bridge-watch, and direct-enqueue layers, with execution
   disabled.
 - A public summary of the project-manager prompt context.
-- Sanitized copies of two completed NV-center autonomous-agent projects.
+- Sanitized copies of three completed NV-center autonomous-agent projects.
 - MATLAB/Python analysis helpers, raw data copies, figures, and reports
   needed to inspect the included cases.
 

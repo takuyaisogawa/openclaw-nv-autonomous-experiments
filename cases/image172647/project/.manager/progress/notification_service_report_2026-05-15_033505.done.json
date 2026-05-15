@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T03:46:13.323737-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report for running det=1.25 MHz Ramsey follow-up; included latest bridge-free 2-average autosave caveat and one plot attachment candidate.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-15_033505.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_even_subset_20260515_0338.png",
+      "caption": "det=1.25 MHz Ramsey 2-average autosave（暫定・claim用ではありません）",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

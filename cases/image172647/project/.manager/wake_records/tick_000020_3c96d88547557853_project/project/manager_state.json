@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-14T21:20:10",
+  "tick_count": 20,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 60,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "old_c01_recovery_recheck_stop_20260514_2043",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/recovery/old_c01_recovery_recheck_stop_20260514_2043.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/old_c01_recovery_recheck_stop_20260514_2043.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Rechecked stale image172647_c01 pODMR recovery hook/batch. Wrote/confirmed attempt_02 action=stop, verified old single-submit stop_requested=true and no live old-batch process, and confirmed bridge queued/staging empty with current c02 Ramsey/T2star job running healthy. No bridge queue mutation performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T20:43:33"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "old_c01_recovery_attempt02_stop_confirm_20260514_2050",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/recovery/old_c01_recovery_attempt02_stop_confirm_20260514_2050.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/old_c01_recovery_attempt02_stop_confirm_20260514_2050.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/recovery/nv23_pulsed_odmr_rabimodulated_v1_20260514_175129/pulsed_odmr_rabimodulated_v1/attempt_02.plan.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Confirmed stale image172647_c01 pODMR recovery attempt 02 should stop: wrote action=stop plan, verified old single-submit stop_requested=true/no old live process, and confirmed bridge queued/staging empty with current reimage1804_c02 Ramsey/T2star job running healthy. No bridge queue mutation performed.",
+          "tags": [
+            "recovery",
+            "stale-c01",
+            "stop",
+            "no-bridge-mutation",
+            "ramsey-running"
+          ],
+          "timestamp": "2026-05-14T20:50:56"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_autosave_reimage1804_c02_3avg_provisional_review_20260514_2055",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_raw_3avg_20260514_2055.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_3avg_summary_20260514_2055.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_3avg_20260514_2055.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_3avg_20260514_2055.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw-exported and plotted the 3-average autosave of the still-running reimage1804_c02 Ramsey/T2star scout. The bridge remains running with healthy counts at 3/8 averages, no monitor error, and no stop request. Three-average data show oscillatory structure but are an odd intermediate snake-order subset; target FFT bins are weak/inconsistent (carrier about 0.46%, det-13C about 1.24%, det+13C about 1.71%, direct 13C-Larmor bin about 1.57% in the signal-self-baseline view). No T2star or 13C claim is made; continue waiting for terminal data unless a hard anomaly appears. No bridge queue mutation was performed.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "running_autosave",
+            "provisional",
+            "reimage1804_c02",
+            "3avg"
+          ],
+          "timestamp": "2026-05-14T20:57:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_205710_602666_d0c1287cf8",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_3avg_20260514_2055.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 Ramsey 3-average autosave reviewed provisionally: Three-average autosave from running c02 Ramsey/T2star scout was raw-exported and plotted. Job is still running at 3/8 averages with healthy counts/no monitor error. The snapshot shows structure, but target FFT bins are weak/inconsistent (carrier ~0.46%, det-13C ~1.24%, det+13C ~1.71%, direct 13C-Larmor bin ~1.57% in signal self-baseline), and 3 averages are an odd intermediate snake-order subset. No T2star/13C claim; wait for terminal 8-average data or hard-anomaly evidence. No bridge queue mutation.",
+          "tags": [],
+          "timestamp": "2026-05-14T20:57:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_autosave_reimage1804_c02_3avg_drift_20260514_2059",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_3avg_drift_20260514_2059.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_3avg_summary_20260514_2055.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_autosave_3avg_review_20260514_2055.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Ran scan-order-aware average drift diagnostic on the 3-average running Ramsey autosave. It used Scan.ScanOrderEachAvg with snake mode for 3 averages and found no flagged averages. This is advisory provenance only; the bridge job remains running, and no queue mutation was performed.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "drift",
+            "snake",
+            "running_autosave",
+            "reimage1804_c02",
+            "3avg"
+          ],
+          "timestamp": "2026-05-14T20:59:51"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 5
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "c02 Ramsey 3-average autosave reviewed provisionally",
+    "event": "lab_log_note",
+    "summary": "Three-average autosave from running c02 Ramsey/T2star scout was raw-exported and plotted. Job is still running at 3/8 averages with healthy counts/no monitor error. The snapshot shows structure, but target FFT bins are weak/inconsistent (carrier ~0.46%, det-13C ~1.24%, det+13C ~1.71%, direct 13C-Larmor bin ~1.57% in signal self-baseline), and 3 averages are an odd intermediate snake-order subset. No T2star/13C claim; wait for terminal 8-average data or hard-anomaly evidence. No bridge queue mutation.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "ramsey_autosave_reimage1804_c02_3avg_drift_20260514_2059",
+    "category": "analysis",
+    "summary": "Ran scan-order-aware average drift diagnostic on the 3-average running Ramsey autosave. It used Scan.ScanOrderEachAvg with snake mode for 3 averages and found no flagged averages. This is advisory provenance only; the bridge job remains running, and no queue mutation was performed.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_3avg_drift_20260514_2059.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_3avg_summary_20260514_2055.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_autosave_3avg_review_20260514_2055.md"
+    ],
+    "timestamp": "2026-05-14T20:59:51"
+  },
+  "last_backlog_update": {
+    "item_id": "ramsey_t2star_scout_reimage1804_c02_rev1",
+    "status": "in_progress",
+    "summary": ""
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

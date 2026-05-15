@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "created_at": "2026-05-14T20:19:12.554845-04:00",
+  "kind": "ramsey_t2star_13c_terminal_review_protocol",
+  "target_label": "reimage1804_c02",
+  "bridge_job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+  "status_snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_protocol_20260514_2019.json",
+  "status_snapshot_summary": {
+    "state": "running",
+    "phase": "run_experiment_scan_point",
+    "updated_at": "2026-05-14T20:19:00",
+    "elapsed_seconds": 495,
+    "average_index": 1,
+    "averages_total": 8,
+    "final_counts_text": "Final = 44.608 kcps",
+    "autosave_date_time": "2026-05-14-201247",
+    "autosave_target_exists_reported": false,
+    "experiment_data_present": false,
+    "monitor_active": true,
+    "monitor_last_error": "",
+    "stop_requested": false
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "auto__ramsey",
+    "sequence_file": "SavedSequences/SavedSequences-AWG/ramsey.xml",
+    "scan": {
+      "vary_prop": [
+        "tau"
+      ],
+      "begin": 0,
+      "end": 8e-06,
+      "points": 43
+    },
+    "mw_freq_hz": 3876461010.4808064,
+    "det_hz": 1500000.0,
+    "acquisition": {
+      "average_continuously": false,
+      "averages": 8,
+      "repetitions": 50000
+    },
+    "readout_roles_from_review": "full_experiment=0: readout 1 is mS=0 reference; readout 2 is Ramsey signal after Ramsey pulses; mS=+1 reference branch disabled."
+  },
+  "expected_signal_model": {
+    "B_T_from_podmr_center": 0.03591303290758529,
+    "expected_13C_larmor_hz": 384571.1215875863,
+    "expected_fft_carrier_hz": 1500000.0,
+    "expected_13C_sidebands_hz": [
+      1115428.8784124136,
+      1884571.1215875864
+    ],
+    "fft_resolution_hz": 125000,
+    "fft_nyquist_hz": 2625000.0,
+    "conservative_visible_amplitude_fraction": 0.05,
+    "binomial_floor_fraction": 0.0015811388300841895,
+    "distinguishability": "Revised grid preserves the 8 us span and 125 kHz FFT bins. A 5% Ramsey oscillation is still ~32x the binomial floor before drift/systematics.",
+    "terminal_podmr_depth_fraction": 0.14016703436606515,
+    "podmr_center_uncertainty_hz": 688021.1247002708
+  },
+  "terminal_review_gates": [
+    "Use terminal result only after bridge state is done/completed and result/status/job artifacts are copied into the project tree. If failed before data, treat as route/tracking/count evidence, not T2star/13C evidence.",
+    "Raw-export the savedexperiment MAT file; verify the saved scan is tau 0..8 us, 43 points, det=1.5 MHz, mw_freq=3.876461010 GHz, and 8 averages x 50000 repetitions or record any mismatch.",
+    "Before fitting, plot raw readout1/readout2 for combined and per-average data. Also plot pointwise signal/reference and signal over a fitted reference baseline; do not use pointwise normalization alone as signal-presence evidence.",
+    "Decide Ramsey signal presence from raw/readout-aware evidence first. A visible oscillation near the deliberate detuning carrier, consistent across more than one average and not confined to normalization artifacts/outliers, is required before fitting T2star.",
+    "If signal presence is supported, fit an offset/slow-baseline plus exponentially decaying cosine model over multiple early-time exclusion windows; promote T2star only if fit parameters, residuals, and covariance/window stability are physically reasonable.",
+    "FFT-check the detrended/windowed signal for the carrier near 1.5 MHz and target 13C sideband bins near 1.115 and 1.885 MHz. Treat peaks as candidate evidence only; do not claim nearby 13C from an isolated low-SNR FFT peak or one inconsistent stored average.",
+    "Run scan-order-aware average drift diagnostics. Drift flags are provenance unless they coincide with hard anomalies, but they affect claim strength and repeat/redesign choices.",
+    "If terminal data are safe but non-claim-grade, perform a bridge-free redesign review before repeating: identify whether more averages, a detuning-shift discriminator, weak-pi center refinement, or a different candidate is the scientifically grounded next step."
+  ],
+  "branch_logic": {
+    "terminal_success_visible_ramsey": "Fit T2star cautiously, FFT-check 13C bins, update Final Claims only for conclusions supported by raw/readout-aware plots, fit stability, drift, and repeatability.",
+    "terminal_success_no_visible_ramsey": "Do not fit or claim T2star/13C; review whether resonance center/contrast or sequence route explains absence, then redesign or move candidate branch.",
+    "terminal_success_weak_or_inconsistent": "Record T2star/13C as unresolved; choose a discriminator or improved-acquisition follow-up rather than a blind repeat.",
+    "terminal_failure_before_data": "Preserve bridge artifacts; distinguish route/hardware/code failure from tracking/count freshness; do not interpret as T2star or 13C evidence.",
+    "running_no_autosave_yet": "Bridge-touching work remains blocked by running execute; wait for autosave or terminal result without queue mutation."
+  }
+}

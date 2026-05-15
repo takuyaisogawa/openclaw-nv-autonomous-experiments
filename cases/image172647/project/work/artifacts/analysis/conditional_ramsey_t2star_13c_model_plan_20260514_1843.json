@@ -1,0 +1,115 @@
+{
+  "created_at": "2026-05-14T18:43:41-04:00",
+  "purpose": "Bridge-free conditional plan for Ramsey/T2star and 13C follow-up if reimage1804_c01 strong-pi pODMR gives a clear usable resonance.",
+  "prerequisite": "Do not execute this plan unless terminal pODMR raw/readout-aware review supports a clear usable resonance/alignment. If pODMR fails no-data/count-gate, treat as tracking/freshness evidence; if complete but no resonance, reject this candidate and move to fallback candidate.",
+  "sources": {
+    "project_state": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "nv_research_memory": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "nv_research_knowledge_sections": [
+      "Experiment Defaults",
+      "Shot Budget And Data Quality",
+      "Shared Literature"
+    ],
+    "ramsey_manifest": "<MATLAB_23C_ROOT>/claw/sequence_manifests/validated/auto__ramsey.json",
+    "ramsey_xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/ramsey.xml",
+    "current_podmr_job": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1/job.json"
+  },
+  "field_and_13c_model": {
+    "zero_field_splitting_hz_assumed": 2870000000.0,
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "nominal_ms_plus1_resonance_hz": 3875000000.0,
+    "nominal_B_T_from_resonance": 0.035860900418667054,
+    "nominal_13C_larmor_hz": 384012.86604325427,
+    "podmr_scan_begin_hz": 3825000000.0,
+    "podmr_scan_end_hz": 3925000000.0,
+    "B_range_T_from_scan_edges": [
+      0.034076776019728396,
+      0.03764502481760572
+    ],
+    "carbon13_larmor_range_hz_from_scan_edges": [
+      364907.7483296596,
+      403117.9837568491
+    ],
+    "calculation": "B=(f_res-D)/gamma_e for the ms=+1 transition; f_13C=gamma_13C*B."
+  },
+  "conditional_ramsey_scout_design": {
+    "sequence_manifest_id": "auto__ramsey",
+    "sequence_file": "SavedSequences/SavedSequences-AWG/ramsey.xml",
+    "inspected_manifest_xml": true,
+    "scan": {
+      "vary_prop": [
+        "tau"
+      ],
+      "begin_s": 0.0,
+      "end_s": 8e-06,
+      "points": 51
+    },
+    "float_vars_to_override_after_podmr": {
+      "mw_freq": "<terminal_podmr_center_hz>",
+      "det": 2000000.0,
+      "mod_depth": 1.0,
+      "length_pi_pulse": 5.2e-08,
+      "switch_delay": 1e-07,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "mw_ampl": -5,
+      "ampIQ": 5,
+      "freqIQ": 50000000.0,
+      "full_experiment": 0
+    },
+    "acquisition_starting_point": {
+      "averages": 4,
+      "repetitions_per_average": 100000,
+      "average_continuously": false
+    },
+    "sampling_model": {
+      "tau_step_s": 1.6e-07,
+      "nyquist_hz": 3125000.0,
+      "fft_resolution_hz": 125000.0,
+      "det_hz": 2000000.0,
+      "expected_13C_larmor_hz_nominal": 384012.86604325427,
+      "expected_sidebands_hz_nominal": [
+        1615987.1339567457,
+        2384012.8660432543
+      ],
+      "expected_sidebands_hz_scan_edge_range": [
+        1596882.016243151,
+        1635092.2516703405,
+        2364907.7483296595,
+        2403117.983756849
+      ],
+      "nyquist_margin_hz_nominal_high_sideband": 740987.1339567457,
+      "default_det_5MHz_would_alias_on_this_grid": true
+    },
+    "distinguishability_model": {
+      "setup_full_contrast_reference_fraction": 0.22,
+      "ideal_ramsey_fringe_amplitude_fraction_roughly_half_contrast": 0.11,
+      "conservative_visible_amplitude_fraction": 0.05,
+      "shots_per_point_for_4x100k": 400000,
+      "binomial_shot_noise_floor_fraction": 0.0015811388300841895,
+      "conservative_amplitude_over_floor": 31.6227766016838,
+      "ideal_amplitude_over_floor": 69.57010852370435,
+      "caveat": "Shot-noise floor is optimistic; raw readouts, drift, normalization artifacts, and fit residuals must be reviewed."
+    },
+    "advisory_requirements_before_execute": [
+      "queue idle and no running bridge job",
+      "terminal pODMR resonance center is valid and candidate is not rejected",
+      "parse verifier/advisory JSON verdict, not just return code",
+      "use even averages under snake scan order",
+      "if advisory tracking window exceeds cap, reduce tau points first while keeping Nyquist > det + f_13C; then reduce repetitions/total shots if needed"
+    ],
+    "analysis_required_after_terminal_ramsey": [
+      "raw readout plot and reference-aware normalization views",
+      "decide signal presence before fit",
+      "fit a decaying sinusoid or suitable physical/empirical model for T2star only after signal is visible",
+      "FFT residual/oscillation to check for sidebands near det +/- f_13C; do not claim nearby 13C from an isolated low-SNR FFT peak"
+    ]
+  },
+  "conditional_branching": [
+    "If pODMR has no clear usable resonance: reject reimage1804_c01 and move to reimage1804_c02.",
+    "If pODMR fails before data/count-gate: treat as freshness/tracking evidence; consider retrack or re-image before candidate rejection.",
+    "If pODMR is clear but center is broad/uncertain for Ramsey detuning: consider weak-pi pODMR center refinement before Ramsey.",
+    "If pODMR is clear and center is sufficient: verify/advisory a Ramsey scout based on this plan; execute only after queue idle and gates pass."
+  ]
+}

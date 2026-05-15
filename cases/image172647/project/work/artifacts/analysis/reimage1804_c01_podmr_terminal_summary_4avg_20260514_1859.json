@@ -1,0 +1,62 @@
+{
+  "verdict": "reject_candidate_for_project_alignment_screen",
+  "verdict_basis": "Terminal 4-average strong-pi pODMR completed with data, but raw signal/reference and normalization views do not show a clear usable resonance. Largest raw/fitted-reference depressions are far below the expected ~22% strong-pi contrast and normalization minima are not sufficient to promote a resonance.",
+  "raw_export_ok": true,
+  "bridge_result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1/result.json",
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326.mat",
+  "bridge_status": "completed",
+  "started_at": "2026-05-14T18:21:06",
+  "finished_at": "2026-05-14T18:58:55",
+  "final_counts_kcps": 39.612,
+  "align_nv_final_counts_kcps": 39.053,
+  "date_time": "2026-05-14-182326",
+  "sequence_name": "Rabimodulated.xml",
+  "scan_order_mode": "snake",
+  "each_avg_orientation_used": "avg_readout_point",
+  "vary_prop": [
+    "mw_freq"
+  ],
+  "freq_ghz_begin": 3.825,
+  "freq_ghz_end": 3.925,
+  "points": 31,
+  "averages": 4,
+  "repetitions": 50000,
+  "total_shots_per_point": 200000,
+  "readout_roles_from_xml_review": {
+    "readout_1": "mS=0 reference after polarization",
+    "readout_2": "signal after 52 ns/mod_depth=1 rabi pulse because full_expt=0 skips mS=1 reference"
+  },
+  "expected_strong_pi_dip_fraction": 0.22,
+  "expected_rectangular_pi_sinc_fwhm_mhz": 15.365384615384617,
+  "scan_spacing_mhz": 3.3333333333334103,
+  "signal_mean_kcps": 47.51240694789082,
+  "signal_std_kcps": 0.8574356921374932,
+  "ref_mean_kcps": 48.01985111662531,
+  "ref_std_kcps": 1.1308878782922884,
+  "pointwise_ratio_mean": 0.9898416881691962,
+  "max_signal_line_contrast_fraction": 0.043668122270742314,
+  "max_signal_line_contrast_freq_ghz": 3.8483333333333336,
+  "max_ratio_line_contrast_fraction": 0.08309902899316039,
+  "max_ratio_line_contrast_freq_ghz": 3.8383333333333334,
+  "max_fitnorm_line_contrast_fraction": 0.05060575242509074,
+  "max_fitnorm_line_contrast_freq_ghz": 3.8483333333333336,
+  "raw_signal_residual_std_fraction_of_baseline": 0.017416890781777522,
+  "fitnorm_residual_std_fraction": 0.01734647083112334,
+  "per_average_signal_mean_kcps": [
+    49.57071960297767,
+    45.44665012406948,
+    49.18114143920595,
+    45.851116625310176
+  ],
+  "per_average_reference_mean_kcps": [
+    50.267990074441684,
+    45.58064516129031,
+    49.44168734491315,
+    46.78908188585609
+  ],
+  "candidate_label": "reimage1804_c01",
+  "next_candidate": "reimage1804_c02",
+  "interpretation": "Completed pODMR data are resonance-negative for the project criterion: no clear usable strong-pi resonance/alignment signature. Reject reimage1804_c01 for this alignment-search branch and move to fallback candidate reimage1804_c02.",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_terminal_4avg_20260514_1859.png",
+  "note_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c01_podmr_terminal_review_reject_20260514_1900.md"
+}

@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T06:23:29-04:00",
+  "status": "completed",
+  "summary": "Bridge-free wake completed. Confirmed det=1.25 MHz Ramsey job nv23_ramsey_20260515_030822_auto_ramsey was still running at 14/16 averages with healthy counts, monitor active, no last_error, and stop_requested=false. Raw-exported and reviewed the 14-average autosave, ran scan-order-aware drift (no flags), generated figures and a 2/4/6/8/10/14-average target-bin trend, updated work/state.md, notes, evidence ledger, and lab log. No T2star or 13C claim was made from nonterminal autosave evidence.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "bridge_job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+    "reason": "Terminal 16-average/anomaly evidence is required before final T2star or 13C interpretation; avoid further bridge mutation while running.",
+    "expected_terminal_work": "On terminal success, raw-export savedexperiment, plot raw/readout-aware views, run scan-order-aware drift, decide signal presence before fitting, then compare det=1.25 target bins against det=1.5 and det=1.0 evidence."
+  },
+  "updated_backlog_item_ids": []
+}

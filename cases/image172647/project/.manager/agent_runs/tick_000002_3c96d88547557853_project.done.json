@@ -1,0 +1,19 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T19:25:12.713336-04:00",
+  "status": "completed_bridge_running_handoff",
+  "summary": "Rejected reimage1804_c01 after terminal strong-pi pODMR showed healthy counts but no clear usable resonance; TrackCenter for reimage1804_c02 passed at 39.690 kcps; prepared model/intent/spec, verified safety and advisory with no blockers, and started c02 strong-pi pODMR as nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr. Latest observed state was running/run_experiment_scan_point with final count text 42.861 kcps and autosave date_time 2026-05-14-192106.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr",
+    "if_done": "export final savedexperiment, plot raw readouts plus safe normalization views, and decide whether c02 has a clear usable resonance before Ramsey/T2star/13C",
+    "if_failed_before_data": "record as count/freshness or route evidence; do not call it no-resonance; decide retrack/reimage/fallback from evidence",
+    "if_no_clear_resonance": "reject reimage1804_c02 and move to reimage1804_c03",
+    "while_running": "do not mutate bridge queue; optional autosave inspection only"
+  },
+  "updated_backlog_item_ids": [
+    "screen_reimage1804_c02_track",
+    "screen_reimage1804_c02_strong_podmr"
+  ]
+}

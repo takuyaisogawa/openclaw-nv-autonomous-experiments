@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T09:48:43-04:00",
+  "status": "completed",
+  "summary": "Terminal CPMG N=8 completed and was reviewed. The project objective is satisfied: reimage1804_c02 is the accepted aligned NV; T2star is short/few-us order (~2-3 us, method-sensitive); Ramsey plus terminal CPMG target-region evidence supports likely weak/moderate nearby-13C-like coupling without precise coupling extraction. No bridge queue mutation was performed in this wake; project lifecycle was marked completed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "idle",
+    "reason": "project lifecycle completed after terminal CPMG target-region review; no further default bridge work required",
+    "optional_followup": "fine CPMG around 0.60..0.72 us or phase-readout XY8/DDRF only if stronger confidence/refinement is requested"
+  },
+  "updated_backlog_item_ids": [
+    "cpmg_n8_weak_13c_discriminator_reimage1804_c02"
+  ]
+}

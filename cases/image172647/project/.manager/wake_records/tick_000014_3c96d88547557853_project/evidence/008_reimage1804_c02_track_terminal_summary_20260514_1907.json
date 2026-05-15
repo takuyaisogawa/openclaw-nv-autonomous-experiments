@@ -1,0 +1,93 @@
+{
+  "job_id": "nv23_reimage1804_c02_track_20260514_1902",
+  "status": "completed",
+  "started_at": "2026-05-14T19:05:03",
+  "finished_at": "2026-05-14T19:06:56",
+  "candidate_label": "reimage1804_c02",
+  "seed_position_um": [
+    117.375,
+    117.25,
+    116
+  ],
+  "tracked_position_um": [
+    117.4211443249154,
+    117.27496844942901,
+    115.55260043233898
+  ],
+  "final_counts_kcps": 39.69,
+  "selected_z_tracking_attempt_index": 2,
+  "z_tracking_attempts": [
+    {
+      "ok": true,
+      "requested_seed_position": [
+        117.407225808,
+        117.300426276,
+        115.95111284
+      ],
+      "position_after_move": [
+        117.43557834236157,
+        117.3529843696752,
+        115.90168335495024
+      ],
+      "tracked_position": [
+        117.37124386460164,
+        117.21183714554564,
+        115.85891967142238
+      ],
+      "final_counts_text": "Final = 33.224 kcps",
+      "final_counts_kcps": 33.224,
+      "tracker_aborted": false,
+      "blockers": []
+    },
+    {
+      "ok": true,
+      "requested_seed_position": [
+        117.407225808,
+        117.300426276,
+        115.45111284
+      ],
+      "position_after_move": [
+        117.43928994684775,
+        117.35339497978175,
+        115.39815892779941
+      ],
+      "tracked_position": [
+        117.39062668802926,
+        117.21963873757026,
+        115.5994661478599
+      ],
+      "final_counts_text": "Final = 39.690 kcps",
+      "final_counts_kcps": 39.69,
+      "tracker_aborted": false,
+      "blockers": []
+    },
+    {
+      "ok": true,
+      "requested_seed_position": [
+        117.407225808,
+        117.300426276,
+        116.45111284
+      ],
+      "position_after_move": [
+        117.43681554385697,
+        117.35390824241495,
+        116.39936238651106
+      ],
+      "tracked_position": [
+        117.36866636148625,
+        117.3135657994456,
+        116.34121608300912
+      ],
+      "final_counts_text": "Final = 21.041 kcps",
+      "final_counts_kcps": 21.041,
+      "tracker_aborted": false,
+      "blockers": []
+    }
+  ],
+  "safety": {
+    "aborted": false,
+    "safe_shutdown_ok": true
+  },
+  "error_code": "",
+  "interpretation": "Standalone TrackCenter succeeded with healthy counts. Candidate is ready for strong-pi pODMR alignment screen when queue is idle and verifier/advisory gates pass."
+}

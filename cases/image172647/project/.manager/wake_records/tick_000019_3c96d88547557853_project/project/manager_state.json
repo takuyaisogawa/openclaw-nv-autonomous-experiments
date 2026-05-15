@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-14T20:45:11",
+  "tick_count": 19,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 56,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "ramsey_t2star_scout_reimage1804_c02_avg_start_snapshot_20260514_2013",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_avg_start_20260514_2013.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Running Ramsey/T2star scout status after Experiment start: phase run_experiment_average_start, average 1/8, monitor active, final count text 38.376 kcps and pre-run align_nv final_counts_kcps 43.710. No stop was requested. Runtime status estimate showed 656.8 s per average after launch; because the pre-enqueue advisory was under cap and the job is already running with healthy counts/no hard anomaly, this is provenance for monitor/terminal review rather than a queue-mutation reason.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "running",
+            "counts",
+            "tracking-window"
+          ],
+          "timestamp": "2026-05-14T20:13:36"
+        },
+        {
+          "actor": "nv-researcher",
+          "category": "analysis",
+          "evidence_id": "ramsey_t2star_terminal_review_protocol_reimage1804_c02_20260514_2019",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_t2star_13c_terminal_review_protocol_20260514_2019.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_t2star_terminal_review_protocol_20260514_2019.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_protocol_20260514_2019.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Prepared a terminal-review protocol for the running reimage1804_c02 Ramsey/T2star scout. It freezes the expected det=1.5 MHz carrier, 13C sideband targets near 1.115/1.885 MHz, raw/readout-aware signal-before-fit gates, T2star fit stability checks, FFT/13C claim guardrails, and branch logic. Current status snapshot is running average 1/8 with healthy counts; no bridge queue mutation was performed.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "terminal-review-protocol",
+            "bridge-free",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-14T20:19:25"
+        },
+        {
+          "actor": "nv-researcher",
+          "category": "analysis",
+          "evidence_id": "ramsey_autosave_reimage1804_c02_1avg_provisional_review_20260514_2028",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_raw_1avg_20260514_2028.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_autosave_1avg_summary_20260514_2028.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_1avg_20260514_2028.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_1avg_20260514_2028.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw-exported and plotted the first stored average of the still-running reimage1804_c02 Ramsey/T2star scout. One average is provisional only: raw signal/reference views show structure, but low-frequency components are among the strongest FFT peaks and there is no average-to-average support yet. No T2star or 13C claim is made; continue waiting for terminal data unless a hard anomaly appears. No bridge queue mutation was performed.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "running_autosave",
+            "provisional",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-14T20:28:23"
+        },
+        {
+          "actor": "nv-researcher",
+          "category": "figure",
+          "evidence_id": "figure_20260514_202835_713182_a00396c61b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_1avg_20260514_2028.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 Ramsey first-average autosave reviewed provisionally: First stored average of the still-running reimage1804_c02 Ramsey/T2star scout is now raw-exportable. I plotted raw readouts, fitted-reference/pointwise normalization views, and FFT target bins. The snapshot has visible structure, but low-frequency components are among the strongest FFT peaks and there is only one stored average, so it is not claim-grade. No T2star or 13C conclusion is made; wait for more averages/terminal data. No bridge queue mutation was performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T20:28:35"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "old_c01_recovery_recheck_stop_20260514_2043",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/recovery/old_c01_recovery_recheck_stop_20260514_2043.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/old_c01_recovery_recheck_stop_20260514_2043.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Rechecked stale image172647_c01 pODMR recovery hook/batch. Wrote/confirmed attempt_02 action=stop, verified old single-submit stop_requested=true and no live old-batch process, and confirmed bridge queued/staging empty with current c02 Ramsey/T2star job running healthy. No bridge queue mutation performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T20:43:33"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 5
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Stopped stale c01 recovery retry",
+    "event": "lab_log_note",
+    "summary": "Rechecked legacy recovery attempt 2 for old image172647_c01 pODMR batch nv23_pulsed_odmr_rabimodulated_v1_20260514_175129. Plan is action=stop, old single-submit control has stop_requested=true, no live old-batch process was found, and no bridge queue mutation was performed. Current bridge remains occupied by healthy c02 Ramsey/T2star job nv23_ramsey_20260514_201034_auto_ramsey.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "old_c01_recovery_recheck_stop_20260514_2043",
+    "category": "artifact",
+    "summary": "Rechecked stale image172647_c01 pODMR recovery hook/batch. Wrote/confirmed attempt_02 action=stop, verified old single-submit stop_requested=true and no live old-batch process, and confirmed bridge queued/staging empty with current c02 Ramsey/T2star job running healthy. No bridge queue mutation performed.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/recovery/old_c01_recovery_recheck_stop_20260514_2043.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/old_c01_recovery_recheck_stop_20260514_2043.md"
+    ],
+    "timestamp": "2026-05-14T20:43:33"
+  },
+  "last_backlog_update": {
+    "item_id": "ramsey_t2star_scout_reimage1804_c02_rev1",
+    "status": "in_progress",
+    "summary": ""
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

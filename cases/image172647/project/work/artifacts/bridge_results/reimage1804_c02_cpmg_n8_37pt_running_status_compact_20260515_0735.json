@@ -1,0 +1,29 @@
+{
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "state": "running",
+  "phase": "run_experiment_scan_point",
+  "updated_at": "2026-05-15T07:33:13",
+  "elapsed_seconds": 598,
+  "runtime": {
+    "average_index": 1,
+    "averages_total": 12,
+    "average_fraction": 0.08333333333333333,
+    "current_point_index": null,
+    "scan_points_total": 37,
+    "final_counts_kcps": null,
+    "counts_text": null,
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537",
+    "autosave_target_exists": false,
+    "date_time": "2026-05-15-072537"
+  },
+  "monitor": {
+    "active": true,
+    "last_tick_at": "2026-05-15T07:33:13",
+    "last_error": "",
+    "tick_count": 49
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": ""
+  }
+}

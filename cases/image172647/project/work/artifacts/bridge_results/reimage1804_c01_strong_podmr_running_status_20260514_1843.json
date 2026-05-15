@@ -1,0 +1,85 @@
+{
+  "created_at": "2026-05-14T18:43:41-04:00",
+  "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+  "queue_state": "running",
+  "source_status_path": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1/status.json",
+  "status_updated_at": "2026-05-14T18:43:32",
+  "phase": "run_experiment_scan_point",
+  "message": "(2/4) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "elapsed_seconds": 1346,
+  "runtime": {
+    "average_index": 3,
+    "averages_total": 2,
+    "average_fraction": 1,
+    "scan_points_total": 31,
+    "repetitions": 50000,
+    "date_time": "2026-05-14-182326",
+    "experiment_status_text": "(2/4) averages completed for 1 scans",
+    "final_counts_text": "Final = 40.082 kcps",
+    "experiment_data_present": true,
+    "experiment_data_size": [
+      1,
+      1
+    ],
+    "saved_exp_dir": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326",
+    "autosave_target_exists": false,
+    "live_average_results_possible": true,
+    "live_average_results_available": false
+  },
+  "expected_runtime": [
+    {
+      "ok": true,
+      "estimator_mode": "siglent",
+      "total_seconds": 1978.0094,
+      "per_average_seconds": 488.25235,
+      "tracking_window_seconds": 488.25235,
+      "averages": 4,
+      "repetitions": 50000,
+      "num_scan_points": 31,
+      "notes": "Siglent per-average overhead is estimated from a fixed track-per-average housekeeping term, an empirically calibrated per-scan-point programming/GUI term, and a weaker average-waveform-length term."
+    },
+    {
+      "ok": true,
+      "estimator_mode": "siglent",
+      "total_seconds": 1978.0094,
+      "per_average_seconds": 488.25235,
+      "tracking_window_seconds": 488.25235,
+      "averages": 4,
+      "repetitions": 50000,
+      "num_scan_points": 31,
+      "notes": "Tracking runs once per average, so drift planning should use per_average_seconds / tracking_window_seconds rather than total_seconds. Changing averages does not shorten the untracked window."
+    }
+  ],
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "requested_by": "",
+    "requested_at": "",
+    "updated_at": "2026-05-14T18:21:06",
+    "stop_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "monitor": {
+    "active": true,
+    "update_period_seconds": 5,
+    "timer_tag": "nv_bridge_runtime_monitor_nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "started_at": "2026-05-14T18:23:24",
+    "last_tick_at": "2026-05-14T18:43:32",
+    "tick_count": 135,
+    "last_error": "",
+    "stop_requested_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "summary_selected": {
+    "align_nv_final_counts_kcps": 39.053,
+    "configure_experiment_ok": true,
+    "run_experiment_called": false
+  },
+  "queue_mutation_performed": false,
+  "interpretation": "Running strong-pi pODMR remains nonterminal; no bridge mutation was performed. Terminal raw/readout-aware review is still required before alignment/rejection."
+}

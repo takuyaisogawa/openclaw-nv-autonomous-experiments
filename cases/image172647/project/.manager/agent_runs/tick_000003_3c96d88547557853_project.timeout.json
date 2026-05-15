@@ -1,0 +1,79 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T18:50:32",
+  "status": "timed_out_missing_agent_completion_marker",
+  "summary": "Scheduler timed out an agent run that did not write its required completion marker.",
+  "backend": "openclaw-hook",
+  "run_id": "4d9c4f0f-ea46-47e4-accc-e7dd51f686b5",
+  "wake_key": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728:advance_project:39d25cc937313a6e",
+  "dispatched_at": "2026-05-14T17:35:10",
+  "diagnosis": {
+    "status": "terminal_missing_marker_timeout",
+    "timeout_kind": "terminal_missing_marker_timeout",
+    "severity": "error",
+    "scheduler_should_wake": true,
+    "marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/agent_runs/tick_000003_3c96d88547557853_project.done.json",
+    "marker_exists": false,
+    "marker_schema": {
+      "ok": false,
+      "checked": false,
+      "reason": "marker_missing",
+      "missing_fields": [],
+      "warnings": []
+    },
+    "elapsed_seconds": 4522,
+    "timeout_seconds": 4200,
+    "progress": {
+      "observed": true,
+      "count": 66,
+      "latest": {
+        "timestamp": "2026-05-14T18:46:44",
+        "actor": "openclaw-project-manager",
+        "event": "evidence_recorded",
+        "summary": "reimage1804_c01 pODMR running; 2-average autosave reviewed: The intended strong-pi pODMR for reimage1804_c01 is still running/nonterminal. Latest status showed 2/4 averages completed with final count text 40.082 kcps; no queue mutation was ",
+        "backlog_item_id": ""
+      },
+      "scan_lines": 2000
+    },
+    "runtime_lease": {
+      "available": true,
+      "same_session": false,
+      "active": false,
+      "remaining_seconds": 0,
+      "pid_alive": null,
+      "stale_reason": "",
+      "lease_status": "",
+      "lease_session_id": "",
+      "lease_run_id": "",
+      "activity": "",
+      "heartbeat_at": "",
+      "expires_at_epoch": 0.0
+    },
+    "process_pid_alive": null,
+    "session_activity": {
+      "checked": true,
+      "active": false,
+      "session_file": "<HOME>/.openclaw/agents/nv-researcher/sessions/e66a00cf-58fd-4fcb-bd1f-a51facd7b59e.jsonl",
+      "session_exists": false,
+      "session_mtime_age_seconds": null,
+      "lock_path": "<HOME>/.openclaw/agents/nv-researcher/sessions/e66a00cf-58fd-4fcb-bd1f-a51facd7b59e.jsonl.lock",
+      "lock_exists": false,
+      "lock_pid": 0,
+      "lock_pid_alive": null,
+      "lock_mtime_age_seconds": null,
+      "reason": "no_active_lock"
+    },
+    "terminal_session": {
+      "checked": false,
+      "ended": false,
+      "reason": "trajectory_missing",
+      "trajectory_path": "."
+    }
+  },
+  "canonical_marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/agent_runs/tick_000003_3c96d88547557853_project.done.json",
+  "updated_backlog_item_ids": [],
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "timed_out_missing_marker"
+  }
+}

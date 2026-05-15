@@ -1,0 +1,127 @@
+{
+  "acquisition": {
+    "average_continuously": false,
+    "averages": 4,
+    "repetitions": 100000
+  },
+  "allow_seed_fallback": true,
+  "float_vars": {
+    "ampIQ": 5,
+    "delay_wrt_1mus": 2e-07,
+    "det": 2000000.0,
+    "freqIQ": 50000000.0,
+    "full_experiment": 0,
+    "length_pi_pulse": 5.2e-08,
+    "mod_depth": 1.0,
+    "mw_ampl": -5,
+    "mw_freq": 3876461010.4808064,
+    "switch_delay": 1e-07,
+    "wait_time": 2e-06
+  },
+  "intent": "Bounded Ramsey/T2star scout on accepted aligned candidate reimage1804_c02; use det=2 MHz on 8 us / 51 point grid so expected 13C sidebands near det +/- 384 kHz are below Nyquist.",
+  "job_id_prefix": "nv23_auto_ramsey",
+  "job_id_suffix": "reimage1804_c02_t2star_det2mhz_8us51pt",
+  "measurement_plan_verified": true,
+  "metadata": {
+    "aligned_podmr_evidence_id": "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+    "aligned_podmr_result": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr/result.json",
+    "allow_search_scan": false,
+    "allow_seed_fallback": true,
+    "analysis_plan": {
+      "do_not_claim_13c_from_isolated_low_snr_fft_peak": true,
+      "fft_13c_check_after_signal_review": true,
+      "fit_t2star_only_after_visible_ramsey_signal": true,
+      "no_automatic_fit_in_bridge_job": true,
+      "raw_export_and_plot_required": true,
+      "review_raw_readouts_and_reference_normalization": true
+    },
+    "auto_align_nv": true,
+    "comparison_targets": [
+      "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+      "conditional_ramsey_t2star_13c_model_plan_reimage1804_c02_20260514_1948"
+    ],
+    "expected_signal_model": {
+      "B_T_from_podmr_center": 0.03591303290758529,
+      "binomial_floor_fraction": 0.0015811388300841895,
+      "candidate_label": "reimage1804_c02",
+      "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+      "conservative_amplitude_over_floor": 31.6227766016838,
+      "conservative_ramsey_visible_amplitude_fraction": 0.05,
+      "default_det_5MHz_would_alias": true,
+      "det_hz": 2000000.0,
+      "distinguishability": "A 5% Ramsey oscillation or half of the terminal pODMR contrast should be tens of shot-noise floors at 4x100000 shots/point before drift/systematics; terminal review must still inspect raw data, drift, and residuals.",
+      "electron_gyromagnetic_hz_per_T": 28024951640.0,
+      "expected_13C_larmor_hz": 384571.1215875863,
+      "expected_13C_sidebands_hz": [
+        1615428.8784124136,
+        2384571.121587586
+      ],
+      "expected_fft_carrier_hz": 2000000.0,
+      "fft_nyquist_hz": 3125000.0,
+      "fft_resolution_hz": 125000.0,
+      "mw_freq_hz_from_terminal_podmr_fit": 3876461010.4808064,
+      "mw_freq_uncertainty_hz_from_podmr_covariance": 688021.1247002708,
+      "scan_points": 51,
+      "scan_tau_begin_s": 0.0,
+      "scan_tau_end_s": 8e-06,
+      "sequence_family": "electron_ramsey_t2star",
+      "shots_per_point": 400000,
+      "tau_step_s": 1.6e-07,
+      "terminal_half_contrast_over_floor": 44.324708146786136,
+      "terminal_podmr_depth_fraction": 0.14016703436606515,
+      "terminal_podmr_half_contrast_fraction": 0.07008351718303257,
+      "transition": "ms=+1",
+      "zero_field_splitting_hz_assumed": 2870000000.0
+    },
+    "intent": "Bounded Ramsey/T2star scout on accepted aligned candidate reimage1804_c02; use det=2 MHz on 8 us / 51 point grid so expected 13C sidebands near det +/- 384 kHz are below Nyquist.",
+    "local_fine_search_before_tracking": false,
+    "minimum_final_kcps": 8,
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "queue_execute_opt_in": true,
+    "requested_by": "nv-researcher",
+    "require_landmark_match": false,
+    "route_policy": "Validated auto__ramsey route; execute only after queue idle, experiment intent verifier passes, advisory has no blockers, and per-average drift window is within current cap.",
+    "search_scan_on_tracking_failure": false,
+    "sequence_xml_review": {
+      "active_instruction": "ramsey(PSeq,sample_rate,length_pi_over_2,tau,det,switch_delay,mod_depth,ch_on)",
+      "boolean_note": "do_adiabatic_inversion exists but only matters in disabled full_experiment branch for this scout.",
+      "manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\validated\\auto__ramsey.json",
+      "manifest_status": "validated",
+      "readout_roles": "full_experiment=0: readout 1 is mS=0 reference; readout 2 is Ramsey signal after Ramsey pulses; mS=+1 reference branch disabled.",
+      "xml_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\ramsey.xml"
+    },
+    "target_label": "reimage1804_c02",
+    "target_role": "ramsey_t2star_13c_scout_after_terminal_podmr",
+    "terminal_podmr_center_hz_fit": 3876461010.4808064,
+    "terminal_podmr_center_uncertainty_hz": 688021.1247002708,
+    "terminal_podmr_contrast_caveat": "strong-pi depth is lower than expected 22%, but terminal resonance is signal-only and accepted for aligned branch",
+    "terminal_podmr_depth_fraction_fitted_reference": 0.14016703436606515,
+    "terminal_podmr_summary": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_podmr_terminal_summary_4avg_20260514_1957.json",
+    "verified_intent_id": "reimage1804_c02_ramsey_t2star_scout_20260514_2001"
+  },
+  "mode": "execute",
+  "nv_position": [
+    117.42784583301543,
+    117.38460134788026,
+    115.46922663207951
+  ],
+  "recipe": "xml_generic_v1",
+  "requested_by": "nv-researcher",
+  "sample_id": "NV23",
+  "scan": {
+    "begin": [
+      0.0
+    ],
+    "end": [
+      8e-06
+    ],
+    "points": [
+      51
+    ],
+    "vary_prop": [
+      "tau"
+    ]
+  },
+  "sequence_manifest_id": "auto__ramsey",
+  "submission_path": "single_item_measurement_plan"
+}

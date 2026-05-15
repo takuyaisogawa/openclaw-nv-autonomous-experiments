@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T21:30:18-04:00",
+  "status": "completed",
+  "summary": "Reviewed the running reimage1804_c02 Ramsey/T2star autosave at 6/8 averages without mutating the bridge queue. Raw export, plot, summary, drift diagnostic, status snapshots, lab log, evidence ledger, and work/state.md were updated. Six averages are an even snake-order subset with no drift flags, but FFT target bins remain weak/inconsistent (carrier ~0.74%, det-13C ~1.71%, det+13C ~1.25%, direct 13C-Larmor ~0.97%); no T2star or 13C claim was made. Latest bridge status remained running and healthy at 6/8 averages with queued/staging empty.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_terminal",
+    "job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+    "reason": "Bridge-touching work remains blocked while the Ramsey/T2star scout is running. Next high-value review is the terminal 8-average savedexperiment or a hard-anomaly/monitor-error wake."
+  },
+  "updated_backlog_item_ids": []
+}

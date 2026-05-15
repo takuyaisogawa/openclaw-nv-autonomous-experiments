@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T08:00:27-04:00",
+  "status": "completed",
+  "summary": "Loaded NV project context, confirmed no advice-inbox blocker, and inspected the running CPMG N=8 weak-13C discriminator. Bridge job nv23_cpmg_20260515_072306_auto_cpmg remained healthy/running; a final wake check showed 3/12 averages completed, monitor active/no last_error, stop_requested=false, and Final about 43.000 kcps. Performed a bridge-free 2-average autosave raw export/plot/drift review: CPMG.xml/tau grid/readout roles matched expectations, no drift flags, readout3/self-baseline was 1.0197 near 0.650 us and 0.9822 near 1.300 us. This is provisional only and makes no 13C claim or rejection. Updated work/state.md, wrote a focused note, registered evidence, and recorded a lab-log entry/figure. No bridge queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "bridge_running_wait",
+    "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+    "reason": "Bridge-touching work is blocked while the CPMG job is running. Continue bridge-free monitoring; consider a later even-average autosave review if useful, otherwise wait for terminal/anomaly evidence and then complete the verified CPMG intent from the terminal bridge result.",
+    "safe_next_work": "Bridge-free only: monitor terminal/anomaly state; at terminal review verify saved metadata/readout roles and compare raw readouts, readout3 self-baseline, and reference-normalized views near 0.650 us and 1.300 us before any 13C conclusion."
+  },
+  "updated_backlog_item_ids": []
+}

@@ -1,0 +1,121 @@
+{
+  "averages_present": 3,
+  "drift": {
+    "error_code": "",
+    "error_message": "",
+    "flagged_average_indices": [],
+    "num_averages": 3,
+    "num_points": 31,
+    "num_traces": 2,
+    "ok": true,
+    "recommended_agent_decision": null,
+    "scan_order_mode": "snake",
+    "scan_order_source": "Scan.ScanOrderEachAvg"
+  },
+  "freq_begin_hz": 3873461010.48081,
+  "freq_end_hz": 3879461010.48081,
+  "freq_step_hz": 200000.0,
+  "interpretation": "Provisional running-autosave review only: 3 completed averages form an odd snake-order subset. Signal readout shows a narrow dip close to the previous strong-pi center, while the reference does not show a matching dip at the same point. This supports waiting for terminal weak-pi data and does not yet establish the final mw_freq for the next Ramsey.",
+  "linear_residual_metrics": {
+    "fitted_reference_norm_linear_residual_depth_percent_at_nearest": 10.236338527410423,
+    "nearest_freq_hz": 3876461010.48081,
+    "nearest_offset_mhz_vs_strong_pi": 0.0,
+    "nearest_point_to_fit_center": 16,
+    "point_norm_linear_residual_depth_percent_at_nearest": 9.573804324297756,
+    "raw_reference_linear_residual_depth_percent_at_nearest": 0.8391232839928984,
+    "raw_signal_linear_residual_depth_percent_at_nearest": 10.238404854789774,
+    "signal_self_baseline_linear_residual_depth_percent_at_nearest": 10.238695386966816
+  },
+  "per_average_signal_residual_maxima": [
+    {
+      "average_index": 1,
+      "baseline_kcps": 49.959925558312676,
+      "freq_hz": 3876261010.48081,
+      "max_signal_residual_depth_percent": 10.389716820180983,
+      "offset_mhz_vs_strong_pi": -0.2,
+      "signal_kcps": 44.76923076923077
+    },
+    {
+      "average_index": 2,
+      "baseline_kcps": 41.77171215880894,
+      "freq_hz": 3876461010.48081,
+      "max_signal_residual_depth_percent": 10.502554354283005,
+      "offset_mhz_vs_strong_pi": 0.0,
+      "signal_kcps": 37.38461538461539
+    },
+    {
+      "average_index": 3,
+      "baseline_kcps": 51.434243176178676,
+      "freq_hz": 3876461010.48081,
+      "max_signal_residual_depth_percent": 16.846777306059465,
+      "offset_mhz_vs_strong_pi": 0.0,
+      "signal_kcps": 42.76923076923077
+    }
+  ],
+  "readout_role_review": "Rabimodulated.xml with full_expt=0 gives readout 1 as mS=0 reference and readout 2 as signal for this savedexperiment.",
+  "reference_dip_fit": {
+    "ok": true,
+    "params": {
+      "amp_kcps": 3.0920100340900283,
+      "baseline_at_center_kcps": 49.08050735052412,
+      "center_mhz": 3877.456318274555,
+      "center_offset_mhz_vs_strong_pi": 0.995307793744916,
+      "depth_fraction": 0.06299873821612012,
+      "depth_percent": 6.299873821612012,
+      "fwhm_mhz": 0.11774102064374156,
+      "offset_kcps": 49.35345430361929,
+      "sigma_mhz": 0.05000000781110285,
+      "slope_kcps_per_mhz": -0.27423371424449794
+    },
+    "r2": 0.2870287969706722,
+    "stderr": {
+      "amp_kcps": 75.08650507158603,
+      "center_offset_mhz": 12.745263545957133,
+      "offset_kcps": 0.24935797012710753,
+      "sigma_mhz": 3.398697402067665,
+      "slope_kcps_per_mhz": 0.13401225681423634
+    }
+  },
+  "repetitions": 50000,
+  "sequence_name": "Rabimodulated.xml",
+  "signal_dip_fit": {
+    "ok": true,
+    "params": {
+      "amp_kcps": 5.694950033785161,
+      "baseline_at_center_kcps": 48.527795617865266,
+      "center_mhz": 3876.4933701884356,
+      "center_offset_mhz_vs_strong_pi": 0.032359707625223555,
+      "depth_fraction": 0.11735439372994295,
+      "depth_percent": 11.735439372994296,
+      "fwhm_mhz": 0.8732536181287984,
+      "offset_kcps": 48.538912033002894,
+      "sigma_mhz": 0.3708366675334626,
+      "slope_kcps_per_mhz": -0.3435264393106327
+    },
+    "r2": 0.7642079772003268,
+    "stderr": {
+      "amp_kcps": 0.7118691061195606,
+      "center_offset_mhz": 0.05357118981408866,
+      "offset_kcps": 0.2342099921480432,
+      "sigma_mhz": 0.05752616677723621,
+      "slope_kcps_per_mhz": 0.10925004503974546
+    }
+  },
+  "source_mat": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-221357.mat",
+  "source_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_raw_20260514_2241.json",
+  "strong_pi_prior_center_hz": 3876461010.48081,
+  "variables_of_interest": {
+    "ampIQ": 5,
+    "freqIQ": 50000000.0,
+    "full_expt": 0,
+    "length_rabi_pulse": 1e-06,
+    "mod_depth": 0.05,
+    "mw_ampl": -5,
+    "mw_freq": 3879461010.4808,
+    "switch_delay": 1e-07
+  },
+  "vary_points": 31,
+  "vary_prop": [
+    "mw_freq"
+  ]
+}

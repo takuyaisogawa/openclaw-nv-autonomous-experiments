@@ -1,0 +1,19 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T21:00:30-04:00",
+  "status": "completed_bridge_running",
+  "summary": "Advanced bridge-free work while the c02 Ramsey/T2star scout nv23_ramsey_20260514_201034_auto_ramsey remains running. Copied a 3/8-average running status snapshot, raw-exported the 3-average autosave, generated a provisional review plot and summary, ran scan-order-aware drift diagnostics, recorded evidence and a lab-log entry, wrote a focused note, and updated work/state.md. The snapshot shows structure but is an odd intermediate snake-order subset; target FFT bins are weak/inconsistent (carrier about 0.46%, det-13C about 1.24%, det+13C about 1.71%, direct 13C-Larmor bin about 1.57% in the signal-self-baseline view). Drift diagnostic found no flagged averages. No T2star or 13C claim was made, and no bridge queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job",
+    "bridge_job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+    "reason": "Bridge occupancy blocks new bridge-touching work. Continue deterministic monitor/cron checks until terminal result, anomaly, or a later autosave with materially more averages is available; then raw-export/review before fitting T2star or making 13C claims.",
+    "blocked_bridge_touching_work": true,
+    "project_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "latest_evidence_ids": [
+      "ramsey_autosave_reimage1804_c02_3avg_provisional_review_20260514_2055",
+      "ramsey_autosave_reimage1804_c02_3avg_drift_20260514_2059"
+    ]
+  },
+  "updated_backlog_item_ids": []
+}

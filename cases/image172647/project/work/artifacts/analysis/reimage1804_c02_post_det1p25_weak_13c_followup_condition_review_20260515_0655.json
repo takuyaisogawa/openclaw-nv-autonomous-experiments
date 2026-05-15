@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "created_at": "2026-05-15T07:01:12.404743-04:00",
+  "kind": "post_det1p25_weak_13c_followup_condition_review",
+  "inputs": {
+    "terminal_det1p25_summary": "work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_terminal_summary_16avg_20260515_0645.json",
+    "cpmg_manifest": "<MATLAB_23C_ROOT>/claw/sequence_manifests/validated/auto__cpmg.json",
+    "cpmg_xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/CPMG.xml",
+    "xy8_manifest": "<MATLAB_23C_ROOT>/claw/sequence_manifests/validated/auto__xy8.json",
+    "xy8_xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/XY8.xml"
+  },
+  "model_calculation": {
+    "weak_pi_center_hz": 3876501336.7539,
+    "B_T_from_ms_plus_center": 0.035914471849340185,
+    "carbon13_larmor_hz": 384586.5303514744,
+    "dd_tau_if_xml_tau_is_half_interpulse_s": 6.500487673645889e-07,
+    "dd_tau_if_xml_tau_is_interpulse_s": 1.3000975347291778e-06,
+    "cpmg_xml_timing_review": "CPMG.xml applies wait tau before and after each pi pulse; pi pulses are separated by about 2*tau, so the common toggling-function resonance estimate is f ~= 1/(4*tau). Because lab convention can differ, a first scout should cover both 0.65 us and 1.30 us target regions rather than assuming one convention.",
+    "candidate_scan_tau_s": {
+      "begin": 4.5e-07,
+      "end": 1.6e-06,
+      "points": 59,
+      "step": 1.9827586206896553e-08
+    },
+    "candidate_N": 8,
+    "candidate_total_free_evolution_range_s": [
+      7.2e-06,
+      2.56e-05
+    ],
+    "candidate_repetitions_averages": "screening suggestion: 4-8 averages x 50000 reps if advisory tracking window is under cap; exact choice requires fresh advisory."
+  },
+  "decision": {
+    "candidate_physical_signature": "A weak Ramsey component whose high-sideband-like peak moves with programmed detuning across det=1.5, 1.0, and 1.25 MHz, while fixed 1.4/1.9 MHz alternatives are weak in the terminal det=1.25 run.",
+    "why_previous_data_remain_ambiguous": "The Ramsey target amplitudes are about 0.5-1.0% in terminal det=1.25 and percent-scale/sub-percent across runs, far below the 11-14% pODMR contrast. Low-sideband, direct-Larmor, and carrier support are incomplete; time-domain T2star fits are early-tau/window sensitive.",
+    "conditions_that_could_increase_visibility": "A dynamical-decoupling tau scan near the 13C Larmor filter condition can move from Fourier-sideband inference to a direct nuclear-spectroscopy discriminator. CPMG is the lower-risk magnitude-style first scout; XY8 phase-readout is a later option if CPMG magnitude contrast is limited.",
+    "bounded_followup_candidate": "auto__cpmg / CPMG.xml, N=8, tau scan 0.45..1.60 us with ~59 points to cover both 1/(4 f13)=0.650 us and 1/(2 f13)=1.300 us conventions, mw_freq at the weak-pi center, length_pi=52 ns, mod_depth=1, mw_ampl=-5, ampIQ=5, freqIQ=50 MHz. Analyze readout3 echo signal against readout1/readout2 references after verifying saved readout roles.",
+    "not_submitted_this_wake": "Do not enqueue directly from this review. The route needs a fresh experiment intent, verifier JSON, MATLAB advisory, queue-idle recheck, and a tighter expected-signal/distinguishability model. This is an agent-side next work item, not an external blocker."
+  }
+}

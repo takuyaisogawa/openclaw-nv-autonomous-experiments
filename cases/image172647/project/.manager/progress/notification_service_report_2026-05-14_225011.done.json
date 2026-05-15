@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T23:15:00-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report from current project files: terminal weak-pi pODMR completed, det=1.0 MHz Ramsey/T2star/13C follow-up is running, no explicit bridge-free task is pending, and next step is terminal/anomaly review.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_225011.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_terminal_4avg_20260514_2251.png",
+      "caption": "c02 terminal weak-pi pODMR resonance refinement (4 averages)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

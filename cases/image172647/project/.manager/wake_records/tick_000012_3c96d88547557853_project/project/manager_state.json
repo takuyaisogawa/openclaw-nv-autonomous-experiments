@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-14T19:00:09",
+  "tick_count": 12,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 33,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "podmr_execute_reimage1804_c01_running_snapshot_20260514_1843",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c01_strong_podmr_running_status_20260514_1843.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Current running-status snapshot for reimage1804_c01 strong-pi pODMR: still running/nonterminal at status updated_at 18:39:56, elapsed 1130 s, 1/4 averages completed, final count text 40.135 kcps; no queue mutation performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:43:58"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "conditional_ramsey_t2star_13c_model_plan_20260514_1843",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/conditional_ramsey_t2star_13c_model_plan_20260514_1843.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Bridge-free conditional Ramsey/T2star/13C follow-up plan prepared while pODMR runs. It calculates B and expected 13C Larmor from the ms=+1 resonance, checks an 8 us / 51 point Ramsey FFT grid with det=2 MHz, and records prerequisite gates before any execute.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:43:58"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "note",
+          "evidence_id": "note_conditional_ramsey_t2star_13c_after_valid_podmr_20260514_1843",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/conditional_ramsey_t2star_13c_after_valid_podmr_20260514_1843.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Note summarizing the conditional Ramsey/T2star/13C model plan and branch logic after terminal pODMR review.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:43:58"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "podmr_autosave_reimage1804_c01_2avg_raw_review_20260514_1845",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c01_podmr_autosave_raw_2avg_20260514_1845.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c01_podmr_autosave_2avg_summary_20260514_1845.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_2avg_20260514_1845.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw-exported the 2-average autosave of the still-running reimage1804_c01 strong-pi pODMR. The snapshot remains provisional: readout1/reference and readout2/signal views do not show an obvious 22% strong-pi dip; terminal 4-average review remains required before alignment/rejection.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:46:43"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_184644_101797_71063681ed",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_2avg_20260514_1845.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "reimage1804_c01 pODMR running; 2-average autosave reviewed: The intended strong-pi pODMR for reimage1804_c01 is still running/nonterminal. Latest status showed 2/4 averages completed with final count text 40.082 kcps; no queue mutation was performed. I raw-exported and plotted the 2-average autosave. The provisional signal/reference and normalization views still do not show an obvious 22% strong-pi dip, but this is not a terminal verdict; wait for the full 4-average result before alignment/rejection. I also prepared a conditional Ramsey/T2star/13C model plan for use only after a valid pODMR resonance.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:46:44"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 2
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "reimage1804_c01 pODMR running; 2-average autosave reviewed",
+    "event": "lab_log_note",
+    "summary": "The intended strong-pi pODMR for reimage1804_c01 is still running/nonterminal. Latest status showed 2/4 averages completed with final count text 40.082 kcps; no queue mutation was performed. I raw-exported and plotted the 2-average autosave. The provisional signal/reference and normalization views still do not show an obvious 22% strong-pi dip, but this is not a terminal verdict; wait for the full 4-average result before alignment/rejection. I also prepared a conditional Ramsey/T2star/13C model plan for use only after a valid pODMR resonance.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260514_184644_101797_71063681ed",
+    "category": "figure",
+    "summary": "reimage1804_c01 pODMR running; 2-average autosave reviewed: The intended strong-pi pODMR for reimage1804_c01 is still running/nonterminal. Latest status showed 2/4 averages completed with final count text 40.082 kcps; no queue mutation was performed. I raw-exported and plotted the 2-average autosave. The provisional signal/reference and normalization views still do not show an obvious 22% strong-pi dip, but this is not a terminal verdict; wait for the full 4-average result before alignment/rejection. I also prepared a conditional Ramsey/T2star/13C model plan for use only after a valid pODMR resonance.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_2avg_20260514_1845.png"
+    ],
+    "timestamp": "2026-05-14T18:46:44"
+  },
+  "last_backlog_update": {
+    "item_id": "screen_reimage1804_c01_strong_podmr",
+    "status": "in_progress",
+    "summary": "Strong-pi pODMR execute is still running/nonterminal for reimage1804_c01. Latest inspected status reported 2/4 averages completed and final count text 40.082 kcps. The 2-average autosave was raw-exported and plotted; it remains provisional and does not show an obvious 22% strong-pi dip. Prepared a bridge-free conditional Ramsey/T2star/13C model plan for use only if terminal pODMR review finds a clear usable resonance."
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

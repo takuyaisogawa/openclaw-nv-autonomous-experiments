@@ -1,0 +1,125 @@
+{
+  "job_id_prefix": "nv23_pulsed_odmr_rabimodulated_v1",
+  "job_id_suffix": "reimage1804_c02_strong_podmr",
+  "mode": "execute",
+  "recipe": "xml_generic_v1",
+  "sample_id": "NV23",
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "requested_by": "nv-researcher",
+  "submission_path": "single_item_measurement_plan",
+  "measurement_plan_verified": true,
+  "scan": {
+    "vary_prop": [
+      "mw_freq"
+    ],
+    "begin": [
+      3825000000.0
+    ],
+    "end": [
+      3925000000.0
+    ],
+    "points": [
+      31
+    ]
+  },
+  "float_vars": {
+    "mw_freq": 3875000000.0,
+    "length_rabi_pulse": 5.2e-08,
+    "mod_depth": 1,
+    "mw_ampl": -5,
+    "ampIQ": 5,
+    "freqIQ": 50000000.0,
+    "switch_delay": 1e-07,
+    "full_expt": 0,
+    "detuning": 0
+  },
+  "acquisition": {
+    "average_continuously": false,
+    "averages": 4,
+    "repetitions": 50000
+  },
+  "nv_position": [
+    117.4211443249154,
+    117.27496844942901,
+    115.55260043233898
+  ],
+  "allow_seed_fallback": true,
+  "metadata": {
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "target_label": "reimage1804_c02",
+    "target_role": "strong_pi_podmr_resonance_alignment_screen",
+    "fresh_track_result": "<NV_BRIDGE_ROOT>/done/nv23_reimage1804_c02_track_20260514_1902/result.json",
+    "fresh_track_evidence_id": "track_reimage1804_c02_terminal_pass_20260514_1907",
+    "fresh_counts_kcps": 39.69,
+    "fresh_tracked_position_um": [
+      117.4211443249154,
+      117.27496844942901,
+      115.55260043233898
+    ],
+    "auto_align_nv": true,
+    "require_landmark_match": false,
+    "allow_seed_fallback": true,
+    "minimum_final_kcps": 8,
+    "local_fine_search_before_tracking": false,
+    "search_scan_on_tracking_failure": false,
+    "allow_search_scan": false,
+    "queue_execute_opt_in": true,
+    "requested_by": "nv-researcher",
+    "sequence_manifest_status": "staging",
+    "sequence_manifest_scope": "staging",
+    "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+    "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+    "sequence_bool_vars": {
+      "do_adiabatic_inversion": true
+    },
+    "expected_signal_model": {
+      "sequence_family": "strong_pi_pulsed_odmr_rabimodulated",
+      "transition": "ms=+1 near 3.875 GHz in current field setup",
+      "candidate_label": "reimage1804_c02",
+      "resonant_expected_signal_dip_fraction": 0.22,
+      "contrast_basis": "current setup reference from NV_RESEARCH_MEMORY: mS=0 to mS=+1 PL contrast about 22%",
+      "pulse_length_s": 5.2e-08,
+      "rectangular_pi_pulse_sinc_fwhm_hz": 15365384.615384616,
+      "scan_begin_hz": 3825000000.0,
+      "scan_end_hz": 3925000000.0,
+      "scan_points": 31,
+      "scan_spacing_hz": 3333333.3333333335,
+      "points_across_fwhm": 4.609615384615385,
+      "averages": 4,
+      "repetitions_per_average": 50000,
+      "total_shots": 200000,
+      "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+      "expected_dip_to_binomial_floor_ratio": 98.38699100999074,
+      "distinguishability": "Expected resonant dip about 22% is roughly 98x the binomial shot-noise floor and spans about 4.6 frequency steps; a usable aligned resonance in-window should be visible in raw/readout-aware review.",
+      "readout_role_from_xml": "Rabimodulated.xml with full_expt=0 records first detection as mS=0 reference and final detection after length_rabi_pulse as signal; no mS=+1 reference detection is active.",
+      "normalization_rule": "Judge signal presence from raw signal and fitted-reference-normalized views; do not promote point-wise normalization-only features."
+    },
+    "sequence_xml_review": {
+      "xml_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+      "manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+      "manifest_status": "staging",
+      "full_expt": 0,
+      "readout_roles": "first detection mS=0 reference; final detection after length_rabi_pulse is signal; intermediate mS=+1 reference block disabled because full_expt=0",
+      "active_pulse": "rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay) before signal detection"
+    },
+    "analysis_plan": {
+      "raw_export_and_plot_required": true,
+      "no_automatic_fit_in_bridge_job": true,
+      "review_raw_readouts_and_reference_normalization": true,
+      "readout_role_expectation": "Rabimodulated.xml with full_expt=0: first detection is mS=0 reference and final detection after length_rabi_pulse is signal.",
+      "valid_resonance_required_before_ramsey_t2star": true,
+      "do_not_claim_alignment_from_track_only": true,
+      "reject_candidate_if_no_clear_usable_resonance": true
+    },
+    "intent": "Strong-pi pulsed ODMR resonance/alignment screen for fallback candidate reimage1804_c02 after successful standalone TrackCenter; terminal raw/readout-aware review required before Ramsey/T2star/13C.",
+    "route_policy": "Staging pulsed_odmr_rabimodulated_v1 route; same settings completed earlier this wake on c01; execute only after current queue idle, intent verified, and advisory has no blockers.",
+    "comparison_targets": [
+      "track_reimage1804_c02_terminal_pass_20260514_1907",
+      "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900",
+      "same-wake c01 pODMR route/settings terminal completion"
+    ],
+    "measurement_plan_verified": true,
+    "verified_intent_id": "reimage1804_c02_strong_podmr_20260514_1915"
+  },
+  "intent": "Strong-pi pulsed ODMR resonance/alignment screen for fallback candidate reimage1804_c02 after successful standalone TrackCenter; terminal raw/readout-aware review required before Ramsey/T2star/13C."
+}

@@ -1,0 +1,105 @@
+{
+  "branches": [
+    "If terminal pODMR has no clear usable resonance: reject reimage1804_c02 and move to reimage1804_c03.",
+    "If terminal pODMR fails before data/count gate: treat as freshness/tracking evidence; decide retrack/re-image/fallback, not no-resonance.",
+    "If terminal pODMR is clear but center is broad/uncertain for Ramsey: consider weak-pi pODMR center refinement before Ramsey.",
+    "If terminal pODMR is clear and center adequate: write/verify a Ramsey experiment intent from this plan only after bridge idle and verifier/advisory JSON pass."
+  ],
+  "conditional_ramsey_scout_design": {
+    "acquisition_starting_point": {
+      "average_continuously": false,
+      "averages": 4,
+      "even_averages_for_snake_order": true,
+      "repetitions_per_average": 100000
+    },
+    "distinguishability_model": {
+      "binomial_shot_noise_floor_fraction": 0.0015811388300841895,
+      "caveat": "Shot-noise floor is optimistic; terminal review must include raw readouts, normalization artifacts, drift, fit residuals, and FFT sideband checks.",
+      "conservative_amplitude_over_floor": 31.6227766016838,
+      "conservative_visible_amplitude_fraction": 0.05,
+      "ideal_amplitude_over_floor": 69.57010852370435,
+      "ideal_ramsey_fringe_amplitude_fraction_roughly_half_contrast": 0.11,
+      "setup_full_contrast_reference_fraction": 0.22,
+      "shots_per_point_for_4x100k": 400000
+    },
+    "float_vars_to_override_after_terminal_podmr": {
+      "ampIQ": 5,
+      "delay_wrt_1mus": 2e-07,
+      "det": 2000000.0,
+      "freqIQ": 50000000.0,
+      "full_experiment": 0,
+      "length_pi_pulse": 5.2e-08,
+      "mod_depth": 1.0,
+      "mw_ampl": -5,
+      "mw_freq": "<terminal_podmr_center_hz_or_weak_pi_refined_center>",
+      "switch_delay": 1e-07,
+      "wait_time": 2e-06
+    },
+    "sampling_model": {
+      "default_det_5MHz_would_alias_on_this_grid": true,
+      "det_hz": 2000000.0,
+      "expected_13C_larmor_hz_nominal": 384012.86604325427,
+      "expected_sidebands_hz_nominal": [
+        1615987.1339567457,
+        2384012.8660432543
+      ],
+      "expected_sidebands_hz_scan_edge_range": [
+        1596882.016243151,
+        1635092.2516703405,
+        2364907.7483296595,
+        2403117.983756849
+      ],
+      "fft_resolution_hz": 125000.0,
+      "nyquist_hz": 3125000.0,
+      "nyquist_margin_hz_nominal_high_sideband": 740987.1339567457,
+      "tau_step_s": 1.6e-07
+    },
+    "scan": {
+      "begin_s": 0.0,
+      "end_s": 8e-06,
+      "points": 51,
+      "vary_prop": [
+        "tau"
+      ]
+    }
+  },
+  "created_at": "2026-05-14T19:48:00-04:00",
+  "field_and_13c_model": {
+    "B_range_T_from_scan_edges": [
+      0.034076776019728396,
+      0.03764502481760572
+    ],
+    "calculation": "B=(f_res-D)/gamma_e for ms=+1; f_13C=gamma_13C*B.",
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "carbon13_larmor_range_hz_from_scan_edges": [
+      364907.7483296596,
+      403117.9837568491
+    ],
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "nominal_13C_larmor_hz": 384012.86604325427,
+    "nominal_B_T_from_resonance": 0.035860900418667054,
+    "nominal_ms_plus1_resonance_hz": 3875000000.0,
+    "podmr_scan_begin_hz": 3825000000.0,
+    "podmr_scan_end_hz": 3925000000.0,
+    "zero_field_splitting_hz_assumed": 2870000000.0
+  },
+  "prerequisite": "Do not execute this plan unless terminal pODMR raw/readout-aware review supports a clear usable resonance/alignment for reimage1804_c02. Current autosaves are provisional only.",
+  "purpose": "Bridge-free c02-specific conditional plan for Ramsey/T2star and 13C follow-up if terminal reimage1804_c02 strong-pi pODMR gives a clear usable resonance.",
+  "ramsey_route_review": {
+    "boolean_note": "do_adiabatic_inversion is present in typed_vars/XML but only matters inside full_experiment branch, which remains 0 for this scout.",
+    "full_experiment_default": 0,
+    "manifest_status": "validated",
+    "readout_roles": "full_experiment=0: readout 1 mS=0 reference, readout 2 Ramsey signal after the Ramsey pulses; mS=+1 reference block disabled.",
+    "sequence_file": "SavedSequences/SavedSequences-AWG/ramsey.xml",
+    "sequence_manifest_id": "auto__ramsey",
+    "xml_ramsey_call": "ramsey(PSeq,sample_rate,length_pi_over_2,tau,det,switch_delay,mod_depth,ch_on)",
+    "xml_single_tau_path": true
+  },
+  "sources": {
+    "current_podmr_job": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr/job.json",
+    "latest_c02_autosave_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_podmr_autosave_2avg_review_20260514_1946.md",
+    "project_state": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "ramsey_manifest": "<MATLAB_23C_ROOT>/claw/sequence_manifests/validated/auto__ramsey.json",
+    "ramsey_xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/ramsey.xml"
+  }
+}

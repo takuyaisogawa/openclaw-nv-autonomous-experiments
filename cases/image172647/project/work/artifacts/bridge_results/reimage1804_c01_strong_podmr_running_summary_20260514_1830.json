@@ -1,0 +1,27 @@
+{
+  "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+  "state": "running",
+  "phase": "run_experiment_average_start",
+  "message": "(1/4) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "started_at": "2026-05-14T18:21:06",
+  "updated_at": "2026-05-14T18:32:01",
+  "elapsed_seconds": 655,
+  "runtime": {
+    "average_index": 2,
+    "averages_total": 1,
+    "average_fraction": 1,
+    "scan_points_total": 31,
+    "repetitions": 50000,
+    "date_time": "2026-05-14-182326",
+    "final_counts_text": "Final = 39.551 kcps",
+    "experiment_data_present": true,
+    "autosave_checked": "on",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326",
+    "autosave_target_exists": false,
+    "live_average_results_available": false
+  },
+  "queued_after_cleanup": [],
+  "running_after_cleanup": [
+    "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1"
+  ]
+}

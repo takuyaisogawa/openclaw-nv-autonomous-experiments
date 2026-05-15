@@ -1,0 +1,35 @@
+{
+  "artifact_paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1p25_autosave_even_subset_review_20260515_0338.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_summary_even_subset_20260515_0338.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_drift_even_subset_20260515_0338.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_even_subset_20260515_0338.png"
+  ],
+  "completed_at": "2026-05-15T03:44:29-04:00",
+  "evidence_ids": [
+    "ramsey_det1p25_autosave_reimage1804_c02_2avg_review_20260515_0338",
+    "figure_20260515_034324_660890_c87a5417a7"
+  ],
+  "next_action": {
+    "bridge_state": "running_2_of_16_completed_latest_checked_2026-05-15T03:43:23_EDT",
+    "job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "next_review_targets": {
+      "det_carrier_MHz": 1.25,
+      "det_minus_13C_MHz": 0.865413,
+      "det_plus_13C_MHz": 1.634587,
+      "direct_13C_MHz": 0.384587,
+      "old_det1_high_static_region_MHz": 1.4,
+      "previous_det1p5_region_MHz": 1.9,
+      "static_low_region_MHz": 0.7
+    },
+    "reason": "Det=1.25 MHz third-det Ramsey is still running; bridge-touching work is blocked until terminal success/failure or hard anomaly evidence. Later useful even autosaves may be reviewed bridge-free only and must remain provisional."
+  },
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "completed_bridge_running",
+  "summary": "Bridge-free 2-average even-subset autosave review completed for running det=1.25 MHz third-det Ramsey job nv23_ramsey_20260515_030822_auto_ramsey. The job remained running at 2/16 completed averages with Final about 43.106 kcps, monitor active, no last_error, stop_requested=false, and no bridge queue mutation. Raw export verified ramsey.xml, tau 0..10 us, 51 points, 2 stored averages x 50000 reps (100k/800k planned shots per point), snake scan order, and no drift flags. Provisional readout2/self-baseline FFT bins were direct 13C 0.97%, det-13C 1.22%, carrier 1.29%, det+13C 0.71%, old det=1 high/static 0.71%, static low 1.33%, previous 1.9 MHz 1.13%; no T2star or 13C claim. Updated work/state.md, backlog, evidence ledger, analysis note/artifacts, and lab log.",
+  "touched_bridge_queue": false,
+  "updated_backlog_item_ids": [
+    "ramsey_det1p25_third_det_reimage1804_c02"
+  ]
+}

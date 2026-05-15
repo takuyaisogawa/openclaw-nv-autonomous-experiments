@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "job_id": "nv23_image172647_reimage_original_region_20260514_1804",
+  "job_path": "<NV_BRIDGE_ROOT>/queued/nv23_image172647_reimage_original_region_20260514_1804/job.json"
+}

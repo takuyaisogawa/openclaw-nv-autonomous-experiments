@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T09:03:17-04:00",
+  "status": "completed",
+  "summary": "Performed a bridge-free 8-average autosave review for running CPMG N=8 job nv23_cpmg_20260515_072306_auto_cpmg. The bridge remained running/healthy at 8/12 averages with queued/staging empty, monitor active/no error, stop_requested=false, and Final about 38.216 kcps. Raw export verified CPMG.xml, 8 x 50000 reps, tau 0.45..1.60 us, snake scan order, and do_adiabatic_inversion=0. No drift flags. Readout3/self-baseline was 0.9983 near 0.650 us and 0.9978 near 1.300 us, so no robust target-tau dip is visible in this nonterminal subset. Updated work/state.md, work note, evidence ledger, lab log, JSON artifacts, and figure.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_later_even_autosave",
+    "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+    "details": "Bridge-touching work remains blocked while the CPMG job is running. Continue monitoring terminal/anomaly state; optional next bridge-free review is a later even-average autosave, otherwise terminal 12-average review should verify metadata/readout roles and compare target tau regions near 0.650 us and 1.300 us across raw, self-baseline, and reference-normalized views."
+  },
+  "updated_backlog_item_ids": []
+}

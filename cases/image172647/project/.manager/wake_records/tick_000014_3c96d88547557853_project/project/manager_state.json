@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-14T19:15:05",
+  "tick_count": 14,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 37,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_184644_101797_71063681ed",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_2avg_20260514_1845.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "reimage1804_c01 pODMR running; 2-average autosave reviewed: The intended strong-pi pODMR for reimage1804_c01 is still running/nonterminal. Latest status showed 2/4 averages completed with final count text 40.082 kcps; no queue mutation was performed. I raw-exported and plotted the 2-average autosave. The provisional signal/reference and normalization views still do not show an obvious 22% strong-pi dip, but this is not a terminal verdict; wait for the full 4-average result before alignment/rejection. I also prepared a conditional Ramsey/T2star/13C model plan for use only after a valid pODMR resonance.",
+          "tags": [],
+          "timestamp": "2026-05-14T18:46:44"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900",
+          "paths": [
+            "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1/result.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c01_podmr_terminal_raw_4avg_20260514_1859.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c01_podmr_terminal_summary_4avg_20260514_1859.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_terminal_4avg_20260514_1859.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c01_podmr_terminal_review_reject_20260514_1900.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Terminal 4-average strong-pi pODMR for reimage1804_c01 completed with healthy counts but no clear usable resonance: raw/fitted-reference depressions were about 4-5% versus expected ~22%; candidate rejected for the magnetic-field-aligned NV search branch.",
+          "tags": [],
+          "timestamp": "2026-05-14T19:02:04"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_190204_516655_1fe5109017",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_terminal_4avg_20260514_1859.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "reimage1804_c01 rejected by terminal strong-pi pODMR: The reimage1804_c01 strong-pi pODMR completed successfully with healthy counts, but terminal raw/readout-aware review found no clear usable resonance. The largest raw/fitted-reference depressions were about 4-5%, far below the expected ~22% strong-pi contrast, and weak normalization features are not enough for alignment. I reject reimage1804_c01 for this branch and move to fallback reimage1804_c02.",
+          "tags": [],
+          "timestamp": "2026-05-14T19:02:04"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "track_reimage1804_c02_queued_20260514_1902",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs/nv23_reimage1804_c02_track_20260514_1902_enqueue_stdout.txt"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Queued standalone TrackCenter execute for fallback candidate reimage1804_c02 at seed [117.375,117.250,116.000] um with minimum_final_kcps=8 and z offsets [0,-0.5,+0.5], after c01 was rejected by terminal strong-pi pODMR.",
+          "tags": [],
+          "timestamp": "2026-05-14T19:02:31"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "track_reimage1804_c02_terminal_pass_20260514_1907",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_track_terminal_summary_20260514_1907.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "TrackCenter for fallback candidate reimage1804_c02 completed successfully: final_counts_kcps=39.690, tracked_position=[117.4211443249154,117.27496844942901,115.55260043233898] um; ready for strong-pi pODMR alignment screen if gates pass.",
+          "tags": [],
+          "timestamp": "2026-05-14T19:08:37"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 0,
+        "rejected": 0,
+        "done": 3
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "reimage1804_c01 rejected by terminal strong-pi pODMR",
+    "event": "lab_log_note",
+    "summary": "The reimage1804_c01 strong-pi pODMR completed successfully with healthy counts, but terminal raw/readout-aware review found no clear usable resonance. The largest raw/fitted-reference depressions were about 4-5%, far below the expected ~22% strong-pi contrast, and weak normalization features are not enough for alignment. I reject reimage1804_c01 for this branch and move to fallback reimage1804_c02.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "track_reimage1804_c02_terminal_pass_20260514_1907",
+    "category": "bridge_result",
+    "summary": "TrackCenter for fallback candidate reimage1804_c02 completed successfully: final_counts_kcps=39.690, tracked_position=[117.4211443249154,117.27496844942901,115.55260043233898] um; ready for strong-pi pODMR alignment screen if gates pass.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_track_terminal_summary_20260514_1907.json"
+    ],
+    "timestamp": "2026-05-14T19:08:37"
+  },
+  "last_backlog_update": {
+    "item_id": "screen_reimage1804_c02_track",
+    "status": "completed",
+    "summary": "TrackCenter completed successfully for fallback candidate reimage1804_c02 with final_counts_kcps=39.690 at tracked position [117.4211443249154,117.27496844942901,115.55260043233898] um. Next: strong-pi pODMR alignment screen."
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

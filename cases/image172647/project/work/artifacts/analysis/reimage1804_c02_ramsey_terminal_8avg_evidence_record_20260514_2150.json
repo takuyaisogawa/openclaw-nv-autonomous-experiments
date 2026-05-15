@@ -1,0 +1,23 @@
+{
+  "evidence_id": "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+  "category": "analysis",
+  "summary": "Terminal 8-average Ramsey/T2star scout completed and was raw-exported, plotted, drift-checked, FFT-reviewed, and fit-tested. Counts were healthy (pre-run TrackCenter 43.710 kcps, post-run final 41.020 kcps), scan matched 43 tau points over 0-8 us with det=1.5 MHz and 8 x 50000 reps, and scan-order-aware drift found no flagged averages. Signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz; fit-derived T2* is short/few-us but not a final scalar because early-time handling changes the result. The nominal det carrier is weak and the apparent high-sideband power is ambiguous with an effective carrier shift, so 13C is not established. Recommended next step is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+  "paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_raw_8avg_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_drift_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png",
+    "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_201034_auto_ramsey/result.json"
+  ],
+  "tags": [
+    "ramsey",
+    "t2star",
+    "13c",
+    "terminal",
+    "reimage1804_c02",
+    "8avg",
+    "drift",
+    "fft",
+    "fit"
+  ]
+}

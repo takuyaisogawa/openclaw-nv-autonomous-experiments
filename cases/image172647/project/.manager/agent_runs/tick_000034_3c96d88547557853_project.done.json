@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T01:24:30-04:00",
+  "status": "completed_waiting_on_running_bridge",
+  "summary": "Performed bridge-free 10-average autosave review for running det=1.0 MHz Ramsey job nv23_ramsey_20260514_230820_auto_ramsey. The job remained running at 10/16 averages with healthy counts, no monitor error, no stop request, and no drift flags. Target FFT bins remain weak/provisional (direct 13C 0.20%, det-13C 0.64%, carrier 0.36%, det+13C 0.82%, previous 1.9 MHz 0.46%), so no T2star or 13C claim was made. Updated evidence, lab log, backlog, and work/state.md; next step is to wait for terminal 16-average data or hard anomaly evidence before any bridge-touching work.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_terminal_or_anomaly",
+    "bridge_job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "reason": "Bridge job is still running; bridge-touching work remains blocked. Terminal review should raw-export, plot/readout-review, drift-check, assess signal presence before fitting T2*, and compare det=1.0 MHz FFT targets against 13C and prior 1.9 MHz ambiguity."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_det1_claim_grade_reimage1804_c02"
+  ]
+}

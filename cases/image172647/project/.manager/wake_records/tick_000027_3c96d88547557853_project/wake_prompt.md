@@ -1,0 +1,358 @@
+OpenClaw project wake from cron.
+
+Use the NV project manager skill at <OPENCLAW_WORKSPACE>/skills/nv-project-manager/SKILL.md. Assume the project-execution agent is a Codex API agent with gpt-5.5/xhigh unless configuration says otherwise. Treat the agent as the research planner: Python provides state, queue safety, audit logging, and hard hardware/code safety boundaries, not a full scientific plan. Advance the project autonomously when evidence and policy are sufficient.
+
+Project id: nv23_aligned_nv_t2star_13c_image172647_20260514_1728
+Project dir: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728
+Shared NV startup memory: <OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md
+Detailed NV research knowledge: <OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md
+Lab log: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md
+Figure root: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures
+Human advice: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md
+Advice inbox: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/advice/inbox
+Research state: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md
+Bridge jobs: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/bridge_jobs
+Evidence index: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl
+Experiment intents: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents
+Work notes: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes
+Agent completion marker: <OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/agent_runs/tick_000027_3c96d88547557853_project.done.json
+Agent backend: openclaw-hook
+Agent id override: nv-researcher
+Agent session key: agent:nv-researcher:hook:nv-project-manager:nv23_aligned_nv_t2star_13c_image172647_20260514_1728:wake:ticked-000027-3c96d88547557853
+Agent model override: openai-codex/gpt-5.5
+Agent thinking override: xhigh
+Completion marker contract: when an Agent completion marker path is provided, writing that marker is the required handoff that tells cron this wake is finished. Ledger, backlog, log.md, or work/task updates show progress but do not by themselves release the in-flight wake. Do not rely on manager fallback auto-markers. If you stop for any reason, including no more useful work, bridge running, external blocker, after submitting a long-running execute, after queueing a not-yet-runnable next item, or after completing the current useful work, write the marker as your final action. The marker JSON must include project_id, completed_at, status, summary, touched_bridge_queue, next_action, and updated_backlog_item_ids (use [] when none were updated).
+Cron state path: <OPENCLAW_WORKSPACE>/.openclaw/project_cron/nv23_aligned_nv_t2star_13c_image172647_20260514_1728.json
+Project lifecycle: active
+Operational state: active
+Legacy status: active
+Wake intent: continue project work
+Work pointer JSON:
+{
+  "kind": "advance_project",
+  "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+  "research_context": {
+    "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+    "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+    "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+    "evidence_count": 68,
+    "recent_evidence": [
+      {
+        "actor": "openclaw-project-manager",
+        "category": "analysis",
+        "evidence_id": "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_raw_8avg_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_drift_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png",
+          "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_201034_auto_ramsey/result.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Terminal 8-average Ramsey/T2star scout completed and was raw-exported, plotted, drift-checked, FFT-reviewed, and fit-tested. Counts were healthy (pre-run TrackCenter 43.710 kcps, post-run final 41.020 kcps), scan matched 43 tau points over 0-8 us with det=1.5 MHz and 8 x 50000 reps, and scan-order-aware drift found no flagged averages. Signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz; fit-derived T2* is short/few-us but not a final scalar because early-time handling changes the result. The nominal det carrier is weak and the apparent high-sideband power is ambiguous with an effective carrier shift, so 13C is not established. Recommended next step is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+        "tags": [
+          "ramsey",
+          "t2star",
+          "13c",
+          "terminal",
+          "reimage1804_c02",
+          "8avg",
+          "drift",
+          "fft",
+          "fit"
+        ],
+        "timestamp": "2026-05-14T22:04:48"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "figure",
+        "evidence_id": "figure_20260514_220457_624432_31a52eb7ad",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 Ramsey terminal 8-average review: Terminal 8-average Ramsey/T2star scout completed with healthy counts and no stop/error. Raw export, figure, FFT review, fits, and scan-order-aware drift diagnostic are recorded. The signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz and a short/few-us T2* order, but the scalar T2* is not final because early tau handling changes the fitted value. The nominal 1.5 MHz carrier is weak and the high-frequency power is ambiguous with carrier shift, so 13C is not established. Next recommended experiment is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:04:57"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "artifact",
+        "evidence_id": "weak_pi_podmr_refine_reimage1804_c02_running_20260514_2214",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2214.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Weak-pi pODMR resonance-refinement execute was submitted after terminal Ramsey review, project lifecycle/queue race check, intent verification, and MATLAB advisory with no blockers. Bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 is running at average 1/4 with Final = 41.608 kcps, monitor active with no last_error, stop_requested=false. This touches the bridge queue; no further bridge-touching work until terminal/anomaly evidence.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:15:41"
+      },
+      {
+        "actor": "nv-researcher",
+        "category": "analysis",
+        "evidence_id": "weak_pi_podmr_autosave_reimage1804_c02_3avg_review_20260514_2244",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_weak_pi_podmr_autosave_3avg_review_20260514_2244.md",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_raw_20260514_2241.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_3avg_summary_20260514_2244.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_drift_20260514_2241.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_autosave_3avg_20260514_2244.png",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2246.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Provisional 3-average autosave review of the running weak-pi pODMR refinement. The bridge job remains running at average index 4 with healthy counts and no stop request. Autosave has 3 completed averages x 50000 reps over 3.873461010-3.879461010 GHz. Raw/readout-aware analysis shows a narrow signal-only dip near the prior strong-pi center: fitted signal center about 3.876493370 GHz, depth about 11.7%, FWHM about 0.87 MHz; nearest sampled point at 3.876461010 GHz has about 10.24% signal depression but only about 0.84% reference depression. Drift diagnostic used Scan.ScanOrderEachAvg/snake and found no flagged averages. This is provisional running evidence only; wait for terminal weak-pi data before fixing the Ramsey mw_freq.",
+        "tags": [
+          "weak-pi",
+          "podmr",
+          "autosave",
+          "reimage1804_c02",
+          "3avg",
+          "running",
+          "resonance-refinement"
+        ],
+        "timestamp": "2026-05-14T22:47:05"
+      },
+      {
+        "actor": "nv-researcher",
+        "category": "figure",
+        "evidence_id": "figure_20260514_224714_724448_2ed528749f",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_autosave_3avg_20260514_2244.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 weak-pi pODMR 3-average autosave review: Raw-exported, drift-checked, plotted, and fit-reviewed the 3-average autosave of the running reimage1804_c02 weak-pi pODMR resonance refinement. The bridge job remains running at average index 4 with Final = 43.649 kcps and stop_requested=false, so no queue mutation was performed. The 3-average autosave shows a narrow signal-only dip near the prior strong-pi center: fitted signal center about 3.876493370 GHz, depth about 11.7%, FWHM about 0.87 MHz; the nearest sampled point at 3.876461010 GHz has about 10.24% signal depression but only about 0.84% reference depression. Scan-order-aware drift found no flagged averages. This is provisional running evidence only; wait for terminal weak-pi data before fixing the next Ramsey mw_freq.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:47:14"
+      }
+    ],
+    "experiment_intents": {
+      "queued": 0,
+      "verified": 1,
+      "rejected": 0,
+      "done": 6
+    },
+    "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+    "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+  },
+  "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+}
+
+Project context JSON:
+{
+  "objective": "Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion.",
+  "sample_id": "NV23",
+  "planning_horizon": {},
+  "success_metrics": [],
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "startup_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_required_for": [
+      "nv-researcher",
+      "nv_project_work",
+      "nv-project-manager"
+    ],
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "scope": "compact_startup_contract_and_detailed_nv_knowledge_router",
+    "source": "NV_RESEARCH_MEMORY.md",
+    "detailed_source": "NV_RESEARCH_KNOWLEDGE.md",
+    "exists": true,
+    "updated_epoch": 1778784582.8272047,
+    "size_bytes": 16486,
+    "snapshot_char_limit": 16000,
+    "snapshot_truncated": true,
+    "snapshot": "# NV Research Memory\n\nCompact every-wake contract for NV project-execution agents.\n\nThis file is separate from `MEMORY.md`. Direct-chat sessions may use\n`MEMORY.md`; `nv-researcher` project wakes use this file as startup policy and\nrouter. Detailed NV practice lives in\n`<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md` and should be read\nby relevant section only.\n\n## Core Wake Contract\n\nOn every NV project wake, read:\n\n- This file.\n- The current project's `brief.md`, `human_advice.md`, and `work/state.md`.\n- Compact state, wake reason, `next_action`, blocker ids, and latest evidence\n  pointers supplied by the scheduler.\n\nDo not routinely read broad `AGENTS.md` files. Consult them only for visible\ncode/policy conflicts, explicit wake instructions, or hardware/protocol/code\nquestions.\n\nConflict priority:\n\n1. Explicit human `STOP`, pause, cancel, do-not-continue, or must-first\n   instructions.\n2. Hard bridge queue, hardware, code-safety, manifest, execute, and local lab\n   opt-in gates.\n3. Current project `human_advice.md`.\n4. Current project brief, state, compact state, and latest evidence.\n5. This file.\n6. Historical examples and optional references.\n\nRule strengths:\n\n- `HARD`: fail-closed. Includes STOP/pause/cancel orders, queue mutation rules,\n  hardware/code/manifest/execute uncertainty, local lab opt-in, and completion\n  markers.\n- `DEFAULT`: normal lab practice. Follow unless current evidence or human advice\n  justifies a safer, more specific choice.\n- `SOFT`: scientific interpretation guidance. Use for caveats, provenance,\n  finding scope, and follow-up design; do not make it an external blocker by\n  itself.\n- `PROVENANCE`: evidence used for reasoning. Not a hard gate by itself.\n- `HISTORICAL`: old context. Do not revive as current policy without a specific\n  reason.\n\n## Hard Safety Baseline\n\n- Do not submit, mutate, stop, or mark terminal any bridge job unless the bridge\n  queue/running state and requested action satisfy the bridge policy.\n- Bridge occupancy blocks new bridge-touching submission or queue mutation.\n  Bridge-free analysis, notes, planning, and evidence cleanup may continue.\n- Hardware/safety uncertainty, non-trackable manual apparatus uncertainty,\n  code-safety uncertainty, manifest-limit uncertainty, missing local lab opt-in,\n  or execute-gate failure blocks the affected action.\n- Before materializing a new bridge-touching experiment, prefer an\n  agent-authored experiment intent and parse the verifier JSON verdict. A zero\n  process return code is not enough if the JSON verdict is blocked.\n- Preserve the MATLAB bridge safety model. Do not widen hardware limits,\n  manifest limits, execute gates, or instrument-driver behavior from an NV\n  project wake.\n- Before ending any cron-triggered project-execution wake, write the required\n  JSON completion marker at the exact path from the wake prompt.\n\n## Working Defaults\n\n- Treat prior conclusions as hypotheses, not facts; re-check primary evidence\n  before building further decisions on them.\n- `next_action` is a state pointer, not the full research plan. Python owns\n  durable state, queue safety, audit logs, wake pacing, and hard safety gates.\n  The agent owns research judgment, chunk planning, evidence synthesis,\n  literature/prior-result comparison, pulse-sequence protocol inspection, and\n  experiment design.\n- Use a same-wake runnable work loop. Continue safe grounded project work until\n  bridge state, hard gates, real external blockers, exhausted runnable work, or\n  the required handoff stops the wake.\n- From current experiment data, calculation/analysis results, and literature\n  findings, form scientific hypotheses and then perform or plan experiments,\n  calculations/analysis, and literature review to test them.\n- For signals observed in experiment results, evaluate whether they plausibly\n  arise from a physical phenomenon or from apparatus artifacts, analysis\n  artifacts, or noise.\n- The 23-C quick starter PDF is available to OpenClaw agents at\n  `<OPENCLAW_WORKSPACE>/docs/Quick_Starter_Guide.pdf`.\n- Current 23-C setup context: the Tektronix AWG5014B has been replaced by two\n  Siglent SDG6032X units; experiments use the `ms = +1` transition; the DC\n  magnetic field corresponds to resonance near 3.875 GHz.\n- Current setup contrast reference: photoluminescence contrast between\n  `m_S = 0` and `m_S = +1` is about 22%; use measurement-specific expected\n  contrast when deciding signal presence.\n- When judging a candidate signal, compare the observed effect size with the\n  measurement-specific expected contrast; features far below the expected\n  contrast need stronger supporting evidence before being promoted.\n- Also compare the observed effect size with its noise/uncertainty; low-SNR\n  features need stronger supporting evidence before being promoted.\n- Readout roles are sequence-dependent; inspect the actual XML before\n  interpreting reference/signal channels. Signal contrast can be evaluated from\n  the signal readout alone, relative to its own off-resonant or fitted baseline;\n  reference normalization is not required to obtain signal contrast. Use\n  reference-based normalization mainly for drift correction and plotting.\n  Normalization amplifies noise and denominator artifacts. When using\n  normalization, evaluate and record both required views: point-wise\n  normalization and normalization against a fitted line or curve to the\n  reference readout. Compare both with raw readouts to capture slow\n  reference/baseline variation from drift without adding more noise.\n- Do not use point-wise normalization values as the signal-presence criterion.\n  Do not treat normalization-only features as candidate physical signals.\n- Keep candidate signal presence, physical interpretation, and derived\n  parameter claims separate.\n- Calibration/scout are usually fine at `2e5-3e5` total shots. Use at least\n  `2e5` total shots to secure minimum SNR. Cleaner\n  quantitative data can require more than `2e5-3e5` total shots, and\n  publication-quality data generally requires at least `1e6` total shots,\n  because this setup has error sources beyond shot noise, including drift and\n  laser-power fluctuations.\n- The experiment code has also been substantially revised for the two-Siglent\n  route; do not assume old Tektronix AWG5014B code paths or timing behavior are\n  protocol-equivalent to the current setup without inspecting the active code\n  and sequence XML/manifest.\n- For this setup, use the working approximation that Rabi frequency is about\n  10 MHz at `mod_depth = 1` and scales approximately linearly with `mod_depth`.\n- External blocking is only for cases where progress requires a human, robot, or\n  other physical-world action, or where hardware/safety/queue/code uncertainty\n  makes an action unsafe. Scientific uncertainty should be handled by the agent.\n- After meaningful evidence review, terminal results, model comparison, or\n  bridge-free synthesis, update Current Findings with what is supported, useful\n  for the next decision, downgraded, unresolved, and what evidence would change\n  the finding.\n- Always establish the expected signal from the relevant physical model before\n  planning or interpreting measurements; always perform a simulation or explicit\n  model calculation. When experiment results disagree with the current model,\n  consider revising the model or explicitly record why it is being kept.\n- Always assess whether the expected signal from the relevant physical model\n  should be distinguishable from noise/uncertainty.\n- First decide whether a signal is present from raw/readout-aware evidence; fit\n  only after signal presence is supported, using an appropriate physical or\n  empirical function for that measurement type. Estimate downstream calibrated\n  parameters with an appropriate fit/model. Do not silently use a simple grid\n  maximum, minimum, argmax, or argmin when a valid fit/model-derived estimate is\n  possible. If using an extremum fallback, record why and propagate its\n  uncertainty.\n- Stored averages are often primarily a tracking cadence, not a strong\n  independent-repeatability test; do not overweight average-to-average agreement\n  unless repetitions per average are large enough for that comparison.\n- Recent-average drift under snake scan order is advisory provenance. Do not\n  stop, wake, or block solely for drift flags. Stop only for hard anomalies such\n  as tracking loss, count collapse, hardware/safety uncertainty, explicit STOP,\n  or monitor errors that make continuing unsafe.\n- On drift, count collapse, TrackCenter failure, imaging-frame shift, or\n  resonance shift, check TSP01 logs and record temp/RH deltas as provenance.\n- For snake-ordered scans with stored averages, use an even number of averages\n  by default so forward and reverse acquisition directions are balanced. If an\n  odd average count is intentionally used, record the explicit exception reason.\n- Use recent drift-score evidence, including usable measurement-derived drift\n  scores from the last 1 hour when available, and the MATLAB/OpenClaw advisory\n  when choosing repetitions, averages, and scan points. Cite the last-hour drift\n  evidence in the plan when it affects the choice. Good drift can justify a\n  longer per-average window only within the active advisory cap. If the advisory\n  estimated per-average/tracking window exceeds the cap, revise before execute:\n  reduce repetitions per average and/or scan points first, raise averages only\n  when doing so preserves useful total shots without violating the cap, and\n  reduce total shots when the task is a screening/triage measurement that does\n  not require precision. Drift conditions continuously change; do not blindly\n  reuse averages/repetitions from past data without reassessing current drift\n  evidence and advisory caps.\n- Consider drift before relying on saved Imaging positions. If the sample or\n  focus may have moved enough that the saved image no longer points to the\n  current target locations, repeat Imaging or run an expanded re-image before\n  using those positions.\n- If TrackCenter fails repeatedly from saved or image-derived seeds, suspect\n  that drift has shifted the Imaging frame relative to the current target\n  locations. Re-image before treating the candidate as absent or non-trackable.\n- Quantitative follow-up guidance applies only after prerequisite\n  signal/resonance evidence is established. Do not use it to rescue failed\n  signal-presence.\n- For substantive scientific decisions and experiment-result interpretation,\n  compare current evidence with relevant literature and this lab's past data\n  before finalizing the next scientific decision or interpretation. Use a\n  targeted web literature search when needed to keep the\n  comparison current and well sourced. Prefer primary sources and record the\n  search queries, sources, and decision-relevant takeaway used.\n- For pulse-sequence-dependent plans or scientific statements, inspect the\n  actual sequence XML/manifest, active instruction path, timing definitions,\n  typed/boolean variables, comments/disabled blocks, saved metadata, and\n  readout roles before relying on shortcut names or stating protocol parity.\n- Use targeted evidence access. Start from compact state and latest pointers;\n  read large logs by tail or id/keyword search.\n- Durable project notes, advice records, backlog text, completion markers, and\n  other machine-consumed records should be plain English and preferably ASCII.\n  User-facing chat and notification_service reports may be Japanese.\n\n## Memory Index\n\nUse this router for `NV_RESEARCH_KNOWLEDGE.md`:\n\n- `Shared Literature`: web literature search, papers, DOI/arXiv/publisher\n  pages, local paper library, prior-result comparison, Hamiltonian/model\n  interpretation, coupling extraction, old hardware assumptions.\n- `Experiment Defaults`: sequence defaults, strong-pi pulsed ODMR, resonance\n  validity, Rabi/weak-pi, CPMG/Hahn/XY8/DDRF, XML/protocol\n  inspection, weak signal follow-up.\n- `Drift, Tracking, And Environment`: Imaging, TrackCenter, usual NV/NV23\n  identity, nearby-NV recovery, position freshness, TSP01/environment drift,\n  count/tracking interpretation.\n- `Shot Budget And Data Quality`: shot credit, SEM scaling, stored averages,\n  visual review, fit validity, snake scan, recent-average drift.\n- `OpenClaw Project Operation`: route policy, same-wake work, running-execute\n  bridge-free work, project layout, advice inbox, verifier verdicts, WSL\n  canonical state, Imaging/TrackCenter helpers, queue staging, completion\n  markers, code auto-resume, notification_service reports/media.\n- `Research Practice And Closeout`: literature/prior-result comparison,\n  non-experiment findings that affect design, LaTeX closeout reports, manual\n  experiment evidence.\n\n## Wake Digest\n\n- `HARD`: Human STOP/pause/cancel/must-first instructions and bridge/hardware/\n  code/manifest/execute failures override autonomy.\n- `HARD`: Parse verifier JSON before enqueue; return code alone is insufficient.\n- `HARD`: Every cron-triggered wake must write the completion marker.\n- `HARD`: Before planning or interpreting any measurement, establish the\n  expected signal from the relevant physical model and always perform a\n  simulation or explicit quantitative model calculation. Qualitative\n  expected-signal prose is not a model calculation. If this is missing, do not\n  enqueue the measurement or promote the interpretation.\n- `HARD`: Design each measurement from a simulation or explicit quantitative\n  model so the target effect should be distinguishable from noise/uncertainty.\n  Before enqueue, record the expected effect size/scale, the chosen scan range,\n  spacing, repetitions/averages, and why those settings should make the effect\n  visible. If the target effect is not expected to be resolvable, redesign the\n  measurement before enqueue.\n- `DEFAULT`: Do not put automatic fit requests such as `analysis.fit_kind` into\n  ordinary bridge jobs. Use terminal savedexperiment raw export plus plots\n  first.\n- `DEFAULT`: For substantive scientific decisions and experiment-result\n  interpretation, compare current evidence with relevant literature and this\n  lab's past data before finalizing the next scientific decision or\n  interpretation. Web-search the literature as needed to make that comparison\n  current and well sourced.\n- `DEFAULT`: Inspect actual sequence XML/manifest content before protocol-based\n  plans or scientific statements.\n- `SOFT`: Use SEM/SEM-scaling only when planning or reviewing long acquisitions\n  intended to improve statistics by accumulating more shots.\n- `HARD`: Under snake scan order, use even average counts by default and\n  record any odd-count exception. Tune repetitions, averages, and scan points\n  from recent drift scores, including last-hour measurement-derived drift scores\n  when available, plus advisory drift risk. Good drift can justify a longer\n  per-average window only within the active advisory cap; if the advisory\n  exceeds that cap, revise before execute by reducing repetitions per average\n  and/or scan points before considering a capped, shot-preserving average split.\n  Drift conditions continuously change; do not blindly reuse averages/\n  repetitions from past data without reassessing current drift evidence and\n  advisory caps.\n- `HARD`: Consider drift before relying on saved Imaging positions. If the\n  sample or focus may have moved enough that the saved image no longer points to\n  the current target locations, repeat Imaging or run an expanded re-image\n  before using those positions.\n- `HARD`: If TrackCenter fails repeatedly from saved or image-derived seeds,\n  suspect Imaging-frame drift and re-image before treating the candidate as\n  absent or non-trackable.\n- `HARD`: Do not infer or transpose SavedImages axes from array shape. Python\n  image analysis must use an explicit `ImageData_YXZ`/`axis_order` contract\n  before candidate coordinates are used for TrackCenter.\n- `PROVENANCE`: Usual-NV/NV23 labeled imaging/tracking data informs identit",
+    "detailed_knowledge_exists": true,
+    "detailed_knowledge_updated_epoch": 1778785464.3217745,
+    "detailed_knowledge_size_bytes": 30021
+  },
+  "autonomy": {},
+  "research_context": {
+    "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+    "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+    "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+    "evidence_count": 68,
+    "recent_evidence": [
+      {
+        "actor": "openclaw-project-manager",
+        "category": "analysis",
+        "evidence_id": "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_raw_8avg_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_drift_20260514_2150.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png",
+          "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_201034_auto_ramsey/result.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Terminal 8-average Ramsey/T2star scout completed and was raw-exported, plotted, drift-checked, FFT-reviewed, and fit-tested. Counts were healthy (pre-run TrackCenter 43.710 kcps, post-run final 41.020 kcps), scan matched 43 tau points over 0-8 us with det=1.5 MHz and 8 x 50000 reps, and scan-order-aware drift found no flagged averages. Signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz; fit-derived T2* is short/few-us but not a final scalar because early-time handling changes the result. The nominal det carrier is weak and the apparent high-sideband power is ambiguous with an effective carrier shift, so 13C is not established. Recommended next step is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+        "tags": [
+          "ramsey",
+          "t2star",
+          "13c",
+          "terminal",
+          "reimage1804_c02",
+          "8avg",
+          "drift",
+          "fft",
+          "fit"
+        ],
+        "timestamp": "2026-05-14T22:04:48"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "figure",
+        "evidence_id": "figure_20260514_220457_624432_31a52eb7ad",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 Ramsey terminal 8-average review: Terminal 8-average Ramsey/T2star scout completed with healthy counts and no stop/error. Raw export, figure, FFT review, fits, and scan-order-aware drift diagnostic are recorded. The signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz and a short/few-us T2* order, but the scalar T2* is not final because early tau handling changes the fitted value. The nominal 1.5 MHz carrier is weak and the high-frequency power is ambiguous with carrier shift, so 13C is not established. Next recommended experiment is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:04:57"
+      },
+      {
+        "actor": "openclaw-project-manager",
+        "category": "artifact",
+        "evidence_id": "weak_pi_podmr_refine_reimage1804_c02_running_20260514_2214",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2214.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Weak-pi pODMR resonance-refinement execute was submitted after terminal Ramsey review, project lifecycle/queue race check, intent verification, and MATLAB advisory with no blockers. Bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 is running at average 1/4 with Final = 41.608 kcps, monitor active with no last_error, stop_requested=false. This touches the bridge queue; no further bridge-touching work until terminal/anomaly evidence.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:15:41"
+      },
+      {
+        "actor": "nv-researcher",
+        "category": "analysis",
+        "evidence_id": "weak_pi_podmr_autosave_reimage1804_c02_3avg_review_20260514_2244",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_weak_pi_podmr_autosave_3avg_review_20260514_2244.md",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_raw_20260514_2241.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_3avg_summary_20260514_2244.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_autosave_drift_20260514_2241.json",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_autosave_3avg_20260514_2244.png",
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2246.json"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {},
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-evidence",
+        "summary": "Provisional 3-average autosave review of the running weak-pi pODMR refinement. The bridge job remains running at average index 4 with healthy counts and no stop request. Autosave has 3 completed averages x 50000 reps over 3.873461010-3.879461010 GHz. Raw/readout-aware analysis shows a narrow signal-only dip near the prior strong-pi center: fitted signal center about 3.876493370 GHz, depth about 11.7%, FWHM about 0.87 MHz; nearest sampled point at 3.876461010 GHz has about 10.24% signal depression but only about 0.84% reference depression. Drift diagnostic used Scan.ScanOrderEachAvg/snake and found no flagged averages. This is provisional running evidence only; wait for terminal weak-pi data before fixing the Ramsey mw_freq.",
+        "tags": [
+          "weak-pi",
+          "podmr",
+          "autosave",
+          "reimage1804_c02",
+          "3avg",
+          "running",
+          "resonance-refinement"
+        ],
+        "timestamp": "2026-05-14T22:47:05"
+      },
+      {
+        "actor": "nv-researcher",
+        "category": "figure",
+        "evidence_id": "figure_20260514_224714_724448_2ed528749f",
+        "paths": [
+          "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_autosave_3avg_20260514_2244.png"
+        ],
+        "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+        "provenance": {
+          "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+          "ledger_event": "lab_log_note"
+        },
+        "related_claims": [],
+        "schema_version": 1,
+        "source": "record-lab-log",
+        "summary": "c02 weak-pi pODMR 3-average autosave review: Raw-exported, drift-checked, plotted, and fit-reviewed the 3-average autosave of the running reimage1804_c02 weak-pi pODMR resonance refinement. The bridge job remains running at average index 4 with Final = 43.649 kcps and stop_requested=false, so no queue mutation was performed. The 3-average autosave shows a narrow signal-only dip near the prior strong-pi center: fitted signal center about 3.876493370 GHz, depth about 11.7%, FWHM about 0.87 MHz; the nearest sampled point at 3.876461010 GHz has about 10.24% signal depression but only about 0.84% reference depression. Scan-order-aware drift found no flagged averages. This is provisional running evidence only; wait for terminal weak-pi data before fixing the next Ramsey mw_freq.",
+        "tags": [],
+        "timestamp": "2026-05-14T22:47:14"
+      }
+    ],
+    "experiment_intents": {
+      "queued": 0,
+      "verified": 1,
+      "rejected": 0,
+      "done": 6
+    },
+    "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+    "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+  },
+  "budgets": {},
+  "stop_conditions": []
+}
+
+Blocking ids:
+- none
+
+Operating rules:
+- Read NV_RESEARCH_MEMORY.md first. It is the every-wake startup memory; its `Core Wake Contract` is the canonical startup, priority, safety, and context-routing policy for nv-researcher.
+- Use its Memory Index to decide which relevant sections, if any, to read from NV_RESEARCH_KNOWLEDGE.md. Do not read the detailed knowledge file in full by default.
+- Routine startup context is intentionally compact: NV_RESEARCH_MEMORY.md, brief.md, human_advice.md, work/state.md, the Work pointer JSON, Project context JSON, blocker ids, and latest evidence pointers in this prompt.
+- Do not routinely read <MATLAB_23C_ROOT>/AGENTS.md or the OpenClaw workspace AGENTS.md for project wakes. Consult AGENTS/protocol docs only for visible code/policy conflicts, code or hardware/protocol editing, explicit wake instructions, or specific compact-state pointers.
+- Treat `next_action` as a state pointer or blocker, not a complete scientific plan and not a one-item stopping point. Use the same-wake runnable work loop: pick the next safe grounded project task from the required project context, read relevant NV_RESEARCH_KNOWLEDGE.md sections/evidence only as needed, complete or update the task, then continue to the next runnable task until a real stop condition is reached.
+- Python owns durable state, queue safety, audit logs, wake pacing, and hard hardware/code safety boundaries. The agent owns research judgment, evidence synthesis, chunk planning, and experiment-design reasoning.
+- For bridge-touching work, obey the Core Wake Contract: write/verify an experiment intent when appropriate, require queue idle before submission or mutation, preserve MATLAB bridge safety gates, and never widen hardware or manifest safety limits.
+- During running executes, first check terminal/anomaly evidence, then do useful bridge-free project work when grounded. Do not mutate the bridge queue or stop/mark terminal without terminal or hard-anomaly evidence.
+- Keep work/state.md current when interpretation, candidate findings, final claims, decisions, open questions, or next-experiment implications change. Register important artifacts and write focused work/notes or lab-log entries when useful.
+- If this wake produces a reusable detailed NV lesson, update NV_RESEARCH_KNOWLEDGE.md in the relevant section with a concise dated note and source/provenance pointer. Keep transient project state in the project work tree; update NV_RESEARCH_MEMORY.md only for every-wake priority, hard safety, routing, or digest changes.
+- Process advice inbox only to find unprocessed advice; `human_advice.md` is the effective human guidance after interpretation/disposal.
+- Use the same-wake runnable work loop to make as much grounded project progress as safely possible: complete/update the current item, queue the next safe runnable item when needed, and continue immediately while policy, bridge state, evidence, and time budget permit.
+- Always write the required JSON completion marker at the Agent completion marker path before ending a cron-triggered wake. Include project_id, completed_at, status, summary, touched_bridge_queue, next_action, and updated_backlog_item_ids (use [] when none were updated). Ledger, backlog, log, or notes updates are not a substitute.

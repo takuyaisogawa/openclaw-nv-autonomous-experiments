@@ -1,0 +1,157 @@
+
+\documentclass[11pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue}
+\graphicspath{{figures/}}
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+\newcommand{\kcps}{kcps}
+\newcommand{\us}{\ensuremath{\mu\mathrm{s}}}
+\newcommand{\MHz}{\ensuremath{\mathrm{MHz}}}
+\newcommand{\kHz}{\ensuremath{\mathrm{kHz}}}
+\newcommand{\Cthirteen}{\ensuremath{^{13}\mathrm{C}}}
+\newcommand{\TtwoStar}{\ensuremath{T_2^*}}
+
+\title{NV23 image172647 closeout report: aligned NV, \TtwoStar, and \Cthirteen{} evidence}
+\author{OpenClaw nv-researcher}
+\date{2026-05-15}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The project objective was to find a magnetic-field-aligned NV in the spatial range of SavedImage 3DXYZ-Image-2026-05-14-172647 and then obtain well-supported \TtwoStar{} and \Cthirteen{} conclusions. The aligned branch is \texttt{reimage1804\_c02}, tracked at roughly 39.7 \kcps{} and accepted after terminal strong-pi pulsed ODMR showed a clear signal-only resonance near 3.87646 GHz. Ramsey data at three programmed detunings support only a short/few-microsecond \TtwoStar{} scale, not a robust scalar. The \Cthirteen{} conclusion is stronger than Ramsey alone: det-shift Ramsey left a weak high-sideband-consistent candidate, and terminal CPMG N=8 independently showed a final-echo dip in the modeled $1/(4 f_{13})$ target region. The supported final statement is: \textbf{reimage1804\_c02 likely has a weak/moderate nearby-\Cthirteen{}-like coupling signature, but the current data do not support precise coupling extraction or a publication-grade single-spin claim.}
+\end{abstract}
+
+\section{Final claims}
+\begin{itemize}
+  \item \textbf{Aligned NV:} established on \texttt{reimage1804\_c02}. Strong-pi pODMR terminal raw/fitted-reference signal depth was 13.8--14.0\%, centered at 3.876461010 GHz with approximately 0.69 MHz covariance uncertainty and 11.2 MHz FWHM. The reference did not show a matching depression (0.02\%). Contrast is lower than the setup reference of about 22\%, but is far above rejected \texttt{reimage1804\_c01}.
+  \item \textbf{\TtwoStar:} supported only as a short/few-\us{} order. Across terminal Ramsey fits, all-point fits were about 1.5--2.1 \us{} and fits excluding the first point were about 2.4--3.1 \us{}. Frequency/window/early-time handling changes the scalar, so the closeout value should be reported as \emph{about 2--3 \us{}, method-sensitive}, not as a precise final number.
+  \item \textbf{\Cthirteen:} likely weak/moderate nearby-\Cthirteen{}-like coupling. Ramsey high-sideband target amplitudes followed the programmed detuning at about 1.95\%, 0.84\%, and 1.01\% for detunings 1.50, 1.00, and 1.25 MHz, while fixed old high-frequency alternatives weakened. Terminal CPMG then showed a readout3/final-echo target-region dip at $\tau=0.6736$ \us{}, 23.6 ns from the modeled $1/(4 f_{13})$ target, with readout3/self=0.9528, readout3/readout1-baseline=0.9518, and readout3/readout2-baseline=0.9568.
+\end{itemize}
+
+\section{Candidate search and acceptance path}
+The initial saved image was exported with an explicit \texttt{ImageData\_YXZ}/kcps axis contract before any coordinates were used for tracking. The first candidate, \texttt{image172647\_c01}, tracked once but later failed the pODMR execute before data because of low in-run counts; immediate standalone retrack also failed low-count. This was treated as count/freshness evidence rather than no-resonance evidence. A fresh re-image of the original region was therefore used.
+
+\texttt{reimage1804\_c01} tracked successfully but its terminal strong-pi pODMR produced only about 4--5\% signal depressions against an expected approximately 22\% contrast, so it was rejected for the aligned-NV branch. \texttt{reimage1804\_c02} was the next ranked fresh candidate, tracked with final counts 39.690 \kcps{}, and passed the alignment screen.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{candidates.png}
+\caption{Fresh re-image candidate ranking used after the stale initial candidate failed low-count diagnostics. \texttt{reimage1804\_c02} became the accepted aligned branch after \texttt{reimage1804\_c01} was rejected by pODMR.}
+\end{figure}
+
+\section{pODMR resonance evidence}
+The strong-pi pODMR alignment screen used \texttt{Rabimodulated.xml}, 3.825--3.925 GHz, 31 points, 4 averages, 50k repetitions/average, \texttt{mod\_depth=1}, \texttt{length\_rabi\_pulse=52 ns}, \texttt{mw\_ampl=-5}, \texttt{ampIQ=5}, and \texttt{freqIQ=50 MHz}. Terminal review verified readout roles: readout1 is the $m_S=0$ reference and readout2 is the signal. The signal-only dip was strong enough to accept alignment, despite lower-than-reference contrast.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{strong_podmr.png}
+\caption{Terminal strong-pi pODMR for \texttt{reimage1804\_c02}. The signal readout shows a clear dip near 3.87646 GHz without a matching reference dip.}
+\end{figure}
+
+A later weak-pi pODMR refinement used a narrower 6 MHz span around the strong-pi center. It refined the working microwave center to 3.876501337 GHz with about 47 kHz fit uncertainty, depth about 11.4\%, and FWHM about 0.94 MHz. This frequency was used for later Ramsey/CPMG planning; pODMR by itself was not treated as \Cthirteen{} evidence.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{weak_podmr.png}
+\caption{Terminal weak-pi pODMR resonance refinement. The refined center is close to the broad strong-pi center, ruling out a large electron-resonance mis-centering explanation for the earlier Ramsey high-frequency component.}
+\end{figure}
+
+\section{Ramsey \TtwoStar{} and weak \Cthirteen{} candidate}
+Three terminal Ramsey data sets were used. All used \texttt{ramsey.xml}, readout1 as the $m_S=0$ reference and readout2 as the Ramsey signal, snake scan order, and no scan-order-aware drift flags. The det=1.5 MHz scout used the broad strong-pi center. The det=1.0 and det=1.25 MHz follow-ups used the weak-pi center and 800k planned shots/point.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}l l l l r r r r r r@{}}
+\toprule
+Det (MHz) & Shots & $\tau$ span (\us) & FFT bin & direct $f_{13}$ & det-$f_{13}$ & carrier & det+$f_{13}$ & $\TtwoStar$ all & $\TtwoStar$ excl. first \\
+ & & & & \multicolumn{4}{c}{readout2/self FFT amplitude (\%)} & \multicolumn{2}{c}{fit, \us} \\
+\midrule
+1.50 & 8 x 50k & 0--8 & 122 kHz & 1.39 & 0.79 & 0.45 & 1.95 & 1.47 & 2.39 \\
+1.00 & 16 x 50k & 0--10 & 100 kHz & 0.14 & 0.73 & 0.41 & 0.84 & 2.11 & 2.94 \\
+1.25 & 16 x 50k & 0--10 & 100 kHz & 0.54 & 0.79 & 1.00 & 1.01 & 2.12 & 3.08 \\
+\bottomrule
+\end{tabular}
+\caption{Terminal Ramsey target-bin and fit summary. The high-sideband-compatible feature approximately tracks programmed detuning, but all target amplitudes are about-percent or sub-percent and the low-sideband/direct/carrier support is incomplete.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{ramsey_det1.png}
+\caption{Terminal det=1.0 MHz Ramsey review. It supports short/few-\us{} \TtwoStar{} order and a weak det+$f_{13}$ candidate, but not a standalone \Cthirteen{} claim.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{ramsey_det1p25.png}
+\caption{Terminal det=1.25 MHz Ramsey review. Static old-high/1.9 MHz alternatives are weak, and the strongest target bins are near the programmed carrier/high-sideband region, but the evidence remains low contrast.}
+\end{figure}
+
+\section{CPMG N=8 independent discriminator}
+Because Ramsey left a weak but plausible det-shift-consistent component, a non-blind CPMG N=8 tau scan was designed from the weak-pi center. The expected \Cthirteen{} Larmor frequency was about 384.6 kHz, giving modeled target conventions near $1/(4 f_{13})=0.6500$ \us{} and $1/(2 f_{13})=1.3001$ \us{}. The scan used \texttt{CPMG.xml}, $N=8$, $\tau=0.45$--1.60 \us{}, 37 points, 12 averages, 50k repetitions/average, and 600k shots/point. Terminal bridge status was clean: pre-run TrackCenter final 38.694 \kcps{}, post-run final 44.535 \kcps{}, no stop request, and no drift flags.
+
+Exact nearest-grid points were not the best interpretation because the modeled filter-width scale was about $\tau/N\approx81$ ns. A target-region review found the relevant minimum at $\tau=0.6736$ \us{}, inside the $1/(4 f_{13})$ target region. The feature appears in raw signal self-baseline and in reference-normalized diagnostics, so it is not a normalization-only artifact.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}r r r r r r@{}}
+\toprule
+Averages & Shots/pt & readout3/self at 0.6736 \us{} & dip (\%) & nearest 0.650 \us{} & nearest 1.300 \us{} \\
+\midrule
+2 & 100k & 0.9279 & 7.21 & 1.0197 & 0.9822 \\
+4 & 200k & 0.9732 & 2.68 & 0.9908 & 0.9971 \\
+6 & 300k & 0.9476 & 5.24 & 0.9850 & 0.9947 \\
+8 & 400k & 0.9437 & 5.63 & 0.9983 & 0.9978 \\
+10 & 500k & 0.9555 & 4.45 & 0.9998 & 0.9872 \\
+12 & 600k & 0.9528 & 4.72 & 0.9871 & 0.9841 \\
+\bottomrule
+\end{tabular}
+\caption{Even-subset trend for the CPMG target-region point. The exact nearest precomputed 0.650 \us{} point understated the terminal feature; the region minimum at 0.6736 \us{} persisted in later balanced subsets.}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{cpmg_full.png}
+\caption{Terminal 12-average CPMG N=8 review over the full 0.45--1.60 \us{} scan.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{cpmg_target.png}
+\caption{CPMG target-region review. The observed minimum at 0.6736 \us{} is within the modeled $1/(4 f_{13})$ target region and corroborates the earlier weak det-shift Ramsey candidate.}
+\end{figure}
+
+\section{Limitations and optional follow-up}
+\begin{itemize}
+  \item The strong-pi and weak-pi pODMR contrast on the accepted branch is lower than the approximately 22\% setup contrast reference; this is a caveat on signal strength, not a rejection.
+  \item The \TtwoStar{} scalar is sensitive to fit frequency, early-$\tau$ exclusion, and window choice. The reliable closeout is a short/few-\us{} order, not a precise scalar.
+  \item The \Cthirteen{} evidence is a supported weak/moderate nearby-\Cthirteen{}-like signature, not a precise coupling extraction. The CPMG target-region feature is the strongest corroborating evidence, but the project did not perform phase-resolved XY8/DDRF or a fine CPMG zoom.
+  \item No further bridge-touching work is required for the original objective. If stronger confidence or parameter extraction is requested later, a fine CPMG scan around 0.60--0.72 \us{} or a phase-readout XY8/DDRF-style discriminator would be the next non-blind refinement, after fresh model, drift, verifier, and advisory gates.
+\end{itemize}
+
+\section{Artifact index}
+Key project paths are in \texttt{<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23\_aligned\_nv\_t2star\_13c\_image172647\_20260514\_1728}. The main evidence artifacts used here are:
+\begin{itemize}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_podmr\_terminal\_summary\_4avg\_20260514\_1957.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_weak\_pi\_podmr\_terminal\_4avg\_summary\_20260514\_2251.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_ramsey\_terminal\_8avg\_summary\_20260514\_2150.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_ramsey\_det1\_terminal\_summary\_16avg\_20260515\_0245.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_ramsey\_det1p25\_terminal\_summary\_16avg\_20260515\_0645.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_cpmg\_n8\_terminal\_summary\_12avg\_20260515\_0935.json}
+  \item \texttt{work/artifacts/analysis/reimage1804\_c02\_cpmg\_n8\_terminal\_target\_region\_review\_20260515\_0945.json}
+\end{itemize}
+
+\section{Literature/prior-reference context}
+The report interpretation follows the project evidence and the current 23-C Siglent route, not old Tektronix timing assumptions. Literature/source checks used for context were: Doherty et al., ``The nitrogen-vacancy colour centre in diamond,'' Physics Reports 528, 1--45 (2013), doi:10.1016/j.physrep.2013.02.001, available in the local literature index; and de Lange et al., ``Universal dynamical decoupling of a single solid-state spin from a spin bath,'' Science 330, issue 6000 (2010), doi:10.1126/science.1192739, checked via Crossref on 2026-05-15. These references support the standard NV-center and dynamical-decoupling context; final numeric claims in this report come from the project artifacts above.
+
+\end{document}

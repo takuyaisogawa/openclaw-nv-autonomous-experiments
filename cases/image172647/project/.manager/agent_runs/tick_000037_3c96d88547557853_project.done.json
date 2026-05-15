@@ -1,0 +1,17 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T03:20:00-04:00",
+  "status": "completed_bridge_running",
+  "summary": "Terminal det=1.0 MHz Ramsey job nv23_ramsey_20260514_230820_auto_ramsey completed and was raw-exported/analyzed: 16x50000 reps, healthy pre/post counts 40.445/42.702 kcps, no stop request, safe shutdown ok, no scan-order drift flags. The review supports short/few-us T2star order but not a robust scalar; 13C remains not established, though a weak det+13C-compatible candidate is present. A bridge-free synthesis compared det=1.5 and det=1.0 Ramsey plus weak-pi pODMR, then modeled a targeted det=1.25 MHz third-det artifact-rejection Ramsey. Intent verifier and MATLAB advisory passed with no blockers, and bridge job nv23_ramsey_20260515_030822_auto_ramsey was launched; latest checked state is running at average 1/16 with monitor active, no last_error, stop_requested=false, and Final about 43.7 kcps. Updated state, backlog, evidence ledger, notes, and lab log.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+    "reason": "Det=1.25 MHz third-det Ramsey is running; bridge-touching work is blocked until terminal success/failure or hard anomaly evidence. On terminal success, raw-export the savedexperiment, plot raw/reference-aware/self-baseline views, run scan-order-aware drift diagnostic, and compare target bins at direct 13C ~0.385 MHz, det-13C ~0.865 MHz, carrier 1.250 MHz, det+13C ~1.635 MHz, old det=1.0 high-sideband/static-artifact region near 1.4 MHz, static low region near 0.7 MHz, and previous ~1.9 MHz ambiguity.",
+    "bridge_state": "running_avg_1_of_16_latest_checked_2026-05-15T03:18:54_EDT"
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_det1_claim_grade_reimage1804_c02",
+    "ramsey_det1p25_third_det_reimage1804_c02"
+  ]
+}

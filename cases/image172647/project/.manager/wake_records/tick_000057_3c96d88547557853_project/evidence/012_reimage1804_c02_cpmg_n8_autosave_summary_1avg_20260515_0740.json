@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "created_at": "2026-05-15T07:41:38",
+  "mat_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-CPMG-vary-tau-2026-05-15-072537.mat",
+  "status_snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_status_after_1avg_autosave_review_20260515_0740.json",
+  "bridge_state": "running",
+  "bridge_phase": "run_experiment_scan_point",
+  "bridge_updated_at": "2026-05-15T07:41:25",
+  "runtime": {
+    "figure_valid": true,
+    "has_experiment_handles": true,
+    "has_aborted": false,
+    "average_index": 2,
+    "averages_total": 1,
+    "average_fraction": 1,
+    "scan_points_total": 37,
+    "repetitions": 50000,
+    "sequence_name": "CPMG.xml",
+    "date_time": "2026-05-15-072537",
+    "experiment_status_text": "(1/12) averages completed for 1 scans",
+    "final_counts_text": "Final = 44.318 kcps",
+    "experiment_data_present": true,
+    "experiment_data_size": [
+      1,
+      1
+    ],
+    "pulse_mode": 4,
+    "autosave_checked": "on",
+    "saved_exp_dir": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537",
+    "autosave_target_exists": false,
+    "live_average_results_possible": true,
+    "live_average_results_available": false,
+    "live_average_results_hint": "Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes."
+  },
+  "monitor": {
+    "active": true,
+    "update_period_seconds": 5,
+    "timer_tag": "nv_bridge_runtime_monitor_nv23_cpmg_20260515_072306_auto_cpmg",
+    "started_at": "2026-05-15T07:25:36",
+    "last_tick_at": "2026-05-15T07:41:25",
+    "tick_count": 101,
+    "last_error": "",
+    "stop_requested_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "requested_by": "",
+    "requested_at": "",
+    "updated_at": "2026-05-15T07:23:15",
+    "stop_observed_at": "",
+    "stop_applied": false,
+    "stop_applied_at": "",
+    "stop_apply_error": ""
+  },
+  "sequence_name": "CPMG.xml",
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_us": 0.44999999999999996,
+    "end_us": 1.5999999999999985,
+    "points": 37,
+    "step_ns": 31.944444444444443,
+    "repetitions": 50000,
+    "saved_averages": 1,
+    "scan_order_mode": "snake"
+  },
+  "bool_values": [
+    {
+      "name": "do_adiabatic_inversion",
+      "value": 0
+    }
+  ],
+  "variable_values": [
+    {
+      "name": "sample_rate",
+      "value": 250000000.0
+    },
+    {
+      "name": "N",
+      "value": 8
+    },
+    {
+      "name": "tau",
+      "value": 1.6e-06
+    },
+    {
+      "name": "mod_depth",
+      "value": 1
+    },
+    {
+      "name": "length_pi",
+      "value": 5.2e-08
+    },
+    {
+      "name": "phase_y",
+      "value": 90
+    },
+    {
+      "name": "phase_ym",
+      "value": 270
+    },
+    {
+      "name": "switch_delay",
+      "value": 1e-07
+    },
+    {
+      "name": "wait_time",
+      "value": 2e-06
+    },
+    {
+      "name": "delay_wrt_1mus",
+      "value": 2e-07
+    },
+    {
+      "name": "sweep_range",
+      "value": 100000000.0
+    },
+    {
+      "name": "sweep_time",
+      "value": 1e-06
+    },
+    {
+      "name": "mw_freq",
+      "value": 3876501336.7539
+    },
+    {
+      "name": "mw_ampl",
+      "value": -5
+    },
+    {
+      "name": "ampIQ",
+      "value": 5
+    },
+    {
+      "name": "freqIQ",
+      "value": 50000000.0
+    },
+    {
+      "name": "detuning",
+      "value": 0
+    }
+  ],
+  "readout_role_assumption": "CPMG.xml reviewed before launch: readout1 true-0 reference, readout2 pi/ms=1 reference, readout3 final CPMG echo signal; terminal metadata must still be verified.",
+  "target_tau_us": {
+    "tau_1_over_4f_us": 0.6500487673645889,
+    "tau_1_over_2f_us": 1.3000975347291779
+  },
+  "readout_summaries": {
+    "readout1 ref0": {
+      "mean_kcps_like": 49.61746361746362,
+      "min_kcps_like": 45.30769230769231,
+      "max_kcps_like": 54.92307692307693,
+      "raw_peak_to_peak_percent_of_mean": 19.379032933880843,
+      "linear_self_norm_min": 0.9249056033844612,
+      "linear_self_norm_max": 1.0806920653783334,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500487673645889,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 50.76923076923077,
+          "linear_self_norm": 1.0446931980640775,
+          "local_neighbor_mean": 0.9796140051333306,
+          "local_neighbor_std": 0.04899104756540919,
+          "local_zscore": 1.3283894949145136,
+          "offset_ns": -8.382100697922557
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000975347291779,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 49.76923076923077,
+          "linear_self_norm": 0.9862687524018541,
+          "local_neighbor_mean": 0.9999126859785699,
+          "local_neighbor_std": 0.035899561060204734,
+          "local_zscore": -0.38005850695039034,
+          "offset_ns": 12.402465270821006
+        }
+      }
+    },
+    "readout2 pi/ms1 ref": {
+      "mean_kcps_like": 41.77130977130977,
+      "min_kcps_like": 35.53846153846153,
+      "max_kcps_like": 49.61538461538462,
+      "raw_peak_to_peak_percent_of_mean": 33.699980091578766,
+      "linear_self_norm_min": 0.9154636152869942,
+      "linear_self_norm_max": 1.1313974551159776,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500487673645889,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 41.46153846153847,
+          "linear_self_norm": 1.0536127250976297,
+          "local_neighbor_mean": 0.9892825075307728,
+          "local_neighbor_std": 0.029417910264310395,
+          "local_zscore": 2.1867704737988083,
+          "offset_ns": -8.382100697922557
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000975347291779,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 49.61538461538462,
+          "linear_self_norm": 1.1313974551159776,
+          "local_neighbor_mean": 0.9787853742276784,
+          "local_neighbor_std": 0.03795832291533495,
+          "local_zscore": 4.020516955627793,
+          "offset_ns": 12.402465270821006
+        }
+      }
+    },
+    "readout3 final CPMG echo": {
+      "mean_kcps_like": 47.28898128898129,
+      "min_kcps_like": 41.46153846153847,
+      "max_kcps_like": 51.38461538461538,
+      "raw_peak_to_peak_percent_of_mean": 20.98390925877075,
+      "linear_self_norm_min": 0.9026506542049443,
+      "linear_self_norm_max": 1.073580217212322,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500487673645889,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 45.76923076923077,
+          "linear_self_norm": 0.9995334169152686,
+          "local_neighbor_mean": 0.9726879212145892,
+          "local_neighbor_std": 0.03236584745063177,
+          "local_zscore": 0.829438986315045,
+          "offset_ns": -8.382100697922557
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000975347291779,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 48.0,
+          "linear_self_norm": 0.9839476695641028,
+          "local_neighbor_mean": 1.0037727326394057,
+          "local_neighbor_std": 0.024147843613727505,
+          "local_zscore": -0.8209868919323607,
+          "offset_ns": 12.402465270821006
+        }
+      }
+    }
+  },
+  "drift_summary": {
+    "ok": true,
+    "num_averages": 1,
+    "flagged_average_indices": [],
+    "scan_order_mode": "snake",
+    "reference_method": "single-average raw readout common-mode; no cross-average reference"
+  },
+  "interpretation": "One-average running autosave sanity check only. Final CPMG echo readout3 is raw-exportable and shows no obvious target-tau dip at the planned 0.650 or 1.300 us targets in this single 50k-shot average; readout2 reference has a high point near the 1.300 us target, so reference/normalization behavior must be checked at terminal. No 13C claim or rejection is made from this nonterminal one-average subset."
+}

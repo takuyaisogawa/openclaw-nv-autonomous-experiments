@@ -1,0 +1,161 @@
+{
+  "averages_present": 4,
+  "bool_values": {
+    "do_adiabatic_inversion": 1
+  },
+  "drift": {
+    "error_code": "",
+    "error_message": "",
+    "flagged_average_indices": [],
+    "num_averages": 4,
+    "num_points": 31,
+    "num_traces": 2,
+    "ok": true,
+    "recommended_agent_decision": null,
+    "scan_order_mode": "snake",
+    "scan_order_source": "Scan.ScanOrderEachAvg"
+  },
+  "freq_begin_hz": 3873461010.48081,
+  "freq_end_hz": 3879461010.48081,
+  "freq_step_hz": 200000.0,
+  "interpretation": "Terminal 4-average weak-pi pODMR shows a signal-only narrow dip near the prior strong-pi center. The signal fit center is 3876501337 Hz with depth 11.4% and FWHM 0.94 MHz; at the nearest sampled point the raw signal depression is 9.0% while the raw reference depression is 0.5%. Drift diagnostic used Scan.ScanOrderEachAvg / snake and found [] flagged averages. This supports using the refined center for the next Ramsey design; pODMR itself is not a 13C claim.",
+  "linear_residual_metrics": {
+    "fitted_reference_norm_linear_residual_depth_percent_at_nearest": 10.485118394381876,
+    "fitted_reference_norm_linear_residual_depth_percent_at_strong_pi_grid": 10.485118394381876,
+    "nearest_freq_hz": 3876461010.48081,
+    "nearest_offset_mhz_vs_strong_pi": 3.814697265625e-12,
+    "nearest_point_to_signal_fit_center": 16,
+    "point_norm_linear_residual_depth_percent_at_nearest": 9.883957411173572,
+    "point_norm_linear_residual_depth_percent_at_strong_pi_grid": 9.883957411173572,
+    "raw_reference_linear_residual_depth_percent_at_nearest": 0.4631536896245492,
+    "raw_reference_linear_residual_depth_percent_at_strong_pi_grid": 0.4631536896245492,
+    "raw_signal_linear_residual_depth_percent_at_nearest": 9.011840467974256,
+    "raw_signal_linear_residual_depth_percent_at_strong_pi_grid": 9.011840467974256,
+    "signal_self_baseline_linear_residual_depth_percent_at_nearest": 10.440094178731718,
+    "signal_self_baseline_linear_residual_depth_percent_at_strong_pi_grid": 10.440094178731718,
+    "strong_pi_grid_freq_hz": 3876461010.48081,
+    "strong_pi_grid_point_index": 16
+  },
+  "per_average_signal_residual_maxima": [
+    {
+      "average_index": 1,
+      "baseline_kcps": 49.959925558312705,
+      "depth_percent_at_signal_fit_nearest": 3.2068811216625766,
+      "depth_percent_at_strong_pi_grid": 3.2068811216625766,
+      "freq_hz": 3876261010.48081,
+      "max_signal_residual_depth_percent": 10.389716820181032,
+      "offset_mhz_vs_strong_pi": -0.1999999999961853,
+      "signal_kcps": 44.76923076923077
+    },
+    {
+      "average_index": 2,
+      "baseline_kcps": 41.771712158808896,
+      "depth_percent_at_signal_fit_nearest": 10.502554354282914,
+      "depth_percent_at_strong_pi_grid": 10.502554354282914,
+      "freq_hz": 3876461010.48081,
+      "max_signal_residual_depth_percent": 10.502554354282914,
+      "offset_mhz_vs_strong_pi": 3.814697265625e-12,
+      "signal_kcps": 37.38461538461539
+    },
+    {
+      "average_index": 3,
+      "baseline_kcps": 51.43424317617864,
+      "depth_percent_at_signal_fit_nearest": 16.84677730605941,
+      "depth_percent_at_strong_pi_grid": 16.84677730605941,
+      "freq_hz": 3876461010.48081,
+      "max_signal_residual_depth_percent": 16.84677730605941,
+      "offset_mhz_vs_strong_pi": 3.814697265625e-12,
+      "signal_kcps": 42.76923076923077
+    },
+    {
+      "average_index": 4,
+      "baseline_kcps": 50.24922456575687,
+      "depth_percent_at_signal_fit_nearest": 5.523227142716206,
+      "depth_percent_at_strong_pi_grid": 5.523227142716206,
+      "freq_hz": 3876661010.48081,
+      "max_signal_residual_depth_percent": 12.436459706117539,
+      "offset_mhz_vs_strong_pi": 0.2000000000038147,
+      "signal_kcps": 44.0
+    }
+  ],
+  "readout_role_review": "Rabimodulated.xml with full_expt=0 gives readout 1 as mS=0 reference and readout 2 as signal for this savedexperiment.",
+  "recommended_next_mw_freq_hz": 3876501336.753884,
+  "recommended_next_mw_freq_uncertainty_hz": 46992.85025737643,
+  "reference_dip_fit": {
+    "ok": true,
+    "params": {
+      "amp_kcps": 2.6843600279090727,
+      "baseline_at_center_kcps": 49.43385629807942,
+      "center_hz": 3877452046.590022,
+      "center_mhz": 3877.4520465900223,
+      "center_offset_mhz_vs_strong_pi": 0.9910361092161111,
+      "depth_fraction": 0.05430205589713146,
+      "depth_percent": 5.430205589713146,
+      "fwhm_mhz": 0.11774265383630765,
+      "offset_kcps": 49.776971779293156,
+      "sigma_mhz": 0.05000070136412808,
+      "slope_kcps_per_mhz": -0.34621895006946996
+    },
+    "r2": 0.3519399567089768,
+    "stderr": {
+      "amp_kcps": 167.1131516132778,
+      "center_mhz": 16.691294179448096,
+      "offset_kcps": 0.2279487279995178,
+      "sigma_mhz": 4.625903339970716,
+      "slope_kcps_per_mhz": 0.12302951320688765
+    }
+  },
+  "repetitions": 50000,
+  "result_json": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1/result.json",
+  "sequence_name": "Rabimodulated.xml",
+  "signal_dip_fit": {
+    "ok": true,
+    "params": {
+      "amp_kcps": 5.604200684657126,
+      "baseline_at_center_kcps": 49.246290698159214,
+      "center_hz": 3876501336.753884,
+      "center_mhz": 3876.501336753884,
+      "center_offset_mhz_vs_strong_pi": 0.040326273077880614,
+      "depth_fraction": 0.11379944773925088,
+      "depth_percent": 11.379944773925088,
+      "fwhm_mhz": 0.937466712539232,
+      "offset_kcps": 49.25994775286381,
+      "sigma_mhz": 0.398105458007188,
+      "slope_kcps_per_mhz": -0.3386639444269914
+    },
+    "r2": 0.8328115057488956,
+    "stderr": {
+      "amp_kcps": 0.5824996722179717,
+      "center_mhz": 0.04699285025737643,
+      "offset_kcps": 0.19225999711247627,
+      "sigma_mhz": 0.05031741205313216,
+      "slope_kcps_per_mhz": 0.0882277609400951
+    }
+  },
+  "source_mat": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-221357.mat",
+  "source_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_raw_4avg_20260514_2250.json",
+  "strong_pi_prior_center_hz": 3876461010.4808064,
+  "terminal_bridge_result": {
+    "error_code": "",
+    "error_message": "",
+    "finished_at": "2026-05-14T22:48:36",
+    "post_run_final_counts_kcps": 43.649,
+    "pre_run_align_final_counts_kcps": 41.608,
+    "safe_shutdown_ok": true,
+    "status": "completed"
+  },
+  "variables_of_interest": {
+    "ampIQ": 5,
+    "freqIQ": 50000000.0,
+    "full_expt": 0,
+    "length_rabi_pulse": 1e-06,
+    "mod_depth": 0.05,
+    "mw_ampl": -5,
+    "mw_freq": 3879461010.4808,
+    "switch_delay": 1e-07
+  },
+  "vary_points": 31,
+  "vary_prop": [
+    "mw_freq"
+  ]
+}

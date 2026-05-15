@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-15T02:32:37.962270-04:00",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+  "location": "running",
+  "status_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0231_status.json",
+  "control_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0231_control.json",
+  "job_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0231_job.json",
+  "state": "running",
+  "phase": "run_experiment_scan_point",
+  "message": "(15/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "updated_at": "2026-05-15T02:32:20",
+  "finished_at": "",
+  "runtime": {
+    "average_index": 16,
+    "averages_total": 15,
+    "average_fraction": 1,
+    "final_counts_text": "Final = 42.702 kcps",
+    "date_time": "2026-05-14-231101",
+    "experiment_data_present": true,
+    "autosave_target_exists": false
+  },
+  "monitor": {
+    "active": true,
+    "last_tick_at": "2026-05-15T02:32:20",
+    "last_error": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "queue_action": "none_read_only_status_copy"
+}

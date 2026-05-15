@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T05:53:45Z",
+  "status": "completed",
+  "summary": "Read NV startup/project context, confirmed no advice inbox items, checked bridge/project state, and performed a read-only status handoff for running det=1.0 MHz Ramsey job nv23_ramsey_20260514_230820_auto_ramsey. The job remains running at 12/16 averages with queued/staging empty, monitor active with no last_error, stop_requested=false, and Final = 42.576 kcps. Copied status/control/job/compact artifacts, recorded evidence ramsey_det1_running_status_latest_reimage1804_c02_20260515_0153, and updated work/state.md. No autosave analysis or bridge queue mutation was performed because this was not terminal or anomalous evidence.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "reason": "Bridge-touching work is blocked while the det=1.0 MHz Ramsey discriminator is running; terminal savedexperiment review should begin after success, or anomaly triage after monitor/error/count-collapse evidence."
+  },
+  "updated_backlog_item_ids": []
+}

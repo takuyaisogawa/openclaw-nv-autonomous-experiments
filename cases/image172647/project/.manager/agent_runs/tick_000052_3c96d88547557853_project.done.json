@@ -1,0 +1,53 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "agent_session_key": "agent:nv-researcher:hook:nv-project-manager:nv23_aligned_nv_t2star_13c_image172647_20260514_1728:wake:ticked-000052-3c96d88547557853",
+  "completed_at": "2026-05-15T07:47:21-04:00",
+  "status": "completed_bridge_running_handoff",
+  "summary": "Advanced the runnable CPMG follow-up for accepted branch reimage1804_c02. Authored and recorded an explicit CPMG N=8 weak-13C discriminator model/intent around f13=384.6 kHz, tau targets 0.650 and 1.300 us, tau scan 0.45..1.60 us with 37 points and 12 x 50000 reps. Parsed verifier JSON (verdict verified, no hard errors/blockers/warnings), confirmed bridge idle before enqueue, and used the single-submit MATLAB advisory (ok=true, no blockers, estimated per-average 536.2 s under active 900 s nighttime cap). The execute materialized as bridge job nv23_cpmg_20260515_072306_auto_cpmg and is running. A one-average autosave was raw-exported bridge-free: CPMG.xml, one saved average x 50000 reps, snake scan order, three readouts matching expected roles. The provisional one-average review found no obvious readout3 target-tau dip and noted a readout2 reference caveat near 1.312 us; no 13C claim or rejection was made. Final wake check showed this CPMG job as the only running bridge job, queued/staging empty, monitor active, no last_error, stop_requested=false, and Final about 44.318 kcps. State, evidence ledger, lab log, notes, figures, and status artifacts were updated.",
+  "touched_bridge_queue": true,
+  "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "bridge_state": {
+    "queued": [],
+    "running": [
+      "nv23_cpmg_20260515_072306_auto_cpmg"
+    ],
+    "staging": [],
+    "latest_checked_at": "2026-05-15T07:46:35-04:00",
+    "state": "running",
+    "phase": "run_experiment_scan_point",
+    "final_counts_text": "Final = 44.318 kcps",
+    "monitor_active": true,
+    "monitor_last_error": "",
+    "stop_requested": false
+  },
+  "evidence_ids": [
+    "cpmg_n8_37pt_12x50k_reimage1804_c02_running_20260515_0735",
+    "cpmg_n8_1avg_autosave_reimage1804_c02_review_20260515_0740",
+    "figure_20260515_074203_952657_7975548d60"
+  ],
+  "artifact_paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728_plan.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_cpmg_n8_37pt_12x50k_launch_20260515_0735.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_cpmg_n8_autosave_1avg_review_20260515_0740.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728_model.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728_verifier.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents/verified/reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_summary_1avg_20260515_0740.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_raw_1avg_20260515_0740.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_drift_1avg_20260515_0740.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_1avg_20260515_0740.png",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_status_after_1avg_autosave_review_20260515_0740.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_running_status_final_check_20260515_0746.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  ],
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+    "reason": "Bridge-touching work is blocked while the CPMG N=8 weak-13C discriminator is running. Continue monitor/cron checks until terminal success/failure or hard anomaly evidence. Bridge-free review of a later even-average autosave is allowed only if useful; mark it provisional.",
+    "on_terminal_success": "Raw-export the savedexperiment, verify saved metadata/readout roles, run scan-order-aware drift, plot raw readouts plus signal-self-baseline and reference-aware views, inspect target tau regions near 0.650 us and 1.300 us plus off-target baselines/references, then complete the verified CPMG experiment intent and update the T2star/13C conclusions conservatively.",
+    "on_terminal_failure": "Preserve result/status/control/logs, distinguish hardware/route/monitor/code failure from count/tracking/scientific evidence, and do not infer a 13C rejection from a failed execute before valid data."
+  },
+  "updated_backlog_item_ids": [],
+  "verified_intent_id": "reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728"
+}

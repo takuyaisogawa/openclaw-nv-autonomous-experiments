@@ -1,0 +1,9 @@
+{
+  "model": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_strong_podmr_model_20260514_1915.json",
+  "spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_strong_podmr_20260514_1915_execute_submit_spec.json",
+  "intent": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_strong_podmr_20260514_1915_intent.json",
+  "note": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_strong_podmr_plan_20260514_1915.md",
+  "meta": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_strong_podmr_20260514_1915_paths.json",
+  "intent_id": "reimage1804_c02_strong_podmr_20260514_1915",
+  "ts": "20260514_1915"
+}

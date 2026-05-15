@@ -1,0 +1,102 @@
+{
+  "intent_id": "reimage1804_c01_strong_podmr_20260514_1817",
+  "summary": "Strong-pi pulsed ODMR alignment screen for freshly tracked reimage1804_c01.",
+  "scientific_rationale": "Fresh re-image 1804 identified a current bright candidate and TrackCenter succeeded with final_counts_kcps=39.331. A magnetic-field-aligned ms=+1 NV should show a clear strong-pi pulsed ODMR dip near 3.875 GHz; no clear usable resonance in 3.825-3.925 GHz rejects this candidate for aligned follow-up.",
+  "comparison_targets": [
+    "reimage1804_candidate_ranking_20260514_1812",
+    "track_reimage1804_c01_terminal_pass_20260514_1815",
+    "prior same-wake pODMR validate/dry_run for same route/settings"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw readout export and plot",
+    "readout-aware resonance/alignment review; no automatic bridge fit"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with nonzero averages and saved data",
+    "raw/readout-aware review shows clear usable resonance in 3.825-3.925 GHz",
+    "tracking/counts do not collapse below hard gate"
+  ],
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "advisory/execute blocks or fails",
+    "Track/count gate fails with zero averages; review as count/freshness evidence before retry",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute_sequence_job",
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "sequence_manifest_status": "staging",
+  "tracked_position_um": [
+    116.01960123089442,
+    117.39137641463844,
+    116.35177881539126
+  ],
+  "expected_signal_model": {
+    "sequence_family": "strong_pi_pulsed_odmr_rabimodulated",
+    "transition": "ms=+1 near 3.875 GHz in current field setup",
+    "resonant_expected_signal_dip_fraction": 0.22,
+    "contrast_basis": "current setup reference from NV_RESEARCH_MEMORY: mS=0 to mS=+1 PL contrast about 22%",
+    "pulse_length_s": 5.2e-08,
+    "rectangular_pi_pulse_sinc_fwhm_hz": 15365384.615384616,
+    "scan_begin_hz": 3825000000.0,
+    "scan_end_hz": 3925000000.0,
+    "scan_points": 31,
+    "scan_spacing_hz": 3333333.3333333335,
+    "points_across_fwhm": 4.609615384615385,
+    "averages": 4,
+    "repetitions_per_average": 50000,
+    "total_shots": 200000,
+    "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+    "distinguishability": "Expected resonant dip about 22% is roughly 98x the binomial shot-noise floor and spans about 4.6 frequency steps; a usable aligned resonance in-window should be visible in raw/readout-aware review."
+  },
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c01_strong_podmr_execute_submit_spec_20260514_1817.json",
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "completed",
+  "created_at": "2026-05-14T18:18:00",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "agent_verification_context": {
+    "post_advisory_bridge_recheck": true,
+    "advisory_evidence_id": "podmr_advisory_reimage1804_c01_31x4x50k_20260514_1818",
+    "ready_to_execute_if_verdict_verified": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-14T18:19:21",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728"
+  },
+  "updated_at": "2026-05-14T18:19:21",
+  "completed_at": "2026-05-14T19:02:04",
+  "result": {
+    "status": "completed",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "terminal_evidence_id": "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900",
+    "scientific_verdict": "no_clear_usable_resonance_reject_candidate",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1/result.json",
+    "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326.mat"
+  }
+}

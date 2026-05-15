@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T04:10:22-04:00",
+  "status": "completed",
+  "summary": "Checked the running det=1.25 MHz Ramsey job and performed a bridge-free 4-average autosave review. The bridge remains running at 4/16 averages with Final about 43.224 kcps, monitor active, no last_error, and stop_requested=false. Raw export, drift diagnostic, figure, note, lab log, evidence index, and work/state.md were updated. Provisional target-bin amplitudes are direct 13C 0.21%, det-13C 0.96%, carrier 1.10%, det+13C 1.04%, old det=1 high/static 0.52%, static low 0.84%, previous 1.9 MHz 0.89%; no T2star or 13C claim is made from this nonterminal 200k/800k-shot subset.",
+  "touched_bridge_queue": false,
+  "next_action": "Wait for later useful even-subset autosave or terminal/anomaly evidence from running bridge job nv23_ramsey_20260515_030822_auto_ramsey. Do not mutate the bridge queue while it is running.",
+  "updated_backlog_item_ids": []
+}

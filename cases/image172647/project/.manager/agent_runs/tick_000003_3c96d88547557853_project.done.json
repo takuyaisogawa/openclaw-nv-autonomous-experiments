@@ -1,0 +1,19 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T19:34:00-04:00",
+  "status": "completed_bridge_running_handoff",
+  "summary": "Checked advice inbox (empty) and current bridge state. The intended reimage1804_c02 strong-pi pODMR is still running/nonterminal as nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr; no queue mutation was performed. A first saved autosave average was exported and reviewed: it shows a provisional signal-only dip near 3.875 GHz with raw/fitted-reference depth about 23%, close to the expected 22% strong-pi contrast, while the reference is not depressed. This is promising but not terminal evidence; state, backlog, lab log, note, figure, and evidence index were updated, and terminal 4-average review remains required before alignment/Ramsey/T2star/13C claims.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr",
+    "while_running": "Do not mutate the bridge queue. Optional bridge-free autosave inspection is okay if new averages are available.",
+    "if_done": "Export the final savedexperiment, plot raw signal/reference plus fitted-reference and pointwise normalization views, and decide whether reimage1804_c02 has a clear usable resonance for magnetic-field alignment before any Ramsey/T2star/13C work.",
+    "if_failed_before_data": "Record as count/freshness or route evidence; do not call it no-resonance; decide retrack/re-image/fallback from evidence.",
+    "if_no_clear_resonance": "Reject reimage1804_c02 and move to reimage1804_c03.",
+    "if_clear_resonance": "Focus on reimage1804_c02 and verify/advisory the conditional Ramsey/T2star/13C plan before execute; use about 2 MHz Ramsey detuning on the 0..8 us / 51-point scout unless terminal pODMR evidence motivates redesign."
+  },
+  "updated_backlog_item_ids": [
+    "screen_reimage1804_c02_strong_podmr"
+  ]
+}

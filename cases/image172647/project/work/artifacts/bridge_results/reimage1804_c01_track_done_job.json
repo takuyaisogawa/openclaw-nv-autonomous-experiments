@@ -1,0 +1,31 @@
+{
+  "job_id": "nv23_reimage1804_c01_track_20260514_1813",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "Track top current candidate reimage1804_c01 from fresh image172647 re-image before any pODMR alignment scan."
+  },
+  "tracking": {
+    "seed_position": [
+      116.0,
+      117.375,
+      116.0
+    ],
+    "minimum_final_kcps": 8.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "update_registry": false
+  }
+}

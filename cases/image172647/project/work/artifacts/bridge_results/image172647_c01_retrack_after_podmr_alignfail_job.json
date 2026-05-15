@@ -1,0 +1,31 @@
+{
+  "job_id": "nv23_image172647_c01_retrack_after_podmr_alignfail_20260514_1801",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "Standalone TrackCenter diagnostic after image172647 c01 pODMR in-run AlignNV count-gate failure; compare current trackability before any pODMR retry or candidate rejection."
+  },
+  "tracking": {
+    "seed_position": [
+      117.56465969838,
+      117.7907973957936,
+      115.70981080847378
+    ],
+    "minimum_final_kcps": 8.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "update_registry": false
+  }
+}

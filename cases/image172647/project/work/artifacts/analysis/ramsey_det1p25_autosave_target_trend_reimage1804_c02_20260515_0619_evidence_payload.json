@@ -1,0 +1,22 @@
+{
+  "evidence_id": "ramsey_det1p25_autosave_target_trend_reimage1804_c02_20260515_0619",
+  "category": "analysis",
+  "summary": "Bridge-free trend comparison across six det=1.25 MHz running-autosave snapshots (2, 4, 6, 8, 10, and 14 balanced averages). Carrier and det+13C target-region amplitudes remain about percent scale but softened at 14 averages (carrier 0.94%, det+13C 1.02%), while old det=1 high/static and previous 1.9 MHz regions remain weak (0.28% and 0.23%). This still favors terminal focus on the det=1.25 carrier/high-sideband model over static old-high/1.9-MHz alternatives, but remains running-autosave provenance only; terminal 16-average review is required before any T2star or 13C conclusion.",
+  "tags": [
+    "ramsey",
+    "t2star",
+    "13c",
+    "det-shift",
+    "det1p25",
+    "autosave",
+    "trend",
+    "running",
+    "bridge-free",
+    "reimage1804_c02"
+  ],
+  "paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0619.md",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0619.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1p25_autosave_target_trend_20260515_0619.png"
+  ]
+}

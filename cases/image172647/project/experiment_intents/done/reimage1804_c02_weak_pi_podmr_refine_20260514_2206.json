@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "intent_id": "reimage1804_c02_weak_pi_podmr_refine_20260514_2206",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "agent_authored": true,
+  "bridge_action": "execute_sequence_job",
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "sequence_manifest_status": "staging",
+  "summary": "Weak-pi pODMR resonance refinement for accepted aligned candidate reimage1804_c02.",
+  "scientific_rationale": "Terminal Ramsey shows a weak empirical carrier near 1.9 MHz, about +0.4 MHz from the programmed 1.5 MHz det, and the high-side FFT power is ambiguous with the expected 13C sideband. A weak-pi pODMR refinement should reduce resonance-center ambiguity before any repeat Ramsey/13C claim test.",
+  "expected_signal_model": {
+    "sequence_family": "weak_pi_pulsed_odmr_rabimodulated",
+    "transition": "ms=+1 near the accepted c02 resonance",
+    "candidate_label": "reimage1804_c02",
+    "scan_center_hz": 3876461010.4808064,
+    "scan_begin_hz": 3873461010.4808064,
+    "scan_end_hz": 3879461010.4808064,
+    "scan_points": 31,
+    "scan_spacing_hz": 200000.0,
+    "strong_pi_center_uncertainty_hz": 688021.1247002708,
+    "ramsey_empirical_carrier_hz": 1923000.0,
+    "ramsey_programmed_det_hz": 1500000.0,
+    "ramsey_inferred_center_shift_hz": 423000.0,
+    "why_this_window": "The +/-3 MHz window covers the broad strong-pi pODMR center uncertainty and the ~+0.4 MHz Ramsey carrier shift that could masquerade as the 13C high sideband.",
+    "length_rabi_pulse_s": 1e-06,
+    "mod_depth": 0.05,
+    "operating_point_basis": "NV_RESEARCH_KNOWLEDGE: current calibrated weak-pi pulsed-ODMR operating point is length_rabi_pulse=1 us with mod_depth=0.05.",
+    "conservative_expected_signal_dip_fraction": 0.05,
+    "expected_setup_contrast_fraction_reference": 0.22,
+    "averages": 4,
+    "repetitions_per_average": 50000,
+    "total_shots": 200000,
+    "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+    "expected_dip_to_binomial_floor_ratio": 22.360679774997898,
+    "distinguishability": "A conservative 5 percent weak-pi dip is about 22.4x the 200k-shot binomial floor; 200 kHz spacing gives several points across a ~0.8-1 MHz weak-pi feature."
+  },
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_weak_pi_podmr_refine_20260514_2206_execute_submit_spec.json",
+  "comparison_targets": [
+    "podmr_terminal_reimage1804_c02_clear_usable_resonance_20260514_1959",
+    "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+    "reimage1804_c02_ramsey_terminal_review_and_weak_pi_redesign_20260514_2205"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw readout export and plot",
+    "readout-aware weak-pi pODMR center review",
+    "updated repeat-Ramsey/13C design if clear center"
+  ],
+  "success_criteria": [
+    "bridge execute completes with saved data and healthy counts",
+    "raw/readout-aware review gives a clearer pODMR center than strong-pi broad scan",
+    "center refinement resolves whether terminal Ramsey high-frequency power is carrier-shift compatible"
+  ],
+  "stop_conditions": [
+    "bridge queue occupied before enqueue",
+    "verifier/advisory/execute blocks or fails",
+    "tracking/count gate fails before data; treat as freshness evidence",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "safety_contract": {
+    "python_verifies_queue_state_and_hard_boundaries": true,
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true
+  },
+  "python_role": "safety_verifier_not_research_planner",
+  "tracked_position_um": [
+    117.42784583301543,
+    117.38460134788026,
+    115.46922663207951
+  ],
+  "planned_spec_summary": {
+    "scan_begin_hz": 3873461010.4808064,
+    "scan_end_hz": 3879461010.4808064,
+    "scan_points": 31,
+    "averages": 4,
+    "repetitions": 50000,
+    "length_rabi_pulse_s": 1e-06,
+    "mod_depth": 0.05
+  },
+  "status": "completed",
+  "created_at": "2026-05-14T22:09:06",
+  "safety_verification": {
+    "checked_at": "2026-05-14T22:09:12",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728"
+  },
+  "updated_at": "2026-05-14T22:09:12",
+  "completed_at": "2026-05-14T23:00:01",
+  "result": {
+    "status": "completed",
+    "summary": "Terminal weak-pi pODMR resonance refinement completed successfully with healthy counts and no drift flags. Raw/readout-aware terminal review found a signal-only narrow dip near the prior strong-pi center: fit center 3.876501337 GHz, depth about 11.4%, FWHM about 0.94 MHz; nearest sampled point at 3.876461010 GHz had about 9.0% signal depression and about 0.5% reference depression. This supports using the refined center for the next Ramsey design; no 13C claim comes from pODMR itself.",
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1/result.json",
+    "artifacts": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_raw_4avg_20260514_2250.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_4avg_summary_20260514_2251.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_4avg_drift_20260514_2251.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_weak_pi_podmr_terminal_4avg_20260514_2251.png",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_terminal_result_20260514_2251.json",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_terminal_status_20260514_2251.json"
+    ]
+  }
+}

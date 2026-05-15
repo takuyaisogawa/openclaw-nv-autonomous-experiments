@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "items": [
+    {
+      "item_id": "screen_image172647_c01_track",
+      "kind": "research_task",
+      "status": "completed",
+      "summary": "Track image172647 candidate c01 before any pODMR alignment test.",
+      "candidate_label": "image172647_c01",
+      "seed_position_um": [
+        117.375,
+        117.25,
+        116.0
+      ],
+      "bridge_job_id": "nv23_image172647_c01_track_20260514_1736",
+      "evidence_ids": [
+        "image172647_candidate_ranking_20260514_1734",
+        "track_image172647_c01_queued_20260514_1736"
+      ],
+      "next_on_success": "Review TrackCenter final position/counts; if final_counts_kcps is healthy, design and verify a strong-pi pODMR alignment scan for the tracked candidate.",
+      "next_on_failure": "Move to image172647 candidate c02 unless terminal evidence indicates image-frame drift or a route/hardware issue.",
+      "id": "screen_image172647_c01_track",
+      "kind_normalized": true,
+      "priority": "normal",
+      "created_at": "2026-05-14T17:37:05",
+      "last_summary": "TrackCenter completed successfully for image172647 c01 with final_counts_kcps=41.984 at tracked position [117.56465969838,117.7907973957936,115.70981080847378] um.",
+      "updated_at": "2026-05-14T17:42:39"
+    },
+    {
+      "item_id": "screen_image172647_c01_strong_podmr",
+      "kind": "research_task",
+      "status": "failed",
+      "summary": "Run a strong-pi pulsed ODMR alignment screen on tracked image172647 c01 before any Ramsey/T2star/13C work.",
+      "candidate_label": "image172647_c01",
+      "tracked_position_um": [
+        117.56465969838,
+        117.7907973957936,
+        115.70981080847378
+      ],
+      "planned_sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+      "planned_scan": "mw_freq 3.825-3.925 GHz, 31 points, 4 averages x 50000 reps, mod_depth=1, length_rabi_pulse=52 ns, mw_ampl=-5, ampIQ=5, freqIQ=50 MHz",
+      "evidence_ids": [
+        "track_image172647_c01_terminal_pass_20260514_1738",
+        "podmr_advisory_image172647_c01_31x4x50k_20260514_1743",
+        "podmr_validate_image172647_c01_31x4x50k_20260514_1748",
+        "podmr_dry_run_image172647_c01_31x4x50k_20260514_1749"
+      ],
+      "next_on_success": "Export terminal savedexperiment, inspect raw readouts/reference-normalized views, and decide whether c01 has a clear usable resonance for alignment. If yes, design bounded Ramsey/T2star; if no, reject c01 and move to c02.",
+      "next_on_failure": "If zero averages/count gate with standalone track still healthy, treat as route/count-gate or drift evidence before repeating. If ordinary no-resonance data complete, reject c01 and move to c02.",
+      "id": "screen_image172647_c01_strong_podmr",
+      "priority": "normal",
+      "created_at": "2026-05-14T17:50:56",
+      "last_summary": "Old image172647_c01 pODMR remains failed/no-data due count-gate. A stale queued duplicate from the interrupted old single-submit batch was identified and superseded before execution; do not run old c01 pODMR unless new evidence explicitly revives it.",
+      "terminal_evidence_id": "podmr_execute_image172647_c01_failed_alignnv_20260514_1759",
+      "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175256_pulsed_odmr_rabimodulated_v1",
+      "interpretation": "pre-measurement count-gate/tracking failure; no pODMR resonance data",
+      "updated_at": "2026-05-14T18:34:42",
+      "stale_duplicate_queue_evidence_id": "stale_image172647_c01_duplicate_queue_superseded_20260514_1830",
+      "stale_duplicate_bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+      "old_batch_stop_requested": true
+    },
+    {
+      "item_id": "diagnose_image172647_c01_retrack_after_podmr_alignfail",
+      "kind": "research_task",
+      "status": "failed",
+      "summary": "Run one bounded standalone TrackCenter diagnostic at the last tracked c01 position after the pODMR in-run alignment/count-gate failure.",
+      "candidate_label": "image172647_c01",
+      "seed_position_um": [
+        117.56465969838,
+        117.7907973957936,
+        115.70981080847378
+      ],
+      "minimum_final_kcps": 8,
+      "evidence_ids": [
+        "track_image172647_c01_terminal_pass_20260514_1738",
+        "podmr_execute_image172647_c01_failed_alignnv_20260514_1759"
+      ],
+      "next_on_success": "Treat pODMR failure as route/count-gate or rapid drift evidence; do not blindly repeat pODMR. Decide between fresh Imaging/re-image and a route-control review using the diagnostic evidence.",
+      "next_on_failure": "Treat c01 current position as not trackable under current conditions; prefer fresh Imaging/re-image if image-frame drift is plausible before declaring c01 absent, otherwise move to c02 from image172647.",
+      "id": "diagnose_image172647_c01_retrack_after_podmr_alignfail",
+      "priority": "normal",
+      "created_at": "2026-05-14T17:58:40",
+      "last_summary": "Standalone retrack diagnostic failed low-count (3.278 kcps < 8 kcps). c01 is not currently trackable from the last tracked seed; do not treat pODMR failure as no resonance. Next safe step is fresh Imaging/re-image of the original region before further candidate screening.",
+      "terminal_evidence_id": "retrack_image172647_c01_after_podmr_alignfail_terminal_fail_20260514_1802",
+      "bridge_job_id": "nv23_image172647_c01_retrack_after_podmr_alignfail_20260514_1801",
+      "recommended_next": "fresh_imaging_reimage_original_region",
+      "updated_at": "2026-05-14T18:01:30"
+    },
+    {
+      "item_id": "image172647_reimage_original_region_after_c01_low_counts",
+      "kind": "research_task",
+      "status": "completed",
+      "summary": "Fresh Imaging/re-image the original image172647 range after c01 pODMR/retrack low-count failures.",
+      "planned_job_id": "nv23_image172647_reimage_original_region_20260514_1804",
+      "planned_scan": "center [117,115,115.5] um; half span [5,5] um; 81 xy points; z offsets [-0.5,+0.5] um; dwell 0.005 s",
+      "evidence_ids": [
+        "podmr_execute_image172647_c01_failed_alignnv_20260514_1759",
+        "retrack_image172647_c01_after_podmr_alignfail_terminal_fail_20260514_1802"
+      ],
+      "next_on_success": "Export with explicit YXZ axis contract, rank current candidates, and TrackCenter the best current peak before further pODMR.",
+      "next_on_failure": "If Imaging route/hardware fails, block only the affected imaging action; if no bright peaks are present, search a different region.",
+      "id": "image172647_reimage_original_region_after_c01_low_counts",
+      "priority": "normal",
+      "created_at": "2026-05-14T18:02:28",
+      "last_summary": "Fresh re-image completed and was exported/ranked with explicit YXZ/kcps axes. Top current candidate is reimage1804_c01 at [116.000,117.375,116.000] um; next TrackCenter this current candidate.",
+      "bridge_job_id": "nv23_image172647_reimage_original_region_20260514_1804",
+      "running_evidence_id": "reimage_original_region_running_snapshot_20260514_1809",
+      "next_check": "inspect bridge running/done/failed state and export/analyze image if completed",
+      "updated_at": "2026-05-14T18:12:40",
+      "terminal_evidence_id": "reimage_original_region_terminal_done_20260514_1809",
+      "export_evidence_id": "reimage1804_export_yxz_kcps_20260514_1811",
+      "candidate_ranking_evidence_id": "reimage1804_candidate_ranking_20260514_1812",
+      "top_candidate": "reimage1804_c01"
+    },
+    {
+      "item_id": "screen_reimage1804_c01_track",
+      "kind": "research_task",
+      "status": "completed",
+      "summary": "Track the top current candidate from fresh re-image 1804 before any pODMR alignment test.",
+      "candidate_label": "reimage1804_c01",
+      "seed_position_um": [
+        116.0,
+        117.375,
+        116.0
+      ],
+      "bridge_job_id": "nv23_reimage1804_c01_track_20260514_1813",
+      "evidence_ids": [
+        "reimage1804_candidate_ranking_20260514_1812"
+      ],
+      "next_on_success": "If final counts are healthy, design/verify strong-pi pODMR alignment screen for reimage1804_c01.",
+      "next_on_failure": "Move to reimage1804_c02 unless terminal evidence indicates image-frame drift or route/hardware issue.",
+      "id": "screen_reimage1804_c01_track",
+      "priority": "normal",
+      "created_at": "2026-05-14T18:12:57",
+      "last_summary": "TrackCenter completed successfully for reimage1804_c01 with final_counts_kcps=39.331 at tracked position [116.01960123089442,117.39137641463844,116.35177881539126] um. Next: strong-pi pODMR alignment screen.",
+      "terminal_evidence_id": "track_reimage1804_c01_terminal_pass_20260514_1815",
+      "tracked_position_um": [
+        116.01960123089442,
+        117.39137641463844,
+        116.35177881539126
+      ],
+      "final_counts_kcps": 39.331,
+      "updated_at": "2026-05-14T18:16:25"
+    },
+    {
+      "item_id": "screen_reimage1804_c01_strong_podmr",
+      "kind": "research_task",
+      "status": "completed",
+      "summary": "Run strong-pi pulsed ODMR alignment screen on freshly tracked reimage1804_c01 before any Ramsey/T2star/13C work.",
+      "candidate_label": "reimage1804_c01",
+      "tracked_position_um": [
+        116.01960123089442,
+        117.39137641463844,
+        116.35177881539126
+      ],
+      "planned_sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+      "planned_scan": "mw_freq 3.825-3.925 GHz, 31 points, 4 averages x 50000 reps, mod_depth=1, length_rabi_pulse=52 ns",
+      "evidence_ids": [
+        "track_reimage1804_c01_terminal_pass_20260514_1815",
+        "podmr_advisory_reimage1804_c01_31x4x50k_20260514_1818"
+      ],
+      "next_on_success": "Export terminal savedexperiment, inspect raw readouts/reference-normalized views, and decide whether reimage1804_c01 has a clear usable resonance for alignment.",
+      "next_on_failure": "If zero averages/count gate, review as count/freshness evidence before retry; if complete but no clear resonance, reject candidate and move to reimage1804_c02.",
+      "id": "screen_reimage1804_c01_strong_podmr",
+      "priority": "normal",
+      "created_at": "2026-05-14T18:19:13",
+      "last_summary": "Terminal strong-pi pODMR for reimage1804_c01 completed with healthy counts but no clear usable resonance/alignment signature. Raw signal/fitted-reference depressions were only about 4-5% versus the expected ~22% strong-pi contrast; normalization-only weak features are not sufficient. Reject reimage1804_c01 for this project branch and move to fallback reimage1804_c02.",
+      "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+      "running_evidence_id": "podmr_execute_reimage1804_c01_running_20260514_1821",
+      "expected_total_seconds": 1678.0094,
+      "expected_per_average_seconds": 413.25235,
+      "updated_at": "2026-05-14T19:02:04",
+      "running_snapshot_evidence_id": "podmr_execute_reimage1804_c01_running_snapshot_20260514_1843",
+      "first_avg_autosave_evidence_id": "podmr_autosave_reimage1804_c01_1avg_raw_review_20260514_1832",
+      "first_avg_interpretation": "provisional only; no terminal verdict",
+      "bridge_queue_after_cleanup": "empty",
+      "terminal_review_required": true,
+      "conditional_ramsey_t2star_13c_plan_evidence_id": "conditional_ramsey_t2star_13c_model_plan_20260514_1843",
+      "conditional_plan_note": "work/notes/conditional_ramsey_t2star_13c_after_valid_podmr_20260514_1843.md",
+      "second_avg_autosave_evidence_id": "podmr_autosave_reimage1804_c01_2avg_raw_review_20260514_1845",
+      "terminal_evidence_id": "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900",
+      "scientific_verdict": "no_clear_usable_resonance_reject_candidate",
+      "candidate_rejected": true,
+      "next_candidate": "reimage1804_c02"
+    },
+    {
+      "item_id": "screen_reimage1804_c02_track",
+      "kind": "research_task",
+      "status": "completed",
+      "summary": "Track fallback candidate reimage1804_c02 from fresh re-image after reimage1804_c01 was rejected by terminal strong-pi pODMR.",
+      "candidate_label": "reimage1804_c02",
+      "seed_position_um": [
+        117.375,
+        117.25,
+        116.0
+      ],
+      "minimum_final_kcps": 8,
+      "evidence_ids": [
+        "reimage1804_candidate_ranking_20260514_1812",
+        "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900"
+      ],
+      "next_on_success": "If final counts are healthy, design/verify a strong-pi pODMR alignment screen for reimage1804_c02.",
+      "next_on_failure": "Move to reimage1804_c03 unless terminal evidence indicates image-frame drift or route/hardware issue.",
+      "id": "screen_reimage1804_c02_track",
+      "priority": "normal",
+      "created_at": "2026-05-14T19:02:31",
+      "last_summary": "TrackCenter completed successfully for fallback candidate reimage1804_c02 with final_counts_kcps=39.690 at tracked position [117.4211443249154,117.27496844942901,115.55260043233898] um. Next: strong-pi pODMR alignment screen.",
+      "bridge_job_id": "nv23_reimage1804_c02_track_20260514_1902",
+      "queued_evidence_id": "track_reimage1804_c02_queued_20260514_1902",
+      "updated_at": "2026-05-14T19:08:37",
+      "terminal_evidence_id": "track_reimage1804_c02_terminal_pass_20260514_1907",
+      "tracked_position_um": [
+        117.4211443249154,
+        117.27496844942901,
+        115.55260043233898
+      ],
+      "final_counts_kcps": 39.69
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "created_at": "2026-05-15T07:56:22",
+  "mat_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-CPMG-vary-tau-2026-05-15-072537.mat",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_raw_2avg_20260515_0752.json",
+  "status_snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_status_before_2avg_autosave_review_20260515_0752.json",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_2avg_20260515_0752.png",
+  "drift_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_drift_2avg_20260515_0752.json",
+  "bridge_state": "running",
+  "bridge_phase": "run_experiment_scan_point",
+  "bridge_updated_at": "2026-05-15T07:53:37",
+  "runtime": {
+    "figure_valid": true,
+    "has_experiment_handles": true,
+    "has_aborted": false,
+    "average_index": 3,
+    "averages_total": 2,
+    "scan_points_total": 37,
+    "repetitions": 50000,
+    "sequence_name": "CPMG.xml",
+    "date_time": "2026-05-15-072537",
+    "experiment_status_text": "(2/12) averages completed for 1 scans",
+    "final_counts_text": "Final = 43.000 kcps",
+    "experiment_data_present": true,
+    "experiment_data_size": [
+      1,
+      1
+    ],
+    "pulse_mode": 4,
+    "autosave_checked": "on",
+    "saved_exp_dir": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537",
+    "autosave_target_exists": false
+  },
+  "monitor": {
+    "active": true,
+    "update_period_seconds": 5,
+    "timer_tag": "nv_bridge_runtime_monitor_nv23_cpmg_20260515_072306_auto_cpmg",
+    "started_at": "2026-05-15T07:25:36",
+    "last_tick_at": "2026-05-15T07:53:37",
+    "tick_count": 195,
+    "last_error": "",
+    "stop_requested_observed_at": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "requested_by": "",
+    "requested_at": "",
+    "updated_at": "2026-05-15T07:23:15",
+    "stop_observed_at": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "sequence_name": "CPMG.xml",
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_us": 0.44999999999999996,
+    "end_us": 1.5999999999999985,
+    "points": 37,
+    "step_ns": 31.944444444444443,
+    "repetitions": 50000,
+    "saved_averages": 2,
+    "scan_order_mode": "snake"
+  },
+  "bool_values": [
+    {
+      "name": "do_adiabatic_inversion",
+      "value": 0
+    }
+  ],
+  "variable_values": [
+    {
+      "name": "sample_rate",
+      "value": 250000000.0
+    },
+    {
+      "name": "N",
+      "value": 8
+    },
+    {
+      "name": "tau",
+      "value": 1.6e-06
+    },
+    {
+      "name": "mod_depth",
+      "value": 1
+    },
+    {
+      "name": "length_pi",
+      "value": 5.2e-08
+    },
+    {
+      "name": "phase_y",
+      "value": 90
+    },
+    {
+      "name": "phase_ym",
+      "value": 270
+    },
+    {
+      "name": "switch_delay",
+      "value": 1e-07
+    },
+    {
+      "name": "wait_time",
+      "value": 2e-06
+    },
+    {
+      "name": "delay_wrt_1mus",
+      "value": 2e-07
+    },
+    {
+      "name": "sweep_range",
+      "value": 100000000.0
+    },
+    {
+      "name": "sweep_time",
+      "value": 1e-06
+    },
+    {
+      "name": "mw_freq",
+      "value": 3876501336.7539
+    },
+    {
+      "name": "mw_ampl",
+      "value": -5
+    },
+    {
+      "name": "ampIQ",
+      "value": 5
+    },
+    {
+      "name": "freqIQ",
+      "value": 50000000.0
+    },
+    {
+      "name": "detuning",
+      "value": 0
+    }
+  ],
+  "readout_role_assumption": "CPMG.xml reviewed before launch: readout1 true-0 reference, readout2 pi/ms=1 reference, readout3 final CPMG echo signal; terminal metadata must still be verified.",
+  "target_tau_us": {
+    "tau_1_over_4f_us": 0.6500260010400416,
+    "tau_1_over_2f_us": 1.3000520020800832
+  },
+  "readout_summaries": {
+    "readout1 ref0": {
+      "mean_kcps_like": 50.60602910602911,
+      "min_kcps_like": 47.53846153846153,
+      "max_kcps_like": 54.57692307692308,
+      "raw_peak_to_peak_percent_of_mean": 13.90834582913955,
+      "linear_self_norm_min": 0.9362405477102234,
+      "linear_self_norm_max": 1.0788289615769573,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 51.84615384615385,
+          "linear_self_norm": 1.020395110169774,
+          "local_neighbor_mean": 0.9868853016011434,
+          "local_neighbor_std": 0.042422075871746276,
+          "local_zscore": 0.7899143990487398,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 49.69230769230769,
+          "linear_self_norm": 0.9849200131210466,
+          "local_neighbor_mean": 0.98281986534969,
+          "local_neighbor_std": 0.019794505339529013,
+          "local_zscore": 0.10609751217994098,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    },
+    "readout2 pi/ms1 ref": {
+      "mean_kcps_like": 42.41787941787942,
+      "min_kcps_like": 39.38461538461539,
+      "max_kcps_like": 47.5,
+      "raw_peak_to_peak_percent_of_mean": 19.131990393569566,
+      "linear_self_norm_min": 0.9384774339288098,
+      "linear_self_norm_max": 1.0942620264779126,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 43.73076923076923,
+          "linear_self_norm": 1.055597375635885,
+          "local_neighbor_mean": 0.9822343575913492,
+          "local_neighbor_std": 0.011161643066180034,
+          "local_zscore": 6.572779438434731,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 45.11538461538461,
+          "linear_self_norm": 1.0452895553945694,
+          "local_neighbor_mean": 0.9936512788021998,
+          "local_neighbor_std": 0.022252359416914145,
+          "local_zscore": 2.320575343265352,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    },
+    "readout3 final CPMG echo": {
+      "mean_kcps_like": 47.983367983367984,
+      "min_kcps_like": 44.23076923076923,
+      "max_kcps_like": 51.46153846153846,
+      "raw_peak_to_peak_percent_of_mean": 15.069324090121308,
+      "linear_self_norm_min": 0.9274760232504102,
+      "linear_self_norm_max": 1.064223768026959,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 48.57692307692307,
+          "linear_self_norm": 1.019678347730817,
+          "local_neighbor_mean": 0.9676132873342784,
+          "local_neighbor_std": 0.02653865070962467,
+          "local_zscore": 1.9618578565358726,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 47.38461538461539,
+          "linear_self_norm": 0.9822416556989501,
+          "local_neighbor_mean": 0.9752791591443875,
+          "local_neighbor_std": 0.03546309300376308,
+          "local_zscore": 0.19633077559884002,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    }
+  },
+  "per_average_readout_summaries": [
+    {
+      "average_index": 1,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 49.61746361746362,
+          "linear_self_norm_min": 0.925752694399176,
+          "linear_self_norm_max": 1.0816818361559197,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 50.76923076923077,
+              "linear_self_norm": 1.045649998647808,
+              "local_neighbor_mean": 0.9759834004942428,
+              "local_neighbor_std": 0.05817182319748722,
+              "local_zscore": 1.1976003900901382,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.76923076923077,
+              "linear_self_norm": 0.9871720439325752,
+              "local_neighbor_mean": 0.9780726419168253,
+              "local_neighbor_std": 0.03811177491926453,
+              "local_zscore": 0.23875566107917912,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 41.77130977130977,
+          "linear_self_norm_min": 0.9188102883922638,
+          "linear_self_norm_max": 1.1355335205708783,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 41.46153846153847,
+              "linear_self_norm": 1.0574644318302329,
+              "local_neighbor_mean": 1.002562575035117,
+              "local_neighbor_std": 0.009014092725830437,
+              "local_zscore": 6.090669184907671,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.61538461538462,
+              "linear_self_norm": 1.1355335205708783,
+              "local_neighbor_mean": 0.9760841817100718,
+              "local_neighbor_std": 0.07185508616950323,
+              "local_zscore": 2.219040395897264,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 47.28898128898129,
+          "linear_self_norm_min": 0.9066897975054586,
+          "linear_self_norm_max": 1.0783842289545362,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 45.76923076923077,
+              "linear_self_norm": 1.0040060871401961,
+              "local_neighbor_mean": 0.9698190418092576,
+              "local_neighbor_std": 0.05283047445284408,
+              "local_zscore": 0.6471084290839281,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 48.0,
+              "linear_self_norm": 0.9883505973402724,
+              "local_neighbor_mean": 1.001898796445247,
+              "local_neighbor_std": 0.03814609834595922,
+              "local_zscore": -0.3551660508527413,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 2,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.594594594594604,
+          "linear_self_norm_min": 0.9282382357276742,
+          "linear_self_norm_max": 1.0775110632402802,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 52.92307692307693,
+              "linear_self_norm": 0.9972885423904952,
+              "local_neighbor_mean": 0.9967927918262544,
+              "local_neighbor_std": 0.04296905538679119,
+              "local_zscore": 0.011537385678561796,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.61538461538462,
+              "linear_self_norm": 0.9826712986340318,
+              "local_neighbor_mean": 0.9876449620132504,
+              "local_neighbor_std": 0.03121968224023429,
+              "local_zscore": -0.1593117873829211,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 43.064449064449065,
+          "linear_self_norm_min": 0.9320046893317695,
+          "linear_self_norm_max": 1.171527845747283,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 46.0,
+              "linear_self_norm": 1.0539201676669518,
+              "local_neighbor_mean": 0.9640628342979267,
+              "local_neighbor_std": 0.022258900466510714,
+              "local_zscore": 4.036916985374844,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 40.61538461538461,
+              "linear_self_norm": 0.9527896995708147,
+              "local_neighbor_mean": 1.011907666317161,
+              "local_neighbor_std": 0.03222119834058652,
+              "local_zscore": -1.8347538201855114,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 48.677754677754685,
+          "linear_self_norm_min": 0.9054069716901852,
+          "linear_self_norm_max": 1.0864121329688734,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 51.38461538461538,
+              "linear_self_norm": 1.0340557275541793,
+              "local_neighbor_mean": 0.9655011184252371,
+              "local_neighbor_std": 0.031128721301225036,
+              "local_zscore": 2.2022944169648335,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 46.76923076923077,
+              "linear_self_norm": 0.9760499826449144,
+              "local_neighbor_mean": 0.948327634579585,
+              "local_neighbor_std": 0.033567469336715915,
+              "local_zscore": 0.8258694686586578,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    }
+  ],
+  "drift_summary": {
+    "ok": true,
+    "num_averages": 2,
+    "flagged_average_indices": [],
+    "scan_order_mode": "snake",
+    "scan_order_source": "Scan.ScanOrderEachAvg",
+    "reference_method": "scan-order-aware average drift diagnostic; advisory for two-average running autosave"
+  },
+  "interpretation": "Two-average running autosave review only. The bridge remained running and healthy in the status snapshot. The combined readout3 final-echo/self-baseline view has no robust target-tau dip: the nearest 0.650 us point is about 1.0197 and the nearest 1.300 us point is about 0.9822. The two stored averages disagree locally enough that this remains a nonterminal sanity check, not evidence for or against 13C. Terminal review must compare raw readouts, readout3 self-baseline, and reference-normalized views before any conclusion."
+}

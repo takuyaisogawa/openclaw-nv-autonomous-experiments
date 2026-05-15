@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "intent_id": "reimage1804_c02_ramsey_det1p25_followup_20260515_0302",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "bridge_action": "execute_sequence_job",
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "summary": "Third-det Ramsey discriminator at det=1.25 MHz for weak 13C-candidate artifact rejection on accepted aligned candidate reimage1804_c02.",
+  "scientific_rationale": "The det=1.5 and det=1.0 Ramsey runs both show weak high-sideband-compatible structure, but amplitudes and supporting bins are incomplete. A det=1.25 MHz Ramsey should move a true 13C high sideband to about 1.635 MHz and the low sideband to about 0.865 MHz, while static artifacts near 0.7 or 1.4 MHz should not move with det. This tests the weak physical component without blindly repeating the same condition.",
+  "sequence_manifest_id": "auto__ramsey",
+  "sequence_manifest_status": "validated",
+  "tracked_position_um": [
+    117.46898278273697,
+    117.50254910098927,
+    116.03879377431909
+  ],
+  "expected_signal_model": {
+    "candidate_label": "reimage1804_c02",
+    "sequence_family": "electron_ramsey_t2star_third_det_shift_discriminator",
+    "transition": "ms=+1",
+    "zero_field_splitting_hz_assumed": 2870000000.0,
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "mw_freq_hz_from_terminal_weak_pi_podmr_fit": 3876501336.7539,
+    "mw_freq_uncertainty_hz_from_terminal_weak_pi_fit": null,
+    "B_T_from_weak_pi_center": 0.035914471849340185,
+    "expected_13C_larmor_hz": 384586.5303514744,
+    "det_hz": 1250000.0,
+    "expected_fft_carrier_hz": 1250000.0,
+    "expected_13C_sidebands_hz": [
+      865413.4696485256,
+      1634586.5303514744
+    ],
+    "direct_13C_larmor_check_hz": 384586.5303514744,
+    "previous_det1p5_programmed_det_hz": 1500000.0,
+    "previous_det1p5_high_sideband_target_hz": 1884586.5303514744,
+    "previous_det1p5_observed_high_region_hz": 1900000.0,
+    "previous_det1p0_programmed_det_hz": 1000000.0,
+    "previous_det1p0_high_sideband_target_hz": 1384586.5303514744,
+    "previous_det1p0_observed_high_bin_hz": 1400000.0,
+    "det_shift_test_rationale": "A weak high-sideband-compatible component has now appeared near det+f13 for both det=1.5 MHz and det=1.0 MHz, but it is low contrast and incomplete. A third det=1.25 MHz Ramsey should move a true 13C sideband to about 1.635 MHz and the low sideband to about 0.865 MHz, while static analysis/apparatus artifacts near 0.7 or 1.4 MHz should not move with det.",
+    "scan_tau_begin_s": 0.0,
+    "scan_tau_end_s": 1e-05,
+    "scan_points": 51,
+    "tau_step_s": 2.0000000000000002e-07,
+    "fft_resolution_hz": 100000.0,
+    "fft_nyquist_hz": 2500000.0,
+    "sideband_separation_bins": 3.8458653035147443,
+    "high_sideband_margin_to_nyquist_hz": 865413.4696485256,
+    "averages": 16,
+    "repetitions_per_average": 50000,
+    "shots_per_point": 800000,
+    "binomial_floor_fraction": 0.001118033988749895,
+    "observed_det1p0_det_plus_candidate_percent": 0.8392021317763944,
+    "observed_det1p0_det_minus_candidate_percent": 0.7297369299254884,
+    "one_percent_feature_over_floor": 8.944271909999157,
+    "observed_0p8_percent_feature_over_floor": 7.155417527999327,
+    "distinguishability": "At 800k shots/point the binomial floor is about 0.112%; the observed det=1.0 high-sideband-scale amplitude (~0.84%) is about 7.5x this floor before drift/systematics. The third-det purpose is not precision T2* fitting; it is artifact rejection by checking whether weak sideband power moves with the programmed detuning.",
+    "drift_basis": "The terminal det=1.0 Ramsey had 16 even averages, snake scan-order drift diagnostic with no flagged averages, and pre/post counts 40.445/42.702 kcps. The same 16x50000, 51-point grid should be accepted only if the live MATLAB advisory keeps per-average tracking window inside the active nighttime cap."
+  },
+  "comparison_targets": [
+    "weak_pi_podmr_terminal_reimage1804_c02_4avg_review_20260514_2251",
+    "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+    "ramsey_det1_terminal_reimage1804_c02_16avg_review_20260515_0245"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw savedexperiment export and raw/readout-aware plot",
+    "scan-order-aware drift diagnostic",
+    "target FFT/model comparison at det=1.25, det +/- expected 13C, direct 13C, old det=1.0 high-sideband/static-artifact regions, and previous 1.9 MHz ambiguity",
+    "T2star fit only as bounded provenance after visible Ramsey signal review"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with saved data and healthy counts",
+    "Spectral components can be checked for movement with the programmed det shift rather than static artifact frequencies",
+    "13C candidate is either strengthened, downgraded to artifact/no-claim, or remains explicitly ambiguous with evidence",
+    "T2star remains bounded as short/few-us order or is updated only if fit support is robust"
+  ],
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "verifier/advisory/execute blocks or fails",
+    "MATLAB advisory per-average tracking window exceeds active nighttime cap",
+    "tracking/count gate fails before data; treat as freshness/route evidence before retrying",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "safety_contract": {
+    "python_verifies_queue_state_and_hard_boundaries": true,
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true
+  },
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_ramsey_det1p25_followup_20260515_0302_execute_submit_spec.json"
+}

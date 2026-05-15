@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T01:26:30-04:00",
+  "status": "completed",
+  "summary": "Japanese notification_service progress report written for running det=1.0 MHz Ramsey/T2star/13C discriminator; latest direct evidence is 10/16 averages with healthy monitor and provisional weak target-bin autosave review; no bridge queue mutation performed.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-15_012511.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_det1_autosave_even_subset_20260515_0121.png",
+      "caption": "det=1.0 MHz Ramsey 10-average autosave provisional progress plot",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

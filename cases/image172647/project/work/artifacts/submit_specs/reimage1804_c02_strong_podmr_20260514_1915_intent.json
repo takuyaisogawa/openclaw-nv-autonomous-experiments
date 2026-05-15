@@ -1,0 +1,59 @@
+{
+  "intent_id": "reimage1804_c02_strong_podmr_20260514_1915",
+  "summary": "Strong-pi pulsed ODMR alignment screen for freshly tracked fallback candidate reimage1804_c02.",
+  "scientific_rationale": "Fresh re-image fallback candidate reimage1804_c02 tracked successfully with final_counts_kcps=39.690 after reimage1804_c01 was rejected by terminal strong-pi pODMR. A magnetic-field-aligned ms=+1 NV should show a clear strong-pi pulsed ODMR dip near 3.875 GHz; no clear usable resonance in 3.825-3.925 GHz rejects this candidate for aligned follow-up.",
+  "comparison_targets": [
+    "track_reimage1804_c02_terminal_pass_20260514_1907",
+    "podmr_terminal_reimage1804_c01_no_clear_resonance_20260514_1900",
+    "same-wake c01 pODMR route/settings terminal completion"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw readout export and plot",
+    "readout-aware resonance/alignment review; no automatic bridge fit"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with nonzero averages and saved data",
+    "raw/readout-aware review shows clear usable resonance in 3.825-3.925 GHz",
+    "tracking/counts do not collapse below hard gate"
+  ],
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "advisory/execute blocks or fails",
+    "Track/count gate fails with zero averages; review as count/freshness evidence before retry",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute_sequence_job",
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "sequence_manifest_status": "staging",
+  "tracked_position_um": [
+    117.4211443249154,
+    117.27496844942901,
+    115.55260043233898
+  ],
+  "expected_signal_model": {
+    "sequence_family": "strong_pi_pulsed_odmr_rabimodulated",
+    "transition": "ms=+1 near 3.875 GHz in current field setup",
+    "candidate_label": "reimage1804_c02",
+    "resonant_expected_signal_dip_fraction": 0.22,
+    "contrast_basis": "current setup reference from NV_RESEARCH_MEMORY: mS=0 to mS=+1 PL contrast about 22%",
+    "pulse_length_s": 5.2e-08,
+    "rectangular_pi_pulse_sinc_fwhm_hz": 15365384.615384616,
+    "scan_begin_hz": 3825000000.0,
+    "scan_end_hz": 3925000000.0,
+    "scan_points": 31,
+    "scan_spacing_hz": 3333333.3333333335,
+    "points_across_fwhm": 4.609615384615385,
+    "averages": 4,
+    "repetitions_per_average": 50000,
+    "total_shots": 200000,
+    "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+    "expected_dip_to_binomial_floor_ratio": 98.38699100999074,
+    "distinguishability": "Expected resonant dip about 22% is roughly 98x the binomial shot-noise floor and spans about 4.6 frequency steps; a usable aligned resonance in-window should be visible in raw/readout-aware review.",
+    "readout_role_from_xml": "Rabimodulated.xml with full_expt=0 records first detection as mS=0 reference and final detection after length_rabi_pulse as signal; no mS=+1 reference detection is active.",
+    "normalization_rule": "Judge signal presence from raw signal and fitted-reference-normalized views; do not promote point-wise normalization-only features."
+  },
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_strong_podmr_20260514_1915_execute_submit_spec.json"
+}

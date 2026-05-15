@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "source": "analyze_savedexperiment_average_drift.m",
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-231101.mat",
+  "source_file": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-231101.mat",
+  "sequence_name": "ramsey.xml",
+  "slice_index": 1,
+  "num_averages": 2,
+  "num_traces": 2,
+  "num_points": 51,
+  "drop_threshold": 0.15,
+  "min_averages_for_reference": 2,
+  "reference_method": "single-average raw readout common-mode; no cross-average reference",
+  "trace_aggregation_method": "mean normalized raw brightness across selected readout traces",
+  "drift_score_method": "max(0, -linear end-minus-start of per-average common-mode raw brightness in acquisition order when scan-order metadata exists)",
+  "scan_order_source": "Scan.ScanOrderEachAvg",
+  "scan_order_mode": "snake",
+  "data_order_for_score": "acquisition order if ScanOrderEachAvg is available; stored tau order otherwise",
+  "scan_order_used_count": 2,
+  "scan_order_warnings": [],
+  "entries": [
+    {
+      "average_index": 1,
+      "drift_score": 0,
+      "flagged": false,
+      "scan_order_used": true,
+      "common_mode_end_minus_start_fraction": 0.05752709331042367,
+      "common_mode_edge_end_minus_start_fraction": 0.05759053320679007,
+      "worst_drop_score": 0,
+      "worst_trace_index": 1,
+      "worst_trace_end_minus_start_fraction": 0.049668631889829215,
+      "worst_residual_end_minus_start_fraction": 0.049668631889829215,
+      "worst_edge_end_minus_start_fraction": 0.05850747989507974
+    },
+    {
+      "average_index": 2,
+      "drift_score": 0.0014779740456287338,
+      "flagged": false,
+      "scan_order_used": true,
+      "common_mode_end_minus_start_fraction": -0.0014779740456287338,
+      "common_mode_edge_end_minus_start_fraction": 0.021472707743105977,
+      "worst_drop_score": 0.03941902922161296,
+      "worst_trace_index": 2,
+      "worst_trace_end_minus_start_fraction": -0.03941902922161296,
+      "worst_residual_end_minus_start_fraction": -0.03941902922161296,
+      "worst_edge_end_minus_start_fraction": -0.0162868340833211
+    }
+  ],
+  "flagged_average_indices": [],
+  "error_code": "",
+  "error_message": ""
+}

@@ -5,14 +5,14 @@ case-study release.
 
 ## Include
 
-- Sanitized project-folder copies for `image145844` and `image231924` as
-  the primary release objects.
-- Case state files for `image145844` and `image231924`.
+- Sanitized project-folder copies for `image145844`, `image172647`, and
+  `image231924` as the primary release objects.
+- Case state files for `image145844`, `image172647`, and `image231924`.
 - Relevant bridge job records: intents, submit specs, job/status/result JSON.
 - Raw saved image and savedexperiment data associated with the case studies.
 - Processed JSON/HDF5 exports derived from raw MATLAB files.
 - MATLAB and Python analysis code used for pODMR, Ramsey, drift, figure, and
-  report generation.
+  report generation, including the CPMG analysis path used by `image172647`.
 - Case-referenced Python runtime helpers from the live OpenClaw/NV workspace
   for MAT parsing, sequence design, report building, submit-spec support, and
   the MATLAB wrapper boundary used by the retained enqueue source.
@@ -61,7 +61,7 @@ case-study release.
 - Scheduler/startup runners, runtime-lease helpers, batch-control helpers,
   old direct-submit wrappers, offline simulation workers, setup/viewer
   utilities, monitor-only prompt wrappers, and legacy recovery-plan prompt
-  wrappers not needed to inspect these two cases.
+  wrappers not needed to inspect these cases.
 - MATLAB live-lab backend source beyond the retained analysis/manifest/sequence
   inspection subset.
 - Unrelated project logs, unrelated raw data, and non-case-study private memory.

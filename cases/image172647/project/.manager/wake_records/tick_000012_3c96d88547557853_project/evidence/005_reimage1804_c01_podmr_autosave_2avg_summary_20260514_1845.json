@@ -1,0 +1,122 @@
+{
+  "snapshot": "two autosaved averages only; run still in progress; do not use as terminal alignment verdict",
+  "raw_export_ok": true,
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326.mat",
+  "date_time": "2026-05-14-182326",
+  "sequence_name": "Rabimodulated.xml",
+  "scan_order_mode": "snake",
+  "scan_order_each_avg": [
+    [
+      [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      [
+        31,
+        30,
+        29,
+        28,
+        27,
+        26,
+        25,
+        24,
+        23,
+        22,
+        21,
+        20,
+        19,
+        18,
+        17,
+        16,
+        15,
+        14,
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    ]
+  ],
+  "vary_prop": [
+    "mw_freq"
+  ],
+  "freq_ghz_begin": 3.825,
+  "freq_ghz_end": 3.925,
+  "points": 31,
+  "averages_in_snapshot": 2,
+  "repetitions": 50000,
+  "readout_roles_from_xml_review": {
+    "readout_1": "mS=0 reference after polarization",
+    "readout_2": "signal after 52 ns/mod_depth=1 rabi pulse because full_expt=0 skips mS=1 reference"
+  },
+  "expected_strong_pi_dip_fraction": 0.22,
+  "expected_rectangular_pi_sinc_fwhm_mhz": 15.365384615384617,
+  "scan_spacing_mhz": 3.3333333333334103,
+  "signal_mean_kcps": 47.50868486352358,
+  "signal_std_kcps": 1.3657803571462015,
+  "ref_mean_kcps": 47.924317617866016,
+  "ref_std_kcps": 1.5062160443591037,
+  "pointwise_ratio_mean": 0.9921475492235459,
+  "max_signal_line_contrast_fraction_2avg": 0.08624708624708634,
+  "max_signal_line_contrast_freq_ghz_2avg": 3.8483333333333336,
+  "max_ratio_line_contrast_fraction_2avg": 0.12489557226399328,
+  "max_ratio_line_contrast_freq_ghz_2avg": 3.8383333333333334,
+  "max_fitnorm_line_contrast_fraction_2avg": 0.07700179633802838,
+  "max_fitnorm_line_contrast_freq_ghz_2avg": 3.8483333333333336,
+  "per_average_signal_mean_kcps": [
+    49.57071960297767,
+    45.44665012406948
+  ],
+  "per_average_signal_std_kcps": [
+    1.8903652938521027,
+    1.7532634383784207
+  ],
+  "per_average_reference_mean_kcps": [
+    50.267990074441684,
+    45.58064516129031
+  ],
+  "per_average_reference_std_kcps": [
+    2.22047767199119,
+    1.9800622297791035
+  ],
+  "interpretation": "Second autosave is still provisional (2/4 averages). Raw signal/reference and normalization views do not yet show an obvious 22% strong-pi dip; terminal 4-average review is still required before alignment/rejection.",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_2avg_20260514_1845.png"
+}

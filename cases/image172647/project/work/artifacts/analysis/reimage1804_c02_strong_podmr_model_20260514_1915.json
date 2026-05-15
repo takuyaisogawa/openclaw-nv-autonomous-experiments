@@ -1,0 +1,22 @@
+{
+  "sequence_family": "strong_pi_pulsed_odmr_rabimodulated",
+  "transition": "ms=+1 near 3.875 GHz in current field setup",
+  "candidate_label": "reimage1804_c02",
+  "resonant_expected_signal_dip_fraction": 0.22,
+  "contrast_basis": "current setup reference from NV_RESEARCH_MEMORY: mS=0 to mS=+1 PL contrast about 22%",
+  "pulse_length_s": 5.2e-08,
+  "rectangular_pi_pulse_sinc_fwhm_hz": 15365384.615384616,
+  "scan_begin_hz": 3825000000.0,
+  "scan_end_hz": 3925000000.0,
+  "scan_points": 31,
+  "scan_spacing_hz": 3333333.3333333335,
+  "points_across_fwhm": 4.609615384615385,
+  "averages": 4,
+  "repetitions_per_average": 50000,
+  "total_shots": 200000,
+  "binomial_shot_noise_fraction_floor": 0.00223606797749979,
+  "expected_dip_to_binomial_floor_ratio": 98.38699100999074,
+  "distinguishability": "Expected resonant dip about 22% is roughly 98x the binomial shot-noise floor and spans about 4.6 frequency steps; a usable aligned resonance in-window should be visible in raw/readout-aware review.",
+  "readout_role_from_xml": "Rabimodulated.xml with full_expt=0 records first detection as mS=0 reference and final detection after length_rabi_pulse as signal; no mS=+1 reference detection is active.",
+  "normalization_rule": "Judge signal presence from raw signal and fitted-reference-normalized views; do not promote point-wise normalization-only features."
+}

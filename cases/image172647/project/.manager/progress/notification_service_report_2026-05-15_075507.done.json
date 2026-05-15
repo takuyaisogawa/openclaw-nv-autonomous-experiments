@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T08:01:52-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report for running CPMG N=8 weak-13C discriminator; latest direct status healthy/running at 3/12 averages, no hard anomaly, and autosave reviews remain nonterminal/provisional.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-15_075507.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_2avg_20260515_0752.png",
+      "caption": "CPMG N=8 running autosave 2-average provisional view",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

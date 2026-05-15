@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "created_at": "2026-05-15T00:19:16-04:00",
+  "source_status_path": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260514_230820_auto_ramsey/status.json",
+  "copied_status_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_status_latest_20260515_0019.json",
+  "copied_control_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_det1_running_control_latest_20260515_0019.json",
+  "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+  "state": "running",
+  "phase": "run_experiment_scan_point",
+  "message": "(5/16) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+  "updated_at": "2026-05-15T00:19:10",
+  "elapsed_seconds": 4238,
+  "runtime": {
+    "average_index": 6,
+    "averages_completed_text": "(5/16) averages completed for 1 scans",
+    "averages_completed_numeric": 5,
+    "scan_points_total": 51,
+    "repetitions": 50000,
+    "sequence_name": "ramsey.xml",
+    "date_time": "2026-05-14-231101",
+    "final_counts_text": "Final = 37.673 kcps",
+    "autosave_checked": "on",
+    "autosave_target_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-14-231101",
+    "autosave_target_exists_reported": false
+  },
+  "monitor": {
+    "active": true,
+    "last_tick_at": "2026-05-15T00:19:10",
+    "last_error": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "control": {
+    "stop_requested": false,
+    "stop_reason": "",
+    "stop_applied": false,
+    "stop_apply_error": ""
+  },
+  "queue_counts": {
+    "staging": 0,
+    "queued": 0,
+    "running": 1
+  },
+  "bridge_mutation_performed": false,
+  "interpretation": "Running bridge job is healthy. This is a read-only status copy; no terminal result and no hard anomaly. Completed-average count is still short of the preferred later even autosave review point, so no new autosave analysis was performed."
+}

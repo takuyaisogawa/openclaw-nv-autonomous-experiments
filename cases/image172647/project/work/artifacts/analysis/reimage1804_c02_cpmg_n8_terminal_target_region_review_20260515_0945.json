@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "created_at": "2026-05-15T09:43:08",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_raw_12avg_20260515_0935.json",
+  "terminal_summary_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_summary_12avg_20260515_0935.json",
+  "review_reason": "Correct terminal interpretation uses the modeled CPMG target region / filter width, not only the single nearest grid point.",
+  "expected_13c_larmor_hz": 384600.0,
+  "expected_target_1_over_4f_us": 0.6500260010400416,
+  "expected_target_1_over_2f_us": 1.3000520020800832,
+  "filter_width_context": "Prelaunch model estimated first-target tau width approx tau/N = about 81 ns; the observed 0.6736 us point is +23.6 ns from the 0.6500 us model target and therefore inside the expected target region.",
+  "target_region_1_over_4f_review": {
+    "target_us": 0.6500260010400416,
+    "half_width_us": 0.085,
+    "points": [
+      {
+        "index_1based": 5,
+        "tau_us": 0.5777777777777776,
+        "readout3_self": 0.99343246794193,
+        "readout3_over_readout1_baseline": 0.9920010037038784,
+        "readout3_over_readout2_baseline": 0.9986238518348408,
+        "readout1_self": 0.9958021189638229,
+        "readout2_self": 1.007245302545645
+      },
+      {
+        "index_1based": 6,
+        "tau_us": 0.609722222222222,
+        "readout3_self": 0.9833954429281123,
+        "readout3_over_readout1_baseline": 0.9821074248834025,
+        "readout3_over_readout2_baseline": 0.9882022011019146,
+        "readout1_self": 1.0048017212859839,
+        "readout2_self": 1.0114008242861707
+      },
+      {
+        "index_1based": 7,
+        "tau_us": 0.6416666666666664,
+        "readout3_self": 0.9871023369107144,
+        "readout3_over_readout1_baseline": 0.9859389855119668,
+        "readout3_over_readout2_baseline": 0.9915939644087701,
+        "readout1_self": 1.004876110433722,
+        "readout2_self": 0.9999982644835893
+      },
+      {
+        "index_1based": 8,
+        "tau_us": 0.6736111111111108,
+        "readout3_self": 0.9528053468333308,
+        "readout3_over_readout1_baseline": 0.951807488042299,
+        "readout3_over_readout2_baseline": 0.956819412656117,
+        "readout1_self": 0.9914270108743354,
+        "readout2_self": 1.0004942735620899
+      },
+      {
+        "index_1based": 9,
+        "tau_us": 0.7055555555555553,
+        "readout3_self": 0.9756489270677545,
+        "readout3_over_readout1_baseline": 0.9747552664654212,
+        "readout3_over_readout2_baseline": 0.9794301982213979,
+        "readout1_self": 0.9733786866128157,
+        "readout2_self": 0.9941307904211479
+      }
+    ],
+    "readout3_self_min": {
+      "index_1based": 8,
+      "tau_us": 0.6736111111111108,
+      "value": 0.9528053468333308,
+      "dip_percent_vs_unity": 4.719465316666915,
+      "offset_ns": 23.585110071069227
+    },
+    "readout3_over_readout1_baseline_min": {
+      "index_1based": 8,
+      "tau_us": 0.6736111111111108,
+      "value": 0.951807488042299,
+      "dip_percent_vs_unity": 4.819251195770102,
+      "offset_ns": 23.585110071069227
+    },
+    "readout3_over_readout2_baseline_min": {
+      "index_1based": 8,
+      "tau_us": 0.6736111111111108,
+      "value": 0.956819412656117,
+      "dip_percent_vs_unity": 4.318058734388297,
+      "offset_ns": 23.585110071069227
+    },
+    "readout1_self_min": {
+      "index_1based": 9,
+      "tau_us": 0.7055555555555553,
+      "value": 0.9733786866128157,
+      "dip_percent_vs_unity": 2.662131338718432,
+      "offset_ns": 55.52955451551367
+    },
+    "readout2_self_min": {
+      "index_1based": 9,
+      "tau_us": 0.7055555555555553,
+      "value": 0.9941307904211479,
+      "dip_percent_vs_unity": 0.5869209578852064,
+      "offset_ns": 55.52955451551367
+    }
+  },
+  "target_region_1_over_2f_review": {
+    "target_us": 1.3000520020800832,
+    "half_width_us": 0.085,
+    "points": [
+      {
+        "index_1based": 25,
+        "tau_us": 1.2166666666666657,
+        "readout3_self": 0.972823630457418,
+        "readout3_over_readout1_baseline": 0.9739835813316946,
+        "readout3_over_readout2_baseline": 0.9713683411953085,
+        "readout1_self": 1.0019956579552616,
+        "readout2_self": 0.9791371732478235
+      },
+      {
+        "index_1based": 26,
+        "tau_us": 1.24861111111111,
+        "readout3_self": 0.990837953097414,
+        "readout3_over_readout1_baseline": 0.9921503939531647,
+        "readout3_over_readout2_baseline": 0.9890245658382417,
+        "readout1_self": 0.9992528053797523,
+        "readout2_self": 1.0177231982224564
+      },
+      {
+        "index_1based": 27,
+        "tau_us": 1.2805555555555543,
+        "readout3_self": 1.0029171711137672,
+        "readout3_over_readout1_baseline": 1.0043782729939257,
+        "readout3_over_readout2_baseline": 1.000746668050542,
+        "readout1_self": 0.9979176104379378,
+        "readout2_self": 1.0021317875877263
+      },
+      {
+        "index_1based": 28,
+        "tau_us": 1.312499999999999,
+        "readout3_self": 0.9840933314085097,
+        "readout3_over_readout1_baseline": 0.9856572335300382,
+        "readout3_over_readout2_baseline": 0.9816350197279468,
+        "readout1_self": 1.0075980772212743,
+        "readout2_self": 0.9962548812208393
+      },
+      {
+        "index_1based": 29,
+        "tau_us": 1.3444444444444432,
+        "readout3_self": 0.9822724084923646,
+        "readout3_over_readout1_baseline": 0.9839634521473991,
+        "readout3_over_readout2_baseline": 0.9794908802228998,
+        "readout1_self": 1.0171543312078613,
+        "readout2_self": 0.9958394037003445
+      },
+      {
+        "index_1based": 30,
+        "tau_us": 1.3763888888888876,
+        "readout3_self": 1.0083908524866512,
+        "readout3_over_readout1_baseline": 1.0102604075155777,
+        "readout3_over_readout2_baseline": 1.00519906151359,
+        "readout1_self": 0.9878858775167848,
+        "readout2_self": 0.9942115082874009
+      }
+    ],
+    "readout3_self_min": {
+      "index_1based": 25,
+      "tau_us": 1.2166666666666657,
+      "value": 0.972823630457418,
+      "dip_percent_vs_unity": 2.7176369542581957,
+      "offset_ns": -83.38533541341752
+    },
+    "readout3_over_readout1_baseline_min": {
+      "index_1based": 25,
+      "tau_us": 1.2166666666666657,
+      "value": 0.9739835813316946,
+      "dip_percent_vs_unity": 2.6016418668305397,
+      "offset_ns": -83.38533541341752
+    },
+    "readout3_over_readout2_baseline_min": {
+      "index_1based": 25,
+      "tau_us": 1.2166666666666657,
+      "value": 0.9713683411953085,
+      "dip_percent_vs_unity": 2.863165880469154,
+      "offset_ns": -83.38533541341752
+    },
+    "readout1_self_min": {
+      "index_1based": 30,
+      "tau_us": 1.3763888888888876,
+      "value": 0.9878858775167848,
+      "dip_percent_vs_unity": 1.2114122483215195,
+      "offset_ns": 76.33688680880435
+    },
+    "readout2_self_min": {
+      "index_1based": 25,
+      "tau_us": 1.2166666666666657,
+      "value": 0.9791371732478235,
+      "dip_percent_vs_unity": 2.0862826752176544,
+      "offset_ns": -83.38533541341752
+    }
+  },
+  "observed_1_over_4f_region_min": {
+    "tau_us": 0.6736111111111108,
+    "offset_ns_from_model_target": 23.585110071069227,
+    "readout3_self_norm": 0.9528053468333308,
+    "readout3_self_dip_percent": 4.719465316666915,
+    "readout3_over_readout1_norm": 0.951807488042299,
+    "readout3_over_readout2_norm": 0.956819412656117,
+    "effective_frequency_hz_if_1_over_4tau": 371134.0206185569,
+    "frequency_offset_hz_from_weak_pi_center_13c_larmor": -13465.979381443118,
+    "frequency_offset_fraction": -0.035012946909628494
+  },
+  "subset_trend": [
+    {
+      "saved_averages_used": 2,
+      "shot_credit_per_point": 100000,
+      "readout3_self_at_observed_0p6736_us": 0.9278900128872017,
+      "dip_percent_at_observed_0p6736_us": 7.210998711279826,
+      "readout3_self_at_nearest_0p650_us": 1.019678347730817,
+      "readout3_self_at_nearest_1p300_us": 0.9822416556989501
+    },
+    {
+      "saved_averages_used": 4,
+      "shot_credit_per_point": 200000,
+      "readout3_self_at_observed_0p6736_us": 0.9731866302593575,
+      "dip_percent_at_observed_0p6736_us": 2.6813369740642523,
+      "readout3_self_at_nearest_0p650_us": 0.9907650178877585,
+      "readout3_self_at_nearest_1p300_us": 0.9971086795341407
+    },
+    {
+      "saved_averages_used": 6,
+      "shot_credit_per_point": 300000,
+      "readout3_self_at_observed_0p6736_us": 0.9476252338784816,
+      "dip_percent_at_observed_0p6736_us": 5.237476612151837,
+      "readout3_self_at_nearest_0p650_us": 0.9850481160421656,
+      "readout3_self_at_nearest_1p300_us": 0.9947286733884669
+    },
+    {
+      "saved_averages_used": 8,
+      "shot_credit_per_point": 400000,
+      "readout3_self_at_observed_0p6736_us": 0.9436820325868445,
+      "dip_percent_at_observed_0p6736_us": 5.631796741315553,
+      "readout3_self_at_nearest_0p650_us": 0.9982959386537916,
+      "readout3_self_at_nearest_1p300_us": 0.9978275582724129
+    },
+    {
+      "saved_averages_used": 10,
+      "shot_credit_per_point": 500000,
+      "readout3_self_at_observed_0p6736_us": 0.9554513423026295,
+      "dip_percent_at_observed_0p6736_us": 4.454865769737049,
+      "readout3_self_at_nearest_0p650_us": 0.9998309488546783,
+      "readout3_self_at_nearest_1p300_us": 0.9872462602910533
+    },
+    {
+      "saved_averages_used": 12,
+      "shot_credit_per_point": 600000,
+      "readout3_self_at_observed_0p6736_us": 0.9528053468333308,
+      "dip_percent_at_observed_0p6736_us": 4.719465316666915,
+      "readout3_self_at_nearest_0p650_us": 0.9871023369107144,
+      "readout3_self_at_nearest_1p300_us": 0.9840933314085097
+    }
+  ],
+  "verdict": "target_region_feature_near_1_over_4f13_strengthens_13c_candidate",
+  "interpretation": "Terminal CPMG shows a readout3/final-echo dip in the 1/(4 f13) target region rather than exactly at the nearest precomputed grid point. The minimum is at tau=0.6736 us (+23.6 ns from the 0.6500 us model target, within the modeled ~81 ns filter-width scale), with readout3/self=0.9528 and similar reference-normalized values (0.9518 over readout1 baseline, 0.9568 over readout2 baseline). The same point is present in the even-subset trend after 6, 8, 10, and 12 averages. This is not a normalization-only artifact and it corroborates the earlier weak det-shift Ramsey candidate. The alternate 1/(2f13) convention has only percent-scale/weak support. Supported conclusion: reimage1804_c02 likely has a nearby 13C-like coupling signature; strength is moderate/weak, with no precise coupling extraction from this scan alone.",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png"
+}

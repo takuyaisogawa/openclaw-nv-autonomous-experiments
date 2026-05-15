@@ -1,0 +1,12 @@
+{
+  "job_id": "nv23_image172647_reimage_original_region_20260514_1804",
+  "mode": "execute",
+  "state": "running",
+  "phase": "execute_gate_opened",
+  "message": "Execute gate opened locally; preparing to invoke the legacy run.",
+  "started_at": "2026-05-14T18:02:32",
+  "updated_at": "2026-05-14T18:02:32",
+  "finished_at": "",
+  "elapsed_seconds": 0,
+  "observation": "status has remained at execute_gate_opened with updated_at 2026-05-14T18:02:32 during this wake; bridge job left running for monitor/next wake, no queue mutation."
+}

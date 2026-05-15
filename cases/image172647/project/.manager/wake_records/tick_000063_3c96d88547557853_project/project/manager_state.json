@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-15T12:25:05",
+  "tick_count": 63,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 115,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_083134_667097_58c7374833",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_6avg_20260515_0830.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 CPMG N=8 six-average autosave sanity review: Bridge-free review of the running CPMG N=8 weak-13C discriminator at 6/12 averages. The six-average autosave is an even snake-order-balanced subset (300k/600k planned shots per point). Bridge stayed healthy/running with Final about 44.086 kcps, monitor active/no error, and stop_requested=false. No drift flags. Six-average readout3/self-baseline was 0.9850 near 0.650 us and 0.9947 near 1.300 us, so no robust target-tau dip is visible in this nonterminal subset; no 13C claim or rejection.",
+          "tags": [],
+          "timestamp": "2026-05-15T08:31:34"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "cpmg_n8_8avg_autosave_reimage1804_c02_review_20260515_0856",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_cpmg_n8_autosave_8avg_review_20260515_0856.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_summary_8avg_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_raw_8avg_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_drift_8avg_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_8avg_20260515_0856.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_status_before_8avg_autosave_review_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_status_after_8avg_autosave_review_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_queue_check_after_8avg_autosave_review_20260515_0856.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_autosave_8avg_analysis_20260515_0856.py"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+            "saved_averages_available": 8,
+            "saved_averages_used": 8
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Bridge-free eight-average autosave review of running CPMG N=8 job nv23_cpmg_20260515_072306_auto_cpmg. The bridge remained running/healthy at 8/12 averages with Final about 38.216 kcps, queued/staging empty, monitor active/no last_error, and stop_requested=false; no queue mutation. Raw export verified CPMG.xml, tau 0.45..1.60 us, 37 points, eight saved averages x 50000 reps, snake scan order, and do_adiabatic_inversion=0. Eight averages are an even snake-order-balanced subset (400k/600k planned shots per point). Scan-order-aware drift used Scan.ScanOrderEachAvg / snake mode and found no flagged averages. Combined readout3/self-baseline was 0.9983 near the 0.650 us target and 0.9978 near the 1.300 us target; no robust target-tau dip, and no 13C claim or rejection from this nonterminal subset.",
+          "tags": [
+            "cpmg",
+            "13c",
+            "autosave",
+            "running",
+            "8avg",
+            "even-subset",
+            "bridge-free",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-15T09:02:28"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_090228_752624_2dd018d382",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_autosave_8avg_20260515_0856.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 CPMG N=8 eight-average autosave sanity review: Bridge-free review of the running CPMG N=8 weak-13C discriminator at 8/12 averages. The eight-average autosave is an even snake-order-balanced subset (400k/600k planned shots per point). Bridge stayed healthy/running with Final about 38.216 kcps, monitor active/no error, and stop_requested=false. No drift flags. Eight-average readout3/self-baseline was 0.9983 near 0.650 us and 0.9978 near 1.300 us, so no robust target-tau dip is visible in this nonterminal subset; no 13C claim or rejection.",
+          "tags": [],
+          "timestamp": "2026-05-15T09:02:28"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "cpmg_n8_terminal_reimage1804_c02_12avg_review_20260515_0935",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/reimage1804_c02_cpmg_n8_terminal_12avg_review_20260515_0935.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_summary_12avg_20260515_0935.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_target_region_review_20260515_0945.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_drift_12avg_20260515_0935.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_12avg_20260515_0935.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_terminal_result_20260515_0935.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_terminal_status_20260515_0935.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+            "saved_averages": 12,
+            "target_region_tau_us": 0.6736111111111108
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Terminal 12-average CPMG N=8 review for reimage1804_c02 completed cleanly (12 x 50000 reps, CPMG.xml, tau 0.45..1.60 us, no drift flags, pre/post counts 38.694/44.535 kcps). Exact-nearest target points understated the result: target-region review found a readout3/final-echo dip at tau 0.6736 us, inside the modeled 1/(4 f13) target region, with readout3/self=0.9528 and reference-normalized values 0.9518/0.9568. This corroborates the weak det-shift Ramsey 13C candidate; supported conclusion is likely weak/moderate nearby-13C-like coupling, without precise coupling extraction.",
+          "tags": [
+            "cpmg",
+            "13c",
+            "terminal",
+            "reimage1804_c02"
+          ],
+          "timestamp": "2026-05-15T09:47:12"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260515_094712_375877_7a1099dbbd",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 CPMG N=8 terminal review and project conclusion: Terminal 12-average CPMG N=8 review for reimage1804_c02 completed cleanly (12 x 50000 reps, CPMG.xml, tau 0.45..1.60 us, no drift flags, pre/post counts 38.694/44.535 kcps). Exact-nearest target points understated the result: target-region review found a readout3/final-echo dip at tau 0.6736 us, inside the modeled 1/(4 f13) target region, with readout3/self=0.9528 and reference-normalized values 0.9518/0.9568. This corroborates the weak det-shift Ramsey 13C candidate; supported conclusion is likely weak/moderate nearby-13C-like coupling, without precise coupling extraction.",
+          "tags": [],
+          "timestamp": "2026-05-15T09:47:12"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 0,
+        "rejected": 0,
+        "done": 10
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "c02 CPMG N=8 terminal review and project conclusion",
+    "event": "lab_log_note",
+    "summary": "Terminal 12-average CPMG N=8 review for reimage1804_c02 completed cleanly (12 x 50000 reps, CPMG.xml, tau 0.45..1.60 us, no drift flags, pre/post counts 38.694/44.535 kcps). Exact-nearest target points understated the result: target-region review found a readout3/final-echo dip at tau 0.6736 us, inside the modeled 1/(4 f13) target region, with readout3/self=0.9528 and reference-normalized values 0.9518/0.9568. This corroborates the weak det-shift Ramsey 13C candidate; supported conclusion is likely weak/moderate nearby-13C-like coupling, without precise coupling extraction.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260515_094712_375877_7a1099dbbd",
+    "category": "figure",
+    "summary": "c02 CPMG N=8 terminal review and project conclusion: Terminal 12-average CPMG N=8 review for reimage1804_c02 completed cleanly (12 x 50000 reps, CPMG.xml, tau 0.45..1.60 us, no drift flags, pre/post counts 38.694/44.535 kcps). Exact-nearest target points understated the result: target-region review found a readout3/final-echo dip at tau 0.6736 us, inside the modeled 1/(4 f13) target region, with readout3/self=0.9528 and reference-normalized values 0.9518/0.9568. This corroborates the weak det-shift Ramsey 13C candidate; supported conclusion is likely weak/moderate nearby-13C-like coupling, without precise coupling extraction.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png"
+    ],
+    "timestamp": "2026-05-15T09:47:12"
+  },
+  "last_backlog_update": {
+    "item_id": "cpmg_n8_weak_13c_discriminator_reimage1804_c02",
+    "status": "completed",
+    "summary": "Terminal CPMG N=8 completed cleanly and was reviewed. Target-region analysis found a readout3/final-echo dip at tau 0.6736 us within the modeled 1/(4 f13) region, corroborating the weak det-shift Ramsey 13C candidate. Project-level conclusion: likely weak/moderate nearby-13C-like coupling; no precise coupling extraction."
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  },
+  "last_project_update": {
+    "summary": "Project objective complete after terminal CPMG target-region review; no further default bridge work required.",
+    "updated_keys": [
+      "completed_at",
+      "completion_summary",
+      "final_evidence_id",
+      "project_lifecycle",
+      "status"
+    ]
+  },
+  "last_inbox_auto_resume": {
+    "timestamp": "2026-05-15T12:25:05",
+    "latest_inbox": {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/advice/inbox/20260515_create_latex_pdf_closeout_report.md",
+      "relative_path": "advice/inbox/20260515_create_latex_pdf_closeout_report.md",
+      "name": "20260515_create_latex_pdf_closeout_report.md",
+      "mtime_epoch": 1778862293.6832514,
+      "mtime": "2026-05-15T12:24:53"
+    },
+    "pause_reference_epoch": 1778852865.0
+  }
+}

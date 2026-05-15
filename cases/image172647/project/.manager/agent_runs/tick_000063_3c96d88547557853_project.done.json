@@ -1,0 +1,33 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T12:42:24-04:00",
+  "status": "completed",
+  "summary": "Project objective satisfied and closeout finished. Accepted aligned branch reimage1804_c02; T2star conclusion is short/few-us order (~2-3 us, method-sensitive); 13C conclusion is likely weak/moderate nearby-13C-like coupling from det-shift Ramsey plus terminal CPMG N=8 target-region corroboration, without precise coupling extraction. Human-requested closeout report bundle was created with LaTeX source and verified PDF, copied into summaries/, advice inbox processed, project lifecycle marked completed, and bridge queue was only read/checked (queued/running/staging all empty).",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "idle",
+    "reason": "project lifecycle is completed; no further bridge-touching work is required by default",
+    "optional_followup_if_requested": "fine CPMG around 0.60..0.72 us or phase-readout XY8/DDRF-style discriminator"
+  },
+  "updated_backlog_item_ids": [],
+  "evidence_ids": [
+    "closeout_report_20260515_1225",
+    "closeout_report_summaries_copy_20260515_1240"
+  ],
+  "artifacts": {
+    "report_bundle": "work/reports/closeout_20260515_1225/",
+    "pdf": "work/reports/closeout_20260515_1225/nv23_image172647_closeout_report_20260515.pdf",
+    "tex": "work/reports/closeout_20260515_1225/nv23_image172647_closeout_report_20260515.tex",
+    "summaries_pdf": "summaries/nv23_image172647_closeout_report_20260515.pdf",
+    "summaries_tex": "summaries/nv23_image172647_closeout_report_20260515.tex",
+    "note": "work/notes/closeout_report_20260515_1225.md"
+  },
+  "checks": {
+    "bridge_queued_count": 0,
+    "bridge_running_count": 0,
+    "bridge_staging_count": 0,
+    "advice_inbox_count": 0,
+    "pdf_header_verified": "%PDF-",
+    "autonomy_audit_remaining_warning": "global nv_hook_research_agent config warning only; no project closeout/advice/backlog blocker"
+  }
+}

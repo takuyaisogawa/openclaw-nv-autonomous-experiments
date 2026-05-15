@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T20:46:02-04:00",
+  "status": "completed",
+  "summary": "Japanese notification_service progress report written. It reports c02 accepted by terminal pODMR, Ramsey/T2star scout running with first-average autosave provisional only, no T2star/13C claim yet, no explicit bridge-free task pending, and terminal review as next step.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_201010.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_1avg_20260514_2028.png",
+      "caption": "reimage1804_c02 Ramsey/T2star scout first-average autosave (provisional)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

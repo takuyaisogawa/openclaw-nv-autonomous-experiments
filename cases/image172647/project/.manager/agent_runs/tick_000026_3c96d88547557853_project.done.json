@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T22:48:30-04:00",
+  "status": "completed_bridge_running",
+  "summary": "Checked the weak-pi pODMR refinement bridge job; it remains running in phase run_experiment_scan_point at runtime average index 4 with Final = 43.649 kcps, stop_requested=false, and no terminal/anomaly evidence. Performed bridge-free 3-average autosave review: raw export, scan-order-aware drift diagnostic, figure, and Gaussian-dip fit. The provisional autosave shows a narrow signal-only dip near the prior strong-pi center (fit center about 3.876493370 GHz, depth about 11.7%, FWHM about 0.87 MHz; nearest sampled point 3.876461010 GHz has about 10.24% signal depression vs about 0.84% reference depression) with no drift flags. Updated work/state.md, wrote a note, recorded evidence, and logged the figure. No queue mutation or new bridge submission was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1",
+    "reason": "Bridge-touching work is blocked while the weak-pi pODMR refinement is running; terminal weak-pi data are needed before fixing the next Ramsey mw_freq.",
+    "on_terminal_success": "Raw-export terminal savedexperiment, plot raw/readout-aware views, run drift diagnostic, fit/review weak-pi resonance center, then design a claim-grade repeat Ramsey/T2star/13C test around the refined center after verifier/advisory/queue gates.",
+    "on_terminal_failure": "Distinguish count/tracking freshness from route/hardware/code failure before retrying or changing the Ramsey design."
+  },
+  "updated_backlog_item_ids": []
+}

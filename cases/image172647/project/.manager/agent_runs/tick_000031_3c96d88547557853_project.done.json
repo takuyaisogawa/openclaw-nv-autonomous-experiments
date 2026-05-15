@@ -1,0 +1,17 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T23:53:00-04:00",
+  "status": "completed",
+  "summary": "Read NV startup/project context, confirmed no advice inbox items, inspected the bridge read-only, and found det=1.0 MHz Ramsey job nv23_ramsey_20260514_230820_auto_ramsey still running without anomaly. Raw-exported, drift-checked, plotted, and FFT-reviewed the 2-average autosave as provisional evidence only: no drift flags; direct 13C 0.26%, det-13C 0.19%, carrier 0.91%, det+13C 0.71%, prior 1.9 MHz ambiguity 0.43% at 100k shots/point, so no T2star or 13C claim. Updated evidence index, lab log, work/state.md, and backlog; latest read-only status progressed to 3/16 averages with Final = 42.180 kcps, monitor last_error empty, stop_requested=false, queued/staging empty. No bridge queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "bridge_job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "reason": "The bridge is occupied by the healthy running det=1.0 MHz Ramsey/T2star/13C discriminator. Do not submit or mutate bridge jobs while it runs. Wait for terminal/anomaly evidence; before terminal, only consider another bridge-free autosave review after a substantially later even subset such as 6/16 or 8/16 averages."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_t2star_scout_reimage1804_c02_rev1",
+    "weak_pi_podmr_refine_reimage1804_c02",
+    "ramsey_det1_claim_grade_reimage1804_c02"
+  ]
+}

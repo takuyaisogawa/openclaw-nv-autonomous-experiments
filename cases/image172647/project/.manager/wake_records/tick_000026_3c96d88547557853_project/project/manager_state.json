@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-14T17:29:18",
+  "updated_at": "2026-05-14T22:40:36",
+  "tick_count": 26,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/experiment_intents",
+      "evidence_count": 66,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_212815_919372_16ec90b3d4",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_autosave_6avg_20260514_2123.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 Ramsey 6-average autosave reviewed provisionally: Raw-exported, plotted, and drift-checked the 6-average autosave of the still-running reimage1804_c02 Ramsey/T2star scout. The bridge remains running at 6/8 averages with healthy counts, no monitor error, and no stop request. Six averages form an even snake-order subset with no drift flags, but target FFT bins remain weak/inconsistent (carrier about 0.74%, det-13C about 1.71%, det+13C about 1.25%, direct 13C-Larmor about 0.97% in the signal-self-baseline view). No T2star or 13C claim is made; continue waiting for terminal data unless a hard anomaly appears. No bridge queue mutation was performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T21:28:15"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "ramsey_t2star_scout_reimage1804_c02_running_status_latest_20260514_2128",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_ramsey_t2star_scout_running_status_latest_20260514_2128.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Copied latest running Ramsey/T2star bridge status at 21:28 EDT: queued/staging empty by direct check, running phase run_experiment_scan_point, 6/8 averages completed, final count text Final = 45.318 kcps, monitor active with no last_error, stop_requested=false, and no hard anomaly. No bridge queue mutation was performed.",
+          "tags": [],
+          "timestamp": "2026-05-14T21:29:04"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "ramsey_terminal_reimage1804_c02_8avg_review_20260514_2150",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_raw_8avg_20260514_2150.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_drift_20260514_2150.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png",
+            "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_201034_auto_ramsey/result.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Terminal 8-average Ramsey/T2star scout completed and was raw-exported, plotted, drift-checked, FFT-reviewed, and fit-tested. Counts were healthy (pre-run TrackCenter 43.710 kcps, post-run final 41.020 kcps), scan matched 43 tau points over 0-8 us with det=1.5 MHz and 8 x 50000 reps, and scan-order-aware drift found no flagged averages. Signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz; fit-derived T2* is short/few-us but not a final scalar because early-time handling changes the result. The nominal det carrier is weak and the apparent high-sideband power is ambiguous with an effective carrier shift, so 13C is not established. Recommended next step is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+          "tags": [
+            "ramsey",
+            "t2star",
+            "13c",
+            "terminal",
+            "reimage1804_c02",
+            "8avg",
+            "drift",
+            "fft",
+            "fit"
+          ],
+          "timestamp": "2026-05-14T22:04:48"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_220457_624432_31a52eb7ad",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "c02 Ramsey terminal 8-average review: Terminal 8-average Ramsey/T2star scout completed with healthy counts and no stop/error. Raw export, figure, FFT review, fits, and scan-order-aware drift diagnostic are recorded. The signal readout supports a weak empirical Ramsey oscillation near 1.9 MHz and a short/few-us T2* order, but the scalar T2* is not final because early tau handling changes the fitted value. The nominal 1.5 MHz carrier is weak and the high-frequency power is ambiguous with carrier shift, so 13C is not established. Next recommended experiment is bounded weak-pi pODMR resonance refinement before a claim-grade repeat Ramsey/13C test.",
+          "tags": [],
+          "timestamp": "2026-05-14T22:04:57"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "weak_pi_podmr_refine_reimage1804_c02_running_20260514_2214",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2214.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Weak-pi pODMR resonance-refinement execute was submitted after terminal Ramsey review, project lifecycle/queue race check, intent verification, and MATLAB advisory with no blockers. Bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 is running at average 1/4 with Final = 41.608 kcps, monitor active with no last_error, stop_requested=false. This touches the bridge queue; no further bridge-touching work until terminal/anomaly evidence.",
+          "tags": [],
+          "timestamp": "2026-05-14T22:15:41"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 6
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-14T17:29:18",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image172647, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-14-172647.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "c02 weak-pi pODMR refinement started",
+    "event": "lab_log_note",
+    "summary": "After terminal Ramsey review showed an ambiguous ~1.9 MHz empirical carrier and no 13C claim, queued a bounded weak-pi pODMR resonance-refinement run. Intent verification passed, MATLAB advisory had no blockers, and the immediate pre-execute project/queue race check was clear. Bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 is running at average 1/4 with Final = 41.608 kcps, monitor active, no last_error, stop_requested=false. Wait for terminal result or hard-anomaly/autosave evidence; do not submit additional bridge jobs meanwhile.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "weak_pi_podmr_refine_reimage1804_c02_running_20260514_2214",
+    "category": "artifact",
+    "summary": "Weak-pi pODMR resonance-refinement execute was submitted after terminal Ramsey review, project lifecycle/queue race check, intent verification, and MATLAB advisory with no blockers. Bridge job nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 is running at average 1/4 with Final = 41.608 kcps, monitor active with no last_error, stop_requested=false. This touches the bridge queue; no further bridge-touching work until terminal/anomaly evidence.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_weak_pi_podmr_refine_running_status_20260514_2214.json"
+    ],
+    "timestamp": "2026-05-14T22:15:41"
+  },
+  "last_backlog_update": {
+    "item_id": "ramsey_t2star_scout_reimage1804_c02_rev1",
+    "status": "in_progress",
+    "summary": ""
+  },
+  "last_event": {
+    "timestamp": "2026-05-14T18:37:48",
+    "actor": "nv-researcher",
+    "event": "stale_old_single_submit_runner_terminated",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "summary": "After stop-requesting the old image172647_c01 single-submit batch and superseding its stale queued bridge job before execution, its old local nv_batch_run process was still alive. Terminated that stale local runner; preserved the intended current reimage1804_c01 batch runner and running bridge job.",
+    "old_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+    "old_pid": 1325680,
+    "control_stop_requested": true,
+    "stale_queued_bridge_job": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182351_pulsed_odmr_rabimodulated_v1",
+    "disposition": "queued job moved to failed before execution; stale local nv_batch_run process terminated after stop request because it remained alive",
+    "intended_running_job_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_182054_pulsed_odmr_rabimodulated_v1",
+    "current_batch_runner_preserved": "nv23_pulsed_odmr_rabimodulated_v1_20260514_181932"
+  }
+}

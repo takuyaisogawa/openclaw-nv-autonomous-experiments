@@ -1,0 +1,12 @@
+{
+  "job_id": "nv23_reimage1804_c01_track_20260514_1813",
+  "status": "completed",
+  "final_counts_kcps": 39.331,
+  "tracked_position_um": [
+    116.01960123089442,
+    117.39137641463844,
+    116.35177881539126
+  ],
+  "selected_z_tracking_attempt_index": 3,
+  "source_result": "<NV_BRIDGE_ROOT>/done/nv23_reimage1804_c01_track_20260514_1813/result.json"
+}

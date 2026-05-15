@@ -1,0 +1,292 @@
+﻿{
+    "id":  "auto__cpmg",
+    "status":  "validated",
+    "label":  "CPMG",
+    "description":  "Auto-generated validated manifest for CPMG.xml under the approved sequence root.",
+    "sequence_file":  "SavedSequences/SavedSequences-AWG/CPMG.xml",
+    "execution_route":  "experiment_gui_standard_v1",
+    "catalog_key":  "cpmg",
+    "aliases":  [
+                    "cpmg",
+                    "cpmg_xml"
+                ],
+    "allowed_modes":  [
+                          "validate",
+                          "dry_run",
+                          "execute"
+                      ],
+    "scan_schema":  {
+                        "max_dimensions":  1,
+                        "allowed_vary_props":  [
+                                                   "sample_rate",
+                                                   "N",
+                                                   "tau",
+                                                   "mod_depth",
+                                                   "length_pi",
+                                                   "phase_y",
+                                                   "phase_ym",
+                                                   "switch_delay",
+                                                   "wait_time",
+                                                   "delay_wrt_1mus",
+                                                   "sweep_range",
+                                                   "sweep_time",
+                                                   "mw_freq",
+                                                   "mw_ampl",
+                                                   "ampIQ",
+                                                   "freqIQ",
+                                                   "detuning"
+                                               ],
+                        "points_min":  1,
+                        "points_max":  1001
+                    },
+    "acquisition_defaults":  {
+                                 "average_continuously":  false,
+                                 "averages":  1,
+                                 "repetitions":  250000
+                             },
+    "scan_defaults":  {
+                          "vary_prop":  [
+                                            "tau"
+                                        ],
+                          "begin":  [
+                                        0
+                                    ],
+                          "end":  [
+                                      1
+                                  ],
+                          "points":  [
+                                         3
+                                     ]
+                      },
+    "float_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000,
+                                           "min":  10000000,
+                                           "max":  5000000000
+                                       },
+                       "N":  {
+                                 "type":  "float",
+                                 "default":  8,
+                                 "min":  0,
+                                 "max":  10000
+                             },
+                       "tau":  {
+                                   "type":  "float",
+                                   "default":  2E-06,
+                                   "min":  0,
+                                   "max":  1
+                               },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  1,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "length_pi":  {
+                                         "type":  "float",
+                                         "default":  5.2E-08,
+                                         "min":  2E-09,
+                                         "max":  0.5
+                                     },
+                       "phase_y":  {
+                                       "type":  "float",
+                                       "default":  90,
+                                       "min":  -360,
+                                       "max":  360
+                                   },
+                       "phase_ym":  {
+                                        "type":  "float",
+                                        "default":  270,
+                                        "min":  -360,
+                                        "max":  360
+                                    },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0,
+                                            "max":  1E-07
+                                        },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  -0.1,
+                                              "max":  0.1
+                                          },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000,
+                                           "min":  80000000,
+                                           "max":  500000000
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  1E-07,
+                                          "max":  1E-05
+                                      },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3874400000,
+                                       "min":  1000000,
+                                       "max":  15000000000
+                                   },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20,
+                                       "max":  15
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -30,
+                                     "max":  17
+                                 },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0,
+                                      "max":  500000000
+                                  },
+                       "detuning":  {
+                                        "type":  "float",
+                                        "default":  0,
+                                        "min":  -10000000,
+                                        "max":  10000000
+                                    }
+                   },
+    "typed_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000,
+                                           "min":  10000000,
+                                           "max":  5000000000
+                                       },
+                       "N":  {
+                                 "type":  "float",
+                                 "default":  8,
+                                 "min":  0,
+                                 "max":  10000
+                             },
+                       "tau":  {
+                                   "type":  "float",
+                                   "default":  2E-06,
+                                   "min":  0,
+                                   "max":  1
+                               },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  1,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "length_pi":  {
+                                         "type":  "float",
+                                         "default":  5.2E-08,
+                                         "min":  2E-09,
+                                         "max":  0.5
+                                     },
+                       "phase_y":  {
+                                       "type":  "float",
+                                       "default":  90,
+                                       "min":  -360,
+                                       "max":  360
+                                   },
+                       "phase_ym":  {
+                                        "type":  "float",
+                                        "default":  270,
+                                        "min":  -360,
+                                        "max":  360
+                                    },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0,
+                                            "max":  1E-07
+                                        },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  -0.1,
+                                              "max":  0.1
+                                          },
+                       "do_adiabatic_inversion":  {
+                                                      "type":  "boolean",
+                                                      "default":  false
+                                                  },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000,
+                                           "min":  80000000,
+                                           "max":  500000000
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  1E-07,
+                                          "max":  1E-05
+                                      },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3874400000,
+                                       "min":  1000000,
+                                       "max":  15000000000
+                                   },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20,
+                                       "max":  15
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -30,
+                                     "max":  17
+                                 },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0,
+                                      "max":  500000000
+                                  },
+                       "detuning":  {
+                                        "type":  "float",
+                                        "default":  0,
+                                        "min":  -10000000,
+                                        "max":  10000000
+                                    }
+                   },
+    "limits":  {
+                   "max_mw_power_dbm":  15,
+                   "allow_stage_motion":  false,
+                   "allow_laser_profile":  false,
+                   "max_estimated_duration_seconds":  14400
+               },
+    "requires":  {
+                     "reference_data_for_auto_align":  true,
+                     "supervised_until_promoted":  false
+                 },
+    "generated_by":  "claw/generate_sequence_manifests.ps1",
+    "generated_from":  {
+                           "relative_xml_path":  "CPMG.xml"
+                       },
+    "notes":  [
+                  "Auto-generated from an existing XML sequence under SavedSequences/SavedSequences-AWG.",
+                  "Boolean variables are recorded in typed_vars but are not yet forwarded by the current numeric float_vars bridge contract: do_adiabatic_inversion",
+                  "Default OpenClaw scan uses tau with a conservative 3-point sweep."
+              ]
+}

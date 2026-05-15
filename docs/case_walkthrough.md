@@ -1,6 +1,6 @@
 # Case Walkthrough
 
-This document is a reader guide for the two completed OpenClaw NV-center case
+This document is a reader guide for the completed OpenClaw NV-center case
 studies. It focuses on what the agent read, what it decided, and which artifacts
 it left behind.
 
@@ -28,8 +28,47 @@ The high-level artifact map is:
 | Bridge/job records | `cases/<case>/project/work/bridge_jobs/` |
 | Analysis code and JSON outputs | `cases/<case>/project/work/artifacts/analysis/` |
 | Figures | `cases/<case>/project/work/artifacts/figures/` |
-| Reports and summaries | `cases/<case>/project/work/artifacts/reports/` or `summaries/` |
+| Reports and summaries | `cases/<case>/project/work/artifacts/reports/`, `work/reports/`, or `summaries/` |
 | Raw MATLAB data copies | `cases/<case>/project/data_*/` |
+
+## image172647
+
+Objective: find a magnetic-field-aligned NV from `image172647`, then obtain a
+well-supported T2star and 13C conclusion.
+
+Main entry points:
+
+- Case README: `cases/image172647/README.md`
+- Project state: `cases/image172647/project/work/state.md`
+- Evidence ledger: `cases/image172647/project/.manager/evidence.jsonl`
+- Recovered raw data: `cases/image172647/project/data_recovered_20260515/matlab_23C/`
+- Closeout report: `cases/image172647/project/work/reports/closeout_20260515_1225/nv23_image172647_closeout_report_20260515.pdf`
+
+### Agent Timeline
+
+| Stage | Agent read | Agent decision | Artifact trail |
+| --- | --- | --- | --- |
+| Initial image audit | Saved image `3DXYZ-Image-2026-05-14-172647.mat` and candidate ranking | Select the first candidate, but require standalone tracking and pODMR before alignment claims | `work/artifacts/image172647_candidates/`, `work/notes/image172647_initial_candidate_selection_and_c01_track_20260514_1736.md` |
+| Stale-candidate recovery | Initial c01 TrackCenter success, failed pODMR execute, failed retrack | Treat the failed pODMR as low-count/freshness evidence, not no-resonance evidence; re-image the original region | `work/artifacts/recovery/`, `work/artifacts/bridge_results/` |
+| Fresh re-image | New imaging result and candidate ranking | Use the fresh image frame and test `reimage1804_c01`, then `reimage1804_c02` | `work/artifacts/image172647_reimage1804_candidates/`, `work/artifacts/figures/image172647_reimage1804_candidate_peaks_20260514_1812.png` |
+| Reject `reimage1804_c01` | TrackCenter and terminal strong-pi pODMR review | Reject c01 because healthy-count pODMR showed no clear usable resonance and only weak depressions relative to expected contrast | `work/artifacts/analysis/reimage1804_c01_podmr_terminal_summary_4avg_20260514_1859.json`, `work/notes/reimage1804_c01_podmr_terminal_review_reject_20260514_1900.md` |
+| Accept `reimage1804_c02` | TrackCenter plus terminal strong-pi pODMR | Accept c02 as the aligned branch: clear signal-only resonance near 3.875 GHz, with lower-than-reference contrast caveat | `work/artifacts/analysis/reimage1804_c02_podmr_terminal_summary_4avg_20260514_1957.json`, `work/notes/reimage1804_c02_podmr_terminal_review_accept_20260514_1959.md` |
+| Ramsey scout | Initial det=1.5 MHz Ramsey terminal review | Support a weak empirical oscillation and short/few-us T2star order, but do not establish 13C or a final scalar | `work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json`, `work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png` |
+| Weak-pi center refinement | Weak-pi pODMR terminal review | Refine the working center to `3.876501337 GHz`; rule out a large electron-resonance mis-centering explanation for the earlier high-frequency Ramsey component | `work/artifacts/analysis/reimage1804_c02_weak_pi_podmr_terminal_4avg_summary_20260514_2251.json`, `work/artifacts/figures/reimage1804_c02_weak_pi_podmr_terminal_4avg_20260514_2251.png` |
+| det=1.0 Ramsey discriminator | Terminal 16-average det=1.0 MHz Ramsey | Support short/few-us T2star order and leave a weak det+13C-compatible candidate, but do not establish 13C from Ramsey alone | `work/artifacts/analysis/reimage1804_c02_ramsey_det1_terminal_summary_16avg_20260515_0245.json`, `work/artifacts/figures/reimage1804_c02_ramsey_det1_terminal_16avg_20260515_0245.png` |
+| det=1.25 Ramsey discriminator | Third-detuning model, autosave trends, terminal 16-average review | Strengthen the weak det-shift-consistent candidate and weaken static/old-high alternatives, but keep Ramsey-only 13C below claim grade | `work/artifacts/analysis/reimage1804_c02_ramsey_det1p25_terminal_summary_16avg_20260515_0645.json`, `work/artifacts/figures/reimage1804_c02_ramsey_det1p25_terminal_16avg_20260515_0645.png` |
+| CPMG N=8 follow-up | Non-blind CPMG model based on the weak-pi center and 13C Larmor estimate | Use a different protocol to test the weak candidate; terminal target-region dip corroborates a weak/moderate nearby-13C-like feature | `work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_target_region_review_20260515_0945.json`, `work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_target_region_20260515_0945.png` |
+| Closeout | Closeout report bundle and final state | Mark the original objective satisfied; no more bridge work by default | `work/reports/closeout_20260515_1225/`, `summaries/nv23_image172647_closeout_report_20260515.pdf` |
+
+### Final Case Reading
+
+The case shows the strongest autonomous hypothesis-discrimination path in this
+release: stale-candidate recovery, pODMR-based rejection and acceptance,
+weak-pi center refinement, multi-detuning Ramsey, and a different-protocol CPMG
+follow-up. Final reading: aligned `reimage1804_c02` found; T2star is
+short/few-us order, about `2-3 us` but method-sensitive; 13C evidence supports
+a likely weak/moderate nearby-13C-like signature, without precise coupling
+extraction or a publication-grade single-spin claim.
 
 ## image145844
 

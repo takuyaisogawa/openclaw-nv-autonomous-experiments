@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "intent_id": "reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728",
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "bridge_action": "execute_sequence_job",
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "summary": "Bounded CPMG N=8 tau-scan discriminator for the weak det-shift-consistent 13C candidate on accepted aligned candidate reimage1804_c02.",
+  "scientific_rationale": "Terminal det=1.5/1.0/1.25 Ramsey data leave a weak high-sideband-consistent 13C candidate but not a claim-grade Ramsey-only observation. CPMG.xml provides a different magnitude-style nuclear-spectroscopy discriminator: for f13C = 384.6 kHz, the sequence timing predicts target tau near 0.650 us using f ~= 1/(4 tau), and also covers the 1.301 us interpulse-convention target. This is a non-blind different-protocol test, not a Ramsey repeat.",
+  "sequence_manifest_id": "auto__cpmg",
+  "sequence_manifest_status": "validated",
+  "tracked_position_um": [
+    117.52888395513847,
+    117.93902764426134,
+    116.21600155642024
+  ],
+  "expected_signal_model": {
+    "schema_version": 1,
+    "created_at": "2026-05-15T07:20:47",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "candidate_label": "reimage1804_c02",
+    "sequence_family": "CPMG_N8_tau_scan_13C_discriminator",
+    "transition": "ms=+1",
+    "mw_freq_hz_from_terminal_weak_pi_podmr_fit": 3876501336.7539,
+    "zero_field_splitting_hz_assumed": 2870000000.0,
+    "electron_gyromagnetic_hz_per_T": 28024951640.0,
+    "carbon13_gyromagnetic_hz_per_T": 10708400.0,
+    "B_T_from_weak_pi_center": 0.035914471849340185,
+    "expected_13C_larmor_hz": 384586.5303514744,
+    "cpmg_xml_timing": "CPMG.xml waits tau, applies a pi pulse, then waits tau inside each loop; adjacent pi pulses are separated by about 2*tau and total free evolution is about 2*N*tau.",
+    "tau_targets": {
+      "toggling_function_f_approx_1_over_4tau_s": 6.500487673645889e-07,
+      "toggling_function_f_approx_1_over_4tau_us": 0.6500487673645889,
+      "interpulse_convention_1_over_2f_s": 1.3000975347291778e-06,
+      "interpulse_convention_1_over_2f_us": 1.3000975347291779,
+      "nearest_grid_1_over_4tau": {
+        "zero_based_index": 6,
+        "one_based_point": 7,
+        "tau_s": 6.416666666666666e-07,
+        "tau_us": 0.6416666666666666,
+        "offset_s": -8.382100697922294e-09,
+        "offset_ns": -8.382100697922294
+      },
+      "nearest_grid_1_over_2f_convention": {
+        "zero_based_index": 27,
+        "one_based_point": 28,
+        "tau_s": 1.3125e-06,
+        "tau_us": 1.3125,
+        "offset_s": 1.2402465270822083e-08,
+        "offset_ns": 12.402465270822082
+      }
+    },
+    "scan": {
+      "vary_prop": [
+        "tau"
+      ],
+      "begin_s": 4.5e-07,
+      "end_s": 1.6e-06,
+      "points": 37,
+      "step_s": 3.194444444444444e-08,
+      "step_ns": 31.944444444444443,
+      "range_us": [
+        0.44999999999999996,
+        1.5999999999999999
+      ]
+    },
+    "pulse": {
+      "N": 8,
+      "length_pi_s": 5.2e-08,
+      "mod_depth": 1.0,
+      "mw_ampl_dbm": -5,
+      "ampIQ_dbm": 5,
+      "freqIQ_hz": 50000000.0,
+      "phase_y_deg": 90,
+      "phase_ym_deg": 270,
+      "do_adiabatic_inversion": false
+    },
+    "evolution_window": {
+      "total_free_evolution_min_s": 7.2e-06,
+      "total_free_evolution_max_s": 2.56e-05,
+      "total_free_evolution_target_1_over_4tau_s": 1.0400780277833423e-05,
+      "total_free_evolution_target_1_over_2f_s": 2.0801560555666846e-05
+    },
+    "filter_resolution_estimate": {
+      "first_target_tau_width_approx_tau_over_N_s": 8.125609592057362e-08,
+      "second_target_tau_width_approx_tau_over_N_s": 1.6251219184114723e-07,
+      "first_target_points_per_width": 2.5436690896875223,
+      "second_target_points_per_width": 5.0873381793750445
+    },
+    "shot_budget": {
+      "averages": 12,
+      "repetitions_per_average": 50000,
+      "shots_per_point": 600000,
+      "binomial_floor_fraction": 0.0012909944487358056,
+      "binomial_floor_percent": 0.12909944487358055,
+      "one_percent_feature_over_floor": 7.745966692414834,
+      "ramsey_candidate_scale_percent": "terminal Ramsey high-sideband-compatible bins were about 0.84-1.95% across det=1.0/1.25/1.5 MHz; a CPMG response at about 1% scale should be above the 600k-shot binomial floor, though systematics/drift can dominate."
+    },
+    "drift_and_advisory_basis": {
+      "terminal_det1p25_ramsey_no_drift_flags": true,
+      "terminal_det1p25_pre_run_kcps": 44.073,
+      "terminal_det1p25_post_run_kcps": 42.669,
+      "preview_37pt_12x50k_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/cpmg_advisory_preview_37pt_12x50k_20260515_0725.json",
+      "preview_37pt_12x50k_per_average_seconds": 536.1839216216216,
+      "preview_37pt_12x50k_total_seconds": 6459.207059459459,
+      "design_choice": "Use 37 points rather than the initial 59-point scout to keep the advisory per-average tracking window below the 600 s daytime cap with margin while still sampling both CPMG convention targets."
+    },
+    "interpretation_plan": {
+      "primary_signal_readout": "final echo readout (readout3 expected from CPMG.xml), verified from terminal metadata before analysis",
+      "reference_roles": "readout1 true-0 reference; readout2 pi-pulse ms=1 reference; do not treat readout2 as signal by default",
+      "candidate_outcomes": [
+        "clear CPMG dip/feature near 0.650 us or 1.301 us strengthens nearby-13C candidate",
+        "no target-region feature downgrades 13C branch toward weak/unsupported despite Ramsey sideband hint",
+        "off-target/baseline-only features keep branch ambiguous and should not be promoted"
+      ],
+      "no_automatic_fit_in_bridge_job": true
+    }
+  },
+  "comparison_targets": [
+    "ramsey_det1p25_terminal_reimage1804_c02_16avg_review_20260515_0645",
+    "post_det1p25_weak_13c_followup_condition_review_reimage1804_c02_20260515_0655",
+    "weak_pi_podmr_terminal_reimage1804_c02_4avg_review_20260514_2251"
+  ],
+  "expected_evidence": [
+    "terminal bridge result with savedexperiment path",
+    "raw savedexperiment export and raw/readout-aware plot treating final echo readout as signal after metadata verification",
+    "scan-order-aware drift diagnostic",
+    "CPMG target-region review at tau about 0.650 us and 1.301 us, plus off-target baseline checks"
+  ],
+  "success_criteria": [
+    "Bridge execute completes with saved data and healthy counts",
+    "Target-region CPMG response is present/absent/ambiguous with evidence, updating the weak 13C branch",
+    "No target claim is made from normalization-only or off-target features"
+  ],
+  "stop_conditions": [
+    "Bridge queue occupied before enqueue",
+    "verifier/advisory/execute blocks or fails",
+    "MATLAB advisory per-average tracking window exceeds active cap or lacks sufficient margin for the current period",
+    "tracking/count gate fails before data",
+    "hardware/safety/code uncertainty or explicit human STOP"
+  ],
+  "safety_contract": {
+    "python_verifies_queue_state_and_hard_boundaries": true,
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true
+  },
+  "planned_submit_spec": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/submit_specs/reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728_execute_submit_spec.json",
+  "status": "verified",
+  "created_at": "2026-05-15T07:21:01",
+  "safety_verification": {
+    "checked_at": "2026-05-15T07:21:01",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728"
+  },
+  "updated_at": "2026-05-15T07:21:01"
+}

@@ -1,0 +1,12 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T07:04:46-04:00",
+  "status": "completed",
+  "summary": "Terminal det=1.25 MHz Ramsey job nv23_ramsey_20260515_030822_auto_ramsey completed cleanly and was reviewed from raw savedexperiment export. Updated state, evidence, lab log, and completed the stale verified det=1.25 experiment intent. Result: aligned reimage1804_c02 remains accepted; T2star is short/few-us order; 13C is a weak det-shift-consistent candidate but not claim-grade from Ramsey alone. Per weak-signal policy, wrote a bridge-free CPMG follow-up condition review; no bridge job was submitted.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "advance_project",
+    "summary": "If continuing beyond Ramsey, author a fresh bounded CPMG/XY8 follow-up model and experiment intent; candidate is auto__cpmg / CPMG.xml with N=8 and tau 0.45..1.60 us, then re-check lifecycle, queue idle, verifier JSON, MATLAB advisory/tracking-window cap, drift evidence, and readout roles before any execute. Alternatively close 13C conservatively as weak candidate/not established and T2star as short/few-us order."
+  },
+  "updated_backlog_item_ids": []
+}

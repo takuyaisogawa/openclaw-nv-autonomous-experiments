@@ -1,0 +1,45 @@
+{
+  "autosave_date_time": "2026-05-14-192106",
+  "autosave_mat_glob_matches": [
+    "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-192106.mat"
+  ],
+  "autosave_target_exists_reported": false,
+  "average_index": 2,
+  "averages_total": 1,
+  "bridge_state": "running",
+  "created_at": "2026-05-14T19:30:06-04:00",
+  "elapsed_seconds": 656,
+  "expected_runtime": [
+    {
+      "averages": 4,
+      "estimator_mode": "siglent",
+      "notes": "Siglent per-average overhead is estimated from a fixed track-per-average housekeeping term, an empirically calibrated per-scan-point programming/GUI term, and a weaker average-waveform-length term.",
+      "num_scan_points": 31,
+      "ok": true,
+      "per_average_seconds": 488.25235,
+      "repetitions": 50000,
+      "total_seconds": 1978.0094,
+      "tracking_window_seconds": 488.25235
+    },
+    {
+      "averages": 4,
+      "estimator_mode": "siglent",
+      "notes": "Tracking runs once per average, so drift planning should use per_average_seconds / tracking_window_seconds rather than total_seconds. Changing averages does not shorten the untracked window.",
+      "num_scan_points": 31,
+      "ok": true,
+      "per_average_seconds": 488.25235,
+      "repetitions": 50000,
+      "total_seconds": 1978.0094,
+      "tracking_window_seconds": 488.25235
+    }
+  ],
+  "experiment_data_present": true,
+  "final_counts_text": "Final = 42.861 kcps",
+  "interpretation": "Running/nonterminal; monitor is active and status updated recently. No terminal pODMR verdict yet; no bridge queue mutation performed.",
+  "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr",
+  "phase": "run_experiment_average_start",
+  "queue_action": "none_read_only_snapshot",
+  "scan_points_total": 31,
+  "started_at": "2026-05-14T19:18:58",
+  "updated_at": "2026-05-14T19:29:54"
+}

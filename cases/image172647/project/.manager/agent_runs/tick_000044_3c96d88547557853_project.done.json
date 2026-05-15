@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T04:46:00-04:00",
+  "status": "completed",
+  "summary": "Bridge-free reviewed the running det=1.25 MHz Ramsey autosave at 7/16 completed averages. Used the first 6 averages for snake-order balance (300k/800k planned shots per point), found no drift flags, no monitor error, no stop request, and no bridge queue mutation. Provisional readout2/self-baseline FFT target bins were direct 13C 0.13%, det-13C 1.13%, carrier 1.40%, det+13C 1.10%, old det=1 high/static 0.50%, static low 0.65%, previous 1.9 MHz 0.64%. No T2star or 13C claim was made; project state, evidence, lab log, and backlog were updated.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge",
+    "bridge_job_id": "nv23_ramsey_20260515_030822_auto_ramsey",
+    "detail": "Do not mutate the bridge queue while the job is running. Review a later useful even autosave subset bridge-free, or perform terminal raw export/drift/plot/review when the job completes."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_det1p25_third_det_reimage1804_c02"
+  ]
+}

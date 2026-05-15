@@ -11,6 +11,8 @@ Start with:
   reader guide.
 - [image145844/README.md](image145844/README.md) for the image145844 case
   entry point.
+- [image172647/README.md](image172647/README.md) for the image172647 case
+  entry point.
 - [image231924/README.md](image231924/README.md) for the image231924 case
   entry point.
 
@@ -20,7 +22,7 @@ Inside each case, the main audit entry point is:
 project/work/state.md
 ```
 
-Useful audit paths repeated across both cases:
+Useful audit paths repeated across the cases:
 
 | Path | What to inspect |
 | --- | --- |
@@ -30,3 +32,5 @@ Useful audit paths repeated across both cases:
 | `project/work/bridge_jobs/` | Bridge submit/status/result records |
 | `project/work/artifacts/analysis/` | Analysis JSON and scripts |
 | `project/work/artifacts/figures/` | Generated review figures |
+| `project/work/reports/` or `project/summaries/` | Closeout reports |
+| `project/data_*/` | Raw MATLAB data snapshots |

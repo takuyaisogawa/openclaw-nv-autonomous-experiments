@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T00:52:00-04:00",
+  "status": "completed",
+  "summary": "Bridge-free 6-of-7 even-subset autosave review completed for running det=1.0 MHz Ramsey job nv23_ramsey_20260514_230820_auto_ramsey. The job remained healthy/running at 7/16 averages with Final = 44.147 kcps, no monitor error, and stop_requested=false. Six selected averages (300k shots/point of 800k planned) showed weak provisional FFT target bins only: direct 13C 0.46%, det-13C 0.28%, carrier 0.41%, det+13C 1.09%, previous 1.9 MHz ambiguity 0.51%. Drift check over the 7-average autosave found no flagged averages. Evidence, lab log, and work/state.md were updated; no T2star or 13C claim was made.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal_or_anomaly",
+    "job_id": "nv23_ramsey_20260514_230820_auto_ramsey",
+    "details": "Do not mutate the bridge queue while the det=1.0 MHz Ramsey job is running. Prefer terminal 16-average raw export/plot/drift/FFT/T2star review next; optionally review the balanced 8/16 autosave bridge-free only if it materially aids monitoring before terminal data."
+  },
+  "updated_backlog_item_ids": []
+}

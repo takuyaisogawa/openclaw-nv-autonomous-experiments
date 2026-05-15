@@ -1,0 +1,16 @@
+{
+  "status": "completed",
+  "completed_at": "2026-05-14T21:50:00-04:00",
+  "bridge_job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+  "bridge_state": "done",
+  "terminal_status": "completed",
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-201247.mat",
+  "summary": "Terminal Ramsey/T2star scout completed with saved data, healthy counts, no stop request, and no drift flags. Terminal analysis supports a weak empirical Ramsey oscillation near 1.9 MHz and short/few-us T2* order, but not a final scalar T2star; 13C is not established.",
+  "evidence_paths": [
+    "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260514_201034_auto_ramsey/result.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_raw_8avg_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_summary_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_ramsey_terminal_8avg_drift_20260514_2150.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_ramsey_terminal_8avg_20260514_2150.png"
+  ]
+}

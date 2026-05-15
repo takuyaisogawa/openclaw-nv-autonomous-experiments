@@ -1,0 +1,49 @@
+{
+  "snapshot": "three autosaved averages only; run still in progress; do not use as terminal alignment verdict",
+  "raw_export_ok": true,
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-182326.mat",
+  "date_time": "2026-05-14-182326",
+  "sequence_name": "Rabimodulated.xml",
+  "scan_order_mode": "snake",
+  "each_avg_orientation_used": "avg_readout_point",
+  "vary_prop": [
+    "mw_freq"
+  ],
+  "freq_ghz_begin": 3.825,
+  "freq_ghz_end": 3.925,
+  "points": 31,
+  "averages_in_snapshot": 4,
+  "repetitions": 50000,
+  "readout_roles_from_xml_review": {
+    "readout_1": "mS=0 reference after polarization",
+    "readout_2": "signal after 52 ns/mod_depth=1 rabi pulse because full_expt=0 skips mS=1 reference"
+  },
+  "expected_strong_pi_dip_fraction": 0.22,
+  "expected_rectangular_pi_sinc_fwhm_mhz": 15.365384615384617,
+  "scan_spacing_mhz": 3.3333333333334103,
+  "signal_mean_kcps": 47.51240694789082,
+  "signal_std_kcps": 0.8574356921374932,
+  "ref_mean_kcps": 48.01985111662531,
+  "ref_std_kcps": 1.1308878782922884,
+  "pointwise_ratio_mean": 0.9898416881691962,
+  "max_signal_line_contrast_fraction_3avg": 0.043668122270742314,
+  "max_signal_line_contrast_freq_ghz_3avg": 3.8483333333333336,
+  "max_ratio_line_contrast_fraction_3avg": 0.08309902899316039,
+  "max_ratio_line_contrast_freq_ghz_3avg": 3.8383333333333334,
+  "max_fitnorm_line_contrast_fraction_3avg": 0.05060575242509074,
+  "max_fitnorm_line_contrast_freq_ghz_3avg": 3.8483333333333336,
+  "per_average_signal_mean_kcps": [
+    49.57071960297767,
+    45.44665012406948,
+    49.18114143920595,
+    45.851116625310176
+  ],
+  "per_average_reference_mean_kcps": [
+    50.267990074441684,
+    45.58064516129031,
+    49.44168734491315,
+    46.78908188585609
+  ],
+  "interpretation": "Third autosave is still provisional (3/4 averages). Raw signal/reference and normalization views still do not show an obvious 22% strong-pi dip; wait for terminal 4-average result before alignment/rejection.",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c01_podmr_autosave_3avg_20260514_1858.png"
+}

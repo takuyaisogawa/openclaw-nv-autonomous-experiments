@@ -1,0 +1,188 @@
+{
+  "averages_exported": 4,
+  "candidate_disposition": "accept_for_aligned_nv_branch_with_lower_contrast_caveat",
+  "candidate_label": "reimage1804_c02",
+  "created_at": "2026-05-14T19:58:51-04:00",
+  "dip_kcps_vs_signal_linear_baseline": 6.657051282051263,
+  "dip_to_off_resonant_residual_rms_ratio": 5.642148972074872,
+  "expected_strong_pi_contrast_fraction": 0.22,
+  "fitted_reference_ratio_depression_fraction": 0.14016703436606515,
+  "fitted_reference_ratio_gaussian_fit": {
+    "center_ghz": 3.876458324842795,
+    "center_hz": 3876458324.842795,
+    "center_uncertainty_hz_from_covariance": 687716.357502222,
+    "dip_fraction": 0.14678805813265056,
+    "fit_ok": true,
+    "fit_rms_relative": 0.021784796303967024,
+    "fwhm_mhz": 11.156141684133294,
+    "model": "linear_baseline_minus_gaussian_on_fitted_reference_ratio"
+  },
+  "freq_min_signal_ghz": 3.875,
+  "interpretation": "Terminal 4-average pODMR completed with healthy counts and a clear signal-only depression centered at about 3.875 GHz. The raw/fitted-reference depth is about 13.8-14.0%, lower than the expected ~22% strong-pi contrast but far above the rejected c01 4-5% level; reference is not depressed. This is sufficient as a usable resonance/alignment screen for c02, with the caveat that the contrast is lower than expected and Ramsey/T2star should use the fitted/centered resonance cautiously.",
+  "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_191847_reimage1804_c02_strong_podmr",
+  "off_resonant_signal_linear_residual_rms_kcps": 1.179878680091491,
+  "per_average_checks": [
+    {
+      "average_index": 1,
+      "checks": [
+        {
+          "freq_ghz": 3.875,
+          "label": "at_3p875",
+          "raw_signal_depression_fraction": 0.23168831168831183,
+          "reference_depression_fraction_vs_linear_baseline": -0.006575167571018392,
+          "reference_kcps": 50.53846153846154,
+          "signal_kcps": 37.92307692307693,
+          "signal_linear_baseline_kcps": 49.35897435897437
+        },
+        {
+          "freq_ghz": 3.875,
+          "label": "at_terminal_mean_min",
+          "raw_signal_depression_fraction": 0.23168831168831183,
+          "reference_depression_fraction_vs_linear_baseline": -0.006575167571018392,
+          "reference_kcps": 50.53846153846154,
+          "signal_kcps": 37.92307692307693,
+          "signal_linear_baseline_kcps": 49.35897435897437
+        },
+        {
+          "freq_ghz": 3.875,
+          "label": "at_avg_min",
+          "raw_signal_depression_fraction": 0.23168831168831183,
+          "reference_depression_fraction_vs_linear_baseline": -0.006575167571018392,
+          "reference_kcps": 50.53846153846154,
+          "signal_kcps": 37.92307692307693,
+          "signal_linear_baseline_kcps": 49.35897435897437
+        }
+      ],
+      "signal_min_freq_ghz": 3.875,
+      "signal_min_kcps": 37.92307692307693
+    },
+    {
+      "average_index": 2,
+      "checks": [
+        {
+          "freq_ghz": 3.875,
+          "label": "at_3p875",
+          "raw_signal_depression_fraction": 0.07666573738500093,
+          "reference_depression_fraction_vs_linear_baseline": -0.0044642857142862535,
+          "reference_kcps": 46.15384615384615,
+          "signal_kcps": 42.46153846153846,
+          "signal_linear_baseline_kcps": 45.98717948717946
+        },
+        {
+          "freq_ghz": 3.875,
+          "label": "at_terminal_mean_min",
+          "raw_signal_depression_fraction": 0.07666573738500093,
+          "reference_depression_fraction_vs_linear_baseline": -0.0044642857142862535,
+          "reference_kcps": 46.15384615384615,
+          "signal_kcps": 42.46153846153846,
+          "signal_linear_baseline_kcps": 45.98717948717946
+        },
+        {
+          "freq_ghz": 3.905,
+          "label": "at_avg_min",
+          "raw_signal_depression_fraction": 0.0753486797120998,
+          "reference_depression_fraction_vs_linear_baseline": 0.036624142792613834,
+          "reference_kcps": 45.0,
+          "signal_kcps": 41.69230769230769,
+          "signal_linear_baseline_kcps": 45.08976170533812
+        }
+      ],
+      "signal_min_freq_ghz": 3.905,
+      "signal_min_kcps": 41.69230769230769
+    },
+    {
+      "average_index": 3,
+      "checks": [
+        {
+          "freq_ghz": 3.875,
+          "label": "at_3p875",
+          "raw_signal_depression_fraction": 0.09343320204042094,
+          "reference_depression_fraction_vs_linear_baseline": -0.04811594202898495,
+          "reference_kcps": 52.15384615384615,
+          "signal_kcps": 45.0,
+          "signal_linear_baseline_kcps": 49.63782051282051
+        },
+        {
+          "freq_ghz": 3.875,
+          "label": "at_terminal_mean_min",
+          "raw_signal_depression_fraction": 0.09343320204042094,
+          "reference_depression_fraction_vs_linear_baseline": -0.04811594202898495,
+          "reference_kcps": 52.15384615384615,
+          "signal_kcps": 45.0,
+          "signal_linear_baseline_kcps": 49.63782051282051
+        },
+        {
+          "freq_ghz": 3.8783333333333334,
+          "label": "at_avg_min",
+          "raw_signal_depression_fraction": 0.16067398180876669,
+          "reference_depression_fraction_vs_linear_baseline": -0.04337379992676538,
+          "reference_kcps": 52.07692307692307,
+          "signal_kcps": 41.76923076923077,
+          "signal_linear_baseline_kcps": 49.76520429956933
+        }
+      ],
+      "signal_min_freq_ghz": 3.8783333333333334,
+      "signal_min_kcps": 41.76923076923077
+    },
+    {
+      "average_index": 4,
+      "checks": [
+        {
+          "freq_ghz": 3.875,
+          "label": "at_3p875",
+          "raw_signal_depression_fraction": 0.1480056691637981,
+          "reference_depression_fraction_vs_linear_baseline": 0.0604870384917513,
+          "reference_kcps": 46.0,
+          "signal_kcps": 40.46153846153847,
+          "signal_linear_baseline_kcps": 47.490384615384606
+        },
+        {
+          "freq_ghz": 3.875,
+          "label": "at_terminal_mean_min",
+          "raw_signal_depression_fraction": 0.1480056691637981,
+          "reference_depression_fraction_vs_linear_baseline": 0.0604870384917513,
+          "reference_kcps": 46.0,
+          "signal_kcps": 40.46153846153847,
+          "signal_linear_baseline_kcps": 47.490384615384606
+        },
+        {
+          "freq_ghz": 3.8783333333333334,
+          "label": "at_avg_min",
+          "raw_signal_depression_fraction": 0.19532901649863776,
+          "reference_depression_fraction_vs_linear_baseline": -0.09703309204908184,
+          "reference_kcps": 53.61538461538462,
+          "signal_kcps": 38.15384615384615,
+          "signal_linear_baseline_kcps": 47.41546164349987
+        }
+      ],
+      "signal_min_freq_ghz": 3.8783333333333334,
+      "signal_min_kcps": 38.15384615384615
+    }
+  ],
+  "pointwise_ratio_depression_fraction": 0.1341077617214781,
+  "raw_signal_depression_fraction_vs_linear_baseline": 0.13834676613601515,
+  "raw_signal_gaussian_fit": {
+    "baseline_kcps_at_center": 48.172565131171424,
+    "center_ghz": 3.8764610104808064,
+    "center_hz": 3876461010.4808064,
+    "center_uncertainty_hz_from_covariance": 688021.1247002708,
+    "depth_uncertainty_kcps_from_covariance": 0.9012059784850381,
+    "dip_fraction": 0.14677342398414617,
+    "dip_kcps": 7.07045232640132,
+    "fit_ok": true,
+    "fit_rms_kcps": 1.050945676917713,
+    "fwhm_mhz": 11.158071997072874,
+    "model": "linear_baseline_minus_gaussian_dip",
+    "sigma_mhz": 4.73839689821091
+  },
+  "readout_roles": "Rabimodulated.xml full_expt=0: readout1 is mS=0 reference, readout2 is signal after length_rabi_pulse.",
+  "reference_depression_fraction_at_signal_min_vs_linear_baseline": 0.0001644682740699066,
+  "repetitions_per_average": 50000,
+  "savedexperiment": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-14-192106.mat",
+  "signal_baseline_at_min_kcps": 48.11858974358973,
+  "signal_min_kcps": 41.46153846153847,
+  "source_raw_json": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_podmr_terminal_raw_4avg_20260514_1957.json",
+  "status": "terminal_completed_reviewed",
+  "total_shots": 200000,
+  "valid_resonance_for_alignment_branch": true
+}

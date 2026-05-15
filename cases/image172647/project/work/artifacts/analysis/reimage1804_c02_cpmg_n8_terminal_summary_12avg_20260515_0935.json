@@ -1,0 +1,1641 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+  "created_at": "2026-05-15T09:38:49",
+  "mat_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-CPMG-vary-tau-2026-05-15-072537.mat",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_raw_12avg_20260515_0935.json",
+  "bridge_result_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_terminal_result_20260515_0935.json",
+  "bridge_status_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/bridge_results/reimage1804_c02_cpmg_n8_terminal_status_20260515_0935.json",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/figures/reimage1804_c02_cpmg_n8_terminal_12avg_20260515_0935.png",
+  "drift_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_drift_12avg_20260515_0935.json",
+  "bridge_terminal": {
+    "finished_at": "2026-05-15T09:32:49",
+    "ok": null,
+    "state": "completed",
+    "status_finished_at": "2026-05-15T09:32:49",
+    "elapsed_seconds": 7776,
+    "stop_requested": false,
+    "safe_shutdown_ok": null,
+    "warnings": [
+      "Legacy landmark-map matching is disabled for queue execute; auto-align uses explicit/reference/registry/current seeds plus TrackCenter.",
+      "Queue execute auto-align requires Final >= 8.000 kcps before RunExperiment(handles) is allowed to proceed.",
+      "TrackCenter will try 3 z-seed positions with offsets [0.000, -0.500, 0.500] um from the current alignment seed.",
+      "NV23 queue auto-align no longer requires legacy landmark-map refinement.",
+      "Turned the Imaging laser on automatically before TrackCenter.",
+      "Tried 3 z-seed positions and selected attempt 1 with the highest final photon count.",
+      "Updated shared NV seed registry for NV23.",
+      "Applied acquisition settings from job.metadata: averages=12, repetitions=50000, average_continuously=0.",
+      "Forced experiment tracking_period=1 for bridge-configured runs.",
+      "Latest savedexperiments candidate changed from C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-15-031116.mat to C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537.mat.",
+      "Resolved saved artifact for job nv23_cpmg_20260515_072306_auto_cpmg: C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-CPMG-vary-tau-2026-05-15-072537.mat",
+      "Resolved best-effort cleanup target from the execute route figure handle.",
+      "Issued best-effort bridge cleanup using the active Experiment GUI handles: signal_generator_rf_off, awg_stop, awg_all_channels_off, pulse_blaster_stop, pulse_blaster_reset, counting_task_stop, counting_task_clear, imaging_laser_toggle_off."
+    ]
+  },
+  "terminal_counts": {
+    "pre_run_track_final_counts_kcps": 38.694,
+    "post_run_final_counts_kcps": 44.535,
+    "post_run_final_counts_text": "Final = 44.535 kcps"
+  },
+  "sequence_name": "CPMG.xml",
+  "sequence_path_from_result": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\SavedSequences\\SavedSequences-AWG\\CPMG.xml",
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_us": 0.44999999999999996,
+    "end_us": 1.5999999999999985,
+    "points": 37,
+    "step_ns": 31.944444444444443,
+    "repetitions": 50000,
+    "saved_averages": 12,
+    "shot_credit_per_point": 600000,
+    "scan_order_mode": "snake"
+  },
+  "bool_values": [
+    {
+      "name": "do_adiabatic_inversion",
+      "value": 0
+    }
+  ],
+  "variable_values": [
+    {
+      "name": "sample_rate",
+      "value": 250000000.0
+    },
+    {
+      "name": "N",
+      "value": 8
+    },
+    {
+      "name": "tau",
+      "value": 1.6e-06
+    },
+    {
+      "name": "mod_depth",
+      "value": 1
+    },
+    {
+      "name": "length_pi",
+      "value": 5.2e-08
+    },
+    {
+      "name": "phase_y",
+      "value": 90
+    },
+    {
+      "name": "phase_ym",
+      "value": 270
+    },
+    {
+      "name": "switch_delay",
+      "value": 1e-07
+    },
+    {
+      "name": "wait_time",
+      "value": 2e-06
+    },
+    {
+      "name": "delay_wrt_1mus",
+      "value": 2e-07
+    },
+    {
+      "name": "sweep_range",
+      "value": 100000000.0
+    },
+    {
+      "name": "sweep_time",
+      "value": 1e-06
+    },
+    {
+      "name": "mw_freq",
+      "value": 3876501336.7539
+    },
+    {
+      "name": "mw_ampl",
+      "value": -5
+    },
+    {
+      "name": "ampIQ",
+      "value": 5
+    },
+    {
+      "name": "freqIQ",
+      "value": 50000000.0
+    },
+    {
+      "name": "detuning",
+      "value": 0
+    }
+  ],
+  "readout_role_assumption": "CPMG.xml reviewed before launch and terminal metadata verifies CPMG.xml; readout1 true-0 reference, readout2 pi/ms1 reference, readout3 final CPMG echo candidate signal.",
+  "target_tau_us": {
+    "tau_1_over_4f_us": 0.6500260010400416,
+    "tau_1_over_2f_us": 1.3000520020800832
+  },
+  "readout_summaries": {
+    "readout1 ref0": {
+      "mean_kcps_like": 50.133749133749134,
+      "min_kcps_like": 48.89102564102564,
+      "max_kcps_like": 50.993589743589745,
+      "raw_peak_to_peak_percent_of_mean": 4.193909569688842,
+      "linear_self_baseline_coeff": [
+        -0.31617958391412027,
+        50.457833207261125
+      ],
+      "linear_self_norm_min": 0.9733786866128157,
+      "linear_self_norm_min_tau_us": 0.7055555555555553,
+      "linear_self_norm_max": 1.0171543312078613,
+      "linear_self_norm_max_tau_us": 1.3444444444444432,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 50.5,
+          "linear_self_norm": 1.004876110433722,
+          "dip_fraction_vs_self_baseline": -0.004876110433722047,
+          "local_neighbor_mean": 0.9913523844342395,
+          "local_neighbor_std": 0.01321292525795446,
+          "local_zscore": 1.0235224778359375,
+          "local_dip_fraction_vs_neighbor_mean": -0.013523725999482594,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 50.42307692307693,
+          "linear_self_norm": 1.0075980772212743,
+          "dip_fraction_vs_self_baseline": -0.0075980772212742576,
+          "local_neighbor_mean": 1.000552656135584,
+          "local_neighbor_std": 0.012175056106636776,
+          "local_zscore": 0.5786766832104976,
+          "local_dip_fraction_vs_neighbor_mean": -0.007045421085690284,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    },
+    "readout2 pi/ms1 ref": {
+      "mean_kcps_like": 42.16649341649341,
+      "min_kcps_like": 40.90384615384616,
+      "max_kcps_like": 43.294871794871796,
+      "raw_peak_to_peak_percent_of_mean": 5.670439838116551,
+      "linear_self_baseline_coeff": [
+        0.3505283139150495,
+        41.807201894730504
+      ],
+      "linear_self_norm_min": 0.9713453907658327,
+      "linear_self_norm_min_tau_us": 0.8652777777777771,
+      "linear_self_norm_max": 1.0314162955129849,
+      "linear_self_norm_max_tau_us": 0.4819444444444444,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 42.032051282051285,
+          "linear_self_norm": 0.9999982644835893,
+          "dip_fraction_vs_self_baseline": 1.735516410694693e-06,
+          "local_neighbor_mean": 1.0033177977037635,
+          "local_neighbor_std": 0.007596797667533981,
+          "local_zscore": -0.43696480615255895,
+          "local_dip_fraction_vs_neighbor_mean": 0.003319533220174198,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 42.10897435897436,
+          "linear_self_norm": 0.9962548812208393,
+          "dip_fraction_vs_self_baseline": 0.0037451187791607277,
+          "local_neighbor_mean": 1.0024764744494818,
+          "local_neighbor_std": 0.01072290023938566,
+          "local_zscore": -0.5802155284248942,
+          "local_dip_fraction_vs_neighbor_mean": 0.006221593228642575,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    },
+    "readout3 final CPMG echo": {
+      "mean_kcps_like": 47.52893277893278,
+      "min_kcps_like": 45.32051282051282,
+      "max_kcps_like": 49.22435897435898,
+      "raw_peak_to_peak_percent_of_mean": 8.213620474088453,
+      "linear_self_baseline_coeff": [
+        -0.1036170830221136,
+        47.635140289030446
+      ],
+      "linear_self_norm_min": 0.9528053468333308,
+      "linear_self_norm_min_tau_us": 0.6736111111111108,
+      "linear_self_norm_max": 1.0352388811296631,
+      "linear_self_norm_max_tau_us": 0.8333333333333328,
+      "target_reviews": {
+        "tau_1_over_4f_us": {
+          "target_us": 0.6500260010400416,
+          "nearest_index_1based": 7,
+          "nearest_tau_us": 0.6416666666666664,
+          "raw_value": 46.95512820512821,
+          "linear_self_norm": 0.9871023369107144,
+          "dip_fraction_vs_self_baseline": 0.012897663089285638,
+          "local_neighbor_mean": 0.976320546192782,
+          "local_neighbor_std": 0.017284749568414207,
+          "local_zscore": 0.623774771815891,
+          "local_dip_fraction_vs_neighbor_mean": -0.010781790717932394,
+          "offset_ns": -8.359334373375216
+        },
+        "tau_1_over_2f_us": {
+          "target_us": 1.3000520020800832,
+          "nearest_index_1based": 28,
+          "nearest_tau_us": 1.312499999999999,
+          "raw_value": 46.74358974358973,
+          "linear_self_norm": 0.9840933314085097,
+          "dip_fraction_vs_self_baseline": 0.01590666859149026,
+          "local_neighbor_mean": 0.9961045962975492,
+          "local_neighbor_std": 0.011781768639812978,
+          "local_zscore": -1.0194789302219858,
+          "local_dip_fraction_vs_neighbor_mean": 0.012011264889039475,
+          "offset_ns": 12.447997919915688
+        }
+      }
+    }
+  },
+  "reference_normalized_target_reviews": {
+    "readout3_over_linear_readout1": {
+      "tau_1_over_4f_us": {
+        "target_us": 0.6500260010400416,
+        "nearest_index_1based": 7,
+        "nearest_tau_us": 0.6416666666666664,
+        "raw_value": 46.95512820512821,
+        "linear_self_norm": 0.9859389855119668,
+        "dip_fraction_vs_self_baseline": 0.014061014488033208,
+        "local_neighbor_mean": 0.9751677957737503,
+        "local_neighbor_std": 0.017101554501826207,
+        "local_zscore": 0.6298368804465252,
+        "local_dip_fraction_vs_neighbor_mean": -0.010771189738216447,
+        "offset_ns": -8.359334373375216
+      },
+      "tau_1_over_2f_us": {
+        "target_us": 1.3000520020800832,
+        "nearest_index_1based": 28,
+        "nearest_tau_us": 1.312499999999999,
+        "raw_value": 46.74358974358973,
+        "linear_self_norm": 0.9856572335300382,
+        "dip_fraction_vs_self_baseline": 0.014342766469961798,
+        "local_neighbor_mean": 0.9976881316525168,
+        "local_neighbor_std": 0.011858238737827717,
+        "local_zscore": -1.0145602891346837,
+        "local_dip_fraction_vs_neighbor_mean": 0.012030898122478595,
+        "offset_ns": 12.447997919915688
+      }
+    },
+    "readout3_over_linear_readout2": {
+      "tau_1_over_4f_us": {
+        "target_us": 0.6500260010400416,
+        "nearest_index_1based": 7,
+        "nearest_tau_us": 0.6416666666666664,
+        "raw_value": 46.95512820512821,
+        "linear_self_norm": 0.9915939644087701,
+        "dip_fraction_vs_self_baseline": 0.008406035591229877,
+        "local_neighbor_mean": 0.9807689159535675,
+        "local_neighbor_std": 0.01778972865431094,
+        "local_zscore": 0.6084999195633821,
+        "local_dip_fraction_vs_neighbor_mean": -0.010825048455202602,
+        "offset_ns": -8.359334373375216
+      },
+      "tau_1_over_2f_us": {
+        "target_us": 1.3000520020800832,
+        "nearest_index_1based": 28,
+        "nearest_tau_us": 1.312499999999999,
+        "raw_value": 46.74358974358973,
+        "linear_self_norm": 0.9816350197279468,
+        "dip_fraction_vs_self_baseline": 0.018364980272053244,
+        "local_neighbor_mean": 0.9936152939063183,
+        "local_neighbor_std": 0.011627754372757508,
+        "local_zscore": -1.030317101162711,
+        "local_dip_fraction_vs_neighbor_mean": 0.011980274178371553,
+        "offset_ns": 12.447997919915688
+      }
+    }
+  },
+  "per_average_readout_summaries": [
+    {
+      "average_index": 1,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 49.61746361746362,
+          "linear_self_norm_min": 0.925752694399176,
+          "linear_self_norm_max": 1.0816818361559197,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 50.76923076923077,
+              "linear_self_norm": 1.045649998647808,
+              "dip_fraction_vs_self_baseline": -0.045649998647808054,
+              "local_neighbor_mean": 0.9759834004942428,
+              "local_neighbor_std": 0.05817182319748722,
+              "local_zscore": 1.1976003900901382,
+              "local_dip_fraction_vs_neighbor_mean": -0.06966659815356524,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.76923076923077,
+              "linear_self_norm": 0.9871720439325752,
+              "dip_fraction_vs_self_baseline": 0.012827956067424817,
+              "local_neighbor_mean": 0.9780726419168253,
+              "local_neighbor_std": 0.03811177491926453,
+              "local_zscore": 0.23875566107917912,
+              "local_dip_fraction_vs_neighbor_mean": -0.00909940201574988,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 41.77130977130977,
+          "linear_self_norm_min": 0.9188102883922638,
+          "linear_self_norm_max": 1.1355335205708783,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 41.46153846153847,
+              "linear_self_norm": 1.0574644318302329,
+              "dip_fraction_vs_self_baseline": -0.057464431830232865,
+              "local_neighbor_mean": 1.002562575035117,
+              "local_neighbor_std": 0.009014092725830437,
+              "local_zscore": 6.090669184907671,
+              "local_dip_fraction_vs_neighbor_mean": -0.05490185679511583,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.61538461538462,
+              "linear_self_norm": 1.1355335205708783,
+              "dip_fraction_vs_self_baseline": -0.1355335205708783,
+              "local_neighbor_mean": 0.9760841817100718,
+              "local_neighbor_std": 0.07185508616950323,
+              "local_zscore": 2.219040395897264,
+              "local_dip_fraction_vs_neighbor_mean": -0.15944933886080648,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 47.28898128898129,
+          "linear_self_norm_min": 0.9066897975054586,
+          "linear_self_norm_max": 1.0783842289545362,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 45.76923076923077,
+              "linear_self_norm": 1.0040060871401961,
+              "dip_fraction_vs_self_baseline": -0.004006087140196124,
+              "local_neighbor_mean": 0.9698190418092576,
+              "local_neighbor_std": 0.05283047445284408,
+              "local_zscore": 0.6471084290839281,
+              "local_dip_fraction_vs_neighbor_mean": -0.034187045330938526,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 48.0,
+              "linear_self_norm": 0.9883505973402724,
+              "dip_fraction_vs_self_baseline": 0.011649402659727581,
+              "local_neighbor_mean": 1.001898796445247,
+              "local_neighbor_std": 0.03814609834595922,
+              "local_zscore": -0.3551660508527413,
+              "local_dip_fraction_vs_neighbor_mean": 0.013548199104974623,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 2,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.594594594594604,
+          "linear_self_norm_min": 0.9282382357276742,
+          "linear_self_norm_max": 1.0775110632402802,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 52.92307692307693,
+              "linear_self_norm": 0.9972885423904952,
+              "dip_fraction_vs_self_baseline": 0.0027114576095047527,
+              "local_neighbor_mean": 0.9967927918262544,
+              "local_neighbor_std": 0.04296905538679119,
+              "local_zscore": 0.011537385678561796,
+              "local_dip_fraction_vs_neighbor_mean": -0.0004957505642408933,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.61538461538462,
+              "linear_self_norm": 0.9826712986340318,
+              "dip_fraction_vs_self_baseline": 0.017328701365968202,
+              "local_neighbor_mean": 0.9876449620132504,
+              "local_neighbor_std": 0.03121968224023429,
+              "local_zscore": -0.1593117873829211,
+              "local_dip_fraction_vs_neighbor_mean": 0.0049736633792185625,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 43.064449064449065,
+          "linear_self_norm_min": 0.9320046893317695,
+          "linear_self_norm_max": 1.171527845747283,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 46.0,
+              "linear_self_norm": 1.0539201676669518,
+              "dip_fraction_vs_self_baseline": -0.053920167666951846,
+              "local_neighbor_mean": 0.9640628342979267,
+              "local_neighbor_std": 0.022258900466510714,
+              "local_zscore": 4.036916985374844,
+              "local_dip_fraction_vs_neighbor_mean": -0.08985733336902513,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 40.61538461538461,
+              "linear_self_norm": 0.9527896995708147,
+              "dip_fraction_vs_self_baseline": 0.04721030042918528,
+              "local_neighbor_mean": 1.011907666317161,
+              "local_neighbor_std": 0.03222119834058652,
+              "local_zscore": -1.8347538201855114,
+              "local_dip_fraction_vs_neighbor_mean": 0.05911796674634617,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 48.677754677754685,
+          "linear_self_norm_min": 0.9054069716901852,
+          "linear_self_norm_max": 1.0864121329688734,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 51.38461538461538,
+              "linear_self_norm": 1.0340557275541793,
+              "dip_fraction_vs_self_baseline": -0.034055727554179294,
+              "local_neighbor_mean": 0.9655011184252371,
+              "local_neighbor_std": 0.031128721301225036,
+              "local_zscore": 2.2022944169648335,
+              "local_dip_fraction_vs_neighbor_mean": -0.06855460912894218,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 46.76923076923077,
+              "linear_self_norm": 0.9760499826449144,
+              "dip_fraction_vs_self_baseline": 0.023950017355085618,
+              "local_neighbor_mean": 0.948327634579585,
+              "local_neighbor_std": 0.033567469336715915,
+              "local_zscore": 0.8258694686586578,
+              "local_dip_fraction_vs_neighbor_mean": -0.02772234806532936,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 3,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 48.12889812889813,
+          "linear_self_norm_min": 0.9005220125209673,
+          "linear_self_norm_max": 1.0857487074851493,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 48.0,
+              "linear_self_norm": 1.0025826092123722,
+              "dip_fraction_vs_self_baseline": -0.002582609212372189,
+              "local_neighbor_mean": 1.0021858379687414,
+              "local_neighbor_std": 0.0265628515394695,
+              "local_zscore": 0.014937072664854577,
+              "local_dip_fraction_vs_neighbor_mean": -0.0003967712436308002,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 52.46153846153846,
+              "linear_self_norm": 1.0857487074851493,
+              "dip_fraction_vs_self_baseline": -0.08574870748514929,
+              "local_neighbor_mean": 1.0057638418814832,
+              "local_neighbor_std": 0.03439856825854796,
+              "local_zscore": 2.3252382192910046,
+              "local_dip_fraction_vs_neighbor_mean": -0.07998486560366613,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 38.99376299376299,
+          "linear_self_norm_min": 0.8666081488902854,
+          "linear_self_norm_max": 1.096616813983575,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 37.92307692307693,
+              "linear_self_norm": 0.9849184110763144,
+              "dip_fraction_vs_self_baseline": 0.015081588923685607,
+              "local_neighbor_mean": 1.0044835902755505,
+              "local_neighbor_std": 0.08665031869589918,
+              "local_zscore": -0.2257946594276289,
+              "local_dip_fraction_vs_neighbor_mean": 0.01956517919923606,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 41.92307692307693,
+              "linear_self_norm": 1.065084891826338,
+              "dip_fraction_vs_self_baseline": -0.06508489182633803,
+              "local_neighbor_mean": 1.002539353568773,
+              "local_neighbor_std": 0.035399749294582034,
+              "local_zscore": 1.7668356274810595,
+              "local_dip_fraction_vs_neighbor_mean": -0.06254553825756504,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 44.646569646569645,
+          "linear_self_norm_min": 0.9139183901621014,
+          "linear_self_norm_max": 1.105296969882374,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 39.92307692307693,
+              "linear_self_norm": 0.9174430270890065,
+              "dip_fraction_vs_self_baseline": 0.08255697291099351,
+              "local_neighbor_mean": 0.9726544900349812,
+              "local_neighbor_std": 0.04017918840954731,
+              "local_zscore": -1.3741308655417097,
+              "local_dip_fraction_vs_neighbor_mean": 0.055211462945974676,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 46.46153846153846,
+              "linear_self_norm": 1.0212493716583644,
+              "dip_fraction_vs_self_baseline": -0.02124937165836438,
+              "local_neighbor_mean": 1.0554604885083443,
+              "local_neighbor_std": 0.060072429275882945,
+              "local_zscore": -0.5694978089343644,
+              "local_dip_fraction_vs_neighbor_mean": 0.034211116849979906,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 4,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 54.1018711018711,
+          "linear_self_norm_min": 0.9276536612013759,
+          "linear_self_norm_max": 1.0991275411593044,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 56.23076923076923,
+              "linear_self_norm": 1.0287798012880442,
+              "dip_fraction_vs_self_baseline": -0.02877980128804425,
+              "local_neighbor_mean": 1.0073059552095074,
+              "local_neighbor_std": 0.023305236423314713,
+              "local_zscore": 0.9214172166498291,
+              "local_dip_fraction_vs_neighbor_mean": -0.021473846078536862,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 53.53846153846154,
+              "linear_self_norm": 0.9972708391507191,
+              "dip_fraction_vs_self_baseline": 0.002729160849280876,
+              "local_neighbor_mean": 1.0055057633471514,
+              "local_neighbor_std": 0.02817719021270188,
+              "local_zscore": -0.29225498121952725,
+              "local_dip_fraction_vs_neighbor_mean": 0.008234924196432236,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 47.09147609147609,
+          "linear_self_norm_min": 0.9275970244011229,
+          "linear_self_norm_max": 1.1041395933033864,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 49.0,
+              "linear_self_norm": 1.0354274906413803,
+              "dip_fraction_vs_self_baseline": -0.03542749064138029,
+              "local_neighbor_mean": 1.0151031673215158,
+              "local_neighbor_std": 0.017621312695011434,
+              "local_zscore": 1.1533943964128297,
+              "local_dip_fraction_vs_neighbor_mean": -0.020324323319864446,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 47.07692307692307,
+              "linear_self_norm": 1.0033980208918811,
+              "dip_fraction_vs_self_baseline": -0.003398020891881126,
+              "local_neighbor_mean": 1.0001006328495052,
+              "local_neighbor_std": 0.07445499793196479,
+              "local_zscore": 0.04428699394215238,
+              "local_dip_fraction_vs_neighbor_mean": -0.0032973880423758928,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 51.65904365904366,
+          "linear_self_norm_min": 0.9341968648782851,
+          "linear_self_norm_max": 1.0734710537812675,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 51.92307692307693,
+              "linear_self_norm": 0.9991514503251016,
+              "dip_fraction_vs_self_baseline": 0.0008485496748984467,
+              "local_neighbor_mean": 1.0128247599677673,
+              "local_neighbor_std": 0.052456834666217235,
+              "local_zscore": -0.2606583056272653,
+              "local_dip_fraction_vs_neighbor_mean": 0.013673309642665776,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 51.61538461538462,
+              "linear_self_norm": 1.0036446808510635,
+              "dip_fraction_vs_self_baseline": -0.0036446808510635087,
+              "local_neighbor_mean": 1.0021594450893214,
+              "local_neighbor_std": 0.04060761670414258,
+              "local_zscore": 0.03657529996313651,
+              "local_dip_fraction_vs_neighbor_mean": -0.0014852357617420875,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 5,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.062370062370064,
+          "linear_self_norm_min": 0.9020096019033859,
+          "linear_self_norm_max": 1.0912448213291936,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 50.61538461538462,
+              "linear_self_norm": 0.9838713451038693,
+              "dip_fraction_vs_self_baseline": 0.01612865489613069,
+              "local_neighbor_mean": 0.9651902596437331,
+              "local_neighbor_std": 0.05167276584102922,
+              "local_zscore": 0.36152671830279864,
+              "local_dip_fraction_vs_neighbor_mean": -0.01868108546013625,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 51.0,
+              "linear_self_norm": 1.0044253079775143,
+              "dip_fraction_vs_self_baseline": -0.004425307977514281,
+              "local_neighbor_mean": 1.0119933042264666,
+              "local_neighbor_std": 0.010505859837227481,
+              "local_zscore": -0.7203595294632766,
+              "local_dip_fraction_vs_neighbor_mean": 0.0075679962489523245,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 42.985446985446984,
+          "linear_self_norm_min": 0.8958632272994881,
+          "linear_self_norm_max": 1.0833186987106076,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 43.0,
+              "linear_self_norm": 0.99787463117106,
+              "dip_fraction_vs_self_baseline": 0.0021253688289399886,
+              "local_neighbor_mean": 1.025548930966623,
+              "local_neighbor_std": 0.0362086482049942,
+              "local_zscore": -0.76430082777147,
+              "local_dip_fraction_vs_neighbor_mean": 0.027674299795563018,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 42.92307692307693,
+              "linear_self_norm": 1.0004016663415078,
+              "dip_fraction_vs_self_baseline": -0.00040166634150784475,
+              "local_neighbor_mean": 1.029540142468822,
+              "local_neighbor_std": 0.04199549036270583,
+              "local_zscore": -0.6938477411658135,
+              "local_dip_fraction_vs_neighbor_mean": 0.029138476127314128,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 48.32224532224533,
+          "linear_self_norm_min": 0.8691208650822756,
+          "linear_self_norm_max": 1.0769785466903559,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 48.84615384615385,
+              "linear_self_norm": 1.0027719685244543,
+              "dip_fraction_vs_self_baseline": -0.0027719685244542713,
+              "local_neighbor_mean": 0.968018215850805,
+              "local_neighbor_std": 0.0696770807843807,
+              "local_zscore": 0.49878313331174834,
+              "local_dip_fraction_vs_neighbor_mean": -0.03475375267364922,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.15384615384615,
+              "linear_self_norm": 1.0233864105715544,
+              "dip_fraction_vs_self_baseline": -0.02338641057155444,
+              "local_neighbor_mean": 1.0089869056935081,
+              "local_neighbor_std": 0.03019172648271901,
+              "local_zscore": 0.47693545734419085,
+              "local_dip_fraction_vs_neighbor_mean": -0.01439950487804631,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 6,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.54054054054053,
+          "linear_self_norm_min": 0.9096375911031717,
+          "linear_self_norm_max": 1.0731195255493957,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 51.38461538461538,
+              "linear_self_norm": 0.9900636072500034,
+              "dip_fraction_vs_self_baseline": 0.009936392749996581,
+              "local_neighbor_mean": 1.0071207215605056,
+              "local_neighbor_std": 0.023160639455469395,
+              "local_zscore": -0.7364699210182696,
+              "local_dip_fraction_vs_neighbor_mean": 0.017057114310502164,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 50.07692307692307,
+              "linear_self_norm": 0.9767160445873871,
+              "dip_fraction_vs_self_baseline": 0.023283955412612856,
+              "local_neighbor_mean": 0.9737493187978081,
+              "local_neighbor_std": 0.05621983114686513,
+              "local_zscore": 0.05277009427205375,
+              "local_dip_fraction_vs_neighbor_mean": -0.0029667257895790167,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 43.54261954261953,
+          "linear_self_norm_min": 0.9324716989552289,
+          "linear_self_norm_max": 1.0576274305342572,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 43.38461538461538,
+              "linear_self_norm": 0.9874284006574683,
+              "dip_fraction_vs_self_baseline": 0.012571599342531714,
+              "local_neighbor_mean": 1.026818998477568,
+              "local_neighbor_std": 0.02854654567708668,
+              "local_zscore": -1.3798726565966664,
+              "local_dip_fraction_vs_neighbor_mean": 0.03939059782009968,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 41.92307692307693,
+              "linear_self_norm": 0.9693902078014738,
+              "dip_fraction_vs_self_baseline": 0.03060979219852622,
+              "local_neighbor_mean": 0.9804885574907112,
+              "local_neighbor_std": 0.022698075363423057,
+              "local_zscore": -0.4889555396895851,
+              "local_dip_fraction_vs_neighbor_mean": 0.011098349689237397,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 48.77754677754678,
+          "linear_self_norm_min": 0.9261824158226691,
+          "linear_self_norm_max": 1.0929707112970712,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 46.69230769230769,
+              "linear_self_norm": 0.9454828660436136,
+              "dip_fraction_vs_self_baseline": 0.054517133956386354,
+              "local_neighbor_mean": 0.9700408913268947,
+              "local_neighbor_std": 0.042507792791929615,
+              "local_zscore": -0.5777299565632494,
+              "local_dip_fraction_vs_neighbor_mean": 0.024558025283281104,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 46.23076923076923,
+              "linear_self_norm": 0.9567181517015874,
+              "dip_fraction_vs_self_baseline": 0.04328184829841264,
+              "local_neighbor_mean": 0.9977662941092185,
+              "local_neighbor_std": 0.056839794362650624,
+              "local_zscore": -0.7221726057933067,
+              "local_dip_fraction_vs_neighbor_mean": 0.041048142407631105,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 7,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 48.51351351351352,
+          "linear_self_norm_min": 0.8949380422927886,
+          "linear_self_norm_max": 1.0851724940949465,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 53.53846153846154,
+              "linear_self_norm": 1.0851724940949465,
+              "dip_fraction_vs_self_baseline": -0.08517249409494654,
+              "local_neighbor_mean": 1.0146233770435762,
+              "local_neighbor_std": 0.020724171095075742,
+              "local_zscore": 3.4041948760080194,
+              "local_dip_fraction_vs_neighbor_mean": -0.07054911705137035,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.84615384615385,
+              "linear_self_norm": 1.0407082072077212,
+              "dip_fraction_vs_self_baseline": -0.04070820720772117,
+              "local_neighbor_mean": 0.9828610644486829,
+              "local_neighbor_std": 0.029889993144376688,
+              "local_zscore": 1.9353347616916812,
+              "local_dip_fraction_vs_neighbor_mean": -0.05784714275903824,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 40.694386694386694,
+          "linear_self_norm_min": 0.9033559640805158,
+          "linear_self_norm_max": 1.119630789050375,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 38.0,
+              "linear_self_norm": 0.9235191813680383,
+              "dip_fraction_vs_self_baseline": 0.07648081863196166,
+              "local_neighbor_mean": 1.042152747483542,
+              "local_neighbor_std": 0.06277638038625603,
+              "local_zscore": -1.8897802865594437,
+              "local_dip_fraction_vs_neighbor_mean": 0.11863356611550357,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 40.23076923076923,
+              "linear_self_norm": 0.9969224845717504,
+              "dip_fraction_vs_self_baseline": 0.003077515428249633,
+              "local_neighbor_mean": 1.0040611854231951,
+              "local_neighbor_std": 0.01853166657554833,
+              "local_zscore": -0.38521634426900003,
+              "local_dip_fraction_vs_neighbor_mean": 0.007138700851444746,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 45.77962577962578,
+          "linear_self_norm_min": 0.9124190341428898,
+          "linear_self_norm_max": 1.065555795359544,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 48.61538461538462,
+              "linear_self_norm": 1.0367134743631026,
+              "dip_fraction_vs_self_baseline": -0.03671347436310257,
+              "local_neighbor_mean": 0.9694433067280915,
+              "local_neighbor_std": 0.040429805565696975,
+              "local_zscore": 1.6638756158670969,
+              "local_dip_fraction_vs_neighbor_mean": -0.06727016763501104,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 45.92307692307693,
+              "linear_self_norm": 1.0217836679095342,
+              "dip_fraction_vs_self_baseline": -0.021783667909534232,
+              "local_neighbor_mean": 0.9665468311064982,
+              "local_neighbor_std": 0.0365035922791424,
+              "local_zscore": 1.5131890686440066,
+              "local_dip_fraction_vs_neighbor_mean": -0.05523683680303604,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 8,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 43.191268191268186,
+          "linear_self_norm_min": 0.9414543713335363,
+          "linear_self_norm_max": 1.1054726824631018,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 40.92307692307693,
+              "linear_self_norm": 0.9550923052957113,
+              "dip_fraction_vs_self_baseline": 0.04490769470428868,
+              "local_neighbor_mean": 0.9963919113348134,
+              "local_neighbor_std": 0.009295693390649609,
+              "local_zscore": -4.4428752437816765,
+              "local_dip_fraction_vs_neighbor_mean": 0.0412996060391021,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 43.46153846153846,
+              "linear_self_norm": 1.0002820568999427,
+              "dip_fraction_vs_self_baseline": -0.00028205689994265093,
+              "local_neighbor_mean": 1.000759922329427,
+              "local_neighbor_std": 0.047141850878971464,
+              "local_zscore": -0.010136755782270735,
+              "local_dip_fraction_vs_neighbor_mean": 0.00047786542948435873,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 35.06444906444906,
+          "linear_self_norm_min": 0.9097744439246149,
+          "linear_self_norm_max": 1.1245534182348553,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 35.76923076923077,
+              "linear_self_norm": 1.022198526560682,
+              "dip_fraction_vs_self_baseline": -0.022198526560682108,
+              "local_neighbor_mean": 0.9688970843087832,
+              "local_neighbor_std": 0.04157668773198656,
+              "local_zscore": 1.2820030925862342,
+              "local_dip_fraction_vs_neighbor_mean": -0.05330144225189892,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 33.84615384615385,
+              "linear_self_norm": 0.963771333317754,
+              "dip_fraction_vs_self_baseline": 0.036228666682246,
+              "local_neighbor_mean": 1.0229154769209983,
+              "local_neighbor_std": 0.0189349642598709,
+              "local_zscore": -3.1235413382104538,
+              "local_dip_fraction_vs_neighbor_mean": 0.05914414360324427,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 41.17255717255717,
+          "linear_self_norm_min": 0.8881057127830451,
+          "linear_self_norm_max": 1.0918312985178704,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 43.0,
+              "linear_self_norm": 1.0476369472258655,
+              "dip_fraction_vs_self_baseline": -0.047636947225865534,
+              "local_neighbor_mean": 0.9806437645760346,
+              "local_neighbor_std": 0.06186125717859944,
+              "local_zscore": 1.082958635263669,
+              "local_dip_fraction_vs_neighbor_mean": -0.0669931826498309,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 41.0,
+              "linear_self_norm": 0.9934959910062783,
+              "dip_fraction_vs_self_baseline": 0.006504008993721722,
+              "local_neighbor_mean": 1.000964786293865,
+              "local_neighbor_std": 0.038861452627138394,
+              "local_zscore": -0.19219032698667263,
+              "local_dip_fraction_vs_neighbor_mean": 0.007468795287586816,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 9,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 50.54054054054053,
+          "linear_self_norm_min": 0.913225793203919,
+          "linear_self_norm_max": 1.078709341382335,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 52.15384615384615,
+              "linear_self_norm": 1.0296650262906617,
+              "dip_fraction_vs_self_baseline": -0.0296650262906617,
+              "local_neighbor_mean": 1.0197799950053927,
+              "local_neighbor_std": 0.0558762462482315,
+              "local_zscore": 0.17690936576795954,
+              "local_dip_fraction_vs_neighbor_mean": -0.009885031285268964,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 52.23076923076923,
+              "linear_self_norm": 1.0351440263179006,
+              "dip_fraction_vs_self_baseline": -0.03514402631790059,
+              "local_neighbor_mean": 0.9814097107237323,
+              "local_neighbor_std": 0.024243519847193196,
+              "local_zscore": 2.2164403491265077,
+              "local_dip_fraction_vs_neighbor_mean": -0.0537343155941683,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 44.374220374220386,
+          "linear_self_norm_min": 0.9288969082124017,
+          "linear_self_norm_max": 1.083359985472879,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 45.53846153846154,
+              "linear_self_norm": 1.0297817587964564,
+              "dip_fraction_vs_self_baseline": -0.029781758796456392,
+              "local_neighbor_mean": 1.027170097602215,
+              "local_neighbor_std": 0.022421640850577962,
+              "local_zscore": 0.11647948567395675,
+              "local_dip_fraction_vs_neighbor_mean": -0.002611661194241499,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 45.15384615384615,
+              "linear_self_norm": 1.0149489772076052,
+              "dip_fraction_vs_self_baseline": -0.01494897720760524,
+              "local_neighbor_mean": 1.0076096498689355,
+              "local_neighbor_std": 0.026987139821806096,
+              "local_zscore": 0.27195647212452656,
+              "local_dip_fraction_vs_neighbor_mean": -0.00733932733866971,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 48.879417879417886,
+          "linear_self_norm_min": 0.8801237277544658,
+          "linear_self_norm_max": 1.1142844331849924,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 51.76923076923077,
+              "linear_self_norm": 1.0544193126380375,
+              "dip_fraction_vs_self_baseline": -0.054419312638037454,
+              "local_neighbor_mean": 1.0097481554303664,
+              "local_neighbor_std": 0.04381815535327401,
+              "local_zscore": 1.0194668590569333,
+              "local_dip_fraction_vs_neighbor_mean": -0.04467115720767101,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 44.92307692307693,
+              "linear_self_norm": 0.9221432341677617,
+              "dip_fraction_vs_self_baseline": 0.07785676583223833,
+              "local_neighbor_mean": 0.9979619331591889,
+              "local_neighbor_std": 0.052124430558278395,
+              "local_zscore": -1.454571266858391,
+              "local_dip_fraction_vs_neighbor_mean": 0.07581869899142724,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 10,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.806652806652814,
+          "linear_self_norm_min": 0.9387483158273429,
+          "linear_self_norm_max": 1.0915978323775448,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 52.0,
+              "linear_self_norm": 0.9921107624731995,
+              "dip_fraction_vs_self_baseline": 0.007889237526800486,
+              "local_neighbor_mean": 0.9730155880737126,
+              "local_neighbor_std": 0.024251813601036176,
+              "local_zscore": 0.7873709865010294,
+              "local_dip_fraction_vs_neighbor_mean": -0.019095174399486936,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 50.69230769230769,
+              "linear_self_norm": 0.9871628366838798,
+              "dip_fraction_vs_self_baseline": 0.01283716331612017,
+              "local_neighbor_mean": 1.046008295116082,
+              "local_neighbor_std": 0.041406296384386046,
+              "local_zscore": -1.4211717436866038,
+              "local_dip_fraction_vs_neighbor_mean": 0.058845458432202236,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 45.42411642411642,
+          "linear_self_norm_min": 0.9097237255439615,
+          "linear_self_norm_max": 1.0733237970013527,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 45.53846153846154,
+              "linear_self_norm": 0.9989654518527049,
+              "dip_fraction_vs_self_baseline": 0.001034548147295089,
+              "local_neighbor_mean": 0.9858972077187416,
+              "local_neighbor_std": 0.043775133717540674,
+              "local_zscore": 0.2985312213615674,
+              "local_dip_fraction_vs_neighbor_mean": -0.013068244133963347,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 44.92307692307693,
+              "linear_self_norm": 0.9916140127142382,
+              "dip_fraction_vs_self_baseline": 0.008385987285761787,
+              "local_neighbor_mean": 1.020478330777261,
+              "local_neighbor_std": 0.03254897959470572,
+              "local_zscore": -0.8867964041403512,
+              "local_dip_fraction_vs_neighbor_mean": 0.028864318063022698,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 50.06860706860706,
+          "linear_self_norm_min": 0.8748367641216862,
+          "linear_self_norm_max": 1.087022820834804,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 48.38461538461538,
+              "linear_self_norm": 0.9582077391309997,
+              "dip_fraction_vs_self_baseline": 0.04179226086900034,
+              "local_neighbor_mean": 0.9863513415990761,
+              "local_neighbor_std": 0.04287591774446887,
+              "local_zscore": -0.6563965029461573,
+              "local_dip_fraction_vs_neighbor_mean": 0.028143602468076456,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 48.30769230769231,
+              "linear_self_norm": 0.971030781581638,
+              "dip_fraction_vs_self_baseline": 0.028969218418361975,
+              "local_neighbor_mean": 0.9942113986088372,
+              "local_neighbor_std": 0.03141926009875742,
+              "local_zscore": -0.7377836700908165,
+              "local_dip_fraction_vs_neighbor_mean": 0.023180617027199202,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 11,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 51.555093555093556,
+          "linear_self_norm_min": 0.9021960961073756,
+          "linear_self_norm_max": 1.1071405695189025,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 49.30769230769231,
+              "linear_self_norm": 0.9674298080267241,
+              "dip_fraction_vs_self_baseline": 0.03257019197327593,
+              "local_neighbor_mean": 0.9784237964233466,
+              "local_neighbor_std": 0.04413559198954437,
+              "local_zscore": -0.24909575018789892,
+              "local_dip_fraction_vs_neighbor_mean": 0.010993988396622578,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 52.84615384615385,
+              "linear_self_norm": 1.0163577363064722,
+              "dip_fraction_vs_self_baseline": -0.016357736306472193,
+              "local_neighbor_mean": 1.0115727133925985,
+              "local_neighbor_std": 0.06431561537247352,
+              "local_zscore": 0.0743990846727041,
+              "local_dip_fraction_vs_neighbor_mean": -0.004785022913873727,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 42.44074844074844,
+          "linear_self_norm_min": 0.9033537943286011,
+          "linear_self_norm_max": 1.1246542183075452,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 38.07692307692307,
+              "linear_self_norm": 0.9069856544131445,
+              "dip_fraction_vs_self_baseline": 0.0930143455868555,
+              "local_neighbor_mean": 0.9889845264370212,
+              "local_neighbor_std": 0.04838637533755335,
+              "local_zscore": -1.694668622144883,
+              "local_dip_fraction_vs_neighbor_mean": 0.08199887202387668,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 39.69230769230769,
+              "linear_self_norm": 0.9277169597313634,
+              "dip_fraction_vs_self_baseline": 0.07228304026863663,
+              "local_neighbor_mean": 0.9713067460267919,
+              "local_neighbor_std": 0.0634014979796872,
+              "local_zscore": -0.6875198171089584,
+              "local_dip_fraction_vs_neighbor_mean": 0.043589786295428534,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 47.933471933471935,
+          "linear_self_norm_min": 0.9315399450128615,
+          "linear_self_norm_max": 1.0818519336406542,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 44.0,
+              "linear_self_norm": 0.9321532555681246,
+              "dip_fraction_vs_self_baseline": 0.06784674443187544,
+              "local_neighbor_mean": 0.9835146712279311,
+              "local_neighbor_std": 0.02758175794655839,
+              "local_zscore": -1.8621516351250325,
+              "local_dip_fraction_vs_neighbor_mean": 0.051361415659806564,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 47.76923076923077,
+              "linear_self_norm": 0.9853049377756308,
+              "dip_fraction_vs_self_baseline": 0.014695062224369226,
+              "local_neighbor_mean": 0.9808996717121365,
+              "local_neighbor_std": 0.026794798854578382,
+              "local_zscore": 0.1644075063747496,
+              "local_dip_fraction_vs_neighbor_mean": -0.004405266063494229,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    },
+    {
+      "average_index": 12,
+      "readouts": {
+        "readout1 ref0": {
+          "mean_kcps_like": 49.95218295218295,
+          "linear_self_norm_min": 0.918528153021363,
+          "linear_self_norm_max": 1.096092043422382,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 48.15384615384615,
+              "linear_self_norm": 0.975880076726059,
+              "dip_fraction_vs_self_baseline": 0.02411992327394097,
+              "local_neighbor_mean": 0.959066639485728,
+              "local_neighbor_std": 0.039754483321039945,
+              "local_zscore": 0.4229318515990511,
+              "local_dip_fraction_vs_neighbor_mean": -0.01681343724033102,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 49.53846153846154,
+              "linear_self_norm": 0.9827440433357969,
+              "dip_fraction_vs_self_baseline": 0.017255956664203098,
+              "local_neighbor_mean": 1.019737521885639,
+              "local_neighbor_std": 0.05453018670496632,
+              "local_zscore": -0.6784036656612615,
+              "local_dip_fraction_vs_neighbor_mean": 0.03699347854984214,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout2 pi/ms1 ref": {
+          "mean_kcps_like": 40.550935550935556,
+          "linear_self_norm_min": 0.9221520837991702,
+          "linear_self_norm_max": 1.1211929908375842,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 40.69230769230769,
+              "linear_self_norm": 0.9986734017041682,
+              "dip_fraction_vs_self_baseline": 0.0013265982958318157,
+              "local_neighbor_mean": 0.9812166375226075,
+              "local_neighbor_std": 0.015836460436239184,
+              "local_zscore": 1.1023147660959476,
+              "local_dip_fraction_vs_neighbor_mean": -0.017456764181560724,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 37.38461538461539,
+              "linear_self_norm": 0.9252617767372451,
+              "dip_fraction_vs_self_baseline": 0.07473822326275492,
+              "local_neighbor_mean": 1.0066451860373529,
+              "local_neighbor_std": 0.05659014892922348,
+              "local_zscore": -1.438119722955543,
+              "local_dip_fraction_vs_neighbor_mean": 0.08138340930010779,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        },
+        "readout3 final CPMG echo": {
+          "mean_kcps_like": 47.14137214137214,
+          "linear_self_norm_min": 0.9053469410287299,
+          "linear_self_norm_max": 1.1208326548357308,
+          "target_reviews": {
+            "tau_1_over_4f_us": {
+              "target_us": 0.6500260010400416,
+              "nearest_index_1based": 7,
+              "nearest_tau_us": 0.6416666666666664,
+              "raw_value": 43.15384615384615,
+              "linear_self_norm": 0.9136363320460633,
+              "dip_fraction_vs_self_baseline": 0.08636366795393668,
+              "local_neighbor_mean": 0.9225961146540089,
+              "local_neighbor_std": 0.015624101547376928,
+              "local_zscore": -0.5734590613595848,
+              "local_dip_fraction_vs_neighbor_mean": 0.00895978260794561,
+              "offset_ns": -8.359334373375216
+            },
+            "tau_1_over_2f_us": {
+              "target_us": 1.3000520020800832,
+              "nearest_index_1based": 28,
+              "nearest_tau_us": 1.312499999999999,
+              "raw_value": 44.76923076923077,
+              "linear_self_norm": 0.95106770975589,
+              "dip_fraction_vs_self_baseline": 0.048932290244110055,
+              "local_neighbor_mean": 0.9996753250799431,
+              "local_neighbor_std": 0.04511888884953552,
+              "local_zscore": -1.0773229696802142,
+              "local_dip_fraction_vs_neighbor_mean": 0.04860761532405311,
+              "offset_ns": 12.447997919915688
+            }
+          }
+        }
+      }
+    }
+  ],
+  "subset_target_trend": [
+    {
+      "saved_averages_used": 2,
+      "shot_credit_per_point": 100000,
+      "tau_1_over_4f_linear_self_norm": 1.019678347730817,
+      "tau_1_over_2f_linear_self_norm": 0.9822416556989501,
+      "tau_1_over_4f_local_zscore": 1.9618578565358726,
+      "tau_1_over_2f_local_zscore": 0.19633077559884002
+    },
+    {
+      "saved_averages_used": 4,
+      "shot_credit_per_point": 200000,
+      "tau_1_over_4f_linear_self_norm": 0.9907650178877585,
+      "tau_1_over_2f_linear_self_norm": 0.9971086795341407,
+      "tau_1_over_4f_local_zscore": 0.541914166336778,
+      "tau_1_over_2f_local_zscore": -0.5347709789332887
+    },
+    {
+      "saved_averages_used": 6,
+      "shot_credit_per_point": 300000,
+      "tau_1_over_4f_linear_self_norm": 0.9850481160421656,
+      "tau_1_over_2f_linear_self_norm": 0.9947286733884669,
+      "tau_1_over_4f_local_zscore": 0.3919230375383379,
+      "tau_1_over_2f_local_zscore": -0.4395447247240603
+    },
+    {
+      "saved_averages_used": 8,
+      "shot_credit_per_point": 400000,
+      "tau_1_over_4f_linear_self_norm": 0.9982959386537916,
+      "tau_1_over_2f_linear_self_norm": 0.9978275582724129,
+      "tau_1_over_4f_local_zscore": 0.9993072186755819,
+      "tau_1_over_2f_local_zscore": 0.013355957793733601
+    },
+    {
+      "saved_averages_used": 10,
+      "shot_credit_per_point": 500000,
+      "tau_1_over_4f_linear_self_norm": 0.9998309488546783,
+      "tau_1_over_2f_linear_self_norm": 0.9872462602910533,
+      "tau_1_over_4f_local_zscore": 0.9958838353075834,
+      "tau_1_over_2f_local_zscore": -0.71661751877579
+    },
+    {
+      "saved_averages_used": 12,
+      "shot_credit_per_point": 600000,
+      "tau_1_over_4f_linear_self_norm": 0.9871023369107144,
+      "tau_1_over_2f_linear_self_norm": 0.9840933314085097,
+      "tau_1_over_4f_local_zscore": 0.623774771815891,
+      "tau_1_over_2f_local_zscore": -1.0194789302219858
+    }
+  ],
+  "drift_summary": {
+    "ok": true,
+    "num_averages": 12,
+    "flagged_average_indices": [],
+    "scan_order_mode": "snake",
+    "scan_order_source": "Scan.ScanOrderEachAvg",
+    "reference_method": "scan-order-aware average drift diagnostic over terminal 12-average savedexperiment"
+  },
+  "target_depths": {
+    "tau_1_over_4f_self_baseline_dip_percent": 1.2897663089285638,
+    "tau_1_over_2f_self_baseline_dip_percent": 1.5906668591490258,
+    "tau_1_over_4f_local_dip_percent": -1.0781790717932394,
+    "tau_1_over_2f_local_dip_percent": 1.2011264889039475
+  },
+  "target_verdict": "target_region_feature_near_1_over_4f13_strengthens_13c_candidate",
+  "interpretation": "Terminal CPMG shows a readout3/final-echo dip in the 1/(4 f13) target region rather than exactly at the nearest precomputed grid point. The minimum is at tau=0.6736 us (+23.6 ns from the 0.6500 us model target, within the modeled ~81 ns filter-width scale), with readout3/self=0.9528 and similar reference-normalized values (0.9518 over readout1 baseline, 0.9568 over readout2 baseline). The same point is present in the even-subset trend after 6, 8, 10, and 12 averages. This is not a normalization-only artifact and it corroborates the earlier weak det-shift Ramsey candidate. The alternate 1/(2f13) convention has only percent-scale/weak support. Supported conclusion: reimage1804_c02 likely has a nearby 13C-like coupling signature; strength is moderate/weak, with no precise coupling extraction from this scan alone. Bridge terminal status remains clean: 12 averages x 50000 reps, CPMG.xml, snake scan order, healthy pre/post counts, and no drift flags.",
+  "target_region_review_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/analysis/reimage1804_c02_cpmg_n8_terminal_target_region_review_20260515_0945.json",
+  "target_region_interpretation": "Terminal CPMG shows a readout3/final-echo dip in the 1/(4 f13) target region rather than exactly at the nearest precomputed grid point. The minimum is at tau=0.6736 us (+23.6 ns from the 0.6500 us model target, within the modeled ~81 ns filter-width scale), with readout3/self=0.9528 and similar reference-normalized values (0.9518 over readout1 baseline, 0.9568 over readout2 baseline). The same point is present in the even-subset trend after 6, 8, 10, and 12 averages. This is not a normalization-only artifact and it corroborates the earlier weak det-shift Ramsey candidate. The alternate 1/(2f13) convention has only percent-scale/weak support. Supported conclusion: reimage1804_c02 likely has a nearby 13C-like coupling signature; strength is moderate/weak, with no precise coupling extraction from this scan alone."
+}

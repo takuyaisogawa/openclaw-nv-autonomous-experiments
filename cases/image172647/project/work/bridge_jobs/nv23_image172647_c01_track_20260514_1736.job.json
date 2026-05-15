@@ -1,0 +1,33 @@
+{
+  "job_id": "nv23_image172647_c01_track_20260514_1736",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "TrackCenter candidate c01 from image172647 candidate ranking evidence image172647_candidate_ranking_20260514_1734.",
+    "nv_name": "image172647_c01"
+  },
+  "tracking": {
+    "seed_position": [
+      117.375,
+      117.25,
+      116.0
+    ],
+    "minimum_final_kcps": 8.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "update_registry": false,
+    "nv_name": "image172647_c01"
+  }
+}

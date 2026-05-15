@@ -1,0 +1,41 @@
+{
+  "action": "stop",
+  "reason": "Stop this stale image172647_c01 strong-pi pODMR recovery path. The old c01 branch failed before useful pODMR data at the in-run TrackCenter/count gate and immediate standalone retrack also failed low-count. The project has already recovered via fresh re-image candidates, accepted reimage1804_c02 by terminal strong-pi pODMR, and currently has the c02 Ramsey/T2star scout running. Retrying the stale c01 execute would be obsolete and would conflict with bridge occupancy; do not insert retry items.",
+  "operator_message": "Stop old image172647_c01 pODMR batch; do not retry stale c01. Continue waiting for the current reimage1804_c02 Ramsey/T2star job to reach terminal state, then perform terminal raw/readout-aware review.",
+  "item_overrides": {},
+  "insert_items_before_retry": [],
+  "recovery_decision": {
+    "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+    "target_label": "image172647_c01",
+    "request_error_code": "OpenClaw:SupersededQueuedJob",
+    "superseded_by": "fresh re-image candidates; accepted aligned branch reimage1804_c02; current c02 Ramsey/T2star scout",
+    "current_bridge_state": {
+      "queued_count": 0,
+      "staging_count": 0,
+      "running_jobs": [
+        "nv23_ramsey_20260514_201034_auto_ramsey"
+      ],
+      "running_status": [
+        {
+          "job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+          "state": "running",
+          "phase": "run_experiment_scan_point",
+          "message": "(3/8) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+          "updated_at": "2026-05-14T20:50:33",
+          "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+          "target_label": "reimage1804_c02",
+          "target_role": "ramsey_t2star_13c_scout_after_terminal_podmr",
+          "final_counts_text": "Final = 43.380 kcps",
+          "experiment_status_text": "(3/8) averages completed for 1 scans",
+          "monitor_last_error": "",
+          "stop_requested": false
+        }
+      ]
+    },
+    "single_submit_control_stop_already_requested": true,
+    "old_batch_live_process_found": false,
+    "summary_artifact": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/artifacts/recovery/old_c01_recovery_attempt02_stop_confirm_20260514_2050.json",
+    "no_bridge_mutation_performed": true,
+    "written_at": "2026-05-14T20:50:45-04:00"
+  }
+}

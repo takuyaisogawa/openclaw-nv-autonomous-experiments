@@ -1,0 +1,18 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-14T22:16:00-04:00",
+  "status": "completed_bridge_running_handoff",
+  "summary": "Terminal c02 Ramsey/T2star scout completed and was reviewed. Raw export, terminal plot, scan-order-aware drift diagnostic, FFT review, and fit checks were recorded. The data support a weak empirical Ramsey oscillation near 1.9 MHz and short/few-us T2* order, but not a final scalar T2star; 13C is not established because the high-frequency power is ambiguous with a carrier shift and the nominal carrier/lower sideband are weak. The completed Ramsey intent was reconciled. A bounded weak-pi pODMR resonance-refinement intent was authored and verified; MATLAB advisory had no blockers and the pre-execute race check was clear. The weak-pi pODMR execute is now running as nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1 at average 1/4 with healthy counts and no monitor error/stop request. Bridge-touching work is blocked until terminal or anomaly evidence.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_221205_pulsed_odmr_rabimodulated_v1",
+    "reason": "Weak-pi pODMR resonance refinement is running; wait for terminal result or hard-anomaly/autosave evidence, then raw-export and review center before designing repeat Ramsey/13C.",
+    "expected_evidence": [
+      "terminal bridge result/status/control for weak-pi pODMR",
+      "savedexperiment raw export and readout-aware plot if completed",
+      "center fit/review note and updated repeat-Ramsey design if center is clear"
+    ]
+  },
+  "updated_backlog_item_ids": []
+}

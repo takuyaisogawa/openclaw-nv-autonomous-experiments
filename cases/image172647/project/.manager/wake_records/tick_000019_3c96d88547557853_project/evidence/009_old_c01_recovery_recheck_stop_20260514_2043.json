@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "evidence_id": "old_c01_recovery_recheck_stop_20260514_2043",
+  "checked_at": "2026-05-14T20:43:25-04:00",
+  "recovery_batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260514_175129",
+  "item_id": "pulsed_odmr_rabimodulated_v1",
+  "target_label": "image172647_c01",
+  "request_path": "<OPENCLAW_WORKSPACE>/.openclaw/recovery/nv23_pulsed_odmr_rabimodulated_v1_20260514_175129/pulsed_odmr_rabimodulated_v1/attempt_02.request.json",
+  "plan_path": "<OPENCLAW_WORKSPACE>/.openclaw/recovery/nv23_pulsed_odmr_rabimodulated_v1_20260514_175129/pulsed_odmr_rabimodulated_v1/attempt_02.plan.json",
+  "request_attempt": 2,
+  "request_last_error_code": "OpenClaw:SupersededQueuedJob",
+  "request_last_error_message": "Queued job superseded before execution: image172647_c01 had already failed in-run pODMR TrackCenter/count gate and immediate standalone retrack, project state moved to fresh re-image candidate reimage1804_c01, and a separate reimage1804_c01 pODMR is currently running. Preventing unintended stale c01 execute from an interrupted old single-submit batch.",
+  "decision": "stop",
+  "decision_reason": "The request targets the obsolete image172647_c01 strong-pi pODMR batch. c01 had repeated low-count TrackCenter/alignment failures before data, the project already moved to fresh re-image candidates, reimage1804_c02 has a terminal usable pODMR resonance and is now in the Ramsey/T2star branch. Retrying stale c01 would be obsolete and bridge-touching work is occupied by the current Ramsey job.",
+  "batch_state_status": "running",
+  "batch_item_status": "running",
+  "batch_item_attempts": 3,
+  "single_submit_control_stop_requested": true,
+  "single_submit_control_stop_reason": "superseded stale image172647_c01 single-submit after low-count failures and fresh reimage1804_c01 pODMR running; do not retry old c01",
+  "old_batch_live_process_found": false,
+  "bridge_summary": {
+    "queued_count": 0,
+    "staging_count": 0,
+    "running_jobs": [
+      "nv23_ramsey_20260514_201034_auto_ramsey"
+    ]
+  },
+  "running_ramsey_status": {
+    "job_id": "nv23_ramsey_20260514_201034_auto_ramsey",
+    "state": "running",
+    "phase": "run_experiment_scan_point",
+    "message": "(2/8) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+    "updated_at": "2026-05-14T20:43:16",
+    "final_counts_text": "Final = 43.869 kcps",
+    "monitor_last_error": "",
+    "stop_requested": false
+  },
+  "no_bridge_queue_mutation_performed": true
+}

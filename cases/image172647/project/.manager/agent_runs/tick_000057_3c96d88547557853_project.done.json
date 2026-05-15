@@ -1,0 +1,16 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image172647_20260514_1728",
+  "completed_at": "2026-05-15T08:33:36-04:00",
+  "status": "completed_bridge_running",
+  "summary": "Advanced bridge-free work while CPMG N=8 job nv23_cpmg_20260515_072306_auto_cpmg was running. Reviewed 4-of-5 and then six-average autosaves; latest six-average even subset is readable, CPMG.xml/tau grid verified, no drift flags, bridge healthy at 6/12 with no stop/error, and readout3/self-baseline is near baseline at both target taus (0.9850 near 0.650 us, 0.9947 near 1.300 us). No 13C claim or rejection from nonterminal data. Recorded notes, analysis JSON, figures, evidence, lab logs, and refreshed backlog/state.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_running",
+    "bridge_job_id": "nv23_cpmg_20260515_072306_auto_cpmg",
+    "details": "Bridge-touching work remains blocked while the CPMG job runs. Continue monitoring terminal/anomaly state; optionally review a later useful even autosave subset such as 8/12 or 10/12 bridge-free. At terminal, complete verified intent reimage1804_c02_cpmg_n8_37pt_12x50k_20260515_0728, raw-export savedexperiment, verify CPMG readout roles/metadata, run drift diagnostic, and compare raw/readout3 self-baseline/reference-normalized views near 0.650 and 1.300 us before the 13C conclusion."
+  },
+  "updated_backlog_item_ids": [
+    "ramsey_det1p25_third_det_reimage1804_c02",
+    "cpmg_n8_weak_13c_discriminator_reimage1804_c02"
+  ]
+}

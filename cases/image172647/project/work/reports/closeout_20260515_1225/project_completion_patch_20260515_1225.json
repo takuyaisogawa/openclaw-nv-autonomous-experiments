@@ -1,0 +1,14 @@
+{
+  "project_lifecycle": "completed",
+  "status": "completed",
+  "completed_at": "2026-05-15T12:25:00-04:00",
+  "completion_summary": "Objective satisfied and closeout report created. reimage1804_c02 is the accepted magnetic-field-aligned NV branch; T2star is short/few-us order (~2-3 us, method-sensitive); 13C conclusion is likely weak/moderate nearby-13C-like coupling from det-shift Ramsey plus terminal CPMG target-region corroboration, without precise coupling extraction. No further default bridge work is required.",
+  "final_evidence_id": "closeout_report_20260515_1225",
+  "final_report": {
+    "pdf": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/reports/closeout_20260515_1225/nv23_image172647_closeout_report_20260515.pdf",
+    "tex": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/reports/closeout_20260515_1225/nv23_image172647_closeout_report_20260515.tex",
+    "note": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image172647_20260514_1728/work/notes/closeout_report_20260515_1225.md",
+    "pdf_header": "%PDF-",
+    "latex_build_status": "failed_missing_font_bundle_no_dns; matplotlib fallback PDF rendered"
+  }
+}
