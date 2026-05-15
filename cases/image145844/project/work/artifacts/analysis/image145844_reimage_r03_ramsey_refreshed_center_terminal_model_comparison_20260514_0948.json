@@ -1,0 +1,435 @@
+{
+  "ok": true,
+  "created_at": "2026-05-14T09:48:51.620938-04:00",
+  "question": "Bridge-free synthesis/model comparison for terminal refreshed-center r03 Ramsey: are T2star and 13C claims supportable?",
+  "terminal_review_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_review_20260514_0938.json",
+  "ratio_model_table_sorted_by_bic": [
+    {
+      "name": "damped_high_edge_top_2.266MHz",
+      "rss": 0.009352422628523331,
+      "k": 4,
+      "delta_rss_vs_linear": 0.010453459975759609,
+      "r2_improvement": 0.5277957152739606,
+      "aic": -335.8133691830032,
+      "bic": -328.959080916186,
+      "freq_mhz": 2.266,
+      "T2star_us": 2.7419820898279315,
+      "amp_at_tau0": 0.05338146457580926,
+      "delta_bic_vs_best": 0.0,
+      "delta_aic_vs_best": 0.0
+    },
+    {
+      "name": "single_damped_free_frequency_0p75_2p30MHz",
+      "rss": 0.00930333726244915,
+      "k": 5,
+      "delta_rss_vs_linear": 0.01050254534183379,
+      "r2_improvement": 0.5302740378539181,
+      "aic": -334.02912074336086,
+      "bic": -325.4612604098393,
+      "freq_mhz": 2.275,
+      "T2star_us": 2.6073453794753565,
+      "amp_at_tau0": 0.0558984985949621,
+      "delta_bic_vs_best": 3.4978205063466703,
+      "delta_aic_vs_best": 1.7842484396423401
+    },
+    {
+      "name": "damped_fixed_carrier_1p5MHz",
+      "rss": 0.011941203262364657,
+      "k": 4,
+      "delta_rss_vs_linear": 0.007864679341918283,
+      "r2_improvement": 0.3970880520223612,
+      "aic": -325.7946311493406,
+      "bic": -318.9403428825234,
+      "freq_mhz": 1.5,
+      "T2star_us": 2.131740626344228,
+      "amp_at_tau0": 0.05275069549446434,
+      "delta_bic_vs_best": 10.0187380336626,
+      "delta_aic_vs_best": 10.0187380336626
+    },
+    {
+      "name": "undamped_high_edge_top_2.266MHz",
+      "rss": 0.013087972520247215,
+      "k": 4,
+      "delta_rss_vs_linear": 0.006717910084035725,
+      "r2_improvement": 0.33918761502620465,
+      "aic": -322.03498028314743,
+      "bic": -315.1806920163302,
+      "amps": [
+        0.01840318586280029
+      ],
+      "delta_bic_vs_best": 13.77838889985577,
+      "delta_aic_vs_best": 13.77838889985577
+    },
+    {
+      "name": "undamped_fixed_carrier_1p5MHz",
+      "rss": 0.014791395046750033,
+      "k": 4,
+      "delta_rss_vs_linear": 0.005014487557532907,
+      "r2_improvement": 0.2531817267486249,
+      "aic": -317.018551740332,
+      "bic": -310.1642634735148,
+      "amps": [
+        0.015747330939821332
+      ],
+      "delta_bic_vs_best": 18.794817442671217,
+      "delta_aic_vs_best": 18.794817442671217
+    },
+    {
+      "name": "linear_baseline_only",
+      "rss": 0.01980588260428294,
+      "k": 2,
+      "delta_rss_vs_linear": 0.0,
+      "r2_improvement": 0.0,
+      "aic": -309.0492823863003,
+      "bic": -305.6221382528917,
+      "delta_bic_vs_best": 23.33694266329428,
+      "delta_aic_vs_best": 26.764086796702884
+    },
+    {
+      "name": "undamped_carrier_plus_expected_13C_sidebands",
+      "rss": 0.013027280928580956,
+      "k": 8,
+      "delta_rss_vs_linear": 0.006778601675701984,
+      "r2_improvement": 0.34225193651486857,
+      "aic": -314.22554781817195,
+      "bic": -300.5169712845375,
+      "amps": [
+        0.015368129741282184,
+        0.0018999748252161825,
+        0.009013816187509972
+      ],
+      "freqs_mhz": [
+        1.5,
+        1.1151934821428573,
+        1.8848065178571427
+      ],
+      "delta_bic_vs_best": 28.44210963164852,
+      "delta_aic_vs_best": 21.587821364831257
+    }
+  ],
+  "signal_over_refline_model_table_sorted_by_bic": [
+    {
+      "name": "damped_high_edge_top_2.266MHz",
+      "rss": 0.006535711656701453,
+      "k": 4,
+      "delta_rss_vs_linear": 0.010492011663123534,
+      "r2_improvement": 0.6161723130013468,
+      "aic": -350.50589031621917,
+      "bic": -343.65160204940196,
+      "freq_mhz": 2.266,
+      "T2star_us": 1.9275349494879315,
+      "amp_at_tau0": 0.06231907245872786,
+      "delta_bic_vs_best": 0.0,
+      "delta_aic_vs_best": 0.0
+    },
+    {
+      "name": "single_damped_free_frequency_0p75_2p30MHz",
+      "rss": 0.006465575540024285,
+      "k": 5,
+      "delta_rss_vs_linear": 0.010562147779800702,
+      "r2_improvement": 0.620291249829238,
+      "aic": -348.9482478512866,
+      "bic": -340.3803875177651,
+      "freq_mhz": 2.28,
+      "T2star_us": 1.8328891946336583,
+      "amp_at_tau0": 0.06610131488206077,
+      "delta_bic_vs_best": 3.271214531636872,
+      "delta_aic_vs_best": 1.5576424649325418
+    },
+    {
+      "name": "damped_fixed_carrier_1p5MHz",
+      "rss": 0.008285773629709264,
+      "k": 4,
+      "delta_rss_vs_linear": 0.008741949690115724,
+      "r2_improvement": 0.5133950984473463,
+      "aic": -340.77828020260256,
+      "bic": -333.92399193578535,
+      "freq_mhz": 1.5,
+      "T2star_us": 1.0017136845626602,
+      "amp_at_tau0": 0.07838952860026237,
+      "delta_bic_vs_best": 9.727610113616606,
+      "delta_aic_vs_best": 9.727610113616606
+    },
+    {
+      "name": "undamped_high_edge_top_2.266MHz",
+      "rss": 0.01148214578428864,
+      "k": 4,
+      "delta_rss_vs_linear": 0.005545577535536347,
+      "r2_improvement": 0.32567933078168815,
+      "aic": -327.40189634740324,
+      "bic": -320.54760808058603,
+      "amps": [
+        0.016692860508055237
+      ],
+      "delta_bic_vs_best": 23.103993968815928,
+      "delta_aic_vs_best": 23.103993968815928
+    },
+    {
+      "name": "undamped_fixed_carrier_1p5MHz",
+      "rss": 0.012780510160224134,
+      "k": 4,
+      "delta_rss_vs_linear": 0.004247213159600853,
+      "r2_improvement": 0.24942930301527277,
+      "aic": -323.0096451346293,
+      "bic": -316.1553568678121,
+      "amps": [
+        0.0144662769027647
+      ],
+      "delta_bic_vs_best": 27.49624518158987,
+      "delta_aic_vs_best": 27.49624518158987
+    },
+    {
+      "name": "linear_baseline_only",
+      "rss": 0.017027723319824987,
+      "k": 2,
+      "delta_rss_vs_linear": 0.0,
+      "r2_improvement": 0.0,
+      "aic": -315.24586640218087,
+      "bic": -311.81872226877226,
+      "delta_bic_vs_best": 31.832879780629696,
+      "delta_aic_vs_best": 35.2600239140383
+    },
+    {
+      "name": "undamped_carrier_plus_expected_13C_sidebands",
+      "rss": 0.012216003106588623,
+      "k": 8,
+      "delta_rss_vs_linear": 0.0048117202132363646,
+      "r2_improvement": 0.2825815361724952,
+      "aic": -316.8618014620752,
+      "bic": -303.15322492844075,
+      "amps": [
+        0.01418717016294344,
+        0.002209012131249846,
+        0.004670873695532598
+      ],
+      "freqs_mhz": [
+        1.5,
+        1.1151934821428573,
+        1.8848065178571427
+      ],
+      "delta_bic_vs_best": 40.49837712096121,
+      "delta_aic_vs_best": 33.644088854143945
+    }
+  ],
+  "bootstrap_replicates": 120,
+  "bootstrap_summary": {
+    "ratio_carrier_T2star_us": {
+      "median": 1.7669881169559098,
+      "q16": 0.19999999999999998,
+      "q84": 3.652875242834104,
+      "q05": 0.19999999999999998,
+      "q95": 5.252129737951536,
+      "min": 0.19999999999999998,
+      "max": 10.2200547481976
+    },
+    "ratio_carrier_r2": {
+      "median": 0.37244911954703774,
+      "q16": 0.30489306598079036,
+      "q84": 0.43226259326044736,
+      "q05": 0.26077711919769253,
+      "q95": 0.46958297202668225,
+      "min": 0.22461988151927026,
+      "max": 0.4989433776150789
+    },
+    "ratio_carrier_amp_tau0": {
+      "median": 0.06006142588485608,
+      "q16": 0.040434717255175154,
+      "q84": 0.1971771576049763,
+      "q05": 0.03209498457099668,
+      "q95": 0.23326641096414283,
+      "min": 0.025892435917208197,
+      "max": 0.28410258729812765
+    },
+    "ratio_free_freq_mhz": {
+      "median": 2.275,
+      "q16": 1.5259999999999998,
+      "q84": 2.2989999999999995,
+      "q05": 1.525,
+      "q95": 2.3,
+      "min": 1.525,
+      "max": 2.3
+    },
+    "ratio_free_T2star_us": {
+      "median": 2.6990918800253705,
+      "q16": 1.8772281719233896,
+      "q84": 3.644294652076256,
+      "q05": 1.0856481178974633,
+      "q95": 4.959120435361465,
+      "min": 0.3055019843229342,
+      "max": 9.054956197195096
+    },
+    "ratio_free_r2": {
+      "median": 0.45989524701767737,
+      "q16": 0.3875024875617954,
+      "q84": 0.5301880472284635,
+      "q05": 0.34260363691538526,
+      "q95": 0.5851872535041741,
+      "min": 0.29218686797472926,
+      "max": 0.6440559040513784
+    },
+    "ratio_free_amp_tau0": {
+      "median": 0.05478019623973289,
+      "q16": 0.045520648375767435,
+      "q84": 0.07757058007210339,
+      "q05": 0.037638448669075626,
+      "q95": 0.10537172791662902,
+      "min": 0.029860197031887723,
+      "max": 0.15785854433028626
+    },
+    "signal_over_refline_carrier_T2star_us": {
+      "median": 0.6327178636602393,
+      "q16": 0.19999999999999998,
+      "q84": 1.9943459583269867,
+      "q05": 0.19999999999999998,
+      "q95": 2.3913921547382113,
+      "min": 0.19999999999999998,
+      "max": 3.236443065387158
+    },
+    "signal_over_refline_carrier_r2": {
+      "median": 0.45997962316830276,
+      "q16": 0.4224963430825775,
+      "q84": 0.5164778282020012,
+      "q05": 0.39286208232178954,
+      "q95": 0.5408914677056197,
+      "min": 0.3479774869775897,
+      "max": 0.5651679244150901
+    },
+    "signal_over_refline_carrier_amp_tau0": {
+      "median": 0.10882143276269886,
+      "q16": 0.056925217895651525,
+      "q84": 0.1816654184050102,
+      "q05": 0.04996386721791291,
+      "q95": 0.21808535330758844,
+      "min": 0.044612902767251404,
+      "max": 0.27539288026155717
+    },
+    "signal_over_refline_free_freq_mhz": {
+      "median": 2.275,
+      "q16": 2.25,
+      "q84": 2.3,
+      "q05": 1.525,
+      "q95": 2.3,
+      "min": 1.5,
+      "max": 2.3
+    },
+    "signal_over_refline_free_T2star_us": {
+      "median": 1.8772281719233896,
+      "q16": 1.3870748325535989,
+      "q84": 2.2509578662856624,
+      "q05": 1.153380270164871,
+      "q95": 2.540587952976689,
+      "min": 0.38917754351527806,
+      "max": 3.4383604738879385
+    },
+    "signal_over_refline_free_r2": {
+      "median": 0.5481966208853817,
+      "q16": 0.4929060446020224,
+      "q84": 0.5976076444366513,
+      "q05": 0.4550680615488095,
+      "q95": 0.6336043811220815,
+      "min": 0.4090308796009197,
+      "max": 0.7034042047269456
+    },
+    "signal_over_refline_free_amp_tau0": {
+      "median": 0.06811546138806926,
+      "q16": 0.05718644099114978,
+      "q84": 0.08308526347371198,
+      "q05": 0.05057897439941716,
+      "q95": 0.09263099758226917,
+      "min": 0.043871970249669705,
+      "max": 0.1275820176276068
+    },
+    "ratio_free_freq_mhz_histogram_0p1MHz_bins": {
+      "edges_mhz": [
+        0.75,
+        0.85,
+        0.95,
+        1.0499999999999998,
+        1.15,
+        1.25,
+        1.3499999999999999,
+        1.4499999999999997,
+        1.5499999999999998,
+        1.65,
+        1.7499999999999998,
+        1.8499999999999996,
+        1.9499999999999997,
+        2.05,
+        2.1499999999999995,
+        2.2499999999999996,
+        2.3499999999999996
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        20,
+        2,
+        3,
+        0,
+        2,
+        0,
+        0,
+        1,
+        92
+      ]
+    },
+    "signal_over_refline_free_freq_mhz_histogram_0p1MHz_bins": {
+      "edges_mhz": [
+        0.75,
+        0.85,
+        0.95,
+        1.0499999999999998,
+        1.15,
+        1.25,
+        1.3499999999999999,
+        1.4499999999999997,
+        1.5499999999999998,
+        1.65,
+        1.7499999999999998,
+        1.8499999999999996,
+        1.9499999999999997,
+        2.05,
+        2.1499999999999995,
+        2.2499999999999996,
+        2.3499999999999996
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        103
+      ]
+    }
+  },
+  "bootstrap_rows_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_bootstrap_rows_20260514_0948.jsonl",
+  "amplitude_context": {
+    "carrier_ratio_amp": 0.015747330939821332,
+    "low_13C_ratio_amp": 0.0027775648458995294,
+    "high_13C_ratio_amp": 0.00961560482354386
+  },
+  "synthesis": {
+    "carrier_presence": "weak_to_moderate_programmed_carrier_like_signal_present_but_not_clean_single_component",
+    "T2star_conclusion": "no_claim_grade_numeric_T2star_from_this_Ramsey_branch; descriptive fixed-carrier fits indicate order 1-3 us but model dependence and competing spectral components prevent promotion",
+    "nearby_13C_conclusion": "no_supported_nearby_13C_sideband/coupling claim from Ramsey FFT/LS evidence under these conditions",
+    "basis": "Terminal refreshed-center Ramsey has healthy execution and no drift flags. A programmed 1.5 MHz carrier-like component is present in raw, point-wise ratio, and fitted-reference-line views, but it is not uniquely dominant: the broad single-component fit and LS screen prefer a high-edge ~2.27 MHz component, while the 1.5 MHz fixed-carrier raw amplitude is below the per-point signal SEM. Fixed-carrier damped fits give order-microsecond T2star candidates, but bootstrap/model comparison show the numeric value is model-dependent rather than claim-grade. Expected 13C sidebands at 1.115/1.885 MHz are not a coherent symmetric sideband pair; adding the expected sidebands is not favored enough to claim a nearby 13C.",
+    "decision_for_next_step": "Do not run another blind long-span Ramsey repeat. If continuing r03 T2star numerics, use a targeted early-time/phase-stable Ramsey design or alternate protocol with explicit model/advisory; otherwise close r03 Ramsey/T2star as unsupported numeric and 13C as no supported evidence under current Ramsey conditions."
+  },
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_terminal_model_comparison_20260514_0948.png"
+}

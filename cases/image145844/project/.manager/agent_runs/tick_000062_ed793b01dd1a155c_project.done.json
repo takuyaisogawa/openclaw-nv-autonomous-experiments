@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T04:48:00-04:00",
+  "status": "submitted_running_bridge_job",
+  "summary": "Terminal det=1.5 MHz Ramsey shift-check was reviewed and recorded: completed safely with final counts 44.796 kcps, no drift flags, useful det-shift evidence, but no supported T2star or 13C claim. The stale weak-pi frequency calibration was identified as the next prerequisite; a fine weak-pi pODMR refresh was modelled, advisory-checked, verified, submitted, and is now running as nv23_pulsed_odmr_rabimodulated_v1_20260514_044105_pulsed_odmr_rabimodulated_v1 under batch nv23_pulsed_odmr_rabimodulated_v1_20260514_043948. Project state, note, evidence, lab log, and bridge-job artifacts were updated.",
+  "touched_bridge_queue": true,
+  "next_action": "Monitor running weak-pi pODMR refresh. On terminal completion, copy job/result/status/control and batch state, complete intent image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_20260514_0438, raw-export the savedexperiment, run scan-order-aware drift, review raw/readout-aware resonance, and use only a supported refreshed center for any longer Ramsey/T2star design.",
+  "updated_backlog_item_ids": []
+}

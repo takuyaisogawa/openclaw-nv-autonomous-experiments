@@ -1,0 +1,66 @@
+{
+  "ok": true,
+  "created_at": "2026-05-13T19:50:10-04:00",
+  "question": "Design a fine weak-pi pODMR follow-up after the first Ramsey scout showed a weak non-claim-grade carrier mismatch.",
+  "inputs": {
+    "ramsey_raw_fft_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_raw_fft_review_20260513_1930.json",
+    "weak_podmr_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.json",
+    "ramsey_terminal_result": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_185505_auto_ramsey.result.json",
+    "manifest": "<MATLAB_23C_ROOT>/claw/sequence_manifests/staging/pulsed_odmr_rabimodulated_v1.json",
+    "sequence_xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/Rabimodulated.xml"
+  },
+  "reason_to_measure": "The first Ramsey scout completed and is analyzable, but the strongest exploratory combined oscillatory component is near 0.884 MHz rather than the programmed 1.5 MHz carrier, and the stored averages disagree. The previous weak-pi pODMR grid step was 1 MHz and deliberately treated as grid-limited. A fine weak-pi pODMR is a targeted center-frequency diagnostic before a longer/higher-SNR Ramsey repeat, not a blind Ramsey repeat.",
+  "physical_model": {
+    "prior_weak_podmr_grid_minimum_hz": 3876000000.0,
+    "prior_weak_podmr_step_hz": 1000000.0,
+    "ramsey_programmed_det_hz": 1500000.0,
+    "ramsey_exploratory_component_hz": 884361.4816176872,
+    "possible_resonance_offset_hz_scale": 615638.5183823128,
+    "sign_is_ambiguous": true,
+    "fine_scan_begin_hz": 3874500000.0,
+    "fine_scan_end_hz": 3877500000.0,
+    "fine_scan_points": 31,
+    "fine_scan_step_hz": 100000.0,
+    "coverage_reason": "The +/-1.5 MHz window around 3.876 GHz covers either sign of the ~0.6 MHz Ramsey carrier mismatch and gives 0.1 MHz grid spacing, much finer than the previous 1 MHz grid.",
+    "expected_excitation_width_order_hz": 1754385.9649122804,
+    "expected_signal_drop_fraction_from_prior_weak_podmr": 0.14279606669516895,
+    "expected_signal_drop_kcps_from_prior_weak_podmr": 6.423076923076927,
+    "median_signal_sem_kcps_from_prior_weak_podmr": 1.648919316171232,
+    "expected_drop_over_sem": 3.8953251745459703,
+    "distinguishability": "Keeping 4 x 50000 shots should keep the prior weak-pi dip at about 3.9 SEM on the raw signal channel, enough to localize the minimum if tracking remains stable."
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [
+      3874500000.0,
+      3877500000.0,
+      31
+    ],
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "total_shots_per_point": 200000,
+    "float_vars": {
+      "sample_rate": 250000000.0,
+      "mw_freq": 3876000000.0,
+      "detuning": 0.0,
+      "freqIQ": 50000000.0,
+      "length_last_wait": 1e-06,
+      "mod_depth": 0.1,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "full_expt": 0.0,
+      "sweep_range": 100000000.0,
+      "sweep_time": 1e-06,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "switch_delay": 1e-07,
+      "pumping_time": 1e-06,
+      "length_rabi_pulse": 5.7e-07
+    },
+    "analysis_plan": "After terminal, raw/readout-aware pODMR review first: raw signal, point-wise ratio, fitted-reference-line normalization, per-average minima, and scan-order-aware drift. Use a center downstream only if raw signal presence is supported."
+  },
+  "decision": "Preview advisory; if queue/lifecycle/verifier gates pass and per-average tracking window stays under the current suggested cap, execute this fine weak-pi pODMR before any longer Ramsey repeat."
+}

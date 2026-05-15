@@ -1,0 +1,111 @@
+{
+  "intent_id": "image231924_c01_ramsey_t2star_scout_20260512_0118",
+  "summary": "Run the first FFT-aware Ramsey/T2star scout on image231924_c01 using the weak-pi pODMR center.",
+  "scientific_rationale": "c01 passed strong-pi alignment screening and weak-pi pODMR gave a usable center at 3.8758666667 GHz. The project objective now requires T2star and 13C evidence. A Ramsey tau sweep with an intentional 2 MHz detuning and an 8 us span can estimate T2star and provide an FFT view while avoiding aliasing of the expected ~0.38-0.40 MHz 13C sideband around the carrier.",
+  "comparison_targets": [
+    "weak-pi pODMR review work/artifacts/analysis/image231924_c01_weak_podmr_20260512_004529_review.json",
+    "Ramsey route review work/notes/ramsey_t2star_route_review_20260512_0046.md",
+    "NV_RESEARCH_KNOWLEDGE Ramsey FFT guardrail: choose det, tau span, and point count together"
+  ],
+  "expected_evidence": [
+    "terminal Ramsey bridge result with savedexperiment path",
+    "raw/readout-aware Ramsey/T2star plot and FFT analysis",
+    "explicit T2star and 13C conclusion status: supported, candidate-only, or unresolved"
+  ],
+  "success_criteria": [
+    "bridge queue idle before submission and pre-enqueue advisory has no hard blockers",
+    "auto-align passes minimum 12 kcps gate",
+    "acquisition completes 51 tau points over 0..8 us",
+    "analysis can assess decay envelope and FFT sidebands without aliasing the 2 MHz carrier plus expected 13C sideband"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "verifier or pre-enqueue advisory reports hard blockers",
+    "advisory per-average tracking window exceeds current cap unless parameters are adjusted",
+    "auto-align counts collapse or bridge execution fails before data acquisition"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute auto__ramsey tau sweep via managed batch path",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      112.821,
+      113.251,
+      114.276
+    ],
+    "seed_source": "terminal weak-pi pODMR saved scan position 1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-004529.mat",
+    "mw_freq_hz": 3875866666.6666665
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "auto__ramsey",
+    "scan": {
+      "vary_prop": [
+        "tau"
+      ],
+      "begin": 0.0,
+      "end": 8e-06,
+      "points": 51
+    },
+    "float_vars": {
+      "mw_freq": 3875866666.6666665,
+      "det": 2000000.0,
+      "length_pi_pulse": 5.2e-08,
+      "mod_depth": 1.0,
+      "mw_ampl": -5,
+      "ampIQ": 5,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07
+    },
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 100000,
+      "average_continuously": false
+    },
+    "analysis_plan": "raw export, normalized Ramsey plot, envelope/FFT analysis; no automatic bridge fit"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "completed",
+  "created_at": "2026-05-12T01:17:09",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-12T01:17:09",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "updated_at": "2026-05-12T01:17:09",
+  "completed_at": "2026-05-12T02:49:11",
+  "result": {
+    "job_id": "nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute",
+    "status": "completed",
+    "error_code": "",
+    "error_message": "",
+    "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-012318.mat",
+    "shots_credited": 400000,
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute/result.json",
+    "review_path": "work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_terminal_review.json"
+  }
+}

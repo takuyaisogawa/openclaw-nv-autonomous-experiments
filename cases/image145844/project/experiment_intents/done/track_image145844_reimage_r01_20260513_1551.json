@@ -1,0 +1,76 @@
+{
+  "intent_id": "track_image145844_reimage_r01_20260513_1551",
+  "summary": "TrackCenter the brightest current seed from the fresh re-image of the original image145844 region.",
+  "scientific_rationale": "The original r01 pODMR failed due to count collapse rather than spectroscopy. A fresh re-image recovered a bright local maximum near the original r01 location: [114.333333,117.333333,116.0] um, peak 40.0 kcps, local excess 35.2 kcps. Standalone TrackCenter is required before any new pODMR alignment screen; TrackCenter counts only test trackability, not magnetic alignment.",
+  "comparison_targets": [
+    "fresh re-image candidate evidence image145844_reimage_candidate_selection_20260513_1550",
+    "original r01 successful TrackCenter evidence nv23_image145844_r01_track_20260513_1509_result",
+    "r01 count-collapse evidence from failed pODMR and failed retrack"
+  ],
+  "expected_evidence": [
+    "track_center_v1 terminal result with final counts and tracked position",
+    "seed-to-track displacement and whether counts recover above minimum"
+  ],
+  "success_criteria": [
+    "TrackCenter completes with final_counts_kcps >= 8",
+    "tracked position/counts are suitable for immediate strong-pi pODMR planning"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "TrackCenter fails or counts remain collapsed",
+    "hardware/stage safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone track_center_v1 execute via enqueue_nv_imaging_direct.py",
+  "candidate": {
+    "label": "image145844_reimage_r01",
+    "seed_position_um": [
+      114.33333333333333,
+      117.33333333333333,
+      116.0
+    ],
+    "peak_kcps": 40.0,
+    "local_excess_kcps": 35.2
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T15:52:26",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-13T15:52:27",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T15:52:27",
+  "completed_at": "2026-05-13T15:56:34",
+  "result": {
+    "status": "completed",
+    "summary": "TrackCenter completed for top fresh re-image seed with final_counts_kcps=38.971 and tracked_position_um=[114.5313509320719,117.70559579868261,116.28368508430609].",
+    "bridge_job_id": "nv23_image145844_reimage_r01_track_20260513_1551",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r01_track_20260513_1551/result.json"
+  }
+}

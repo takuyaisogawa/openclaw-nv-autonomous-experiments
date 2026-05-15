@@ -1,0 +1,168 @@
+{
+  "intent_id": "image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_20260514_0438",
+  "summary": "Run a fine weak-pi pODMR refresh on accepted r03 before any longer Ramsey/T2star follow-up after the terminal det-shift Ramsey result.",
+  "scientific_rationale": "The previous weak-pi center is older than the default 5 h / 300 min validity window, and the terminal det-shift Ramsey gave only carrier-like but non-claim-grade evidence. Refresh mw_freq before any extended Ramsey so the next T2star/13C attempt is not built on stale frequency calibration. The refreshed center will decide the mw_freq input for the next targeted Ramsey rather than fitting T2star from stale-frequency data.",
+  "comparison_targets": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_model_plan_20260514_0438.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_raw_review_20260513_2031.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_terminal_review_20260514_0424.json"
+  ],
+  "expected_evidence": [
+    "terminal raw export",
+    "scan-order-aware drift",
+    "raw signal minimum",
+    "point-wise and fitted-reference-line normalization",
+    "per-average minima",
+    "use center only after raw/readout-aware resonance is supported"
+  ],
+  "success_criteria": [
+    "bridge execute completes with acquired data and final counts above 20 kcps gate",
+    "raw/readout-aware evidence shows a clear weak-pi resonance within 3.8745..3.8775 GHz",
+    "refreshed grid-supported center can be used for the next targeted Ramsey design"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "intent verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item pulsed_odmr_rabimodulated_v1 weak-pi pODMR refresh, 3.8745..3.8775 GHz, 31 points, 4 x 50000 repetitions",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "last_final_counts_kcps": 44.796,
+    "accepted_alignment_evidence": "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741",
+    "prior_fine_podmr_center_hz": 3875900000.0
+  },
+  "planned_measurement": {
+    "intent_id": "image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_20260514_0438",
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan": {
+      "vary_prop": [
+        "mw_freq"
+      ],
+      "begin": [
+        3874500000.0
+      ],
+      "end": [
+        3877500000.0
+      ],
+      "points": [
+        31
+      ],
+      "spacing_hz": 100000.0
+    },
+    "acquisition": {
+      "average_continuously": false,
+      "averages": 4,
+      "repetitions": 50000,
+      "total_shots_per_point": 200000
+    },
+    "float_vars": {
+      "sample_rate": 250000000.0,
+      "mw_freq": 3875900000.0,
+      "detuning": 0.0,
+      "freqIQ": 50000000.0,
+      "length_last_wait": 1e-06,
+      "mod_depth": 0.1,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "full_expt": 0.0,
+      "sweep_range": 100000000.0,
+      "sweep_time": 1e-06,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "switch_delay": 1e-07,
+      "pumping_time": 1e-06,
+      "length_rabi_pulse": 5.7e-07
+    },
+    "bool_vars": {
+      "do_adiabatic_inversion": true
+    }
+  },
+  "model_and_resolvability": {
+    "model_family": "Weak-pi pulsed ODMR resonance dip in readout2 signal and reference-aware normalizations. The refresh is a calibration measurement, not a T2star/13C claim.",
+    "expected_signal_from_prior_same_route": {
+      "prior_raw_signal_fractional_drop_vs_edge": 0.11905763567522103,
+      "prior_edge_signal_kcps": 45.71153846153847,
+      "current_count_scale_kcps": 44.796,
+      "expected_raw_dip_scale_kcps": 5.333305847707201
+    },
+    "noise_and_visibility": "The prior fine scan gave a clear combined raw/reference-line normalized minimum at 3.8759 GHz with the same 4 x 50000 shot budget. At current final counts around 44.8 kcps, the same fractional dip would be about 5.33 kcps, comfortably larger than ordinary sub-kcps to ~1 kcps point scatter seen in recent high-shot Ramsey views. A 0.1 MHz grid across +/-1.5 MHz covers routine several-hundred-kHz drift and preserves the previous successful resolution.",
+    "not_a_blind_repeat_reason": "This is a calibration refresh required by stale weak-pi evidence and by the ambiguous det-shift Ramsey interpretation before designing a longer Ramsey/T2star measurement."
+  },
+  "submit_spec_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_submit_spec_20260514_0438.json",
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "matlab_advisory_preview": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_advisory_preview_20260514_0438.json",
+    "ok": true,
+    "blockers": [],
+    "warnings": [
+      "sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.",
+      "Validation succeeded without touching 23-C hardware paths.",
+      "Execute remains separately gated by bootstrap and local lab validation.",
+      "Applied acquisition settings from job.metadata: averages=4, repetitions=50000, average_continuously=0.",
+      "Forced experiment tracking_period=1 for bridge-configured runs."
+    ],
+    "estimated_runtime": {
+      "estimator_mode": "siglent",
+      "track_per_avg": true,
+      "averages": 4,
+      "repetitions": 50000,
+      "total_shots": 200000,
+      "num_scan_points": 31,
+      "total_seconds": 1681.2594,
+      "per_average_seconds": 414.06485,
+      "tracking_window_seconds": 414.06485,
+      "drift_planning_window_seconds": 414.06485,
+      "tracking_window_basis": "per_average",
+      "tracking_window_unit": "average",
+      "averages_change_tracking_window": false,
+      "repetitions_change_tracking_window": true,
+      "per_average_overhead_seconds": 387.66215
+    },
+    "guidance": {
+      "default_max_tracking_window_seconds": 900,
+      "tracking_cadence_policy": {
+        "timezone": "MATLAB local time",
+        "daytime_start_hour_local": 9,
+        "nighttime_start_hour_local": 21,
+        "daytime_max_untracked_window_seconds": 600,
+        "nighttime_max_untracked_window_seconds": 900,
+        "effective_period": "nighttime",
+        "effective_max_untracked_window_seconds": 900,
+        "source": "day_night_policy_default",
+        "applies_to": "pre_enqueue_advisory drift_planning_window_seconds / per_average_seconds",
+        "does_not_change": "Imaging GUI or legacy Experiment tracking_period defaults"
+      },
+      "suggested_max_tracking_window_seconds": 900,
+      "planning_metric": "drift_planning_window_seconds",
+      "tracking_window_basis": "per_average",
+      "tracking_window_exceeds_suggestion": false,
+      "total_runtime_is_for_scheduling_only": true,
+      "target_total_shots": 200000,
+      "shot_preservation_guidance": "When the predicted per-average tracking window is too long, first reduce repetitions per average and compensate by increasing averages so repetitions * averages remains as close as possible to the original total shots. If that is still insufficient, split the acquisition into shorter jobs. Reduce total shots only as a last resort.",
+      "adjustment_priority": [
+        "reduce repetitions per average first",
+        "raise averages to preserve repetitions * averages whenever possible",
+        "split the acquisition into shorter jobs before reducing total shots",
+        "reduce total shots only as a last resort"
+      ],
+      "reduce_total_shots_last_resort": true,
+      "averages_change_tracking_window": false,
+      "repetitions_change_tracking_window": true,
+      "recommended_actions": []
+    }
+  }
+}

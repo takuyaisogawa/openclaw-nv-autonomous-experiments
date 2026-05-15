@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T01:58:52-04:00",
+  "status": "completed",
+  "summary": "Bridge job nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute remained running. Advanced bridge-free work: recorded a terminal Ramsey/T2star/13C decision framework, raw-exported and reviewed the in-progress autosave after 2/4 averages, updated work/state.md and lab log, and registered new evidence. Autosave avg2 still supports only candidate Ramsey/sideband structure; no T2star or 13C conclusion before terminal data.",
+  "touched_bridge_queue": false,
+  "next_action": "Wait for terminal result of the running c01 Ramsey/T2star scout. When terminal, raw-export final savedexperiment, generate terminal figures, run raw/readout-aware FFT/per-average/drift/fit checks using work/notes/image231924_c01_ramsey_terminal_decision_framework_20260512_0153.md, then decide separate Ramsey signal, T2star, and 13C statuses before any follow-up execute.",
+  "updated_backlog_item_ids": []
+}

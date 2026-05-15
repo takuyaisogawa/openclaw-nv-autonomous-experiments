@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-13T16:55:10",
+  "tick_count": 11,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 18,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "nv23_image145844_reimage_r01_track_20260513_1551_result",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_image145844_reimage_r01_track_20260513_1551.result.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "TrackCenter completed for the top fresh re-image seed image145844_reimage_r01. Final counts 38.971 kcps at tracked position [114.531351,117.705596,116.283685] um; selected z attempt 1; no tracker abort.",
+          "tags": [],
+          "timestamp": "2026-05-13T15:56:34"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_160009_image145844_reimage_r01_strong_podmr_result",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_160009_image145844_reimage_r01_strong_podmr.result.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_image145844_reimage_r01_strong_podmr_20260513_1555.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Strong-pi pODMR completed for freshly tracked image145844_reimage_r01; savedexperiment 1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-160024.mat, 2 averages x 40000 repetitions, final counts text 24.098 kcps. Raw/readout review required before resonance decision.",
+          "tags": [],
+          "timestamp": "2026-05-13T16:17:31"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r01_strong_podmr_raw_review_20260513_1615",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r01_strong_podmr_raw_review_20260513_1615.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r01_strong_podmr_raw_review_20260513_1615.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw/readout-aware review of image145844_reimage_r01 strong-pi pODMR: no clear usable resonance supported. Signal variations are comparable to drift/baseline/average changes; both averages drift-flagged; descriptive Lorentzian dip fit has poor R2 about 0.20. Do not use this candidate for T2star; move to next fresh re-image seed.",
+          "tags": [],
+          "timestamp": "2026-05-13T16:17:31"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "nv23_image145844_reimage_r02_track_20260513_1617_result",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_image145844_reimage_r02_track_20260513_1617.result.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "TrackCenter completed for second fresh re-image seed image145844_reimage_r02. Final counts 39.367 kcps at tracked position [115.864332,117.919934,116.274661] um; selected z attempt 1; no tracker abort.",
+          "tags": [],
+          "timestamp": "2026-05-13T16:23:34"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_162710_image145844_reimage_r02_strong_podmr_job",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_162710_image145844_reimage_r02_strong_podmr.job.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Started r02 strong-pi pODMR after fresh TrackCenter. Uses 4 averages x 20000 repetitions to keep per-average windows below daytime cap after r01 drift flags; running job blocks further bridge submissions.",
+          "tags": [],
+          "timestamp": "2026-05-13T16:28:32"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 7
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "r01 rejected for alignment screen; r02 pODMR running",
+    "event": "lab_log_note",
+    "summary": "Fresh re-image recovered current candidates. r01 tracked at 38.971 kcps and its strong-pi pODMR completed, but raw/readout-aware review found no clear usable resonance, with drift/baseline variation dominating; r01 is not used for T2star. r02 tracked at 39.367 kcps. A drift-adjusted r02 strong-pi pODMR is now running with 4 x 20000 repetitions.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_162710_image145844_reimage_r02_strong_podmr_job",
+    "category": "artifact",
+    "summary": "Started r02 strong-pi pODMR after fresh TrackCenter. Uses 4 averages x 20000 repetitions to keep per-average windows below daytime cap after r01 drift flags; running job blocks further bridge submissions.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_162710_image145844_reimage_r02_strong_podmr.job.json"
+    ],
+    "timestamp": "2026-05-13T16:28:32"
+  }
+}

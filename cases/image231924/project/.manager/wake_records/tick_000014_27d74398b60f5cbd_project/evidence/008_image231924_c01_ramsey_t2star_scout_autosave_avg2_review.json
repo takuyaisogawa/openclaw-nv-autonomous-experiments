@@ -1,0 +1,251 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "input_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_autosave_avg2_raw_export.json",
+  "savedexperiment": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-012318.mat",
+  "sequence_name": "ramsey.xml",
+  "date_time": "2026-05-12-012318",
+  "saved_averages_in_export": 2,
+  "planned_averages_from_bridge_job": 4,
+  "bridge_status_at_review": {
+    "state": "running",
+    "phase": "run_experiment_scan_point",
+    "message": "(2/4) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+    "updated_at": "2026-05-12T01:57:14",
+    "elapsed_seconds": 2208,
+    "runtime_monitor_last_error": null,
+    "control_error": null,
+    "stop_requested": null
+  },
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_s": 0.0,
+    "end_s": 8e-06,
+    "points": 51,
+    "step_s": 1.6e-07,
+    "scan_order_mode": null,
+    "data_saved_in_tau_order": true
+  },
+  "raw_readout_summary": {
+    "combined_readout1_min": 25.384615384615383,
+    "combined_readout1_max": 29.903846153846153,
+    "combined_readout2_min": 21.884615384615387,
+    "combined_readout2_max": 30.28846153846154,
+    "combined_readout1_linear_slope_per_us": -0.300665680473377,
+    "combined_point_norm_min": 0.755570117955439,
+    "combined_point_norm_max": 1.0430463576158941,
+    "combined_fit_norm_min": 0.7783513136482535,
+    "combined_fit_norm_max": 1.0596503728637925,
+    "per_average": [
+      {
+        "avg_index_1based": 1,
+        "readout1_min": 24.19230769230769,
+        "readout1_max": 32.42307692307693,
+        "readout2_min": 19.615384615384617,
+        "readout2_max": 31.115384615384617,
+        "readout1_linear_slope_per_us": -0.6269796380090519,
+        "fit_norm_min": 0.7631021201388547,
+        "fit_norm_max": 1.029661251705121,
+        "top_non_dc_peaks": [
+          {
+            "frequency_hz": 1593137.254901961,
+            "amplitude_arb": 0.5893865985129811,
+            "bin": 13
+          },
+          {
+            "frequency_hz": 1470588.2352941178,
+            "amplitude_arb": 0.34867513276946915,
+            "bin": 12
+          },
+          {
+            "frequency_hz": 490196.0784313726,
+            "amplitude_arb": 0.31426958025536744,
+            "bin": 4
+          },
+          {
+            "frequency_hz": 1960784.3137254904,
+            "amplitude_arb": 0.31203112653923337,
+            "bin": 16
+          },
+          {
+            "frequency_hz": 1838235.2941176472,
+            "amplitude_arb": 0.27668088909096666,
+            "bin": 15
+          }
+        ],
+        "expected_feature_bins": {
+          "carrier": {
+            "target_hz": 2000000.0,
+            "nearest_bin_hz": 1960784.3137254904,
+            "bin": 16,
+            "amplitude_arb": 0.31203112653923337
+          },
+          "lower_13c_sideband": {
+            "target_hz": 1615777.9883044693,
+            "nearest_bin_hz": 1593137.254901961,
+            "bin": 13,
+            "amplitude_arb": 0.5893865985129811
+          },
+          "upper_13c_sideband": {
+            "target_hz": 2384222.0116955307,
+            "nearest_bin_hz": 2328431.3725490198,
+            "bin": 19,
+            "amplitude_arb": 0.06689960643025543
+          }
+        }
+      },
+      {
+        "avg_index_1based": 2,
+        "readout1_min": 24.346153846153847,
+        "readout1_max": 29.153846153846153,
+        "readout2_min": 20.807692307692307,
+        "readout2_max": 29.461538461538463,
+        "readout1_linear_slope_per_us": 0.025648277062303063,
+        "fit_norm_min": 0.7700360004061825,
+        "fit_norm_max": 1.0932798779524062,
+        "top_non_dc_peaks": [
+          {
+            "frequency_hz": 1593137.254901961,
+            "amplitude_arb": 0.6045468779385498,
+            "bin": 13
+          },
+          {
+            "frequency_hz": 1470588.2352941178,
+            "amplitude_arb": 0.5196510783071097,
+            "bin": 12
+          },
+          {
+            "frequency_hz": 2083333.3333333335,
+            "amplitude_arb": 0.3420575379999074,
+            "bin": 17
+          },
+          {
+            "frequency_hz": 1715686.274509804,
+            "amplitude_arb": 0.20354259661193694,
+            "bin": 14
+          },
+          {
+            "frequency_hz": 1348039.2156862747,
+            "amplitude_arb": 0.20344165317680815,
+            "bin": 11
+          }
+        ],
+        "expected_feature_bins": {
+          "carrier": {
+            "target_hz": 2000000.0,
+            "nearest_bin_hz": 1960784.3137254904,
+            "bin": 16,
+            "amplitude_arb": 0.19859372957649982
+          },
+          "lower_13c_sideband": {
+            "target_hz": 1615777.9883044693,
+            "nearest_bin_hz": 1593137.254901961,
+            "bin": 13,
+            "amplitude_arb": 0.6045468779385498
+          },
+          "upper_13c_sideband": {
+            "target_hz": 2384222.0116955307,
+            "nearest_bin_hz": 2328431.3725490198,
+            "bin": 19,
+            "amplitude_arb": 0.0677650727552429
+          }
+        }
+      }
+    ],
+    "pairwise_support": [
+      {
+        "avg_i": 1,
+        "avg_j": 2,
+        "pearson_detrended_fit_norm": 0.6127315208796293
+      }
+    ]
+  },
+  "fft": {
+    "method": "linear-detrended fitted-reference-normalized readout2/readout1_line, Hann window; amplitudes arbitrary and for bin comparison only",
+    "nyquist_hz_rfft_last_bin": 3063725.4901960786,
+    "bin_spacing_hz": 122549.01960784315,
+    "top_non_dc_peaks": [
+      {
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 0.5867404800328493,
+        "bin": 13
+      },
+      {
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 0.430423646423596,
+        "bin": 12
+      },
+      {
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 0.23275867131101013,
+        "bin": 14
+      },
+      {
+        "frequency_hz": 367647.05882352946,
+        "amplitude_arb": 0.2007233406431966,
+        "bin": 3
+      },
+      {
+        "frequency_hz": 490196.0784313726,
+        "amplitude_arb": 0.19349601318482693,
+        "bin": 4
+      },
+      {
+        "frequency_hz": 122549.01960784315,
+        "amplitude_arb": 0.16897990357788678,
+        "bin": 1
+      },
+      {
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 0.1370118746582668,
+        "bin": 11
+      },
+      {
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 0.1353498521087239,
+        "bin": 15
+      }
+    ],
+    "expected_feature_bins": {
+      "carrier": {
+        "target_hz": 2000000.0,
+        "nearest_bin_hz": 1960784.3137254904,
+        "bin": 16,
+        "amplitude_arb": 0.0627835358176113,
+        "rank_among_non_dc_bins": 18
+      },
+      "lower_13c_sideband": {
+        "target_hz": 1615777.9883044693,
+        "nearest_bin_hz": 1593137.254901961,
+        "bin": 13,
+        "amplitude_arb": 0.5867404800328493,
+        "rank_among_non_dc_bins": 1
+      },
+      "upper_13c_sideband": {
+        "target_hz": 2384222.0116955307,
+        "nearest_bin_hz": 2328431.3725490198,
+        "bin": 19,
+        "amplitude_arb": 0.0017988958477364331,
+        "rank_among_non_dc_bins": 25
+      }
+    }
+  },
+  "figures": {
+    "review_png": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_ramsey_t2star_scout_autosave_avg2_review.png",
+    "raw_readouts_png": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_ramsey_t2star_scout_autosave_avg2_raw_readouts.png"
+  },
+  "observations": [
+    "autosave now contains 2 stored averages out of planned 4",
+    "combined FFT lower-sideband bin 1.593 MHz rank 1, carrier bin 1.961 MHz rank 18",
+    "two-average detrended normalized trace Pearson correlation is 0.613; terminal review still needed",
+    "no T2star or 13C conclusion is supported from this in-progress autosave"
+  ],
+  "claim_status": {
+    "ramsey_signal": "candidate/in-progress; two stored averages show oscillatory structure but terminal four-average support is required",
+    "t2star": "no conclusion from in-progress two-average autosave",
+    "carbon13": "no conclusion from in-progress two-average autosave; lower-sideband/carrier FFT structure remains candidate-only"
+  },
+  "next_step": "Wait for terminal result; raw-export final savedexperiment and apply terminal decision framework before any follow-up execute."
+}

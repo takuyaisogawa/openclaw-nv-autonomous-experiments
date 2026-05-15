@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T19:10:00Z",
+  "status": "completed",
+  "summary": "Reported latest project-file evidence: fresh r01 rejected after raw/readout-aware pODMR review; r02 tracked brightly and its drift-adjusted strong-pi pODMR is running/pending terminal review; no established aligned NV, T2star, or 13C conclusion yet.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-13_151008.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_candidate_selection_20260513_1550.png",
+      "caption": "fresh re-image candidate selection for image145844 (r01/r02/r03)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

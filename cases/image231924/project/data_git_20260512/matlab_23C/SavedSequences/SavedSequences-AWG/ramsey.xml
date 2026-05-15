@@ -1,0 +1,69 @@
+<sequence>
+
+<variables>
+	
+sample_rate = float(250000000,1e7,5e9)
+mw_freq = float(3.873000000000000e+09, 1e6, 15e9)
+det=float(5e6, -10e6, 10e6);
+mod_depth = float(1,0,1);    % SHG 2023.02.09 0.5685
+length_pi_pulse = float(52e-9, 2e-9, 0.5)
+tau = float(1e-6,0,1e-3)
+switch_delay = float(1.000000000000000e-07,0,500e-9)
+%delay_wrt_1mus  = float(-0.88e-6,-0.1,0.1) % 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2022-09-29-182523  %OLD 68e-9 calibrated by PL curve 11-08-05 13-17-48
+delay_wrt_1mus  = float(0.2e-6,-0.1,0.1) % DLnsec LASER 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2023-10-09-183857  
+wait_time   = float(2e-6, 0,1)
+
+mw_ampl = float(-5, -20, 15)
+ampIQ = float(5,-30,17) %in dBm
+freqIQ = float(50e6, 0,500*1e6)
+
+
+%adiabatic inversion
+do_adiabatic_inversion = boolean(1)
+sweep_range = float(100e6, 80e6, 500e6)
+sweep_time = float(1e-6, 20e-9, 10e-6)
+full_experiment = float(0, 0, 1)    % SHG 2023.02.09 1
+
+</variables>
+
+<shaped_pulses>
+
+</shaped_pulses>
+
+<instructions>
+length_pi_over_2 = length_pi_pulse/2;
+
+length_pi_over_2 = round(length_pi_over_2*sample_rate)/sample_rate; %added Sept.9 2015
+
+ch_on =  [1 1 1 0 0];
+    
+PSeq = set_sample_rate(PSeq, sample_rate);
+
+PSeq = enable_channels(PSeq, 1:5,ch_on); 
+
+PSeq = set_microwave(PSeq, mw_freq, mw_ampl,ampIQ,freqIQ);
+
+% Acquiring true 0 level reference 
+PSeq = polarize(PSeq,sample_rate,ch_on);
+PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);
+PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);
+
+% Acquire 1 level reference 
+if full_experiment
+if do_adiabatic_inversion
+    PSeq = adiabatic_inversion(PSeq,sample_rate,sweep_range,sweep_time,freqIQ,ch_on,mod_depth);
+    PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);
+    PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);
+end
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Ramsey pulses
+PSeq = ramsey(PSeq,sample_rate,length_pi_over_2,tau,det,switch_delay,mod_depth,ch_on);
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acquire Rabi and long-illumination 0 level reference
+PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);
+
+</instructions>
+
+</sequence>

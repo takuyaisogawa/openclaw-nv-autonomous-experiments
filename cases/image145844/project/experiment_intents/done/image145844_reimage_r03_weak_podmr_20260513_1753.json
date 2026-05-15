@@ -1,0 +1,125 @@
+{
+  "intent_id": "image145844_reimage_r03_weak_podmr_20260513_1753",
+  "summary": "Run a bounded weak-pi pulsed ODMR frequency calibration on accepted aligned candidate image145844_reimage_r03 before Ramsey/T2star.",
+  "scientific_rationale": "r03 is the first candidate with a clear strong-pi pODMR resonance: the raw signal, point-wise ratio, and reference-line-normalized views all dip at the 3.875 GHz grid point, with about 16.6% raw signal drop and no drift-flagged averages. The 10 MHz strong-pi grid is sufficient for alignment but too coarse for Ramsey frequency setting. A weak-pi pODMR using mod_depth=0.1 and length_rabi_pulse=0.57 us should narrow the excitation to order 1.8 MHz and refine mw_freq_hz for Ramsey/T2star. The plan uses 3.865..3.885 GHz in 21 points (1 MHz spacing), 4 averages x 50000 repetitions = 200000 total shots. The model predicts a resonance-scale PL drop of several kcps, above the shot-scaled SEM estimated from the r03 strong-pi data. Advisory estimated 280.55 s per average, below the 450 s suggested window despite high recent drift risk, with no recommended actions.",
+  "comparison_targets": [
+    "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741",
+    "preliminary_alignment_t2star_13c_model_20260513_1518",
+    "image145844_reimage_r01/r02 no-clear-resonance reviews for contrast against false/ambiguous features",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_model_plan_20260513_1753.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_advisory_preview_20260513_1755.json"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export for r03 weak-pi pODMR",
+    "raw/readout-aware resonance center review before using mw_freq for Ramsey"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw readouts show a clear weak-pi resonance feature above drift/noise/baseline variation",
+    "no tracking/count-collapse/hardware anomaly invalidates the data",
+    "center estimate is supported enough to set Ramsey mw_freq_hz or otherwise triggers a bounded redesign"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for pulsed_odmr_rabimodulated_v1 weak-pi pODMR",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "last_final_counts_kcps": 43.535,
+    "accepted_alignment_evidence": "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741"
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [
+      3865000000.0,
+      3885000000.0,
+      21
+    ],
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "float_vars": {
+      "mod_depth": 0.1,
+      "length_rabi_pulse": 5.7e-07,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07,
+      "full_expt": 0.0
+    },
+    "analysis_fit_kind": "omitted; raw/readout review first"
+  },
+  "model_and_resolvability": {
+    "model_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_model_plan_20260513_1753.json",
+    "estimated_B_G_from_3p875GHz": 358.9285714285714,
+    "estimated_13C_larmor_Hz": 384233.0357142857,
+    "chosen_excitation_width_order_Hz": 1754385.9649122804,
+    "expected_drop_over_scaled_sem": 6.076180158032506
+  },
+  "advisory": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_advisory_preview_20260513_1755.json",
+    "estimated_per_average_seconds": 280.54785,
+    "estimated_total_seconds": 1147.1914,
+    "recent_drift_risk_level": "high",
+    "suggested_max_tracking_window_seconds": 450,
+    "recommended_actions": [],
+    "blockers": []
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T17:57:49",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-13T17:58:00",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T17:58:00",
+  "completed_at": "2026-05-13T18:34:45",
+  "result": {
+    "status": "completed",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1",
+    "bridge_result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1/result.json",
+    "project_result_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1.result.json",
+    "data_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-180435.mat",
+    "final_counts_kcps": 43.89,
+    "saved_scan_averages": 4,
+    "saved_scan_repetitions": 50000,
+    "post_terminal_review_required": true
+  }
+}

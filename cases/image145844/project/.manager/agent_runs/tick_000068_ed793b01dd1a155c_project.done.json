@@ -1,0 +1,25 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T05:58:58.781405-04:00",
+  "status": "submitted_running_bridge_job",
+  "summary": "Reviewed terminal weak-pi pODMR refresh, recorded evidence/lab-log/state, and selected grid-supported mw_freq_hz=3876500000.0 for future Ramsey work. Designed a refreshed-center det=1.5 MHz 8 us Ramsey/T2star/13C follow-up with explicit model/resolvability checks, MATLAB advisory, and verified experiment intent. Submitted it through the managed single-item path; bridge job nv23_ramsey_20260514_055148_auto_ramsey is running under batch nv23_ramsey_20260514_055021. No T2star or 13C claim was made.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job",
+    "job_id": "nv23_ramsey_20260514_055148_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260514_055021",
+    "intent_id": "image145844_reimage_r03_ramsey_refreshed_center_det1p5_8us_20x50k_20260514_0540",
+    "bridge_state": "running",
+    "blocks_new_bridge_touching_work": true,
+    "expected_review_after_terminal": "copy bridge/batch artifacts, complete the experiment intent, raw-export savedexperiment 1DExp-seq-ramsey-vary-tau-2026-05-14-055200.mat when terminal, run scan-order-aware drift, and review raw/readout-aware carrier/sideband evidence before any T2star or 13C claim",
+    "current_health": "initial status healthy at average 1/20, final-count text Final = 36.759 kcps, monitor last_error empty, stop_requested=false",
+    "notes": "Runtime status estimates 629.9 s per average; under active nighttime cap but above stricter daytime cap, recorded as planning-margin provenance, not a stop condition."
+  },
+  "updated_backlog_item_ids": [],
+  "artifacts": {
+    "podmr_terminal_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_terminal_review_20260514_0523.json",
+    "ramsey_model_plan": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_det1p5_8us_model_plan_20260514_0540.json",
+    "ramsey_start_note": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0552_refreshed_center_ramsey_start.md",
+    "state": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md"
+  }
+}

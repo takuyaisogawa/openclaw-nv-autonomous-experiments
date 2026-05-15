@@ -1,0 +1,29 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T07:38:30-04:00",
+  "status": "completed_waiting_for_running_bridge_job",
+  "summary": "Performed bridge-free in-progress review for running refreshed-center r03 Ramsey/T2star/13C job nv23_ramsey_20260514_055148_auto_ramsey. Live status remained healthy at 9/20 averages with final-count text Final = 43.743 kcps, monitor last_error empty, and stop_requested=false. Raw-exported the 9-average autosave, verified the per-average axis contract, ran scan-order-aware drift analysis with no flagged averages, generated review JSON/PNG artifacts, wrote a focused note, recorded analysis/figure evidence and a lab-log entry, mirrored read-only live status/control/logs into work/bridge_jobs, and updated work/state.md. The partial data are nonterminal progress context only: combined ratio LS screen near 1.513 MHz, skip-first-4-tau screen near 1.500/1.501 MHz, programmed-carrier ratio amplitude 0.02000, expected 13C sideband amplitudes 0.00207/0.00873, and old 1.192 MHz artifact-control amplitude 0.00361; per-average tops remain mixed. No T2star or 13C claim was made and no bridge queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job_terminal",
+    "bridge_job_id": "nv23_ramsey_20260514_055148_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260514_055021",
+    "verified_intent_id": "image145844_reimage_r03_ramsey_refreshed_center_det1p5_8us_20x50k_20260514_0540",
+    "bridge_state": "running",
+    "latest_health": "healthy at 9/20 averages; final-count text Final = 43.743 kcps; monitor last_error empty; stop_requested=false; 9-average autosave drift flagged no averages",
+    "reason": "Running bridge occupancy blocks further bridge-touching submissions; the 9-average autosave progress review found no hard anomaly and remains nonterminal.",
+    "when_complete": "Copy terminal bridge/batch artifacts, complete the verified experiment intent, raw-export savedexperiment 1DExp-seq-ramsey-vary-tau-2026-05-14-055200.mat, run scan-order-aware drift analysis, and review raw/readout-aware carrier and 13C-sideband evidence before any T2star or 13C claim.",
+    "blocks_new_bridge_touching_work": true
+  },
+  "updated_backlog_item_ids": [],
+  "artifacts": [
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_autosave_9avg_review_20260514_0733.json",
+    "work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_autosave_9avg_review_20260514_0733.png",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_autosave_9avg_raw_export_20260514_0733.json",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_autosave_9avg_drift_20260514_0733.json",
+    "work/artifacts/analysis/review_refreshed_center_ramsey_autosave_20260514_0634.py",
+    "work/notes/20260514_0733_refreshed_center_ramsey_9avg_autosave_review.md",
+    "work/state.md",
+    "log.md"
+  ]
+}

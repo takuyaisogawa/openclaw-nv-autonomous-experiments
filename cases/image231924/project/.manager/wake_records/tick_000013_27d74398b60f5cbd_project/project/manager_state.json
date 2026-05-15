@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-11T23:21:50",
+  "updated_at": "2026-05-12T01:50:10",
+  "tick_count": 13,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents",
+      "evidence_count": 32,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "artifact_20260512_012130_126224_30bebfcc9c",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_ramsey_t2star_scout_20260512_0120.batch_spec.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_ramsey_t2star_scout_20260512_0120.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Submitted c01 Ramsey/T2star scout as running bridge job nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute.",
+          "tags": [],
+          "timestamp": "2026-05-12T01:21:30"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "note",
+          "evidence_id": "note_20260512_012708_213378_4af4e900c1",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/recovery_hook_followup_20260512_0126.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Recovery hook follow-up: initial c01 pODMR AlignNVFailed event has already been recovered through TrackCenter recheck, strong-pi retry, weak-pi refinement, and a running Ramsey/T2star scout; no new bridge mutation.",
+          "tags": [],
+          "timestamp": "2026-05-12T01:27:08"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_012959_396850_844184fb18",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_fft_expectation_20260512_0130.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_ramsey_fft_expectation_20260512_0130.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Bridge-free Ramsey FFT expectation for c01: weak-pi center implies Bz about 359 G and 13C Larmor about 384 kHz; current 2 MHz det, 0..8 us, 51-point grid keeps carrier and expected sidebands below 3.125 MHz Nyquist, with 125 kHz bin spacing.",
+          "tags": [],
+          "timestamp": "2026-05-12T01:29:59"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_013940_877726_aaff3d3467",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_autosave_avg1_raw_export.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_autosave_avg1_review.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_ramsey_t2star_scout_autosave_avg1_review.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_ramsey_t2star_scout_autosave_avg1_raw_readouts.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "In-progress Ramsey/T2star scout autosave after 1 stored average raw-exported and reviewed: candidate oscillatory signal is visible enough to wait for terminal data; no T2star or 13C conclusion from one average. FFT check on actual grid shows the expected lower-sideband/carrier region has power, but status remains candidate-only.",
+          "tags": [],
+          "timestamp": "2026-05-12T01:39:40"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "note",
+          "evidence_id": "note_20260512_013958_076384_8af1240120",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_ramsey_t2star_scout_autosave_avg1_review_20260512_0139.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Note for c01 Ramsey/T2star scout in-progress autosave avg1 review: useful oscillatory signal candidate, no T2star/13C claim, leave bridge running for terminal data.",
+          "tags": [],
+          "timestamp": "2026-05-12T01:39:58"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 2,
+        "verified": 3,
+        "rejected": 0,
+        "done": 3
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": false
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-11T23:21:50",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/human_advice.md",
+    "preview": "Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-11-231924.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Because the piezo stage was recently adjusted and the magnetic field at focus may have changed, judge magnetic-field alignment using a strong pi pulsed ODMR scan. After finding an aligned NV, measure its T2*. To reduce measurement time, p",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Ramsey autosave avg1 reviewed",
+    "event": "lab_log_note",
+    "summary": "The running c01 Ramsey/T2star scout produced its first autosave MAT. Raw export/review after 1 stored average shows candidate oscillatory Ramsey signal and FFT power in the expected lower-sideband/carrier region, but no T2star or 13C conclusion is supported from one average. State updated; bridge left running.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "note_20260512_013958_076384_8af1240120",
+    "category": "note",
+    "summary": "Note for c01 Ramsey/T2star scout in-progress autosave avg1 review: useful oscillatory signal candidate, no T2star/13C claim, leave bridge running for terminal data.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_ramsey_t2star_scout_autosave_avg1_review_20260512_0139.md"
+    ],
+    "timestamp": "2026-05-12T01:39:58"
+  }
+}

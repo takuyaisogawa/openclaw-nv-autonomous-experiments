@@ -1,0 +1,17 @@
+# Local/generated files
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.openclaw/
+
+# MATLAB temporary files
+*.asv
+*.m~
+
+# Local secrets/configuration
+.env
+*.local
+private_config*
+secrets*
+tokens*

@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T17:25:30-04:00",
+  "status": "completed_bridge_running",
+  "summary": "Reviewed terminal r02 strong-pi pODMR evidence and rejected r02 for alignment selection because raw/readout-aware evidence did not support a clear usable resonance. Queued and completed r03 TrackCenter successfully at 43.535 kcps, then authored, verified, and started a reduced-grid r03 strong-pi pODMR job. Updated state, notes, evidence ledger, lab log, and completed the r02 intent. The r03 pODMR is running with 1/4 averages reported at last check, so further bridge-touching work is blocked until terminal status.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr",
+    "batch_id": "nv23_image145844_reimage_r03_strong_podmr_20260513_1715",
+    "reason": "running r03 strong-pi pODMR blocks new bridge submissions; terminal raw/readout-aware review is needed before any resonance, T2star, or 13C decision",
+    "on_terminal": "copy job/result and batch state into work/bridge_jobs, complete intent image145844_reimage_r03_strong_podmr_20260513_1715, review raw readouts, normalization views, per-average behavior, and drift analysis; if clear usable resonance then plan Ramsey/T2star, otherwise reject r03 and move to next candidate"
+  },
+  "updated_backlog_item_ids": []
+}

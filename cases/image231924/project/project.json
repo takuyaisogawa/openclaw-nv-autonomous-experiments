@@ -1,0 +1,481 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "objective": "Find a magnetic-field-aligned NV from image231924, then obtain a well-supported T2star and 13C conclusion.",
+  "sample_id": "NV23",
+  "project_lifecycle": "completed",
+  "status": "completed",
+  "created_at": "2026-05-11T23:21:50",
+  "research_architecture": {
+    "project_structure_version": "simple_research_state_v1",
+    "visible_structure": [
+      "brief.md",
+      "work/state.md",
+      "work/notes/",
+      "work/bridge_jobs/",
+      ".manager/"
+    ],
+    "internal_state_root": ".manager",
+    "project_execution_agent_id": "nv-researcher",
+    "project_execution_agent_model": "openai-codex/gpt-5.5",
+    "project_execution_agent_thinking": "xhigh",
+    "agent_role": "researcher",
+    "python_role": "durable_state_queue_safety_audit_and_hard_boundaries",
+    "project_json_scope": "policy_constraints_lifecycle_and_human_request",
+    "research_state_path": "work/state.md",
+    "research_agenda_path": "work/state.md",
+    "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "shared_research_memory_required": true,
+    "shared_research_knowledge_read_policy": "on_demand_by_memory_index",
+    "evidence_registry_path": ".manager/evidence.jsonl",
+    "backlog_path": ".manager/backlog.json",
+    "ledger_path": ".manager/ledger.jsonl",
+    "state_path": ".manager/state.json",
+    "experiment_intent_flow": "agent_authored_intent_to_python_safety_verifier_to_bridge_tools",
+    "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+    "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step",
+    "vibe_physics_principles": [
+      "small_retrievable_notes",
+      "agent_updates_state_md_as_it_learns",
+      "explicit_honesty_about_what_was_checked",
+      "repeat_verification_until_no_new_issue_found",
+      "cross_check_important_claims_with_independent_methods_or_models_when_available",
+      "human_or_policy_sets_hard_boundaries_agent_owns_research_direction"
+    ]
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "startup_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_required_for": [
+      "nv-researcher",
+      "nv_project_work",
+      "nv-project-manager"
+    ],
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "scope": "compact_startup_contract_and_detailed_nv_knowledge_router",
+    "source": "NV_RESEARCH_MEMORY.md",
+    "detailed_source": "NV_RESEARCH_KNOWLEDGE.md",
+    "exists": true,
+    "updated_epoch": 1778555184.2027516,
+    "size_bytes": 15633,
+    "snapshot_char_limit": 16000,
+    "snapshot_truncated": false,
+    "snapshot": "# NV Research Memory\n\nCompact every-wake contract for NV project-execution agents.\n\nThis file is separate from `MEMORY.md`. Direct-chat sessions may use\n`MEMORY.md`; `nv-researcher` project wakes use this file as startup policy and\nrouter. Detailed NV practice lives in\n`<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md` and should be read\nby relevant section only.\n\n## Core Wake Contract\n\nOn every NV project wake, read:\n\n- This file.\n- The current project's `brief.md`, `human_advice.md`, and `work/state.md`.\n- Compact state, wake reason, `next_action`, blocker ids, and latest evidence\n  pointers supplied by the scheduler.\n\nDo not routinely read broad `AGENTS.md` files. Consult them only for visible\ncode/policy conflicts, explicit wake instructions, or hardware/protocol/code\nquestions.\n\nConflict priority:\n\n1. Explicit human `STOP`, pause, cancel, do-not-continue, or must-first\n   instructions.\n2. Hard bridge queue, hardware, code-safety, manifest, execute, and local lab\n   opt-in gates.\n3. Current project `human_advice.md`.\n4. Current project brief, state, compact state, and latest evidence.\n5. This file.\n6. Historical references and optional material.\n\nRule strengths:\n\n- `HARD`: fail-closed. Includes STOP/pause/cancel orders, queue mutation rules,\n  hardware/code/manifest/execute uncertainty, local lab opt-in, and completion\n  markers.\n- `DEFAULT`: normal lab practice. Follow unless current evidence or human advice\n  justifies a safer, more specific choice.\n- `SOFT`: scientific interpretation guidance. Use for caveats, provenance,\n  finding scope, and follow-up design; do not make it an external blocker by\n  itself.\n- `PROVENANCE`: evidence used for reasoning. Not a hard gate by itself.\n- `HISTORICAL`: old context. Do not revive as current policy without a specific\n  reason.\n\n## Hard Safety Baseline\n\n- Do not submit, mutate, stop, or mark terminal any bridge job unless the bridge\n  queue/running state and requested action satisfy the bridge policy.\n- Bridge occupancy blocks new bridge-touching submission or queue mutation.\n  Bridge-free analysis, notes, planning, and evidence cleanup may continue.\n- Hardware/safety uncertainty, non-trackable manual apparatus uncertainty,\n  code-safety uncertainty, manifest-limit uncertainty, missing local lab opt-in,\n  or execute-gate failure blocks the affected action.\n- Before materializing a new bridge-touching experiment, prefer an\n  agent-authored experiment intent and parse the verifier JSON verdict. A zero\n  process return code is not enough if the JSON verdict is blocked.\n- Preserve the MATLAB bridge safety model. Do not widen hardware limits,\n  manifest limits, execute gates, or instrument-driver behavior from an NV\n  project wake.\n- Before ending any cron-triggered project-execution wake, write the required\n  JSON completion marker at the exact path from the wake prompt.\n\n## Working Defaults\n\n- Treat prior conclusions as hypotheses, not facts; re-check primary evidence\n  before building further decisions on them.\n- `next_action` is a state pointer, not the full research plan. Python owns\n  durable state, queue safety, audit logs, wake pacing, and hard safety gates.\n  The agent owns research judgment, chunk planning, evidence synthesis,\n  literature/prior-result comparison, pulse-sequence protocol inspection, and\n  experiment design.\n- Use a same-wake runnable work loop. Continue safe grounded project work until\n  bridge state, hard gates, real external blockers, exhausted runnable work, or\n  the required handoff stops the wake.\n- From current experiment data, calculation/analysis results, and literature\n  findings, form scientific hypotheses and then perform or plan experiments,\n  calculations/analysis, and literature review to test them.\n- For signals observed in experiment results, evaluate whether they plausibly\n  arise from a physical phenomenon or from apparatus artifacts, analysis\n  artifacts, or noise.\n- The 23-C quick starter PDF is available to OpenClaw agents at\n  `<OPENCLAW_WORKSPACE>/docs/Quick_Starter_Guide.pdf`.\n- Current 23-C setup context: the Tektronix AWG5014B has been replaced by two\n  Siglent SDG6032X units; experiments use the `ms = +1` transition; the DC\n  magnetic field corresponds to resonance near 3.875 GHz.\n- Current setup contrast reference: photoluminescence contrast between\n  `m_S = 0` and `m_S = +1` is about 20%; use measurement-specific expected\n  contrast when deciding signal presence.\n- When judging a candidate signal, compare the observed effect size with the\n  measurement-specific expected contrast; features far below the expected\n  contrast need stronger supporting evidence before being promoted.\n- Also compare the observed effect size with its noise/uncertainty; low-SNR\n  features need stronger supporting evidence before being promoted.\n- Readout roles are sequence-dependent; inspect the actual XML before\n  interpreting reference/signal channels. Use reference-based normalization\n  mainly for drift correction and plotting. Normalization\n  amplifies noise and denominator artifacts. When using normalization, evaluate\n  and record both required views: point-wise normalization and normalization\n  against a fitted line or curve to the reference readout. Compare both with raw\n  readouts to capture slow reference/baseline variation from drift without\n  adding more noise.\n- Do not treat normalization-only features as candidate physical signals.\n- Keep candidate signal presence, physical interpretation, and derived\n  parameter claims separate.\n- Calibration/scout are usually fine at `2e5-3e5` total shots. Use at least\n  `2e5` total shots to secure minimum SNR. Cleaner\n  quantitative data can require more than `2e5-3e5` total shots, and\n  publication-quality data generally requires at least `1e6` total shots,\n  because this setup has error sources beyond shot noise, including drift and\n  laser-power fluctuations.\n- The experiment code has also been substantially revised for the two-Siglent\n  route; do not assume old Tektronix AWG5014B code paths or timing behavior are\n  protocol-equivalent to the current setup without inspecting the active code\n  and sequence XML/manifest.\n- For this setup, use the working approximation that Rabi frequency is about\n  10 MHz at `mod_depth = 1` and scales approximately linearly with `mod_depth`.\n- Scientific uncertainty is agent work, not an external blocker. Ambiguous data,\n  low TrackCenter counts, invalid resonance, candidate-only status, no robust\n  physical conclusion, or strategy choice should normally be handled by\n  bridge-free synthesis, notes, backlog cleanup, and the next safe\n  `research_task`.\n- Reserve external blocking for physical/manual apparatus checks, non-trackable\n  hardware or GUI uncertainty, hardware safety, code/safety/approval work, hard\n  bridge failures that cannot be recovered agent-side, or explicit human\n  do-not-continue orders.\n- After meaningful evidence review, terminal results, model comparison, or\n  bridge-free synthesis, update Current Findings with what is supported, useful\n  for the next decision, downgraded, unresolved, and what evidence would change\n  the finding.\n- Always establish the expected signal from the relevant physical model before\n  planning or interpreting measurements; prefer simulation when useful.\n- Always assess whether the expected signal from the relevant physical model\n  should be distinguishable from noise/uncertainty.\n- First decide whether a signal is present from raw/readout-aware evidence; fit\n  only after signal presence is supported, using an appropriate physical or\n  empirical function for that measurement type. Use the fit-derived value\n  downstream only if the fit remains consistent with the data shape and baseline\n  behavior.\n- Stored averages are often primarily a tracking cadence, not a strong\n  independent-repeatability test; do not overweight average-to-average agreement\n  unless repetitions per average are large enough for that comparison.\n- Recent-average drift under snake scan order is advisory provenance. Do not\n  stop, wake, or block solely for drift flags. Stop only for hard anomalies such\n  as tracking loss, count collapse, hardware/safety uncertainty, explicit STOP,\n  or monitor errors that make continuing unsafe.\n- For snake-ordered scans with stored averages, use an even number of averages\n  by default so forward and reverse acquisition directions are balanced. If an\n  odd average count is intentionally used, record the explicit exception reason.\n- Use recent drift-score evidence, including usable measurement-derived drift\n  scores from the last 1 hour when available, and the MATLAB/OpenClaw advisory\n  when choosing repetitions, averages, and scan points. Cite the last-hour drift\n  evidence in the plan when it affects the choice. Good drift can justify a\n  longer per-average window only within the active advisory cap. If the advisory\n  estimated per-average/tracking window exceeds the cap, revise before execute:\n  reduce repetitions per average and/or scan points first, raise averages only\n  when doing so preserves useful total shots without violating the cap, and\n  reduce total shots when the task is a screening/triage measurement that does\n  not require precision. Drift conditions continuously change; do not blindly\n  reuse averages/repetitions from past data without reassessing current drift\n  evidence and advisory caps.\n- Consider drift before relying on saved Imaging positions. If the sample or\n  focus may have moved enough that the saved image no longer points to the\n  current target locations, repeat Imaging or run an expanded re-image before\n  using those positions.\n- If TrackCenter fails repeatedly from saved or image-derived seeds, suspect\n  that drift has shifted the Imaging frame relative to the current target\n  locations. Re-image before treating the candidate as absent or non-trackable.\n- When a quantitative measurement cannot yield a reliable fitted value despite\n  valid prerequisite evidence, assess whether better measurement conditions or\n  higher data quality could make the result usable. If so, prefer a redesigned\n  repeat with increased averages and/or scan points before abandoning the\n  result.\n- For substantive scientific decisions and experiment-result interpretation,\n  compare current evidence with relevant literature and this lab's past data\n  before finalizing the next scientific decision or interpretation. Use a\n  targeted web literature search when needed to keep the\n  comparison current and well sourced. Prefer primary sources and record the\n  search queries, sources, and decision-relevant takeaway used.\n- For pulse-sequence-dependent plans or scientific statements, inspect the\n  actual sequence XML/manifest, active instruction path, timing definitions,\n  typed/boolean variables, comments/disabled blocks, saved metadata, and\n  readout roles before relying on shortcut names or stating protocol parity.\n- Use targeted evidence access. Start from compact state and latest pointers;\n  read large logs by tail or id/keyword search.\n- Durable project notes, advice records, backlog text, completion markers, and\n  other machine-consumed records should be plain English and preferably ASCII.\n  User-facing chat and notification_service reports may be Japanese.\n\n## Memory Index\n\nUse this router for `NV_RESEARCH_KNOWLEDGE.md`:\n\n- `Shared Literature`: web literature search, papers, DOI/arXiv/publisher\n  pages, local paper library, prior-result comparison, Hamiltonian/model\n  interpretation, coupling extraction, old hardware assumptions.\n- `Experiment Defaults`: sequence defaults, strong-pi pulsed ODMR, resonance\n  validity, Rabi/weak-pi, CPMG/Hahn/XY8/DDRF, XML/protocol\n  inspection, weak signal follow-up.\n- `Drift, Tracking, And Environment`: Imaging, TrackCenter, usual NV/NV23\n  identity, nearby-NV recovery, position freshness, TSP01/environment drift,\n  count/tracking interpretation.\n- `Shot Budget And Data Quality`: shot credit, SEM scaling, stored averages,\n  visual review, fit validity, snake scan, recent-average drift.\n- `OpenClaw Project Operation`: route policy, same-wake work, running-execute\n  bridge-free work, project layout, advice inbox, verifier verdicts, WSL\n  canonical state, Imaging/TrackCenter helpers, queue staging, completion\n  markers, code auto-resume, notification_service reports/media.\n- `Research Practice And Closeout`: literature/prior-result comparison,\n  non-experiment findings that affect design, LaTeX closeout reports, manual\n  experiment evidence.\n\n## Wake Digest\n\n- `HARD`: Human STOP/pause/cancel/must-first instructions and bridge/hardware/\n  code/manifest/execute failures override autonomy.\n- `HARD`: Parse verifier JSON before enqueue; return code alone is insufficient.\n- `HARD`: Every cron-triggered wake must write the completion marker.\n- `DEFAULT`: Use execute-backed strong-pi pulsed ODMR as the default\n  resonance-presence screen. Determination of `mw_freq_hz` requires weak-pi\n  pulsed ODMR.\n- `DEFAULT`: Do not put automatic fit requests such as `analysis.fit_kind` into\n  ordinary bridge jobs. Use terminal savedexperiment raw export plus plots\n  first.\n- `DEFAULT`: For substantive scientific decisions and experiment-result\n  interpretation, compare current evidence with relevant literature and this\n  lab's past data before finalizing the next scientific decision or\n  interpretation. Web-search the literature as needed to make that comparison\n  current and well sourced.\n- `DEFAULT`: Inspect actual sequence XML/manifest content before protocol-based\n  plans or scientific statements.\n- `SOFT`: Use SEM/SEM-scaling only when planning or reviewing long acquisitions\n  intended to improve statistics by accumulating more shots.\n- `HARD`: Under snake scan order, use even average counts by default and\n  record any odd-count exception. Tune repetitions, averages, and scan points\n  from recent drift scores, including last-hour measurement-derived drift scores\n  when available, plus advisory drift risk. Good drift can justify a longer\n  per-average window only within the active advisory cap; if the advisory\n  exceeds that cap, revise before execute by reducing repetitions per average\n  and/or scan points before considering a capped, shot-preserving average split.\n  Drift conditions continuously change; do not blindly reuse averages/\n  repetitions from past data without reassessing current drift evidence and\n  advisory caps.\n- `HARD`: Consider drift before relying on saved Imaging positions. If the\n  sample or focus may have moved enough that the saved image no longer points to\n  the current target locations, repeat Imaging or run an expanded re-image\n  before using those positions.\n- `HARD`: If TrackCenter fails repeatedly from saved or image-derived seeds,\n  suspect Imaging-frame drift and re-image before treating the candidate as\n  absent or non-trackable.\n- `HARD`: Do not infer or transpose SavedImages axes from array shape. Python\n  image analysis must use an explicit `ImageData_YXZ`/`axis_order` contract\n  before candidate coordinates are used for TrackCenter.\n- `PROVENANCE`: Usual-NV/NV23 labeled imaging/tracking data informs identity and\n  seed choice, but TrackCenter counts alone do not prove identity.\n- `DEFAULT`: WSL project state is canonical. New projects use the simple\n  research-state layout: `brief.md`, `work/state.md`, `work/notes/`,\n  `work/bridge_jobs/`, and `.manager/`. Keep bridge-execution contracts in\n  JSON and scientific interpretation in Markdown state/notes. Operational logs,\n  advice inboxes, and generated artifacts may exist as support files, but they\n  are not the research-plan surface.\n",
+    "detailed_knowledge_exists": true,
+    "detailed_knowledge_updated_epoch": 1778551344.1415162,
+    "detailed_knowledge_size_bytes": 27550
+  },
+  "project_bootstrap_policy": {
+    "preferred_flow": [
+      "start-project",
+      "cron_or_force_wake_nv_researcher",
+      "nv_researcher_updates_research_agenda_or_backlog"
+    ],
+    "start_project_role": "preserve_human_request_and_create_durable_state",
+    "direct_chat_main_role": "do_not_pretranslate_human_request_into_scientific_backlog",
+    "project_manager_role": "state_queue_safety_audit_and_hard_boundaries",
+    "initial_backlog_default": "empty_or_minimal_seed_only",
+    "seed_backlog_contract": "If a seed item is unavoidable, tell nv-researcher to read the human request, shared memory, project state, evidence, and hard bridge/hardware/code safety constraints, then start the same-wake runnable work loop from the next safe grounded task. Do not add scientific gates, shot-credit restrictions, accepted-corridor labels, or repeat-measurement blockers unless operator explicitly asked for them."
+  },
+  "durable_record_policy": {
+    "machine_consumed_records_language": "plain_english_ascii_preferred",
+    "applies_to": [
+      "human_advice",
+      "work/notes",
+      "backlog",
+      "completion_markers",
+      "stop_cancel_instructions",
+      "project_notes"
+    ],
+    "reason": "avoid_mojibake_across_windows_wsl_notification_service_logs_and_keep_urgent_keywords_searchable",
+    "user_facing_chat_language": "japanese_allowed"
+  },
+  "windows_codex_migration_policy": {
+    "wsl_project_state_is_canonical": true,
+    "windows_openclaw_projects_are": "scratch_migration_signal_not_active_runner",
+    "import_before_autonomous_resume": [
+      "<NV_BRIDGE_ROOT>/done",
+      "<NV_BRIDGE_ROOT>/failed",
+      "<NV_BRIDGE_ROOT>/status",
+      "<MATLAB_23C_ROOT>/.openclaw/projects"
+    ],
+    "record_imported_facts_in": [
+      ".manager/evidence.jsonl",
+      "log.md",
+      "human_advice.md",
+      ".manager/backlog.json",
+      "work/notes"
+    ],
+    "must_mark_superseded_or_canceled_evidence": true
+  },
+  "evidence_policy": {
+    "pulsed_odmr_resonance_evidence": {
+      "valid_window_minutes": 300,
+      "separate_from_tracking_evidence": true,
+      "analysis_required_before_downstream_use": true,
+      "analysis_instruction": "For pulsed ODMR refresh/calibration jobs, do not request automatic bridge-job fitting. Use terminal savedexperiment raw export and plots as the first evidence handoff. If a downstream center is needed, the project agent must base it on raw/readout-aware review plus a transparent task-specific analysis or model comparison with recorded assumptions, artifacts, provenance, and residual behavior.",
+      "non_authoritative_center_methods": [
+        "direct_minimum",
+        "local_quadratic",
+        "centroid",
+        "ad_hoc_tmp_podmr_scripts"
+      ],
+      "summary": "For this NV experimental system, execute-backed pulsed ODMR resonance evidence is normally valid for about 5 hours / 300 minutes unless direct drift, calibration, or tracking evidence contradicts it. Do not apply the shorter fresh-tracking window to pulsed ODMR resonance evidence, and do not use direct-minimum-only or opaque default-fit center choices as the downstream resonance without raw/readout-aware review."
+    }
+  },
+  "tracking_cadence_policy": {
+    "timezone": "local system time",
+    "daytime_start_hour_local": 9,
+    "nighttime_start_hour_local": 21,
+    "daytime_max_untracked_window_seconds": 600,
+    "nighttime_max_untracked_window_seconds": 900,
+    "applies_to": "pre_enqueue_advisory drift_planning_window_seconds / per_average_seconds",
+    "does_not_change": "Imaging GUI or legacy Experiment tracking_period defaults",
+    "summary": "For drift safety, plan tracking windows at about 10 minutes during daytime and 15 minutes at night. This is an agent/advisory planning policy, not an Imaging GUI default change."
+  },
+  "tracking_continuity_policy": {
+    "continuous_tracking_overrides_absolute_position_match": true,
+    "position_motion_alone_is_not_a_blocker": true,
+    "record_motion_as_provenance": true,
+    "continue_allowed_when": [
+      "tracking_history_supports_continuous_tracking",
+      "counts_and_alignment_are_healthy",
+      "bridge_runtime_safety_gates_pass",
+      "scientific_intent_remains_valid"
+    ],
+    "pause_or_recheck_when": [
+      "tracking_loss",
+      "counts_collapse",
+      "unexplained_discontinuous_jump",
+      "branch_switch_without_continuous_tracking_provenance",
+      "hardware_safety_uncertainty",
+      "project_specific_fixed_position_constraint"
+    ],
+    "summary": "If the NV is continuously tracked and count/alignment evidence remains healthy, the experiment may continue even when the absolute position moves. Record the motion as provenance; do not block solely on mismatch to an older landmark cluster. Only pause or re-check for lost tracking, counts collapse, unexplained discontinuity, safety uncertainty, or an explicit fixed-position human constraint."
+  },
+  "imaging_tracking_recovery_policy": {
+    "usual_nv_reference_dataset": {
+      "path": "<NV_BRIDGE_ROOT>/status/openclaw_imaging/labeled_dataset_2026_03_12_onward",
+      "files": [
+        "gold_labels.csv",
+        "image_index.csv",
+        "dataset_summary.json",
+        "README.md",
+        "gold_overlays"
+      ],
+      "helpers": {
+        "build_dataset": "<MATLAB_23C_ROOT>/claw/claw_build_imaging_tracking_label_dataset.m",
+        "evaluate_pattern_match": "<MATLAB_23C_ROOT>/claw/claw_evaluate_imaging_tracking_pattern_match.m"
+      },
+      "role": "prompt_visible_seed_selection_evidence_not_hard_gate",
+      "helper_role": "refresh_or_evaluate_dataset_only; default integration reads existing CSV/JSON/overlay artifacts"
+    },
+    "legacy_landmark_route": {
+      "enabled": false,
+      "legacy_helpers": [
+        "claw_find_nv_by_landmarks",
+        "claw_nv_landmark_map",
+        "metadata.require_landmark_match=true"
+      ]
+    },
+    "windows_bridge_implementation": {
+      "recipe_registry": "<MATLAB_23C_ROOT>/claw/recipe_registry.m",
+      "dispatch": "<MATLAB_23C_ROOT>/claw/run_23c_job.m",
+      "validator": "<MATLAB_23C_ROOT>/claw/validate_job.m",
+      "runner_diary": "<MATLAB_23C_ROOT>/claw/process_next_job.m",
+      "queue_gate": "<MATLAB_23C_ROOT>/claw/claw_queue_execute_gate.m",
+      "imaging_runner": "<MATLAB_23C_ROOT>/claw/claw_run_imaging_scan_local.m",
+      "track_center_runner": "<MATLAB_23C_ROOT>/claw/claw_run_track_center_local.m",
+      "seed_promotion": "<MATLAB_23C_ROOT>/claw/claw_promote_recent_nv_seed.m",
+      "legacy_landmark_helpers": [
+        "<MATLAB_23C_ROOT>/claw/claw_find_nv_by_landmarks.m",
+        "<MATLAB_23C_ROOT>/claw/claw_nv_landmark_map.m"
+      ]
+    },
+    "execute_gate": {
+      "lab_opt_in": "NV_BRIDGE_QUEUE_EXECUTE_OPT_IN=1",
+      "job_opt_in": "metadata.queue_execute_opt_in=true",
+      "approval_usageunit_required": false
+    },
+    "atomic_enqueue_policy": {
+      "required": true,
+      "staging_directory_shape": "staging/<job_id>__staging",
+      "queued_directory_shape": "queued/<job_id>",
+      "rule": "write job.json completely under staging, then move the completed directory into queued",
+      "failure_prevented": "NVBridge:MissingJSONFile from process_next_job seeing a half-created queued directory"
+    },
+    "preferred_seed_sources": [
+      "recent_tracking_history",
+      "explicit_human_seed",
+      "usual_nv_label_dataset_evidence",
+      "standalone_imaging_plus_agent_pattern_match_reasoning"
+    ],
+    "standalone_recipes": {
+      "imaging_scan_v1": {
+        "role": "agent_selected_imaging_scan",
+        "preferred_enqueue_helper": "<OPENCLAW_WORKSPACE>/enqueue_nv_imaging_direct.py scan",
+        "requires_queue_execute_opt_in": true,
+        "requires_allow_stage_motion": true
+      },
+      "track_center_v1": {
+        "role": "agent_selected_track_center_from_seed",
+        "preferred_enqueue_helper": "<OPENCLAW_WORKSPACE>/enqueue_nv_imaging_direct.py track",
+        "update_registry_default": false,
+        "supports_tracking_z_seed_offsets_um": true
+      }
+    },
+    "routing_rule": "Use enqueue_nv_imaging_direct.py for standalone imaging_scan_v1 and track_center_v1 jobs. Do not route these non-sequence recipes through manifest-backed nv-batch/nv-queue submit-spec helpers unless those helpers have explicit top-level imaging/tracking support.",
+    "promotion_rule": "TrackCenter results with update_registry=false are candidate evidence until nv-researcher explicitly decides to promote or continue."
+  },
+  "shot_budget_policy": {
+    "calibration_total_shots_range": [
+      200000,
+      300000
+    ],
+    "publication_quality_min_total_shots": 1500000,
+    "publication_quality_target_sem_normalized_signal": 0.05,
+    "normalized_signal_range": [
+      0,
+      1
+    ],
+    "total_shots_definition": "averages * repetitions",
+    "sem_scaling_validation": "Photon shot-noise sqrt(total shots) estimates are not sufficient by themselves. When savedexperiment data with at least two stored averages exists, run/use analyze_savedexperiment_sem_scaling.m to check cumulative average-to-average SEM against the expected 1/sqrt(K) trend before making publication-quality or marginal-shot-value claims.",
+    "preserve_total_shots_before_reducing_quality": true,
+    "if_drift_limited": "Prefer reducing repetitions per average and increasing averages, or splitting into shorter jobs, before reducing total shots.",
+    "claim_boundary": "Calibration/scout/resonance/pulse checks are usually fine at 2e5-3e5 shots, but publication-level science data targeting about 5% SEM on normalized 0..1 signal needs at least 1.5e6 total shots. Do not call lower-shot data publication quality without explicit justification, and treat shot-noise-only SEM estimates as lower-bound sanity checks until savedexperiment average-to-average SEM scaling has been inspected when available."
+  },
+  "success_metrics": [],
+  "autonomy": {
+    "agent_capability_assumption": {
+      "project_execution_agent": "codex_api_gpt_5_5_xhigh",
+      "project_execution_agent_id": "nv-researcher",
+      "research_judgment_owner": "agent",
+      "python_role": "state_queue_safety_audit_and_hard_boundaries",
+      "avoid_over_specifying_scientific_steps": true
+    },
+    "max_autonomy_within_safety": true,
+    "allow_agent_backlog_expansion": true,
+    "continue_when_backlog_empty": true,
+    "allow_autonomous_next_action_selection": true,
+    "allow_project_state_updates": true,
+    "allow_analysis": true,
+    "allow_staging_sequence_authoring": true,
+    "allow_analysis_code_changes": true,
+    "allow_bridge_wrapper_code_changes": true,
+    "allow_instrument_driver_code_changes": false,
+    "allow_legacy_gui_code_changes": false,
+    "allow_validate": true,
+    "allow_dry_run": true,
+    "allow_execute_existing_validated": true,
+    "allow_physical_action_requests": true,
+    "allow_procurement_proposals": true,
+    "require_approval_for_execute": false,
+    "require_approval_for_high_risk_changes": true,
+    "require_code_change_review_before_execute": false,
+    "require_physical_result_before_resume": true,
+    "phase_execution": {
+      "enabled": true,
+      "preferred_unit": "same_wake_runnable_work_loop",
+      "allow_pre_execute_chain_in_one_wake": true,
+      "allow_execute_in_same_wake_when_ready": true,
+      "execute_requires_separate_wake": false,
+      "execute_can_follow_pre_execute_chain": true,
+      "route_policy": {
+        "staging_new_or_changed": [
+          "validate",
+          "dry_run",
+          "execute"
+        ],
+        "validated_manifest_recent_same_route_success_bounded": [
+          "execute"
+        ],
+        "validated_manifest_optional_extra_confidence": [
+          "validate",
+          "execute"
+        ]
+      },
+      "pre_execute_chain": [
+        "build_or_adjust",
+        "validate_if_route_unknown_or_extra_confidence_needed",
+        "read_validate_terminal_evidence_if_invoked",
+        "dry_run_only_for_staging_new_changed_or_route_unknown",
+        "read_dry_run_terminal_evidence_if_invoked",
+        "prepare_execute_candidate",
+        "bridge_execute_submission"
+      ],
+      "coarse_task_contract": {
+        "next_action_kinds": [
+          "advance_project",
+          "blocked_external",
+          "blocked_code",
+          "blocked",
+          "idle"
+        ],
+        "backlog_kinds": [
+          "research_task",
+          "external_request",
+          "blocker"
+        ],
+        "fine_grained_work_classes_disabled": true,
+        "stale_fine_grained_labels_are_normalized": true
+      },
+      "experiment_intent_contract": {
+        "enabled": true,
+        "agent_writes_scientific_intent": true,
+        "python_verifies_safety_and_queue_state": true,
+        "verified_intent_is_not_a_bridge_job": true,
+        "bridge_job_materialization_remains_with_existing_nv_batch_and_queue_tools": true
+      },
+      "event_driven_research_agenda": {
+        "enabled": true,
+        "research_agenda_path": "work/state.md",
+        "bridge_jobs_dir": "work/bridge_jobs",
+        "events": [
+          "terminal_bridge_result",
+          "bridge_idle",
+          "new_human_advice",
+          "new_evidence",
+          "runtime_anomaly_or_drift_alert",
+          "scheduled_review"
+        ],
+        "backlog_priority_is_advisory": true
+      },
+      "validated_manifest_bounded_execute_fast_path": true,
+      "execute_reachability_priority": true,
+      "same_wake_runnable_work_loop": true,
+      "same_wake_runnable_work_loop_applies_to_all_task_types": true,
+      "single_phase_stop_contract_disabled": true,
+      "continue_after_queuing_next_runnable_item": true,
+      "openclaw_freshness_and_provenance_checks_are_advisory": true,
+      "dry_run_default_for_validated_manifest_fast_path": false,
+      "short_validate_or_dry_run_should_not_wait_for_next_cron": true,
+      "completion_marker_releases_inflight": true,
+      "allow_parallel_project_work_during_bridge_running": true,
+      "parallel_project_work_contract": {
+        "first_class_project_component": true,
+        "not_secondary_to_experiment": true,
+        "prefer_one_meaningful_non_monitoring_contribution": true,
+        "mid_run_monitoring_alone_is_not_default_endpoint": true,
+        "record_reason_when_skipping_non_monitoring_work": true,
+        "eligible_backlog_item_kind": "research_task",
+        "compatibility_item_field": "run_while_bridge_running",
+        "proactively_consider_when_waiting": [
+          "science_objective_analysis_of_completed_or_autosaved_data",
+          "science_objective_model_calculations_or_simulations",
+          "science_objective_literature_or_paper_pdf_review",
+          "figure_table_or_note_updates",
+          "evidence_gap_closure",
+          "backlog_cleanup_after_science_objective_options"
+        ],
+        "parallel_work_opportunity_review_enabled": true,
+        "parallel_work_opportunity_review_min_tick_interval_seconds": 1800,
+        "forbidden_during_running": [
+          "submit_bridge_job",
+          "mutate_bridge_queue",
+          "stop_running_job",
+          "mark_running_job_terminal_without_terminal_evidence"
+        ],
+        "bridge_queue_items_must_set": "requires_bridge_idle or touches_bridge_queue"
+      },
+      "stop_before_execute_unless_explicit_phase": false,
+      "stop_when_bridge_running": false,
+      "stop_bridge_touching_work_when_bridge_running": true,
+      "bridge_running_does_not_stop_bridge_free_research": true,
+      "wake_stop_conditions": [
+        "bridge_queued_or_running_blocks_next_bridge_touching_item_and_no_useful_bridge_free_project_work_remains",
+        "legacy_bridge_rejection_of_invoked_validate_dry_run_or_execute",
+        "missing_or_unmaterializable_payload",
+        "real_external_blocker",
+        "project_objective_for_this_wake_genuinely_exhausted",
+        "high_risk_change_outside_policy"
+      ],
+      "stop_on_validate_or_dry_run_failure": true,
+      "stop_on_openclaw_safety_or_provenance_blocker": false,
+      "stop_on_legacy_bridge_rejection": true,
+      "stop_before_execute_only_for": [
+        "bridge_queued_or_running",
+        "missing_or_unmaterializable_payload",
+        "missing_manifest",
+        "legacy_bridge_rejection_of_invoked_validate_dry_run_or_execute",
+        "project_policy_explicitly_disallows_execute"
+      ]
+    }
+  },
+  "approval_policy": {
+    "no_human_approval_required_for": {
+      "validated_manifest_bounded_execute": true,
+      "validate": true,
+      "dry_run": true,
+      "analysis": true,
+      "low_risk_code_change": {
+        "enabled": true,
+        "classes": [
+          "analysis_code",
+          "bridge_wrapper"
+        ],
+        "bridge_wrapper_files": [
+          "project_schema.py",
+          "direct_plan_support.py",
+          "nv_batch_run.py",
+          "nv_bridge_runtime_watch.py",
+          "nv_project_cron_runner.py",
+          "nv_project_cron_runner.sh",
+          "nv_project_manager.py",
+          "submit_spec_utils.py"
+        ],
+        "requires_limited_allowed_write_scopes": true,
+        "requires_passed_verification": true,
+        "forbidden_change_classes": [
+          "instrument_driver",
+          "legacy_gui",
+          "safety_policy"
+        ],
+        "forbidden_scopes": [
+          "<MATLAB_23C_ROOT>/**",
+          "instruments/**",
+          "start-controlsoftware/**",
+          "imaging/GUI/**",
+          "experiment/Functions/**",
+          "execute gate removal",
+          "manifest safety limits"
+        ],
+        "suppress_human_notification": true
+      },
+      "agent_trackable_nv_state_evidence": {
+        "enabled": true,
+        "requires_recent_tracking_evidence": true,
+        "max_evidence_age_minutes": 30,
+        "minimum_final_counts_kcps": 25,
+        "requires_queue_clear": true,
+        "requires_no_recent_alignment_failure": true,
+        "route_unmet_evidence_to_backlog": true
+      }
+    },
+    "still_requires_human_approval_for": [
+      "instrument_driver changes",
+      "legacy GUI changes",
+      "safety_policy changes",
+      "hardware safety limit widening",
+      "execute-gate changes",
+      "manifest safety limit changes",
+      "unknown non-trackable hardware/manual optical state"
+    ]
+  },
+  "budgets": {
+    "max_single_job_duration_seconds": 7200,
+    "default_max_untracked_window_seconds": 600
+  },
+  "stop_conditions": [
+    "the request would require editing or widening legacy bridge/MATLAB hardware safety limits",
+    "bridge queued/running is not clear for bridge-touching queue submission or queue mutation",
+    "the execute payload cannot be materialized from an available manifest and sequence",
+    "legacy bridge validate, dry_run, or execute gate rejects the job",
+    "high-risk code-change result is missing required review or verification evidence; low-risk auto-approved code changes require allowed-scope and passed-verification evidence"
+  ],
+  "completed_at": "2026-05-12T05:38:00",
+  "closeout_report": "summaries/closeout_20260512_0525.pdf",
+  "updated_at": "2026-05-12T05:45:14"
+}

@@ -1,0 +1,147 @@
+{
+  "batch_id": "nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320",
+  "requested_by": "nv-researcher",
+  "mode": "execute",
+  "requested_sample_id": "NV23",
+  "selected_templates": [],
+  "natural_language_request": "Corrected-center Ramsey/T2star repeat after narrow weak-pi pODMR downgraded the old 1.593 MHz peak to likely residual detuning.",
+  "items": [
+    {
+      "job_id_prefix": "nv23_image231924_c01_corrected_center_ramsey_repeat",
+      "job_id_suffix": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute",
+      "mode": "execute",
+      "recipe": "xml_generic_v1",
+      "sample_id": "NV23",
+      "sequence_manifest_id": "auto__ramsey",
+      "requested_by": "nv-researcher",
+      "submission_path": "single_item_measurement_plan",
+      "measurement_plan_verified": true,
+      "scan": {
+        "vary_prop": [
+          "tau"
+        ],
+        "begin": 0.0,
+        "end": 8e-06,
+        "points": 51
+      },
+      "float_vars": {
+        "sample_rate": 250000000.0,
+        "mw_freq": 3876116666.66667,
+        "det": 2000000.0,
+        "mod_depth": 1.0,
+        "length_pi_pulse": 5.2e-08,
+        "tau": 1e-06,
+        "switch_delay": 1e-07,
+        "delay_wrt_1mus": 2e-07,
+        "wait_time": 2e-06,
+        "mw_ampl": -5,
+        "ampIQ": 5,
+        "freqIQ": 50000000.0,
+        "sweep_range": 100000000.0,
+        "sweep_time": 1e-06,
+        "full_experiment": 0
+      },
+      "bool_vars": {
+        "do_adiabatic_inversion": true
+      },
+      "acquisition": {
+        "average_continuously": false,
+        "averages": 6,
+        "repetitions": 100000
+      },
+      "metadata": {
+        "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+        "target_label": "image231924_c01",
+        "target_role": "corrected_center_ramsey_t2star_13c_repeat",
+        "narrow_weak_pi_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+        "narrow_weak_pi_evidence_id": "analysis_20260512_031721_840657_19692bf40a",
+        "terminal_ramsey_review": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_terminal_review.json",
+        "terminal_ramsey_evidence_id": "analysis_20260512_024911_696911_41327c3aa3",
+        "corrected_mw_freq_hz": 3876116666.66667,
+        "corrected_mw_freq_uncertainty_hz": 250000.0,
+        "previous_weak_pi_center_hz": 3875866666.6666665,
+        "previous_ramsey_dominant_frequency_hz": 1593137.254901961,
+        "previous_ramsey_interpretation_after_narrow_podmr": "dominant 1.593 MHz peak plausibly residual detuning from prior center, not 13C claim-grade",
+        "expected_bz_gauss_from_center_approx": 359.0709017368558,
+        "expected_13c_larmor_hz_approx": 384385.4003093041,
+        "auto_align_nv": true,
+        "require_landmark_match": false,
+        "allow_seed_fallback": true,
+        "minimum_final_kcps": 12,
+        "allow_search_scan": false,
+        "search_scan_on_tracking_failure": false,
+        "local_fine_search_before_tracking": false,
+        "tracking_z_seed_offsets_um": [
+          0,
+          -0.5,
+          0.5,
+          1,
+          -1
+        ],
+        "analysis_plan": {
+          "kind": "corrected_center_ramsey_t2star_13c_repeat",
+          "raw_export_and_plot_required": true,
+          "fft_analysis_required": true,
+          "do_not_auto_fit_in_bridge_job": true,
+          "candidate_det_hz": 2000000.0,
+          "tau_span_seconds": 8e-06,
+          "tau_points": 51,
+          "nyquist_hz": 3125000.0,
+          "fft_bin_spacing_hz": 125000.0,
+          "expected_13c_larmor_hz_approx": 384385.4003093041,
+          "expected_lower_sideband_hz_approx": 1615614.5996906958,
+          "expected_upper_sideband_hz_approx": 2384385.4003093042,
+          "next_if_usable": "use corrected-center terminal data to support or reject T2star and 13C candidate status separately",
+          "next_if_nonclaim_grade": "if carrier is corrected but SNR/fit remains insufficient, consider higher-shot repeat or det-shift diagnostic rather than a blind repeat"
+        },
+        "queue_execute_opt_in": true,
+        "requested_by": "nv-researcher",
+        "verified_intent_id": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320",
+        "execute_route_policy": "validated auto__ramsey manifest; verified intent plus pre-enqueue advisory before managed execute.",
+        "frequency_reason": "narrow weak-pi pODMR after Ramsey gives raw/fit-reference center 3.876116667 GHz; correcting this should move the Ramsey carrier back toward the programmed 2 MHz bin.",
+        "ramsey_grid_reason": "det=2 MHz over 0..8 us with 51 points gives Nyquist about 3.125 MHz and bin spacing 125 kHz, covering carrier plus expected ~0.384 MHz 13C sidebands.",
+        "acquisition_reason": "6 averages x 100000 repetitions gives 600000 shots, higher than the first 400000-shot scout while preserving the per-average tracking window; even averages preserve snake-order balance.",
+        "comparison_targets": [
+          "terminal narrow weak-pi review: work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+          "terminal Ramsey review: work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_terminal_review.json",
+          "Doherty et al. Physics Reports 528, 1-45 (2013), DOI 10.1016/j.physrep.2013.02.001, for general NV resonance/field context",
+          "NV memory Ramsey FFT guardrail: choose det/tau span/points together and keep Nyquist above det plus sideband"
+        ],
+        "stage": "execute",
+        "sequence_manifest_status": "validated",
+        "sequence_manifest_scope": "validated",
+        "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\validated\\auto__ramsey.json",
+        "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\ramsey.xml",
+        "sequence_readout_roles": "full_experiment=0 path has readout 1 mS=0 reference before Ramsey and readout 2 post-Ramsey signal.",
+        "sequence_bool_vars": {
+          "do_adiabatic_inversion": true
+        },
+        "intent": "Run a corrected-center Ramsey/T2star repeat for image231924_c01 after narrow weak-pi pODMR shifted the usable center upward and downgraded the old 1.593 MHz peak to likely residual detuning.",
+        "nv_position": [
+          112.80256804252183,
+          113.12985942371756,
+          113.50148188499783
+        ],
+        "batch_id": "nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320",
+        "batch_item_id": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320"
+      },
+      "intent": "Run a corrected-center Ramsey/T2star repeat for image231924_c01 after narrow weak-pi pODMR shifted the usable center upward and downgraded the old 1.593 MHz peak to likely residual detuning.",
+      "nv_position": [
+        112.80256804252183,
+        113.12985942371756,
+        113.50148188499783
+      ],
+      "allow_seed_fallback": true,
+      "id": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320"
+    }
+  ],
+  "policy": {
+    "measurement_plan_enabled": false,
+    "measurement_plan_required": false,
+    "measurement_plan_advisory_only": true,
+    "pre_enqueue_advisory_enabled": true,
+    "pre_enqueue_advisory_required": false,
+    "max_attempts_per_item": 1,
+    "agent_recovery_enabled": false
+  }
+}

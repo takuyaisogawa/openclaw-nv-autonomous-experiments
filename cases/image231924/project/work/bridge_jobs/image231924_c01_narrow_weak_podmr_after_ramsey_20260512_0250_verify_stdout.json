@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "action": "verify_experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "intent_id": "image231924_c01_narrow_weak_podmr_after_ramsey_20260512_0250",
+  "verdict": "verified",
+  "intent_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents/verified/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_0250.json",
+  "safety_verification": {
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md"
+}

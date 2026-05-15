@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T04:11:45-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report for the running r03 det=1.5 MHz Ramsey shift-check. Report covers live 11/12 running status, latest 10-average bridge-free review, caveats, lack of pending explicit bridge-free tasks, expected opportunity-review/science-objective work, and terminal next steps.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_040011.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_10avg_review_20260514_0402.png",
+      "caption": "det=1.5 MHz Ramsey shift-check: 10-average autosave review (nonterminal progress)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

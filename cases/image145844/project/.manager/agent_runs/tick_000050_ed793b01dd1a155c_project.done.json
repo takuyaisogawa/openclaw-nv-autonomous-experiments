@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T00:44:30-04:00",
+  "status": "completed_waiting_for_running_bridge_job",
+  "summary": "Bridge job nv23_ramsey_20260513_230331_auto_ramsey is still running at 8/12 averages with queued empty, monitor last_error empty, stop_requested=false, and final-count text 44.914 kcps. This wake performed a bridge-free 8-average autosave raw export/review, generated a review figure, wrote work note 20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md, recorded analysis evidence and a lab-log entry, and updated work/state.md. The partial data remain nonterminal context only: persistent early-time signal/ratio transient, median signal SEM about 0.98 kcps, exploratory ratio LS screen near 1.187 MHz, and no supported T2star or 13C claim before terminal raw export plus scan-order-aware drift review.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job_terminal",
+    "bridge_job_id": "nv23_ramsey_20260513_230331_auto_ramsey",
+    "reason": "Running bridge occupancy blocks further bridge-touching submissions; no hard anomaly was found in the 8-average autosave review.",
+    "when_complete": "Copy terminal bridge artifacts and batch state into work/bridge_jobs, complete intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257, raw-export the final savedexperiment, run scan-order-aware drift, and perform terminal raw/readout-aware carrier/T2star/13C review."
+  },
+  "updated_backlog_item_ids": []
+}

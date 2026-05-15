@@ -1,0 +1,113 @@
+{
+  "job_id_prefix": "nv23_image231924_c01_strong_podmr",
+  "job_id_suffix": "image231924_c01_strong_podmr_20260511_2338_execute",
+  "mode": "execute",
+  "recipe": "xml_generic_v1",
+  "sample_id": "NV23",
+  "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+  "requested_by": "nv-researcher",
+  "submission_path": "single_item_measurement_plan",
+  "measurement_plan_verified": true,
+  "scan": {
+    "vary_prop": [
+      "mw_freq"
+    ],
+    "begin": 3825000000.0,
+    "end": 3925000000.0,
+    "points": 21
+  },
+  "float_vars": {
+    "sample_rate": 250000000.0,
+    "mw_freq": 3875000000.0,
+    "detuning": 0,
+    "freqIQ": 50000000.0,
+    "length_last_wait": 1e-06,
+    "mod_depth": 1.0,
+    "mw_ampl": -5,
+    "ampIQ": 5,
+    "full_expt": 0,
+    "sweep_range": 100000000.0,
+    "sweep_time": 1e-06,
+    "delay_wrt_1mus": 2e-07,
+    "wait_time": 2e-06,
+    "switch_delay": 1e-07,
+    "pumping_time": 1e-06,
+    "length_rabi_pulse": 5.2e-08
+  },
+  "bool_vars": {
+    "do_adiabatic_inversion": true
+  },
+  "acquisition": {
+    "average_continuously": false,
+    "averages": 4,
+    "repetitions": 50000
+  },
+  "metadata": {
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+    "target_label": "image231924_c01",
+    "target_role": "strong_pi_podmr_alignment_gate",
+    "fresh_track_result": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_track_20260511_2330/result.json",
+    "fresh_track_evidence_id": "bridge_result_20260511_233654_062241_c2446ad943",
+    "fresh_counts_kcps": 36.008,
+    "fresh_tracked_position_um": [
+      113.23486686503394,
+      113.89749501792936,
+      114.79464747081711
+    ],
+    "auto_align_nv": true,
+    "require_landmark_match": false,
+    "allow_seed_fallback": true,
+    "minimum_final_kcps": 12,
+    "allow_search_scan": false,
+    "search_scan_on_tracking_failure": false,
+    "local_fine_search_before_tracking": false,
+    "tracking_z_seed_offsets_um": [
+      0,
+      -0.5,
+      0.5,
+      1,
+      -1
+    ],
+    "analysis_plan": {
+      "kind": "strong_pi_podmr_alignment_gate",
+      "raw_export_and_plot_required": true,
+      "visible_resonance_review_required": true,
+      "precision_center_not_required": true,
+      "do_not_auto_fit_in_bridge_job": true,
+      "next_if_visible": "weak-pi pulsed ODMR resonance refinement before Ramsey/T2star",
+      "next_if_absent": "reject image231924_c01 for aligned follow-up and continue current-image candidate search"
+    },
+    "queue_execute_opt_in": true,
+    "requested_by": "nv-researcher",
+    "verified_intent_id": "image231924_c01_strong_podmr_20260511_2338",
+    "execute_route_policy": "pulsed_odmr_rabimodulated_v1 has recent same-route success; use verified intent plus pre-enqueue advisory before managed single-item execute.",
+    "frequency_window_reason": "3.825..3.925 GHz gives a 100 MHz strong-pi visibility screen centered near the current ms=+1 aligned-band expectation (~3.875 GHz) while following the human request for about 20-30 points.",
+    "acquisition_reason": "4 averages x 50000 repetitions gives 200000 screening shots, preserves even snake-order averaging, and keeps per-average windows shorter than a 2-average split.",
+    "comparison_targets": [
+      "image231924_c01 TrackCenter terminal pass at 36.008 kcps",
+      "human advice: strong-pi pODMR after piezo/field change",
+      "live Rabimodulated.xml and pulsed_odmr_rabimodulated_v1 manifest inspected"
+    ],
+    "stage": "execute",
+    "sequence_manifest_status": "staging",
+    "sequence_manifest_scope": "staging",
+    "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+    "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+    "sequence_bool_vars": {
+      "do_adiabatic_inversion": true
+    },
+    "intent": "image231924 c01 strong-pi pulsed ODMR alignment/resonance screen after standalone TrackCenter passed; terminal raw/readout review required before weak-pi/T2star.",
+    "nv_position": [
+      113.23486686503394,
+      113.89749501792936,
+      114.79464747081711
+    ]
+  },
+  "intent": "image231924 c01 strong-pi pulsed ODMR alignment/resonance screen after standalone TrackCenter passed; terminal raw/readout review required before weak-pi/T2star.",
+  "nv_position": [
+    113.23486686503394,
+    113.89749501792936,
+    114.79464747081711
+  ],
+  "allow_seed_fallback": true
+}

@@ -1,0 +1,67 @@
+{
+  "intent_id": "image231924_c01_narrow_weak_podmr_after_ramsey_20260512_0250",
+  "summary": "Run a narrow weak-pi pulsed ODMR refresh on image231924_c01 after the terminal Ramsey scout showed a dominant 1.59 MHz component.",
+  "scientific_rationale": "The terminal Ramsey scout has a real oscillatory signal but the dominant 1.593 MHz FFT bin can be either lower-13C-sideband-like structure or residual microwave-center detuning within the earlier weak-pi +/-1 MHz uncertainty. A bounded narrow weak-pi pODMR around the previous center is the safest next calibration before a stronger T2star/13C claim or Ramsey repeat.",
+  "comparison_targets": [
+    "terminal Ramsey review: work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_terminal_review.json",
+    "previous weak-pi pODMR center 3.8758666667 GHz +/- ~1 MHz",
+    "Ramsey expected features: det 2.000 MHz and estimated 13C sidebands 1.616/2.384 MHz",
+    "Doherty et al. Physics Reports 528, 1-45 (2013), DOI 10.1016/j.physrep.2013.02.001, local library/Crossref metadata as general NV reference"
+  ],
+  "expected_evidence": [
+    "terminal narrow weak-pi pODMR bridge result with savedexperiment path",
+    "raw/readout-aware line-shape review with refined center or explicit no-refinement status",
+    "decision whether the next Ramsey should use corrected mw_freq or a det-shift diagnostic"
+  ],
+  "success_criteria": [
+    "bridge queue idle before submission and pre-enqueue advisory has no hard blockers",
+    "auto-align passes minimum 12 kcps gate",
+    "acquisition completes a 29-point, 7 MHz weak-pi window centered on 3.8758666667 GHz",
+    "raw/readout-aware review reduces center/detuning ambiguity enough to plan the next Ramsey follow-up"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "verifier or pre-enqueue advisory reports hard blockers",
+    "auto-align counts collapse or bridge execution fails before acquiring data"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute pulsed_odmr_rabimodulated_v1 weak-pi pODMR via managed batch path",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      112.8404057882557,
+      113.2125973601892,
+      113.5582950281021
+    ],
+    "seed_source": "latest terminal Ramsey auto-align tracked position in result.json",
+    "previous_weak_pi_center_hz": 3875866666.6666665
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan": {
+      "vary_prop": [
+        "mw_freq"
+      ],
+      "begin": 3872366666.6666665,
+      "end": 3879366666.6666665,
+      "points": 29
+    },
+    "float_vars": {
+      "length_rabi_pulse": 5.7e-07,
+      "mod_depth": 0.1,
+      "mw_freq": 3875866666.6666665,
+      "mw_ampl": -5,
+      "ampIQ": 5,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07
+    },
+    "acquisition": {
+      "averages": 2,
+      "repetitions": 100000,
+      "average_continuously": false
+    },
+    "analysis_plan": "raw export and readout-aware center review first; no automatic bridge fit"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T09:54:00-04:00",
+  "status": "completed_terminal_review_and_bridge_free_synthesis",
+  "summary": "Reviewed terminal refreshed-center r03 Ramsey/T2star/13C job nv23_ramsey_20260514_055148_auto_ramsey after it moved to done. Mirrored terminal bridge and batch artifacts into work/bridge_jobs, completed verified intent image145844_reimage_r03_ramsey_refreshed_center_det1p5_8us_20x50k_20260514_0540, raw-exported savedexperiment 1DExp-seq-ramsey-vary-tau-2026-05-14-055200.mat, verified the ExperimentDataEachAvg axis contract, ran scan-order-aware drift analysis, generated terminal review and model-comparison JSON/PNG artifacts, wrote a focused note, recorded analysis/figure evidence and a lab-log entry, updated work/state.md, and added a reusable Ramsey model-comparison lesson to NV_RESEARCH_KNOWLEDGE.md. Execution was healthy: final_counts_kcps=43.433, 20/20 averages, 1.0e6 shots/tau, monitor last_error empty, stop_requested=false, and no drift flags. Scientific read: a modest programmed 1.5 MHz carrier-like component is present, but high-edge LS/model power near 2.266-2.276 MHz and model dependence prevent a claim-grade numeric T2star; fixed-carrier T2star candidates remain descriptive order 1-3 us only. Expected 13C sidebands at 1.115/1.885 MHz are not a coherent pair, so the r03 Ramsey/FFT branch supports no nearby-13C sideband/coupling claim under current conditions. No new bridge job was submitted and no live queue mutation was performed.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "bridge_free_decision_or_targeted_redesign",
+    "queue_state": "idle",
+    "current_scientific_state": "aligned r03 established; no claim-grade numeric T2star; supported negative/unsupported nearby-13C Ramsey conclusion under current conditions",
+    "recommended_next_step": "Do not submit another blind long-span Ramsey repeat. Either prepare a closeout/decision report for the r03 branch, or if a numeric T2star is still required, first design a specifically targeted early-time/phase-stable Ramsey or alternate protocol from an explicit quantitative model, current resonance/tracking freshness, drift/advisory caps, and queue-idle verification.",
+    "blocks_blind_bridge_repeat": true,
+    "blocks_all_bridge_work": false
+  },
+  "updated_backlog_item_ids": [],
+  "artifacts": [
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_review_20260514_0938.json",
+    "work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_terminal_review_20260514_0938.png",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_raw_export_20260514_0938.json",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_drift_20260514_0938.json",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_model_comparison_20260514_0948.json",
+    "work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_terminal_model_comparison_20260514_0948.png",
+    "work/notes/20260514_0950_refreshed_center_ramsey_terminal_review.md",
+    "work/state.md",
+    "log.md",
+    "NV_RESEARCH_KNOWLEDGE.md"
+  ]
+}

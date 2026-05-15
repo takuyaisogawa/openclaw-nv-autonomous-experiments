@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "input_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_autosave_avg1_raw_export.json",
+  "savedexperiment": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-012318.mat",
+  "sequence_name": "ramsey.xml",
+  "date_time": "2026-05-12-012318",
+  "saved_averages_in_export": 1,
+  "planned_averages_from_bridge_job": 4,
+  "scan": {
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_s": 0.0,
+    "end_s": 8e-06,
+    "points": 51,
+    "step_s": 1.6e-07,
+    "scan_order_mode": "snake",
+    "data_saved_in_tau_order": true
+  },
+  "readout_roles_assumed_from_route_review": {
+    "readout_1": "mS=0 reference before Ramsey",
+    "readout_2": "post-Ramsey signal"
+  },
+  "raw_readout_summary": {
+    "readout1_min": 24.19230769230769,
+    "readout1_max": 32.42307692307693,
+    "readout2_min": 19.615384615384617,
+    "readout2_max": 31.115384615384617,
+    "readout1_linear_slope_per_us": -0.6269796380090518,
+    "point_norm_min": 0.7531328320802007,
+    "point_norm_max": 1.0479274611398965,
+    "fit_norm_min": 0.7631021201388547,
+    "fit_norm_max": 1.029661251705121
+  },
+  "fft": {
+    "method": "linear-detrended fitted-reference-normalized readout2/readout1_line, Hann window; amplitudes are arbitrary and for bin comparison only",
+    "nyquist_hz": 3063725.4901960786,
+    "bin_spacing_hz": 122549.01960784315,
+    "top_non_dc_peaks": [
+      {
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 0.589386598512981,
+        "bin": 13
+      },
+      {
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 0.34867513276946915,
+        "bin": 12
+      },
+      {
+        "frequency_hz": 490196.0784313726,
+        "amplitude_arb": 0.3142695802553673,
+        "bin": 4
+      },
+      {
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 0.31203112653923326,
+        "bin": 16
+      },
+      {
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 0.2766808890909666,
+        "bin": 15
+      },
+      {
+        "frequency_hz": 3063725.4901960786,
+        "amplitude_arb": 0.2761782628664651,
+        "bin": 25
+      },
+      {
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 0.26521051545283464,
+        "bin": 14
+      },
+      {
+        "frequency_hz": 367647.05882352946,
+        "amplitude_arb": 0.23614295968691668,
+        "bin": 3
+      }
+    ],
+    "expected_feature_bins": {
+      "carrier": {
+        "target_hz": 2000000.0,
+        "nearest_bin_hz": 1960784.3137254904,
+        "bin": 16,
+        "amplitude_arb": 0.31203112653923326
+      },
+      "lower_13c_sideband": {
+        "target_hz": 1615800.0,
+        "nearest_bin_hz": 1593137.254901961,
+        "bin": 13,
+        "amplitude_arb": 0.589386598512981
+      },
+      "upper_13c_sideband": {
+        "target_hz": 2384200.0,
+        "nearest_bin_hz": 2328431.3725490198,
+        "bin": 19,
+        "amplitude_arb": 0.06689960643025525
+      }
+    }
+  },
+  "observations": [
+    "carrier-frequency FFT power is present but not a top-three non-DC bin in the one-average autosave",
+    "13C sideband status remains candidate-only / unresolved from one stored average"
+  ],
+  "claim_status": {
+    "t2star": "no conclusion from in-progress one-average autosave",
+    "carbon13": "no conclusion from in-progress one-average autosave",
+    "ramsey_signal": "candidate Ramsey oscillation visible enough to justify waiting for terminal 4-average data, not a final claim"
+  },
+  "next_step": "Wait for terminal result; then raw-export final savedexperiment, repeat raw/readout-aware FFT review on all averages, and only fit/claim T2star if the terminal data shape supports it."
+}

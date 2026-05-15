@@ -1,0 +1,109 @@
+{
+  "batch_id": "nv23_image145844_r01_strong_podmr_20260513_1521",
+  "requested_by": "nv-researcher",
+  "mode": "execute",
+  "requested_sample_id": "NV23",
+  "natural_language_request": "Single strong-pi pODMR alignment screen for tracked image145844_r01 candidate.",
+  "items": [
+    {
+      "id": "image145844_r01_strong_podmr",
+      "mode": "execute",
+      "recipe": "xml_generic_v1",
+      "sample_id": "NV23",
+      "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+      "requested_by": "nv-researcher",
+      "submission_path": "project_verified_intent_image145844_r01_strong_podmr_alignment_screen",
+      "intent": "image145844_r01 strong-pi pODMR alignment screen after fresh TrackCenter; no automatic fit/Aux update; terminal raw/readout review required before T2star.",
+      "measurement_plan_verified": true,
+      "allow_seed_fallback": false,
+      "scan": {
+        "vary_prop": ["mw_freq"],
+        "begin": [3825000000.0],
+        "end": [3925000000.0],
+        "points": [21]
+      },
+      "float_vars": {
+        "sample_rate": 250000000.0,
+        "mw_freq": 3875000000.0,
+        "detuning": 0.0,
+        "freqIQ": 50000000.0,
+        "length_last_wait": 1e-6,
+        "mod_depth": 1.0,
+        "mw_ampl": -5.0,
+        "ampIQ": 5.0,
+        "full_expt": 0.0,
+        "sweep_range": 100000000.0,
+        "sweep_time": 1e-6,
+        "delay_wrt_1mus": 2e-7,
+        "wait_time": 2e-6,
+        "switch_delay": 1e-7,
+        "pumping_time": 1e-6,
+        "length_rabi_pulse": 5.2e-8
+      },
+      "bool_vars": {
+        "do_adiabatic_inversion": true
+      },
+      "limits": {
+        "max_mw_power_dbm": 15.0,
+        "allow_stage_motion": false,
+        "allow_laser_profile": false
+      },
+      "metadata": {
+        "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+        "target_label": "image145844_r01",
+        "target_role": "initial_candidate_strong_pi_podmr_alignment_screen",
+        "fresh_track_result": "<NV_BRIDGE_ROOT>/done/nv23_image145844_r01_track_20260513_1509/result.json",
+        "fresh_counts_kcps": 38.629,
+        "fresh_tracked_position_um": [114.5574352635996, 118.0608761933827, 116.2597907479464],
+        "track_evidence_id": "nv23_image145844_r01_track_20260513_1509_result",
+        "model_evidence_id": "preliminary_alignment_t2star_13c_model_20260513_1518",
+        "verified_intent_id": "image145844_r01_strong_podmr_20260513_1521",
+        "auto_align_nv": false,
+        "require_landmark_match": false,
+        "allow_seed_fallback": false,
+        "minimum_final_kcps": 20,
+        "allow_search_scan": false,
+        "search_scan_on_tracking_failure": false,
+        "local_fine_search_before_tracking": false,
+        "no_auto_align_reason": "r01 completed standalone TrackCenter immediately before this pODMR at 38.629 kcps; use the fresh tracked position directly and avoid hidden target reselection.",
+        "analysis_plan": {
+          "kind": "strong_pi_podmr_alignment_screen",
+          "persist_aux_update": false,
+          "valid_resonance_review_required": true,
+          "visual_review_required": true,
+          "stored_average_review_required": true,
+          "raw_readout_review_required": true,
+          "notes": "No automatic fit request is included in this bridge job. Review raw export/plots first; only fit/use a center after signal presence is supported."
+        },
+        "queue_execute_opt_in": true,
+        "requested_by": "nv-researcher",
+        "disable_agent_auto_recovery": true,
+        "frequency_window_reason": "Screen +/-50 MHz around expected ms=+1 resonance near 3.875 GHz for magnetic-field alignment candidate triage.",
+        "low_points_reason": "21 points gives 5 MHz spacing and stays within a low-point alignment-screen style; not a precision center extraction.",
+        "shot_reason": "Use 2 x 40000 repetitions as a bounded strong-pi alignment screen after a fresh 38.629 kcps TrackCenter; this is triage, not precision spectroscopy.",
+        "even_average_reason": "Use 2 averages under snake/even-average guidance.",
+        "comparison_targets": [
+          "r01 TrackCenter passed with final_counts_kcps=38.629 at the fresh tracked position.",
+          "Preliminary model calculation gives 13C Larmor about 0.384 MHz at the expected field and strong-pi time near 50 ns.",
+          "pulsed_odmr_rabimodulated_v1 manifest and Rabimodulated.xml active path were inspected before this execute."
+        ],
+        "measurement_plan_verified": true,
+        "nv_position": [114.5574352635996, 118.0608761933827, 116.2597907479464],
+        "sequence_manifest_status": "staging",
+        "sequence_manifest_scope": "staging",
+        "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+        "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+        "acquisition": {"average_continuously": false, "averages": 2, "repetitions": 40000}
+      },
+      "acquisition": {"average_continuously": false, "averages": 2, "repetitions": 40000},
+      "nv_position": [114.5574352635996, 118.0608761933827, 116.2597907479464],
+      "job_id_prefix": "nv23_pulsed_odmr_rabimodulated_v1",
+      "job_id_suffix": "image145844_r01_strong_podmr"
+    }
+  ],
+  "policy": {
+    "measurement_plan_enabled": false,
+    "measurement_plan_required": false,
+    "max_attempts_per_item": 1
+  }
+}

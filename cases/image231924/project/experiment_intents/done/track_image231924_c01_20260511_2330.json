@@ -1,0 +1,85 @@
+{
+  "intent_id": "track_image231924_c01_20260511_2330",
+  "summary": "Execute standalone TrackCenter for image231924_c01, the first bright interior candidate from the saved image region.",
+  "scientific_rationale": "The project objective starts by finding a magnetic-field-aligned NV within the image231924 spatial range. The saved-image export selected image231924_c01 as the brightest isolated interior emitter candidate (X=113.000, Y=113.625, Z=115.000 um). TrackCenter is required to confirm current trackability and final counts before any resonance/alignment screen.",
+  "comparison_targets": [
+    "human_advice.md initial image231924-region search instruction",
+    "work/artifacts/analysis/image231924_candidate_list.json",
+    "work/notes/image231924_candidate_selection_20260511_2324.md"
+  ],
+  "expected_evidence": [
+    "terminal TrackCenter bridge result with tracked position and final_counts_kcps",
+    "job.json/status/result artifacts under the NV bridge queue",
+    "decision whether to run strong-pi pulsed ODMR on image231924_c01 or move to the next candidate"
+  ],
+  "success_criteria": [
+    "TrackCenter completes successfully",
+    "final counts are above the direct-helper minimum_final_kcps=8 and not a count-collapse anomaly",
+    "tracked position remains plausibly associated with the candidate seed"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "TrackCenter fails or final counts collapse, in which case this candidate is not advanced to pODMR without review"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute standalone TrackCenter direct helper",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      113.0,
+      113.625,
+      115.0
+    ],
+    "source": "image231924_candidate_list.json"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "completed",
+  "created_at": "2026-05-11T23:30:23",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-11T23:30:23",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "updated_at": "2026-05-11T23:30:23",
+  "completed_at": "2026-05-11T23:36:53",
+  "result": {
+    "status": "completed",
+    "bridge_job_id": "nv23_image231924_c01_track_20260511_2330",
+    "bridge_result_path": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_track_20260511_2330/result.json",
+    "tracked_position_um": [
+      113.23486686503394,
+      113.89749501792936,
+      114.79464747081711
+    ],
+    "final_counts_kcps": 36.008,
+    "selected_z_tracking_attempt_index": 1,
+    "candidate_id": "image231924_c01",
+    "conclusion": "TrackCenter passed; candidate is trackable with healthy counts, but magnetic-field alignment is still untested."
+  }
+}

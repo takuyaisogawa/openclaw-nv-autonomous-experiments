@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-13T23:30:11",
+  "tick_count": 48,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 53,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260513_220257_266300_b5c60fc64b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p0_8us_autosave_review_20260513_2152.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Second Ramsey autosave opportunity review: The det=1.0 MHz r03 Ramsey/T2star/13C follow-up remains running. A 5/8 stored-average autosave raw export was reviewed while live status had advanced to 6/8 averages, final-count text 38.253 kcps, monitor error empty, and no stop request. The partial screen is still not claim-grade: the largest combined component is near 1.166 MHz, while the programmed 1.0 MHz carrier and expected 13C sidebands remain smaller. No hard anomaly, no T2star or 13C claim; continue to terminal raw/readout, scan-order-aware drift, and FFT/least-squares review.",
+          "tags": [],
+          "timestamp": "2026-05-13T22:02:57"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_raw_export_20260513_2220.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_drift_20260513_2220.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg.result.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_2047.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Terminal raw/readout, scan-order-aware drift, FFT, and least-squares review for det=1.0 MHz r03 Ramsey follow-up: job completed safely with 8 x 50000 shots per tau point, final counts 44.184 kcps, no monitor error or stop request, and no drift flags. The programmed 1.0 MHz carrier is weak (ratio LS amplitude 0.00916; raw signal 0.277 kcps, below the expected 2-6 kcps scale and below/near SEM), the largest combined component is near 1.178 MHz rather than the carrier or expected 13C sidebands, and per-average frequency screens are inconsistent. No supported T2star or nearby-13C claim from this terminal Ramsey; next useful branch is a redesigned short-tau/high-SNR Ramsey or alternate diagnostic, not a blind repeat.",
+          "tags": [],
+          "timestamp": "2026-05-13T22:41:21"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_model_and_advisory_20260513_2257",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_model_plan_20260513_2257.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_submit_spec_20260513_2257.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/matlab_bridge_requests/submit_spec_20260513_225937_wff0eauv/response.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents/verified/image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Short-tau/high-SNR Ramsey diagnostic design after two non-claim-grade r03 Ramsey runs: scan tau 48 ns..1.968 us in 41 sample-grid points, det=1.0 MHz, mw_freq=3.8759 GHz, 12 x 90000 repetitions (1.08e6 shots per tau point), explicit r03 position. Quantitative model projects median raw SEM about 1.17 kcps vs 1.92 kcps in terminal 8 us run and targets the specific very-short-T2*/early-time carrier failure mode rather than blind repeat. MATLAB wrapper preview/advisory returned ok with no blockers; estimated per-average/tracking window 577.339 s under the 900 s nighttime cap, total runtime 6953 s scheduling-only. Experiment intent verified with bridge queued/running empty.",
+          "tags": [],
+          "timestamp": "2026-05-13T23:02:04"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "nv23_ramsey_20260513_230331_auto_ramsey_shorttau_job_started",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230331_auto_ramsey.job.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230331_auto_ramsey.status.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230331_auto_ramsey.control.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230232.batch_spec.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230232.batch_state.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230511_image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k.cancellation_note.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_230511_image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k.canceled_job.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Queued and started the intended short-tau/high-SNR Ramsey diagnostic. Due to a relaunch race, the actual running bridge job id is nv23_ramsey_20260513_230331_auto_ramsey (generic suffix) but job metadata links it to verified intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257. It uses auto__ramsey, tau 48 ns..1.968 us in 41 points, mw_freq=3.8759 GHz, det=1.0 MHz, 12 x 90000 reps, explicit r03 position. Runtime status at copy time was running average 1/12, monitor last_error empty, final-count text 44.184 kcps. A duplicate queued relaunch job nv23_ramsey_20260513_230511_image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k was canceled before execution by moving queued/ -> canceled/ with a cancellation note; bridge queued is now empty and one intended job remains running.",
+          "tags": [],
+          "timestamp": "2026-05-13T23:11:04"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_design_note_20260513_2257",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260513_2257_shorttau_ramsey_design_and_start.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Focused work note for the short-tau/high-SNR r03 Ramsey diagnostic design, start, and duplicate queued relaunch cleanup. It records inputs read, measurement settings, advisory/runtime estimates, actual running job id, canceled duplicate id, checks performed, and terminal-review requirements.",
+          "tags": [],
+          "timestamp": "2026-05-13T23:14:17"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 13
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Second Ramsey terminal review and short-tau diagnostic start",
+    "event": "lab_log_note",
+    "summary": "Terminal review of the det=1.0 MHz 8 us r03 Ramsey follow-up found no hard anomaly or drift flags but still no supported T2star or nearby-13C claim: the programmed 1.0 MHz carrier was weak and below/near SEM, and the top component near 1.178 MHz did not match carrier/sidebands. A non-blind short-tau/high-SNR Ramsey diagnostic was then modeled, advisory-checked, verified, and started as bridge job nv23_ramsey_20260513_230331_auto_ramsey (metadata links it to verified intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257). It scans tau 48 ns..1.968 us in 41 points with mw_freq=3.8759 GHz, det=1.0 MHz, 12 x 90000 repetitions, and explicit r03 position. Live status after start was average 1/12, monitor error empty, final-count text 44.184 kcps. A duplicate relaunch queued job was canceled before execution; bridge queued is empty and only the intended short-tau job remains running. No T2star/13C claim until terminal raw/drift/readout review.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "image145844_reimage_r03_ramsey_shorttau_design_note_20260513_2257",
+    "category": "analysis",
+    "summary": "Focused work note for the short-tau/high-SNR r03 Ramsey diagnostic design, start, and duplicate queued relaunch cleanup. It records inputs read, measurement settings, advisory/runtime estimates, actual running job id, canceled duplicate id, checks performed, and terminal-review requirements.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260513_2257_shorttau_ramsey_design_and_start.md"
+    ],
+    "timestamp": "2026-05-13T23:14:17"
+  }
+}

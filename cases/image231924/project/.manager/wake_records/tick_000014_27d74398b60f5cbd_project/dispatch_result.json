@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-05-12T02:25:11",
+  "dispatch": {
+    "attempted": true,
+    "sent": true,
+    "reason": "bridge_running_job_finished",
+    "wake_key": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319:advance_project:1623ecc6fa7d08c1",
+    "result": "http_200 run_id=e139cf17-fd7f-467a-b54f-8945c2649f98",
+    "hook_path": "/hooks/agent",
+    "gateway_url": "http://127.0.0.1:18789",
+    "mode": "now",
+    "dispatch_mode": "agent",
+    "agent_backend": "openclaw-hook",
+    "marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/agent_runs/tick_000014_27d74398b60f5cbd_project.done.json",
+    "run_id": "e139cf17-fd7f-467a-b54f-8945c2649f98",
+    "wake_record_dir": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000014_27d74398b60f5cbd_project",
+    "wake_record_manifest_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000014_27d74398b60f5cbd_project/context_manifest.json"
+  }
+}

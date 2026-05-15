@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-11T23:21:50",
+  "updated_at": "2026-05-12T04:25:10",
+  "tick_count": 23,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents",
+      "evidence_count": 42,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_031721_840657_19692bf40a",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_export.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_drift.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_readouts.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Narrow weak-pi pODMR after terminal Ramsey completed and reviewed: raw/fit-reference minimum gives updated center 3.8761166667 GHz (+0.250 MHz from prior weak-pi center; pointwise ratio min +0.500 MHz). This makes the old 1.593 MHz Ramsey peak plausibly residual detuning rather than 13C; T2star remains candidate-only pending corrected-center Ramsey.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:17:21"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "note",
+          "evidence_id": "note_20260512_031810_487387_9705802004",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_narrow_weak_podmr_after_ramsey_review_20260512_0318.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Note for narrow weak-pi pODMR after Ramsey: updated center 3.8761166667 GHz; old 1.593 MHz Ramsey peak likely residual detuning, 13C downgraded pending corrected-center Ramsey.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:18:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "artifact_20260512_032618_651713_de6e78654b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents/verified/image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_spec.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_state.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.job_initial.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.status_initial.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Submitted and started corrected-center Ramsey/T2star repeat: bridge job nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute; pre-enqueue advisory had no blockers, estimated runtime 4479 s and per-average tracking window 742 s under the 900 s night cap; auto-align selected 23.416 kcps and the experiment has started.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:26:18"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_040239_706388_8f15704429",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_export.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/analyze_corrected_center_ramsey_autosave_avg2.py",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_per_average.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_readouts.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_corrected_center_ramsey_autosave_avg2_review_20260512_0359.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "In-progress corrected-center Ramsey autosave after 2/6 averages raw-exported and reviewed: bridge still running with healthy counts (Final = 25.898 kcps), no terminal/anomaly evidence; carrier-nearest FFT bin ranks 3rd while expected lower/upper 13C bins rank 6/23, so this is only progress evidence and T2star/13C remain no-conclusion until terminal review.",
+          "tags": [],
+          "timestamp": "2026-05-12T04:02:39"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260512_040302_647471_cffab9dc03",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Corrected-center Ramsey autosave 2/6 review: At 03:59 EDT the corrected-center Ramsey repeat remained running with 2/6 averages completed and healthy counts (Final = 25.898 kcps). Autosave raw export/review found the carrier-nearest FFT bin ranked 3rd and expected lower/upper 13C bins ranked 6/23; this is progress evidence only, with no T2star or 13C conclusion until terminal review.",
+          "tags": [],
+          "timestamp": "2026-05-12T04:03:02"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 2,
+        "verified": 1,
+        "rejected": 0,
+        "done": 7
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": false
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-11T23:21:50",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/human_advice.md",
+    "preview": "Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-11-231924.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Because the piezo stage was recently adjusted and the magnetic field at focus may have changed, judge magnetic-field alignment using a strong pi pulsed ODMR scan. After finding an aligned NV, measure its T2*. To reduce measurement time, p",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Corrected-center Ramsey autosave 2/6 review",
+    "event": "lab_log_note",
+    "summary": "At 03:59 EDT the corrected-center Ramsey repeat remained running with 2/6 averages completed and healthy counts (Final = 25.898 kcps). Autosave raw export/review found the carrier-nearest FFT bin ranked 3rd and expected lower/upper 13C bins ranked 6/23; this is progress evidence only, with no T2star or 13C conclusion until terminal review.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260512_040302_647471_cffab9dc03",
+    "category": "figure",
+    "summary": "Corrected-center Ramsey autosave 2/6 review: At 03:59 EDT the corrected-center Ramsey repeat remained running with 2/6 averages completed and healthy counts (Final = 25.898 kcps). Autosave raw export/review found the carrier-nearest FFT bin ranked 3rd and expected lower/upper 13C bins ranked 6/23; this is progress evidence only, with no T2star or 13C conclusion until terminal review.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png"
+    ],
+    "timestamp": "2026-05-12T04:03:02"
+  }
+}

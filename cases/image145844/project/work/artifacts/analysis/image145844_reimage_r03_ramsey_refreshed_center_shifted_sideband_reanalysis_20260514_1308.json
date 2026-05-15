@@ -1,0 +1,1693 @@
+{
+  "ok": true,
+  "created_at": "2026-05-14T13:08:34.979442-04:00",
+  "question": "Reanalyze terminal refreshed-center Ramsey allowing a residual-calibration shifted carrier and 13C sidebands around that shifted carrier.",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "terminal_review_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_review_20260514_0938.json",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_terminal_raw_export_20260514_0938.json",
+  "axis_contract_check": "ExperimentDataEachAvg readout/average axes verified by averaging per-average readouts back to ExperimentData.",
+  "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/advice/inbox/2026-05-14_resume_bridge_free_shifted_sideband_report.md",
+  "model_definitions": {
+    "programmed_carrier_hz": 1500000.0,
+    "f13c_hz": 384806.5178571427,
+    "shifted_carrier_det_plus_f13C_hz": 1884806.5178571427,
+    "shifted_triplet_det_plus_f13C_freqs_hz": [
+      1500000.0,
+      1884806.5178571427,
+      2269613.0357142854
+    ],
+    "free_shifted_triplet_fc_search_hz": [
+      1100000.0,
+      2115193.48214286,
+      2000.0
+    ],
+    "nyquist_hz": 2500000.000000003
+  },
+  "views": {
+    "ratio_full": {
+      "n_points": 41,
+      "tau_start_us": 0.048,
+      "tau_stop_us": 8.048,
+      "model_table_sorted_by_bic": [
+        {
+          "rss": 0.003503436324815764,
+          "k": 10,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.02715929485330592,
+            0.015121260152030285,
+            0.037502139226673094
+          ],
+          "phases_rad": [
+            -2.7018342002142415,
+            2.020340133200997,
+            2.282632084427853
+          ],
+          "damped": true,
+          "T2star_us": 4.54270311095546,
+          "aic": -364.0709051220863,
+          "bic": -346.9351844550432,
+          "delta_rss_vs_linear": 0.016302446279467177,
+          "r2_improvement": 0.8231113253161382,
+          "name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+          "delta_bic_vs_best": 0.0,
+          "delta_aic_vs_best": 0.0
+        },
+        {
+          "rss": 0.007020592514509772,
+          "k": 8,
+          "fc_hz": 1884806.5178571427,
+          "fc_mhz": 1.8848065178571427,
+          "carrier_shift_hz": 384806.5178571427,
+          "carrier_shift_mhz": 0.3848065178571427,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1500000.0,
+            1884806.5178571427,
+            2269613.0357142854
+          ],
+          "freqs_mhz": [
+            1.5,
+            1.8848065178571427,
+            2.2696130357142854
+          ],
+          "amps": [
+            0.01486417816050326,
+            0.00847264152926419,
+            0.01762622409047047
+          ],
+          "phases_rad": [
+            -2.481210782447868,
+            2.468329317679863,
+            2.331349086960088
+          ],
+          "aic": -339.5716688248023,
+          "bic": -325.86309229116785,
+          "delta_rss_vs_linear": 0.01278529008977317,
+          "r2_improvement": 0.6455299339706478,
+          "name": "undamped_shifted_carrier_plus_13C_sidebands_fc_eq_det_plus_f13C",
+          "delta_bic_vs_best": 21.072092163875368,
+          "delta_aic_vs_best": 24.49923629728397
+        },
+        {
+          "rss": 0.006929407358688838,
+          "k": 9,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.015169211427707252,
+            0.008587182746904528,
+            0.017629664433755386
+          ],
+          "phases_rad": [
+            -2.580402653158947,
+            2.3771750938386753,
+            2.2293141668500067
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -338.107675229098,
+          "bic": -322.68552662875925,
+          "delta_rss_vs_linear": 0.012876475245594102,
+          "r2_improvement": 0.6501338770335646,
+          "name": "undamped_free_shifted_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 24.249657826283965,
+          "delta_aic_vs_best": 25.963229892988295
+        },
+        {
+          "rss": 0.00843344425696575,
+          "k": 7,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            2.274806517857143
+          ],
+          "amps": [
+            0.015422552915971078,
+            0.017851913641161683
+          ],
+          "phases_rad": [
+            -2.6080392520736058,
+            2.2301642893408746
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -334.0540055140152,
+          "bic": -322.0590010470851,
+          "delta_rss_vs_linear": 0.01137243834731719,
+          "r2_improvement": 0.5741949790643486,
+          "name": "undamped_free_shifted_13C_sideband_pair_no_carrier",
+          "delta_bic_vs_best": 24.876183407958138,
+          "delta_aic_vs_best": 30.01689960807107
+        },
+        {
+          "rss": 0.009312907299758678,
+          "k": 6,
+          "freq_hz": 2280000.0,
+          "freq_mhz": 2.28,
+          "amp": 0.0580540341738941,
+          "phase_rad": 2.1382414877611917,
+          "damped": true,
+          "T2star_us": 2.4674917490312063,
+          "aic": -331.9869670680647,
+          "bic": -321.70553466783883,
+          "delta_rss_vs_linear": 0.010492975304524262,
+          "r2_improvement": 0.5297908461931001,
+          "name": "damped_single_free_frequency",
+          "delta_bic_vs_best": 25.22964978720438,
+          "delta_aic_vs_best": 32.08393805402159
+        },
+        {
+          "rss": 0.013087972520247215,
+          "k": 5,
+          "freq_hz": 2266000.0,
+          "freq_mhz": 2.266,
+          "amp": 0.01840318586280029,
+          "phase_rad": 2.4071952780061805,
+          "damped": false,
+          "T2star_us": null,
+          "aic": -320.03498028314743,
+          "bic": -311.4671199496259,
+          "delta_rss_vs_linear": 0.006717910084035725,
+          "r2_improvement": 0.33918761502620465,
+          "name": "undamped_single_free_frequency",
+          "delta_bic_vs_best": 35.46806450541732,
+          "delta_aic_vs_best": 44.035924838938854
+        },
+        {
+          "rss": 0.014791395046750033,
+          "k": 4,
+          "freqs_hz": [
+            1500000.0
+          ],
+          "freqs_mhz": [
+            1.5
+          ],
+          "amps": [
+            0.015747330939821332
+          ],
+          "aic": -317.018551740332,
+          "bic": -310.1642634735148,
+          "delta_rss_vs_linear": 0.005014487557532907,
+          "r2_improvement": 0.2531817267486249,
+          "name": "undamped_fixed_programmed_carrier_1p5MHz",
+          "delta_bic_vs_best": 36.770920981528434,
+          "delta_aic_vs_best": 47.0523533817543
+        },
+        {
+          "rss": 0.01980588260428294,
+          "k": 2,
+          "aic": -309.0492823863003,
+          "bic": -305.6221382528917,
+          "delta_rss_vs_linear": 0.0,
+          "r2_improvement": 0.0,
+          "name": "linear_baseline_only",
+          "delta_bic_vs_best": 41.3130462021515,
+          "delta_aic_vs_best": 55.02162273578597
+        },
+        {
+          "rss": 0.013027280928580968,
+          "k": 8,
+          "freqs_hz": [
+            1115193.4821428573,
+            1500000.0,
+            1884806.5178571427
+          ],
+          "freqs_mhz": [
+            1.1151934821428573,
+            1.5,
+            1.8848065178571427
+          ],
+          "amps": [
+            0.0018999748253947675,
+            0.015368129741821024,
+            0.00901381618799261
+          ],
+          "aic": -314.22554781817195,
+          "bic": -300.5169712845375,
+          "delta_rss_vs_linear": 0.006778601675701972,
+          "r2_improvement": 0.34225193651486796,
+          "name": "undamped_fixed_original_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 46.41821317050574,
+          "delta_aic_vs_best": 49.84535730391434
+        }
+      ],
+      "summary": {
+        "best_model_name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+        "exact_shift_delta_bic_vs_best": 21.072092163875368,
+        "exact_shift_r2_improvement": 0.6455299339706478,
+        "exact_shift_freqs_mhz": [
+          1.5,
+          1.8848065178571427,
+          2.2696130357142854
+        ],
+        "exact_shift_amps": [
+          0.01486417816050326,
+          0.00847264152926419,
+          0.01762622409047047
+        ],
+        "free_shifted_triplet_fc_mhz": 1.89,
+        "free_shifted_triplet_delta_bic_vs_best": 24.249657826283965,
+        "single_free_delta_bic_vs_best": 25.22964978720438,
+        "original_fixed_triplet_delta_bic_vs_best": 46.41821317050574
+      }
+    },
+    "signal_over_refline_full": {
+      "n_points": 41,
+      "tau_start_us": 0.048,
+      "tau_stop_us": 8.048,
+      "model_table_sorted_by_bic": [
+        {
+          "rss": 0.0019402967656166545,
+          "k": 10,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.033301036793945894,
+            0.00879443568353393,
+            0.04423449802621794
+          ],
+          "phases_rad": [
+            -2.76405119900223,
+            1.5435214026370465,
+            2.3024945447782974
+          ],
+          "damped": true,
+          "T2star_us": 2.96328418150771,
+          "aic": -388.29794290605804,
+          "bic": -371.16222223901497,
+          "delta_rss_vs_linear": 0.015087426554208333,
+          "r2_improvement": 0.8860507227435619,
+          "name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+          "delta_bic_vs_best": 0.0,
+          "delta_aic_vs_best": 0.0
+        },
+        {
+          "rss": 0.006465361877773712,
+          "k": 6,
+          "freq_hz": 2280000.0,
+          "freq_mhz": 2.28,
+          "amp": 0.06634777509288523,
+          "phase_rad": 2.144224448882435,
+          "damped": true,
+          "T2star_us": 1.8185547747126523,
+          "aic": -346.9496027650088,
+          "bic": -336.66817036478295,
+          "delta_rss_vs_linear": 0.010562361442051275,
+          "r2_improvement": 0.6203037977340025,
+          "name": "damped_single_free_frequency",
+          "delta_bic_vs_best": 34.494051874232014,
+          "delta_aic_vs_best": 41.34834014104922
+        },
+        {
+          "rss": 0.007516056807304433,
+          "k": 7,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            2.274806517857143
+          ],
+          "amps": [
+            0.01407437103372147,
+            0.016214318267419335
+          ],
+          "phases_rad": [
+            -2.67985195816019,
+            2.305389931324023
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -338.7757139452068,
+          "bic": -326.78070947827666,
+          "delta_rss_vs_linear": 0.009511666512520556,
+          "r2_improvement": 0.558598841070335,
+          "name": "undamped_free_shifted_13C_sideband_pair_no_carrier",
+          "delta_bic_vs_best": 44.3815127607383,
+          "delta_aic_vs_best": 49.52222896085124
+        },
+        {
+          "rss": 0.0072308334549654445,
+          "k": 8,
+          "fc_hz": 1884806.5178571427,
+          "fc_mhz": 1.8848065178571427,
+          "carrier_shift_hz": 384806.5178571427,
+          "carrier_shift_mhz": 0.3848065178571427,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1500000.0,
+            1884806.5178571427,
+            2269613.0357142854
+          ],
+          "freqs_mhz": [
+            1.5,
+            1.8848065178571427,
+            2.2696130357142854
+          ],
+          "amps": [
+            0.013686295221728637,
+            0.004188195386424573,
+            0.016076308356878934
+          ],
+          "phases_rad": [
+            -2.5838056499635154,
+            2.581202610969459,
+            2.39593019789549
+          ],
+          "aic": -338.3618945927571,
+          "bic": -324.6533180591226,
+          "delta_rss_vs_linear": 0.009796889864859543,
+          "r2_improvement": 0.5753493688409448,
+          "name": "undamped_shifted_carrier_plus_13C_sidebands_fc_eq_det_plus_f13C",
+          "delta_bic_vs_best": 46.50890417989234,
+          "delta_aic_vs_best": 49.936048313300944
+        },
+        {
+          "rss": 0.007147393095698351,
+          "k": 9,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.013920913469662503,
+            0.004251594643251423,
+            0.016090081836134584
+          ],
+          "phases_rad": [
+            -2.666868456206627,
+            2.520223448830785,
+            2.3032558761831297
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -336.83776595603337,
+          "bic": -321.4156173556946,
+          "delta_rss_vs_linear": 0.009880330224126637,
+          "r2_improvement": 0.5802496339967654,
+          "name": "undamped_free_shifted_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 49.746604883320344,
+          "delta_aic_vs_best": 51.460176950024675
+        },
+        {
+          "rss": 0.01147068046639302,
+          "k": 5,
+          "freq_hz": 2268000.0,
+          "freq_mhz": 2.268,
+          "amp": 0.016743850201389777,
+          "phase_rad": 2.4315544390859727,
+          "damped": false,
+          "T2star_us": null,
+          "aic": -325.44285671260474,
+          "bic": -316.8749963790832,
+          "delta_rss_vs_linear": 0.005557042853431967,
+          "r2_improvement": 0.3263526631867473,
+          "name": "undamped_single_free_frequency",
+          "delta_bic_vs_best": 54.287225859931766,
+          "delta_aic_vs_best": 62.8550861934533
+        },
+        {
+          "rss": 0.012780510160224134,
+          "k": 4,
+          "freqs_hz": [
+            1500000.0
+          ],
+          "freqs_mhz": [
+            1.5
+          ],
+          "amps": [
+            0.0144662769027647
+          ],
+          "aic": -323.0096451346293,
+          "bic": -316.1553568678121,
+          "delta_rss_vs_linear": 0.004247213159600853,
+          "r2_improvement": 0.24942930301527277,
+          "name": "undamped_fixed_programmed_carrier_1p5MHz",
+          "delta_bic_vs_best": 55.00686537120288,
+          "delta_aic_vs_best": 65.28829777142874
+        },
+        {
+          "rss": 0.017027723319824987,
+          "k": 2,
+          "aic": -315.24586640218087,
+          "bic": -311.81872226877226,
+          "delta_rss_vs_linear": 0.0,
+          "r2_improvement": 0.0,
+          "name": "linear_baseline_only",
+          "delta_bic_vs_best": 59.3434999702427,
+          "delta_aic_vs_best": 73.05207650387717
+        },
+        {
+          "rss": 0.012216003106588623,
+          "k": 8,
+          "freqs_hz": [
+            1115193.4821428573,
+            1500000.0,
+            1884806.5178571427
+          ],
+          "freqs_mhz": [
+            1.1151934821428573,
+            1.5,
+            1.8848065178571427
+          ],
+          "amps": [
+            0.0022090121316317877,
+            0.014187170162840735,
+            0.004670873695857506
+          ],
+          "aic": -316.8618014620752,
+          "bic": -303.15322492844075,
+          "delta_rss_vs_linear": 0.0048117202132363646,
+          "r2_improvement": 0.2825815361724952,
+          "name": "undamped_fixed_original_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 68.00899731057422,
+          "delta_aic_vs_best": 71.43614144398282
+        }
+      ],
+      "summary": {
+        "best_model_name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+        "exact_shift_delta_bic_vs_best": 46.50890417989234,
+        "exact_shift_r2_improvement": 0.5753493688409448,
+        "exact_shift_freqs_mhz": [
+          1.5,
+          1.8848065178571427,
+          2.2696130357142854
+        ],
+        "exact_shift_amps": [
+          0.013686295221728637,
+          0.004188195386424573,
+          0.016076308356878934
+        ],
+        "free_shifted_triplet_fc_mhz": 1.89,
+        "free_shifted_triplet_delta_bic_vs_best": 49.746604883320344,
+        "single_free_delta_bic_vs_best": 34.494051874232014,
+        "original_fixed_triplet_delta_bic_vs_best": 68.00899731057422
+      }
+    },
+    "raw_signal_kcps_full": {
+      "n_points": 41,
+      "tau_start_us": 0.048,
+      "tau_stop_us": 8.048,
+      "model_table_sorted_by_bic": [
+        {
+          "rss": 4.616313418746076,
+          "k": 10,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            1.6235665616169073,
+            0.42869764447656994,
+            2.156594703025156
+          ],
+          "phases_rad": [
+            -2.7638828289443804,
+            1.5425013414460884,
+            2.30237930446941
+          ],
+          "damped": true,
+          "T2star_us": 2.96328418150771,
+          "aic": -69.5430012999267,
+          "bic": -52.40728063288362,
+          "delta_rss_vs_linear": 35.85656176165515,
+          "r2_improvement": 0.8859405614706242,
+          "name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+          "delta_bic_vs_best": 0.0,
+          "delta_aic_vs_best": 0.0
+        },
+        {
+          "rss": 15.374830214972768,
+          "k": 6,
+          "freq_hz": 2280000.0,
+          "freq_mhz": 2.28,
+          "amp": 3.234279495202052,
+          "phase_rad": 2.144151865307416,
+          "damped": true,
+          "T2star_us": 1.8185547747126523,
+          "aic": -28.21445213605331,
+          "bic": -17.933019735827465,
+          "delta_rss_vs_linear": 25.098044965428457,
+          "r2_improvement": 0.6201201385757257,
+          "name": "damped_single_free_frequency",
+          "delta_bic_vs_best": 34.474260897056155,
+          "delta_aic_vs_best": 41.32854916387339
+        },
+        {
+          "rss": 17.856229737936058,
+          "k": 7,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            2.274806517857143
+          ],
+          "amps": [
+            0.6863086682815803,
+            0.7906502124990831
+          ],
+          "phases_rad": [
+            -2.679742404944997,
+            2.305333206531267
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -20.08000419205323,
+          "bic": -8.084999725123076,
+          "delta_rss_vs_linear": 22.616645442465167,
+          "r2_improvement": 0.5588099521384425,
+          "name": "undamped_free_shifted_13C_sideband_pair_no_carrier",
+          "delta_bic_vs_best": 44.32228090776054,
+          "delta_aic_vs_best": 49.46299710787347
+        },
+        {
+          "rss": 17.17917527496067,
+          "k": 8,
+          "fc_hz": 1884806.5178571427,
+          "fc_mhz": 1.8848065178571427,
+          "carrier_shift_hz": 384806.5178571427,
+          "carrier_shift_mhz": 0.3848065178571427,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1500000.0,
+            1884806.5178571427,
+            2269613.0357142854
+          ],
+          "freqs_mhz": [
+            1.5,
+            1.8848065178571427,
+            2.2696130357142854
+          ],
+          "amps": [
+            0.6673929019214881,
+            0.20411838947035285,
+            0.7839157547815949
+          ],
+          "phases_rad": [
+            -2.5836703808185884,
+            2.580992478709263,
+            2.395907664043744
+          ],
+          "aic": -19.664840406265405,
+          "bic": -5.956263872630942,
+          "delta_rss_vs_linear": 23.293699905440555,
+          "r2_improvement": 0.575538550241679,
+          "name": "undamped_shifted_carrier_plus_13C_sidebands_fc_eq_det_plus_f13C",
+          "delta_bic_vs_best": 46.45101676025268,
+          "delta_aic_vs_best": 49.878160893661295
+        },
+        {
+          "rss": 16.980548235323646,
+          "k": 9,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.6788313794348433,
+            0.2072095241857399,
+            0.7845963921242141
+          ],
+          "phases_rad": [
+            -2.6667625851522563,
+            2.519996034664742,
+            2.3032032984406654
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -18.141647568052413,
+          "bic": -2.7194989677136405,
+          "delta_rss_vs_linear": 23.49232694507758,
+          "r2_improvement": 0.5804462084881385,
+          "name": "undamped_free_shifted_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 49.68778166516998,
+          "delta_aic_vs_best": 51.40135373187429
+        },
+        {
+          "rss": 27.259965730277482,
+          "k": 5,
+          "freq_hz": 2268000.0,
+          "freq_mhz": 2.268,
+          "amp": 0.8164561278117533,
+          "phase_rad": 2.431544434352147,
+          "damped": false,
+          "T2star_us": null,
+          "aic": -6.734268800774693,
+          "bic": 1.8335915327468477,
+          "delta_rss_vs_linear": 13.212909450123743,
+          "r2_improvement": 0.3264633261469406,
+          "name": "undamped_single_free_frequency",
+          "delta_bic_vs_best": 54.24087216563046,
+          "delta_aic_vs_best": 62.80873249915201
+        },
+        {
+          "rss": 30.373852391882906,
+          "k": 4,
+          "freqs_hz": [
+            1500000.0
+          ],
+          "freqs_mhz": [
+            1.5
+          ],
+          "amps": [
+            0.70541677097572
+          ],
+          "aic": -4.299587830875165,
+          "bic": 2.554700435942067,
+          "delta_rss_vs_linear": 10.099022788518319,
+          "r2_improvement": 0.24952570687166592,
+          "name": "undamped_fixed_programmed_carrier_1p5MHz",
+          "delta_bic_vs_best": 54.961981068825686,
+          "delta_aic_vs_best": 65.24341346905153
+        },
+        {
+          "rss": 40.472875180401225,
+          "k": 2,
+          "aic": 3.4694573101667165,
+          "bic": 6.8966014435753324,
+          "delta_rss_vs_linear": 0.0,
+          "r2_improvement": 0.0,
+          "name": "linear_baseline_only",
+          "delta_bic_vs_best": 59.303882076458954,
+          "delta_aic_vs_best": 73.01245861009342
+        },
+        {
+          "rss": 29.032710276045403,
+          "k": 8,
+          "freqs_hz": [
+            1115193.4821428573,
+            1500000.0,
+            1884806.5178571427
+          ],
+          "freqs_mhz": [
+            1.1151934821428573,
+            1.5,
+            1.8848065178571427
+          ],
+          "amps": [
+            0.10769844747223373,
+            0.69181330044707,
+            0.22765100733025648
+          ],
+          "aic": 1.8488937957263119,
+          "bic": 15.557470329360775,
+          "delta_rss_vs_linear": 11.440164904355822,
+          "r2_improvement": 0.2826625203513009,
+          "name": "undamped_fixed_original_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 67.9647509622444,
+          "delta_aic_vs_best": 71.39189509565301
+        }
+      ],
+      "summary": {
+        "best_model_name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+        "exact_shift_delta_bic_vs_best": 46.45101676025268,
+        "exact_shift_r2_improvement": 0.575538550241679,
+        "exact_shift_freqs_mhz": [
+          1.5,
+          1.8848065178571427,
+          2.2696130357142854
+        ],
+        "exact_shift_amps": [
+          0.6673929019214881,
+          0.20411838947035285,
+          0.7839157547815949
+        ],
+        "free_shifted_triplet_fc_mhz": 1.89,
+        "free_shifted_triplet_delta_bic_vs_best": 49.68778166516998,
+        "single_free_delta_bic_vs_best": 34.474260897056155,
+        "original_fixed_triplet_delta_bic_vs_best": 67.9647509622444
+      }
+    },
+    "ratio_skip_first4": {
+      "n_points": 37,
+      "tau_start_us": 0.848,
+      "tau_stop_us": 8.048,
+      "model_table_sorted_by_bic": [
+        {
+          "rss": 0.00311334142436981,
+          "k": 10,
+          "fc_hz": 1890000.0,
+          "fc_mhz": 1.89,
+          "carrier_shift_hz": 390000.0,
+          "carrier_shift_mhz": 0.39,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1505193.4821428573,
+            1890000.0,
+            2274806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5051934821428572,
+            1.89,
+            2.274806517857143
+          ],
+          "amps": [
+            0.036147852080287035,
+            0.019275693120121687,
+            0.04679267350845591
+          ],
+          "phases_rad": [
+            -2.6895342041990657,
+            2.1803232593698287,
+            2.312633357776352
+          ],
+          "damped": true,
+          "T2star_us": 3.55869604987391,
+          "aic": -327.17013528125506,
+          "bic": -311.0609561548128,
+          "delta_rss_vs_linear": 0.008742337974145423,
+          "r2_improvement": 0.7373966248817664,
+          "name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+          "delta_bic_vs_best": 0.0,
+          "delta_aic_vs_best": 0.0
+        },
+        {
+          "rss": 0.004919915696486736,
+          "k": 8,
+          "fc_hz": 1884806.5178571427,
+          "fc_mhz": 1.8848065178571427,
+          "carrier_shift_hz": 384806.5178571427,
+          "carrier_shift_mhz": 0.3848065178571427,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1500000.0,
+            1884806.5178571427,
+            2269613.0357142854
+          ],
+          "freqs_mhz": [
+            1.5,
+            1.8848065178571427,
+            2.2696130357142854
+          ],
+          "amps": [
+            0.013017203886509149,
+            0.005871938556832903,
+            0.014495829139982453
+          ],
+          "phases_rad": [
+            -2.3704333075846207,
+            2.286124506924007,
+            2.295796297464163
+          ],
+          "aic": -314.2391264567866,
+          "bic": -301.3517831556328,
+          "delta_rss_vs_linear": 0.006935763702028498,
+          "r2_improvement": 0.5850161318378018,
+          "name": "undamped_shifted_carrier_plus_13C_sidebands_fc_eq_det_plus_f13C",
+          "delta_bic_vs_best": 9.709172999179998,
+          "delta_aic_vs_best": 12.93100882446845
+        },
+        {
+          "rss": 0.005552382898727897,
+          "k": 7,
+          "fc_hz": 1888000.0,
+          "fc_mhz": 1.888,
+          "carrier_shift_hz": 388000.0,
+          "carrier_shift_mhz": 0.388,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1503193.4821428573,
+            2272806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5031934821428572,
+            2.2728065178571426
+          ],
+          "amps": [
+            0.012748180182069089,
+            0.014398636240105208
+          ],
+          "phases_rad": [
+            -2.4415928684273758,
+            2.2252102500508686
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -311.7645021809557,
+          "bic": -300.4880767924461,
+          "delta_rss_vs_linear": 0.006303296499787337,
+          "r2_improvement": 0.5316689400842555,
+          "name": "undamped_free_shifted_13C_sideband_pair_no_carrier",
+          "delta_bic_vs_best": 10.572879362366677,
+          "delta_aic_vs_best": 15.405633100299383
+        },
+        {
+          "rss": 0.004821181812725141,
+          "k": 9,
+          "fc_hz": 1894000.0,
+          "fc_mhz": 1.894,
+          "carrier_shift_hz": 394000.0,
+          "carrier_shift_mhz": 0.394,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1509193.4821428573,
+            1894000.0,
+            2278806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5091934821428572,
+            1.894,
+            2.278806517857143
+          ],
+          "amps": [
+            0.013340521529476549,
+            0.00658261272405168,
+            0.014140782098973296
+          ],
+          "phases_rad": [
+            -2.6035658241394604,
+            2.008416001743149,
+            2.058956358180171
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -312.9892018574642,
+          "bic": -298.4909406436662,
+          "delta_rss_vs_linear": 0.0070344975857900924,
+          "r2_improvement": 0.5933441137646712,
+          "name": "undamped_free_shifted_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 12.570015511146607,
+          "delta_aic_vs_best": 14.180933423790862
+        },
+        {
+          "rss": 0.007252165826643934,
+          "k": 6,
+          "freq_hz": 2250000.0,
+          "freq_mhz": 2.25,
+          "amp": 0.04890652510221371,
+          "phase_rad": 2.675760867017188,
+          "damped": true,
+          "T2star_us": 3.1497723569221776,
+          "aic": -303.8828022085161,
+          "bic": -294.21729473265077,
+          "delta_rss_vs_linear": 0.0046035135718712995,
+          "r2_improvement": 0.38829605770613435,
+          "name": "damped_single_free_frequency",
+          "delta_bic_vs_best": 16.84366142216203,
+          "delta_aic_vs_best": 23.28733307273893
+        },
+        {
+          "rss": 0.009110008952704205,
+          "k": 4,
+          "freqs_hz": [
+            1500000.0
+          ],
+          "freqs_mhz": [
+            1.5
+          ],
+          "amps": [
+            0.012310487253612088
+          ],
+          "aic": -299.4440814119865,
+          "bic": -293.00040976140957,
+          "delta_rss_vs_linear": 0.002745670445811029,
+          "r2_improvement": 0.23159115167662916,
+          "name": "undamped_fixed_programmed_carrier_1p5MHz",
+          "delta_bic_vs_best": 18.06054639340323,
+          "delta_aic_vs_best": 27.726053869268583
+        },
+        {
+          "rss": 0.008448445064973935,
+          "k": 5,
+          "freq_hz": 2266000.0,
+          "freq_mhz": 2.266,
+          "amp": 0.014175314637688886,
+          "phase_rad": 2.410211780431445,
+          "damped": false,
+          "T2star_us": null,
+          "aic": -300.23355897727936,
+          "bic": -292.17896941405826,
+          "delta_rss_vs_linear": 0.003407234333541299,
+          "r2_improvement": 0.2873925836732739,
+          "name": "undamped_single_free_frequency",
+          "delta_bic_vs_best": 18.88198674075454,
+          "delta_aic_vs_best": 26.9365763039757
+        },
+        {
+          "rss": 0.011855679398515234,
+          "k": 2,
+          "aic": -293.69704809479094,
+          "bic": -290.4752122695025,
+          "delta_rss_vs_linear": 0.0,
+          "r2_improvement": 0.0,
+          "name": "linear_baseline_only",
+          "delta_bic_vs_best": 20.585743885310308,
+          "delta_aic_vs_best": 33.47308718646411
+        },
+        {
+          "rss": 0.008392789680324907,
+          "k": 8,
+          "freqs_hz": [
+            1115193.4821428573,
+            1500000.0,
+            1884806.5178571427
+          ],
+          "freqs_mhz": [
+            1.1151934821428573,
+            1.5,
+            1.8848065178571427
+          ],
+          "amps": [
+            0.0017577015642580372,
+            0.01279968259417004,
+            0.006085547753708756
+          ],
+          "aic": -294.4781083538104,
+          "bic": -281.5907650526566,
+          "delta_rss_vs_linear": 0.003462889718190327,
+          "r2_improvement": 0.2920869906978092,
+          "name": "undamped_fixed_original_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 29.470191102156207,
+          "delta_aic_vs_best": 32.69202692744466
+        }
+      ],
+      "summary": {
+        "best_model_name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+        "exact_shift_delta_bic_vs_best": 9.709172999179998,
+        "exact_shift_r2_improvement": 0.5850161318378018,
+        "exact_shift_freqs_mhz": [
+          1.5,
+          1.8848065178571427,
+          2.2696130357142854
+        ],
+        "exact_shift_amps": [
+          0.013017203886509149,
+          0.005871938556832903,
+          0.014495829139982453
+        ],
+        "free_shifted_triplet_fc_mhz": 1.894,
+        "free_shifted_triplet_delta_bic_vs_best": 12.570015511146607,
+        "single_free_delta_bic_vs_best": 16.84366142216203,
+        "original_fixed_triplet_delta_bic_vs_best": 29.470191102156207
+      }
+    },
+    "signal_over_refline_skip_first4": {
+      "n_points": 37,
+      "tau_start_us": 0.848,
+      "tau_stop_us": 8.048,
+      "model_table_sorted_by_bic": [
+        {
+          "rss": 0.0015549698617583641,
+          "k": 10,
+          "fc_hz": 1900000.0,
+          "fc_mhz": 1.9,
+          "carrier_shift_hz": 400000.0,
+          "carrier_shift_mhz": 0.4,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1515193.4821428573,
+            1900000.0,
+            2284806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5151934821428572,
+            1.9,
+            2.2848065178571426
+          ],
+          "amps": [
+            0.04092799378206934,
+            0.012602911360002788,
+            0.043447815773507883
+          ],
+          "phases_rad": [
+            -2.9262513135890993,
+            1.4807966415735043,
+            2.1092414242523625
+          ],
+          "damped": true,
+          "T2star_us": 2.7878373880181893,
+          "aic": -352.857030024488,
+          "bic": -336.7478508980457,
+          "delta_rss_vs_linear": 0.006237137597870293,
+          "r2_improvement": 0.8004429649084346,
+          "name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+          "delta_bic_vs_best": 0.0,
+          "delta_aic_vs_best": 0.0
+        },
+        {
+          "rss": 0.003474819577870716,
+          "k": 7,
+          "fc_hz": 1894000.0,
+          "fc_mhz": 1.894,
+          "carrier_shift_hz": 394000.0,
+          "carrier_shift_mhz": 0.394,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1509193.4821428573,
+            2278806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5091934821428572,
+            2.278806517857143
+          ],
+          "amps": [
+            0.010910065515519892,
+            0.011465732351190009
+          ],
+          "phases_rad": [
+            -2.685014095354389,
+            2.123760690667305
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -329.10583345780395,
+          "bic": -317.8294080692944,
+          "delta_rss_vs_linear": 0.0043172878817579405,
+          "r2_improvement": 0.5540590788982377,
+          "name": "undamped_free_shifted_13C_sideband_pair_no_carrier",
+          "delta_bic_vs_best": 18.918442828751324,
+          "delta_aic_vs_best": 23.75119656668403
+        },
+        {
+          "rss": 0.0034939828742895497,
+          "k": 8,
+          "fc_hz": 1884806.5178571427,
+          "fc_mhz": 1.8848065178571427,
+          "carrier_shift_hz": 384806.5178571427,
+          "carrier_shift_mhz": 0.3848065178571427,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1500000.0,
+            1884806.5178571427,
+            2269613.0357142854
+          ],
+          "freqs_mhz": [
+            1.5,
+            1.8848065178571427,
+            2.2696130357142854
+          ],
+          "amps": [
+            0.010713860581482784,
+            0.001626408427913297,
+            0.011424210641952358
+          ],
+          "phases_rad": [
+            -2.491182953172961,
+            1.2225134558372068,
+            2.3395814499052654
+          ],
+          "aic": -326.90234261139835,
+          "bic": -314.01499931024455,
+          "delta_rss_vs_linear": 0.0042981245853391074,
+          "r2_improvement": 0.5515997575248969,
+          "name": "undamped_shifted_carrier_plus_13C_sidebands_fc_eq_det_plus_f13C",
+          "delta_bic_vs_best": 22.73285158780118,
+          "delta_aic_vs_best": 25.95468741308963
+        },
+        {
+          "rss": 0.0033752692770676993,
+          "k": 9,
+          "fc_hz": 1898000.0,
+          "fc_mhz": 1.898,
+          "carrier_shift_hz": 398000.0,
+          "carrier_shift_mhz": 0.398,
+          "sideband_spacing_hz": 384806.5178571427,
+          "freqs_hz": [
+            1513193.4821428573,
+            1898000.0,
+            2282806.5178571427
+          ],
+          "freqs_mhz": [
+            1.5131934821428572,
+            1.898,
+            2.282806517857143
+          ],
+          "amps": [
+            0.011079347845885183,
+            0.0025147854379167717,
+            0.011204725252364833
+          ],
+          "phases_rad": [
+            -2.780392564012011,
+            1.1294391490798315,
+            2.0177362833200383
+          ],
+          "damped": false,
+          "T2star_us": null,
+          "aic": -326.1813291334097,
+          "bic": -311.6830679196117,
+          "delta_rss_vs_linear": 0.004416838182560957,
+          "r2_improvement": 0.5668348653358339,
+          "name": "undamped_free_shifted_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 25.06478297843404,
+          "delta_aic_vs_best": 26.675700891078293
+        },
+        {
+          "rss": 0.004666637528237561,
+          "k": 6,
+          "freq_hz": 1530000.0,
+          "freq_mhz": 1.53,
+          "amp": 0.040940200572344904,
+          "phase_rad": -3.1044699064937427,
+          "damped": true,
+          "T2star_us": 2.7878373880181893,
+          "aic": -320.1946726019686,
+          "bic": -310.52916512610324,
+          "delta_rss_vs_linear": 0.003125469931391096,
+          "r2_improvement": 0.40110713918979296,
+          "name": "damped_single_free_frequency",
+          "delta_bic_vs_best": 26.21868577194249,
+          "delta_aic_vs_best": 32.66235742251939
+        },
+        {
+          "rss": 0.00579978685438095,
+          "k": 4,
+          "freqs_hz": [
+            1500000.0
+          ],
+          "freqs_mhz": [
+            1.5
+          ],
+          "amps": [
+            0.010494894146894094
+          ],
+          "aic": -316.1515248877751,
+          "bic": -309.7078532371982,
+          "delta_rss_vs_linear": 0.0019923206052477067,
+          "r2_improvement": 0.25568443653658923,
+          "name": "undamped_fixed_programmed_carrier_1p5MHz",
+          "delta_bic_vs_best": 27.03999766084752,
+          "delta_aic_vs_best": 36.70550513671287
+        },
+        {
+          "rss": 0.005596274867940117,
+          "k": 5,
+          "freq_hz": 2274000.0,
+          "freq_mhz": 2.274,
+          "amp": 0.011372090966223656,
+          "phase_rad": 2.2774122019931995,
+          "damped": false,
+          "T2star_us": null,
+          "aic": -315.4731646432053,
+          "bic": -307.4185750799842,
+          "delta_rss_vs_linear": 0.0021958325916885393,
+          "r2_improvement": 0.2818021444218102,
+          "name": "undamped_single_free_frequency",
+          "delta_bic_vs_best": 29.329275818061546,
+          "delta_aic_vs_best": 37.3838653812827
+        },
+        {
+          "rss": 0.007792107459628657,
+          "k": 2,
+          "aic": -309.2257878713614,
+          "bic": -306.0039520460729,
+          "delta_rss_vs_linear": 0.0,
+          "r2_improvement": 0.0,
+          "name": "linear_baseline_only",
+          "delta_bic_vs_best": 30.7438988519728,
+          "delta_aic_vs_best": 43.63124215312661
+        },
+        {
+          "rss": 0.005661316866243864,
+          "k": 8,
+          "freqs_hz": [
+            1115193.4821428573,
+            1500000.0,
+            1884806.5178571427
+          ],
+          "freqs_mhz": [
+            1.1151934821428573,
+            1.5,
+            1.8848065178571427
+          ],
+          "amps": [
+            0.000927028664108191,
+            0.010609008041887663,
+            0.002611574639080419
+          ],
+          "aic": -309.04561658991537,
+          "bic": -296.15827328876156,
+          "delta_rss_vs_linear": 0.0021307905933847923,
+          "r2_improvement": 0.2734549804946271,
+          "name": "undamped_fixed_original_carrier_plus_13C_sidebands",
+          "delta_bic_vs_best": 40.58957760928416,
+          "delta_aic_vs_best": 43.811413434572614
+        }
+      ],
+      "summary": {
+        "best_model_name": "damped_free_shifted_carrier_plus_13C_sidebands_common_T2",
+        "exact_shift_delta_bic_vs_best": 22.73285158780118,
+        "exact_shift_r2_improvement": 0.5515997575248969,
+        "exact_shift_freqs_mhz": [
+          1.5,
+          1.8848065178571427,
+          2.2696130357142854
+        ],
+        "exact_shift_amps": [
+          0.010713860581482784,
+          0.001626408427913297,
+          0.011424210641952358
+        ],
+        "free_shifted_triplet_fc_mhz": 1.898,
+        "free_shifted_triplet_delta_bic_vs_best": 25.06478297843404,
+        "single_free_delta_bic_vs_best": 26.21868577194249,
+        "original_fixed_triplet_delta_bic_vs_best": 40.58957760928416
+      }
+    }
+  },
+  "bootstrap_replicates": 160,
+  "bootstrap_rows_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_refreshed_center_shifted_sideband_bootstrap_rows_20260514_1308.jsonl",
+  "bootstrap_summary": {
+    "ratio_full_free_shift_fc_mhz": {
+      "median": 1.89,
+      "q16": 1.884,
+      "q84": 1.89712,
+      "q05": 1.882,
+      "q95": 1.9001,
+      "min": 1.832,
+      "max": 1.906
+    },
+    "ratio_full_exact_shift_delta_bic_vs_best": {
+      "median": 0.0,
+      "q16": 0.0,
+      "q84": 1.442820291161834,
+      "q05": 0.0,
+      "q95": 3.0409305787571417,
+      "min": 0.0,
+      "max": 4.990198442273368
+    },
+    "ratio_full_exact_shift_r2": {
+      "median": 0.5708827121425311,
+      "q16": 0.5117733030613495,
+      "q84": 0.6151499954919701,
+      "q05": 0.4414773201503086,
+      "q95": 0.6566249758237271,
+      "min": 0.37299396509738936,
+      "max": 0.6881974863327527
+    },
+    "ratio_full_fraction_best_is_exact_shift": 0.675,
+    "ratio_full_fraction_best_is_any_shifted_triplet": 0.7,
+    "ratio_full_free_shift_fc_histogram_0p05MHz_bins": {
+      "edges_mhz": [
+        1.1,
+        1.1500000000000001,
+        1.2000000000000002,
+        1.2500000000000002,
+        1.3000000000000003,
+        1.3500000000000003,
+        1.4000000000000004,
+        1.4500000000000004,
+        1.5000000000000004,
+        1.5500000000000005,
+        1.6000000000000005,
+        1.6500000000000006,
+        1.7000000000000006,
+        1.7500000000000007,
+        1.8000000000000007,
+        1.8500000000000008,
+        1.9000000000000008,
+        1.9500000000000008,
+        2.000000000000001,
+        2.0500000000000007,
+        2.100000000000001
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        151,
+        8,
+        0,
+        0,
+        0
+      ]
+    },
+    "signal_over_refline_full_free_shift_fc_mhz": {
+      "median": 1.892,
+      "q16": 1.886,
+      "q84": 1.896,
+      "q05": 1.882,
+      "q95": 1.898,
+      "min": 1.88,
+      "max": 1.902
+    },
+    "signal_over_refline_full_exact_shift_delta_bic_vs_best": {
+      "median": 2.3646692494260435,
+      "q16": 1.0260131078495942,
+      "q84": 3.478707679241029,
+      "q05": 0.0,
+      "q95": 4.075616905430212,
+      "min": 0.0,
+      "max": 6.103179759589125
+    },
+    "signal_over_refline_full_exact_shift_r2": {
+      "median": 0.5145815146174811,
+      "q16": 0.4638677272187533,
+      "q84": 0.5569990004885356,
+      "q05": 0.42482705349556654,
+      "q95": 0.580805417171005,
+      "min": 0.38298618310102606,
+      "max": 0.6161800381916668
+    },
+    "signal_over_refline_full_fraction_best_is_exact_shift": 0.0625,
+    "signal_over_refline_full_fraction_best_is_any_shifted_triplet": 0.0625,
+    "signal_over_refline_full_free_shift_fc_histogram_0p05MHz_bins": {
+      "edges_mhz": [
+        1.1,
+        1.1500000000000001,
+        1.2000000000000002,
+        1.2500000000000002,
+        1.3000000000000003,
+        1.3500000000000003,
+        1.4000000000000004,
+        1.4500000000000004,
+        1.5000000000000004,
+        1.5500000000000005,
+        1.6000000000000005,
+        1.6500000000000006,
+        1.7000000000000006,
+        1.7500000000000007,
+        1.8000000000000007,
+        1.8500000000000008,
+        1.9000000000000008,
+        1.9500000000000008,
+        2.000000000000001,
+        2.0500000000000007,
+        2.100000000000001
+      ],
+      "counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        158,
+        2,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "synthesis": {
+    "changed_interpretation": false,
+    "T2star_conclusion": "No claim-grade numeric T2star; shifted-sideband reanalysis does not make the carrier/decay model unique enough to quote T2star.",
+    "nearby_13C_conclusion": "No supported nearby-13C claim; shifted-sideband model was checked but is not competitive/robust enough to revise the negative conclusion.",
+    "basis": {
+      "programmed_carrier_mhz": 1.5,
+      "f13c_mhz": 0.3848065178571427,
+      "shifted_carrier_det_plus_f13c_mhz": 1.8848065178571427,
+      "shifted_triplet_freqs_mhz": [
+        1.5,
+        1.8848065178571427,
+        2.2696130357142854
+      ],
+      "ratio_exact_shift_delta_bic_vs_best": 21.072092163875368,
+      "ratio_exact_shift_r2": 0.6455299339706478,
+      "ratio_exact_shift_amps": [
+        0.01486417816050326,
+        0.00847264152926419,
+        0.01762622409047047
+      ],
+      "signal_over_refline_exact_shift_delta_bic_vs_best": 46.50890417989234,
+      "signal_over_refline_exact_shift_r2": 0.5753493688409448,
+      "signal_over_refline_exact_shift_amps": [
+        0.013686295221728637,
+        0.004188195386424573,
+        0.016076308356878934
+      ],
+      "raw_signal_exact_shift_delta_bic_vs_best": 46.45101676025268,
+      "raw_signal_exact_shift_r2": 0.575538550241679,
+      "raw_signal_exact_shift_amps_kcps": [
+        0.6673929019214881,
+        0.20411838947035285,
+        0.7839157547815949
+      ],
+      "median_signal_sem_kcps": 0.8495968780458767,
+      "bootstrap_summary": {
+        "ratio_full_free_shift_fc_mhz": {
+          "median": 1.89,
+          "q16": 1.884,
+          "q84": 1.89712,
+          "q05": 1.882,
+          "q95": 1.9001,
+          "min": 1.832,
+          "max": 1.906
+        },
+        "ratio_full_exact_shift_delta_bic_vs_best": {
+          "median": 0.0,
+          "q16": 0.0,
+          "q84": 1.442820291161834,
+          "q05": 0.0,
+          "q95": 3.0409305787571417,
+          "min": 0.0,
+          "max": 4.990198442273368
+        },
+        "ratio_full_exact_shift_r2": {
+          "median": 0.5708827121425311,
+          "q16": 0.5117733030613495,
+          "q84": 0.6151499954919701,
+          "q05": 0.4414773201503086,
+          "q95": 0.6566249758237271,
+          "min": 0.37299396509738936,
+          "max": 0.6881974863327527
+        },
+        "ratio_full_fraction_best_is_exact_shift": 0.675,
+        "ratio_full_fraction_best_is_any_shifted_triplet": 0.7,
+        "ratio_full_free_shift_fc_histogram_0p05MHz_bins": {
+          "edges_mhz": [
+            1.1,
+            1.1500000000000001,
+            1.2000000000000002,
+            1.2500000000000002,
+            1.3000000000000003,
+            1.3500000000000003,
+            1.4000000000000004,
+            1.4500000000000004,
+            1.5000000000000004,
+            1.5500000000000005,
+            1.6000000000000005,
+            1.6500000000000006,
+            1.7000000000000006,
+            1.7500000000000007,
+            1.8000000000000007,
+            1.8500000000000008,
+            1.9000000000000008,
+            1.9500000000000008,
+            2.000000000000001,
+            2.0500000000000007,
+            2.100000000000001
+          ],
+          "counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            151,
+            8,
+            0,
+            0,
+            0
+          ]
+        },
+        "signal_over_refline_full_free_shift_fc_mhz": {
+          "median": 1.892,
+          "q16": 1.886,
+          "q84": 1.896,
+          "q05": 1.882,
+          "q95": 1.898,
+          "min": 1.88,
+          "max": 1.902
+        },
+        "signal_over_refline_full_exact_shift_delta_bic_vs_best": {
+          "median": 2.3646692494260435,
+          "q16": 1.0260131078495942,
+          "q84": 3.478707679241029,
+          "q05": 0.0,
+          "q95": 4.075616905430212,
+          "min": 0.0,
+          "max": 6.103179759589125
+        },
+        "signal_over_refline_full_exact_shift_r2": {
+          "median": 0.5145815146174811,
+          "q16": 0.4638677272187533,
+          "q84": 0.5569990004885356,
+          "q05": 0.42482705349556654,
+          "q95": 0.580805417171005,
+          "min": 0.38298618310102606,
+          "max": 0.6161800381916668
+        },
+        "signal_over_refline_full_fraction_best_is_exact_shift": 0.0625,
+        "signal_over_refline_full_fraction_best_is_any_shifted_triplet": 0.0625,
+        "signal_over_refline_full_free_shift_fc_histogram_0p05MHz_bins": {
+          "edges_mhz": [
+            1.1,
+            1.1500000000000001,
+            1.2000000000000002,
+            1.2500000000000002,
+            1.3000000000000003,
+            1.3500000000000003,
+            1.4000000000000004,
+            1.4500000000000004,
+            1.5000000000000004,
+            1.5500000000000005,
+            1.6000000000000005,
+            1.6500000000000006,
+            1.7000000000000006,
+            1.7500000000000007,
+            1.8000000000000007,
+            1.8500000000000008,
+            1.9000000000000008,
+            1.9500000000000008,
+            2.000000000000001,
+            2.0500000000000007,
+            2.100000000000001
+          ],
+          "counts": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            158,
+            2,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "advice_respected": "Bridge-free only; no bridge queue mutation or measurement submission. Stored-average disagreement was used only as uncertainty/provenance, not as the sole rejection criterion.",
+    "closeout_action": "Keep closeout report interpretation, optionally append the shifted-sideband check."
+  },
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_shifted_sideband_reanalysis_20260514_1308.png"
+}

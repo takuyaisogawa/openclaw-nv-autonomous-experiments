@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T12:46:00-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report summarizing idle bridge state, completed r03 closeout, terminal refreshed-center Ramsey evidence/caveats, new bridge-free inbox advice for shifted-carrier/sideband reanalysis, and the expected next step.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_124551.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_terminal_model_comparison_20260514_0948.png",
+      "caption": "現closeout判断のmodel comparison図（shifted-carrier再解析前の比較対象）",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

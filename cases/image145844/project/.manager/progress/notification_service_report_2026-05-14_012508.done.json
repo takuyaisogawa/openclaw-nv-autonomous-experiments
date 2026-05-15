@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T02:05:28-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report: short-tau det=1.0 MHz Ramsey completed safely but remains non-claim-grade for T2star/13C; targeted det=1.5 MHz short-tau Ramsey diagnostic is now running healthy at initial 1/12 status; no explicit bridge-free task is pending, with opportunity-review expected to derive science-objective work if needed.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_012508.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_terminal_review_20260514_0127.png",
+      "caption": "short-tau Ramsey terminal review: non-claim-grade 1.192 MHz component and no supported T2star/13C yet",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

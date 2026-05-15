@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "evidence_id": "image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107",
+  "category": "analysis",
+  "summary": "Updated in-progress autosave review for the running short-tau/high-SNR r03 Ramsey diagnostic after the MAT reached 10 stored averages. The 10-average raw export has 900000 shots per tau point; the job remained healthy with monitor last_error empty and stop_requested=false. A later status snapshot had advanced to 11/12 averages with final-count text 35.122 kcps, still no monitor error or stop request. The early-time signal/ratio transient persists with median signal SEM about 1.06 kcps, and the exploratory ratio LS component remains near 1.187 MHz; this is nonterminal context only and no T2star/13C claim is supported before terminal raw export plus scan-order-aware drift.",
+  "paths": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_raw_export_20260514_0107.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_record_20260514_0107.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_record_20260514_0117.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.png",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0107_shorttau_ramsey_10avg_autosave_refresh.md"
+  ],
+  "related_claims": []
+}

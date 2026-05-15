@@ -1,0 +1,1251 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "created_at": "2026-05-12T08:32:48.974160+00:00",
+  "input_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_raw_export.json",
+  "savedexperiment": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-032449.mat",
+  "bridge_job": {
+    "job_id": "nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute",
+    "queue_dir_state_at_review": "running",
+    "status_state_at_review": "running",
+    "phase_at_review": "run_experiment_scan_point",
+    "updated_at_status": "2026-05-12T04:32:43",
+    "elapsed_seconds": 4250,
+    "runtime_final_counts_text": "Final = 26.727 kcps",
+    "experiment_status_text": "(4/6) averages completed for 1 scans",
+    "stop_requested": false,
+    "monitor_last_error": ""
+  },
+  "scan": {
+    "sequence_name": "ramsey.xml",
+    "date_time": "2026-05-12-032449",
+    "vary_prop": [
+      "tau"
+    ],
+    "begin_s": 0.0,
+    "end_s": 8e-06,
+    "points": 51,
+    "step_s": 1.6e-07,
+    "rfft_bin_spacing_hz_from_samples": 122549.01960784315,
+    "rfft_nyquist_hz_last_bin": 3063725.4901960786,
+    "averages_in_export": 4,
+    "planned_averages": 6,
+    "repetitions": 100000,
+    "scan_order_mode": "snake",
+    "data_saved_in_tau_order": true
+  },
+  "readout_roles_assumed_from_bridge_job": {
+    "readout_1": "mS=0 reference before Ramsey",
+    "readout_2": "post-Ramsey signal",
+    "source": "full_experiment=0 path has readout 1 mS=0 reference before Ramsey and readout 2 post-Ramsey signal."
+  },
+  "expected_frequency_context": {
+    "programmed_det_hz": 2000000.0,
+    "expected_13c_larmor_hz_approx": 384385.4003093041,
+    "expected_features_hz": {
+      "carrier": 2000000.0,
+      "lower_13c_sideband": 1615614.5996906958,
+      "upper_13c_sideband": 2384385.4003093042
+    }
+  },
+  "raw_readout_summary": {
+    "readout1_min": 29.08653846153846,
+    "readout1_max": 31.73076923076923,
+    "readout1_mean": 30.67571644042232,
+    "readout2_min": 22.03846153846154,
+    "readout2_max": 29.875000000000004,
+    "readout2_mean": 26.798831070889893,
+    "readout1_linear_slope_per_us": 0.04908849634528009,
+    "point_norm_min": 0.7095975232198143,
+    "point_norm_max": 0.9939199999999999,
+    "fit_norm_min": 0.723061762560471,
+    "fit_norm_max": 0.9796665245190062,
+    "fit_norm_mean": 0.8736031325060065,
+    "fit_norm_std": 0.053673007743783425,
+    "fit_norm_peak_to_peak": 0.2566047619585351,
+    "fit_norm_top_non_dc_peaks": [
+      {
+        "bin": 14,
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 0.5835769692750014
+      },
+      {
+        "bin": 15,
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 0.5699988813178605
+      },
+      {
+        "bin": 16,
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 0.2337887563539938
+      },
+      {
+        "bin": 12,
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 0.21142869987303173
+      },
+      {
+        "bin": 24,
+        "frequency_hz": 2941176.4705882357,
+        "amplitude_arb": 0.20824779006480684
+      },
+      {
+        "bin": 13,
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 0.18576302033166087
+      },
+      {
+        "bin": 2,
+        "frequency_hz": 245098.0392156863,
+        "amplitude_arb": 0.1741625896320271
+      },
+      {
+        "bin": 11,
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 0.17323410090222277
+      },
+      {
+        "bin": 25,
+        "frequency_hz": 3063725.4901960786,
+        "amplitude_arb": 0.17315678287712388
+      },
+      {
+        "bin": 1,
+        "frequency_hz": 122549.01960784315,
+        "amplitude_arb": 0.16388908000608268
+      },
+      {
+        "bin": 7,
+        "frequency_hz": 857843.137254902,
+        "amplitude_arb": 0.14208544106695695
+      },
+      {
+        "bin": 10,
+        "frequency_hz": 1225490.1960784316,
+        "amplitude_arb": 0.13667031816087669
+      }
+    ],
+    "fit_norm_expected_feature_bins": {
+      "carrier": {
+        "target_hz": 2000000.0,
+        "nearest_bin_hz": 1960784.3137254904,
+        "bin": 16,
+        "amplitude_arb": 0.2337887563539938,
+        "rank_among_non_dc_bins": 3
+      },
+      "lower_13c_sideband": {
+        "target_hz": 1615614.5996906958,
+        "nearest_bin_hz": 1593137.254901961,
+        "bin": 13,
+        "amplitude_arb": 0.18576302033166087,
+        "rank_among_non_dc_bins": 6
+      },
+      "upper_13c_sideband": {
+        "target_hz": 2384385.4003093042,
+        "nearest_bin_hz": 2328431.3725490198,
+        "bin": 19,
+        "amplitude_arb": 0.08236072682323747,
+        "rank_among_non_dc_bins": 20
+      }
+    },
+    "raw_readout2_top_non_dc_peaks": [
+      {
+        "bin": 14,
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 17.87882458820057
+      },
+      {
+        "bin": 15,
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 17.46448888547933
+      },
+      {
+        "bin": 16,
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 7.168900480730872
+      },
+      {
+        "bin": 12,
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 6.480679108481214
+      },
+      {
+        "bin": 24,
+        "frequency_hz": 2941176.4705882357,
+        "amplitude_arb": 6.392239988706277
+      },
+      {
+        "bin": 13,
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 5.670782197538547
+      },
+      {
+        "bin": 2,
+        "frequency_hz": 245098.0392156863,
+        "amplitude_arb": 5.338907055420307
+      },
+      {
+        "bin": 25,
+        "frequency_hz": 3063725.4901960786,
+        "amplitude_arb": 5.32216734728868
+      },
+      {
+        "bin": 11,
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 5.316312246498332
+      },
+      {
+        "bin": 1,
+        "frequency_hz": 122549.01960784315,
+        "amplitude_arb": 5.016706516498483
+      },
+      {
+        "bin": 7,
+        "frequency_hz": 857843.137254902,
+        "amplitude_arb": 4.357162292601554
+      },
+      {
+        "bin": 10,
+        "frequency_hz": 1225490.1960784316,
+        "amplitude_arb": 4.193933513767026
+      }
+    ],
+    "raw_readout2_expected_feature_bins": {
+      "carrier": {
+        "target_hz": 2000000.0,
+        "nearest_bin_hz": 1960784.3137254904,
+        "bin": 16,
+        "amplitude_arb": 7.168900480730872,
+        "rank_among_non_dc_bins": 3
+      },
+      "lower_13c_sideband": {
+        "target_hz": 1615614.5996906958,
+        "nearest_bin_hz": 1593137.254901961,
+        "bin": 13,
+        "amplitude_arb": 5.670782197538547,
+        "rank_among_non_dc_bins": 6
+      },
+      "upper_13c_sideband": {
+        "target_hz": 2384385.4003093042,
+        "nearest_bin_hz": 2328431.3725490198,
+        "bin": 19,
+        "amplitude_arb": 2.521463326396717,
+        "rank_among_non_dc_bins": 20
+      }
+    }
+  },
+  "fft": {
+    "method": "linear-detrended fitted-reference-normalized readout2/readout1_line, Hann window; amplitudes are arbitrary and for bin comparison only",
+    "top_non_dc_peaks": [
+      {
+        "bin": 14,
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 0.5835769692750014
+      },
+      {
+        "bin": 15,
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 0.5699988813178605
+      },
+      {
+        "bin": 16,
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 0.2337887563539938
+      },
+      {
+        "bin": 12,
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 0.21142869987303173
+      },
+      {
+        "bin": 24,
+        "frequency_hz": 2941176.4705882357,
+        "amplitude_arb": 0.20824779006480684
+      },
+      {
+        "bin": 13,
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 0.18576302033166087
+      },
+      {
+        "bin": 2,
+        "frequency_hz": 245098.0392156863,
+        "amplitude_arb": 0.1741625896320271
+      },
+      {
+        "bin": 11,
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 0.17323410090222277
+      },
+      {
+        "bin": 25,
+        "frequency_hz": 3063725.4901960786,
+        "amplitude_arb": 0.17315678287712388
+      },
+      {
+        "bin": 1,
+        "frequency_hz": 122549.01960784315,
+        "amplitude_arb": 0.16388908000608268
+      },
+      {
+        "bin": 7,
+        "frequency_hz": 857843.137254902,
+        "amplitude_arb": 0.14208544106695695
+      },
+      {
+        "bin": 10,
+        "frequency_hz": 1225490.1960784316,
+        "amplitude_arb": 0.13667031816087669
+      }
+    ],
+    "expected_feature_bins": {
+      "carrier": {
+        "target_hz": 2000000.0,
+        "nearest_bin_hz": 1960784.3137254904,
+        "bin": 16,
+        "amplitude_arb": 0.2337887563539938,
+        "rank_among_non_dc_bins": 3
+      },
+      "lower_13c_sideband": {
+        "target_hz": 1615614.5996906958,
+        "nearest_bin_hz": 1593137.254901961,
+        "bin": 13,
+        "amplitude_arb": 0.18576302033166087,
+        "rank_among_non_dc_bins": 6
+      },
+      "upper_13c_sideband": {
+        "target_hz": 2384385.4003093042,
+        "nearest_bin_hz": 2328431.3725490198,
+        "bin": 19,
+        "amplitude_arb": 0.08236072682323747,
+        "rank_among_non_dc_bins": 20
+      }
+    },
+    "raw_readout2_top_non_dc_peaks": [
+      {
+        "bin": 14,
+        "frequency_hz": 1715686.274509804,
+        "amplitude_arb": 17.87882458820057
+      },
+      {
+        "bin": 15,
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 17.46448888547933
+      },
+      {
+        "bin": 16,
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 7.168900480730872
+      },
+      {
+        "bin": 12,
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 6.480679108481214
+      },
+      {
+        "bin": 24,
+        "frequency_hz": 2941176.4705882357,
+        "amplitude_arb": 6.392239988706277
+      },
+      {
+        "bin": 13,
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 5.670782197538547
+      },
+      {
+        "bin": 2,
+        "frequency_hz": 245098.0392156863,
+        "amplitude_arb": 5.338907055420307
+      },
+      {
+        "bin": 25,
+        "frequency_hz": 3063725.4901960786,
+        "amplitude_arb": 5.32216734728868
+      },
+      {
+        "bin": 11,
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 5.316312246498332
+      },
+      {
+        "bin": 1,
+        "frequency_hz": 122549.01960784315,
+        "amplitude_arb": 5.016706516498483
+      },
+      {
+        "bin": 7,
+        "frequency_hz": 857843.137254902,
+        "amplitude_arb": 4.357162292601554
+      },
+      {
+        "bin": 10,
+        "frequency_hz": 1225490.1960784316,
+        "amplitude_arb": 4.193933513767026
+      }
+    ],
+    "raw_readout1_top_non_dc_peaks": [
+      {
+        "bin": 12,
+        "frequency_hz": 1470588.2352941178,
+        "amplitude_arb": 4.185566517704269
+      },
+      {
+        "bin": 15,
+        "frequency_hz": 1838235.2941176472,
+        "amplitude_arb": 3.264292600240394
+      },
+      {
+        "bin": 16,
+        "frequency_hz": 1960784.3137254904,
+        "amplitude_arb": 3.0951653169594717
+      },
+      {
+        "bin": 9,
+        "frequency_hz": 1102941.1764705884,
+        "amplitude_arb": 2.7934465850157357
+      },
+      {
+        "bin": 24,
+        "frequency_hz": 2941176.4705882357,
+        "amplitude_arb": 2.7764350359389245
+      },
+      {
+        "bin": 13,
+        "frequency_hz": 1593137.254901961,
+        "amplitude_arb": 2.7708315364750473
+      },
+      {
+        "bin": 18,
+        "frequency_hz": 2205882.352941177,
+        "amplitude_arb": 2.629352710187003
+      },
+      {
+        "bin": 19,
+        "frequency_hz": 2328431.3725490198,
+        "amplitude_arb": 2.570788734625508
+      },
+      {
+        "bin": 11,
+        "frequency_hz": 1348039.2156862747,
+        "amplitude_arb": 2.480622907524297
+      },
+      {
+        "bin": 10,
+        "frequency_hz": 1225490.1960784316,
+        "amplitude_arb": 2.332295439881169
+      },
+      {
+        "bin": 8,
+        "frequency_hz": 980392.1568627452,
+        "amplitude_arb": 2.312915857294893
+      },
+      {
+        "bin": 23,
+        "frequency_hz": 2818627.4509803923,
+        "amplitude_arb": 2.1011437030319335
+      }
+    ]
+  },
+  "per_average": [
+    {
+      "readout1_min": 26.576923076923077,
+      "readout1_max": 32.0,
+      "readout1_mean": 29.61613876319759,
+      "readout2_min": 19.730769230769234,
+      "readout2_max": 29.5,
+      "readout2_mean": 25.789592760180994,
+      "readout1_linear_slope_per_us": 0.18125652627914662,
+      "point_norm_min": 0.6500607533414338,
+      "point_norm_max": 1.0130057803468209,
+      "fit_norm_min": 0.675477075457676,
+      "fit_norm_max": 1.0009794824411629,
+      "fit_norm_mean": 0.870471822698691,
+      "fit_norm_std": 0.07204708624697338,
+      "fit_norm_peak_to_peak": 0.32550240698348687,
+      "fit_norm_top_non_dc_peaks": [
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 0.7178708338750708
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 0.6736481700919288
+        },
+        {
+          "bin": 4,
+          "frequency_hz": 490196.0784313726,
+          "amplitude_arb": 0.3807631035127181
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 0.3737976631165758
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 0.340832628485547
+        },
+        {
+          "bin": 5,
+          "frequency_hz": 612745.0980392158,
+          "amplitude_arb": 0.3341179792861209
+        },
+        {
+          "bin": 3,
+          "frequency_hz": 367647.05882352946,
+          "amplitude_arb": 0.3295629665135976
+        },
+        {
+          "bin": 25,
+          "frequency_hz": 3063725.4901960786,
+          "amplitude_arb": 0.3090041607290336
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 0.29549218060918975
+        },
+        {
+          "bin": 6,
+          "frequency_hz": 735294.1176470589,
+          "amplitude_arb": 0.27946741935508096
+        },
+        {
+          "bin": 20,
+          "frequency_hz": 2450980.392156863,
+          "amplitude_arb": 0.24456801934703137
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 0.20992132996069804
+        }
+      ],
+      "fit_norm_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 0.340832628485547,
+          "rank_among_non_dc_bins": 5
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 0.12508818489053955,
+          "rank_among_non_dc_bins": 21
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 0.20046043895661214,
+          "rank_among_non_dc_bins": 14
+        }
+      },
+      "raw_readout2_top_non_dc_peaks": [
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 21.21455168207679
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 19.9034219196844
+        },
+        {
+          "bin": 4,
+          "frequency_hz": 490196.0784313726,
+          "amplitude_arb": 11.284807841574496
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 10.967170395737849
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 10.11739050070017
+        },
+        {
+          "bin": 5,
+          "frequency_hz": 612745.0980392158,
+          "amplitude_arb": 9.909061378051026
+        },
+        {
+          "bin": 3,
+          "frequency_hz": 367647.05882352946,
+          "amplitude_arb": 9.68881388103393
+        },
+        {
+          "bin": 25,
+          "frequency_hz": 3063725.4901960786,
+          "amplitude_arb": 9.158743812285438
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 8.619554944166753
+        },
+        {
+          "bin": 6,
+          "frequency_hz": 735294.1176470589,
+          "amplitude_arb": 8.260499694008402
+        },
+        {
+          "bin": 20,
+          "frequency_hz": 2450980.392156863,
+          "amplitude_arb": 7.236004752955322
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 6.197249212668574
+        }
+      ],
+      "raw_readout2_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 10.11739050070017,
+          "rank_among_non_dc_bins": 5
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 3.7685371372021628,
+          "rank_among_non_dc_bins": 21
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 5.91214344901784,
+          "rank_among_non_dc_bins": 14
+        }
+      },
+      "avg_index_1based": 1
+    },
+    {
+      "readout1_min": 30.153846153846153,
+      "readout1_max": 36.5,
+      "readout1_mean": 33.02564102564102,
+      "readout2_min": 24.423076923076923,
+      "readout2_max": 34.07692307692307,
+      "readout2_mean": 28.87933634992459,
+      "readout1_linear_slope_per_us": 0.12630525583013955,
+      "point_norm_min": 0.7204899777282852,
+      "point_norm_max": 1.0326340326340324,
+      "fit_norm_min": 0.7510074261443804,
+      "fit_norm_max": 1.042034460091551,
+      "fit_norm_mean": 0.87448082038705,
+      "fit_norm_std": 0.06727009254772465,
+      "fit_norm_peak_to_peak": 0.29102703394717055,
+      "fit_norm_top_non_dc_peaks": [
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 0.8426788054806701
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 0.7864405318354604
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 0.4334379466586044
+        },
+        {
+          "bin": 24,
+          "frequency_hz": 2941176.4705882357,
+          "amplitude_arb": 0.36657528722524746
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 0.30820250289350204
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 0.26949830528867896
+        },
+        {
+          "bin": 22,
+          "frequency_hz": 2696078.4313725494,
+          "amplitude_arb": 0.24211512686304484
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 0.24052013777294617
+        },
+        {
+          "bin": 25,
+          "frequency_hz": 3063725.4901960786,
+          "amplitude_arb": 0.20504563914791474
+        },
+        {
+          "bin": 12,
+          "frequency_hz": 1470588.2352941178,
+          "amplitude_arb": 0.20462014225809316
+        },
+        {
+          "bin": 21,
+          "frequency_hz": 2573529.411764706,
+          "amplitude_arb": 0.20194000741564344
+        },
+        {
+          "bin": 17,
+          "frequency_hz": 2083333.3333333335,
+          "amplitude_arb": 0.19331624212036647
+        }
+      ],
+      "fit_norm_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 0.4334379466586044,
+          "rank_among_non_dc_bins": 3
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 0.30820250289350204,
+          "rank_among_non_dc_bins": 5
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 0.11898453618447319,
+          "rank_among_non_dc_bins": 16
+        }
+      },
+      "raw_readout2_top_non_dc_peaks": [
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 27.762676771390158
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 25.896990193215192
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 14.293974012794491
+        },
+        {
+          "bin": 24,
+          "frequency_hz": 2941176.4705882357,
+          "amplitude_arb": 12.114318428112707
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 10.095932147999289
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 8.87279301350804
+        },
+        {
+          "bin": 22,
+          "frequency_hz": 2696078.4313725494,
+          "amplitude_arb": 8.016393030940232
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 7.9092881819225145
+        },
+        {
+          "bin": 25,
+          "frequency_hz": 3063725.4901960786,
+          "amplitude_arb": 6.794853665968318
+        },
+        {
+          "bin": 12,
+          "frequency_hz": 1470588.2352941178,
+          "amplitude_arb": 6.734707987198296
+        },
+        {
+          "bin": 21,
+          "frequency_hz": 2573529.411764706,
+          "amplitude_arb": 6.696788982519372
+        },
+        {
+          "bin": 17,
+          "frequency_hz": 2083333.3333333335,
+          "amplitude_arb": 6.4109594086266934
+        }
+      ],
+      "raw_readout2_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 14.293974012794491,
+          "rank_among_non_dc_bins": 3
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 10.095932147999289,
+          "rank_among_non_dc_bins": 5
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 3.9432078927097245,
+          "rank_among_non_dc_bins": 16
+        }
+      },
+      "avg_index_1based": 2
+    },
+    {
+      "readout1_min": 27.923076923076923,
+      "readout1_max": 33.07692307692307,
+      "readout1_mean": 30.61990950226244,
+      "readout2_min": 21.576923076923077,
+      "readout2_max": 30.26923076923077,
+      "readout2_mean": 26.934389140271495,
+      "readout1_linear_slope_per_us": 0.27192829794639334,
+      "point_norm_min": 0.7238709677419354,
+      "point_norm_max": 1.008974358974359,
+      "fit_norm_min": 0.7306237182660346,
+      "fit_norm_max": 0.9886292978375513,
+      "fit_norm_mean": 0.8795532531415579,
+      "fit_norm_std": 0.057748685918287794,
+      "fit_norm_peak_to_peak": 0.2580055795715167,
+      "fit_norm_top_non_dc_peaks": [
+        {
+          "bin": 12,
+          "frequency_hz": 1470588.2352941178,
+          "amplitude_arb": 0.4875871364049812
+        },
+        {
+          "bin": 11,
+          "frequency_hz": 1348039.2156862747,
+          "amplitude_arb": 0.4101731651580895
+        },
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 0.3817820228848281
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 0.37691384495960994
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 0.36870908876237624
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 0.35435794963483586
+        },
+        {
+          "bin": 10,
+          "frequency_hz": 1225490.1960784316,
+          "amplitude_arb": 0.34085969409749656
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 0.26637484606283324
+        },
+        {
+          "bin": 9,
+          "frequency_hz": 1102941.1764705884,
+          "amplitude_arb": 0.26040637470636974
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 0.23078185812985852
+        },
+        {
+          "bin": 5,
+          "frequency_hz": 612745.0980392158,
+          "amplitude_arb": 0.22960656913147345
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 0.2004989275158827
+        }
+      ],
+      "fit_norm_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 0.23078185812985852,
+          "rank_among_non_dc_bins": 10
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 0.2004989275158827,
+          "rank_among_non_dc_bins": 12
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 0.0396832402696198,
+          "rank_among_non_dc_bins": 25
+        }
+      },
+      "raw_readout2_top_non_dc_peaks": [
+        {
+          "bin": 12,
+          "frequency_hz": 1470588.2352941178,
+          "amplitude_arb": 14.883330021922724
+        },
+        {
+          "bin": 11,
+          "frequency_hz": 1348039.2156862747,
+          "amplitude_arb": 12.519827546016211
+        },
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 11.56190513192433
+        },
+        {
+          "bin": 2,
+          "frequency_hz": 245098.0392156863,
+          "amplitude_arb": 11.512621684205262
+        },
+        {
+          "bin": 1,
+          "frequency_hz": 122549.01960784315,
+          "amplitude_arb": 11.228614776363631
+        },
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 10.752453869147429
+        },
+        {
+          "bin": 10,
+          "frequency_hz": 1225490.1960784316,
+          "amplitude_arb": 10.466700598607936
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 8.2219757561489
+        },
+        {
+          "bin": 9,
+          "frequency_hz": 1102941.1764705884,
+          "amplitude_arb": 8.07738188498138
+        },
+        {
+          "bin": 5,
+          "frequency_hz": 612745.0980392158,
+          "amplitude_arb": 7.074918329933245
+        },
+        {
+          "bin": 16,
+          "frequency_hz": 1960784.3137254904,
+          "amplitude_arb": 7.019234253178852
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 6.010478064723573
+        }
+      ],
+      "raw_readout2_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 7.019234253178852,
+          "rank_among_non_dc_bins": 11
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 6.010478064723573,
+          "rank_among_non_dc_bins": 12
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 1.1846900494268262,
+          "rank_among_non_dc_bins": 25
+        }
+      },
+      "avg_index_1based": 3
+    },
+    {
+      "readout1_min": 25.846153846153847,
+      "readout1_max": 32.11538461538461,
+      "readout1_mean": 29.441176470588236,
+      "readout2_min": 21.576923076923077,
+      "readout2_max": 31.5,
+      "readout2_mean": 25.59200603318251,
+      "readout1_linear_slope_per_us": -0.3831360946745582,
+      "point_norm_min": 0.7012499999999999,
+      "point_norm_max": 1.0623268698060941,
+      "fit_norm_min": 0.6966203118415507,
+      "fit_norm_max": 1.035434716796171,
+      "fit_norm_mean": 0.8690179910974699,
+      "fit_norm_std": 0.07222547665894734,
+      "fit_norm_peak_to_peak": 0.33881440495462034,
+      "fit_norm_top_non_dc_peaks": [
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 0.6881842118914429
+        },
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 0.4415975981583708
+        },
+        {
+          "bin": 7,
+          "frequency_hz": 857843.137254902,
+          "amplitude_arb": 0.4080405544950764
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 0.37136872497771944
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 0.35695580966972545
+        },
+        {
+          "bin": 11,
+          "frequency_hz": 1348039.2156862747,
+          "amplitude_arb": 0.3115763499201886
+        },
+        {
+          "bin": 19,
+          "frequency_hz": 2328431.3725490198,
+          "amplitude_arb": 0.3100982087855951
+        },
+        {
+          "bin": 6,
+          "frequency_hz": 735294.1176470589,
+          "amplitude_arb": 0.30206498599083564
+        },
+        {
+          "bin": 24,
+          "frequency_hz": 2941176.4705882357,
+          "amplitude_arb": 0.29311689911294525
+        },
+        {
+          "bin": 10,
+          "frequency_hz": 1225490.1960784316,
+          "amplitude_arb": 0.2622847862475181
+        },
+        {
+          "bin": 18,
+          "frequency_hz": 2205882.352941177,
+          "amplitude_arb": 0.2603640495520627
+        },
+        {
+          "bin": 9,
+          "frequency_hz": 1102941.1764705884,
+          "amplitude_arb": 0.25145577436081756
+        }
+      ],
+      "fit_norm_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 0.09613209376378089,
+          "rank_among_non_dc_bins": 21
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 0.35695580966972545,
+          "rank_among_non_dc_bins": 5
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 0.3100982087855951,
+          "rank_among_non_dc_bins": 7
+        }
+      },
+      "raw_readout2_top_non_dc_peaks": [
+        {
+          "bin": 14,
+          "frequency_hz": 1715686.274509804,
+          "amplitude_arb": 20.429591333984398
+        },
+        {
+          "bin": 15,
+          "frequency_hz": 1838235.2941176472,
+          "amplitude_arb": 13.136789338239216
+        },
+        {
+          "bin": 7,
+          "frequency_hz": 857843.137254902,
+          "amplitude_arb": 12.044349409265173
+        },
+        {
+          "bin": 8,
+          "frequency_hz": 980392.1568627452,
+          "amplitude_arb": 10.937870430706147
+        },
+        {
+          "bin": 13,
+          "frequency_hz": 1593137.254901961,
+          "amplitude_arb": 10.62693284354969
+        },
+        {
+          "bin": 19,
+          "frequency_hz": 2328431.3725490198,
+          "amplitude_arb": 9.153664744412302
+        },
+        {
+          "bin": 11,
+          "frequency_hz": 1348039.2156862747,
+          "amplitude_arb": 9.137268529860375
+        },
+        {
+          "bin": 6,
+          "frequency_hz": 735294.1176470589,
+          "amplitude_arb": 8.947168504798936
+        },
+        {
+          "bin": 24,
+          "frequency_hz": 2941176.4705882357,
+          "amplitude_arb": 8.596550161683567
+        },
+        {
+          "bin": 18,
+          "frequency_hz": 2205882.352941177,
+          "amplitude_arb": 7.748331447678461
+        },
+        {
+          "bin": 10,
+          "frequency_hz": 1225490.1960784316,
+          "amplitude_arb": 7.669107129621458
+        },
+        {
+          "bin": 9,
+          "frequency_hz": 1102941.1764705884,
+          "amplitude_arb": 7.371000696019948
+        }
+      ],
+      "raw_readout2_expected_feature_bins": {
+        "carrier": {
+          "target_hz": 2000000.0,
+          "nearest_bin_hz": 1960784.3137254904,
+          "bin": 16,
+          "amplitude_arb": 2.740785929499358,
+          "rank_among_non_dc_bins": 21
+        },
+        "lower_13c_sideband": {
+          "target_hz": 1615614.5996906958,
+          "nearest_bin_hz": 1593137.254901961,
+          "bin": 13,
+          "amplitude_arb": 10.62693284354969,
+          "rank_among_non_dc_bins": 5
+        },
+        "upper_13c_sideband": {
+          "target_hz": 2384385.4003093042,
+          "nearest_bin_hz": 2328431.3725490198,
+          "bin": 19,
+          "amplitude_arb": 9.153664744412302,
+          "rank_among_non_dc_bins": 6
+        }
+      },
+      "avg_index_1based": 4
+    }
+  ],
+  "pairwise_support": [
+    {
+      "avg_i": 1,
+      "avg_j": 2,
+      "pearson_detrended_fit_norm": 0.5515127416477877
+    },
+    {
+      "avg_i": 1,
+      "avg_j": 3,
+      "pearson_detrended_fit_norm": 0.5205766707830061
+    },
+    {
+      "avg_i": 1,
+      "avg_j": 4,
+      "pearson_detrended_fit_norm": 0.4458081963521177
+    },
+    {
+      "avg_i": 2,
+      "avg_j": 3,
+      "pearson_detrended_fit_norm": 0.5728018751768436
+    },
+    {
+      "avg_i": 2,
+      "avg_j": 4,
+      "pearson_detrended_fit_norm": 0.5705441894763373
+    },
+    {
+      "avg_i": 3,
+      "avg_j": 4,
+      "pearson_detrended_fit_norm": 0.5496697126502079
+    }
+  ],
+  "observations": [
+    "autosave raw export contains 4 stored averages out of planned 6; this remains progress/anomaly evidence, not terminal evidence",
+    "bridge directory state at analysis was running; status state=running",
+    "combined fitted-reference-normalized FFT carrier-nearest bin at 1.961 MHz ranks 3 among non-DC bins",
+    "expected lower/upper 13C-sideband target bins rank 6/20 among non-DC bins",
+    "pairwise detrended normalized trace correlations across stored averages: median 0.551, range 0.446..0.573; with 4 stored averages this is still weak-to-moderate repeatability evidence",
+    "carrier-region power remains more prominent than both expected 13C sideband target bins in the combined autosave FFT",
+    "no bridge mutation or stop request was made"
+  ],
+  "claim_status": {
+    "ramsey_signal": "in_progress_candidate_only: oscillatory structure is present, but terminal review is required",
+    "t2star": "no conclusion from in-progress autosave",
+    "carbon13": "no conclusion from in-progress autosave"
+  },
+  "next_step": "Leave bridge job running for terminal data. After completion, export the final savedexperiment and make separate Ramsey-signal, T2star, and 13C claim decisions from raw/readout-aware terminal evidence.",
+  "figures": {
+    "review_png": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_review.png",
+    "per_average_png": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_per_average.png",
+    "raw_readouts_png": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_raw_readouts.png"
+  }
+}

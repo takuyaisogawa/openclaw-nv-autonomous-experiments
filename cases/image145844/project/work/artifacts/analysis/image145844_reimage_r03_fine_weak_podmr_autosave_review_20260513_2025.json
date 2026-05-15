@@ -1,0 +1,148 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "evidence_id": "image145844_reimage_r03_fine_weak_podmr_autosave_review_20260513_2025",
+  "kind": "in_progress_autosave_review",
+  "source_raw_export": "/tmp/fine_podmr_autosave_raw.json",
+  "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat",
+  "bridge_status_path": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1/status.json",
+  "job_path": "<NV_BRIDGE_ROOT>/running/nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1/job.json",
+  "status_state": null,
+  "status_updated_at": null,
+  "runtime_text": null,
+  "final_counts_text": null,
+  "completed_averages_in_savedexperiment": 3,
+  "planned_averages": null,
+  "scan": {
+    "vary_prop": [
+      "mw_freq"
+    ],
+    "begin_hz": 3874500000.0,
+    "end_hz": 3877500000.0,
+    "points": 31,
+    "spacing_hz": 100000.0,
+    "repetitions": 50000
+  },
+  "sequence_readout_role_check": {
+    "sequence_path": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/Rabimodulated.xml",
+    "full_expt": 0,
+    "readout1": "mS=0 reference detection before rabi pulse",
+    "readout2": "signal detection after length_rabi_pulse; no mS=1 reference because full_expt=0"
+  },
+  "combined_metrics": {
+    "raw_signal": {
+      "index": 14,
+      "freq_hz": 3875900000.0,
+      "offset_mhz": -0.1,
+      "value": 40.28205128205128,
+      "edge_median": 46.448717948717956,
+      "fractional_drop_vs_edge": 0.13276290367099114
+    },
+    "pointwise_ratio": {
+      "index": 17,
+      "freq_hz": 3876200000.0,
+      "offset_mhz": 0.2,
+      "value": 0.8540454785827607,
+      "edge_median": 0.9605597444089458,
+      "fractional_drop_vs_edge": 0.1108877052636905
+    },
+    "reference_line_normalized_signal": {
+      "index": 14,
+      "freq_hz": 3875900000.0,
+      "offset_mhz": -0.1,
+      "value": 0.8432237669945273,
+      "edge_median": 0.9708864024369744,
+      "fractional_drop_vs_edge": 0.1314908058471181
+    }
+  },
+  "per_average_metrics": [
+    {
+      "average_index": 1,
+      "raw_signal": {
+        "index": 15,
+        "freq_hz": 3876000000.0,
+        "offset_mhz": 0.0,
+        "value": 38.46153846153847,
+        "edge_median": 46.46153846153847,
+        "fractional_drop_vs_edge": 0.17218543046357615
+      },
+      "pointwise_ratio": {
+        "index": 22,
+        "freq_hz": 3876700000.0,
+        "offset_mhz": 0.7,
+        "value": 0.8211508553654743,
+        "edge_median": 0.9911258182418898,
+        "fractional_drop_vs_edge": 0.17149685715777835
+      },
+      "reference_line_normalized_signal": {
+        "index": 16,
+        "freq_hz": 3876100000.0,
+        "offset_mhz": 0.1,
+        "value": 0.8266115592293847,
+        "edge_median": 0.9943192950789986,
+        "fractional_drop_vs_edge": 0.16866587692667634
+      },
+      "mean_ref_kcps": 46.511166253101734,
+      "mean_signal_kcps": 43.99999999999999
+    },
+    {
+      "average_index": 2,
+      "raw_signal": {
+        "index": 14,
+        "freq_hz": 3875900000.0,
+        "offset_mhz": -0.1,
+        "value": 40.84615384615385,
+        "edge_median": 49.07692307692308,
+        "fractional_drop_vs_edge": 0.16771159874608155
+      },
+      "pointwise_ratio": {
+        "index": 8,
+        "freq_hz": 3875300000.0,
+        "offset_mhz": -0.7,
+        "value": 0.8031609195402298,
+        "edge_median": 0.9773910723485686,
+        "fractional_drop_vs_edge": 0.1782604299727047
+      },
+      "reference_line_normalized_signal": {
+        "index": 14,
+        "freq_hz": 3875900000.0,
+        "offset_mhz": -0.1,
+        "value": 0.8138836355545666,
+        "edge_median": 0.9584302928036699,
+        "fractional_drop_vs_edge": 0.15081603569338875
+      },
+      "mean_ref_kcps": 50.039702233250615,
+      "mean_signal_kcps": 46.302729528535984
+    },
+    {
+      "average_index": 3,
+      "raw_signal": {
+        "index": 14,
+        "freq_hz": 3875900000.0,
+        "offset_mhz": -0.1,
+        "value": 37.53846153846153,
+        "edge_median": 44.96153846153846,
+        "fractional_drop_vs_edge": 0.1650983746792131
+      },
+      "pointwise_ratio": {
+        "index": 14,
+        "freq_hz": 3875900000.0,
+        "offset_mhz": -0.1,
+        "value": 0.8370497427101199,
+        "edge_median": 0.9416939359852746,
+        "fractional_drop_vs_edge": 0.111123358955973
+      },
+      "reference_line_normalized_signal": {
+        "index": 14,
+        "freq_hz": 3875900000.0,
+        "offset_mhz": -0.1,
+        "value": 0.8049495243758219,
+        "edge_median": 0.9435969970728626,
+        "fractional_drop_vs_edge": 0.1469350507972575
+      },
+      "mean_ref_kcps": 46.77915632754343,
+      "mean_signal_kcps": 43.084367245657575
+    }
+  ],
+  "interpretation": "With 3 of 4 planned averages saved, raw signal and fitted-reference-line normalization both minimize at 3.8759 GHz, and all completed averages have raw minima at 3.8759-3.8760 GHz. Point-wise ratio has denominator-sensitive minima, so it is supporting/provenance only. This is in-progress evidence, not a terminal center selection until the final average and drift review complete.",
+  "recommended_terminal_review": "After completion, copy terminal result/status/batch state, rerun raw export and scan-order-aware drift, then use the terminal raw/readout-aware center for the redesigned Ramsey plan."
+}

@@ -1,0 +1,101 @@
+{
+  "intent_id": "image145844_reimage_r01_strong_podmr_20260513_1555",
+  "summary": "Retry the bounded strong-pi pulsed ODMR alignment screen on the freshly re-imaged and freshly tracked r01 candidate.",
+  "scientific_rationale": "The prior pODMR did not acquire data because the target count gate collapsed. Fresh Imaging recovered the same/local r01 candidate, and standalone TrackCenter just succeeded at 38.971 kcps at [114.531351,117.705596,116.283685] um. The human requested magnetic-field alignment judged by strong-pi pODMR. The quantitative planning calculation remains applicable for a screen around the expected ms=+1 resonance near 3.875 GHz: expected B about 358.6 G, 13C Larmor about 0.384 MHz, and strong-pi time about 50 ns, so length_rabi_pulse=52 ns with mod_depth=1 should make a clear resonance-scale feature visible if this candidate is aligned.",
+  "comparison_targets": [
+    "fresh re-image candidate evidence image145844_reimage_candidate_selection_20260513_1550",
+    "fresh TrackCenter evidence nv23_image145844_reimage_r01_track_20260513_1551_result",
+    "model evidence preliminary_alignment_t2star_13c_model_20260513_1518",
+    "prior pODMR count-gate failure evidence, now addressed by fresh re-image and TrackCenter"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export for strong-pi pODMR",
+    "raw/readout-aware evidence for or against a clear resonance in 3.825-3.925 GHz"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw readouts show a clear resonance-scale feature consistent with expected strong-pi contrast and above noise/baseline variation",
+    "no tracking/count-collapse/hardware anomaly invalidates the data"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for pulsed_odmr_rabimodulated_v1",
+  "candidate": {
+    "label": "image145844_reimage_r01",
+    "tracked_position_um": [
+      114.5313509320719,
+      117.70559579868261,
+      116.28368508430609
+    ],
+    "final_counts_kcps": 38.971
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [
+      3825000000.0,
+      3925000000.0,
+      21
+    ],
+    "acquisition": {
+      "averages": 2,
+      "repetitions": 40000,
+      "average_continuously": false
+    },
+    "float_vars": {
+      "mod_depth": 1.0,
+      "length_rabi_pulse": 5.2e-08,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07
+    },
+    "analysis_fit_kind": "omitted; raw/readout review first"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T15:57:29",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-13T15:57:29",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T15:57:29",
+  "completed_at": "2026-05-13T16:17:31",
+  "result": {
+    "status": "completed",
+    "summary": "Strong-pi pODMR completed but raw/readout-aware review did not support a clear usable resonance. Treat image145844_reimage_r01 as rejected for alignment selection for now; move to next fresh re-image candidate.",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_160009_image145844_reimage_r01_strong_podmr",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260513_160009_image145844_reimage_r01_strong_podmr/result.json",
+    "analysis_evidence_id": "image145844_reimage_r01_strong_podmr_raw_review_20260513_1615"
+  }
+}

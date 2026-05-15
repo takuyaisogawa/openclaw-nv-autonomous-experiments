@@ -1,0 +1,13 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T13:24:11-04:00",
+  "status": "completed",
+  "summary": "Processed the new bridge-free shifted-sideband advice. Reanalyzed the final refreshed-center r03 Ramsey allowing residual carrier shift and 13C sidebands; revised the conclusion to no unconditional numeric T2star, conditional order-3-us decay scale, and plausible nearby-13C shifted-sideband candidate evidence at 1.500000/1.884807/2.269613 MHz. Rewrote and built the revised closeout report, updated state/evidence/lab log/NV knowledge, disposed the advice inbox, and marked the project completed. No bridge job was enqueued, stopped, or mutated.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "idle",
+    "reason": "Project lifecycle is completed after revised shifted-sideband closeout. No further bridge-touching work is runnable unless operator explicitly requests a new confirmation or protocol-development branch.",
+    "report_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/reports/20260514_1320_r03_shifted_sideband_recloseout/image145844_reimage_r03_shifted_sideband_recloseout_report_20260514_1320.pdf"
+  },
+  "updated_backlog_item_ids": []
+}

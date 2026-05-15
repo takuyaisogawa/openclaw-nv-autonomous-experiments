@@ -1,0 +1,310 @@
+{
+  "ok": true,
+  "created_at": "2026-05-13T23:42:00.764036-04:00",
+  "question": "In-progress autosave sanity/opportunity review for short-tau high-SNR r03 Ramsey diagnostic; raw export contains 2 stored averages while live status may have advanced.",
+  "bridge_job_id": "nv23_ramsey_20260513_230331_auto_ramsey",
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-13-230350.mat",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_2avg_raw_export_20260513_2333.json",
+  "status_record_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_record_20260513_2337.json",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_2avg_review_20260513_2333.png",
+  "inputs": {
+    "live_status": "<NV_BRIDGE_ROOT>/running/nv23_ramsey_20260513_230331_auto_ramsey/status.json",
+    "raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_2avg_raw_export_20260513_2333.json",
+    "model_plan": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_model_plan_20260513_2257.json"
+  },
+  "summary_stats": {
+    "autosave_completed_averages": 2,
+    "planned_averages": 12,
+    "completion_fraction": 0.16666666666666666,
+    "repetitions_per_average": 90000,
+    "current_shots_per_point": 180000,
+    "planned_total_shots_per_point": 1080000,
+    "tau_start_us": 0.048,
+    "tau_stop_us": 1.9679999999999995,
+    "tau_step_us": 0.04800000000000004,
+    "points": 41,
+    "scan_order_mode": "snake",
+    "raw_reference_mean_kcps": 52.28163435480509,
+    "raw_signal_mean_kcps": 47.96174692516156,
+    "raw_reference_std_over_tau_kcps": 1.1955554229930718,
+    "raw_signal_std_over_tau_kcps": 2.267495141459411,
+    "ratio_mean": 0.9176843672161733,
+    "ratio_std_over_tau": 0.0451757610552609,
+    "signal_point_sem_kcps": {
+      "median": 3.354700854700851,
+      "min": 0.7692307692307665,
+      "max": 5.427350427350432
+    },
+    "ratio_point_sem": {
+      "median": 0.024141729513713905,
+      "min": 0.0010623443811768052,
+      "max": 0.07102716894303668
+    },
+    "signal_linear_residual_peak_to_peak_kcps": 9.803616099347806,
+    "ratio_linear_residual_peak_to_peak": 0.19567704165947775,
+    "signal_over_refline_linear_residual_peak_to_peak": 0.18628996057084257,
+    "early_0p75us_signal_peak_to_peak_kcps": 10.106837606837608,
+    "early_0p75us_ratio_peak_to_peak": 0.2049284631545354,
+    "average_signal_means_kcps": [
+      44.7102355638941,
+      51.21325828642901
+    ],
+    "average_reference_means_kcps": [
+      49.37565144882218,
+      55.18761726078799
+    ],
+    "average_ratio_means": [
+      0.906127135318413,
+      0.9288927520698261
+    ],
+    "status_state": "running",
+    "status_phase": "run_experiment_scan_point",
+    "status_message": "(3/12) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.",
+    "status_updated_at": "2026-05-13T23:41:48",
+    "status_elapsed_seconds": 2282,
+    "runtime_average_index": 4,
+    "runtime_averages_total_field": 3,
+    "runtime_final_counts_text": "Final = 43.135 kcps",
+    "monitor_last_error": "",
+    "stop_requested": false
+  },
+  "frequency_targets": {
+    "carrier_programmed_det_1p0MHz": {
+      "target_hz": 1000000.0,
+      "target_mhz": 1.0,
+      "least_squares_amplitude_ratio": 0.03319653062790888,
+      "baseline_residual_r2_improvement_ratio": 0.2849173029293835,
+      "least_squares_amplitude_signal_kcps": 1.6472162154050352,
+      "baseline_residual_r2_improvement_signal": 0.26933638548595257,
+      "least_squares_amplitude_signal_over_refline": 0.03141691726750033,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.2696081683768135,
+      "nearest_fft_bin_hz": 1016260.1626016258,
+      "nearest_fft_bin_mhz": 1.0162601626016259,
+      "fft_amplitude_ratio": 0.034165759051309794
+    },
+    "low_13C_sideband_det_minus_larmor": {
+      "target_hz": 615422.875,
+      "target_mhz": 0.615422875,
+      "least_squares_amplitude_ratio": 0.026759995984677196,
+      "baseline_residual_r2_improvement_ratio": 0.2022401426618133,
+      "least_squares_amplitude_signal_kcps": 1.7930877568551913,
+      "baseline_residual_r2_improvement_signal": 0.3339336056449061,
+      "least_squares_amplitude_signal_over_refline": 0.03411518663580408,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.3333951226588006,
+      "nearest_fft_bin_hz": 508130.0813008129,
+      "nearest_fft_bin_mhz": 0.5081300813008129,
+      "fft_amplitude_ratio": 0.033780037588827166
+    },
+    "high_13C_sideband_det_plus_larmor": {
+      "target_hz": 1384577.125,
+      "target_mhz": 1.384577125,
+      "least_squares_amplitude_ratio": 0.033559270313821866,
+      "baseline_residual_r2_improvement_ratio": 0.29351467370340323,
+      "least_squares_amplitude_signal_kcps": 1.8082078227308342,
+      "baseline_residual_r2_improvement_signal": 0.323250014048237,
+      "least_squares_amplitude_signal_over_refline": 0.034473387152435996,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.32332587947074776,
+      "nearest_fft_bin_hz": 1524390.2439024388,
+      "nearest_fft_bin_mhz": 1.5243902439024388,
+      "fft_amplitude_ratio": 0.023253751620559177
+    },
+    "prior_scout_exploratory_component": {
+      "target_hz": 884361.482,
+      "target_mhz": 0.884361482,
+      "least_squares_amplitude_ratio": 0.015901499473280917,
+      "baseline_residual_r2_improvement_ratio": 0.059173261172105036,
+      "least_squares_amplitude_signal_kcps": 0.6514150174546023,
+      "baseline_residual_r2_improvement_signal": 0.03773263930961566,
+      "least_squares_amplitude_signal_over_refline": 0.01234658486301514,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.03729937750770866,
+      "nearest_fft_bin_hz": 1016260.1626016258,
+      "nearest_fft_bin_mhz": 1.0162601626016259,
+      "fft_amplitude_ratio": 0.034165759051309794
+    }
+  },
+  "least_squares_top_components_ratio_all_tau": [
+    {
+      "target_hz": 1189000.0,
+      "target_mhz": 1.189,
+      "amplitude": 0.043718845779456485,
+      "baseline_residual_r2_improvement": 0.5122101146206518,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.037423814805853335
+    },
+    {
+      "target_hz": 1190000.0,
+      "target_mhz": 1.19,
+      "amplitude": 0.04372477819417781,
+      "baseline_residual_r2_improvement": 0.5122055877497632,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.03742416211272226
+    },
+    {
+      "target_hz": 1188000.0,
+      "target_mhz": 1.188,
+      "amplitude": 0.04371233543556588,
+      "baseline_residual_r2_improvement": 0.5121996319891611,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.037424619045693774
+    },
+    {
+      "target_hz": 1191000.0,
+      "target_mhz": 1.191,
+      "amplitude": 0.043730131032099266,
+      "baseline_residual_r2_improvement": 0.5121860458448713,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.03742566139069327
+    },
+    {
+      "target_hz": 1187000.0,
+      "target_mhz": 1.187,
+      "amplitude": 0.04370524881991601,
+      "baseline_residual_r2_improvement": 0.5121741463048608,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.037426574337424995
+    },
+    {
+      "target_hz": 1192000.0,
+      "target_mhz": 1.192,
+      "amplitude": 0.04373490261392049,
+      "baseline_residual_r2_improvement": 0.5121514843027195,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.037428312992933616
+    },
+    {
+      "target_hz": 1186000.0,
+      "target_mhz": 1.186,
+      "amplitude": 0.04369758757674698,
+      "baseline_residual_r2_improvement": 0.5121336649249479,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.037429680116594165
+    },
+    {
+      "target_hz": 1193000.0,
+      "target_mhz": 1.193,
+      "amplitude": 0.04373909125409004,
+      "baseline_residual_r2_improvement": 0.5121018994589374,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.03743211720057814
+    },
+    {
+      "target_hz": 1185000.0,
+      "target_mhz": 1.185,
+      "amplitude": 0.04368935332127688,
+      "baseline_residual_r2_improvement": 0.5120781961040346,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.03743393574989772
+    },
+    {
+      "target_hz": 1194000.0,
+      "target_mhz": 1.194,
+      "amplitude": 0.04374269526488953,
+      "baseline_residual_r2_improvement": 0.5120372885986624,
+      "rss0": 0.0767211783752943,
+      "rss1": 0.03743707422191428
+    }
+  ],
+  "least_squares_top_components_signal_all_tau": [
+    {
+      "target_hz": 250000.0,
+      "target_mhz": 0.25,
+      "amplitude": 8.555030214968612,
+      "baseline_residual_r2_improvement": 0.6071895691169269,
+      "rss0": 201.29976170177088,
+      "rss1": 79.07264613073255
+    },
+    {
+      "target_hz": 251000.0,
+      "target_mhz": 0.251,
+      "amplitude": 8.47558440080161,
+      "baseline_residual_r2_improvement": 0.6069647745726073,
+      "rss0": 201.29976170177088,
+      "rss1": 79.11789721893595
+    },
+    {
+      "target_hz": 252000.0,
+      "target_mhz": 0.252,
+      "amplitude": 8.397329910898936,
+      "baseline_residual_r2_improvement": 0.6067385898865911,
+      "rss0": 201.29976170177088,
+      "rss1": 79.16342814233158
+    },
+    {
+      "target_hz": 253000.0,
+      "target_mhz": 0.253,
+      "amplitude": 8.320243950051745,
+      "baseline_residual_r2_improvement": 0.6065110082983276,
+      "rss0": 201.29976170177088,
+      "rss1": 79.20924026181676
+    },
+    {
+      "target_hz": 254000.0,
+      "target_mhz": 0.254,
+      "amplitude": 8.244304255166707,
+      "baseline_residual_r2_improvement": 0.6062820230021001,
+      "rss0": 201.29976170177088,
+      "rss1": 79.25533494738056
+    },
+    {
+      "target_hz": 255000.0,
+      "target_mhz": 0.255,
+      "amplitude": 8.16948906869119,
+      "baseline_residual_r2_improvement": 0.606051627146777,
+      "rss0": 201.29976170177088,
+      "rss1": 79.30171357815418
+    },
+    {
+      "target_hz": 256000.0,
+      "target_mhz": 0.256,
+      "amplitude": 8.095777146329485,
+      "baseline_residual_r2_improvement": 0.6058198138355729,
+      "rss0": 201.29976170177088,
+      "rss1": 79.34837754245885
+    },
+    {
+      "target_hz": 257000.0,
+      "target_mhz": 0.257,
+      "amplitude": 8.023147723872404,
+      "baseline_residual_r2_improvement": 0.6055865761258029,
+      "rss0": 201.29976170177088,
+      "rss1": 79.39532823785542
+    },
+    {
+      "target_hz": 258000.0,
+      "target_mhz": 0.258,
+      "amplitude": 7.951580511929146,
+      "baseline_residual_r2_improvement": 0.6053519070286393,
+      "rss0": 201.29976170177088,
+      "rss1": 79.44256707119322
+    },
+    {
+      "target_hz": 259000.0,
+      "target_mhz": 0.259,
+      "amplitude": 7.8810556821882045,
+      "baseline_residual_r2_improvement": 0.605115799508863,
+      "rss0": 201.29976170177088,
+      "rss1": 79.49009545866019
+    }
+  ],
+  "decision": {
+    "hard_anomaly_detected": false,
+    "continue_running_job": true,
+    "claim_grade": false,
+    "reason": "The job is still running; this raw export contains 2/12 stored averages while the live status snapshot says '(3/12) averages completed for 1 scans Autosave is enabled. Once the first average is saved, the in-progress savedexperiment MAT file can be raw-exported with claw_export_savedexperiment_mat_raw to inspect raw readouts before execute completes.'. There is no monitor error, no stop request, and the final-count text is 'Final = 43.135 kcps'. The partial data show a large early-time signal/ratio transient, but this is not terminal or claim-grade and should be re-evaluated after all averages plus scan-order-aware drift analysis."
+  },
+  "terminal_review_requirements": [
+    "copy terminal job/result/status/control and batch state into project work tree",
+    "complete verified intent after terminal result only",
+    "raw-export the final savedexperiment",
+    "run scan-order-aware drift diagnostic",
+    "review raw signal, point-wise signal/reference, and signal over fitted reference line",
+    "separate early transient/baseline behavior from the programmed 1 MHz carrier model",
+    "screen target LS/FFT components at 1.0 MHz, 0.615 MHz, and 1.385 MHz",
+    "fit T2star only if raw/readout-aware signal presence and data shape support it"
+  ],
+  "notes": [
+    "This is an in-progress review only; do not use it to claim T2star or 13C.",
+    "The status autosave_target_exists=false field is ignored because the .mat file exists with the provided date_time suffix.",
+    "With only two stored averages, average-to-average agreement and SEM are weak evidence; count hard anomalies and gross route failures are the main use of this review."
+  ]
+}

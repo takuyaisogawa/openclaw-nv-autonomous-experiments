@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T23:17:51-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report. Latest inspected project state shows the short-tau/high-SNR r03 Ramsey diagnostic running at 1/12 averages with final-count text 42.367 kcps, no monitor error, no stop request, queued empty, and the previous 8 us Ramsey terminal review still non-claim-grade for T2star/13C.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-13_225510.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220.png",
+      "caption": "2回目 det=1.0 MHz / 8 us Ramsey のterminal review（T2star/13C未確定の根拠図）",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

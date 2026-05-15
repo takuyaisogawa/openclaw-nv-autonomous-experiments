@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T21:01:00-04:00",
+  "status": "completed",
+  "summary": "notification_service progress report written: fine weak-pi pODMR refined r03 center to 3.8759 GHz; second det-shifted Ramsey/T2star/13C follow-up is running at 1/8 averages with no monitor error; no T2star/13C claim yet; no explicit bridge-free task is pending until terminal/autosave evidence is available.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-13_202011.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_fine_weak_podmr_raw_review_20260513_2031.png",
+      "caption": "r03 fine weak-pi pODMR terminal review: refined grid center 3.8759 GHz",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

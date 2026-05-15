@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T19:01:30-04:00",
+  "status": "submitted_running",
+  "summary": "Weak-pi pODMR terminal result was copied and reviewed. Raw/readout-aware evidence supports a clear usable r03 resonance at 3.876 GHz (all readout views and all 4 averages share the minimum; raw drop about 14.3% vs edge median; drift average 4 recorded as provenance). A Ramsey/T2star model/protocol/advisory review was completed; the initial 8 us/51 point plan was rejected for exceeding the 450 s tracking cap, then a revised 6 us/31 point det=1.5 MHz plan was verified and submitted. First Ramsey/T2star scout is now running as nv23_ramsey_20260513_185505_auto_ramsey; live status showed average 1/4 running and final-count text 43.890 kcps. State, note, evidence ledger, and lab log were updated.",
+  "touched_bridge_queue": true,
+  "next_action": "Wait for terminal result of nv23_ramsey_20260513_185505_auto_ramsey. When terminal, copy result/status/job/control and batch state, complete intent image145844_reimage_r03_ramsey_t2star_scout_20260513_1850, raw-export the savedexperiment, then perform raw/readout-aware Ramsey, drift, fit-after-signal, and FFT review before making any T2star or 13C conclusion.",
+  "updated_backlog_item_ids": []
+}

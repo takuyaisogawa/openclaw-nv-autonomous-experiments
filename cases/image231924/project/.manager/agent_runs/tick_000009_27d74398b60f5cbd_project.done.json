@@ -1,0 +1,35 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T05:41:07.661849+00:00",
+  "status": "bridge_running_handoff",
+  "summary": "Advanced project from the stale hook context to current state: c01 is the aligned NV; weak-pi pODMR supplied mw_freq_hz=3.8758666667 GHz; the FFT-aware Ramsey/T2star scout is running. During this wake I checked advice inbox/bridge status, recorded a Ramsey FFT expectation, waited for the first autosave, raw-exported and reviewed the one-average in-progress Ramsey data, generated review figures, updated work/state.md and log.md, and left the bridge job running. No T2star or 13C conclusion is claimed yet.",
+  "touched_bridge_queue": true,
+  "bridge_queue_mutated": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job",
+    "bridge_job_id": "nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute",
+    "running_status_at_handoff": {
+      "queue_state": "running",
+      "phase": "run_experiment_scan_point",
+      "updated_at": "2026-05-12T01:41:01",
+      "elapsed_seconds": 1235,
+      "average_index": 2,
+      "averages_total_status_field": 1,
+      "planned_averages_from_job": 4,
+      "date_time": "2026-05-12-012318",
+      "final_counts_text": "Final = 24.290 kcps",
+      "experiment_data_present": true,
+      "monitor_last_error": "",
+      "stop_requested": false
+    },
+    "autosave_mat": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-012318.mat",
+    "in_progress_review": {
+      "evidence_id": "analysis_20260512_013940_877726_aaff3d3467",
+      "summary": "One stored average shows candidate Ramsey oscillation and expected-region FFT power, but it is not claim-grade for T2star or 13C.",
+      "review_json": "work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_autosave_avg1_review.json",
+      "note": "work/notes/image231924_c01_ramsey_t2star_scout_autosave_avg1_review_20260512_0139.md"
+    },
+    "expected_terminal_work": "On completion, export the final savedexperiment, inspect raw/readout-aware Ramsey signal and per-average stability, run FFT on the actual tau grid, then assess T2star and 13C separately. If terminal data is non-claim-grade but tracking/counts are healthy, redesign a bounded Ramsey repeat using observed signal, drift, SNR, and FFT resolution."
+  },
+  "updated_backlog_item_ids": []
+}

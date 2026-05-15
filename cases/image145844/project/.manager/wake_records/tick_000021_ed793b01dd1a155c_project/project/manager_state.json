@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-13T18:30:12",
+  "tick_count": 21,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 29,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "bridge_result_20260513_175230_617572_651f4ee33e",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr.result.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_image145844_reimage_r03_strong_podmr_20260513_1715.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Strong-pi pODMR completed for freshly tracked image145844_reimage_r03; savedexperiment 1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat, 4 averages x 20000 repetitions. Raw/readout-aware review supports a clear usable resonance at the 3.875 GHz grid point.",
+          "tags": [],
+          "timestamp": "2026-05-13T17:52:30"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260513_175230_714117_79f2732cb7",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw/readout-aware review of image145844_reimage_r03 strong-pi pODMR: clear usable resonance supported. Raw signal, point-wise ratio, and reference-line normalization all have their deepest dip at 3.875 GHz; raw signal drop is about 16.6% vs edge median; all 4 stored averages show a center-point drop; drift analysis flags no averages. Accept r03 as first aligned candidate and run weak-pi pODMR to refine mw_freq before Ramsey/T2star.",
+          "tags": [],
+          "timestamp": "2026-05-13T17:52:30"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_weak_podmr_model_and_advisory_20260513_1755",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_model_plan_20260513_1753.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_advisory_preview_20260513_1755.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Weak-pi pODMR planning model and pre-enqueue advisory for accepted r03. Model uses 3.875 GHz strong-pi resonance, mod_depth=0.1, 0.57 us pulse, +/-10 MHz scan with 1 MHz spacing, 4 x 50000 shots. Advisory predicted high recent drift risk but per-average window below suggested cap and no recommended actions/blockers.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:08:53"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_image145844_reimage_r03_weak_podmr_job",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1.job.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1.submit_response.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180303.batch_state.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/image145844_reimage_r03_weak_podmr_execute_submit_20260513_1757.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Started weak-pi pODMR on accepted aligned candidate image145844_reimage_r03. Live bridge job nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1 scans 3.865..3.885 GHz in 21 points, 4 averages x 50000 repetitions, mod_depth=0.1, length_rabi_pulse=0.57 us; live status shows average 1/4 running and final counts text about 43.9 kcps. Bridge running blocks further submissions until terminal.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:08:53"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260513_181146_615335_02829e98cd",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Accepted r03 as aligned candidate; weak-pi pODMR started: r03 strong-pi pODMR raw/readout-aware review supports a clear usable resonance at the 3.875 GHz grid point (about 16.6% raw signal drop vs edge median; all 4 averages support center drop; no drift-flagged averages), so r03 is accepted as the first aligned candidate. A verified weak-pi pODMR frequency calibration is now running on r03 as nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1: 3.865..3.885 GHz, 21 points, 4 x 50000 repetitions, mod_depth=0.1, length_rabi_pulse=0.57 us. Next action is to wait for terminal result and raw/readout-aware review before Ramsey/T2star.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:11:46"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 9
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Accepted r03 as aligned candidate; weak-pi pODMR started",
+    "event": "lab_log_note",
+    "summary": "r03 strong-pi pODMR raw/readout-aware review supports a clear usable resonance at the 3.875 GHz grid point (about 16.6% raw signal drop vs edge median; all 4 averages support center drop; no drift-flagged averages), so r03 is accepted as the first aligned candidate. A verified weak-pi pODMR frequency calibration is now running on r03 as nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1: 3.865..3.885 GHz, 21 points, 4 x 50000 repetitions, mod_depth=0.1, length_rabi_pulse=0.57 us. Next action is to wait for terminal result and raw/readout-aware review before Ramsey/T2star.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260513_181146_615335_02829e98cd",
+    "category": "figure",
+    "summary": "Accepted r03 as aligned candidate; weak-pi pODMR started: r03 strong-pi pODMR raw/readout-aware review supports a clear usable resonance at the 3.875 GHz grid point (about 16.6% raw signal drop vs edge median; all 4 averages support center drop; no drift-flagged averages), so r03 is accepted as the first aligned candidate. A verified weak-pi pODMR frequency calibration is now running on r03 as nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1: 3.865..3.885 GHz, 21 points, 4 x 50000 repetitions, mod_depth=0.1, length_rabi_pulse=0.57 us. Next action is to wait for terminal result and raw/readout-aware review before Ramsey/T2star.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.png"
+    ],
+    "timestamp": "2026-05-13T18:11:46"
+  }
+}

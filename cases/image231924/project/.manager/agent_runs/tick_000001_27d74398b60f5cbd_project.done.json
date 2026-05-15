@@ -1,0 +1,20 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T05:24:43.856980+00:00",
+  "status": "submitted_running_bridge_job",
+  "summary": "Found image231924_c01 as the aligned NV candidate: strong-pi pODMR screen passed, weak-pi pODMR gave usable mw_freq_hz=3.8758666667 GHz (+/- ~1 MHz). Submitted the first FFT-aware Ramsey/T2star scout; bridge job is running with autosave 1DExp-seq-ramsey-vary-tau-2026-05-12-012318.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job",
+    "bridge_job_id": "nv23_image231924_c01_ramsey_t2star_scout_20260512_012010_image231924_c01_ramsey_t2star_scout_20260512_0118_execute",
+    "expected_terminal_work": "On completion, export raw savedexperiment data, review Ramsey/T2star raw/readout-aware signal, run FFT on the actual tau grid, and assess T2star and 13C conclusions separately.",
+    "running_status_at_handoff": {
+      "phase": "run_experiment_average_start",
+      "average_index": 1,
+      "averages_total": 4,
+      "final_counts_text": "Final = 17.376 kcps",
+      "autosave": "1DExp-seq-ramsey-vary-tau-2026-05-12-012318"
+    }
+  },
+  "updated_backlog_item_ids": []
+}

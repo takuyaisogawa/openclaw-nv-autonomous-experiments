@@ -1,0 +1,1 @@
+{"ok": false, "error_code": "MEASUREMENT_PLAN_REQUIRED", "error_message": "External execute submissions must use --wait-for-result so the managed single-item batch path can run validation and advisories before queueing.", "mode": "execute", "sequence": "pulsed_odmr_rabimodulated_v1", "wait_for_result": false, "requested_by": "openclaw"}

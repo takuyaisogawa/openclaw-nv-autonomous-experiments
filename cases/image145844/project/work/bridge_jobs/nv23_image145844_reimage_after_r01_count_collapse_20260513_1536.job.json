@@ -1,0 +1,36 @@
+{
+  "job_id": "nv23_image145844_reimage_after_r01_count_collapse_20260513_1536",
+  "mode": "execute",
+  "recipe": "imaging_scan_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "Project nv23_aligned_nv_t2star_13c_image145844_20260513_1507: fresh Imaging scan over original image145844 XY region after r01 count collapse/retrack failure."
+  },
+  "imaging": {
+    "center": [
+      119.0,
+      115.0,
+      116.0
+    ],
+    "half_span_um": [
+      5.0,
+      5.0
+    ],
+    "xy_points": 61,
+    "z_offsets_um": [
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "dwell_seconds": 0.005,
+    "artifact_label": "image145844_reimage_after_r01_count_collapse"
+  }
+}

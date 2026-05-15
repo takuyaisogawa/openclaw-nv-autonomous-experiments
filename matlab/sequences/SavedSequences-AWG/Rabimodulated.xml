@@ -1,0 +1,88 @@
+﻿<sequence>
+    
+    <variables>	
+        sample_rate = float(250000000,1e7,5e9)
+        mw_freq     = float(3.8751e+09, 1e9, 15e9)
+        detuning    = float(0,-100e6,100e6)
+        freqIQ      = float(50e6, 0,500e6) 
+        
+        length_rabi_pulse   = float(52e-9, 0, 0.5)
+        length_last_wait   = float(1e-6, 0, 0.5)
+        mod_depth           = float(0.3,0,1)
+        
+        mw_ampl = float(-5, -20, 15)
+        ampIQ = float(5,-30,17) %in dBm
+        
+        %adiabatic inversion
+        %full_expt       = float(1,0,1);
+        full_expt       = float(0,0,1);
+        do_adiabatic_inversion = boolean(1)
+        
+        sweep_range = float(100e6, 5e6, 500e6)
+        sweep_time  = float(1e-6, 20e-9, 20e-6)
+        
+        %delay_wrt_1mus  = float(-0.88e-6,-0.1,0.1) % 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2022-09-29-182523  %OLD -2.17e-6 calibrated by PL curve 11-08-05 13-17-48
+        delay_wrt_1mus  = float(0.2e-6,-0.1,0.1) % DLnsec LASER 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2023-10-09-183857  
+        wait_time       = float(2e-6, 0,1)
+        switch_delay    = float(1.000000000000000e-07, -1e-6,1);
+        pumping_time = float(1e-6,0,1);
+        
+    </variables>
+    
+    <shaped_pulses>
+        
+    </shaped_pulses>
+    
+    <instructions>
+        mw_freq = mw_freq + detuning;
+        
+        length_rabi_pulse = round(length_rabi_pulse*sample_rate)/sample_rate;
+        
+        ch_on =  [1 1 1 0 0 0];
+        
+        PSeq = set_sample_rate(PSeq, sample_rate);
+        PSeq = enable_channels(PSeq, 1:6,ch_on); 
+        PSeq = set_microwave(PSeq, mw_freq,mw_ampl,ampIQ,freqIQ);
+        
+        
+        % Acquiring true 0 level reference 
+        PSeq = adj_polarize(PSeq,sample_rate,pumping_time,ch_on);
+        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);
+        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);
+       
+        
+        %% Acquire 1 level reference
+        if abs(full_expt)>1e-12
+        %if do_adiabatic_inversion
+        %PSeq = adiabatic_inversion(PSeq,sample_rate,sweep_range,sweep_time,freqIQ,ch_on,0.4);
+        %else
+        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,130e-9,1,switch_delay,ch_on);
+        %end
+        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,52e-9,mod_depth,switch_delay,ch_on);
+        %PSeq = wait_for_awg(PSeq,sample_rate,3000e-9,ch_on);
+        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus, ch_on);
+        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);
+        end
+        
+        %PSeq = wait_for_awg(PSeq,sample_rate,500e-9,ch_on);
+        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);
+        
+        
+        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);
+        
+        
+        %PSeq = wait_for_awg(PSeq,sample_rate,1600e-9,ch_on);
+        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);
+        
+        % detection
+        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);
+        
+        PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);
+        
+        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);
+        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);
+        
+    </instructions>
+    
+</sequence>
+

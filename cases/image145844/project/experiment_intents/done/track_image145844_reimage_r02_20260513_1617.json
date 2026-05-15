@@ -1,0 +1,73 @@
+{
+  "intent_id": "track_image145844_reimage_r02_20260513_1617",
+  "summary": "TrackCenter the second fresh re-image candidate after r01 did not show a clear usable strong-pi ODMR resonance.",
+  "scientific_rationale": "Human guidance says reject a candidate if strong-pi pODMR does not show a clear usable resonance and move on. The raw/readout-aware review of image145844_reimage_r01 pODMR did not support a clear resonance. The next fresh re-image candidate is rank 2 at [115.833333,118.166667,116.5] um with peak 36.0 kcps and local excess 32.0 kcps. Standalone TrackCenter is required before a pODMR screen.",
+  "comparison_targets": [
+    "image145844_reimage_candidate_selection_20260513_1550",
+    "image145844_reimage_r01_strong_podmr_raw_review_20260513_1615"
+  ],
+  "expected_evidence": [
+    "track_center_v1 terminal result with final counts and tracked position"
+  ],
+  "success_criteria": [
+    "TrackCenter completes with final_counts_kcps >= 8"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "TrackCenter fails or counts remain collapsed",
+    "hardware/stage safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone track_center_v1 execute via enqueue_nv_imaging_direct.py",
+  "candidate": {
+    "label": "image145844_reimage_r02",
+    "seed_position_um": [
+      115.83333333333333,
+      118.16666666666667,
+      116.5
+    ],
+    "peak_kcps": 36.0,
+    "local_excess_kcps": 32.0
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T16:18:20",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-13T16:18:20",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T16:18:20",
+  "completed_at": "2026-05-13T16:23:34",
+  "result": {
+    "status": "completed",
+    "summary": "TrackCenter completed for second fresh re-image seed with final_counts_kcps=39.367 and tracked_position_um=[115.86433244322376,117.91993427430633,116.27466061392134].",
+    "bridge_job_id": "nv23_image145844_reimage_r02_track_20260513_1617",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r02_track_20260513_1617/result.json"
+  }
+}

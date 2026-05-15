@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-14T03:25:08",
+  "tick_count": 60,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 70,
+      "recent_evidence": [
+        {
+          "actor": "nv-researcher",
+          "category": "figure",
+          "evidence_id": "figure_20260514_020210_493407_851e686451",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_terminal_review_20260514_0127.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey terminal review and det-shift start: Terminal short-tau/high-SNR r03 Ramsey review for job nv23_ramsey_20260513_230331_auto_ramsey: run completed safely with 12 averages x 90000 repetitions, final counts 35.122 kcps, scan-order-aware drift OK with no flagged averages using snake order. The strongest ratio-screen component is near 1.192 MHz and a descriptive damped sinusoid gives about 1.198 MHz / T2star 6.33 us, but the programmed 1.0 MHz carrier and expected 13C sidebands are not dominant enough for a supported physical model. No well-supported T2star or 13C claim from this run. Started targeted det-shift Ramsey diagnostic on accepted r03 as nv23_ramsey_20260514_015423_auto_ramsey, batch nv23_ramsey_20260514_015303. It keeps the short-tau 48 ns..1.968 us / 41 point grid and 12 x 90000 shots, changes det from 1.0 to 1.5 MHz, and tests whether the terminal ~1.192 MHz component tracks to ~1.692 MHz or remains artifact-like. Pre-enqueue advisory and project intent verification had no blockers; initial runtime status is running at 1/12 averages with final-count text 42.878 kcps and monitor last_error empty.",
+          "tags": [],
+          "timestamp": "2026-05-14T02:02:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_raw_export_20260514_0224.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_status_snapshot_20260514_0224.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_status_snapshot_20260514_0231.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/review_det1p5_shiftcheck_autosave_2avg_20260514_0224.py",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0224_det1p5_shiftcheck_autosave_2avg_review.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [
+            "pending_T2star",
+            "pending_13C"
+          ],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "In-progress autosave review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey. Raw export at 2/12 saved averages had 180000 shots per tau point; bridge status was healthy with final-count text 38.265 kcps, monitor last_error empty, and stop_requested=false. A later live status snapshot advanced to 3/12 with final-count text 42.922 kcps. The 2-average exploratory combined ratio LS screen is highest near 1.491 MHz, close to the programmed 1.5 MHz carrier, while the prior fixed-artifact control at 1.192 MHz is weaker; per-average screens are not stable, so this is nonterminal progress context only and supports no T2star or 13C claim.",
+          "tags": [
+            "ramsey",
+            "det_shift",
+            "autosave",
+            "running",
+            "r03"
+          ],
+          "timestamp": "2026-05-14T02:33:58"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_023413_331601_677511928a",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Det-shift Ramsey autosave 2-average progress review: Reviewed the running det=1.5 MHz r03 Ramsey shift-check autosave at 2/12 saved averages. The bridge remains healthy: final-count text 38.265 kcps at the autosave snapshot, later live status 3/12 with 42.922 kcps, monitor last_error empty, and stop_requested=false. The nonterminal 2-average exploratory combined ratio LS screen is highest near 1.491 MHz, close to programmed 1.5 MHz, while the prior 1.192 MHz artifact-control target is weaker; per-average screens are not stable, so this is progress context only and no T2star/13C claim is made.",
+          "tags": [],
+          "timestamp": "2026-05-14T02:34:13"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_raw_export_20260514_0252.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_status_snapshot_20260514_0252.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_drift_20260514_0252.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/review_det1p5_shiftcheck_autosave_5avg_20260514_0252.py",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0252_det1p5_shiftcheck_autosave_5avg_review.md",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260514_015423_auto_ramsey.status.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [
+            "pending_T2star",
+            "pending_13C"
+          ],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "In-progress autosave review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey at 5/12 saved averages. Bridge status is healthy with final-count text 44.012 kcps at the analysis snapshot and 44.065 kcps in a later copied status, monitor last_error empty, and stop_requested=false. Raw export has 5 averages x 90000 repetitions; scan-order-aware drift used Scan.ScanOrderEachAvg / snake order and flagged 0 averages. The exploratory combined ratio LS screen is highest near 1.595 MHz, close to the programmed 1.5 MHz carrier, and the prior 1.192 MHz artifact-control target is much weaker, but per-average screens remain mixed and this is nonterminal progress context only; no T2star or 13C claim.",
+          "tags": [
+            "ramsey",
+            "det_shift",
+            "autosave",
+            "running",
+            "r03"
+          ],
+          "timestamp": "2026-05-14T03:00:40"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_030040_967203_275bb44292",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Det-shift Ramsey autosave 5-average progress review: In-progress autosave review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey at 5/12 saved averages. Bridge status is healthy with final-count text 44.012 kcps at the analysis snapshot and 44.065 kcps in a later copied status, monitor last_error empty, and stop_requested=false. Raw export has 5 averages x 90000 repetitions; scan-order-aware drift used Scan.ScanOrderEachAvg / snake order and flagged 0 averages. The exploratory combined ratio LS screen is highest near 1.595 MHz, close to the programmed 1.5 MHz carrier, and the prior 1.192 MHz artifact-control target is much weaker, but per-average screens remain mixed and this is nonterminal progress context only; no T2star or 13C claim.",
+          "tags": [],
+          "timestamp": "2026-05-14T03:00:40"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 14
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Det-shift Ramsey autosave 5-average progress review",
+    "event": "lab_log_note",
+    "summary": "In-progress autosave review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey at 5/12 saved averages. Bridge status is healthy with final-count text 44.012 kcps at the analysis snapshot and 44.065 kcps in a later copied status, monitor last_error empty, and stop_requested=false. Raw export has 5 averages x 90000 repetitions; scan-order-aware drift used Scan.ScanOrderEachAvg / snake order and flagged 0 averages. The exploratory combined ratio LS screen is highest near 1.595 MHz, close to the programmed 1.5 MHz carrier, and the prior 1.192 MHz artifact-control target is much weaker, but per-average screens remain mixed and this is nonterminal progress context only; no T2star or 13C claim.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260514_030040_967203_275bb44292",
+    "category": "figure",
+    "summary": "Det-shift Ramsey autosave 5-average progress review: In-progress autosave review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey at 5/12 saved averages. Bridge status is healthy with final-count text 44.012 kcps at the analysis snapshot and 44.065 kcps in a later copied status, monitor last_error empty, and stop_requested=false. Raw export has 5 averages x 90000 repetitions; scan-order-aware drift used Scan.ScanOrderEachAvg / snake order and flagged 0 averages. The exploratory combined ratio LS screen is highest near 1.595 MHz, close to the programmed 1.5 MHz carrier, and the prior 1.192 MHz artifact-control target is much weaker, but per-average screens remain mixed and this is nonterminal progress context only; no T2star or 13C claim.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252.png"
+    ],
+    "timestamp": "2026-05-14T03:00:40"
+  }
+}

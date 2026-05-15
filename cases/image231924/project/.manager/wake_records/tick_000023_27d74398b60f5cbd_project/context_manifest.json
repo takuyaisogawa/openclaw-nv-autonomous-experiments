@@ -1,0 +1,479 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-12T04:25:10",
+  "cutoff_time": "2026-05-12T04:25:10",
+  "cutoff_epoch": 1778574310.996425,
+  "cutoff_rule": "future-blind replay may use only prompt, payload, report, and file snapshots captured in this wake record, or explicit current-memory overlay snapshots selected by the evaluator",
+  "actor": "openclaw-scheduler-project-runner",
+  "source": "nv_project_scheduler_runner",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "project_dir": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "record_id": "tick_000023_27d74398b60f5cbd_project",
+  "wake_key": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319:advance_project:1623ecc6fa7d08c1",
+  "marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/agent_runs/tick_000023_27d74398b60f5cbd_project.done.json",
+  "hook_path": "/hooks/agent",
+  "gateway_url": "http://127.0.0.1:18789",
+  "dispatch_mode": "agent",
+  "agent": {
+    "id": "nv-researcher",
+    "session_key": "agent:nv-researcher:hook:nv-project-manager:nv23_aligned_nv_t2star_13c_image231924_20260511_2319:wake:ticked-000023-27d74398b60f5cbd",
+    "model": "openai-codex/gpt-5.5",
+    "thinking": "xhigh",
+    "name": "NV Project Step - nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "prompt_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/wake_prompt.md",
+  "prompt_sha256": "3d9468732ab020df6def733ba7062c689a413e75330e14cdd3c8935af91372fa",
+  "payload_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/wake_payload.json",
+  "payload_sha256": "cadeb2831435810047b84e36c2a72ff43e3bbce7d9d95e53616542ed00620db2",
+  "report_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/wake_report.json",
+  "next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents",
+      "evidence_count": 42,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_031721_840657_19692bf40a",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_export.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_drift.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_readouts.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Narrow weak-pi pODMR after terminal Ramsey completed and reviewed: raw/fit-reference minimum gives updated center 3.8761166667 GHz (+0.250 MHz from prior weak-pi center; pointwise ratio min +0.500 MHz). This makes the old 1.593 MHz Ramsey peak plausibly residual detuning rather than 13C; T2star remains candidate-only pending corrected-center Ramsey.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:17:21"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "note",
+          "evidence_id": "note_20260512_031810_487387_9705802004",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_narrow_weak_podmr_after_ramsey_review_20260512_0318.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Note for narrow weak-pi pODMR after Ramsey: updated center 3.8761166667 GHz; old 1.593 MHz Ramsey peak likely residual detuning, 13C downgraded pending corrected-center Ramsey.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:18:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "artifact_20260512_032618_651713_de6e78654b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents/verified/image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_spec.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_state.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.job_initial.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.status_initial.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Submitted and started corrected-center Ramsey/T2star repeat: bridge job nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute; pre-enqueue advisory had no blockers, estimated runtime 4479 s and per-average tracking window 742 s under the 900 s night cap; auto-align selected 23.416 kcps and the experiment has started.",
+          "tags": [],
+          "timestamp": "2026-05-12T03:26:18"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "analysis_20260512_040239_706388_8f15704429",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_export.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/analyze_corrected_center_ramsey_autosave_avg2.py",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_per_average.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_readouts.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_corrected_center_ramsey_autosave_avg2_review_20260512_0359.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "In-progress corrected-center Ramsey autosave after 2/6 averages raw-exported and reviewed: bridge still running with healthy counts (Final = 25.898 kcps), no terminal/anomaly evidence; carrier-nearest FFT bin ranks 3rd while expected lower/upper 13C bins rank 6/23, so this is only progress evidence and T2star/13C remain no-conclusion until terminal review.",
+          "tags": [],
+          "timestamp": "2026-05-12T04:02:39"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260512_040302_647471_cffab9dc03",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Corrected-center Ramsey autosave 2/6 review: At 03:59 EDT the corrected-center Ramsey repeat remained running with 2/6 averages completed and healthy counts (Final = 25.898 kcps). Autosave raw export/review found the carrier-nearest FFT bin ranked 3rd and expected lower/upper 13C bins ranked 6/23; this is progress evidence only, with no T2star or 13C conclusion until terminal review.",
+          "tags": [],
+          "timestamp": "2026-05-12T04:03:02"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 2,
+        "verified": 1,
+        "rejected": 0,
+        "done": 7
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "snapshots": [
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "snapshot_relpath": "md/NV_RESEARCH_MEMORY.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 15633,
+      "updated_epoch": 1778555184.2027516,
+      "sha256": "1a2d490e1f9ac4f63e96dfdae5072ea8b356adc7b67c2dfcc08fb5b7b83cd6c6",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/md/NV_RESEARCH_MEMORY.md",
+      "snapshot_size_bytes": 15633
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "snapshot_relpath": "md/NV_RESEARCH_KNOWLEDGE.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 27550,
+      "updated_epoch": 1778551344.1415162,
+      "sha256": "71624427357b406264b8078c9781b9b65d9bb371968e51f2ca6dc5860b2aa0fe",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/md/NV_RESEARCH_KNOWLEDGE.md",
+      "snapshot_size_bytes": 27550
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/skills/nv-project-manager/SKILL.md",
+      "snapshot_relpath": "md/nv-project-manager_SKILL.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 9949,
+      "updated_epoch": 1778534997.128297,
+      "sha256": "b60708d20785542fccd73f0cf5eb056a85807940f7c965965d62acde687411d8",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/md/nv-project-manager_SKILL.md",
+      "snapshot_size_bytes": 9949
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/project.json",
+      "snapshot_relpath": "project/project.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 38247,
+      "updated_epoch": 1778556110.3241622,
+      "sha256": "b12c5c8e7cd050e2b53cfce2b2f4b00faee1040698514e5554e8fb9d04e8c76b",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/project.json",
+      "snapshot_size_bytes": 38247
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/brief.md",
+      "snapshot_relpath": "project/brief.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 433,
+      "updated_epoch": 1778556110.3241622,
+      "sha256": "b7a5a6297433530de8a6645a24c8de308e1b2f68591b91201ccb55a638871927",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/brief.md",
+      "snapshot_size_bytes": 433
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/human_advice.md",
+      "snapshot_relpath": "project/human_advice.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 927,
+      "updated_epoch": 1778556110.3241622,
+      "sha256": "593a2a8933915fc88ba17dea68084c14c83e843a9e3c449abef713af91ca61fd",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/human_advice.md",
+      "snapshot_size_bytes": 927
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+      "snapshot_relpath": "project/work_state.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 11188,
+      "updated_epoch": 1778573016.6619027,
+      "sha256": "e4b564696f2558863350bc9278cd15357f61b78f2736655d67ffb68740230073",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/work_state.md",
+      "snapshot_size_bytes": 11188
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+      "snapshot_relpath": "project/log.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 16504,
+      "updated_epoch": 1778572982.6445675,
+      "sha256": "4ea3b6da064099477d0b5bd399f194c10b59e1c6198742ba40867d1f47d5dad5",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/log.md",
+      "snapshot_size_bytes": 16504
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/state.json",
+      "snapshot_relpath": "project/manager_state.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 14343,
+      "updated_epoch": 1778574310.975643,
+      "sha256": "9a099367c36ffd3940f95ab6b07e9d9f927f7b10690ce2b2b930caf700a485d4",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/manager_state.json",
+      "snapshot_size_bytes": 14343
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/backlog.json",
+      "snapshot_relpath": "project/manager_backlog.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 113,
+      "updated_epoch": 1778556110.3241622,
+      "sha256": "2fcd9b7480bcd20b8eb813ca5ccd045d98ba980154d2737c782dbe2eb97497a5",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/manager_backlog.json",
+      "snapshot_size_bytes": 113
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/evidence.jsonl",
+      "snapshot_relpath": "project/manager_evidence.jsonl",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 38038,
+      "updated_epoch": 1778572982.6445675,
+      "sha256": "1958586e53836d0f7ec681b5721b27726b72794630656982cb2cfbb94a353e7f",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/manager_evidence.jsonl",
+      "snapshot_size_bytes": 38038
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/ledger.jsonl",
+      "snapshot_relpath": "project/manager_ledger.jsonl",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 261047,
+      "updated_epoch": 1778574310.975643,
+      "sha256": "56b5d92f8beda84b68323494933d7bf46e61f423f9763135e048f6ab4426b2ca",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/project/manager_ledger.jsonl",
+      "snapshot_size_bytes": 261047
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_export.json",
+      "snapshot_relpath": "evidence/001_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_export.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 21334,
+      "updated_epoch": 1778570085.701625,
+      "sha256": "253fcc33beeee309df157a208d3f7c945ca35142595278b08979fbf89cd0d162",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/001_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_export.json",
+      "snapshot_size_bytes": 21334
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_drift.json",
+      "snapshot_relpath": "evidence/002_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_drift.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 2237,
+      "updated_epoch": 1778570088.9596252,
+      "sha256": "a70c0fe53aeb3d8546782fbf263c9dffd8e2e055e4ffc87da5326a32b4cb6008",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/002_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_drift.json",
+      "snapshot_size_bytes": 2237
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+      "snapshot_relpath": "evidence/003_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 15952,
+      "updated_epoch": 1778570223.3327374,
+      "sha256": "dc2f77e1016556b00f3a1fc1d688300505ae5724e49c0627bc2b0cf36f398213",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/003_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+      "snapshot_size_bytes": 15952
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.png",
+      "snapshot_relpath": "evidence/004_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 364322,
+      "updated_epoch": 1778570223.5739374,
+      "sha256": "d5182d5595092df89fb9085a21c167a8622aadc68522cb337671b22058932c6c",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_readouts.png",
+      "snapshot_relpath": "evidence/005_image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_raw_readouts.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 161346,
+      "updated_epoch": 1778570222.9403374,
+      "sha256": "f146fc521529ccd3107e1c159486893683ba7d110d8aa91a0e50f5a896617383",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_narrow_weak_podmr_after_ramsey_review_20260512_0318.md",
+      "snapshot_relpath": "evidence/006_image231924_c01_narrow_weak_podmr_after_ramsey_review_20260512_0318.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 3029,
+      "updated_epoch": 1778570276.5525434,
+      "sha256": "a1a1b59ced1c39634468099ddf58f4b105889e15749e136f11f3655a69773564",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/006_image231924_c01_narrow_weak_podmr_after_ramsey_review_20260512_0318.md",
+      "snapshot_size_bytes": 3029
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents/verified/image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+      "snapshot_relpath": "evidence/007_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 4878,
+      "updated_epoch": 1778570397.9294271,
+      "sha256": "311f457ed8096071c1ded37bb34b768da065388fb15d7d25f85b866a90cdfb84",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/007_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+      "snapshot_size_bytes": 4878
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_spec.json",
+      "snapshot_relpath": "evidence/008_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_spec.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 7624,
+      "updated_epoch": 1778570397.6810272,
+      "sha256": "28924dd60ac2ac2f8b42b3bea6646684f6fe1bb0aab8429b0033695402ac0cb6",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/008_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_spec.json",
+      "snapshot_size_bytes": 7624
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_state.json",
+      "snapshot_relpath": "evidence/009_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_state.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 10678,
+      "updated_epoch": 1778570453.18335,
+      "sha256": "8bd299229510ed3ffbc07cfbcb146218d3e7e8933c7665b81c342e758391b76d",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/009_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_0320.batch_state.json",
+      "snapshot_size_bytes": 10678
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.job_initial.json",
+      "snapshot_relpath": "evidence/010_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.job_initial.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 5670,
+      "updated_epoch": 1778570778.533938,
+      "sha256": "49aa3bb3baca8687151ae524214e509cf09b00823359ae3babd83084ce4199b3",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/010_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.job_initial.json",
+      "snapshot_size_bytes": 5670
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/bridge_jobs/nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.status_initial.json",
+      "snapshot_relpath": "evidence/011_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.status_initial.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 12569,
+      "updated_epoch": 1778570778.577138,
+      "sha256": "7ba37ddb03e65faabc0da25f026181e92fcf33ffc4077610fc1aa22c14f1f589",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/011_nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute.status_initial.json",
+      "snapshot_size_bytes": 12569
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_export.json",
+      "snapshot_relpath": "evidence/012_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_export.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 29712,
+      "updated_epoch": 1778572557.481717,
+      "sha256": "fb606999b77733e7282d7d0ff2e8717706784997cd85c1705043abd92565b20a",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/012_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_export.json",
+      "snapshot_size_bytes": 29712
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.json",
+      "snapshot_relpath": "evidence/013_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 22644,
+      "updated_epoch": 1778572800.8371794,
+      "sha256": "0caedb48faca5ef9e2175536fc1d13837425bdeb90e30328958c4adeb5dce7d0",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/013_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.json",
+      "snapshot_size_bytes": 22644
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/analyze_corrected_center_ramsey_autosave_avg2.py",
+      "snapshot_relpath": "evidence/014_analyze_corrected_center_ramsey_autosave_avg2.py",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 12693,
+      "updated_epoch": 1778572777.611866,
+      "sha256": "df5a3bcc90d19e923c4b0a569376cbe62c43f0454653eb77afc1c2387464ad3e",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/014_analyze_corrected_center_ramsey_autosave_avg2.py",
+      "snapshot_size_bytes": 12693
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png",
+      "snapshot_relpath": "evidence/015_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_review.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 455230,
+      "updated_epoch": 1778572801.1035795,
+      "sha256": "62ff2c2a06d47e20af2ccccb09e41f489822380fb29984eb72eec7ef61d12dca",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_per_average.png",
+      "snapshot_relpath": "evidence/016_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_per_average.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 354968,
+      "updated_epoch": 1778572801.2403796,
+      "sha256": "230b4437c33767641b8deb769d4c12e714f1bc8d74acb052473e8cb16f451984",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_readouts.png",
+      "snapshot_relpath": "evidence/017_image231924_c01_corrected_center_ramsey_repeat_autosave_avg2_raw_readouts.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 196677,
+      "updated_epoch": 1778572452.1788836,
+      "sha256": "11f598d128f6617bf2d7aa579ec20491a0d75064050408d19c495942b9167308",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_corrected_center_ramsey_autosave_avg2_review_20260512_0359.md",
+      "snapshot_relpath": "evidence/018_image231924_c01_corrected_center_ramsey_autosave_avg2_review_20260512_0359.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 2724,
+      "updated_epoch": 1778572923.2479992,
+      "sha256": "8e11f3ddc98d3b45a89078132d685fcf2d4f5af78f8bf5bfa6986a6ea6f739f7",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/.manager/wake_records/tick_000023_27d74398b60f5cbd_project/evidence/018_image231924_c01_corrected_center_ramsey_autosave_avg2_review_20260512_0359.md",
+      "snapshot_size_bytes": 2724
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T07:46:30Z",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report: corrected-center Ramsey/T2star repeat is running at 1/6 averages with healthy monitor/count evidence; narrow weak-pi center refresh supports using 3.8761166667 GHz and downgrades the old 1.593 MHz Ramsey feature as likely residual detuning rather than supported 13C; no explicit bridge-free task is pending, and terminal Ramsey review is the next expected step.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-12_034511.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.png",
+      "caption": "narrow weak-pi pODMR center refresh: updated center 3.8761166667 GHz",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T02:03:47-04:00",
+  "status": "handoff_running_bridge_job",
+  "summary": "Completed terminal review of short-tau/high-SNR r03 Ramsey job nv23_ramsey_20260513_230331_auto_ramsey: safe completion, 12 x 90000, final counts 35.122 kcps, no scan-order drift flags, but no supported T2star or 13C claim. Recorded evidence, note, lab log, copied artifacts, and completed the short-tau experiment intent. Designed and verified a non-blind det-shift Ramsey follow-up; submitted it as running job nv23_ramsey_20260514_015423_auto_ramsey / batch nv23_ramsey_20260514_015303 to test whether the ~1.192 MHz component tracks det=1.5 MHz toward ~1.692 MHz. Current running status is healthy at 1/12 averages with monitor last_error empty and stop_requested=false.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "monitor_running_execute",
+    "job_id": "nv23_ramsey_20260514_015423_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260514_015303",
+    "details": "While running, queue occupancy blocks further bridge-touching submissions. Use autosave only for anomaly/progress review. On completion, copy terminal artifacts, complete intent image145844_reimage_r03_ramsey_det1p5_shiftcheck_shorttau_20260514_0142, raw-export savedexperiment, run scan-order-aware drift, and review programmed 1.5 MHz, predicted det-tracking ~1.692 MHz, predicted 13C sidebands ~1.307/~2.076 MHz, and prior artifact-control ~1.192 MHz before any T2star/13C claim."
+  },
+  "updated_backlog_item_ids": []
+}

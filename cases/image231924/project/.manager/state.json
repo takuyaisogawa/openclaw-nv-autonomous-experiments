@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "completed",
+  "operational_state": "completed",
+  "created_at": "2026-05-11T23:21:50",
+  "updated_at": "2026-05-12T05:45:57",
+  "tick_count": 32,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "idle",
+    "reason": "project lifecycle is completed; objective satisfied and closeout report verified"
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": false
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-11T23:21:50",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/human_advice.md",
+    "preview": "Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-11-231924.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Because the piezo stage was recently adjusted and the magnetic field at focus may have changed, judge magnetic-field alignment using a strong pi pulsed ODMR scan. After finding an aligned NV, measure its T2*. To reduce measurement time, p",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Project closeout completed",
+    "event": "lab_log_note",
+    "summary": "Completed image231924_c01 project closeout: c01 is the aligned NV; corrected-center Ramsey supports T2star scale about 4 us; no resolved nearby 13C coupling is supported. Top-level paired LaTeX/PDF closeout report rebuilt successfully with no LaTeX log warnings. Project lifecycle and operational state are completed; no further autonomous bridge work is queued.",
+    "figure_count": 0,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "report_20260512_054514_104058_aa78ec2042",
+    "category": "report",
+    "summary": "Copied closeout report to top-level summaries/ as paired LaTeX/PDF for project audit compatibility; rebuilt top-level TeX with latex_report_build.py returncode 0, no log warnings, PDF header OK.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/summaries/closeout_20260512_0525.tex",
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/summaries/closeout_20260512_0525.pdf"
+    ],
+    "timestamp": "2026-05-12T05:45:14"
+  },
+  "last_project_update": {
+    "summary": "Updated closeout report pointer to top-level summaries paired LaTeX/PDF for audit compatibility.",
+    "updated_keys": [
+      "closeout_report"
+    ]
+  }
+}

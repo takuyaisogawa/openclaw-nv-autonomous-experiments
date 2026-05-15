@@ -1,0 +1,2183 @@
+{
+  "batch_id": "nv23_image145844_reimage_r03_strong_podmr_20260513_1715",
+  "batch_spec_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/image145844_reimage_r03_strong_podmr_batch_20260513_1715.json",
+  "status": "completed",
+  "started_at": "2026-05-13T21:18:40.472546+00:00",
+  "finished_at": "2026-05-13T21:38:50.976795+00:00",
+  "resume_count": 0,
+  "current_item_id": "",
+  "aux_state": {},
+  "items": [
+    {
+      "id": "image145844_reimage_r03_strong_podmr",
+      "status": "completed",
+      "attempts": 1,
+      "last_error_code": "",
+      "last_error_message": "",
+      "history": [
+        {
+          "at": "2026-05-13T21:19:15.118062+00:00",
+          "event": "measurement_plan",
+          "message": "Measurement planning disabled; deterministic pre-enqueue advisory recorded.",
+          "request_path": "",
+          "plan_path": "",
+          "hook_ok": false,
+          "timeout_seconds": 0,
+          "pre_enqueue_advisory": {
+            "requested": true,
+            "ok": true,
+            "source": "claw_preview_job_advisory",
+            "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_171847_image145844_reimage_r03_strong_podmr",
+            "sequence": "pulsed_odmr_rabimodulated_v1",
+            "sequence_name": "Rabimodulated.xml",
+            "acquisition": {
+              "average_continuously": false,
+              "track_per_avg": true,
+              "averages": 4,
+              "repetitions": 20000
+            },
+            "estimated_runtime": {
+              "estimator_mode": "siglent",
+              "track_per_avg": true,
+              "averages": 4,
+              "repetitions": 20000,
+              "total_shots": 80000,
+              "num_scan_points": 11,
+              "total_seconds": 590.1549200000001,
+              "per_average_seconds": 141.28873000000002,
+              "tracking_window_seconds": 141.28873000000002,
+              "drift_planning_window_seconds": 141.28873000000002,
+              "tracking_window_basis": "per_average",
+              "tracking_window_unit": "average",
+              "averages_change_tracking_window": false,
+              "repetitions_change_tracking_window": true,
+              "per_average_overhead_seconds": 137.65565
+            },
+            "recent_nv_drift": {
+              "sample_count": 4,
+              "recent_started_at": "2026-05-13T17:10:19",
+              "completed_count": 4,
+              "failed_count": 0,
+              "hard_failed_count": 0,
+              "stopped_count": 0,
+              "failed_rate": 0,
+              "final_counts_median_kcps": 20.931,
+              "final_counts_min_kcps": 3.751,
+              "low_final_counts_count": 2,
+              "severe_low_final_counts_count": 2,
+              "below_minimum_final_counts_count": 2,
+              "seed_to_tracked_median_um": 0.23074432826603242,
+              "seed_to_tracked_max_um": 0.5886947997317876,
+              "high_seed_drift_count": 1,
+              "used_search_scan_count": 0,
+              "warning_count_total": 0,
+              "risk_level": "high",
+              "suggested_max_tracking_window_seconds": 450,
+              "history_source": "tracking_event_log",
+              "include_routes": [],
+              "exclude_routes": [
+                "manual_imaging_tracking",
+                "manual_experiment_tracking"
+              ]
+            },
+            "guidance": {
+              "default_max_tracking_window_seconds": 600,
+              "tracking_cadence_policy": {
+                "timezone": "MATLAB local time",
+                "daytime_start_hour_local": 9,
+                "nighttime_start_hour_local": 21,
+                "daytime_max_untracked_window_seconds": 600,
+                "nighttime_max_untracked_window_seconds": 900,
+                "effective_period": "daytime",
+                "effective_max_untracked_window_seconds": 600,
+                "source": "day_night_policy_default",
+                "applies_to": "pre_enqueue_advisory drift_planning_window_seconds / per_average_seconds",
+                "does_not_change": "Imaging GUI or legacy Experiment tracking_period defaults"
+              },
+              "suggested_max_tracking_window_seconds": 450,
+              "planning_metric": "drift_planning_window_seconds",
+              "tracking_window_basis": "per_average",
+              "tracking_window_exceeds_suggestion": false,
+              "total_runtime_is_for_scheduling_only": true,
+              "target_total_shots": 80000,
+              "shot_preservation_guidance": "When the predicted per-average tracking window is too long, first reduce repetitions per average and compensate by increasing averages so repetitions * averages remains as close as possible to the original total shots. If that is still insufficient, split the acquisition into shorter jobs. Reduce total shots only as a last resort.",
+              "adjustment_priority": [
+                "reduce repetitions per average first",
+                "raise averages to preserve repetitions * averages whenever possible",
+                "split the acquisition into shorter jobs before reducing total shots",
+                "reduce total shots only as a last resort"
+              ],
+              "reduce_total_shots_last_resort": true,
+              "averages_change_tracking_window": false,
+              "repetitions_change_tracking_window": true,
+              "recommended_actions": []
+            },
+            "runtime_available": true,
+            "drift_available": true,
+            "warnings": [
+              "sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.",
+              "Validation succeeded without touching 23-C hardware paths.",
+              "Execute remains separately gated by bootstrap and local lab validation.",
+              "Applied acquisition settings from job.metadata: averages=4, repetitions=20000, average_continuously=0.",
+              "Forced experiment tracking_period=1 for bridge-configured runs."
+            ],
+            "notes": [
+              "Preview uses execute metadata opt-in only.",
+              "Static bootstrap prerequisites are present.",
+              "Static preflight does not auto-launch the legacy GUI stack.",
+              "The hidden/invisible bootstrap path is still unverified on the Win7 lab stack.",
+              "Default execute remains blocked unless the separate lab-only queue gate opens the production bridge route.",
+              "Launched QEG."
+            ],
+            "blockers": [],
+            "error_code": "",
+            "error_message": "",
+            "runner": {
+              "returncode": 0,
+              "timed_out": false,
+              "stdout": "{\"ok\": true, \"preview_only\": true, \"mode\": \"execute\", \"sequence\": \"pulsed_odmr_rabimodulated_v1\", \"job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_171847_image145844_reimage_r03_strong_podmr\", \"queue_root\": \"<NV_BRIDGE_ROOT>\", \"submit_spec\": {\"job_id_prefix\": \"nv23_pulsed_odmr_rabimodulated_v1\", \"job_id_suffix\": \"image145844_reimage_r03_strong_podmr\", \"mode\": \"execute\", \"recipe\": \"xml_generic_v1\", \"sample_id\": \"NV23\", \"sequence_manifest_id\": \"pulsed_odmr_rabimodulated_v1\", \"requested_by\": \"nv-researcher\", \"submission_path\": \"pre_enqueue_advisory_preview\", \"scan\": {\"vary_prop\": [\"mw_freq\"], \"begin\": [3825000000.0], \"end\": [3925000000.0], \"points\": [11]}, \"float_vars\": {\"sample_rate\": 250000000.0, \"mw_freq\": 3875000000.0, \"detuning\": 0.0, \"freqIQ\": 50000000.0, \"length_last_wait\": 1e-06, \"mod_depth\": 1.0, \"mw_ampl\": -5.0, \"ampIQ\": 5.0, \"full_expt\": 0.0, \"sweep_range\": 100000000.0, \"sweep_time\": 1e-06, \"delay_wrt_1mus\": 2e-07, \"wait_time\": 2e-06, \"switch_delay\": 1e-07, \"pumping_time\": 1e-06, \"length_rabi_pulse\": 5.2e-08}, \"bool_vars\": {\"do_adiabatic_inversion\": true}, \"limits\": {\"max_mw_power_dbm\": 15.0, \"allow_stage_motion\": false, \"allow_laser ...[truncated]",
+              "stderr": ""
+            }
+          },
+          "plan": {}
+        },
+        {
+          "at": "2026-05-13T21:38:50.971229+00:00",
+          "event": "queue_submit",
+          "returncode": 0,
+          "stdout": "{\"ok\": true, \"mode\": \"execute\", \"sequence\": \"pulsed_odmr_rabimodulated_v1\", \"job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\", \"job_dir\": \"<NV_BRIDGE_ROOT>\\\\queued\\\\nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\", \"job_path\": \"<NV_BRIDGE_ROOT>\\\\queued\\\\nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\\\\job.json\", \"queue_root\": \"<NV_BRIDGE_ROOT>\", \"wait_for_result\": false, \"submit_spec\": {\"job_id_prefix\": \"nv23_pulsed_odmr_rabimodulated_v1\", \"job_id_suffix\": \"image145844_reimage_r03_strong_podmr\", \"mode\": \"execute\", \"recipe\": \"xml_generic_v1\", \"sample_id\": \"NV23\", \"sequence_manifest_id\": \"pulsed_odmr_rabimodulated_v1\", \"requested_by\": \"nv-researcher\", \"submission_path\": \"single_item_measurement_plan\", \"scan\": {\"vary_prop\": [\"mw_freq\"], \"begin\": [3825000000.0], \"end\": [3925000000.0], \"points\": [11]}, \"float_vars\": {\"sample_rate\": 250000000.0, \"mw_freq\": 3875000000.0, \"detuning\": 0.0, \"freqIQ\": 50000000.0, \"length_last_wait\": 1e-06, \"mod_depth\": 1.0, \"mw_ampl\": -5.0, \"ampIQ\": 5.0, \"full_expt\": 0.0, \"sweep_range\": 100000000.0, \"sweep_time\": 1e-06, \"delay_wrt_1mus\": 2e-07, \"wait_time\": 2e-06, \"switch_delay\": 1e-07, \"pumping_time\": 1e-06, \"length_rabi_pulse\": 5.2e-08}, \"bool_vars\": {\"do_adiabatic_inversion\": true}, \"limits\": {\"max_mw_power_dbm\": 15.0, \"allow_stage_motion\": false, \"allow_laser_profile\": false}, \"metadata\": {\"project_id\": \"nv23_aligned_nv_t2star_13c_image145844_20260513_1507\", \"target_label\": \"image145844_reimage_r03\", \"target_role\": \"fresh_reimage_third_candidate_strong_pi_podmr_alignment_screen\", \"fresh_track_result\": \"<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json\", \"fresh_counts_kcps\": 43.535, \"fresh_tracked_position_um\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"track_evidence_id\": \"nv23_image145844_reimage_r03_track_20260513_1708_result\", \"prior_rejected_candidate_evidence_ids\": [\"image145844_reimage_r01_strong_podmr_raw_review_20260513_1615\", \"image145844_reimage_r02_strong_podmr_raw_review_20260513_1658\"], \"model_evidence_id\": \"preliminary_alignment_t2star_13c_model_20260513_1518\", \"verified_intent_id\": \"image145844_reimage_r03_strong_podmr_20260513_1715\", \"auto_align_nv\": false, \"require_landmark_match\": false, \"allow_seed_fallback\": false, \"minimum_final_kcps\": 20, \"allow_search_scan\": false, \"search_scan_on_tracking_failure\": false, \"local_fine_search_before_tracking\": false, \"no_auto_align_reason\": \"Standalone TrackCenter completed immediately before this pODMR at 43.535 kcps; use the fresh tracked position directly and avoid hidden target reselection.\", \"analysis_plan\": {\"kind\": \"strong_pi_podmr_alignment_screen\", \"persist_aux_update\": false, \"valid_resonance_review_required\": true, \"visual_review_required\": true, \"stored_average_review_required\": true, \"raw_readout_review_required\": true, \"notes\": \"No automatic fit request is included in this bridge job. Review raw export/plots first; only fit/use a center after signal presence is supported.\"}, \"queue_execute_opt_in\": true, \"requested_by\": \"nv-researcher\", \"disable_agent_auto_recovery\": true, \"frequency_window_reason\": \"Screen +/-50 MHz around expected ms=+1 resonance near 3.875 GHz for magnetic-field alignment candidate triage.\", \"grid_reason\": \"Use 11 points at 10 MHz spacing because strong-pi 52 ns excitation bandwidth is order 19 MHz and advisory estimates 141 s per average, reducing drift exposure while preserving candidate-screen visibility.\", \"shot_reason\": \"Use 4 x 20000 repetitions to keep 80000 total shots for a screening resonance while the reduced 11-point grid keeps per-average windows under cap.\", \"even_average_reason\": \"Use 4 averages under snake/even-average guidance and recent drift evidence.\", \"measurement_plan_verified\": true, \"nv_position\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"sequence_manifest_status\": \"staging\", \"sequence_manifest_scope\": \"staging\", \"sequence_manifest_path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"sequence_path\": \"<MATLAB_23C_ROOT>\\\\SavedSequences\\\\SavedSequences-AWG\\\\Rabimodulated.xml\", \"acquisition\": {\"average_continuously\": false, \"averages\": 4, \"repetitions\": 20000}, \"advisory_preview_job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_171430_image145844_reimage_r03_strong_podmr_advisory11\", \"advisory_estimated_per_average_seconds\": 141.28873, \"advisory_recent_nv_drift_risk_level\": \"high\", \"batch_id\": \"nv23_image145844_reimage_r03_strong_podmr_20260513_1715\", \"batch_item_id\": \"image145844_reimage_r03_strong_podmr\", \"submission_path\": \"single_item_measurement_plan\"}, \"acquisition\": {\"average_continuously\": false, \"averages\": 4, \"repetitions\": 20000}, \"intent\": \"image145844_reimage_r03 strong-pi pODMR alignment screen after r01 and r02 no-clear-resonance results; 11-point reduced grid from advisory; no automatic fit/Aux update; terminal raw/readout review required before T2star.\", \"nv_position\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"allow_seed_fallback\": false, \"measurement_plan_verified\": true}, \"job\": {\"job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\", \"mode\": \"execute\", \"recipe\": \"xml_generic_v1\", \"sample_id\": \"NV23\", \"sequence_manifest_id\": \"pulsed_odmr_rabimodulated_v1\", \"sequence_file\": \"SavedSequences/SavedSequences-AWG/Rabimodulated.xml\", \"scan\": {\"vary_prop\": [\"mw_freq\"], \"begin\": 3825000000.0, \"end\": 3925000000.0, \"points\": 11}, \"float_vars\": {\"sample_rate\": 250000000.0, \"mw_freq\": 3875000000.0, \"detuning\": 0, \"freqIQ\": 50000000.0, \"length_last_wait\": 1e-06, \"mod_depth\": 1, \"mw_ampl\": -5, \"ampIQ\": 5, \"full_expt\": 0, \"sweep_range\": 100000000.0, \"sweep_time\": 1e-06, \"delay_wrt_1mus\": 2e-07, \"wait_time\": 2e-06, \"switch_delay\": 1e-07, \"pumping_time\": 1e-06, \"length_rabi_pulse\": 5.2e-08}, \"limits\": {\"max_mw_power_dbm\": 15, \"allow_stage_motion\": false, \"allow_laser_profile\": false}, \"metadata\": {\"project_id\": \"nv23_aligned_nv_t2star_13c_image145844_20260513_1507\", \"target_label\": \"image145844_reimage_r03\", \"target_role\": \"fresh_reimage_third_candidate_strong_pi_podmr_alignment_screen\", \"fresh_track_result\": \"<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json\", \"fresh_counts_kcps\": 43.535, \"fresh_tracked_position_um\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"track_evidence_id\": \"nv23_image145844_reimage_r03_track_20260513_1708_result\", \"prior_rejected_candidate_evidence_ids\": [\"image145844_reimage_r01_strong_podmr_raw_review_20260513_1615\", \"image145844_reimage_r02_strong_podmr_raw_review_20260513_1658\"], \"model_evidence_id\": \"preliminary_alignment_t2star_13c_model_20260513_1518\", \"verified_intent_id\": \"image145844_reimage_r03_strong_podmr_20260513_1715\", \"auto_align_nv\": false, \"require_landmark_match\": false, \"allow_seed_fallback\": false, \"minimum_final_kcps\": 20, \"allow_search_scan\": false, \"search_scan_on_tracking_failure\": false, \"local_fine_search_before_tracking\": false, \"no_auto_align_reason\": \"Standalone TrackCenter completed immediately before this pODMR at 43.535 kcps; use the fresh tracked position directly and avoid hidden target reselection.\", \"analysis_plan\": {\"kind\": \"strong_pi_podmr_alignment_screen\", \"persist_aux_update\": false, \"valid_resonance_review_required\": true, \"visual_review_required\": true, \"stored_average_review_required\": true, \"raw_readout_review_required\": true, \"notes\": \"No automatic fit request is included in this bridge job. Review raw export/plots first; only fit/use a center after signal presence is supported.\"}, \"queue_execute_opt_in\": true, \"requested_by\": \"nv-researcher\", \"disable_agent_auto_recovery\": true, \"frequency_window_reason\": \"Screen +/-50 MHz around expected ms=+1 resonance near 3.875 GHz for magnetic-field alignment candidate triage.\", \"grid_reason\": \"Use 11 points at 10 MHz spacing because strong-pi 52 ns excitation bandwidth is order 19 MHz and advisory estimates 141 s per average, reducing drift exposure while preserving candidate-screen visibility.\", \"shot_reason\": \"Use 4 x 20000 repetitions to keep 80000 total shots for a screening resonance while the reduced 11-point grid keeps per-average windows under cap.\", \"even_average_reason\": \"Use 4 averages under snake/even-average guidance and recent drift evidence.\", \"measurement_plan_verified\": true, \"nv_position\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"sequence_manifest_status\": \"staging\", \"sequence_manifest_scope\": \"staging\", \"sequence_manifest_path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"sequence_path\": \"<MATLAB_23C_ROOT>\\\\SavedSequences\\\\SavedSequences-AWG\\\\Rabimodulated.xml\", \"acquisition\": {\"average_continuously\": false, \"averages\": 4, \"repetitions\": 20000}, \"advisory_preview_job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_171430_image145844_reimage_r03_strong_podmr_advisory11\", \"advisory_estimated_per_average_seconds\": 141.28873, \"advisory_recent_nv_drift_risk_level\": \"high\", \"batch_id\": \"nv23_image145844_reimage_r03_strong_podmr_20260513_1715\", \"batch_item_id\": \"image145844_reimage_r03_strong_podmr\", \"submission_path\": \"single_item_measurement_plan\", \"sequence_bool_vars\": {\"do_adiabatic_inversion\": true}, \"intent\": \"image145844_reimage_r03 strong-pi pODMR alignment screen after r01 and r02 no-clear-resonance results; 11-point reduced grid from advisory; no automatic fit/Aux update; terminal raw/readout review required before T2star.\"}, \"sequence_manifest_path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"sequence_manifest_status\": \"staging\", \"sequence_manifest_scope\": \"staging\", \"sequence_path\": \"<MATLAB_23C_ROOT>\\\\SavedSequences\\\\SavedSequences-AWG\\\\Rabimodulated.xml\"}, \"submission_path\": \"single_item_measurement_plan\", \"measurement_plan_verified\": true, \"validation\": {\"ok\": true, \"error_code\": \"\", \"error_message\": \"\", \"warnings\": [\"sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.\", \"Validation succeeded without touching 23-C hardware paths.\", \"Execute remains separately gated by bootstrap and local lab validation.\"], \"recipe\": {\"name\": \"xml_generic_v1\", \"allowed_modes\": [\"validate\", \"dry_run\", \"execute\"], \"default_sequence_file\": \"\", \"required_fields\": [\"job_id\", \"mode\", \"recipe\", \"sample_id\", \"scan\", \"float_vars\", \"limits\", \"metadata\", \"sequence_manifest_id\"], \"allowed_float_vars\": [], \"default_allow_stage_motion\": false, \"notes\": [\"Generic XML route backed by a sequence manifest.\", \"This is the only mainline recipe in the bridge; ODMR, Rabi, Ramsey, and future sequences should all enter through xml_generic_v1.\", \"validate_job.m resolves sequence_manifest_id and enforces manifest bounds before any execute path is reached; job sample_id owns target identity.\", \"Execute remains subject to the same explicit lab-only opt-in gate used by earlier curated routes.\", \"Archived curated wrappers and recipe definitions are preserved under claw/legacy for historical reference only.\"]}, \"sequence_manifest\": {\"ok\": true, \"ref\": \"pulsed_odmr_rabimodulated_v1\", \"path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"status\": \"staging\", \"id\": \"pulsed_odmr_rabimodulated_v1\", \"scope\": \"staging\", \"manifest\": {\"id\": \"pulsed_odmr_rabimodulated_v1\", \"status\": \"staging\", \"label\": \"Pulsed ODMR (Rabimodulated)\", \"description\": \"Staging proposal that repurposes Rabimodulated.xml for pulsed ODMR by scanning mw_freq while keeping the Rabimodulated pulse structure.\", \"sequence_file\": \"SavedSequences/SavedSequences-AWG/Rabimodulated.xml\", \"execution_route\": \"experiment_gui_standard_v1\", \"legacy_recipe\": \"\", \"sample_id\": \"NV23\", \"allowed_modes\": [\"validate\", \"dry_run\", \"execute\"], \"scan_schema\": {\"max_dimensions\": 1, \"allowed_vary_props\": [\"mw_freq\"], \"points_min\": 3, \"points_max\": 201}, \"acquisition_defaults\": {\"average_continuously\": false, \"averages\": 2, \"repetitions\": 100000}, \"float_vars\": {\"sample_rate\": {\"type\": \"float\", \"default\": 250000000.0, \"min\": 10000000.0, \"max\": 5000000000.0}, \"mw_freq\": {\"type\": \"float\", \"default\": 3874396798.0, \"min\": 3700000000.0, \"max\": 3950000000.0}, \"detuning\": {\"type\": \"float\", \"default\": 0, \"min\": -100000000.0, \"max\": 100000000.0}, \"freqIQ\": {\"type\": \"float\", \"default\": 50000000.0, \"min\": 0, \"max\": 500000000.0}, \"length_last_wait\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"mod_depth\": {\"type\": \"float\", \"default\": 0.3, \"min\": 0, \"max\": 1}, \"mw_ampl\": {\"type\": \"float\", \"default\": -5, \"min\": -20, \"max\": 15}, \"ampIQ\": {\"type\": \"float\", \"default\": 5, \"min\": -80, \"max\": 10}, \"full_expt\": {\"type\": \"float\", \"default\": 0, \"min\": 0, \"max\": 1}, \"sweep_range\": {\"type\": \"float\", \"default\": 100000000.0, \"min\": 0, \"max\": 1000000000.0}, \"sweep_time\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"delay_wrt_1mus\": {\"type\": \"float\", \"default\": 2e-07, \"min\": 0, \"max\": 1}, \"wait_time\": {\"type\": \"float\", \"default\": 2e-06, \"min\": 0, \"max\": 1}, \"switch_delay\": {\"type\": \"float\", \"default\": 1e-07, \"min\": 0, \"max\": 1}, \"pumping_time\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"length_rabi_pulse\": {\"type\": \"float\", \"default\": 5.2e-08, \"min\": 0, \"max\": 0.5}}, \"limits\": {\"max_mw_power_dbm\": 15, \"allow_stage_motion\": false, \"allow_laser_profile\": false, \"max_estimated_duration_seconds\": 7200}, \"requires\": {\"reference_data_for_auto_align\": true, \"supervised_until_promoted\": true}, \"notes\": [\"Staging-only proposal requested after ODMR_withRef.xml hit a RunExperiment channel-shape mismatch while Rabimodulated.xml executed successfully.\", \"Intended as a safer pulsed ODMR draft that keeps the Rabimodulated pulse structure and changes the scan axis to mw_freq.\", \"Review the fixed length_rabi_pulse operating point before supervised execute.\", \"Generated from base manifest rabi_v1.\", \"Typed-only defaults overridden: ampIQ, delay_wrt_1mus, detuning, freqIQ, full_expt, length_last_wait, mod_depth, mw_ampl, mw_freq, pumping_time, sample_rate, sweep_range, sweep_time, switch_delay, wait_time\", \"Manual post-edit after authoring: scan_schema narrowed to mw_freq for pulsed ODMR use.\", \"Manual post-edit after authoring: added fixed length_rabi_pulse default (52 ns) and do_adiabatic_inversion typed default from Rabimodulated.xml.\", \"2026-05-04 cleanup: retargeted manifest to canonical Rabimodulated.xml; obsolete staging XML copy was archived.\"], \"typed_vars\": {\"sample_rate\": {\"type\": \"float\", \"default\": 250000000.0, \"min\": 10000000.0, \"max\": 5000000000.0}, \"mw_freq\": {\"type\": \"float\", \"default\": 3874396798.0, \"min\": 3700000000.0, \"max\": 3950000000.0}, \"detuning\": {\"type\": \"float\", \"default\": 0, \"min\": -100000000.0, \"max\": 100000000.0}, \"freqIQ\": {\"type\": \"float\", \"default\": 50000000.0, \"min\": 0, \"max\": 500000000.0}, \"length_last_wait\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"mod_depth\": {\"type\": \"float\", \"default\": 0.3, \"min\": 0, \"max\": 1}, \"mw_ampl\": {\"type\": \"float\", \"default\": -5, \"min\": -20, \"max\": 15}, \"ampIQ\": {\"type\": \"float\", \"default\": 5, \"min\": -80, \"max\": 10}, \"full_expt\": {\"type\": \"float\", \"default\": 0, \"min\": 0, \"max\": 1}, \"sweep_range\": {\"type\": \"float\", \"default\": 100000000.0, \"min\": 0, \"max\": 1000000000.0}, \"sweep_time\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"delay_wrt_1mus\": {\"type\": \"float\", \"default\": 2e-07, \"min\": 0, \"max\": 1}, \"wait_time\": {\"type\": \"float\", \"default\": 2e-06, \"min\": 0, \"max\": 1}, \"switch_delay\": {\"type\": \"float\", \"default\": 1e-07, \"min\": 0, \"max\": 1}, \"pumping_time\": {\"type\": \"float\", \"default\": 1e-06, \"min\": 0, \"max\": 1}, \"length_rabi_pulse\": {\"type\": \"float\", \"default\": 5.2e-08, \"min\": 0, \"max\": 0.5}, \"do_adiabatic_inversion\": {\"type\": \"boolean\", \"default\": true}}, \"catalog_key\": \"pulsed_odmr_rabimodulated_v1\", \"aliases\": [\"pulsed_odmr_rabimodulated\", \"rabimodulated_pulsed_odmr\"], \"scan_defaults\": {\"vary_prop\": [\"mw_freq\"], \"begin\": 3825100000.0, \"end\": 3925100000.0, \"points\": 41}, \"generated_by\": \"openclaw/workspace/design_nv_sequence.py\", \"generated_at\": \"2026-03-24T13:54:43.055688+00:00\", \"generated_from\": {\"base_manifest_id\": \"rabi_v1\", \"base_sequence_file\": \"SavedSequences/SavedSequences-AWG/Rabimodulated.xml\", \"proposal_type\": \"template_clone_with_default_overrides\"}}, \"notes\": [\"Loaded sequence manifest from <MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json.\"], \"warnings\": [], \"message\": \"Loaded staging sequence manifest.\"}, \"sequence_check\": {\"ok\": true, \"issues\": [], \"message\": \"\"}, \"normalized_job\": {\"job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\", \"mode\": \"execute\", \"recipe\": \"xml_generic_v1\", \"sample_id\": \"NV23\", \"sequence_manifest_id\": \"pulsed_odmr_rabimodulated_v1\", \"sequence_file\": \"SavedSequences/SavedSequences-AWG/Rabimodulated.xml\", \"scan\": {\"vary_prop\": [\"mw_freq\"], \"begin\": 3825000000.0, \"end\": 3925000000.0, \"points\": 11}, \"float_vars\": {\"sample_rate\": 250000000.0, \"mw_freq\": 3875000000.0, \"detuning\": 0, \"freqIQ\": 50000000.0, \"length_last_wait\": 1e-06, \"mod_depth\": 1, \"mw_ampl\": -5, \"ampIQ\": 5, \"full_expt\": 0, \"sweep_range\": 100000000.0, \"sweep_time\": 1e-06, \"delay_wrt_1mus\": 2e-07, \"wait_time\": 2e-06, \"switch_delay\": 1e-07, \"pumping_time\": 1e-06, \"length_rabi_pulse\": 5.2e-08}, \"limits\": {\"max_mw_power_dbm\": 15, \"allow_stage_motion\": false, \"allow_laser_profile\": false}, \"metadata\": {\"project_id\": \"nv23_aligned_nv_t2star_13c_image145844_20260513_1507\", \"target_label\": \"image145844_reimage_r03\", \"target_role\": \"fresh_reimage_third_candidate_strong_pi_podmr_alignment_screen\", \"fresh_track_result\": \"<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json\", \"fresh_counts_kcps\": 43.535, \"fresh_tracked_position_um\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"track_evidence_id\": \"nv23_image145844_reimage_r03_track_20260513_1708_result\", \"prior_rejected_candidate_evidence_ids\": [\"image145844_reimage_r01_strong_podmr_raw_review_20260513_1615\", \"image145844_reimage_r02_strong_podmr_raw_review_20260513_1658\"], \"model_evidence_id\": \"preliminary_alignment_t2star_13c_model_20260513_1518\", \"verified_intent_id\": \"image145844_reimage_r03_strong_podmr_20260513_1715\", \"auto_align_nv\": false, \"require_landmark_match\": false, \"allow_seed_fallback\": false, \"minimum_final_kcps\": 20, \"allow_search_scan\": false, \"search_scan_on_tracking_failure\": false, \"local_fine_search_before_tracking\": false, \"no_auto_align_reason\": \"Standalone TrackCenter completed immediately before this pODMR at 43.535 kcps; use the fresh tracked position directly and avoid hidden target reselection.\", \"analysis_plan\": {\"kind\": \"strong_pi_podmr_alignment_screen\", \"persist_aux_update\": false, \"valid_resonance_review_required\": true, \"visual_review_required\": true, \"stored_average_review_required\": true, \"raw_readout_review_required\": true, \"notes\": \"No automatic fit request is included in this bridge job. Review raw export/plots first; only fit/use a center after signal presence is supported.\"}, \"queue_execute_opt_in\": true, \"requested_by\": \"nv-researcher\", \"disable_agent_auto_recovery\": true, \"frequency_window_reason\": \"Screen +/-50 MHz around expected ms=+1 resonance near 3.875 GHz for magnetic-field alignment candidate triage.\", \"grid_reason\": \"Use 11 points at 10 MHz spacing because strong-pi 52 ns excitation bandwidth is order 19 MHz and advisory estimates 141 s per average, reducing drift exposure while preserving candidate-screen visibility.\", \"shot_reason\": \"Use 4 x 20000 repetitions to keep 80000 total shots for a screening resonance while the reduced 11-point grid keeps per-average windows under cap.\", \"even_average_reason\": \"Use 4 averages under snake/even-average guidance and recent drift evidence.\", \"measurement_plan_verified\": true, \"nv_position\": [117.31443569593856, 117.76164407822792, 115.14167937743193], \"sequence_manifest_status\": \"staging\", \"sequence_manifest_scope\": \"staging\", \"sequence_manifest_path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"sequence_path\": \"<MATLAB_23C_ROOT>\\\\SavedSequences\\\\SavedSequences-AWG\\\\Rabimodulated.xml\", \"acquisition\": {\"average_continuously\": false, \"averages\": 4, \"repetitions\": 20000}, \"advisory_preview_job_id\": \"nv23_pulsed_odmr_rabimodulated_v1_20260513_171430_image145844_reimage_r03_strong_podmr_advisory11\", \"advisory_estimated_per_average_seconds\": 141.28873, \"advisory_recent_nv_drift_risk_level\": \"high\", \"batch_id\": \"nv23_image145844_reimage_r03_strong_podmr_20260513_1715\", \"batch_item_id\": \"image145844_reimage_r03_strong_podmr\", \"submission_path\": \"single_item_measurement_plan\", \"sequence_bool_vars\": {\"do_adiabatic_inversion\": true}, \"intent\": \"image145844_reimage_r03 strong-pi pODMR alignment screen after r01 and r02 no-clear-resonance results; 11-point reduced grid from advisory; no automatic fit/Aux update; terminal raw/readout review required before T2star.\"}, \"sequence_manifest_path\": \"<MATLAB_23C_ROOT>\\\\claw\\\\sequence_manifests\\\\staging\\\\pulsed_odmr_rabimodulated_v1.json\", \"sequence_manifest_status\": \"staging\", \"sequence_manifest_scope\": \"staging\", \"sequence_path\": \"<MATLAB_23C_ROOT>\\\\SavedSequences\\\\SavedSequences-AWG\\\\Rabimodulated.xml\"}}, \"matlab_wrapper\": {\"request_dir\": \"<OPENCLAW_WORKSPACE>/.openclaw/matlab_bridge_requests/submit_spec_20260513_171959_0i0fftxp\", \"request_json_path\": \"<OPENCLAW_WORKSPACE>/.openclaw/matlab_bridge_requests/submit_spec_20260513_171959_0i0fftxp/request.json\", \"response_json_path\": \"<OPENCLAW_WORKSPACE>/.openclaw/matlab_bridge_requests/submit_spec_20260513_171959_0i0fftxp/response.json\", \"runner_path\": \"<OPENCLAW_WORKSPACE>/.openclaw/matlab_bridge_requests/submit_spec_20260513_171959_0i0fftxp/run_matlab_wrapper.m\", \"shell_path\": \"/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe\", \"returncode\": 0, \"stdout\": \"[\\bWarning: Unable to obtain a change notification handle for\\n<OPENCLAW_WORKSPACE>\\\\.openclaw\\\\matlab_bridge_requests\\\\submit_spec_20260513_171959_0i0fftxp.]\\b \\n[\\b> In run (line 56)]\\b \\n library loaded\\npiezo sample rate set to: InfHz\\npiezo adc rate set to: 0ms\\npiezo daq rate set to: 0ms\\n[\\bWarning: instrfind will be removed in a future release. For objects of type\\n - serialport use serialportfind\\n - tcpclient use tcpclientfind\\n - tcpserver use tcpserverfind\\n - udpport use udpportfind\\n - visadev use visadevfind\\n - aardvark use aardvarkfind\\n - ni845x use ni845xfind\\n - icdevice with LegacyMode=false use icdevicefind]\\b \\nAll handles to MCL Piezo released\\n\", \"stderr\": \"\", \"timed_out\": false, \"command\": [\"/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe\", \"-NoProfile\", \"-Command\", \"matlab -batch \\\"run('<OPENCLAW_WORKSPACE>\\\\.openclaw\\\\matlab_bridge_requests\\\\submit_spec_20260513_171959_0i0fftxp\\\\run_matlab_wrapper.m')\\\"\"]}, \"runtime_estimate_context\": {\"source\": \"matlab_pre_enqueue_advisory\", \"model_version\": \"2026-04-04_siglent_tracking_and_waveform_balanced\", \"estimator_mode\": \"siglent\", \"siglent_waveform_length_aware\": true, \"notes\": [\"23-C MATLAB now estimates Siglent runtime with a fixed per-average tracking/housekeeping term, a per-scan-point programming term, and a weaker average-waveform-length term.\", \"Use advisory.estimated_runtime from MATLAB as the runtime source of truth for Siglent jobs; do not assume either the legacy fixed 12.5 s/scan-point model or the earlier overly aggressive waveform-length scaling.\"]}}\n",
+          "stderr": "",
+          "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr",
+          "queue_root": "<NV_BRIDGE_ROOT>",
+          "final_state": "done",
+          "result_path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr/result.json",
+          "outcome_summary": {
+            "status": "completed",
+            "error_code": "",
+            "run_id": "1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017",
+            "data_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+            "align_source": "",
+            "final_counts_kcps": null,
+            "landmark_match_ok": null,
+            "used_search_scan": null
+          },
+          "savedexperiment_raw_export": {
+            "ok": true,
+            "source": "savedexperiment_mat_raw_export",
+            "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+            "mat_variables": [
+              {
+                "name": "Scan",
+                "class": "ExperimentalScan",
+                "size": [
+                  1,
+                  1
+                ]
+              },
+              {
+                "name": "ScanOrderInfo",
+                "class": "struct",
+                "size": [
+                  1,
+                  1
+                ]
+              }
+            ],
+            "scan": {
+              "matlab_class": "ExperimentalScan",
+              "ExperimentData": [
+                [
+                  [
+                    49.13461538461538,
+                    48.46153846153846,
+                    47.06730769230769,
+                    48.36538461538461,
+                    48.50961538461539,
+                    50.04807692307692,
+                    49.42307692307692,
+                    49.855769230769226,
+                    49.80769230769231,
+                    50.67307692307693,
+                    49.56730769230769
+                  ],
+                  [
+                    46.82692307692308,
+                    50.625,
+                    49.90384615384615,
+                    46.730769230769226,
+                    48.125,
+                    40.528846153846146,
+                    45.09615384615385,
+                    49.75961538461539,
+                    49.47115384615385,
+                    50.33653846153847,
+                    45.38461538461539
+                  ]
+                ]
+              ],
+              "ExperimentDataEachAvg": [
+                [
+                  [
+                    [
+                      50,
+                      52.5,
+                      50.19230769230769,
+                      48.65384615384615,
+                      50.96153846153846,
+                      51.92307692307692,
+                      50.57692307692308,
+                      47.30769230769231,
+                      48.07692307692308,
+                      55,
+                      56.34615384615384
+                    ],
+                    [
+                      47.88461538461539,
+                      55.769230769230774,
+                      50,
+                      46.53846153846154,
+                      48.84615384615385,
+                      40.96153846153846,
+                      48.26923076923077,
+                      51.92307692307692,
+                      46.73076923076923,
+                      52.88461538461539,
+                      41.92307692307692
+                    ]
+                  ],
+                  [
+                    [
+                      48.46153846153846,
+                      48.07692307692308,
+                      41.92307692307692,
+                      46.34615384615385,
+                      42.30769230769231,
+                      44.61538461538461,
+                      41.15384615384615,
+                      48.84615384615385,
+                      47.30769230769231,
+                      41.53846153846154,
+                      45.38461538461539
+                    ],
+                    [
+                      42.69230769230769,
+                      46.73076923076923,
+                      46.73076923076923,
+                      43.26923076923077,
+                      41.92307692307692,
+                      35,
+                      38.46153846153846,
+                      48.84615384615385,
+                      45.57692307692308,
+                      44.23076923076923,
+                      42.30769230769231
+                    ]
+                  ],
+                  [
+                    [
+                      47.11538461538461,
+                      44.61538461538461,
+                      47.69230769230769,
+                      47.5,
+                      50.38461538461539,
+                      50.38461538461539,
+                      45.96153846153846,
+                      53.07692307692307,
+                      49.80769230769231,
+                      47.11538461538461,
+                      47.11538461538461
+                    ],
+                    [
+                      49.42307692307692,
+                      46.34615384615385,
+                      51.15384615384615,
+                      47.69230769230769,
+                      51.53846153846154,
+                      40.96153846153846,
+                      47.11538461538461,
+                      49.61538461538461,
+                      50.96153846153846,
+                      46.92307692307692,
+                      46.15384615384615
+                    ]
+                  ],
+                  [
+                    [
+                      50.96153846153846,
+                      48.65384615384615,
+                      48.46153846153846,
+                      50.96153846153846,
+                      50.38461538461539,
+                      53.269230769230774,
+                      60,
+                      50.19230769230769,
+                      54.03846153846154,
+                      59.03846153846154,
+                      49.42307692307692
+                    ],
+                    [
+                      47.30769230769231,
+                      53.65384615384616,
+                      51.73076923076923,
+                      49.42307692307692,
+                      50.19230769230769,
+                      45.19230769230769,
+                      46.53846153846154,
+                      48.65384615384615,
+                      54.61538461538461,
+                      57.307692307692314,
+                      51.15384615384615
+                    ]
+                  ]
+                ]
+              ],
+              "ExperimentDataEachRep": [
+                []
+              ],
+              "SequenceName": "Rabimodulated.xml",
+              "Sequence": "���<sequence>\r\n    \r\n    <variables>\t\r\n        sample_rate = float(250000000,1e7,5e9)\r\n        mw_freq     = float(3.8751e+09, 1e9, 15e9)\r\n        detuning    = float(0,-100e6,100e6)\r\n        freqIQ      = float(50e6, 0,500e6) \n        \r\n        length_rabi_pulse   = float(52e-9, 0, 0.5)\n        length_last_wait   = float(1e-6, 0, 0.5)\r\n        mod_depth           = float(0.3,0,1)\r\n        \r\n        mw_ampl = float(-5, -20, 15)\n        ampIQ = float(5,-30,17) %in dBm\n        \r\n        %adiabatic inversion\r\n        %full_expt       = float(1,0,1);\r\n        full_expt       = float(0,0,1);\r\n        do_adiabatic_inversion = boolean(1)\r\n        \r\n        sweep_range = float(100e6, 5e6, 500e6)\r\n        sweep_time  = float(1e-6, 20e-9, 20e-6)\r\n        \r\n        %delay_wrt_1mus  = float(-0.88e-6,-0.1,0.1) % 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2022-09-29-182523  %OLD -2.17e-6 calibrated by PL curve 11-08-05 13-17-48\r\n        delay_wrt_1mus  = float(0.2e-6,-0.1,0.1) % DLnsec LASER 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2023-10-09-183857  \r\n        wait_time       = float(2e-6, 0,1)\r\n        switch_delay    = float(1.000000000000000e-07, -1e-6,1);\n        pumping_time = float(1e-6,0,1);\r\n        \r\n    </variables>\r\n    \r\n    <shaped_pulses>\r\n        \r\n    </shaped_pulses>\r\n    \r\n    <instructions>\r\n        mw_freq = mw_freq + detuning;\r\n        \r\n        length_rabi_pulse = round(length_rabi_pulse*sample_rate)/sample_rate;\r\n        \r\n        ch_on =  [1 1 1 0 0 0];\r\n        \r\n        PSeq = set_sample_rate(PSeq, sample_rate);\r\n        PSeq = enable_channels(PSeq, 1:6,ch_on); \r\n        PSeq = set_microwave(PSeq, mw_freq,mw_ampl,ampIQ,freqIQ);\r\n        \r\n        \r\n        % Acquiring true 0 level reference \r\n        PSeq = adj_polarize(PSeq,sample_rate,pumping_time,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n       \r\n        \r\n        %% Acquire 1 level reference\r\n        if abs(full_expt)>1e-12\r\n        %if do_adiabatic_inversion\r\n        %PSeq = adiabatic_inversion(PSeq,sample_rate,sweep_range,sweep_time,freqIQ,ch_on,0.4);\r\n        %else\r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,130e-9,1,switch_delay,ch_on);\r\n        %end\r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,52e-9,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,3000e-9,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus, ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n        end\r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,500e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        \r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        \r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,1600e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        % detection\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        \r\n        PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n    </instructions>\r\n    \r\n</sequence>\r\n\r\n",
+              "vary_begin": 3825000000.0,
+              "vary_end": 3925000000.0,
+              "vary_step_size": 10000000.0,
+              "vary_points": 11,
+              "vary_prop": [
+                "mw_freq"
+              ],
+              "Repetitions": 20000,
+              "Averages": 4,
+              "ExperimentDataError": [
+                [
+                  [
+                    3.1349478488046834,
+                    3.087883821074026,
+                    3.0421979838816733,
+                    3.060932712746782,
+                    3.104230481554134,
+                    3.138577637400898,
+                    3.1225304281315136,
+                    3.129931802641541,
+                    3.098779091796918,
+                    3.1568899416858858,
+                    3.1418516546342783
+                  ],
+                  [
+                    3.028704373750126,
+                    3.146890789948614,
+                    3.154909424831174,
+                    3.016553367317564,
+                    3.059523176716681,
+                    2.8264796460869444,
+                    2.983820783575635,
+                    3.1388801696483983,
+                    3.1034719077783386,
+                    3.1821134591198943,
+                    2.992894756719519
+                  ]
+                ]
+              ],
+              "ExperimentDataErrorEachAvg": [
+                [
+                  [
+                    [
+                      3.1636429201952585,
+                      3.2367602098827652,
+                      3.1576397820259103,
+                      3.063747274158929,
+                      3.157023640385017,
+                      3.173768097396603,
+                      3.157332897607019,
+                      3.0222703301489178,
+                      3.033878264113428,
+                      3.29696884415739,
+                      3.334875922133408
+                    ],
+                    [
+                      3.0401191049733955,
+                      3.285083681710902,
+                      3.1401751759414593,
+                      3.01060781255077,
+                      3.1055592889383568,
+                      2.8049392924828513,
+                      3.0760981053747734,
+                      3.242932794364015,
+                      3.016595205582875,
+                      3.2364471149271625,
+                      2.875851956024619
+                    ]
+                  ],
+                  [
+                    [
+                      3.093929814493259,
+                      3.082254062089094,
+                      2.8370089683709168,
+                      3.0046078727878953,
+                      2.951730635101601,
+                      2.96254145124458,
+                      2.8245082965366723,
+                      3.08164925100319,
+                      3.0100082646145276,
+                      2.88896136669537,
+                      3.011488489203469
+                    ],
+                    [
+                      2.9008974927202584,
+                      3.0165952055829557,
+                      3.0288306043417177,
+                      2.89408748689279,
+                      2.8500154529524955,
+                      2.5968867743622397,
+                      2.719709459688898,
+                      3.093627369555,
+                      2.992864172246495,
+                      2.962829815507436,
+                      2.9138993043417507
+                    ]
+                  ],
+                  [
+                    [
+                      3.1128423304092245,
+                      2.9374675248315443,
+                      3.082552823768984,
+                      3.040420790560127,
+                      3.1398677624535365,
+                      3.175007740470599,
+                      3.004903277296958,
+                      3.2305706799426384,
+                      3.1226123005832944,
+                      3.016296041567888,
+                      3.0407200136285306
+                    ],
+                    [
+                      3.1347382912529973,
+                      3.016891888130948,
+                      3.2206585371840424,
+                      3.0584629342897856,
+                      3.150691557358141,
+                      2.8311871759769383,
+                      3.0889886667136373,
+                      3.14048020402288,
+                      3.1098111653517013,
+                      3.0590578215596396,
+                      3.0231622897145587
+                    ]
+                  ],
+                  [
+                    [
+                      3.1687168477794043,
+                      3.0877959373666353,
+                      3.081952871404603,
+                      3.133506322803251,
+                      3.1633377873058546,
+                      3.236131703983786,
+                      3.467671156410692,
+                      3.1809786833513494,
+                      3.224042925391839,
+                      3.3984810235881917,
+                      3.1699351319863585
+                    ],
+                    [
+                      3.034482846211176,
+                      3.258593021626664,
+                      3.225935141477867,
+                      3.0991417470477356,
+                      3.122304342417458,
+                      3.0543121288085673,
+                      3.0350775594529424,
+                      3.075795109458178,
+                      3.286052868940013,
+                      3.448564783764767,
+                      3.1510049572208905
+                    ]
+                  ]
+                ]
+              ],
+              "Variable_values": [
+                {
+                  "name": "sample_rate",
+                  "value": 250000000.0
+                },
+                {
+                  "name": "mw_freq",
+                  "value": 3925000000.0
+                },
+                {
+                  "name": "detuning",
+                  "value": 0
+                },
+                {
+                  "name": "freqIQ",
+                  "value": 50000000.0
+                },
+                {
+                  "name": "length_rabi_pulse",
+                  "value": 5.2e-08
+                },
+                {
+                  "name": "length_last_wait",
+                  "value": 1e-06
+                },
+                {
+                  "name": "mod_depth",
+                  "value": 1
+                },
+                {
+                  "name": "mw_ampl",
+                  "value": -5
+                },
+                {
+                  "name": "ampIQ",
+                  "value": 5
+                },
+                {
+                  "name": "full_expt",
+                  "value": 0
+                },
+                {
+                  "name": "sweep_range",
+                  "value": 100000000.0
+                },
+                {
+                  "name": "sweep_time",
+                  "value": 1e-06
+                },
+                {
+                  "name": "delay_wrt_1mus",
+                  "value": 2e-07
+                },
+                {
+                  "name": "wait_time",
+                  "value": 2e-06
+                },
+                {
+                  "name": "switch_delay",
+                  "value": 1e-07
+                },
+                {
+                  "name": "pumping_time",
+                  "value": 1e-06
+                }
+              ],
+              "Bool_values": [
+                {
+                  "name": "do_adiabatic_inversion",
+                  "value": 1
+                }
+              ],
+              "DateTime": "2026-05-13-172017",
+              "Notes": "Notes on Experiment:",
+              "Laserpower": [
+                0.6540762884763222,
+                0.03516505989966811
+              ],
+              "SampleRate": 250000000.0,
+              "ShapedPulses": [],
+              "ScanOrderMode": "snake",
+              "ScanOrderSeed": [],
+              "ScanOrderEachAvg": [
+                [
+                  [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  [
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                  ],
+                  [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11
+                  ],
+                  [
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1
+                  ]
+                ]
+              ],
+              "ScanOrderInfo": {
+                "mode": "snake",
+                "seed": [],
+                "order_each_avg": [
+                  [
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ],
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ]
+                  ]
+                ],
+                "data_saved_in_tau_order": true,
+                "order_semantics": "order_each_avg{slice}{average} contains tau indices in acquisition order"
+              },
+              "israndom": [],
+              "istracking": "Per average",
+              "ispower": "Disabled",
+              "position": [
+                "117.382",
+                "117.700",
+                "115.336"
+              ]
+            },
+            "extra_variables": {
+              "ScanOrderInfo": {
+                "mode": "snake",
+                "seed": [],
+                "order_each_avg": [
+                  [
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ],
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ]
+                  ]
+                ],
+                "data_saved_in_tau_order": true,
+                "order_semantics": "order_each_avg{slice}{average} contains tau indices in acquisition order"
+              }
+            },
+            "diagnostic_figures": {
+              "available": true,
+              "png_path": "<OPENCLAW_WORKSPACE>/.openclaw/savedexperiment_mat_raw_cache/figures/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017__49ff0f75049b__raw_readouts.png",
+              "png_path_wsl": "<OPENCLAW_WORKSPACE>/.openclaw/savedexperiment_mat_raw_cache/figures/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017__49ff0f75049b__raw_readouts.png",
+              "contents": [
+                "combined raw readouts",
+                "per-average raw readout overlay"
+              ],
+              "warnings": []
+            },
+            "warnings": [],
+            "error_code": "",
+            "error_message": ""
+          },
+          "runtime_watch": {
+            "enabled": true,
+            "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr",
+            "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+            "savedexperiment_raw_export": {
+              "ok": true,
+              "source": "savedexperiment_mat_raw_export",
+              "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+              "mat_variables": [
+                {
+                  "name": "Scan",
+                  "class": "ExperimentalScan",
+                  "size": [
+                    1,
+                    1
+                  ]
+                },
+                {
+                  "name": "ScanOrderInfo",
+                  "class": "struct",
+                  "size": [
+                    1,
+                    1
+                  ]
+                }
+              ],
+              "scan": {
+                "matlab_class": "ExperimentalScan",
+                "ExperimentData": [
+                  [
+                    [
+                      49.13461538461538,
+                      48.46153846153846,
+                      47.06730769230769,
+                      48.36538461538461,
+                      48.50961538461539,
+                      50.04807692307692,
+                      49.42307692307692,
+                      49.855769230769226,
+                      49.80769230769231,
+                      50.67307692307693,
+                      49.56730769230769
+                    ],
+                    [
+                      46.82692307692308,
+                      50.625,
+                      49.90384615384615,
+                      46.730769230769226,
+                      48.125,
+                      40.528846153846146,
+                      45.09615384615385,
+                      49.75961538461539,
+                      49.47115384615385,
+                      50.33653846153847,
+                      45.38461538461539
+                    ]
+                  ]
+                ],
+                "ExperimentDataEachAvg": [
+                  [
+                    [
+                      [
+                        50,
+                        52.5,
+                        50.19230769230769,
+                        48.65384615384615,
+                        50.96153846153846,
+                        51.92307692307692,
+                        50.57692307692308,
+                        47.30769230769231,
+                        48.07692307692308,
+                        55,
+                        56.34615384615384
+                      ],
+                      [
+                        47.88461538461539,
+                        55.769230769230774,
+                        50,
+                        46.53846153846154,
+                        48.84615384615385,
+                        40.96153846153846,
+                        48.26923076923077,
+                        51.92307692307692,
+                        46.73076923076923,
+                        52.88461538461539,
+                        41.92307692307692
+                      ]
+                    ],
+                    [
+                      [
+                        48.46153846153846,
+                        48.07692307692308,
+                        41.92307692307692,
+                        46.34615384615385,
+                        42.30769230769231,
+                        44.61538461538461,
+                        41.15384615384615,
+                        48.84615384615385,
+                        47.30769230769231,
+                        41.53846153846154,
+                        45.38461538461539
+                      ],
+                      [
+                        42.69230769230769,
+                        46.73076923076923,
+                        46.73076923076923,
+                        43.26923076923077,
+                        41.92307692307692,
+                        35,
+                        38.46153846153846,
+                        48.84615384615385,
+                        45.57692307692308,
+                        44.23076923076923,
+                        42.30769230769231
+                      ]
+                    ],
+                    [
+                      [
+                        47.11538461538461,
+                        44.61538461538461,
+                        47.69230769230769,
+                        47.5,
+                        50.38461538461539,
+                        50.38461538461539,
+                        45.96153846153846,
+                        53.07692307692307,
+                        49.80769230769231,
+                        47.11538461538461,
+                        47.11538461538461
+                      ],
+                      [
+                        49.42307692307692,
+                        46.34615384615385,
+                        51.15384615384615,
+                        47.69230769230769,
+                        51.53846153846154,
+                        40.96153846153846,
+                        47.11538461538461,
+                        49.61538461538461,
+                        50.96153846153846,
+                        46.92307692307692,
+                        46.15384615384615
+                      ]
+                    ],
+                    [
+                      [
+                        50.96153846153846,
+                        48.65384615384615,
+                        48.46153846153846,
+                        50.96153846153846,
+                        50.38461538461539,
+                        53.269230769230774,
+                        60,
+                        50.19230769230769,
+                        54.03846153846154,
+                        59.03846153846154,
+                        49.42307692307692
+                      ],
+                      [
+                        47.30769230769231,
+                        53.65384615384616,
+                        51.73076923076923,
+                        49.42307692307692,
+                        50.19230769230769,
+                        45.19230769230769,
+                        46.53846153846154,
+                        48.65384615384615,
+                        54.61538461538461,
+                        57.307692307692314,
+                        51.15384615384615
+                      ]
+                    ]
+                  ]
+                ],
+                "ExperimentDataEachRep": [
+                  []
+                ],
+                "SequenceName": "Rabimodulated.xml",
+                "Sequence": "���<sequence>\r\n    \r\n    <variables>\t\r\n        sample_rate = float(250000000,1e7,5e9)\r\n        mw_freq     = float(3.8751e+09, 1e9, 15e9)\r\n        detuning    = float(0,-100e6,100e6)\r\n        freqIQ      = float(50e6, 0,500e6) \n        \r\n        length_rabi_pulse   = float(52e-9, 0, 0.5)\n        length_last_wait   = float(1e-6, 0, 0.5)\r\n        mod_depth           = float(0.3,0,1)\r\n        \r\n        mw_ampl = float(-5, -20, 15)\n        ampIQ = float(5,-30,17) %in dBm\n        \r\n        %adiabatic inversion\r\n        %full_expt       = float(1,0,1);\r\n        full_expt       = float(0,0,1);\r\n        do_adiabatic_inversion = boolean(1)\r\n        \r\n        sweep_range = float(100e6, 5e6, 500e6)\r\n        sweep_time  = float(1e-6, 20e-9, 20e-6)\r\n        \r\n        %delay_wrt_1mus  = float(-0.88e-6,-0.1,0.1) % 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2022-09-29-182523  %OLD -2.17e-6 calibrated by PL curve 11-08-05 13-17-48\r\n        delay_wrt_1mus  = float(0.2e-6,-0.1,0.1) % DLnsec LASER 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2023-10-09-183857  \r\n        wait_time       = float(2e-6, 0,1)\r\n        switch_delay    = float(1.000000000000000e-07, -1e-6,1);\n        pumping_time = float(1e-6,0,1);\r\n        \r\n    </variables>\r\n    \r\n    <shaped_pulses>\r\n        \r\n    </shaped_pulses>\r\n    \r\n    <instructions>\r\n        mw_freq = mw_freq + detuning;\r\n        \r\n        length_rabi_pulse = round(length_rabi_pulse*sample_rate)/sample_rate;\r\n        \r\n        ch_on =  [1 1 1 0 0 0];\r\n        \r\n        PSeq = set_sample_rate(PSeq, sample_rate);\r\n        PSeq = enable_channels(PSeq, 1:6,ch_on); \r\n        PSeq = set_microwave(PSeq, mw_freq,mw_ampl,ampIQ,freqIQ);\r\n        \r\n        \r\n        % Acquiring true 0 level reference \r\n        PSeq = adj_polarize(PSeq,sample_rate,pumping_time,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n       \r\n        \r\n        %% Acquire 1 level reference\r\n        if abs(full_expt)>1e-12\r\n        %if do_adiabatic_inversion\r\n        %PSeq = adiabatic_inversion(PSeq,sample_rate,sweep_range,sweep_time,freqIQ,ch_on,0.4);\r\n        %else\r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,130e-9,1,switch_delay,ch_on);\r\n        %end\r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,52e-9,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,3000e-9,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus, ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n        end\r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,500e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        \r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        \r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,1600e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        % detection\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        \r\n        PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n    </instructions>\r\n    \r\n</sequence>\r\n\r\n",
+                "vary_begin": 3825000000.0,
+                "vary_end": 3925000000.0,
+                "vary_step_size": 10000000.0,
+                "vary_points": 11,
+                "vary_prop": [
+                  "mw_freq"
+                ],
+                "Repetitions": 20000,
+                "Averages": 4,
+                "ExperimentDataError": [
+                  [
+                    [
+                      3.1349478488046834,
+                      3.087883821074026,
+                      3.0421979838816733,
+                      3.060932712746782,
+                      3.104230481554134,
+                      3.138577637400898,
+                      3.1225304281315136,
+                      3.129931802641541,
+                      3.098779091796918,
+                      3.1568899416858858,
+                      3.1418516546342783
+                    ],
+                    [
+                      3.028704373750126,
+                      3.146890789948614,
+                      3.154909424831174,
+                      3.016553367317564,
+                      3.059523176716681,
+                      2.8264796460869444,
+                      2.983820783575635,
+                      3.1388801696483983,
+                      3.1034719077783386,
+                      3.1821134591198943,
+                      2.992894756719519
+                    ]
+                  ]
+                ],
+                "ExperimentDataErrorEachAvg": [
+                  [
+                    [
+                      [
+                        3.1636429201952585,
+                        3.2367602098827652,
+                        3.1576397820259103,
+                        3.063747274158929,
+                        3.157023640385017,
+                        3.173768097396603,
+                        3.157332897607019,
+                        3.0222703301489178,
+                        3.033878264113428,
+                        3.29696884415739,
+                        3.334875922133408
+                      ],
+                      [
+                        3.0401191049733955,
+                        3.285083681710902,
+                        3.1401751759414593,
+                        3.01060781255077,
+                        3.1055592889383568,
+                        2.8049392924828513,
+                        3.0760981053747734,
+                        3.242932794364015,
+                        3.016595205582875,
+                        3.2364471149271625,
+                        2.875851956024619
+                      ]
+                    ],
+                    [
+                      [
+                        3.093929814493259,
+                        3.082254062089094,
+                        2.8370089683709168,
+                        3.0046078727878953,
+                        2.951730635101601,
+                        2.96254145124458,
+                        2.8245082965366723,
+                        3.08164925100319,
+                        3.0100082646145276,
+                        2.88896136669537,
+                        3.011488489203469
+                      ],
+                      [
+                        2.9008974927202584,
+                        3.0165952055829557,
+                        3.0288306043417177,
+                        2.89408748689279,
+                        2.8500154529524955,
+                        2.5968867743622397,
+                        2.719709459688898,
+                        3.093627369555,
+                        2.992864172246495,
+                        2.962829815507436,
+                        2.9138993043417507
+                      ]
+                    ],
+                    [
+                      [
+                        3.1128423304092245,
+                        2.9374675248315443,
+                        3.082552823768984,
+                        3.040420790560127,
+                        3.1398677624535365,
+                        3.175007740470599,
+                        3.004903277296958,
+                        3.2305706799426384,
+                        3.1226123005832944,
+                        3.016296041567888,
+                        3.0407200136285306
+                      ],
+                      [
+                        3.1347382912529973,
+                        3.016891888130948,
+                        3.2206585371840424,
+                        3.0584629342897856,
+                        3.150691557358141,
+                        2.8311871759769383,
+                        3.0889886667136373,
+                        3.14048020402288,
+                        3.1098111653517013,
+                        3.0590578215596396,
+                        3.0231622897145587
+                      ]
+                    ],
+                    [
+                      [
+                        3.1687168477794043,
+                        3.0877959373666353,
+                        3.081952871404603,
+                        3.133506322803251,
+                        3.1633377873058546,
+                        3.236131703983786,
+                        3.467671156410692,
+                        3.1809786833513494,
+                        3.224042925391839,
+                        3.3984810235881917,
+                        3.1699351319863585
+                      ],
+                      [
+                        3.034482846211176,
+                        3.258593021626664,
+                        3.225935141477867,
+                        3.0991417470477356,
+                        3.122304342417458,
+                        3.0543121288085673,
+                        3.0350775594529424,
+                        3.075795109458178,
+                        3.286052868940013,
+                        3.448564783764767,
+                        3.1510049572208905
+                      ]
+                    ]
+                  ]
+                ],
+                "Variable_values": [
+                  {
+                    "name": "sample_rate",
+                    "value": 250000000.0
+                  },
+                  {
+                    "name": "mw_freq",
+                    "value": 3925000000.0
+                  },
+                  {
+                    "name": "detuning",
+                    "value": 0
+                  },
+                  {
+                    "name": "freqIQ",
+                    "value": 50000000.0
+                  },
+                  {
+                    "name": "length_rabi_pulse",
+                    "value": 5.2e-08
+                  },
+                  {
+                    "name": "length_last_wait",
+                    "value": 1e-06
+                  },
+                  {
+                    "name": "mod_depth",
+                    "value": 1
+                  },
+                  {
+                    "name": "mw_ampl",
+                    "value": -5
+                  },
+                  {
+                    "name": "ampIQ",
+                    "value": 5
+                  },
+                  {
+                    "name": "full_expt",
+                    "value": 0
+                  },
+                  {
+                    "name": "sweep_range",
+                    "value": 100000000.0
+                  },
+                  {
+                    "name": "sweep_time",
+                    "value": 1e-06
+                  },
+                  {
+                    "name": "delay_wrt_1mus",
+                    "value": 2e-07
+                  },
+                  {
+                    "name": "wait_time",
+                    "value": 2e-06
+                  },
+                  {
+                    "name": "switch_delay",
+                    "value": 1e-07
+                  },
+                  {
+                    "name": "pumping_time",
+                    "value": 1e-06
+                  }
+                ],
+                "Bool_values": [
+                  {
+                    "name": "do_adiabatic_inversion",
+                    "value": 1
+                  }
+                ],
+                "DateTime": "2026-05-13-172017",
+                "Notes": "Notes on Experiment:",
+                "Laserpower": [
+                  0.6540762884763222,
+                  0.03516505989966811
+                ],
+                "SampleRate": 250000000.0,
+                "ShapedPulses": [],
+                "ScanOrderMode": "snake",
+                "ScanOrderSeed": [],
+                "ScanOrderEachAvg": [
+                  [
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ],
+                    [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11
+                    ],
+                    [
+                      11,
+                      10,
+                      9,
+                      8,
+                      7,
+                      6,
+                      5,
+                      4,
+                      3,
+                      2,
+                      1
+                    ]
+                  ]
+                ],
+                "ScanOrderInfo": {
+                  "mode": "snake",
+                  "seed": [],
+                  "order_each_avg": [
+                    [
+                      [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                      ],
+                      [
+                        11,
+                        10,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                      ],
+                      [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                      ],
+                      [
+                        11,
+                        10,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                      ]
+                    ]
+                  ],
+                  "data_saved_in_tau_order": true,
+                  "order_semantics": "order_each_avg{slice}{average} contains tau indices in acquisition order"
+                },
+                "israndom": [],
+                "istracking": "Per average",
+                "ispower": "Disabled",
+                "position": [
+                  "117.382",
+                  "117.700",
+                  "115.336"
+                ]
+              },
+              "extra_variables": {
+                "ScanOrderInfo": {
+                  "mode": "snake",
+                  "seed": [],
+                  "order_each_avg": [
+                    [
+                      [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                      ],
+                      [
+                        11,
+                        10,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                      ],
+                      [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11
+                      ],
+                      [
+                        11,
+                        10,
+                        9,
+                        8,
+                        7,
+                        6,
+                        5,
+                        4,
+                        3,
+                        2,
+                        1
+                      ]
+                    ]
+                  ],
+                  "data_saved_in_tau_order": true,
+                  "order_semantics": "order_each_avg{slice}{average} contains tau indices in acquisition order"
+                }
+              },
+              "diagnostic_figures": {
+                "available": true,
+                "png_path": "<OPENCLAW_WORKSPACE>/.openclaw/savedexperiment_mat_raw_cache/figures/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017__49ff0f75049b__raw_readouts.png",
+                "png_path_wsl": "<OPENCLAW_WORKSPACE>/.openclaw/savedexperiment_mat_raw_cache/figures/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017__49ff0f75049b__raw_readouts.png",
+                "contents": [
+                  "combined raw readouts",
+                  "per-average raw readout overlay"
+                ],
+                "warnings": []
+              },
+              "warnings": [],
+              "error_code": "",
+              "error_message": ""
+            },
+            "drift_analysis": {
+              "ok": true,
+              "source": "analyze_savedexperiment_average_drift.m",
+              "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+              "source_file": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+              "sequence_name": "Rabimodulated.xml",
+              "slice_index": 1,
+              "num_averages": 4,
+              "num_traces": 2,
+              "num_points": 11,
+              "drop_threshold": 0.15,
+              "min_averages_for_reference": 3,
+              "reference_method": "single-average raw readout common-mode; no cross-average reference",
+              "trace_aggregation_method": "mean normalized raw brightness across selected readout traces",
+              "drift_score_method": "max(0, -linear end-minus-start of per-average common-mode raw brightness in acquisition order when scan-order metadata exists)",
+              "scan_order_source": "Scan.ScanOrderEachAvg",
+              "scan_order_mode": "snake",
+              "data_order_for_score": "acquisition order if ScanOrderEachAvg is available; stored tau order otherwise",
+              "scan_order_used_count": 4,
+              "scan_order_warnings": [],
+              "entries": [
+                {
+                  "average_index": 1,
+                  "drift_score": 0.009750055735836932,
+                  "flagged": false,
+                  "scan_order_used": true,
+                  "common_mode_end_minus_start_fraction": -0.009750055735836932,
+                  "common_mode_edge_end_minus_start_fraction": -0.0024285342713468716,
+                  "worst_drop_score": 0.0770343580470163,
+                  "worst_trace_index": 2,
+                  "worst_trace_end_minus_start_fraction": -0.0770343580470163,
+                  "worst_residual_end_minus_start_fraction": -0.0770343580470163,
+                  "worst_edge_end_minus_start_fraction": -0.09150090415913209
+                },
+                {
+                  "average_index": 2,
+                  "drift_score": 0,
+                  "flagged": false,
+                  "scan_order_used": true,
+                  "common_mode_end_minus_start_fraction": 0.02979791694812557,
+                  "common_mode_edge_end_minus_start_fraction": 0.06998864185983239,
+                  "worst_drop_score": 0,
+                  "worst_trace_index": 1,
+                  "worst_trace_end_minus_start_fraction": 0.04342768514928264,
+                  "worst_residual_end_minus_start_fraction": 0.04342768514928264,
+                  "worst_edge_end_minus_start_fraction": 0.10663047692904226
+                },
+                {
+                  "average_index": 3,
+                  "drift_score": 0,
+                  "flagged": false,
+                  "scan_order_used": true,
+                  "common_mode_end_minus_start_fraction": 0.007349330799081297,
+                  "common_mode_edge_end_minus_start_fraction": -0.0010726023600221846,
+                  "worst_drop_score": 0.028779599271402577,
+                  "worst_trace_index": 2,
+                  "worst_trace_end_minus_start_fraction": -0.028779599271402577,
+                  "worst_residual_end_minus_start_fraction": -0.028779599271402577,
+                  "worst_edge_end_minus_start_fraction": -0.02805100182149367
+                },
+                {
+                  "average_index": 4,
+                  "drift_score": 0.08453326517772887,
+                  "flagged": false,
+                  "scan_order_used": true,
+                  "common_mode_end_minus_start_fraction": -0.08453326517772887,
+                  "common_mode_edge_end_minus_start_fraction": -0.07939013840830456,
+                  "worst_drop_score": 0.10193850267379675,
+                  "worst_trace_index": 1,
+                  "worst_trace_end_minus_start_fraction": -0.10193850267379675,
+                  "worst_residual_end_minus_start_fraction": -0.10193850267379675,
+                  "worst_edge_end_minus_start_fraction": -0.08455882352941174
+                }
+              ],
+              "flagged_average_indices": [],
+              "error_code": "",
+              "error_message": ""
+            },
+            "drift_decision": {
+              "enabled": false,
+              "decision_required": false,
+              "reason": "advisory_only",
+              "source": "analyze_savedexperiment_average_drift.m",
+              "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+              "analysis_ok": true,
+              "basis": "analyze_savedexperiment_average_drift.common_mode_raw_brightness_flagged",
+              "threshold": 0.15,
+              "required_count": 3,
+              "window_average_indices": [],
+              "latest_average_index": null,
+              "worst_score": null,
+              "reference_method": "",
+              "scan_order_source": "",
+              "scan_order_mode": "",
+              "data_order_for_score": "",
+              "scan_order_used_count": 0,
+              "scan_order_warnings": [],
+              "entries": [],
+              "decision_key": "",
+              "recommended_agent_decision": ""
+            },
+            "advisory": {
+              "detected": false,
+              "code": "",
+              "message": "",
+              "detected_at": "",
+              "agent_review_recommended": false
+            },
+            "matlab_command_log": {
+              "enabled": true,
+              "available": true,
+              "path": "<NV_BRIDGE_ROOT>/done/nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr/matlab_command_window.log",
+              "size_bytes": 62180,
+              "mtime_age_seconds": 40.6288857460022,
+              "latest_line": "NVBridge MATLAB command-window log stopping: C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\nv_bridge\\running\\nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\\matlab_command_window.log",
+              "tail_lines": [
+                "   47.3077",
+                "",
+                "handles.Array_PSeq{helper_scan,1}.Channels(3).RiseDurations(s)",
+                "   2.6000e-07",
+                "",
+                "Repetitions",
+                "       20000",
+                "",
+                "check .Channels(2).Enable 4",
+                "     1",
+                "",
+                "Elapsed time is 1073.068181 seconds.",
+                "check .Channels(2).Enable 3",
+                "     1",
+                "",
+                "NVBridge MATLAB command-window log stopping: C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\nv_bridge\\running\\nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr\\matlab_command_window.log"
+              ],
+              "fatal_detected": false,
+              "fatal_line": "",
+              "fatal_pattern": "",
+              "read_error": ""
+            },
+            "anomaly": {
+              "detected": false,
+              "error_code": "",
+              "message": "",
+              "detected_at": "",
+              "retry_recommended": false,
+              "requested_stop": false,
+              "request_written": false
+            },
+            "stop_request": {
+              "requested": false,
+              "requested_at": "",
+              "requested_by": "",
+              "reason": "",
+              "request_written": false
+            },
+            "stop_confirmation": {
+              "confirmed": false,
+              "confirmed_at": "",
+              "final_state": "",
+              "stop_applied": false,
+              "stop_apply_error": "",
+              "wait_seconds": 0.0,
+              "overdue": false
+            },
+            "recent_observations": [
+              {
+                "at": "2026-05-13T21:34:01.449120Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 40.449135,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 820.6075818538666,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:34:11.946513Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 50.946529,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 838.1618440151215,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:34:22.324379Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 61.324395,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 848.5874845981598,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:34:35.788242Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 74.788257,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 862.0542256832123,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:34:46.152096Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 85.152111,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 872.4133489131927,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:34:56.579553Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 95.579568,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 882.8270728588104,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:35:06.722326Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 105.722338,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 893.0479099750519,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:35:20.217462Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 119.217477,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 906.4758267402649,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:35:30.584329Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 129.584344,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 916.8446416854858,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:35:40.975092Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 139.975108,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 927.2352855205536,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:35:54.447407Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_start",
+                "state": "running",
+                "elapsed_seconds": 788.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 153.447422,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 43.2,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 940.7170240879059,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:36:04.854975Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 942.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 9.85499,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 951.1091094017029,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:36:15.238074Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 954.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 8.238088,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 961.4955127239227,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:36:28.780697Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 966.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 9.780715,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 975.0288474559784,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:36:39.235360Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 978.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 8.235379,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 985.4782803058624,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:36:49.651695Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 989.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 7.65171,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 995.8944754600525,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:03.188463Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1001.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 9.188478,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1009.4386832714081,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:13.598040Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1013.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 7.598054,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1019.8490989208221,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:24.036042Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1024.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 7.036057,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1030.2812831401825,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:37.555312Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1036.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 8.555328,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1043.822013616562,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:47.961860Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1048.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 6.961875,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1054.2257776260376,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:37:58.397442Z",
+                "queue_state": "running",
+                "phase": "run_experiment_scan_point",
+                "state": "running",
+                "elapsed_seconds": 1059.0,
+                "average_index": 4,
+                "averages_total": 3,
+                "savedexperiment_average_count": 3,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 6.397457,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 1064.6435618400574,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:38:37.403045Z",
+                "queue_state": "running",
+                "phase": "run_experiment_average_complete",
+                "state": "running",
+                "elapsed_seconds": 1071.0,
+                "average_index": 4,
+                "averages_total": 4,
+                "savedexperiment_average_count": 4,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 33.403059,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": 42.976,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": null,
+                "matlab_command_log_fatal_detected": false
+              },
+              {
+                "at": "2026-05-13T21:38:50.939478Z",
+                "queue_state": "done",
+                "phase": "moving_finalized_job",
+                "state": "completed",
+                "elapsed_seconds": 1077.0,
+                "average_index": null,
+                "averages_total": null,
+                "savedexperiment_average_count": 4,
+                "expected_total_seconds": 890.1549200000001,
+                "expected_per_average_seconds": 216.28873000000002,
+                "status_age_seconds": 40.939504,
+                "stop_requested": false,
+                "stop_applied": false,
+                "final_counts_kcps": null,
+                "savedexperiment_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-172017.mat",
+                "matlab_command_log_age_seconds": 40.6288857460022,
+                "matlab_command_log_fatal_detected": false
+              }
+            ]
+          },
+          "agent_recovery": {},
+          "submission_guard": {
+            "action": "submitted_new",
+            "lock_path": "<OPENCLAW_WORKSPACE>/.openclaw/batches/nv23_image145844_reimage_r03_strong_podmr_20260513_1715.state__image145844_reimage_r03_strong_podmr.submit.lock",
+            "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr",
+            "queue_root": "<NV_BRIDGE_ROOT>",
+            "submit_spec_signature": {
+              "mode": "execute",
+              "recipe": "xml_generic_v1",
+              "sample_id": "NV23",
+              "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+              "sequence_file": "",
+              "scan": {
+                "vary_prop": [
+                  "mw_freq"
+                ],
+                "begin": [
+                  "3825000000"
+                ],
+                "end": [
+                  "3925000000"
+                ],
+                "points": [
+                  "11"
+                ]
+              },
+              "float_vars": {
+                "ampIQ": "5",
+                "delay_wrt_1mus": "2e-07",
+                "detuning": "0",
+                "freqIQ": "50000000",
+                "full_expt": "0",
+                "length_last_wait": "1e-06",
+                "length_rabi_pulse": "5.2e-08",
+                "mod_depth": "1",
+                "mw_ampl": "-5",
+                "mw_freq": "3875000000",
+                "pumping_time": "1e-06",
+                "sample_rate": "250000000",
+                "sweep_range": "100000000",
+                "sweep_time": "1e-06",
+                "switch_delay": "1e-07",
+                "wait_time": "2e-06"
+              },
+              "acquisition": {
+                "average_continuously": false,
+                "averages": "4",
+                "repetitions": "20000"
+              },
+              "metadata": {
+                "auto_align_nv": false,
+                "batch_id": "nv23_image145844_reimage_r03_strong_podmr_20260513_1715",
+                "batch_item_id": "image145844_reimage_r03_strong_podmr",
+                "local_fine_search_before_tracking": false,
+                "measurement_plan_verified": true,
+                "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+                "queue_execute_opt_in": true,
+                "requested_by": "nv-researcher",
+                "require_landmark_match": false,
+                "submission_path": "single_item_measurement_plan"
+              }
+            }
+          },
+          "retry_rule": {
+            "action": "complete",
+            "reason": "completed",
+            "error_code": "",
+            "error_message": "",
+            "rule_source": "success"
+          }
+        }
+      ],
+      "analysis": {},
+      "last_attempt_at": "2026-05-13T21:19:15.118236+00:00"
+    }
+  ],
+  "events": [
+    {
+      "at": "2026-05-13T21:38:50.971756+00:00",
+      "event": "item_completed",
+      "message": "Completed item successfully.",
+      "item_id": "image145844_reimage_r03_strong_podmr"
+    }
+  ],
+  "policy": {
+    "max_attempts_per_item": 1,
+    "retry_delay_seconds": 5.0,
+    "stop_on_aux_resolution_failure": true,
+    "stop_on_fatal_failure": true,
+    "continue_on_analysis_failure": true,
+    "measurement_plan_enabled": false,
+    "measurement_plan_required": false,
+    "measurement_plan_advisory_only": true,
+    "measurement_plan_allow_current_item_overrides": false,
+    "measurement_plan_timeout_seconds": 45.0,
+    "pre_enqueue_advisory_enabled": true,
+    "pre_enqueue_advisory_required": false,
+    "analysis_review_enabled": false,
+    "analysis_review_required": false,
+    "analysis_evidence_only": true,
+    "analysis_auto_run_enabled": false,
+    "analysis_auto_adopt_aux": false,
+    "resume_incomplete_items": true,
+    "agent_recovery_enabled": true,
+    "agent_recovery_required_for_retry": false,
+    "retry_error_codes": [
+      "NVBridge:AlignNVFailed",
+      "NVBridge:RunExperimentFailed",
+      "TIMEOUT"
+    ],
+    "stop_error_codes": [
+      "AUX_RESOLUTION_FAILED",
+      "BOOTSTRAP_PRECHECK_FAILED",
+      "FLOAT_VAR_OUT_OF_RANGE",
+      "INVALID_FLOAT_VARS",
+      "INVALID_LIMITS",
+      "INVALID_SCAN",
+      "INVALID_SEQUENCE_MANIFEST_ID",
+      "MISSING_DATA_PATH",
+      "MODE_NOT_ALLOWED_BY_MANIFEST",
+      "NVBridge:ExecuteNotVerified",
+      "NVBridge:RunControlStopRequested",
+      "NVBridge:RunExperimentAborted",
+      "QUEUE_ROOT_UNAVAILABLE",
+      "SCAN_NOT_ALLOWED_BY_MANIFEST",
+      "SUBMISSION_LOCK_TIMEOUT",
+      "SUBMISSION_LOCK_UNAVAILABLE"
+    ],
+    "retry_error_prefixes": [],
+    "stop_error_prefixes": [
+      "INVALID_",
+      "MISSING_",
+      "SCAN_",
+      "MATLAB:"
+    ],
+    "retry_error_message_substrings": [],
+    "stop_error_message_substrings": [
+      "matlab:serial:fwrite:opfailed",
+      "instrument object obj is an invalid object"
+    ],
+    "default_unknown_error_action": "retry"
+  },
+  "control": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/batches/nv23_image145844_reimage_r03_strong_podmr_20260513_1715.control.json",
+    "stop_requested": false,
+    "stop_reason": "",
+    "requested_by": "",
+    "updated_at": "2026-05-13T21:18:40.471968+00:00"
+  },
+  "progress": {
+    "completed": 1,
+    "total": 1,
+    "pending": 0,
+    "running": 0,
+    "retrying": 0,
+    "failed": 0,
+    "blocked": 0,
+    "stopped": 0
+  }
+}

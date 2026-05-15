@@ -1,0 +1,33 @@
+{
+  "job_id": "nv23_image145844_reimage_r02_track_20260513_1617",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "Project nv23_aligned_nv_t2star_13c_image145844_20260513_1507: TrackCenter second fresh re-image seed after r01 pODMR lacked clear usable resonance.",
+    "nv_name": "image145844_reimage_r02"
+  },
+  "tracking": {
+    "seed_position": [
+      115.83333333333333,
+      118.16666666666667,
+      116.5
+    ],
+    "minimum_final_kcps": 8.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "update_registry": false,
+    "nv_name": "image145844_reimage_r02"
+  }
+}

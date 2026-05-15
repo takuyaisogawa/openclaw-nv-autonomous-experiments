@@ -1,0 +1,80 @@
+{
+  "intent_id": "track_image145844_r01_20260513_1509",
+  "summary": "TrackCenter initial candidate r01 from image145844 before spectroscopy.",
+  "scientific_rationale": "The initial SavedImages artifact was exported with an explicit ImageData_YXZ axis contract and kcps units. The brightest separated candidate in the max-Z projection is r01 at x=114.375, y=117.750, z=116.000 um, peak 38.2 kcps with about 34.0 kcps local excess above background. Tracking this seed tests whether it is a usable single NV-like confocal emitter before spending spectroscopy time.",
+  "comparison_targets": [
+    "image145844 raw export evidence image145844_raw_export_20260513_1509",
+    "image145844 candidate selection evidence image145844_candidate_selection_20260513_1509",
+    "current bridge queue idle state"
+  ],
+  "expected_evidence": [
+    "track_center_v1 terminal result with final position and final kcps",
+    "final kcps above the standalone minimum_final_kcps gate of 8 kcps",
+    "tracking motion small enough to maintain continuous provenance from the image seed"
+  ],
+  "success_criteria": [
+    "TrackCenter completes successfully",
+    "final_counts_kcps >= 8",
+    "no hardware, count-collapse, or branch-switch anomaly is reported"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "TrackCenter fails or final counts collapse below gate",
+    "hardware or stage-motion safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone track_center_v1 execute job via enqueue_nv_imaging_direct.py",
+  "candidate": {
+    "label": "image145844_r01",
+    "seed_position_um": [
+      114.375,
+      117.75,
+      116.0
+    ],
+    "peak_kcps": 38.2,
+    "local_excess_kcps": 34.0
+  },
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true,
+    "allow_stage_motion_required": true,
+    "uses_standalone_track_center_helper": true
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T15:17:41",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_verification": {
+    "checked_at": "2026-05-13T15:17:42",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T15:17:42",
+  "completed_at": "2026-05-13T15:23:03",
+  "result": {
+    "status": "completed",
+    "summary": "TrackCenter completed for image145844 r01 with final_counts_kcps=38.629 and tracked_position_um=[114.5574352635996,118.0608761933827,116.2597907479464].",
+    "bridge_job_id": "nv23_image145844_r01_track_20260513_1509",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image145844_r01_track_20260513_1509/result.json"
+  }
+}

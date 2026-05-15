@@ -1,0 +1,82 @@
+{
+  "intent_id": "image231924_c01_strong_podmr_retry1_20260511_2359",
+  "summary": "Retry the strong-pi pulsed ODMR alignment screen for image231924_c01 from the refreshed TrackCenter position.",
+  "scientific_rationale": "The first strong-pi pODMR attempt did not acquire data because its sequence pre-align count gate failed at 4.065 kcps. A standalone recheck immediately afterward passed the same 12 kcps count gate with final counts 24.490 kcps at a refreshed position, so one bounded pODMR retry is justified to test magnetic-field alignment/resonance before abandoning c01. This remains a visibility/alignment screen, not a precision mw_freq calibration.",
+  "comparison_targets": [
+    "failed first pODMR result nv23_pulsed_odmr_rabimodulated_v1_20260511_234117_pulsed_odmr_rabimodulated_v1/result.json",
+    "standalone TrackCenter recheck result nv23_image231924_c01_track_recheck_20260511_2350/result.json",
+    "human advice: judge alignment with strong-pi pulsed ODMR, about 20-30 points for initial screens",
+    "pulsed_odmr_rabimodulated_v1 manifest and Rabimodulated.xml previously inspected for this route"
+  ],
+  "expected_evidence": [
+    "terminal pODMR bridge result with savedexperiment path if acquisition succeeds",
+    "raw/readout-aware review of strong-pi pODMR line visibility before any weak-pi/T2star follow-up",
+    "if pre-align fails again, evidence to stop c01 blind retries and move to re-image or next candidate"
+  ],
+  "success_criteria": [
+    "sequence pre-align passes the 12 kcps minimum count gate",
+    "pODMR acquisition completes with 21 mw_freq points over 3.825-3.925 GHz",
+    "raw/readout-aware terminal review shows whether a visible resonance exists near the expected ms=+1 band"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "pre-enqueue advisory or verifier reports hard blockers",
+    "pODMR pre-align fails again; do not blind-repeat c01 without re-image/next-candidate review"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute pulsed_odmr_rabimodulated_v1 strong-pi pODMR retry via managed batch path",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      112.94010360875866,
+      114.23152633961497,
+      115.48696792044964
+    ],
+    "seed_source": "standalone TrackCenter recheck nv23_image231924_c01_track_recheck_20260511_2350"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "completed",
+  "created_at": "2026-05-12T00:00:16",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-12T00:00:16",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "updated_at": "2026-05-12T00:00:16",
+  "completed_at": "2026-05-12T03:19:11",
+  "result": {
+    "job_id": "nv23_image231924_c01_strong_podmr_retry1_20260512_000251_image231924_c01_strong_podmr_retry1_20260511_2359_execute",
+    "status": "completed",
+    "error_code": "",
+    "error_message": "",
+    "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-001053.mat",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_strong_podmr_retry1_20260512_000251_image231924_c01_strong_podmr_retry1_20260511_2359_execute/result.json",
+    "review_path": "work/artifacts/analysis/image231924_c01_strong_podmr_retry1_review.json"
+  }
+}

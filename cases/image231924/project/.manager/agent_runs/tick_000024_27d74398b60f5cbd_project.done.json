@@ -1,0 +1,26 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T05:47:00-04:00",
+  "status": "completed",
+  "summary": "Completed project closeout for image231924_c01. Corrected-center Ramsey terminal review supports a Ramsey/T2star scale of about 4 us and does not support a resolved nearby 13C coupling. Wrote closeout note, updated work/state.md, built and verified paired LaTeX/PDF closeout report under summaries/, recorded report/note evidence, set project lifecycle and operational state to completed, and recorded the lab-log closeout. No further autonomous bridge work is needed by default.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "idle",
+    "reason": "project lifecycle is completed; objective satisfied and closeout report verified",
+    "project_status": "completed",
+    "optional_followup": "Only if operator later requests it: higher-precision T2star or a stronger 13C null-limit experiment."
+  },
+  "updated_backlog_item_ids": [],
+  "evidence_ids": [
+    "analysis_20260512_051832_635818_fe04d4f86f",
+    "report_20260512_053512_487598_031bbfaa42",
+    "note_20260512_053701_532922_3d11ca8a13",
+    "report_20260512_054514_104058_aa78ec2042"
+  ],
+  "artifacts": {
+    "state": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/state.md",
+    "closeout_note": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/notes/image231924_c01_corrected_center_ramsey_terminal_closeout_20260512_0520.md",
+    "closeout_pdf": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/summaries/closeout_20260512_0525.pdf",
+    "closeout_tex": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/summaries/closeout_20260512_0525.tex"
+  }
+}

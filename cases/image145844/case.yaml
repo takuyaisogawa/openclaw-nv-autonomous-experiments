@@ -1,0 +1,6 @@
+case_id: image145844
+status: completed
+description: >
+  Completed aligned-NV, T2star, and 13C case study. The sanitized cold-archive
+  project folder is available under project.
+live_hardware_execution: disabled

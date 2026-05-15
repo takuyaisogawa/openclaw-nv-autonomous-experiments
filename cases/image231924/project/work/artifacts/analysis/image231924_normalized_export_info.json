@@ -1,0 +1,38 @@
+{
+  "input": "<MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-11-231924.mat",
+  "mat_out": "<OPENCLAW_WORKSPACE>\\.openclaw\\projects\\nv23_aligned_nv_t2star_13c_image231924_20260511_2319\\work\\artifacts\\analysis\\image231924_normalized_export.mat",
+  "axis_order_contract": "ImageData_YXZ: rows=RangeY, columns=RangeX, pages=RangeZ, produced by claw_normalize_scan_image_axes using RangeX/RangeY/RangeZ lengths",
+  "raw_size": [
+    81,
+    81,
+    2
+  ],
+  "normalized_size": [
+    81,
+    81,
+    2
+  ],
+  "range_x": [
+    112,
+    122,
+    81
+  ],
+  "range_y": [
+    110,
+    120,
+    81
+  ],
+  "range_z": [
+    114,
+    115,
+    2
+  ],
+  "date_time": "2026-05-11-231924",
+  "dwell_time": 0.005,
+  "laserpower": [
+    0.52778204871763157,
+    0.037891902551652853
+  ],
+  "warnings": [],
+  "blockers": []
+}

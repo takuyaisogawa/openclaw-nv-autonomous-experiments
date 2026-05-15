@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T20:00:30-04:00",
+  "status": "submitted_running_bridge_job",
+  "summary": "Completed terminal Ramsey/T2star handoff and raw/FFT review: r03 Ramsey scout was analyzable but non-claim-grade, with no T2star or 13C conclusion. Wrote analysis/figure/drift artifacts, completed the Ramsey intent, updated project state/notes/log/evidence, designed and verified a fine weak-pi pODMR follow-up, and started it as nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1. Bridge is now occupied by that running fine-pODMR job.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1",
+    "batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_195323",
+    "intent_id": "image145844_reimage_r03_fine_weak_podmr_20260513_1950",
+    "reason": "Fine weak-pi pODMR frequency-refinement execute is running; bridge occupancy blocks further bridge-touching work. On terminal, copy artifacts, complete intent, raw-export/review pODMR center and drift, then design the next Ramsey/T2star attempt from the refined center if supported."
+  },
+  "updated_backlog_item_ids": []
+}

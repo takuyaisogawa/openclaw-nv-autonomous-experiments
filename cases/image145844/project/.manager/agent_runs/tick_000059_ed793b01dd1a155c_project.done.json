@@ -1,0 +1,16 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T03:02:00-04:00",
+  "status": "completed",
+  "summary": "Checked the live det=1.5 MHz r03 Ramsey shift-check; it is still running healthy at 5/12 averages with no monitor error or stop request. Completed a 5-average autosave raw export, scan-order-aware drift review, and nonterminal frequency-screen review; no hard anomaly and no T2star/13C claim. Updated work/state.md, a focused work note, evidence ledger, lab log, figure, and the copied project status.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_running_bridge",
+    "job_id": "nv23_ramsey_20260514_015423_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260514_015303",
+    "reason": "Bridge job is still running, so queue occupancy blocks further bridge-touching submissions. Continue monitor/cron until terminal or hard anomaly; then copy terminal artifacts, complete the verified intent, raw-export the final savedexperiment, run scan-order-aware drift, and perform the planned terminal det-shift Ramsey review before any T2star or 13C conclusion.",
+    "latest_status": "running at 5/12 averages; final-count text 44.065 kcps; monitor last_error empty; stop_requested false",
+    "latest_evidence_id": "image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252"
+  },
+  "updated_backlog_item_ids": []
+}

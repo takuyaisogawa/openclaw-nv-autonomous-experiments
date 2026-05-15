@@ -1,0 +1,111 @@
+{
+  "intent_id": "image231924_c01_weak_podmr_20260512_0039",
+  "summary": "Run weak-pi pulsed ODMR on image231924_c01 to refine the resonance before Ramsey/T2star.",
+  "scientific_rationale": "The completed strong-pi pODMR retry showed a clear raw/readout-aware resonance near 3.879 GHz with about 23-25% normalized dip and healthy tracking counts. Strong-pi pODMR passes the alignment screen but is not a precision mw_freq calibration, so weak-pi pODMR is the required next step before Ramsey/T2star.",
+  "comparison_targets": [
+    "strong-pi pODMR review work/artifacts/analysis/image231924_c01_strong_podmr_retry1_review.json",
+    "bridge result nv23_image231924_c01_strong_podmr_retry1_20260512_000251_image231924_c01_strong_podmr_retry1_20260511_2359_execute/result.json",
+    "NV_RESEARCH_MEMORY setup reference: ms=+1 transition expected near 3.875 GHz and setup contrast about 20%",
+    "human advice: once one aligned NV is found, focus on that NV and keep initial scans around 20-30 points"
+  ],
+  "expected_evidence": [
+    "terminal weak-pi pODMR bridge result with savedexperiment path",
+    "raw/readout-aware weak-pi resonance review and transparent center estimate",
+    "if no usable weak-pi line appears, bridge-free review of whether to adjust weak-pi window/conditions or move candidate strategy"
+  ],
+  "success_criteria": [
+    "bridge queue idle before submission and pre-enqueue advisory has no hard blockers",
+    "auto-align passes minimum 12 kcps gate",
+    "acquisition completes 25 points over a 40 MHz window centered on the strong-pi rough center",
+    "raw/readout-aware review supports a weak-pi resonance center usable for Ramsey/T2star planning"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "verifier or pre-enqueue advisory reports hard blockers",
+    "auto-align counts collapse or bridge execution fails before acquiring data"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute pulsed_odmr_rabimodulated_v1 weak-pi pODMR via managed direct/batch path",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      112.849,
+      113.604,
+      114.643
+    ],
+    "seed_source": "terminal strong-pi pODMR saved scan position 1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-000634.mat",
+    "strong_pi_rough_center_hz": 3879197364.0700865
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan": {
+      "vary_prop": [
+        "mw_freq"
+      ],
+      "begin": 3859200000.0,
+      "end": 3899200000.0,
+      "points": 25
+    },
+    "float_vars": {
+      "length_rabi_pulse": 5.7e-07,
+      "mod_depth": 0.1,
+      "mw_freq": 3879200000.0,
+      "mw_ampl": -5,
+      "ampIQ": 5,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07
+    },
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "analysis_plan": "raw export and line-shape review first; no automatic bridge fit"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "completed",
+  "created_at": "2026-05-12T00:39:04",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-12T00:39:04",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "updated_at": "2026-05-12T00:39:04",
+  "completed_at": "2026-05-12T02:49:11",
+  "result": {
+    "job_id": "nv23_image231924_c01_weak_podmr_20260512_004207_image231924_c01_weak_podmr_20260512_0039_execute",
+    "status": "completed",
+    "error_code": "",
+    "error_message": "",
+    "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-004529.mat",
+    "shots_credited": 200000,
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_weak_podmr_20260512_004207_image231924_c01_weak_podmr_20260512_0039_execute/result.json",
+    "review_path": "work/artifacts/analysis/image231924_c01_weak_podmr_20260512_004529_review.json"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T07:30:08Z",
+  "status": "bridge_running_after_progress",
+  "summary": "Reviewed terminal Ramsey and terminal narrow weak-pi pODMR evidence, completed the relevant experiment intents, updated state/notes/lab log, and submitted a corrected-center Ramsey/T2star repeat. Narrow weak-pi pODMR updated the c01 center to 3.8761166667 GHz, making the old 1.593 MHz Ramsey peak plausibly residual detuning rather than supported 13C. Corrected-center Ramsey job nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute is running; advisory had no blockers and auto-align selected 23.416 kcps.",
+  "touched_bridge_queue": true,
+  "next_action": "Wait for the corrected-center Ramsey/T2star repeat terminal result; then raw-export the savedexperiment, review raw/readout-aware signal and FFT on the actual tau grid, and classify Ramsey signal, T2star, and 13C separately.",
+  "updated_backlog_item_ids": []
+}

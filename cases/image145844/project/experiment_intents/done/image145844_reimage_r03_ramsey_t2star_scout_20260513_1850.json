@@ -1,0 +1,138 @@
+{
+  "intent_id": "image145844_reimage_r03_ramsey_t2star_scout_20260513_1850",
+  "summary": "Run the first bounded Ramsey/T2star scout on accepted aligned candidate image145844_reimage_r03 after weak-pi pODMR refined the usable resonance to 3.876 GHz.",
+  "scientific_rationale": "Weak-pi pODMR completed with a clear raw/readout-aware dip at 3.876 GHz: raw signal, point-wise ratio, and reference-line normalization all minimize at that grid point, all four averages share the signal minimum, and the raw drop is about 14.3% vs edge median. Ramsey/T2star is now the requested targeted follow-up. The active auto__ramsey XML/manifest was inspected: a one-dimensional tau scan calls ramsey(..., tau, det, ...) and readout2 is the Ramsey signal when full_experiment=0. The initial 8 us/51 point plan exceeded the 450 s advisory cap, so this intent uses a revised 6 us/31 point scout with det=1.5 MHz. The model gives B about 359.3 G and 13C Larmor about 0.385 MHz; the revised grid has 166.7 kHz FFT bin spacing and 2.5 MHz Nyquist, covering det + 13C sideband + +/-0.5 MHz pODMR center uncertainty while keeping the advisory per-average window below cap.",
+  "comparison_targets": [
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_model_plan_20260513_1844.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_advisory_preview_20260513_1849.json",
+    "NV_RESEARCH_KNOWLEDGE Shot Budget And Data Quality 2026-05-11 Ramsey FFT sampling guardrail",
+    "<OPENCLAW_WORKSPACE>/literature/INDEX.md default NV review pointer"
+  ],
+  "expected_evidence": [
+    "terminal Ramsey savedexperiment with raw readouts",
+    "raw/readout-aware Ramsey oscillation/decay review",
+    "FFT of detrended/windowed Ramsey signal compared to det=1.5 MHz and expected 13C sideband separation about 0.385 MHz"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw readouts show analyzable Ramsey signal above drift/noise/baseline variation",
+    "data quality permits either a supported T2star estimate or a clear next-step decision",
+    "FFT review supports or rejects a candidate 13C sideband without relying on noise-only peaks"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears",
+    "tracking/count collapse below safe minimum"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for auto__ramsey Ramsey/T2star scout",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "last_final_counts_kcps": 43.89,
+    "accepted_alignment_evidence": "image145844_reimage_r03_weak_podmr_raw_review_20260513_1838"
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "auto__ramsey",
+    "scan_tau_s": [
+      0.0,
+      6e-06,
+      31
+    ],
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "total_shots_per_point": 200000,
+    "float_vars": {
+      "mw_freq": 3876000000.0,
+      "det": 1500000.0,
+      "mod_depth": 1.0,
+      "length_pi_pulse": 5.2e-08,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "full_experiment": 0.0,
+      "sweep_range": 100000000.0,
+      "sweep_time": 1e-06,
+      "sample_rate": 250000000.0
+    },
+    "analysis_fit_kind": "omitted; raw review and FFT first"
+  },
+  "model_and_resolvability": {
+    "model_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_model_plan_20260513_1844.json",
+    "estimated_B_G_from_3p876GHz": 359.2857142857143,
+    "estimated_13C_larmor_Hz": 384615.35714285716,
+    "programmed_det_Hz": 1500000.0,
+    "tau_span_s": 6e-06,
+    "tau_step_s": 2e-07,
+    "fft_resolution_Hz": 166666.66666666666,
+    "nyquist_Hz": 2500000.0,
+    "nyquist_guard_needed_Hz": 2384615.3571428573,
+    "weak_podmr_drop_kcps": 6.423076923076927,
+    "weak_podmr_median_signal_sem_kcps": 1.648919316171232
+  },
+  "advisory": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_advisory_preview_20260513_1849.json",
+    "estimated_per_average_seconds": 417.9461,
+    "estimated_total_seconds": 1696.7844,
+    "recent_drift_risk_level": "high",
+    "suggested_max_tracking_window_seconds": 450,
+    "recommended_actions": [],
+    "blockers": [],
+    "revision_note": "8 us/51 points preview estimated 690.0266 s per average and was redesigned; this revised preview is below the cap."
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T18:52:48",
+  "safety_verification": {
+    "checked_at": "2026-05-13T18:52:48",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T18:52:48",
+  "completed_at": "2026-05-13T19:45:24",
+  "result": {
+    "status": "completed",
+    "summary": "Ramsey/T2star scout completed as nv23_ramsey_20260513_185505_auto_ramsey with savedexperiment 1DExp-seq-ramsey-vary-tau-2026-05-13-185521.mat, final counts 38.249 kcps; raw/FFT review found only weak non-claim-grade oscillatory evidence, so no T2star or 13C conclusion yet.",
+    "bridge_job_id": "nv23_ramsey_20260513_185505_auto_ramsey",
+    "data_path": "C:/Users/<LAB_DOCUMENTS>/MATLAB/23-C/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-13-185521.mat",
+    "analysis_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_raw_fft_review_20260513_1930.json"
+  }
+}

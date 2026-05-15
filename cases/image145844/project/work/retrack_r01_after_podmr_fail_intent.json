@@ -1,0 +1,28 @@
+{
+  "intent_id": "retrack_image145844_r01_after_podmr_fail_20260513_1531",
+  "summary": "Run one standalone TrackCenter diagnostic after the r01 pODMR count-gate failure.",
+  "scientific_rationale": "The strong-pi pODMR produced zero averages because the in-experiment count gate reported post-run Final=6.584 kcps, while the immediately preceding standalone TrackCenter was 38.629 kcps. A single bounded retrack diagnostic distinguishes simple drift/focus handoff from a non-trackable candidate; it does not by itself prove resonance alignment.",
+  "comparison_targets": [
+    "pre-pODMR TrackCenter result final_counts_kcps=38.629",
+    "pODMR failed result NVBridge:RunExperimentIncomplete with Final=6.584 kcps"
+  ],
+  "expected_evidence": [
+    "track_center_v1 terminal result with final counts and position",
+    "whether counts recover above 8 kcps after retracking"
+  ],
+  "success_criteria": [
+    "TrackCenter completes and final_counts_kcps >= 8"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "TrackCenter fails or count collapse persists",
+    "hardware/stage safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone track_center_v1 execute diagnostic via enqueue_nv_imaging_direct.py",
+  "candidate": {
+    "label": "image145844_r01",
+    "seed_position_um": [114.5574352635996, 118.0608761933827, 116.2597907479464]
+  }
+}

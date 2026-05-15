@@ -1,0 +1,39 @@
+{
+  "intent_id": "image231924_c01_strong_podmr_20260511_2338",
+  "summary": "Execute strong-pi pulsed ODMR alignment screen for image231924_c01 after successful TrackCenter.",
+  "scientific_rationale": "The project requires finding an NV aligned to the magnetic field from image231924, and human advice says alignment must be judged by strong-pi pulsed ODMR because the piezo/field may have changed. image231924_c01 passed TrackCenter with final counts 36.008 kcps, so the next needed evidence is a bounded strong-pi pulsed ODMR resonance/alignment screen near the expected ms=+1 aligned-band frequency.",
+  "comparison_targets": [
+    "image231924_c01 TrackCenter terminal pass at 36.008 kcps",
+    "human advice: strong-pi pODMR after recent piezo/field change and about 20-30 points for time-saving screens",
+    "live pulsed_odmr_rabimodulated_v1 manifest and Rabimodulated.xml route review note",
+    "recent same-route strong-pi pODMR success: nv23_pulsed_odmr_rabimodulated_v1_20260511_203558_pulsed_odmr_rabimodulated_v1"
+  ],
+  "expected_evidence": [
+    "terminal bridge result and savedexperiment MAT for Rabimodulated mw_freq scan",
+    "healthy auto-align/TrackCenter final counts before RunExperiment",
+    "raw/readout-aware review showing whether a visible broad resonance/dip exists near the aligned ms=+1 band"
+  ],
+  "success_criteria": [
+    "execute completes with healthy counts and non-empty savedexperiment",
+    "raw/readout-aware pODMR review finds a coherent dip/resonance feature near the expected aligned transition band",
+    "result is used only as alignment/resonance screen, not precision mw_freq calibration"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "advisory/validation gate rejects the route or acquisition window",
+    "auto-align counts fall below the 12 kcps minimum before RunExperiment"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute manifest-backed pulsed ODMR sequence through MATLAB wrapper",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "tracked_position_um": [
+      113.23486686503394,
+      113.89749501792936,
+      114.79464747081711
+    ],
+    "final_counts_kcps": 36.008
+  }
+}

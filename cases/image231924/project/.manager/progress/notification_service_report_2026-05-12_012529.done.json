@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T01:41:51-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report: c01 Ramsey/T2star scout is running, 1/4 averages complete at latest status, no monitor/control anomaly, weak-pi center supports Ramsey planning, 1-average autosave review is promising but not claim-grade, no explicit bridge-free task/backlog item is pending.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-12_012529.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/figures/image231924_c01_ramsey_t2star_scout_autosave_avg1_review.png",
+      "caption": "c01 Ramsey/T2star scout: 1-average autosave review (in-progress, not claim-grade)",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

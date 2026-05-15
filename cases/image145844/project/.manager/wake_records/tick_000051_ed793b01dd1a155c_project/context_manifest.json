@@ -1,0 +1,406 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-05-14T01:05:12",
+  "cutoff_time": "2026-05-14T01:05:12",
+  "cutoff_epoch": 1778735112.5298727,
+  "cutoff_rule": "future-blind replay may use only prompt, payload, report, and file snapshots captured in this wake record, or explicit current-memory overlay snapshots selected by the evaluator",
+  "actor": "openclaw-scheduler-project-runner",
+  "source": "nv_project_scheduler_runner",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "project_dir": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "record_id": "tick_000051_ed793b01dd1a155c_project",
+  "wake_key": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507:advance_project:bae39dcc8d3cf13f",
+  "marker_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/agent_runs/tick_000051_ed793b01dd1a155c_project.done.json",
+  "hook_path": "/hooks/agent",
+  "gateway_url": "http://127.0.0.1:18789",
+  "dispatch_mode": "agent",
+  "agent": {
+    "id": "nv-researcher",
+    "session_key": "agent:nv-researcher:hook:nv-project-manager:nv23_aligned_nv_t2star_13c_image145844_20260513_1507:wake:ticked-000051-ed793b01dd1a155c",
+    "model": "openai-codex/gpt-5.5",
+    "thinking": "xhigh",
+    "name": "NV Project Step - nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "prompt_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/wake_prompt.md",
+  "prompt_sha256": "b7c3bb73403adbaab8f3b1b302339a1c8c6bd54f7c4739bc08a7217df51bb3b5",
+  "payload_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/wake_payload.json",
+  "payload_sha256": "2836879f82cf66bf8655e86c092ad6c42606d1192fa194703b5f7488fb253019",
+  "report_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/wake_report.json",
+  "next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 61,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260513_234800_678095_a3b7248b9e",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_3avg_review_20260513_2346.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 3-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 3 stored averages became available. The job remains healthy at 3/12 averages with final-count text 43.135 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists but remains nonterminal context only; median signal SEM from 3 averages is about 2.43 kcps, and no T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-13T23:48:00"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_raw_export_20260514_0002.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0002.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0002_shorttau_ramsey_5avg_autosave_refresh.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Updated in-progress autosave review for the running short-tau/high-SNR r03 Ramsey diagnostic after the MAT reached 5 stored averages. The job remained healthy at 5/12 averages, final-count text 41.016 kcps, monitor last_error empty, stop_requested=false, and no queued jobs. The early-time signal/ratio transient persists with lower median signal SEM about 1.44 kcps, and the exploratory ratio LS component remains near 1.178 MHz; this is nonterminal context only and no T2star/13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:10:10"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_001026_101965_8461ec071b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 5-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 5 stored averages became available. The job remains healthy at 5/12 averages with final-count text 41.016 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with lower median signal SEM about 1.44 kcps, and the exploratory ratio LS screen remains strongest near 1.178 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:10:26"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_raw_export_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Updated in-progress autosave review for the running short-tau/high-SNR r03 Ramsey diagnostic after the MAT reached 8 stored averages. The job remained healthy at 8/12 averages, final-count text 44.914 kcps, monitor last_error empty, stop_requested=false, and no queued jobs. The early-time signal/ratio transient persists with median signal SEM about 0.98 kcps, and the exploratory ratio LS component remains near 1.187 MHz; this is nonterminal context only and no T2star/13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:43:09"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_004309_640420_0e8a141dae",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 8-average autosave refresh: Short-tau Ramsey 8-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 8 stored averages became available. The job remains healthy at 8/12 averages with final-count text 44.914 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with median signal SEM about 0.98 kcps, and the exploratory ratio LS screen remains strongest near 1.187 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:43:09"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 13
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "snapshots": [
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "snapshot_relpath": "md/NV_RESEARCH_MEMORY.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 16328,
+      "updated_epoch": 1778696197.4189858,
+      "sha256": "a0294eac53b21526413fd14382512957fdb9c7638b4b97f330b67af4c25f78c8",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/md/NV_RESEARCH_MEMORY.md",
+      "snapshot_size_bytes": 16328
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "snapshot_relpath": "md/NV_RESEARCH_KNOWLEDGE.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 30707,
+      "updated_epoch": 1778730594.7484567,
+      "sha256": "4bf0379952412055a391058c878310d5a3260bedb4829e3b75831de432223dd1",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/md/NV_RESEARCH_KNOWLEDGE.md",
+      "snapshot_size_bytes": 30707
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/skills/nv-project-manager/SKILL.md",
+      "snapshot_relpath": "md/nv-project-manager_SKILL.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 9949,
+      "updated_epoch": 1778534997.128297,
+      "sha256": "b60708d20785542fccd73f0cf5eb056a85807940f7c965965d62acde687411d8",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/md/nv-project-manager_SKILL.md",
+      "snapshot_size_bytes": 9949
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/project.json",
+      "snapshot_relpath": "project/project.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 19249,
+      "updated_epoch": 1778699265.4798627,
+      "sha256": "0dde01f574dfbcc668f4c5447208126192cdcdeb8db2f100226ecef79ec3ae41",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/project.json",
+      "snapshot_size_bytes": 19249
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "snapshot_relpath": "project/brief.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 433,
+      "updated_epoch": 1778699265.4798627,
+      "sha256": "9a23c351edf5d99e2f86361a73c1d9a2afd70c731e5de81561e16f77d8d4ffad",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/brief.md",
+      "snapshot_size_bytes": 433
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+      "snapshot_relpath": "project/human_advice.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 869,
+      "updated_epoch": 1778699265.4798627,
+      "sha256": "07291616c33efeecb7432d3271e06becef3a195992633c644064f34f8b8add8c",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/human_advice.md",
+      "snapshot_size_bytes": 869
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "snapshot_relpath": "project/work_state.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 21208,
+      "updated_epoch": 1778733755.2150328,
+      "sha256": "26a8e1bd9fbe4f32e0dc251d94f0ec34241bef9f9a117aef67b02329b5e34adf",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/work_state.md",
+      "snapshot_size_bytes": 21208
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+      "snapshot_relpath": "project/log.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 42548,
+      "updated_epoch": 1778733789.637604,
+      "sha256": "031c5bd643eb4c3fc0ea7d73fa48309b91a2fbafb177e066b08196e6edb7d842",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/log.md",
+      "snapshot_size_bytes": 42548
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/state.json",
+      "snapshot_relpath": "project/manager_state.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 15195,
+      "updated_epoch": 1778735112.5057049,
+      "sha256": "82e11238a5a009854a51cc66aec2c7a36899546e9c64ab5c0babb31cf955ef1f",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/manager_state.json",
+      "snapshot_size_bytes": 15195
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/backlog.json",
+      "snapshot_relpath": "project/manager_backlog.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 113,
+      "updated_epoch": 1778699265.4798627,
+      "sha256": "e45cb2ec06b1f12ada0f45486b4aed3a4a83e301bcb24f9d17d74a178f2a2c62",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/manager_backlog.json",
+      "snapshot_size_bytes": 113
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "snapshot_relpath": "project/manager_evidence.jsonl",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 77758,
+      "updated_epoch": 1778733789.637604,
+      "sha256": "de010fe7b164a06a2a11f37d87a8c977ad424556f231ad1747bc0456651d5fd7",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/manager_evidence.jsonl",
+      "snapshot_size_bytes": 77758
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/ledger.jsonl",
+      "snapshot_relpath": "project/manager_ledger.jsonl",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 707701,
+      "updated_epoch": 1778735112.5057049,
+      "sha256": "0e88a4811827f075b154966bd2bbedc40290c760fd53e760f555b90a41084a0d",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/project/manager_ledger.jsonl",
+      "snapshot_size_bytes": 707701
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_3avg_review_20260513_2346.png",
+      "snapshot_relpath": "evidence/001_image145844_reimage_r03_ramsey_shorttau_autosave_3avg_review_20260513_2346.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 339824,
+      "updated_epoch": 1778730390.4936666,
+      "sha256": "46ed2133ad2635d750735b1732975ff7ac70c3cf2c80f28c5f28d38dc08c90a2",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_raw_export_20260514_0002.json",
+      "snapshot_relpath": "evidence/002_image145844_reimage_r03_ramsey_shorttau_autosave_5avg_raw_export_20260514_0002.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 46979,
+      "updated_epoch": 1778731391.605284,
+      "sha256": "460b65541c80fc27d48a1903ee4eeaa1481b99937d371e2c6d361b706edfc27d",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/002_image145844_reimage_r03_ramsey_shorttau_autosave_5avg_raw_export_20260514_0002.json",
+      "snapshot_size_bytes": 46979
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.json",
+      "snapshot_relpath": "evidence/003_image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 13868,
+      "updated_epoch": 1778731609.397497,
+      "sha256": "f5f2280bcc06620777f9ba05cf42cccd21139ce9700a05c5fbc6c6da5f764606",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/003_image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.json",
+      "snapshot_size_bytes": 13868
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0002.json",
+      "snapshot_relpath": "evidence/004_image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0002.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 8265,
+      "updated_epoch": 1778731609.282297,
+      "sha256": "420f2a23a3d308c0b134f5e9d970bb5e2fc814cdf4e7a468cf63ab43dbbe2b92",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/004_image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0002.json",
+      "snapshot_size_bytes": 8265
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.png",
+      "snapshot_relpath": "evidence/005_image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 382828,
+      "updated_epoch": 1778731609.645897,
+      "sha256": "5664c64cb64f80ae8e025596f8e108d1d6eea795bd21c636f6602446480c6312",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0002_shorttau_ramsey_5avg_autosave_refresh.md",
+      "snapshot_relpath": "evidence/006_20260514_0002_shorttau_ramsey_5avg_autosave_refresh.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 3434,
+      "updated_epoch": 1778731785.6581345,
+      "sha256": "d4e3371084282ec5c3926d1356ee3bf54f0e72441e042a5b57497f3c8993827c",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/006_20260514_0002_shorttau_ramsey_5avg_autosave_refresh.md",
+      "snapshot_size_bytes": 3434
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_raw_export_20260514_0036.json",
+      "snapshot_relpath": "evidence/007_image145844_reimage_r03_ramsey_shorttau_autosave_8avg_raw_export_20260514_0036.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 68636,
+      "updated_epoch": 1778733536.5371099,
+      "sha256": "d47b5c0967f9a9c2fcbaf35cad3b05d3e79ea1593a8be4c68e0a68c70ed886ef",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/007_image145844_reimage_r03_ramsey_shorttau_autosave_8avg_raw_export_20260514_0036.json",
+      "snapshot_size_bytes": 68636
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.json",
+      "snapshot_relpath": "evidence/008_image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 14117,
+      "updated_epoch": 1778733566.3039732,
+      "sha256": "c7d84848eb41732a32ec182f6cac47c00745a60fbc15c8915083335074bbfa0c",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/008_image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.json",
+      "snapshot_size_bytes": 14117
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0036.json",
+      "snapshot_relpath": "evidence/009_image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0036.json",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 8265,
+      "updated_epoch": 1778733566.1923733,
+      "sha256": "e988951b8d6da07d89b4d1326d65bbef1e86672b6fec403b50548c82309f7536",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/009_image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0036.json",
+      "snapshot_size_bytes": 8265
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png",
+      "snapshot_relpath": "evidence/010_image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png",
+      "exists": true,
+      "copied": false,
+      "size_bytes": 418338,
+      "updated_epoch": 1778733566.5523732,
+      "sha256": "cb6e93546fd619137d04e19657f1a3693e2f698142029a82ed36707225478646",
+      "copy_skipped_reason": "non_text_or_unknown_type"
+    },
+    {
+      "original_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md",
+      "snapshot_relpath": "evidence/011_20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md",
+      "exists": true,
+      "copied": true,
+      "size_bytes": 3648,
+      "updated_epoch": 1778733658.540693,
+      "sha256": "9bacdf99d711f2feeb045274b2fef5231dd69b764d28d38ef1f9e81f0fa7689b",
+      "snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/wake_records/tick_000051_ed793b01dd1a155c_project/evidence/011_20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md",
+      "snapshot_size_bytes": 3648
+    }
+  ]
+}

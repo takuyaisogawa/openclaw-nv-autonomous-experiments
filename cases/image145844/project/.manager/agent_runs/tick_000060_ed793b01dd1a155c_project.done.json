@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T03:37:00-04:00",
+  "status": "completed",
+  "summary": "Performed bridge-free 8-average autosave opportunity review for running det=1.5 MHz r03 Ramsey shift-check job nv23_ramsey_20260514_015423_auto_ramsey. Bridge remained healthy at 8/12 averages with monitor last_error empty and stop_requested=false; scan-order-aware drift flagged 0 averages. The dominant nonterminal ratio LS screen stayed carrier-like near 1.580 MHz, while the old 1.192 MHz artifact-control target was much weaker. No T2star or 13C claim was made. Updated state.md, wrote a focused note, registered analysis/figure evidence, recorded a lab-log entry, and refreshed the copied running status artifact.",
+  "touched_bridge_queue": true,
+  "next_action": "Continue monitoring the running det-shift Ramsey job to terminal. While it is running, queue occupancy blocks new bridge-touching submissions. At terminal, copy job/result/status/control and batch state if available, complete intent image145844_reimage_r03_ramsey_det1p5_shiftcheck_shorttau_20260514_0142, raw-export the final savedexperiment, run scan-order-aware drift, and perform the planned raw/readout-aware carrier/sideband review before any T2star or 13C conclusion.",
+  "updated_backlog_item_ids": []
+}

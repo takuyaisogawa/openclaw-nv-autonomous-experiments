@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T08:31:20-04:00",
+  "status": "completed",
+  "summary": "notification_service progress report written: running refreshed-center r03 Ramsey is healthy at latest live status 14/20 averages, no monitor error or stop request; latest reviewed autosave remains 12/20 and nonterminal, with no T2star or 13C claim.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_083005.md",
+  "notification_service_media": [
+    {
+      "path": "work/artifacts/figures/image145844_reimage_r03_ramsey_refreshed_center_autosave_12avg_review_20260514_0808.png",
+      "caption": "12/20 averages 時点の refreshed-center r03 Ramsey autosave review（途中経過・非終端）",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

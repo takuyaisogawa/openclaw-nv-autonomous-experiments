@@ -1,0 +1,266 @@
+{
+    "id":  "auto__ramsey",
+    "status":  "validated",
+    "label":  "ramsey",
+    "description":  "Auto-generated validated manifest for ramsey.xml under the approved sequence root.",
+    "sequence_file":  "SavedSequences/SavedSequences-AWG/ramsey.xml",
+    "execution_route":  "experiment_gui_standard_v1",
+    "catalog_key":  "ramsey",
+    "aliases":  [
+                    "ramsey",
+                    "ramsey_xml"
+                ],
+    "allowed_modes":  [
+                          "validate",
+                          "dry_run",
+                          "execute"
+                      ],
+    "scan_schema":  {
+                        "max_dimensions":  1,
+                        "allowed_vary_props":  [
+                                                   "sample_rate",
+                                                   "mw_freq",
+                                                   "det",
+                                                   "mod_depth",
+                                                   "length_pi_pulse",
+                                                   "tau",
+                                                   "switch_delay",
+                                                   "delay_wrt_1mus",
+                                                   "wait_time",
+                                                   "mw_ampl",
+                                                   "ampIQ",
+                                                   "freqIQ",
+                                                   "sweep_range",
+                                                   "sweep_time",
+                                                   "full_experiment"
+                                               ],
+                        "points_min":  1,
+                        "points_max":  1001
+                    },
+    "acquisition_defaults":  {
+                                 "average_continuously":  false,
+                                 "averages":  1,
+                                 "repetitions":  250000
+                             },
+    "scan_defaults":  {
+                          "vary_prop":  [
+                                            "tau"
+                                        ],
+                          "begin":  [
+                                        0
+                                    ],
+                          "end":  [
+                                      0.001
+                                  ],
+                          "points":  [
+                                         3
+                                     ]
+                      },
+    "float_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000,
+                                           "min":  10000000,
+                                           "max":  5000000000
+                                       },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3873000000,
+                                       "min":  1000000,
+                                       "max":  15000000000
+                                   },
+                       "det":  {
+                                   "type":  "float",
+                                   "default":  5000000,
+                                   "min":  -10000000,
+                                   "max":  10000000
+                               },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  1,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "length_pi_pulse":  {
+                                               "type":  "float",
+                                               "default":  5.2E-08,
+                                               "min":  2E-09,
+                                               "max":  0.5
+                                           },
+                       "tau":  {
+                                   "type":  "float",
+                                   "default":  1E-06,
+                                   "min":  0,
+                                   "max":  0.001
+                               },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0,
+                                            "max":  5E-07
+                                        },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  -0.1,
+                                              "max":  0.1
+                                          },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20,
+                                       "max":  15
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -30,
+                                     "max":  17
+                                 },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0,
+                                      "max":  500000000
+                                  },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000,
+                                           "min":  80000000,
+                                           "max":  500000000
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  2E-08,
+                                          "max":  1E-05
+                                      },
+                       "full_experiment":  {
+                                               "type":  "float",
+                                               "default":  0,
+                                               "min":  0,
+                                               "max":  1
+                                           }
+                   },
+    "typed_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000,
+                                           "min":  10000000,
+                                           "max":  5000000000
+                                       },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3873000000,
+                                       "min":  1000000,
+                                       "max":  15000000000
+                                   },
+                       "det":  {
+                                   "type":  "float",
+                                   "default":  5000000,
+                                   "min":  -10000000,
+                                   "max":  10000000
+                               },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  1,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "length_pi_pulse":  {
+                                               "type":  "float",
+                                               "default":  5.2E-08,
+                                               "min":  2E-09,
+                                               "max":  0.5
+                                           },
+                       "tau":  {
+                                   "type":  "float",
+                                   "default":  1E-06,
+                                   "min":  0,
+                                   "max":  0.001
+                               },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0,
+                                            "max":  5E-07
+                                        },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  -0.1,
+                                              "max":  0.1
+                                          },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0,
+                                         "max":  1
+                                     },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20,
+                                       "max":  15
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -30,
+                                     "max":  17
+                                 },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0,
+                                      "max":  500000000
+                                  },
+                       "do_adiabatic_inversion":  {
+                                                      "type":  "boolean",
+                                                      "default":  true
+                                                  },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000,
+                                           "min":  80000000,
+                                           "max":  500000000
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  2E-08,
+                                          "max":  1E-05
+                                      },
+                       "full_experiment":  {
+                                               "type":  "float",
+                                               "default":  0,
+                                               "min":  0,
+                                               "max":  1
+                                           }
+                   },
+    "limits":  {
+                   "max_mw_power_dbm":  15,
+                   "allow_stage_motion":  false,
+                   "allow_laser_profile":  false,
+                   "max_estimated_duration_seconds":  14400
+               },
+    "requires":  {
+                     "reference_data_for_auto_align":  true,
+                     "supervised_until_promoted":  false
+                 },
+    "generated_by":  "claw/generate_sequence_manifests.ps1",
+    "generated_from":  {
+                           "relative_xml_path":  "ramsey.xml"
+                       },
+    "notes":  [
+                  "Auto-generated from an existing XML sequence under SavedSequences/SavedSequences-AWG.",
+                  "Boolean variables are recorded in typed_vars but are not yet forwarded by the current numeric float_vars bridge contract: do_adiabatic_inversion",
+                  "Default OpenClaw scan uses tau with a conservative 3-point sweep."
+              ]
+}

@@ -1,0 +1,274 @@
+{
+    "id":  "pulsed_odmr_rabimodulated_v1",
+    "status":  "staging",
+    "label":  "Pulsed ODMR (Rabimodulated)",
+    "description":  "Staging proposal that repurposes Rabimodulated.xml for pulsed ODMR by scanning mw_freq while keeping the Rabimodulated pulse structure.",
+    "sequence_file":  "SavedSequences/SavedSequences-AWG/Rabimodulated.xml",
+    "execution_route":  "experiment_gui_standard_v1",
+    "legacy_recipe":  "",
+    "sample_id":  "NV23",
+    "allowed_modes":  [
+                          "validate",
+                          "dry_run",
+                          "execute"
+                      ],
+    "scan_schema":  {
+                        "max_dimensions":  1,
+                        "allowed_vary_props":  [
+                                                   "mw_freq"
+                                               ],
+                        "points_min":  3,
+                        "points_max":  201
+                    },
+    "acquisition_defaults":  {
+                                 "average_continuously":  false,
+                                 "averages":  2,
+                                 "repetitions":  100000
+                             },
+    "float_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000.0,
+                                           "min":  10000000.0,
+                                           "max":  5000000000.0
+                                       },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3874396798.0,
+                                       "min":  3700000000.0,
+                                       "max":  3950000000.0
+                                   },
+                       "detuning":  {
+                                        "type":  "float",
+                                        "default":  0.0,
+                                        "min":  -100000000.0,
+                                        "max":  100000000.0
+                                    },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0.0,
+                                      "max":  500000000.0
+                                  },
+                       "length_last_wait":  {
+                                                "type":  "float",
+                                                "default":  1E-06,
+                                                "min":  0.0,
+                                                "max":  1.0
+                                            },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  0.3,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20.0,
+                                       "max":  15.0
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -80.0,
+                                     "max":  10.0
+                                 },
+                       "full_expt":  {
+                                         "type":  "float",
+                                         "default":  0.0,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000.0,
+                                           "min":  0.0,
+                                           "max":  1000000000.0
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  0.0,
+                                          "max":  1.0
+                                      },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  0.0,
+                                              "max":  1.0
+                                          },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0.0,
+                                            "max":  1.0
+                                        },
+                       "pumping_time":  {
+                                            "type":  "float",
+                                            "default":  1E-06,
+                                            "min":  0.0,
+                                            "max":  1.0
+                                        },
+                       "length_rabi_pulse":  {
+                                                 "type":  "float",
+                                                 "default":  5.2E-08,
+                                                 "min":  0.0,
+                                                 "max":  0.5
+                                             }
+                   },
+    "limits":  {
+                   "max_mw_power_dbm":  15.0,
+                   "allow_stage_motion":  false,
+                   "allow_laser_profile":  false,
+                   "max_estimated_duration_seconds":  7200
+               },
+    "requires":  {
+                     "reference_data_for_auto_align":  true,
+                     "supervised_until_promoted":  true
+                 },
+    "notes":  [
+                  "Staging-only proposal requested after ODMR_withRef.xml hit a RunExperiment channel-shape mismatch while Rabimodulated.xml executed successfully.",
+                  "Intended as a safer pulsed ODMR draft that keeps the Rabimodulated pulse structure and changes the scan axis to mw_freq.",
+                  "Review the fixed length_rabi_pulse operating point before supervised execute.",
+                  "Generated from base manifest rabi_v1.",
+                  "Typed-only defaults overridden: ampIQ, delay_wrt_1mus, detuning, freqIQ, full_expt, length_last_wait, mod_depth, mw_ampl, mw_freq, pumping_time, sample_rate, sweep_range, sweep_time, switch_delay, wait_time",
+                  "Manual post-edit after authoring: scan_schema narrowed to mw_freq for pulsed ODMR use.",
+                  "Manual post-edit after authoring: added fixed length_rabi_pulse default (52 ns) and do_adiabatic_inversion typed default from Rabimodulated.xml.",
+                  "2026-05-04 cleanup: retargeted manifest to canonical Rabimodulated.xml; obsolete staging XML copy was archived."
+              ],
+    "typed_vars":  {
+                       "sample_rate":  {
+                                           "type":  "float",
+                                           "default":  250000000.0,
+                                           "min":  10000000.0,
+                                           "max":  5000000000.0
+                                       },
+                       "mw_freq":  {
+                                       "type":  "float",
+                                       "default":  3874396798.0,
+                                       "min":  3700000000.0,
+                                       "max":  3950000000.0
+                                   },
+                       "detuning":  {
+                                        "type":  "float",
+                                        "default":  0.0,
+                                        "min":  -100000000.0,
+                                        "max":  100000000.0
+                                    },
+                       "freqIQ":  {
+                                      "type":  "float",
+                                      "default":  50000000,
+                                      "min":  0.0,
+                                      "max":  500000000.0
+                                  },
+                       "length_last_wait":  {
+                                                "type":  "float",
+                                                "default":  1E-06,
+                                                "min":  0.0,
+                                                "max":  1.0
+                                            },
+                       "mod_depth":  {
+                                         "type":  "float",
+                                         "default":  0.3,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "mw_ampl":  {
+                                       "type":  "float",
+                                       "default":  -5,
+                                       "min":  -20.0,
+                                       "max":  15.0
+                                   },
+                       "ampIQ":  {
+                                     "type":  "float",
+                                     "default":  5,
+                                     "min":  -80.0,
+                                     "max":  10.0
+                                 },
+                       "full_expt":  {
+                                         "type":  "float",
+                                         "default":  0.0,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "sweep_range":  {
+                                           "type":  "float",
+                                           "default":  100000000.0,
+                                           "min":  0.0,
+                                           "max":  1000000000.0
+                                       },
+                       "sweep_time":  {
+                                          "type":  "float",
+                                          "default":  1E-06,
+                                          "min":  0.0,
+                                          "max":  1.0
+                                      },
+                       "delay_wrt_1mus":  {
+                                              "type":  "float",
+                                              "default":  2E-07,
+                                              "min":  0.0,
+                                              "max":  1.0
+                                          },
+                       "wait_time":  {
+                                         "type":  "float",
+                                         "default":  2E-06,
+                                         "min":  0.0,
+                                         "max":  1.0
+                                     },
+                       "switch_delay":  {
+                                            "type":  "float",
+                                            "default":  1E-07,
+                                            "min":  0.0,
+                                            "max":  1.0
+                                        },
+                       "pumping_time":  {
+                                            "type":  "float",
+                                            "default":  1E-06,
+                                            "min":  0.0,
+                                            "max":  1.0
+                                        },
+                       "length_rabi_pulse":  {
+                                                 "type":  "float",
+                                                 "default":  5.2E-08,
+                                                 "min":  0.0,
+                                                 "max":  0.5
+                                             },
+                       "do_adiabatic_inversion":  {
+                                                      "type":  "boolean",
+                                                      "default":  true
+                                                  }
+                   },
+    "catalog_key":  "pulsed_odmr_rabimodulated_v1",
+    "aliases":  [
+                    "pulsed_odmr_rabimodulated",
+                    "rabimodulated_pulsed_odmr"
+                ],
+    "scan_defaults":  {
+                          "vary_prop":  [
+                                            "mw_freq"
+                                        ],
+                          "begin":  [
+                                        3825100000.0
+                                    ],
+                          "end":  [
+                                      3925100000.0
+                                  ],
+                          "points":  [
+                                         41
+                                     ]
+                      },
+    "generated_by":  "openclaw/workspace/design_nv_sequence.py",
+    "generated_at":  "2026-03-24T13:54:43.055688+00:00",
+    "generated_from":  {
+                           "base_manifest_id":  "rabi_v1",
+                           "base_sequence_file":  "SavedSequences/SavedSequences-AWG/Rabimodulated.xml",
+                           "proposal_type":  "template_clone_with_default_overrides"
+                       }
+}

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "created_at": "2026-05-12T01:29:59",
+  "inputs": {
+    "weak_pi_center_hz": 3875866666.6666665,
+    "zero_field_splitting_hz_assumed": 2870000000.0,
+    "electron_gyromagnetic_ratio_hz_per_G": 2802495.0,
+    "carbon13_gyromagnetic_ratio_hz_per_G": 1070.5,
+    "ramsey_det_hz": 2000000.0,
+    "tau_start_s": 0.0,
+    "tau_end_s": 8e-06,
+    "tau_points": 51
+  },
+  "derived": {
+    "axial_field_estimate_G": 358.9182734194589,
+    "carbon13_larmor_estimate_hz": 384222.01169553073,
+    "tau_step_s": 1.6e-07,
+    "fft_nyquist_hz": 3125000.0,
+    "fft_bin_spacing_hz": 125000.0,
+    "expected_features_hz": {
+      "carrier_hz": 2000000.0,
+      "lower_13c_sideband_hz": 1615777.9883044693,
+      "upper_13c_sideband_hz": 2384222.0116955307
+    },
+    "expected_feature_bin_numbers_approx": {
+      "carrier_hz": 16.0,
+      "lower_13c_sideband_hz": 12.926223906435753,
+      "upper_13c_sideband_hz": 19.073776093564245
+    }
+  },
+  "interpretation_guardrails": [
+    "Treat this as an expectation for terminal FFT review, not as a measurement result.",
+    "Use the actual saved tau grid and inspect raw readouts before any T2star or 13C conclusion.",
+    "For full_experiment=0 ramsey.xml, readout 1 is the mS=0 reference and readout 2 is the post-Ramsey signal per route review.",
+    "Compare raw, point-normalized, and fitted-reference-normalized views; do not promote normalization-only peaks."
+  ]
+}

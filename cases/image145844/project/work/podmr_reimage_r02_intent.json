@@ -1,0 +1,40 @@
+{
+  "intent_id": "image145844_reimage_r02_strong_podmr_20260513_1622",
+  "summary": "Run a bounded strong-pi pulsed ODMR alignment screen on the second freshly tracked re-image candidate.",
+  "scientific_rationale": "r01 did not show a clear usable strong-pi ODMR resonance, so per human guidance we move to the next candidate. The second fresh re-image candidate tracked at 39.367 kcps at [115.864332,117.919934,116.274661] um. The planning model remains a +/-50 MHz screen around the expected ms=+1 resonance near 3.875 GHz, with B about 358.6 G, 13C Larmor about 0.384 MHz, and strong-pi time about 50 ns. The previous r01 pODMR drift analysis flagged both averages and estimated about 351 s per average, above the 300 s daytime cap, so this r02 screen uses 4 averages x 20000 repetitions to keep each per-average window near half that while preserving similar total shot budget and even snake-scan balance.",
+  "comparison_targets": [
+    "r01 raw review image145844_reimage_r01_strong_podmr_raw_review_20260513_1615",
+    "r02 TrackCenter evidence nv23_image145844_reimage_r02_track_20260513_1617_result",
+    "model evidence preliminary_alignment_t2star_13c_model_20260513_1518"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export for r02 strong-pi pODMR",
+    "raw/readout-aware evidence for or against a clear resonance"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw readouts show a clear resonance-scale feature above drift/noise/baseline variation",
+    "no tracking/count-collapse/hardware anomaly invalidates the data"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for pulsed_odmr_rabimodulated_v1",
+  "candidate": {
+    "label": "image145844_reimage_r02",
+    "tracked_position_um": [115.86433244322376, 117.91993427430633, 116.27466061392134],
+    "final_counts_kcps": 39.367
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [3825000000.0, 3925000000.0, 21],
+    "acquisition": {"averages": 4, "repetitions": 20000, "average_continuously": false},
+    "float_vars": {"mod_depth": 1.0, "length_rabi_pulse": 5.2e-8, "mw_ampl": -5.0, "ampIQ": 5.0, "freqIQ": 50000000.0, "switch_delay": 1e-7},
+    "analysis_fit_kind": "omitted; raw/readout review first"
+  }
+}

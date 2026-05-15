@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T01:22:15-04:00",
+  "status": "completed_waiting_for_running_bridge_job",
+  "summary": "Bridge job nv23_ramsey_20260513_230331_auto_ramsey is still running, with queued empty. This wake performed a bridge-free 10-average autosave raw export/review, generated a review figure, wrote work note 20260514_0107_shorttau_ramsey_10avg_autosave_refresh.md, recorded analysis evidence and a lab-log entry, refreshed running status/control copies, and updated work/state.md. The 10-average raw export has 900000 shots per tau point; a later live status snapshot advanced to 11/12 averages with final-count text 35.122 kcps, monitor last_error empty, and stop_requested=false. The count decrease is provenance for terminal review but not a hard stop. Partial data remain nonterminal context only: persistent early-time signal/ratio transient, median signal SEM about 1.06 kcps, exploratory ratio LS screen near 1.187 MHz, and no supported T2star or 13C claim before terminal raw export plus scan-order-aware drift review.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job_terminal",
+    "bridge_job_id": "nv23_ramsey_20260513_230331_auto_ramsey",
+    "reason": "Running bridge occupancy blocks further bridge-touching submissions; no hard anomaly was found in the 10-average autosave review or the 11/12 live status snapshot.",
+    "when_complete": "Copy terminal bridge artifacts and batch state into work/bridge_jobs, complete intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257, raw-export the final savedexperiment, run scan-order-aware drift, and perform terminal raw/readout-aware carrier/T2star/13C review. Check the 11/12 count decrease in terminal status/drift/environment provenance before interpreting the final dataset."
+  },
+  "updated_backlog_item_ids": []
+}

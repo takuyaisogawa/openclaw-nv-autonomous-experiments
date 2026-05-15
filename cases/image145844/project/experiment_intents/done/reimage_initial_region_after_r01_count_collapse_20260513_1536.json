@@ -1,0 +1,88 @@
+{
+  "intent_id": "reimage_initial_region_after_r01_count_collapse_20260513_1536",
+  "summary": "Run a bounded fresh Imaging scan over the original image145844 XY region after r01 count collapse and repeated TrackCenter failure.",
+  "scientific_rationale": "The original saved image145844 produced a bright candidate r01 and a standalone TrackCenter success at 38.629 kcps, but the following pODMR count gate saw only 6.584 kcps and a retrack diagnostic saw 4.224 kcps. Startup policy says to suspect imaging-frame drift/focus shift and re-image before rejecting candidates. A fresh scan over the original XY region should recover current bright seeds or show that the region is no longer usable.",
+  "comparison_targets": [
+    "image145844 explicit ImageData_YXZ export and candidate list",
+    "r01 standalone TrackCenter success final_counts_kcps=38.629",
+    "r01 pODMR count-gate failure Final=6.584 kcps",
+    "r01 retrack failure final_counts_kcps=4.224"
+  ],
+  "expected_evidence": [
+    "fresh SavedImages artifact from Imaging GUI over center [119,115,116] um",
+    "agent-visible candidate selection using explicit exported ImageData_YXZ axis contract",
+    "decision whether to retry r01/current local candidates or move to another region"
+  ],
+  "success_criteria": [
+    "Imaging scan completes and saves a 3DXYZ artifact",
+    "export confirms axis order and units before Python candidate selection",
+    "at least one current bright local maximum can be selected for TrackCenter, or lack of candidates is recorded"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "Imaging execute validation or bridge run fails",
+    "hardware/stage safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone Imaging scan execute via enqueue_nv_imaging_direct.py",
+  "planned_imaging": {
+    "center_um": [
+      119.0,
+      115.0,
+      116.0
+    ],
+    "half_span_um": [
+      5.0,
+      5.0
+    ],
+    "xy_points": 61,
+    "z_offsets_um": [
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "dwell_seconds": 0.005,
+    "artifact_label": "image145844_reimage_after_r01_count_collapse"
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T15:39:09",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-13T15:39:10",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T15:39:10",
+  "completed_at": "2026-05-13T15:48:00",
+  "result": {
+    "status": "completed",
+    "summary": "Fresh Imaging scan over original image145844 region completed; data_path=C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\nv_bridge\\status\\openclaw_imaging\\image145844_reimage_after_r01_count_collapse_nv23_20260513_154558866.mat. Export and candidate selection are next.",
+    "bridge_job_id": "nv23_image145844_reimage_after_r01_count_collapse_20260513_1536",
+    "result_path": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_after_r01_count_collapse_20260513_1536/result.json"
+  }
+}

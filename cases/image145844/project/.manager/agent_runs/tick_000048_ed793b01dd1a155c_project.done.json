@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T23:51:52-04:00",
+  "status": "completed_waiting_bridge_running",
+  "summary": "Inspected the bridge queue and running short-tau/high-SNR r03 Ramsey job. Bridge queued is empty and the intended job nv23_ramsey_20260513_230331_auto_ramsey is still running; final live check was 4/12 averages, phase run_experiment_average_start, final-count text 43.135 kcps, monitor last_error empty, and stop_requested=false. Performed bridge-free autosave opportunity work: raw-exported 2-average and then updated 3-average autosaves, generated review JSON/PNG artifacts, wrote notes, registered evidence, updated work/state.md and log.md, and added a reusable NV_RESEARCH_KNOWLEDGE.md note about verifying ExperimentDataEachAvg axis order before per-average SEM/plots. No bridge queue mutation was performed. No hard anomaly, T2star claim, or 13C claim was made; the partial early-time transient remains nonterminal context only.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_ramsey_20260513_230331_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260513_230232",
+    "verified_intent_id": "image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257",
+    "reason": "Bridge job is still running, so further bridge-touching submissions are blocked. Continue monitor/anomaly checks only. On terminal completion, copy final job/result/status/control and batch state into work/bridge_jobs, complete the verified intent, raw-export the final savedexperiment, run scan-order-aware drift, and perform raw/readout-aware carrier/sideband/T2star review before any T2star or 13C claim."
+  },
+  "updated_backlog_item_ids": []
+}

@@ -1,0 +1,18 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T18:12:59.481659-04:00",
+  "status": "handoff_bridge_running",
+  "summary": "Accepted image145844_reimage_r03 as the first magnetic-field-aligned candidate based on completed raw/readout-aware strong-pi pODMR: clear resonance at the 3.875 GHz grid point, about 16.6% raw signal drop vs edge median, all 4 averages support center drop, and no drift-flagged averages. Authored model/advisory-backed weak-pi pODMR intent, verified hard queue/safety gates, and submitted the weak-pi frequency calibration. The bridge is now running job nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1, scanning 3.865..3.885 GHz in 21 points with 4 x 50000 repetitions, mod_depth=0.1, length_rabi_pulse=0.57 us. Project state, note, lab log, and evidence index were updated.",
+  "touched_bridge_queue": true,
+  "next_action": "Wait for the running weak-pi pODMR bridge job to reach terminal state; then copy terminal artifacts, complete intent image145844_reimage_r03_weak_podmr_20260513_1753, raw-export and review readouts/drift/normalizations before using any refined center for Ramsey/T2star.",
+  "updated_backlog_item_ids": [],
+  "running_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1",
+  "running_batch_state": "<OPENCLAW_WORKSPACE>/.openclaw/single_submit/batches/nv23_pulsed_odmr_rabimodulated_v1_20260513_180303.state.json",
+  "project_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+  "note_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260513_1808_r03_acceptance_and_weak_podmr_start.md",
+  "evidence_ids": [
+    "analysis_20260513_175230_714117_79f2732cb7",
+    "image145844_reimage_r03_weak_podmr_model_and_advisory_20260513_1755",
+    "nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_image145844_reimage_r03_weak_podmr_job"
+  ]
+}

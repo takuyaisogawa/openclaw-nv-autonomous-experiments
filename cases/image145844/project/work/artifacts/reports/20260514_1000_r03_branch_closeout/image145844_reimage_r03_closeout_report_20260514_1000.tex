@@ -1,0 +1,100 @@
+
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+\emergencystretch=3em
+\sloppy
+\newcommand{\claim}[1]{\textbf{#1}}
+\begin{document}
+\begin{center}
+{\Large Decision Report: image145844 re-image r03 aligned NV, T2* and 13C}\
+{\small Project nv23-aligned-nv-t2star-13c-image145844-20260513-1507}\\
+Generated 2026-05-14 10:00 EDT by nv-researcher
+\end{center}
+
+\section*{Executive decision}
+\begin{itemize}
+\item \claim{Aligned NV found.} Candidate image145844\_reimage\_r03 tracked at [117.314436, 117.761644, 115.141679] um with 43.535 kcps, passed the human-requested strong-pi pulsed-ODMR alignment screen, and remained usable for targeted follow-up.
+\item \claim{Resonance calibration.} Strong-pi pODMR supports a clear resonance at the 3.875 GHz grid point. The latest weak-pi pODMR refresh supports a grid center at 3.8765 GHz, with several-100-kHz grid-level uncertainty only.
+\item \claim{T2* conclusion.} No claim-grade numeric T2* was established for r03. Five Ramsey datasets were analyzable and healthy, including a final 1.0e6-shot-per-tau refreshed-center run, but the programmed carrier was not a unique stable model. The best fixed-carrier fits give order-1--3 us descriptive candidates only.
+\item \claim{13C conclusion.} The Ramsey/FFT/least-squares branch supports a negative/unsupported nearby-13C conclusion under these conditions: expected sidebands at det minus/plus the 13C Larmor offset were not a coherent pair, and the explicit carrier-plus-sidebands model was not favored.
+\item \claim{Operational recommendation.} Close the r03 branch and do not run more automatic Ramsey repeats. If a numeric T2* value is mandatory, that should be a new protocol-development question (for example phase-stability/early-time Ramsey redesign) rather than another bridge job in this project.
+\end{itemize}
+
+\section*{Evidence basis}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.25\linewidth} >{\raggedright\arraybackslash}p{0.67\linewidth}}
+\toprule
+Step & Decision-relevant evidence \\
+\midrule
+Image and tracking & Original saved image axis contract was verified as ImageData\_YXZ. After r01 count/focus collapse, a fresh Imaging scan over the same region used an explicit bridge-recorded Y-X-Z permutation. r03 was the first candidate with clear strong-pi pODMR resonance after r01/r02 were rejected. \\
+Strong-pi pODMR & 3.825--3.925 GHz, 11 points, 4 x 20000 repetitions, mod\_depth=1, length\_rabi\_pulse=52 ns. Raw signal, point-wise ratio, and reference-line normalization all had deepest dip at 3.875 GHz; raw signal drop was about 16.6\% vs edge median; all four averages supported the center dip; no drift flags. \\
+Weak-pi pODMR refresh & 3.8745--3.8775 GHz, 31 points, 4 x 50000 repetitions, mod\_depth=0.1, length\_rabi\_pulse=0.57 us. Raw signal and fitted-reference-line normalization minimized at 3.8765 GHz; raw drop about 15.3\%; no drift flags. \\
+Final Ramsey & auto\_\_ramsey, mw\_freq=3.8765 GHz, det=1.5 MHz, tau=48 ns..8.048 us in 41 points, 20 x 50000 repetitions. Completed normally with final\_counts=43.433 kcps, no monitor error, no stop request, and no scan-order-aware drift flags. \\
+Model comparison & In the final Ramsey, the fixed 1.5 MHz carrier-like component was present but modest: ratio amplitude 0.01575 full span / 0.01231 after skipping first four tau points; raw signal LS amplitude 0.705 kcps, below the median per-point signal SEM 0.850 kcps. BIC preferred a damped high-edge 2.266 MHz component over fixed carrier by about 10 and over carrier-plus-expected-13C-sidebands by about 28. \\
+\bottomrule
+\end{tabular}
+
+\section*{Ramsey branch summary}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.28\linewidth} >{\raggedright\arraybackslash}p{0.17\linewidth} >{\raggedright\arraybackslash}p{0.45\linewidth}}
+\toprule
+Run & Shots / tau & Outcome \\
+\midrule
+Initial det=1.5 MHz scout, 0--6 us & 2.0e5 & Analyzable, no drift flags, but strongest exploratory component near 0.884 MHz rather than programmed carrier or expected 13C sidebands. No claim. \\
+Det=1.0 MHz 8-us follow-up & 4.0e5 & Programmed carrier weak; largest combined component near 1.178 MHz; per-average screens inconsistent. No claim. \\
+Short-tau high-SNR det=1.0 MHz & 1.08e6 & Persistent empirical near-1.192 MHz component and descriptive T2* about 6.33 us, but not tied to the programmed carrier/sideband model. No claim. \\
+Short-tau det=1.5 MHz shift check & 1.08e6 & Useful evidence against simply promoting the fixed 1.192 MHz feature, but skip-transient and per-average views remained mixed. No claim. \\
+Refreshed-center det=1.5 MHz 8-us final run & 1.0e6 & Healthy terminal run. Carrier-like signal present but not model-unique; high-edge component and model-choice dependence dominate. No numeric T2* claim; no supported 13C sideband/coupling evidence. \\
+\bottomrule
+\end{tabular}
+
+\section*{Why more automatic hardware is not justified}
+The final Ramsey already reached 1.0e6 shots per tau point with stable bridge execution and no drift flags. The fixed-carrier raw LS amplitude was 0.705 kcps, below the measured median per-point signal SEM of 0.850 kcps. If this were only shot noise, reaching SEM 0.25 kcps would require roughly (0.850/0.25)$^2$ = 12 times more shots per point; a conservative 5-sigma view of the 0.705 kcps carrier would require about (0.850/0.141)$^2$ = 36 times more shots per point. That is not a good autonomous use of the bridge because the limiting problem is not just shot noise: the preferred model is a high-edge component and the expected 13C sidebands do not form a coherent pair.
+
+Therefore a further long-span or higher-shot repeat would mainly accumulate evidence for the same ambiguity. A new T2* attempt would need a changed scientific protocol and a new explicit model, not a repeat of the current Ramsey branch.
+
+\section*{Literature and prior-result comparison}
+Local literature index checked: Doherty et al., Physics Reports 528, 1--45 (2013), doi:10.1016/j.physrep.2013.02.001, and Degen/Reinhard/Cappellaro, Rev. Mod. Phys. 92, 015004 (2020), are the relevant local review references for NV center Ramsey/free-induction practice and quantum-sensing interpretation. DOI web-fetch attempts for those two references returned no acceptable resource in this environment, so the local library/index and project evidence were used. Lab prior-result guidance in NV\_RESEARCH\_KNOWLEDGE also explicitly warns that mixed-spectrum high-shot Ramsey data should not be promoted to numeric T2* without signal uniqueness and model stability.
+
+Decision-relevant comparison: a Ramsey T2* or nearby-13C claim should rest on a signal tied to the intended carrier/physical sidebands and robust against baseline/model choice. The r03 branch does not meet that bar. The negative 13C statement is therefore scoped to ``no supported nearby-13C Ramsey sideband/coupling evidence under these measurement conditions'', not to an absolute absence of every possible weak nuclear spin.
+
+\section*{Figures}
+\begin{center}
+\includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{figures/candidate_selection.png}\\
+{\small Fresh re-image candidate selection. r03 was followed after r01 and r02 failed the strong-pi pODMR resonance screen.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{figures/r03_strong_podmr.png}\\
+{\small r03 strong-pi pulsed ODMR. The 3.875 GHz grid point is the clear raw/readout-aware resonance used to accept r03 as aligned.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{figures/r03_podmr_refresh.png}\\
+{\small Final weak-pi pODMR refresh. The grid-supported calibration center is 3.8765 GHz for the final Ramsey branch.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{figures/r03_final_ramsey.png}\\
+{\small Terminal refreshed-center Ramsey review. The run was healthy and high-shot, but the carrier/sideband interpretation was not unique.}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.88\linewidth,height=0.55\textheight,keepaspectratio]{figures/r03_model_comparison.png}\\
+{\small Model comparison. Lower BIC is better; high-edge models beat the fixed-carrier and carrier-plus-expected-13C-sideband hypotheses.}
+\end{center}
+
+\clearpage
+\section*{Final project-scoped claims}
+\begin{enumerate}
+\item image145844\_reimage\_r03 is a magnetic-field-aligned NV candidate suitable for targeted follow-up.
+\item The current project did not establish a claim-grade numeric T2* for r03. Descriptive fixed-carrier fits are order 1--3 us, but are not robust enough to quote as the result.
+\item Under the completed Ramsey/FFT/least-squares measurements, there is no supported nearby-13C sideband/coupling evidence for r03.
+\end{enumerate}
+
+\end{document}

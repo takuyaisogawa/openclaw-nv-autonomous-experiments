@@ -1,0 +1,670 @@
+{
+  "ok": true,
+  "created_at": "2026-05-14T02:55:06.617287-04:00",
+  "question": "In-progress autosave sanity/opportunity review for the det=1.5 MHz Ramsey shift-check run.",
+  "bridge_job_id": "nv23_ramsey_20260514_015423_auto_ramsey",
+  "batch_id": "nv23_ramsey_20260514_015303",
+  "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-14-015440.mat",
+  "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_raw_export_20260514_0252.json",
+  "status_snapshot_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_status_snapshot_20260514_0252.json",
+  "model_plan_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_model_plan_20260514_0142.json",
+  "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_5avg_review_20260514_0252.png",
+  "protocol_basis": {
+    "sequence_manifest_id": "auto__ramsey",
+    "axis_contract_check": "ExperimentDataEachAvg axis verified by averaging per-average readout axis back to ExperimentData.",
+    "scan_order_mode_from_savedexperiment": "snake",
+    "bool_values": [
+      {
+        "name": "do_adiabatic_inversion",
+        "value": 1
+      }
+    ],
+    "variable_values_relevant": [
+      {
+        "name": "mw_freq",
+        "value": 3875900000.0
+      },
+      {
+        "name": "det",
+        "value": 1500000.0
+      },
+      {
+        "name": "mod_depth",
+        "value": 1
+      },
+      {
+        "name": "length_pi_pulse",
+        "value": 5.2e-08
+      },
+      {
+        "name": "full_experiment",
+        "value": 0
+      }
+    ]
+  },
+  "summary_stats": {
+    "readout_roles": "ramsey.xml full_experiment=0: readout1 reference, readout2 Ramsey signal; same protocol basis as det=1.0 MHz short-tau run.",
+    "tau_start_us": 0.048,
+    "tau_stop_us": 1.9679999999999995,
+    "tau_step_us": 0.04800000000000001,
+    "points": 41,
+    "averages_in_autosave_mat": 5,
+    "repetitions": 90000,
+    "total_shots_per_point_in_autosave": 450000,
+    "planned_averages": 12,
+    "planned_total_shots_per_point": 1080000,
+    "fft_bin_spacing_hz": 508130.0813008129,
+    "nominal_resolution_1_over_span_hz": 520833.3333333334,
+    "nyquist_hz": 10416666.666666666,
+    "raw_reference_mean_kcps": 47.54575776526997,
+    "raw_signal_mean_kcps": 43.81008963935793,
+    "ratio_mean": 0.9214740246702755,
+    "signal_linear_residual_peak_to_peak_kcps": 6.605117781947051,
+    "ratio_linear_residual_peak_to_peak": 0.13481623310949553,
+    "signal_point_sem_kcps": {
+      "median": 0.8191316723321851,
+      "min": 0.24083765476248473,
+      "max": 2.2105627725091086
+    },
+    "ratio_point_sem": {
+      "median": 0.01801378154126168,
+      "min": 0.007185425216593748,
+      "max": 0.02618763815892452
+    },
+    "average_signal_means_kcps": [
+      46.24661246612467,
+      42.63914946841776,
+      43.208255159474675,
+      42.798624140087554,
+      44.15780696268501
+    ],
+    "average_reference_means_kcps": [
+      50.111528038357314,
+      46.59057744423598,
+      45.92245153220763,
+      46.45716072545341,
+      48.64707108609548
+    ],
+    "average_ratio_means": [
+      0.9237502335127868,
+      0.9156553588812958,
+      0.9414619532861458,
+      0.9218383091386203,
+      0.9091415724048305
+    ],
+    "status_state": "running",
+    "status_phase": "run_experiment_average_start",
+    "status_updated_at": "2026-05-14T02:52:48",
+    "elapsed_seconds": 3492,
+    "runtime_status_text": "(5/12) averages completed for 1 scans",
+    "final_counts_text": "Final = 44.012 kcps",
+    "monitor_last_error": "",
+    "stop_requested": false
+  },
+  "frequency_targets": {
+    "programmed_carrier_det_1p5MHz": {
+      "target_hz": 1500000.0,
+      "target_mhz": 1.5,
+      "least_squares_amplitude_ratio": 0.023716468448541698,
+      "baseline_residual_r2_improvement_ratio": 0.380995554836612,
+      "least_squares_amplitude_signal_kcps": 1.1004715605174473,
+      "baseline_residual_r2_improvement_signal": 0.3715054166980249,
+      "least_squares_amplitude_signal_over_refline": 0.023226490672917394,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.37056943942461457,
+      "ratio_nearest_fft_bin_hz": 1524390.2439024388,
+      "ratio_nearest_fft_bin_mhz": 1.5243902439024388,
+      "ratio_fft_amplitude": 0.02420474713869367,
+      "signal_nearest_fft_bin_hz": 1524390.2439024388,
+      "signal_nearest_fft_bin_mhz": 1.5243902439024388,
+      "signal_fft_amplitude": 1.119944413940425
+    },
+    "programmed_low_13C_sideband_det_minus_larmor": {
+      "target_hz": 1115422.875,
+      "target_mhz": 1.115422875,
+      "least_squares_amplitude_ratio": 0.008910392149214458,
+      "baseline_residual_r2_improvement_ratio": 0.055927836358486534,
+      "least_squares_amplitude_signal_kcps": 0.5855722613094984,
+      "baseline_residual_r2_improvement_signal": 0.11304913680653372,
+      "least_squares_amplitude_signal_over_refline": 0.0124138378471089,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.11386048201168723,
+      "ratio_nearest_fft_bin_hz": 1016260.1626016258,
+      "ratio_nearest_fft_bin_mhz": 1.0162601626016259,
+      "ratio_fft_amplitude": 0.016023397731349406,
+      "signal_nearest_fft_bin_hz": 1016260.1626016258,
+      "signal_nearest_fft_bin_mhz": 1.0162601626016259,
+      "signal_fft_amplitude": 0.9593873725614863
+    },
+    "programmed_high_13C_sideband_det_plus_larmor": {
+      "target_hz": 1884577.125,
+      "target_mhz": 1.884577125,
+      "least_squares_amplitude_ratio": 0.013626406215244479,
+      "baseline_residual_r2_improvement_ratio": 0.12327515788449214,
+      "least_squares_amplitude_signal_kcps": 0.5886839682532498,
+      "baseline_residual_r2_improvement_signal": 0.10383083091558307,
+      "least_squares_amplitude_signal_over_refline": 0.012459925465348168,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.1042248385771621,
+      "ratio_nearest_fft_bin_hz": 2032520.3252032516,
+      "ratio_nearest_fft_bin_mhz": 2.0325203252032518,
+      "ratio_fft_amplitude": 0.005338206857656518,
+      "signal_nearest_fft_bin_hz": 2032520.3252032516,
+      "signal_nearest_fft_bin_mhz": 2.0325203252032518,
+      "signal_fft_amplitude": 0.17917274301798644
+    },
+    "predicted_physical_carrier_if_1p192MHz_tracks_det": {
+      "target_hz": 1692000.0,
+      "target_mhz": 1.692,
+      "least_squares_amplitude_ratio": 0.023320109219577768,
+      "baseline_residual_r2_improvement_ratio": 0.3862497774719504,
+      "least_squares_amplitude_signal_kcps": 1.066980429624093,
+      "baseline_residual_r2_improvement_signal": 0.3674797824948535,
+      "least_squares_amplitude_signal_over_refline": 0.022519294088777682,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.3665811886719097,
+      "ratio_nearest_fft_bin_hz": 1524390.2439024388,
+      "ratio_nearest_fft_bin_mhz": 1.5243902439024388,
+      "ratio_fft_amplitude": 0.02420474713869367,
+      "signal_nearest_fft_bin_hz": 1524390.2439024388,
+      "signal_nearest_fft_bin_mhz": 1.5243902439024388,
+      "signal_fft_amplitude": 1.119944413940425
+    },
+    "predicted_physical_low_13C_if_tracks_det": {
+      "target_hz": 1307422.875,
+      "target_mhz": 1.307422875,
+      "least_squares_amplitude_ratio": 0.009650970319488509,
+      "baseline_residual_r2_improvement_ratio": 0.061485341776042146,
+      "least_squares_amplitude_signal_kcps": 0.43769232507090894,
+      "baseline_residual_r2_improvement_signal": 0.05927302437766436,
+      "least_squares_amplitude_signal_over_refline": 0.009323291939440358,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.06030901733635323,
+      "ratio_nearest_fft_bin_hz": 1524390.2439024388,
+      "ratio_nearest_fft_bin_mhz": 1.5243902439024388,
+      "ratio_fft_amplitude": 0.02420474713869367,
+      "signal_nearest_fft_bin_hz": 1524390.2439024388,
+      "signal_nearest_fft_bin_mhz": 1.5243902439024388,
+      "signal_fft_amplitude": 1.119944413940425
+    },
+    "predicted_physical_high_13C_if_tracks_det": {
+      "target_hz": 2076577.125,
+      "target_mhz": 2.076577125,
+      "least_squares_amplitude_ratio": 0.005058197260256523,
+      "baseline_residual_r2_improvement_ratio": 0.016922054287800786,
+      "least_squares_amplitude_signal_kcps": 0.18515759289429665,
+      "baseline_residual_r2_improvement_signal": 0.010488912069858473,
+      "least_squares_amplitude_signal_over_refline": 0.004006276701926496,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.010991170333659707,
+      "ratio_nearest_fft_bin_hz": 2032520.3252032516,
+      "ratio_nearest_fft_bin_mhz": 2.0325203252032518,
+      "ratio_fft_amplitude": 0.005338206857656518,
+      "signal_nearest_fft_bin_hz": 2032520.3252032516,
+      "signal_nearest_fft_bin_mhz": 2.0325203252032518,
+      "signal_fft_amplitude": 0.17917274301798644
+    },
+    "artifact_control_previous_top": {
+      "target_hz": 1192000.0,
+      "target_mhz": 1.192,
+      "least_squares_amplitude_ratio": 0.002538220503361426,
+      "baseline_residual_r2_improvement_ratio": 0.004552491210558685,
+      "least_squares_amplitude_signal_kcps": 0.3220122753762647,
+      "baseline_residual_r2_improvement_signal": 0.03277209917497205,
+      "least_squares_amplitude_signal_over_refline": 0.006962558733230999,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.034257460924296074,
+      "ratio_nearest_fft_bin_hz": 1016260.1626016258,
+      "ratio_nearest_fft_bin_mhz": 1.0162601626016259,
+      "ratio_fft_amplitude": 0.016023397731349406,
+      "signal_nearest_fft_bin_hz": 1016260.1626016258,
+      "signal_nearest_fft_bin_mhz": 1.0162601626016259,
+      "signal_fft_amplitude": 0.9593873725614863
+    },
+    "combined_top_ratio_screen_component": {
+      "target_hz": 1595000.0,
+      "target_mhz": 1.595,
+      "least_squares_amplitude_ratio": 0.02461445015154735,
+      "baseline_residual_r2_improvement_ratio": 0.43318270297579464,
+      "least_squares_amplitude_signal_kcps": 1.141159122386684,
+      "baseline_residual_r2_improvement_signal": 0.4211101617291605,
+      "least_squares_amplitude_signal_over_refline": 0.024078263587695846,
+      "baseline_residual_r2_improvement_signal_over_refline": 0.4198419904289824,
+      "ratio_nearest_fft_bin_hz": 1524390.2439024388,
+      "ratio_nearest_fft_bin_mhz": 1.5243902439024388,
+      "ratio_fft_amplitude": 0.02420474713869367,
+      "signal_nearest_fft_bin_hz": 1524390.2439024388,
+      "signal_nearest_fft_bin_mhz": 1.5243902439024388,
+      "signal_fft_amplitude": 1.119944413940425
+    }
+  },
+  "least_squares_top_components": {
+    "ratio_all_tau": [
+      {
+        "freq_hz": 1595000.0,
+        "freq_mhz": 1.595,
+        "amplitude": 0.02461445015154735,
+        "baseline_residual_r2_improvement": 0.43318270297579464,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016839920284559294
+      },
+      {
+        "freq_hz": 1594000.0,
+        "freq_mhz": 1.594,
+        "amplitude": 0.024618300082865467,
+        "baseline_residual_r2_improvement": 0.43318211332661577,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016839937802805863
+      },
+      {
+        "freq_hz": 1596000.0,
+        "freq_mhz": 1.596,
+        "amplitude": 0.02461038721904155,
+        "baseline_residual_r2_improvement": 0.4331725012362431,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.01684022337425277
+      },
+      {
+        "freq_hz": 1593000.0,
+        "freq_mhz": 1.593,
+        "amplitude": 0.02462193550067951,
+        "baseline_residual_r2_improvement": 0.43317070078037045,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016840276865092818
+      },
+      {
+        "freq_hz": 1597000.0,
+        "freq_mhz": 1.597,
+        "amplitude": 0.024606112762007627,
+        "baseline_residual_r2_improvement": 0.43315153954926555,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016840846137777428
+      },
+      {
+        "freq_hz": 1592000.0,
+        "freq_mhz": 1.592,
+        "amplitude": 0.024625354861191752,
+        "baseline_residual_r2_improvement": 0.433148433769789,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.0168409384092714
+      },
+      {
+        "freq_hz": 1598000.0,
+        "freq_mhz": 1.598,
+        "amplitude": 0.024601628216078312,
+        "baseline_residual_r2_improvement": 0.43311984928133196,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.01684178764324771
+      },
+      {
+        "freq_hz": 1591000.0,
+        "freq_mhz": 1.591,
+        "amplitude": 0.02462855657847245,
+        "baseline_residual_r2_improvement": 0.4331152806770561,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016841923374694544
+      },
+      {
+        "freq_hz": 1599000.0,
+        "freq_mhz": 1.599,
+        "amplitude": 0.024596934987501824,
+        "baseline_residual_r2_improvement": 0.43307746171655487,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.01684304696122486
+      },
+      {
+        "freq_hz": 1590000.0,
+        "freq_mhz": 1.59,
+        "amplitude": 0.024631539035525632,
+        "baseline_residual_r2_improvement": 0.43307120984248126,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016843232701959275
+      },
+      {
+        "freq_hz": 1600000.0,
+        "freq_mhz": 1.6,
+        "amplitude": 0.02459203444113673,
+        "baseline_residual_r2_improvement": 0.4330244080494618,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016844623164931665
+      },
+      {
+        "freq_hz": 1589000.0,
+        "freq_mhz": 1.589,
+        "amplitude": 0.024634300577222594,
+        "baseline_residual_r2_improvement": 0.4330161895734579,
+        "rss0": 0.029709609027404403,
+        "rss1": 0.016844867332640543
+      }
+    ],
+    "signal_all_tau_kcps": [
+      {
+        "freq_hz": 856000.0,
+        "freq_mhz": 0.856,
+        "amplitude": 1.3385391086914318,
+        "baseline_residual_r2_improvement": 0.5041673006536039,
+        "rss0": 65.4048815995345,
+        "rss1": 32.429878993928625
+      },
+      {
+        "freq_hz": 857000.0,
+        "freq_mhz": 0.857,
+        "amplitude": 1.3386820821018477,
+        "baseline_residual_r2_improvement": 0.5041584275797396,
+        "rss0": 65.4048815995345,
+        "rss1": 32.43045933627415
+      },
+      {
+        "freq_hz": 855000.0,
+        "freq_mhz": 0.855,
+        "amplitude": 1.3383639867130188,
+        "baseline_residual_r2_improvement": 0.504157444354252,
+        "rss0": 65.4048815995345,
+        "rss1": 32.430523644020745
+      },
+      {
+        "freq_hz": 858000.0,
+        "freq_mhz": 0.858,
+        "amplitude": 1.3387927729077245,
+        "baseline_residual_r2_improvement": 0.5041307537158447,
+        "rss0": 65.4048815995345,
+        "rss1": 32.432269342065595
+      },
+      {
+        "freq_hz": 854000.0,
+        "freq_mhz": 0.854,
+        "amplitude": 1.3381568569654685,
+        "baseline_residual_r2_improvement": 0.5041289334306506,
+        "rss0": 65.4048815995345,
+        "rss1": 32.43238839760319
+      },
+      {
+        "freq_hz": 859000.0,
+        "freq_mhz": 0.859,
+        "amplitude": 1.3388710531768242,
+        "baseline_residual_r2_improvement": 0.5040842109956561,
+        "rss0": 65.4048815995345,
+        "rss1": 32.435313463168846
+      },
+      {
+        "freq_hz": 853000.0,
+        "freq_mhz": 0.853,
+        "amplitude": 1.3379178663191353,
+        "baseline_residual_r2_improvement": 0.504081845944107,
+        "rss0": 65.4048815995345,
+        "rss1": 32.435468149085395
+      },
+      {
+        "freq_hz": 860000.0,
+        "freq_mhz": 0.86,
+        "amplitude": 1.3389168012361414,
+        "baseline_residual_r2_improvement": 0.5040187347203897,
+        "rss0": 65.4048815995345,
+        "rss1": 32.43959593120022
+      },
+      {
+        "freq_hz": 852000.0,
+        "freq_mhz": 0.852,
+        "amplitude": 1.3376471677069808,
+        "baseline_residual_r2_improvement": 0.5040162632469941,
+        "rss0": 65.4048815995345,
+        "rss1": 32.43975757762504
+      },
+      {
+        "freq_hz": 861000.0,
+        "freq_mhz": 0.861,
+        "amplitude": 1.3389299015183524,
+        "baseline_residual_r2_improvement": 0.5039342635742368,
+        "rss0": 65.4048815995345,
+        "rss1": 32.445120756512935
+      },
+      {
+        "freq_hz": 851000.0,
+        "freq_mhz": 0.851,
+        "amplitude": 1.3373449205879049,
+        "baseline_residual_r2_improvement": 0.5039322699600551,
+        "rss0": 65.4048815995345,
+        "rss1": 32.44525114861244
+      },
+      {
+        "freq_hz": 862000.0,
+        "freq_mhz": 0.862,
+        "amplitude": 1.338910245118181,
+        "baseline_residual_r2_improvement": 0.50383073963841,
+        "rss0": 65.4048815995345,
+        "rss1": 32.45189172727841
+      }
+    ],
+    "signal_over_refline_all_tau": [
+      {
+        "freq_hz": 856000.0,
+        "freq_mhz": 0.856,
+        "amplitude": 0.02822788577457652,
+        "baseline_residual_r2_improvement": 0.5020957856907777,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014541976813475212
+      },
+      {
+        "freq_hz": 857000.0,
+        "freq_mhz": 0.857,
+        "amplitude": 0.028231098494761162,
+        "baseline_residual_r2_improvement": 0.5020923750356273,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014542076426345902
+      },
+      {
+        "freq_hz": 855000.0,
+        "freq_mhz": 0.855,
+        "amplitude": 0.028223994721797936,
+        "baseline_residual_r2_improvement": 0.5020805575631857,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014542421571868478
+      },
+      {
+        "freq_hz": 858000.0,
+        "freq_mhz": 0.858,
+        "amplitude": 0.028233629987046108,
+        "baseline_residual_r2_improvement": 0.5020702530600606,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014542722529042996
+      },
+      {
+        "freq_hz": 854000.0,
+        "freq_mhz": 0.854,
+        "amplitude": 0.028219428363300707,
+        "baseline_residual_r2_improvement": 0.5020467665189308,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014543408485752588
+      },
+      {
+        "freq_hz": 859000.0,
+        "freq_mhz": 0.859,
+        "amplitude": 0.02823547748986735,
+        "baseline_residual_r2_improvement": 0.5020293505738118,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.01454391714236329
+      },
+      {
+        "freq_hz": 853000.0,
+        "freq_mhz": 0.853,
+        "amplitude": 0.028214189860347395,
+        "baseline_residual_r2_improvement": 0.5019944917320512,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014544935242740947
+      },
+      {
+        "freq_hz": 860000.0,
+        "freq_mhz": 0.86,
+        "amplitude": 0.028236638376607906,
+        "baseline_residual_r2_improvement": 0.5019696017515864,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014545662188824963
+      },
+      {
+        "freq_hz": 852000.0,
+        "freq_mhz": 0.852,
+        "amplitude": 0.02820828250933965,
+        "baseline_residual_r2_improvement": 0.5019238156626616,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.0145469994344726
+      },
+      {
+        "freq_hz": 861000.0,
+        "freq_mhz": 0.861,
+        "amplitude": 0.028237110151779113,
+        "baseline_residual_r2_improvement": 0.5018909441491707,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.0145479594921971
+      },
+      {
+        "freq_hz": 851000.0,
+        "freq_mhz": 0.851,
+        "amplitude": 0.028201709739742883,
+        "baseline_residual_r2_improvement": 0.5018348240336296,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014549598557293387
+      },
+      {
+        "freq_hz": 862000.0,
+        "freq_mhz": 0.862,
+        "amplitude": 0.02823689045208446,
+        "baseline_residual_r2_improvement": 0.501793318718102,
+        "rss0": 0.02920637422932908,
+        "rss1": 0.014550810777071195
+      }
+    ]
+  },
+  "per_average_frequency_screen": [
+    {
+      "average_index": 1,
+      "mean_signal_kcps": 46.24661246612467,
+      "mean_reference_kcps": 50.111528038357314,
+      "mean_ratio": 0.9237502335127868,
+      "top_frequency_mhz": 1.938,
+      "top_amplitude_ratio": 0.02450720719151388,
+      "top_r2_improvement": 0.14497676428958445,
+      "amplitude_at_programmed_carrier_det_1p5MHz_ratio": 0.021888952728251542,
+      "r2_improvement_at_programmed_carrier_det_1p5MHz": 0.11286543395584862,
+      "amplitude_at_programmed_low_13C_sideband_det_minus_larmor_ratio": 0.01703557969184452,
+      "r2_improvement_at_programmed_low_13C_sideband_det_minus_larmor": 0.06051451936252719,
+      "amplitude_at_programmed_high_13C_sideband_det_plus_larmor_ratio": 0.023998995206148184,
+      "r2_improvement_at_programmed_high_13C_sideband_det_plus_larmor": 0.1415215996734764,
+      "amplitude_at_predicted_physical_carrier_if_1p192MHz_tracks_det_ratio": 0.02110613259097589,
+      "r2_improvement_at_predicted_physical_carrier_if_1p192MHz_tracks_det": 0.10528924908941908,
+      "amplitude_at_predicted_physical_low_13C_if_tracks_det_ratio": 0.023460035315891994,
+      "r2_improvement_at_predicted_physical_low_13C_if_tracks_det": 0.13034980499945742,
+      "amplitude_at_predicted_physical_high_13C_if_tracks_det_ratio": 0.021772501540020292,
+      "r2_improvement_at_predicted_physical_high_13C_if_tracks_det": 0.1102648037967192,
+      "amplitude_at_artifact_control_previous_top_ratio": 0.020616600556823753,
+      "r2_improvement_at_artifact_control_previous_top": 0.09613361150927874
+    },
+    {
+      "average_index": 2,
+      "mean_signal_kcps": 42.63914946841776,
+      "mean_reference_kcps": 46.59057744423598,
+      "mean_ratio": 0.9156553588812958,
+      "top_frequency_mhz": 1.543,
+      "top_amplitude_ratio": 0.028049142510086254,
+      "top_r2_improvement": 0.27038689483772177,
+      "amplitude_at_programmed_carrier_det_1p5MHz_ratio": 0.028030744146022673,
+      "r2_improvement_at_programmed_carrier_det_1p5MHz": 0.2626828590052316,
+      "amplitude_at_programmed_low_13C_sideband_det_minus_larmor_ratio": 0.014726304103965611,
+      "r2_improvement_at_programmed_low_13C_sideband_det_minus_larmor": 0.0641520575364611,
+      "amplitude_at_programmed_high_13C_sideband_det_plus_larmor_ratio": 0.009930580065855125,
+      "r2_improvement_at_programmed_high_13C_sideband_det_plus_larmor": 0.032298589842071374,
+      "amplitude_at_predicted_physical_carrier_if_1p192MHz_tracks_det_ratio": 0.02383123563337288,
+      "r2_improvement_at_predicted_physical_carrier_if_1p192MHz_tracks_det": 0.19812449929312598,
+      "amplitude_at_predicted_physical_low_13C_if_tracks_det_ratio": 0.01636963857932413,
+      "r2_improvement_at_predicted_physical_low_13C_if_tracks_det": 0.08625406879181927,
+      "amplitude_at_predicted_physical_high_13C_if_tracks_det_ratio": 0.006338028200677136,
+      "r2_improvement_at_predicted_physical_high_13C_if_tracks_det": 0.013555985588254098,
+      "amplitude_at_artifact_control_previous_top_ratio": 0.010331944724685259,
+      "r2_improvement_at_artifact_control_previous_top": 0.034255923876293504
+    },
+    {
+      "average_index": 3,
+      "mean_signal_kcps": 43.208255159474675,
+      "mean_reference_kcps": 45.92245153220763,
+      "mean_ratio": 0.9414619532861458,
+      "top_frequency_mhz": 0.87,
+      "top_amplitude_ratio": 0.01893559429739486,
+      "top_r2_improvement": 0.10299306283469933,
+      "amplitude_at_programmed_carrier_det_1p5MHz_ratio": 0.012523347484457752,
+      "r2_improvement_at_programmed_carrier_det_1p5MHz": 0.05082270833776249,
+      "amplitude_at_programmed_low_13C_sideband_det_minus_larmor_ratio": 0.009934618738189916,
+      "r2_improvement_at_programmed_low_13C_sideband_det_minus_larmor": 0.0333402127643618,
+      "amplitude_at_programmed_high_13C_sideband_det_plus_larmor_ratio": 0.00632087427797519,
+      "r2_improvement_at_programmed_high_13C_sideband_det_plus_larmor": 0.012505891819403273,
+      "amplitude_at_predicted_physical_carrier_if_1p192MHz_tracks_det_ratio": 0.013058954421732943,
+      "r2_improvement_at_predicted_physical_carrier_if_1p192MHz_tracks_det": 0.057823559907717564,
+      "amplitude_at_predicted_physical_low_13C_if_tracks_det_ratio": 0.0028715989825178613,
+      "r2_improvement_at_predicted_physical_low_13C_if_tracks_det": 0.0026126108827303042,
+      "amplitude_at_predicted_physical_high_13C_if_tracks_det_ratio": 0.0029773345696387215,
+      "r2_improvement_at_predicted_physical_high_13C_if_tracks_det": 0.0029733657330328917,
+      "amplitude_at_artifact_control_previous_top_ratio": 0.005823921276116018,
+      "r2_improvement_at_artifact_control_previous_top": 0.011216967071860165
+    },
+    {
+      "average_index": 4,
+      "mean_signal_kcps": 42.798624140087554,
+      "mean_reference_kcps": 46.45716072545341,
+      "mean_ratio": 0.9218383091386203,
+      "top_frequency_mhz": 0.886,
+      "top_amplitude_ratio": 0.037157181341582524,
+      "top_r2_improvement": 0.3206181491338821,
+      "amplitude_at_programmed_carrier_det_1p5MHz_ratio": 0.028044782373628636,
+      "r2_improvement_at_programmed_carrier_det_1p5MHz": 0.19807172418489258,
+      "amplitude_at_programmed_low_13C_sideband_det_minus_larmor_ratio": 0.019562534741524768,
+      "r2_improvement_at_programmed_low_13C_sideband_det_minus_larmor": 0.09832934632887241,
+      "amplitude_at_programmed_high_13C_sideband_det_plus_larmor_ratio": 0.009335732559171656,
+      "r2_improvement_at_programmed_high_13C_sideband_det_plus_larmor": 0.021223414460792667,
+      "amplitude_at_predicted_physical_carrier_if_1p192MHz_tracks_det_ratio": 0.026369128674725403,
+      "r2_improvement_at_predicted_physical_carrier_if_1p192MHz_tracks_det": 0.1834412411640654,
+      "amplitude_at_predicted_physical_low_13C_if_tracks_det_ratio": 0.007090514369294568,
+      "r2_improvement_at_predicted_physical_low_13C_if_tracks_det": 0.01235783385988812,
+      "amplitude_at_predicted_physical_high_13C_if_tracks_det_ratio": 0.008667264736821905,
+      "r2_improvement_at_predicted_physical_high_13C_if_tracks_det": 0.019569255582668456,
+      "amplitude_at_artifact_control_previous_top_ratio": 0.0096709807636432,
+      "r2_improvement_at_artifact_control_previous_top": 0.024290254050997166
+    },
+    {
+      "average_index": 5,
+      "mean_signal_kcps": 44.15780696268501,
+      "mean_reference_kcps": 48.64707108609548,
+      "mean_ratio": 0.9091415724048305,
+      "top_frequency_mhz": 1.751,
+      "top_amplitude_ratio": 0.04219035975551022,
+      "top_r2_improvement": 0.29099954417576696,
+      "amplitude_at_programmed_carrier_det_1p5MHz_ratio": 0.02944662060571854,
+      "r2_improvement_at_programmed_carrier_det_1p5MHz": 0.13936525571338496,
+      "amplitude_at_programmed_low_13C_sideband_det_minus_larmor_ratio": 0.022332538069468912,
+      "r2_improvement_at_programmed_low_13C_sideband_det_minus_larmor": 0.07856303985156196,
+      "amplitude_at_programmed_high_13C_sideband_det_plus_larmor_ratio": 0.038177064392357386,
+      "r2_improvement_at_programmed_high_13C_sideband_det_plus_larmor": 0.22650588921774065,
+      "amplitude_at_predicted_physical_carrier_if_1p192MHz_tracks_det_ratio": 0.040734134545519995,
+      "r2_improvement_at_predicted_physical_carrier_if_1p192MHz_tracks_det": 0.27958937979840165,
+      "amplitude_at_predicted_physical_low_13C_if_tracks_det_ratio": 0.0034632488270918407,
+      "r2_improvement_at_predicted_physical_low_13C_if_tracks_det": 0.0018590104583043887,
+      "amplitude_at_predicted_physical_high_13C_if_tracks_det_ratio": 0.018046973757512758,
+      "r2_improvement_at_predicted_physical_high_13C_if_tracks_det": 0.05407349930207562,
+      "amplitude_at_artifact_control_previous_top_ratio": 0.012670152654467073,
+      "r2_improvement_at_artifact_control_previous_top": 0.026151037802324046
+    }
+  ],
+  "interpretation": {
+    "hard_anomaly": false,
+    "nonterminal_caveat": "This is an in-progress 5-average autosave, not terminal evidence. Do not claim T2star or 13C from it.",
+    "health_read": "healthy_running",
+    "opportunity_read": "The combined 5-average exploratory ratio LS screen is highest near 1.595 MHz, close to the programmed 1.5 MHz carrier, while the previous fixed-artifact control at 1.192 MHz is weaker. This is useful progress context only; per-average screens disagree and only 5/12 averages are saved.",
+    "target_comparison": {
+      "programmed_carrier_ratio_amp": 0.023716468448541698,
+      "programmed_carrier_r2_improvement": 0.380995554836612,
+      "prior_fixed_artifact_ratio_amp": 0.002538220503361426,
+      "prior_fixed_artifact_r2_improvement": 0.004552491210558685,
+      "predicted_det_tracking_carrier_ratio_amp": 0.023320109219577768,
+      "predicted_det_tracking_carrier_r2_improvement": 0.3862497774719504,
+      "programmed_sideband_ratio_amps": [
+        0.008910392149214458,
+        0.013626406215244479
+      ],
+      "det_tracking_sideband_ratio_amps": [
+        0.009650970319488509,
+        0.005058197260256523
+      ]
+    },
+    "decision": "Continue the running bridge job to terminal unless a hard anomaly appears. Terminal raw export plus scan-order-aware drift review is still required before any T2star/13C conclusion."
+  }
+}

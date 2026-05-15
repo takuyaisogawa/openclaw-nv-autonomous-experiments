@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T20:59:30-04:00",
+  "status": "bridge_running_after_progress",
+  "summary": "Fine weak-pi pODMR terminal result was copied, intent completed, raw/readout-aware review performed, and state/log/evidence updated. Review supports refined r03 center mw_freq_hz=3.8759e9 with no drift flags. A verified det-shifted second Ramsey/T2star/13C follow-up was modeled, advisory-checked, and submitted; live bridge job nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg is running (tau 0..8 us, 41 points, det=1.0 MHz, 8 x 50000 shots), so further bridge-touching work is blocked until terminal.",
+  "touched_bridge_queue": true,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg",
+    "batch_id": "nv23_ramsey_20260513_2047",
+    "expected_review": "On terminal: copy job/result/status/control and batch state into work/bridge_jobs, complete intent image145844_reimage_r03_ramsey_det1p0_8us_8avg_20260513_2042, raw-export savedexperiment, run scan-order-aware drift, then review raw/readout and FFT/least-squares evidence at 1.0 MHz, 1.0 MHz +/- f13C, and prior ~0.884 MHz before any T2star or 13C claim."
+  },
+  "updated_backlog_item_ids": []
+}

@@ -1,0 +1,63 @@
+# Project State: nv23_aligned_nv_t2star_13c_image145844_20260513_1507
+
+This is the main readable project state. Keep it short, current, and useful.
+Keep bridge-execution contracts in `work/bridge_jobs/` or the live bridge queue.
+Put detailed derivations, checks, and failed ideas in `work/notes/` so future wakes
+can look them up without carrying everything in context.
+
+## Objective
+
+Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion.
+
+## Vibe Physics Operating Pattern
+
+- Work in small, separately summarized tasks.
+- Record what was actually checked; do not write that something is verified unless it was checked.
+- When a result matters, include the calculation, bridge artifact, code path, or evidence id that supports it.
+- If an assertion is only taste, intuition, or a candidate interpretation, label it that way.
+- Repeat verification after fixes; finding one issue is not proof that the rest is clean.
+
+## Standing Operational Assumptions
+
+- Read the shared NV startup memory at `<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md` before choosing NV project steps.
+- Use its Memory Index to read relevant sections from `<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md` only when the current state, evidence, or human advice makes them useful.
+- When an NV wake produces a durable reusable detailed lesson, update `<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md` in the relevant section with a concise dated note and provenance pointer.
+- New NV projects use the `start-project` -> cron/force wake `nv-researcher` flow. `start-project` preserves the human request and durable state; `nv-researcher` owns the research agenda, backlog expansion, evidence synthesis, and experiment-design judgment.
+- Treat backlog items as execution/audit pointers, not as a complete scientific plan. Keep any seed backlog item minimal unless operator explicitly asked for detailed gates.
+- For usual-NV recovery, prefer recent tracking, explicit human seeds, or prompt-visible label-dataset evidence before standalone Imaging/TrackCenter. Do not use the legacy live landmark-map route for future execution or recovery.
+- If NV tracking remains continuous and counts/alignment evidence stay healthy, absolute position motion by itself is not a reason to stop or block an experiment. Treat the motion as provenance and drift evidence to record, while continuing bounded work when the scientific intent and safety gates still hold.
+- Do pause or re-check when tracking is lost, counts collapse, a discontinuous jump or branch switch lacks continuous tracking provenance, hardware safety is uncertain, or a project-specific human constraint explicitly requires a fixed landmark/position.
+
+## Current Status
+
+- (agent-maintained)
+
+## Candidate Findings
+
+- (agent-maintained)
+
+## Final Claims
+
+- (agent-maintained; cite evidence ids from `.manager/evidence.jsonl` or referenced bridge artifacts)
+
+## Decisions
+
+- (agent-maintained)
+
+## Next Step
+
+- (agent-maintained)
+
+## Evidence Pointers
+
+- (agent-maintained)
+
+## Note Convention
+
+For each meaningful unit of work, write one short Markdown note under
+`work/notes/` with: question, inputs read, action taken, result, checks
+actually performed, remaining uncertainty, and next pointer.
+
+Bridge-job JSON should contain execution contracts only: sequence/manifest, scan,
+numeric variables, hard limits, queue/execute opt-in, target labels, and Markdown
+note pointers. Scientific interpretation belongs in this file and `work/notes/`.

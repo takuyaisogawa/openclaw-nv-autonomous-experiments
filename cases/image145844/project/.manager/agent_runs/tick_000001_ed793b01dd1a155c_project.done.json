@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T20:31:00.569113+00:00",
+  "status": "bridge_running_handoff",
+  "summary": "Advanced project from stale original r01 through fresh re-image. Recorded original r01 count-collapse, completed fresh Imaging/export/candidate selection, tracked fresh r01, completed and reviewed r01 strong-pi pODMR as no clear usable resonance, tracked fresh r02, and started drift-adjusted r02 strong-pi pODMR. Bridge is running job nv23_pulsed_odmr_rabimodulated_v1_20260513_162710_image145844_reimage_r02_strong_podmr.",
+  "touched_bridge_queue": true,
+  "next_action": "Monitor terminal result for running r02 pODMR; copy job/result and batch state; complete intent image145844_reimage_r02_strong_podmr_20260513_1622; raw/readout-aware review for resonance. If clear usable resonance, plan Ramsey/T2star; if not, reject r02 and move to r03.",
+  "updated_backlog_item_ids": []
+}

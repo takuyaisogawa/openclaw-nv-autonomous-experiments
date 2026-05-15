@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-14T01:25:08",
+  "tick_count": 52,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 63,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_001026_101965_8461ec071b",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_5avg_review_20260514_0002.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 5-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 5 stored averages became available. The job remains healthy at 5/12 averages with final-count text 41.016 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with lower median signal SEM about 1.44 kcps, and the exploratory ratio LS screen remains strongest near 1.178 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:10:26"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_raw_export_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0036.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0036_shorttau_ramsey_8avg_autosave_refresh.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Updated in-progress autosave review for the running short-tau/high-SNR r03 Ramsey diagnostic after the MAT reached 8 stored averages. The job remained healthy at 8/12 averages, final-count text 44.914 kcps, monitor last_error empty, stop_requested=false, and no queued jobs. The early-time signal/ratio transient persists with median signal SEM about 0.98 kcps, and the exploratory ratio LS component remains near 1.187 MHz; this is nonterminal context only and no T2star/13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:43:09"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_004309_640420_0e8a141dae",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_8avg_review_20260514_0036.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 8-average autosave refresh: Short-tau Ramsey 8-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 8 stored averages became available. The job remains healthy at 8/12 averages with final-count text 44.914 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with median signal SEM about 0.98 kcps, and the exploratory ratio LS screen remains strongest near 1.187 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T00:43:09"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_raw_export_20260514_0107.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0107.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_shorttau_status_snapshot_20260514_0117.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/notes/20260514_0107_shorttau_ramsey_10avg_autosave_refresh.md"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Updated in-progress autosave review for the running short-tau/high-SNR r03 Ramsey diagnostic after the MAT reached 10 stored averages. The 10-average raw export has 900000 shots per tau point; the job remained healthy with monitor last_error empty and stop_requested=false. A later status snapshot had advanced to 11/12 averages with final-count text 35.122 kcps, still no monitor error or stop request. The early-time signal/ratio transient persists with median signal SEM about 1.06 kcps, and the exploratory ratio LS component remains near 1.187 MHz; this is nonterminal context only and no T2star/13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T01:20:22"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260514_012022_184530_f2fa66567d",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Short-tau Ramsey 10-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 10 stored averages became available. The job remains healthy: 10-average snapshot final-count text 42.469 kcps, later live snapshot advanced to 11/12 with 35.122 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with median signal SEM about 1.06 kcps and exploratory ratio LS strongest near 1.187 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+          "tags": [],
+          "timestamp": "2026-05-14T01:20:22"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 13
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Short-tau Ramsey 10-average autosave refresh",
+    "event": "lab_log_note",
+    "summary": "Re-exported the running short-tau r03 Ramsey autosave after 10 stored averages became available. The job remains healthy: 10-average snapshot final-count text 42.469 kcps, later live snapshot advanced to 11/12 with 35.122 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with median signal SEM about 1.06 kcps and exploratory ratio LS strongest near 1.187 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260514_012022_184530_f2fa66567d",
+    "category": "figure",
+    "summary": "Short-tau Ramsey 10-average autosave refresh: Re-exported the running short-tau r03 Ramsey autosave after 10 stored averages became available. The job remains healthy: 10-average snapshot final-count text 42.469 kcps, later live snapshot advanced to 11/12 with 35.122 kcps, monitor last_error empty, and stop_requested=false. The early-time signal/ratio transient persists with median signal SEM about 1.06 kcps and exploratory ratio LS strongest near 1.187 MHz, but this is nonterminal context only. No T2star or 13C claim is supported before terminal raw export plus scan-order-aware drift.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_shorttau_autosave_10avg_review_20260514_0107.png"
+    ],
+    "timestamp": "2026-05-14T01:20:22"
+  }
+}

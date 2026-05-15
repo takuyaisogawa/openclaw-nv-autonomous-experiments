@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "action": "queue_experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "intent_id": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320",
+  "intent_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/experiment_intents/queued/image231924_c01_corrected_center_ramsey_repeat_20260512_0320.json",
+  "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/log.md"
+}

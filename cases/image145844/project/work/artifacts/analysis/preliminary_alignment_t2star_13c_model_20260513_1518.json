@@ -1,0 +1,32 @@
+{
+  "model": "preliminary planning constants for image145844 candidate screening",
+  "assumptions": {
+    "D_hz": 2870000000.0,
+    "expected_ms_plus_resonance_hz": 3875000000.0,
+    "gamma_e_hz_per_G": 2802495.0,
+    "gamma_13c_hz_per_T": 10705000.0,
+    "rabi_frequency_mod_depth_1_hz": 10000000.0
+  },
+  "derived": {
+    "B_G": 358.6090251722126,
+    "B_T": 0.035860902517221266,
+    "carbon13_larmor_hz": 383890.96144685365,
+    "mod_depth_1_pi_time_s": 5e-08,
+    "chosen_strong_pi_s": 5.2e-08,
+    "strong_pi_fraction_of_model_pi": 1.04
+  },
+  "strong_pi_podmr_screen": {
+    "mw_freq_begin_hz": 3825000000.0,
+    "mw_freq_end_hz": 3925000000.0,
+    "points": 21,
+    "spacing_hz": 5000000.0,
+    "expected_resonance_scale": "clear resonance should occur within +/-50 MHz if candidate is aligned similarly to the current field; 5 MHz spacing is screening-grade, not precision center extraction",
+    "expected_contrast_scale": "order 10-22 percent signal contrast for a usable transition, judged against raw readout noise and baseline; weak normalization-only features are not enough"
+  },
+  "ramsey_fft_guardrail_after_alignment": {
+    "expected_13c_larmor_hz": 383890.96144685365,
+    "if_tau_span_8us_points_51_nyquist_hz": 3125000.0,
+    "if_tau_span_8us_points_101_nyquist_hz": 6250000.0,
+    "note": "Choose det/tau grid after measured pODMR center; keep Nyquist above deliberate Ramsey carrier plus about f13C."
+  }
+}

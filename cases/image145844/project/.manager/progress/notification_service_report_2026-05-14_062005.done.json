@@ -1,0 +1,15 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T06:21:55-04:00",
+  "status": "completed",
+  "summary": "Wrote Japanese notification_service progress report for running refreshed-center r03 Ramsey job; included current status evidence, caveats, project work state, and next expected terminal-review step.",
+  "notification_service_message_path": ".manager/progress/notification_service_report_2026-05-14_062005.md",
+  "notification_service_media": [
+    {
+      "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_fine_weak_podmr_refresh_after_detshift_terminal_review_20260514_0523.png",
+      "caption": "r03 refreshed weak-pi pODMR calibration used to select 3.8765 GHz before the running Ramsey follow-up",
+      "force_document": true
+    }
+  ],
+  "touched_bridge_queue": false
+}

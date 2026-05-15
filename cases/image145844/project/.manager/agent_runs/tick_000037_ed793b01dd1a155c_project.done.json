@@ -1,0 +1,17 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T21:33:26-04:00",
+  "status": "bridge_running_after_autosave_review",
+  "summary": "Checked the running det=1.0 MHz r03 Ramsey/T2star/13C follow-up and found no terminal transition or hard anomaly. Live status remained running at 3/8 averages, final-count text 43.331 kcps, monitor error empty, and no stop requested. Performed bridge-free in-progress autosave work: raw-exported the 3-average savedexperiment snapshot, generated a corrected raw/readout and preliminary frequency-screen review plus PNG figure, marked the earlier ambiguous 2-average review as superseded, recorded analysis and figure evidence, wrote a focused note, updated work/state.md and log.md, and refreshed project copies of live status and batch state. The partial autosave is progress/anomaly evidence only: top combined preliminary component is near 0.448 MHz and target amplitudes at 1.0 MHz, 0.615/1.385 MHz, and prior 0.884 MHz are small; no T2star or 13C claim is supported before terminal review.",
+  "touched_bridge_queue": true,
+  "bridge_queue_mutated": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg",
+    "batch_id": "nv23_ramsey_20260513_2047",
+    "intent_id": "image145844_reimage_r03_ramsey_det1p0_8us_8avg_20260513_2042",
+    "reason": "The Ramsey execute is still running, so bridge occupancy blocks new bridge-touching submissions. The autosave sanity review found no hard anomaly and does not justify stopping or mutating the queue.",
+    "on_terminal": "Copy terminal job/result/status/control and batch state into work/bridge_jobs, complete the intent, raw-export the final savedexperiment, run scan-order-aware drift, and perform full raw/readout plus FFT/least-squares review at 1.0 MHz, 1.0 MHz +/- f13C, and prior ~0.884 MHz before making any T2star or 13C claim."
+  },
+  "updated_backlog_item_ids": []
+}

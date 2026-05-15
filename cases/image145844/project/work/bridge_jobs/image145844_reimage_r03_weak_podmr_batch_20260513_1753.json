@@ -1,0 +1,138 @@
+{
+  "batch_id": "nv23_image145844_reimage_r03_weak_podmr_20260513_1753",
+  "requested_by": "nv-researcher",
+  "mode": "execute",
+  "requested_sample_id": "NV23",
+  "natural_language_request": "Single weak-pi pODMR frequency calibration for accepted image145844_reimage_r03 before Ramsey/T2star.",
+  "items": [
+    {
+      "id": "image145844_reimage_r03_weak_podmr",
+      "mode": "execute",
+      "recipe": "xml_generic_v1",
+      "sample_id": "NV23",
+      "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+      "requested_by": "nv-researcher",
+      "submission_path": "project_verified_intent_image145844_reimage_r03_weak_podmr_frequency_calibration",
+      "intent": "image145844_reimage_r03 weak-pi pODMR frequency calibration after clear strong-pi alignment screen; no automatic fit/Aux update; terminal raw/readout review required before Ramsey/T2star.",
+      "measurement_plan_verified": true,
+      "allow_seed_fallback": false,
+      "scan": {
+        "vary_prop": [
+          "mw_freq"
+        ],
+        "begin": [
+          3865000000.0
+        ],
+        "end": [
+          3885000000.0
+        ],
+        "points": [
+          21
+        ]
+      },
+      "float_vars": {
+        "sample_rate": 250000000.0,
+        "mw_freq": 3875000000.0,
+        "detuning": 0.0,
+        "freqIQ": 50000000.0,
+        "length_last_wait": 1e-06,
+        "mod_depth": 0.1,
+        "mw_ampl": -5.0,
+        "ampIQ": 5.0,
+        "full_expt": 0.0,
+        "sweep_range": 100000000.0,
+        "sweep_time": 1e-06,
+        "delay_wrt_1mus": 2e-07,
+        "wait_time": 2e-06,
+        "switch_delay": 1e-07,
+        "pumping_time": 1e-06,
+        "length_rabi_pulse": 5.7e-07
+      },
+      "bool_vars": {
+        "do_adiabatic_inversion": true
+      },
+      "limits": {
+        "max_mw_power_dbm": 15.0,
+        "allow_stage_motion": false,
+        "allow_laser_profile": false
+      },
+      "metadata": {
+        "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+        "target_label": "image145844_reimage_r03",
+        "target_role": "first_aligned_candidate_weak_pi_podmr_frequency_calibration_before_ramsey",
+        "fresh_track_result": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json",
+        "fresh_counts_kcps": 43.535,
+        "fresh_tracked_position_um": [
+          117.31443569593856,
+          117.76164407822792,
+          115.14167937743193
+        ],
+        "track_evidence_id": "nv23_image145844_reimage_r03_track_20260513_1708_result",
+        "strong_pi_review_evidence_id": "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741",
+        "model_evidence_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_model_plan_20260513_1753.json",
+        "verified_intent_id": "image145844_reimage_r03_weak_podmr_20260513_1753",
+        "auto_align_nv": false,
+        "require_landmark_match": false,
+        "allow_seed_fallback": false,
+        "minimum_final_kcps": 20,
+        "allow_search_scan": false,
+        "search_scan_on_tracking_failure": false,
+        "local_fine_search_before_tracking": false,
+        "no_auto_align_reason": "Standalone TrackCenter and clear strong-pi pODMR support r03; use the current tracked position directly and avoid hidden target reselection.",
+        "analysis_plan": {
+          "kind": "weak_pi_podmr_frequency_calibration",
+          "persist_aux_update": false,
+          "valid_resonance_review_required": true,
+          "visual_review_required": true,
+          "stored_average_review_required": true,
+          "raw_readout_review_required": true,
+          "notes": "No automatic fit request is included. Review raw readouts and normalization first; fit/use a center only after signal presence is supported."
+        },
+        "requested_by": "nv-researcher",
+        "disable_agent_auto_recovery": true,
+        "frequency_window_reason": "Covers +/-10 MHz around the strong-pi center with ~1 MHz spacing, several times the expected weak-pi excitation width and enough to absorb the coarse strong-pi center uncertainty.",
+        "shot_reason": "Use 4 x 50000 = 200000 total shots to meet calibration/scout SNR guidance while keeping even snake-scan averages.",
+        "even_average_reason": "Use 4 averages under snake/even-average guidance; r03 strong-pi drift analysis flagged no averages but recent advisory risk was high.",
+        "measurement_plan_verified": true,
+        "nv_position": [
+          117.31443569593856,
+          117.76164407822792,
+          115.14167937743193
+        ],
+        "sequence_manifest_status": "staging",
+        "sequence_manifest_scope": "staging",
+        "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+        "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+        "acquisition": {
+          "average_continuously": false,
+          "averages": 4,
+          "repetitions": 50000
+        },
+        "advisory_preview_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_175521_image145844_reimage_r03_weak_podmr",
+        "advisory_estimated_per_average_seconds": 280.54785,
+        "advisory_estimated_total_seconds": 1147.1914,
+        "advisory_recent_nv_drift_risk_level": "high",
+        "advisory_suggested_max_tracking_window_seconds": 450,
+        "advisory_recommended_actions": [],
+        "advisory_preview_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_advisory_preview_20260513_1755.json"
+      },
+      "acquisition": {
+        "average_continuously": false,
+        "averages": 4,
+        "repetitions": 50000
+      },
+      "nv_position": [
+        117.31443569593856,
+        117.76164407822792,
+        115.14167937743193
+      ],
+      "job_id_prefix": "nv23_pulsed_odmr_rabimodulated_v1",
+      "job_id_suffix": "image145844_reimage_r03_weak_podmr"
+    }
+  ],
+  "policy": {
+    "measurement_plan_enabled": false,
+    "measurement_plan_required": false,
+    "max_attempts_per_item": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T23:16:00-04:00",
+  "status": "running_bridge_job_started",
+  "summary": "Terminal second Ramsey review was recorded: no supported T2star or nearby-13C claim from the det=1.0 MHz 8 us data. A non-blind short-tau/high-SNR r03 Ramsey diagnostic was modeled, advisory-checked, verified, and started. The intended running bridge job is nv23_ramsey_20260513_230331_auto_ramsey (metadata links to verified intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257), scanning tau 48 ns..1.968 us with det=1.0 MHz, mw_freq=3.8759 GHz, 12 x 90000 repetitions. A duplicate queued relaunch job was canceled before execution; bridge queued is empty and only the intended short-tau job remains running.",
+  "touched_bridge_queue": true,
+  "next_action": "Wait for running short-tau Ramsey job nv23_ramsey_20260513_230331_auto_ramsey to reach terminal state. While running, autosave reviews are anomaly/progress only. On completion, copy terminal artifacts, complete the verified intent, raw-export the final savedexperiment, run scan-order-aware drift analysis, and perform raw/readout-aware short-tau carrier/decay review before any T2star or 13C claim.",
+  "updated_backlog_item_ids": []
+}

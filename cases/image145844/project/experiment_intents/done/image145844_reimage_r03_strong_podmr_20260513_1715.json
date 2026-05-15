@@ -1,0 +1,127 @@
+{
+  "intent_id": "image145844_reimage_r03_strong_podmr_20260513_1715",
+  "summary": "Run a bounded strong-pi pulsed ODMR alignment screen on the third freshly tracked re-image candidate.",
+  "scientific_rationale": "r01 and r02 were both trackable but lacked clear usable strong-pi ODMR resonances under raw/readout-aware review, so per human guidance we move to the next candidate. The third fresh re-image candidate tracked at 43.535 kcps at [117.314436,117.761644,115.141679] um. The quantitative planning model remains a +/-50 MHz screen around the expected ms=+1 resonance near 3.875 GHz, with B about 358.6 G, 13C Larmor about 0.384 MHz, and strong-pi time about 50 ns. A 52 ns pulse has excitation bandwidth on the order of 1/t_pi ~19 MHz, so an 11-point, 10 MHz-spaced screen over 3.825..3.925 GHz should still resolve a clear strong-pi resonance-scale feature while reducing the per-average tracking window.",
+  "comparison_targets": [
+    "r01 raw review image145844_reimage_r01_strong_podmr_raw_review_20260513_1615",
+    "r02 raw review image145844_reimage_r02_strong_podmr_raw_review_20260513_1658",
+    "r03 TrackCenter evidence nv23_image145844_reimage_r03_track_20260513_1708_result",
+    "model evidence preliminary_alignment_t2star_13c_model_20260513_1518"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export for r03 strong-pi pODMR",
+    "raw/readout-aware evidence for or against a clear resonance"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw readouts show a clear resonance-scale feature above drift/noise/baseline variation",
+    "no tracking/count-collapse/hardware anomaly invalidates the data"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for pulsed_odmr_rabimodulated_v1",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "seed_position_um": [
+      117.16666666666667,
+      118.16666666666667,
+      116.0
+    ],
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "final_counts_kcps": 43.535,
+    "track_result": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json"
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [
+      3825000000.0,
+      3925000000.0,
+      11
+    ],
+    "spacing_hz": 10000000.0,
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 20000,
+      "average_continuously": false
+    },
+    "total_shots": 80000,
+    "float_vars": {
+      "mod_depth": 1.0,
+      "length_rabi_pulse": 5.2e-08,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07
+    },
+    "analysis_fit_kind": "omitted; raw/readout review first"
+  },
+  "advisory_basis": {
+    "preview_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_171430_image145844_reimage_r03_strong_podmr_advisory11",
+    "estimated_total_seconds": 590.15492,
+    "estimated_per_average_seconds": 141.28873,
+    "tracking_window_seconds": 141.28873,
+    "recent_nv_drift_risk_level": "high",
+    "recent_drift_sample_count": 4,
+    "recent_low_final_counts_count": 2,
+    "suggested_max_tracking_window_seconds": 450,
+    "policy_note": "Reduced scan from 21 to 11 points so per-average tracking window is well below the active advisory cap and the project 300 s daytime planning preference while preserving 80000 total shots."
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T17:16:26",
+  "safety_verification": {
+    "checked_at": "2026-05-13T17:16:35",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T17:16:35",
+  "completed_at": "2026-05-13T17:52:05",
+  "result": {
+    "status": "completed",
+    "review_status": "completed_reviewed",
+    "bridge_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr",
+    "bridge_result_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_172002_image145844_reimage_r03_strong_podmr.result.json",
+    "batch_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_image145844_reimage_r03_strong_podmr_20260513_1715.batch_state.json",
+    "analysis_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.json",
+    "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_strong_podmr_raw_review_20260513_1741.png",
+    "scientific_outcome": "clear_usable_strong_pi_resonance",
+    "candidate_decision": "accept_r03_as_first_aligned_candidate_for_targeted_followup",
+    "supported_center_hz": 3875000000.0,
+    "center_precision_note": "coarse 10 MHz strong-pi grid; use weak-pi pODMR before Ramsey for mw_freq refinement",
+    "next_pointer": "focus_on_r03_and_run_weak_pi_podmr_frequency_calibration_before_ramsey_t2star"
+  }
+}

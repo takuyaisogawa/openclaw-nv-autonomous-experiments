@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "kind": "weak_pi_podmr_frequency_calibration_plan_model",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "candidate": "image145844_reimage_r03",
+  "input_evidence": [
+    "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741",
+    "preliminary_alignment_t2star_13c_model_20260513_1518",
+    "Rabimodulated.xml readout-role inspection recorded in project notes"
+  ],
+  "resonance_prior": {
+    "strong_pi_grid_min_hz": 3875000000.0,
+    "strong_pi_grid_spacing_hz": 10000000.0,
+    "reason": "r03 strong-pi pODMR raw/readout-aware review shows deepest raw and normalized dip at the 3.875 GHz grid point; coarse grid is not enough for Ramsey mw_freq refinement."
+  },
+  "physical_model": {
+    "ms_transition": "ms=+1",
+    "zero_field_splitting_GHz": 2.87,
+    "electron_gamma_GHz_per_G": 0.0028,
+    "estimated_B_G_from_3p875GHz": 358.9285714285714,
+    "c13_gamma_Hz_per_G": 1070.5,
+    "estimated_13C_larmor_Hz": 384233.0357142857,
+    "rabi_frequency_model_Hz_at_mod_depth_1": 10000000.0,
+    "rabi_frequency_model_Hz_at_mod_depth_0p1": 1000000.0,
+    "model_pi_time_s_at_mod_depth_0p1": 5e-07,
+    "chosen_weak_pi_time_s": 5.7e-07,
+    "chosen_excitation_width_order_Hz": 1754385.9649122804,
+    "expected_on_resonance_PL_drop_fraction_order": 0.22,
+    "observed_strong_pi_drop_fraction_r03": 0.1657595249876301
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "sequence_file": "Rabimodulated.xml",
+    "readout_roles": "full_expt=0: readout1 true mS=0 reference; readout2 signal after pulse",
+    "scan_mw_freq_hz": [
+      3865000000.0,
+      3885000000.0,
+      21
+    ],
+    "scan_step_hz": 1000000.0,
+    "scan_window_reason": "Covers +/-10 MHz around the strong-pi center with ~1 MHz spacing, several times the expected weak-pi excitation width and enough to absorb the coarse strong-pi center uncertainty.",
+    "float_vars": {
+      "mod_depth": 0.1,
+      "length_rabi_pulse": 5.7e-07,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07,
+      "full_expt": 0.0
+    },
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false,
+      "total_shots": 200000
+    }
+  },
+  "resolvability_check": {
+    "estimated_signal_drop_kcps_from_r03_strong_pi_drop": 8.052597723899071,
+    "strong_pi_center_sem_kcps_at_4x20k": 2.095440657313748,
+    "estimated_center_sem_kcps_at_4x50k_shot_scaling": 1.3252730357663618,
+    "expected_drop_over_scaled_sem": 6.076180158032506,
+    "decision": "Expected resonance-scale weak-pi dip should be distinguishable from noise if tracking and route remain healthy; use raw/readout-aware review before any Ramsey frequency claim."
+  },
+  "next_use_if_success": "Use the refined weak-pi center as mw_freq_hz for Ramsey/T2star design and recompute B and 13C Larmor for FFT interpretation.",
+  "pre_enqueue_advisory": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_advisory_preview_20260513_1755.json",
+    "ok": true,
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_175521_image145844_reimage_r03_weak_podmr",
+    "estimated_runtime": {
+      "estimator_mode": "siglent",
+      "track_per_avg": true,
+      "averages": 4,
+      "repetitions": 50000,
+      "total_shots": 200000,
+      "num_scan_points": 21,
+      "total_seconds": 1147.1914,
+      "per_average_seconds": 280.54785,
+      "tracking_window_seconds": 280.54785,
+      "drift_planning_window_seconds": 280.54785,
+      "tracking_window_basis": "per_average",
+      "tracking_window_unit": "average",
+      "averages_change_tracking_window": false,
+      "repetitions_change_tracking_window": true,
+      "per_average_overhead_seconds": 262.66215
+    },
+    "recent_nv_drift": {
+      "sample_count": 4,
+      "recent_started_at": "2026-05-13T17:10:19",
+      "completed_count": 4,
+      "failed_count": 0,
+      "hard_failed_count": 0,
+      "stopped_count": 0,
+      "failed_rate": 0,
+      "final_counts_median_kcps": 20.931,
+      "final_counts_min_kcps": 3.751,
+      "low_final_counts_count": 2,
+      "severe_low_final_counts_count": 2,
+      "below_minimum_final_counts_count": 2,
+      "seed_to_tracked_median_um": 0.23074432826603242,
+      "seed_to_tracked_max_um": 0.5886947997317876,
+      "high_seed_drift_count": 1,
+      "used_search_scan_count": 0,
+      "warning_count_total": 0,
+      "risk_level": "high",
+      "suggested_max_tracking_window_seconds": 450,
+      "history_source": "tracking_event_log",
+      "include_routes": [],
+      "exclude_routes": [
+        "manual_imaging_tracking",
+        "manual_experiment_tracking"
+      ]
+    },
+    "guidance": {
+      "default_max_tracking_window_seconds": 600,
+      "tracking_cadence_policy": {
+        "timezone": "MATLAB local time",
+        "daytime_start_hour_local": 9,
+        "nighttime_start_hour_local": 21,
+        "daytime_max_untracked_window_seconds": 600,
+        "nighttime_max_untracked_window_seconds": 900,
+        "effective_period": "daytime",
+        "effective_max_untracked_window_seconds": 600,
+        "source": "day_night_policy_default",
+        "applies_to": "pre_enqueue_advisory drift_planning_window_seconds / per_average_seconds",
+        "does_not_change": "Imaging GUI or legacy Experiment tracking_period defaults"
+      },
+      "suggested_max_tracking_window_seconds": 450,
+      "planning_metric": "drift_planning_window_seconds",
+      "tracking_window_basis": "per_average",
+      "tracking_window_exceeds_suggestion": false,
+      "total_runtime_is_for_scheduling_only": true,
+      "target_total_shots": 200000,
+      "shot_preservation_guidance": "When the predicted per-average tracking window is too long, first reduce repetitions per average and compensate by increasing averages so repetitions * averages remains as close as possible to the original total shots. If that is still insufficient, split the acquisition into shorter jobs. Reduce total shots only as a last resort.",
+      "adjustment_priority": [
+        "reduce repetitions per average first",
+        "raise averages to preserve repetitions * averages whenever possible",
+        "split the acquisition into shorter jobs before reducing total shots",
+        "reduce total shots only as a last resort"
+      ],
+      "reduce_total_shots_last_resort": true,
+      "averages_change_tracking_window": false,
+      "repetitions_change_tracking_window": true,
+      "recommended_actions": []
+    },
+    "blockers": [],
+    "warnings": [
+      "sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.",
+      "Validation succeeded without touching 23-C hardware paths.",
+      "Execute remains separately gated by bootstrap and local lab validation.",
+      "Applied acquisition settings from job.metadata: averages=4, repetitions=50000, average_continuously=0.",
+      "Forced experiment tracking_period=1 for bridge-configured runs."
+    ]
+  }
+}

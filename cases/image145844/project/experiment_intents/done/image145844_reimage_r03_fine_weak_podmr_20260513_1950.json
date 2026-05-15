@@ -1,0 +1,454 @@
+{
+  "intent_id": "image145844_reimage_r03_fine_weak_podmr_20260513_1950",
+  "summary": "Run a fine weak-pi pulsed ODMR frequency refinement on accepted r03 after the first Ramsey scout produced weak non-claim-grade spectral content and a carrier mismatch.",
+  "scientific_rationale": "The first Ramsey scout completed and is analyzable, but the strongest exploratory combined oscillatory component is near 0.884 MHz rather than the programmed 1.5 MHz carrier, and the stored averages disagree. The previous weak-pi pODMR grid step was 1 MHz and deliberately treated as grid-limited. A fine weak-pi pODMR is a targeted center-frequency diagnostic before a longer/higher-SNR Ramsey repeat, not a blind Ramsey repeat. The fine scan uses 3.8745..3.8775 GHz in 31 points (0.1 MHz spacing), 4 averages x 50000 repetitions, mod_depth=0.1 and length_rabi_pulse=0.57 us. The prior weak-pi dip was about 14.3% / 6.42 kcps, about 3.9x the median signal SEM at the same shot budget, so the feature should remain visible if the center has not drifted far outside the narrow window.",
+  "comparison_targets": [
+    "image145844_reimage_r03_weak_podmr_raw_review_20260513_1838",
+    "image145844_reimage_r03_ramsey_t2star_raw_fft_review_20260513_1930",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_model_plan_20260513_1948.json",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_advisory_preview_20260513_1950.json",
+    "NV_RESEARCH_KNOWLEDGE Experiment Defaults: weak-pi pODMR center before Ramsey; Shot Budget/Data Quality: avoid blind Ramsey repeats when first scout non-claim-grade"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export for fine weak-pi pODMR",
+    "raw/readout-aware center review before choosing a Ramsey repeat frequency",
+    "scan-order-aware average drift diagnostic"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data",
+    "raw signal/readout-aware views show a resonance-scale dip within the fine window",
+    "center estimate is supported enough to choose mw_freq for a redesigned Ramsey repeat or to identify a drift/tracking/frequency failure mode",
+    "no tracking/count-collapse/hardware anomaly invalidates the data"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for pulsed_odmr_rabimodulated_v1 fine weak-pi pODMR",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "last_final_counts_kcps": 38.249,
+    "accepted_alignment_evidence": "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741"
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "scan_mw_freq_hz": [
+      3874500000.0,
+      3877500000.0,
+      31
+    ],
+    "acquisition": {
+      "averages": 4,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "total_shots_per_point": 200000,
+    "float_vars": {
+      "sample_rate": 250000000.0,
+      "mw_freq": 3876000000.0,
+      "detuning": 0.0,
+      "freqIQ": 50000000.0,
+      "length_last_wait": 1e-06,
+      "mod_depth": 0.1,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "full_expt": 0.0,
+      "sweep_range": 100000000.0,
+      "sweep_time": 1e-06,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "switch_delay": 1e-07,
+      "pumping_time": 1e-06,
+      "length_rabi_pulse": 5.7e-07
+    },
+    "analysis_plan": "After terminal, raw/readout-aware pODMR review first: raw signal, point-wise ratio, fitted-reference-line normalization, per-average minima, and scan-order-aware drift. Use a center downstream only if raw signal presence is supported."
+  },
+  "model_and_resolvability": {
+    "model_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_model_plan_20260513_1948.json",
+    "prior_weak_podmr_grid_minimum_hz": 3876000000.0,
+    "prior_weak_podmr_step_hz": 1000000.0,
+    "ramsey_programmed_det_hz": 1500000.0,
+    "ramsey_exploratory_component_hz": 884361.4816176872,
+    "possible_resonance_offset_hz_scale": 615638.5183823128,
+    "sign_is_ambiguous": true,
+    "fine_scan_begin_hz": 3874500000.0,
+    "fine_scan_end_hz": 3877500000.0,
+    "fine_scan_points": 31,
+    "fine_scan_step_hz": 100000.0,
+    "coverage_reason": "The +/-1.5 MHz window around 3.876 GHz covers either sign of the ~0.6 MHz Ramsey carrier mismatch and gives 0.1 MHz grid spacing, much finer than the previous 1 MHz grid.",
+    "expected_excitation_width_order_hz": 1754385.9649122804,
+    "expected_signal_drop_fraction_from_prior_weak_podmr": 0.14279606669516895,
+    "expected_signal_drop_kcps_from_prior_weak_podmr": 6.423076923076927,
+    "median_signal_sem_kcps_from_prior_weak_podmr": 1.648919316171232,
+    "expected_drop_over_sem": 3.8953251745459703,
+    "distinguishability": "Keeping 4 x 50000 shots should keep the prior weak-pi dip at about 3.9 SEM on the raw signal channel, enough to localize the minimum if tracking remains stable."
+  },
+  "advisory": {
+    "path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_advisory_preview_20260513_1950.json",
+    "ok": true,
+    "estimated_per_average_seconds": 414.06485,
+    "estimated_total_seconds": 1681.2594,
+    "recent_drift_risk_level": "low",
+    "suggested_max_tracking_window_seconds": 600,
+    "recommended_actions": [],
+    "blockers": [],
+    "warnings": [
+      "sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.",
+      "Validation succeeded without touching 23-C hardware paths.",
+      "Execute remains separately gated by bootstrap and local lab validation.",
+      "Applied acquisition settings from job.metadata: averages=4, repetitions=50000, average_continuously=0.",
+      "Forced experiment tracking_period=1 for bridge-configured runs."
+    ]
+  },
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T19:52:23",
+  "agent_authored": true,
+  "safety_verification": {
+    "checked_at": "2026-05-13T19:52:23",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T19:52:23",
+  "completed_at": "2026-05-13T20:32:51",
+  "result": {
+    "job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1",
+    "status": "completed",
+    "mode": "execute",
+    "started_at": "2026-05-13T19:54:48",
+    "finished_at": "2026-05-13T20:29:25",
+    "run_id": "1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452",
+    "data_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat",
+    "summary": {
+      "sequence_label": "pulsed_odmr_rabimodulated_v1",
+      "prepare_session": {
+        "ok": true,
+        "prepared": true,
+        "launched": [],
+        "attached": [
+          "QEG",
+          "Imaging",
+          "Experiment"
+        ],
+        "can_setscan": true,
+        "can_run": true,
+        "owner_usageunit": "nvbridge_pulsed_odmr_rabimodulated_v1_nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1",
+        "notes": [
+          "Legacy QEG/Imaging/Experiment route is available for the bridge scaffold.",
+          "Experiment handles include the structural fields required for bridge payload injection and Setscan."
+        ],
+        "blockers": []
+      },
+      "configure_experiment": {
+        "ok": true,
+        "translation_ok": true,
+        "applied": true,
+        "setscan_attempted": true,
+        "setscan_ok": true,
+        "sequence_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+        "sequence_name": "Rabimodulated.xml",
+        "derived_scan": {
+          "begin": 3874500000.0,
+          "step": 100000,
+          "end": 3877500000.0,
+          "points": 31
+        },
+        "effective_controls": {
+          "tracking_enabled": 1,
+          "track_per_avg": 1,
+          "tracking_period": "1",
+          "power_enabled": 0,
+          "power_per_avg": 1,
+          "average_continuously": 0,
+          "averages": "4",
+          "repetitions": "50000"
+        },
+        "notes": [
+          "Built Experiment GUI payload from the bridge job.",
+          "Pulse mode already matched the selected sequence path (4).",
+          "Applied bridge-derived state to the Experiment handles.",
+          "Setscan completed and populated root appdata PSeq / ExperimentalScan."
+        ],
+        "blockers": []
+      },
+      "sequence_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+      "sequence_name": "Rabimodulated.xml",
+      "run_experiment": {
+        "opt_in_requested": true,
+        "gate_name": "lab_run_experiment_opt_in",
+        "called": true,
+        "returned": true,
+        "has_aborted": false,
+        "started_at": "2026-05-13T19:54:50",
+        "finished_at": "2026-05-13T20:29:25",
+        "figure_valid_before": true,
+        "figure_valid_after": true,
+        "saved_experiments_before": {
+          "exists": true,
+          "root": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments",
+          "latest_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-13-185521.mat",
+          "latest_timestamp": "2026-05-13T19:30:39"
+        },
+        "saved_experiments_after": {
+          "exists": true,
+          "root": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments",
+          "latest_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat",
+          "latest_timestamp": "2026-05-13T20:29:24"
+        },
+        "incomplete": false,
+        "incomplete_reason": "",
+        "incomplete_kind": "",
+        "incomplete_detail": {
+          "kind": "",
+          "final_counts_kcps": 39.424,
+          "low_counts_threshold_kcps": [],
+          "zero_completed_averages": false
+        },
+        "post_run": {
+          "kk": 5,
+          "autosave_checked": "on",
+          "saved_exp_dir": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1",
+          "sequence_name": "Rabimodulated.xml",
+          "date_time": "2026-05-13-195452",
+          "experiment_data_present": true,
+          "experiment_data_size": [
+            1,
+            1
+          ],
+          "text_final_counts": "Final = 39.424 kcps",
+          "final_counts_kcps": 39.424,
+          "saved_scan_istracking": "Per average",
+          "saved_scan_averages": 4,
+          "saved_scan_repetitions": 50000
+        },
+        "runtime_monitor": {
+          "enabled": true,
+          "status_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\nv_bridge\\running\\nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1\\status.json",
+          "control_path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\nv_bridge\\running\\nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1\\control.json",
+          "update_period_seconds": 5
+        },
+        "scheduled_tracking_after_run": {
+          "requested": false,
+          "queued": false,
+          "period_seconds": []
+        },
+        "notes": [
+          "Calling ExperimentFunctions.RunExperiment(handles) under the explicit lab-only gate.",
+          "RunExperiment(handles) returned to the bridge wrapper."
+        ]
+      },
+      "mode_behavior": "Invoking RunExperiment(handles) under an explicit lab-only opt-in. This path is intended for supervised validation on the experiment PC only.",
+      "saved_artifact": {
+        "path": "C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat",
+        "run_id": "1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452",
+        "scan": {
+          "sequence_name": "Rabimodulated.xml",
+          "date_time": "2026-05-13-195452",
+          "vary_prop": [
+            "mw_freq"
+          ],
+          "vary_begin": 3874500000.0,
+          "vary_end": 3877500000.0,
+          "vary_points": 31,
+          "sample_rate": 250000000.0,
+          "averages": 4,
+          "repetitions": 50000,
+          "variable_values": [
+            {
+              "name": "sample_rate",
+              "value": 250000000.0
+            },
+            {
+              "name": "mw_freq",
+              "value": 3877500000.0
+            },
+            {
+              "name": "detuning",
+              "value": 0
+            },
+            {
+              "name": "freqIQ",
+              "value": 50000000.0
+            },
+            {
+              "name": "length_rabi_pulse",
+              "value": 5.7e-07
+            },
+            {
+              "name": "length_last_wait",
+              "value": 1e-06
+            },
+            {
+              "name": "mod_depth",
+              "value": 0.1
+            },
+            {
+              "name": "mw_ampl",
+              "value": -5
+            },
+            {
+              "name": "ampIQ",
+              "value": 5
+            },
+            {
+              "name": "full_expt",
+              "value": 0
+            },
+            {
+              "name": "sweep_range",
+              "value": 100000000.0
+            },
+            {
+              "name": "sweep_time",
+              "value": 1e-06
+            },
+            {
+              "name": "delay_wrt_1mus",
+              "value": 2e-07
+            },
+            {
+              "name": "wait_time",
+              "value": 2e-06
+            },
+            {
+              "name": "switch_delay",
+              "value": 1e-07
+            },
+            {
+              "name": "pumping_time",
+              "value": 1e-06
+            }
+          ],
+          "bool_values": [
+            {
+              "name": "do_adiabatic_inversion",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    "warnings": [
+      "sequence manifest pulsed_odmr_rabimodulated_v1 is in staging status and should stay limited to validate/dry_run until promoted.",
+      "Legacy landmark-map matching was requested by older metadata, but it is disabled; queue execute will use explicit/reference/registry/current seeds plus TrackCenter instead.",
+      "Queue execute auto-align requires Final >= 20.000 kcps before RunExperiment(handles) is allowed to proceed.",
+      "TrackCenter will try 3 z-seed positions with offsets [0.000, -0.500, 0.500] um from the current alignment seed.",
+      "Applied acquisition settings from job.metadata: averages=4, repetitions=50000, average_continuously=0.",
+      "Forced experiment tracking_period=1 for bridge-configured runs.",
+      "Latest savedexperiments candidate changed from C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-ramsey-vary-tau-2026-05-13-185521.mat to C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat.",
+      "Resolved saved artifact for job nv23_pulsed_odmr_rabimodulated_v1_20260513_195437_pulsed_odmr_rabimodulated_v1: C:\\Users\\<LAB_DOCUMENTS>\\MATLAB\\23-C\\savedexperiments\\NV1\\1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-195452.mat",
+      "Resolved best-effort cleanup target from the execute route figure handle.",
+      "Issued best-effort bridge cleanup using the active Experiment GUI handles: signal_generator_rf_off, awg_stop, awg_all_channels_off, pulse_blaster_stop, pulse_blaster_reset, counting_task_stop, counting_task_clear, imaging_laser_toggle_off."
+    ],
+    "safety": {
+      "aborted": false,
+      "safe_shutdown_ok": true
+    },
+    "error_code": "",
+    "error_message": "",
+    "bridge_version": "0.1.0",
+    "metadata": {
+      "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+      "target_label": "image145844_reimage_r03",
+      "target_role": "fine_weak_pi_podmr_frequency_refinement_after_ramsey_scout",
+      "fresh_track_result": "<NV_BRIDGE_ROOT>/done/nv23_image145844_reimage_r03_track_20260513_1708/result.json",
+      "fresh_counts_kcps": 43.535,
+      "latest_ramsey_final_counts_kcps": 38.249,
+      "fresh_tracked_position_um": [
+        117.31443569593856,
+        117.76164407822792,
+        115.14167937743193
+      ],
+      "track_evidence_id": "nv23_image145844_reimage_r03_track_20260513_1708_result",
+      "weak_podmr_review_evidence_id": "image145844_reimage_r03_weak_podmr_raw_review_20260513_1838",
+      "ramsey_review_evidence_id": "image145844_reimage_r03_ramsey_t2star_raw_fft_review_20260513_1930",
+      "model_evidence_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_model_plan_20260513_1948.json",
+      "auto_align_nv": false,
+      "require_landmark_match": false,
+      "allow_seed_fallback": false,
+      "minimum_final_kcps": 20,
+      "allow_search_scan": false,
+      "search_scan_on_tracking_failure": false,
+      "local_fine_search_before_tracking": false,
+      "no_auto_align_reason": "Accepted r03 has recent successful TrackCenter, pODMR, and completed Ramsey with final counts 38.249 kcps; use explicit current tracked position and avoid hidden target reselection.",
+      "analysis_plan": {
+        "kind": "fine_weak_pi_podmr_frequency_refinement",
+        "persist_aux_update": false,
+        "valid_resonance_review_required": true,
+        "visual_review_required": true,
+        "stored_average_review_required": true,
+        "raw_readout_review_required": true,
+        "notes": "No automatic fit request is included. Review raw/readouts and normalization first; use center only after supported signal presence."
+      },
+      "requested_by": "nv-researcher",
+      "disable_agent_auto_recovery": true,
+      "frequency_window_reason": "The +/-1.5 MHz window around 3.876 GHz covers either sign of the ~0.6 MHz Ramsey carrier mismatch and gives 0.1 MHz grid spacing, much finer than the previous 1 MHz grid.",
+      "shot_reason": "Use 4 x 50000 = 200000 total shots to match prior weak-pi SNR while refining frequency grid to 0.1 MHz spacing.",
+      "even_average_reason": "Use 4 averages under snake/even-average guidance; Ramsey and prior pODMR drift diagnostics do not show a hard drift anomaly, but recent advisory risk remains high.",
+      "measurement_plan_verified": true,
+      "nv_position": [
+        117.31443569593856,
+        117.76164407822792,
+        115.14167937743193
+      ],
+      "sequence_manifest_status": "staging",
+      "sequence_manifest_scope": "staging",
+      "sequence_manifest_path": "<MATLAB_23C_ROOT>\\claw\\sequence_manifests\\staging\\pulsed_odmr_rabimodulated_v1.json",
+      "sequence_path": "<MATLAB_23C_ROOT>\\SavedSequences\\SavedSequences-AWG\\Rabimodulated.xml",
+      "acquisition": {
+        "average_continuously": false,
+        "averages": 4,
+        "repetitions": 50000
+      },
+      "queue_execute_opt_in": true,
+      "verified_intent_id": "image145844_reimage_r03_fine_weak_podmr_20260513_1950",
+      "advisory_preview_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_fine_weak_podmr_advisory_preview_20260513_1950.json",
+      "advisory_preview_job_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_195031_image145844_reimage_r03_fine_weak_podmr",
+      "advisory_estimated_per_average_seconds": 414.06485,
+      "advisory_estimated_total_seconds": 1681.2594,
+      "advisory_recent_nv_drift_risk_level": "low",
+      "advisory_suggested_max_tracking_window_seconds": 600,
+      "advisory_recommended_actions": [],
+      "advisory_blockers": [],
+      "batch_id": "nv23_pulsed_odmr_rabimodulated_v1_20260513_195323",
+      "batch_item_id": "pulsed_odmr_rabimodulated_v1",
+      "submission_path": "single_item_measurement_plan",
+      "sequence_bool_vars": {
+        "do_adiabatic_inversion": true
+      },
+      "intent": "Fine weak-pi pODMR on accepted r03 after non-claim-grade Ramsey scout; refine mw_freq around 3.876 GHz before any longer Ramsey repeat; terminal raw/readout review required, no automatic fit."
+    }
+  }
+}

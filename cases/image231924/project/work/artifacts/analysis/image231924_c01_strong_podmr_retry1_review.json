@@ -1,0 +1,343 @@
+{
+  "ok": true,
+  "candidate_id": "image231924_c01",
+  "question": "Does the completed strong-pi pulsed ODMR retry show a visible ms=+1 resonance suitable for magnetic-field alignment screening?",
+  "source_raw_export": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image231924_20260511_2319/work/artifacts/analysis/image231924_c01_strong_podmr_retry1_final_raw_export.json",
+  "savedexperiment_mat": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-000634.mat",
+  "bridge_result": "<NV_BRIDGE_ROOT>/done/nv23_image231924_c01_strong_podmr_retry1_20260512_000251_image231924_c01_strong_podmr_retry1_20260511_2359_execute/result.json",
+  "sequence": {
+    "manifest_id": "pulsed_odmr_rabimodulated_v1",
+    "xml": "<MATLAB_23C_ROOT>/SavedSequences/SavedSequences-AWG/Rabimodulated.xml",
+    "readout_roles_from_xml": "full_expt=0 path has two detections: readout 1 is true mS=0 reference before the Rabi pulse; readout 2 is signal after rabi_pulse_mod_wait_time."
+  },
+  "acquisition": {
+    "scan_prop": [
+      "mw_freq"
+    ],
+    "freq_begin_hz": 3825000000.0,
+    "freq_end_hz": 3925000000.0,
+    "points": 21,
+    "averages": 4,
+    "repetitions": 50000,
+    "total_shots": 200000,
+    "scan_order_mode": "snake",
+    "position_um_saved": [
+      "112.849",
+      "113.604",
+      "114.643"
+    ]
+  },
+  "combined_metrics": {
+    "freq_hz": [
+      3825000000.0,
+      3830000000.0,
+      3835000000.0,
+      3840000000.0,
+      3845000000.0,
+      3850000000.0,
+      3855000000.0,
+      3860000000.0,
+      3865000000.0,
+      3870000000.0,
+      3875000000.0,
+      3880000000.0,
+      3885000000.0,
+      3890000000.0,
+      3895000000.0,
+      3900000000.0,
+      3905000000.0,
+      3910000000.0,
+      3915000000.0,
+      3920000000.0,
+      3925000000.0
+    ],
+    "reference_raw": [
+      24.26923076923077,
+      24.096153846153847,
+      23.442307692307693,
+      23.846153846153847,
+      25.153846153846153,
+      24.78846153846154,
+      23.153846153846153,
+      24.5,
+      23.096153846153843,
+      23.576923076923077,
+      23.46153846153846,
+      23.98076923076923,
+      24.346153846153847,
+      23.903846153846153,
+      24.442307692307693,
+      23.01923076923077,
+      24.78846153846154,
+      22.711538461538463,
+      23.365384615384613,
+      22.999999999999996,
+      23.173076923076923
+    ],
+    "signal_raw": [
+      22.442307692307693,
+      24.46153846153846,
+      25.096153846153843,
+      24.96153846153846,
+      23.903846153846153,
+      23.538461538461537,
+      23.0,
+      24.384615384615387,
+      23.096153846153847,
+      23.038461538461537,
+      18.25,
+      18.634615384615383,
+      20.96153846153846,
+      21.961538461538463,
+      22.53846153846154,
+      22.480769230769234,
+      22.192307692307693,
+      23.923076923076923,
+      23.903846153846157,
+      22.961538461538463,
+      20.615384615384613
+    ],
+    "pointwise_signal_over_reference": [
+      0.9247226624405706,
+      1.0151636073423782,
+      1.0705496308449547,
+      1.046774193548387,
+      0.9503058103975535,
+      0.9495733126454614,
+      0.9933554817275748,
+      0.9952904238618525,
+      1.0000000000000002,
+      0.9771615008156607,
+      0.7778688524590165,
+      0.7770649558941459,
+      0.8609794628751973,
+      0.9187449718423171,
+      0.9221085759244689,
+      0.976608187134503,
+      0.8952676493405741,
+      1.0533446232006773,
+      1.0230452674897121,
+      0.9983277591973246,
+      0.8896265560165975
+    ],
+    "signal_over_linear_reference_fit": [
+      0.9251288633259438,
+      1.0102138064478867,
+      1.038324187368511,
+      1.0346533901825978,
+      0.992637145184241,
+      0.979267828074672,
+      0.9586352677958011,
+      1.0182281853437551,
+      0.9662154914331966,
+      0.9655937149771738,
+      0.7663231561947244,
+      0.7839333569616423,
+      0.883472444249201,
+      0.9273534138861508,
+      0.9535005923895205,
+      0.9528478980388282,
+      0.9423931626348856,
+      1.0178071265341626,
+      1.0189117527242377,
+      0.9805994792207365,
+      0.8820751020524472
+    ],
+    "pointwise_ratio_baseline": 1.0151636073423782,
+    "pointwise_ratio_min_freq_hz": 3880000000.0,
+    "pointwise_ratio_min": 0.7770649558941459,
+    "pointwise_ratio_dip_contrast_fraction": 0.23454214643446158,
+    "fit_ref_baseline": 1.0178071265341626,
+    "fit_ref_min_freq_hz": 3875000000.0,
+    "fit_ref_min": 0.7663231561947244,
+    "fit_ref_dip_contrast_fraction": 0.24708411228735605,
+    "rough_center_hz": 3879197364.0700865,
+    "rough_center_uncertainty_hz": 6000000.0,
+    "ratio_halfmax_point_indices_1based": [
+      11,
+      12,
+      13
+    ],
+    "fit_halfmax_point_indices_1based": [
+      11,
+      12,
+      13
+    ]
+  },
+  "per_average_summary": [
+    {
+      "average_index": 1,
+      "ratio_min_freq_hz": 3875000000.0,
+      "ratio_min": 0.7743055555555556,
+      "ratio_baseline": 1.0186335403726707,
+      "ratio_dip_contrast_fraction": 0.23985857046070458,
+      "fit_ref_min_freq_hz": 3875000000.0,
+      "fit_ref_min": 0.7656965336821513,
+      "fit_ref_baseline": 1.008249577661075,
+      "fit_ref_dip_contrast_fraction": 0.240568455819833,
+      "raw_ref_first_last": [
+        24.69230769230769,
+        18.153846153846153
+      ],
+      "raw_signal_first_last": [
+        26.076923076923077,
+        15.923076923076923
+      ]
+    },
+    {
+      "average_index": 2,
+      "ratio_min_freq_hz": 3880000000.0,
+      "ratio_min": 0.7,
+      "ratio_baseline": 1.032448377581121,
+      "ratio_dip_contrast_fraction": 0.3220000000000002,
+      "fit_ref_min_freq_hz": 3880000000.0,
+      "fit_ref_min": 0.7062752224606127,
+      "fit_ref_baseline": 1.01928544751394,
+      "fit_ref_dip_contrast_fraction": 0.3070878975234721,
+      "raw_ref_first_last": [
+        22.076923076923077,
+        28.76923076923077
+      ],
+      "raw_signal_first_last": [
+        20.0,
+        23.153846153846153
+      ]
+    },
+    {
+      "average_index": 3,
+      "ratio_min_freq_hz": 3875000000.0,
+      "ratio_min": 0.6632996632996634,
+      "ratio_baseline": 1.0838926174496644,
+      "ratio_dip_contrast_fraction": 0.38803931992786467,
+      "fit_ref_min_freq_hz": 3875000000.0,
+      "fit_ref_min": 0.6968165740272926,
+      "fit_ref_baseline": 1.0503780919563885,
+      "fit_ref_dip_contrast_fraction": 0.3366040482342578,
+      "raw_ref_first_last": [
+        28.30769230769231,
+        15.307692307692308
+      ],
+      "raw_signal_first_last": [
+        24.69230769230769,
+        15.153846153846155
+      ]
+    },
+    {
+      "average_index": 4,
+      "ratio_min_freq_hz": 3875000000.0,
+      "ratio_min": 0.8211143695014662,
+      "ratio_baseline": 1.0325203252032522,
+      "ratio_dip_contrast_fraction": 0.20474750040409195,
+      "fit_ref_min_freq_hz": 3875000000.0,
+      "fit_ref_min": 0.8192838233245036,
+      "fit_ref_baseline": 1.014504004737808,
+      "fit_ref_dip_contrast_fraction": 0.1924291875651667,
+      "raw_ref_first_last": [
+        22.0,
+        30.461538461538463
+      ],
+      "raw_signal_first_last": [
+        19.0,
+        28.23076923076923
+      ]
+    }
+  ],
+  "drift_analysis": {
+    "ok": true,
+    "source": "analyze_savedexperiment_average_drift.m",
+    "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-000634.mat",
+    "source_file": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-000634.mat",
+    "sequence_name": "Rabimodulated.xml",
+    "slice_index": 1,
+    "num_averages": 4,
+    "num_traces": 2,
+    "num_points": 21,
+    "drop_threshold": 0.15,
+    "min_averages_for_reference": 3,
+    "reference_method": "single-average raw readout common-mode; no cross-average reference",
+    "trace_aggregation_method": "mean normalized raw brightness across selected readout traces",
+    "drift_score_method": "max(0, -linear end-minus-start of per-average common-mode raw brightness in acquisition order when scan-order metadata exists)",
+    "scan_order_source": "Scan.ScanOrderEachAvg",
+    "scan_order_mode": "snake",
+    "data_order_for_score": "acquisition order if ScanOrderEachAvg is available; stored tau order otherwise",
+    "scan_order_used_count": 4,
+    "scan_order_warnings": [],
+    "entries": [
+      {
+        "average_index": 1,
+        "drift_score": 0.43169766950759697,
+        "flagged": true,
+        "scan_order_used": true,
+        "common_mode_end_minus_start_fraction": -0.43169766950759697,
+        "common_mode_edge_end_minus_start_fraction": -0.3242724228140999,
+        "worst_drop_score": 0.49015673981191216,
+        "worst_trace_index": 2,
+        "worst_trace_end_minus_start_fraction": -0.49015673981191216,
+        "worst_residual_end_minus_start_fraction": -0.49015673981191216,
+        "worst_edge_end_minus_start_fraction": -0.36424137931034495
+      },
+      {
+        "average_index": 2,
+        "drift_score": 0.26518938558489913,
+        "flagged": true,
+        "scan_order_used": true,
+        "common_mode_end_minus_start_fraction": -0.26518938558489913,
+        "common_mode_edge_end_minus_start_fraction": -0.20407546998456094,
+        "worst_drop_score": 0.2728077707416549,
+        "worst_trace_index": 1,
+        "worst_trace_end_minus_start_fraction": -0.2728077707416549,
+        "worst_residual_end_minus_start_fraction": -0.2728077707416549,
+        "worst_edge_end_minus_start_fraction": -0.21694214876033058
+      },
+      {
+        "average_index": 3,
+        "drift_score": 0.48513571502553027,
+        "flagged": true,
+        "scan_order_used": true,
+        "common_mode_end_minus_start_fraction": -0.48513571502553027,
+        "common_mode_edge_end_minus_start_fraction": -0.3887252696171978,
+        "worst_drop_score": 0.49840777071898323,
+        "worst_trace_index": 2,
+        "worst_trace_end_minus_start_fraction": -0.49840777071898323,
+        "worst_residual_end_minus_start_fraction": -0.49840777071898323,
+        "worst_edge_end_minus_start_fraction": -0.3770462946664319
+      },
+      {
+        "average_index": 4,
+        "drift_score": 0.28150150763236675,
+        "flagged": true,
+        "scan_order_used": true,
+        "common_mode_end_minus_start_fraction": -0.28150150763236675,
+        "common_mode_edge_end_minus_start_fraction": -0.2317006561504919,
+        "worst_drop_score": 0.3158574740015452,
+        "worst_trace_index": 1,
+        "worst_trace_end_minus_start_fraction": -0.3158574740015452,
+        "worst_residual_end_minus_start_fraction": -0.3158574740015452,
+        "worst_edge_end_minus_start_fraction": -0.2539779852305978
+      }
+    ],
+    "flagged_average_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "error_code": "",
+    "error_message": ""
+  },
+  "decision": {
+    "visible_resonance_present": true,
+    "magnetic_field_alignment_screen": "passed",
+    "supporting_observations": [
+      "Signal readout has a strong dip near 3.875-3.880 GHz in raw counts while the reference readout varies much less spectrally.",
+      "Both pointwise signal/reference and signal/linear-reference-fit views show a ~23% dip, matching the setup-scale mS=0 to mS=+1 contrast expectation rather than a normalization-only weak feature.",
+      "Bridge auto-align succeeded before acquisition with final TrackCenter counts 27.637 kcps, and post-run final counts were 25.800 kcps."
+    ],
+    "limitations": [
+      "Strong-pi pODMR is a resonance-presence/alignment screen, not precision mw_freq calibration.",
+      "All four stored averages show scan-order-aware drift flags in common-mode raw brightness; this is provenance and motivates a bounded weak-pi refinement, not a hard stop because tracking/counts did not collapse and the dip is large.",
+      "The rough center is limited by 5 MHz grid spacing and broad strong-pi conditions."
+    ],
+    "next_recommended_step": "Run weak-pi pulsed ODMR centered near 3.8775 GHz before Ramsey/T2star."
+  }
+}

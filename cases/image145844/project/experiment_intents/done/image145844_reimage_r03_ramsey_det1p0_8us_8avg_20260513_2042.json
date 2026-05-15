@@ -1,0 +1,147 @@
+{
+  "intent_id": "image145844_reimage_r03_ramsey_det1p0_8us_8avg_20260513_2042",
+  "summary": "Run a second Ramsey/T2star/13C follow-up on accepted r03 using the terminal fine weak-pi pODMR center and a det=1.0 MHz diagnostic phase ramp.",
+  "scientific_rationale": "Fine weak-pi pODMR now supports a refined center at 3.8759 GHz with no drift flags, but the first Ramsey scout at det=1.5 MHz was non-claim-grade and its strongest exploratory component near 0.884 MHz was not the programmed carrier or expected 13C sidebands. A second Ramsey with mw_freq=3.8759 GHz, det=1.0 MHz, 8 us span, and 8 x 50000 shots both improves SNR and tests whether spectral content follows the programmed phase ramp; real on-resonance Ramsey signal should appear near 1.0 MHz, with possible 13C sidebands near 0.615 and 1.385 MHz. A persistent fixed ~0.884 MHz component would point away from a physical carrier claim.",
+  "comparison_targets": [
+    "image145844_reimage_r03_fine_weak_podmr_raw_review_20260513_2031",
+    "image145844_reimage_r03_ramsey_t2star_raw_fft_review_20260513_1930",
+    "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_8avg_model_plan_20260513_2042.json",
+    "NV_RESEARCH_KNOWLEDGE Shot Budget And Data Quality: non-claim-grade Ramsey scout repeat should be redesigned rather than blind"
+  ],
+  "expected_evidence": [
+    "terminal savedexperiment and raw readout export",
+    "scan-order-aware drift diagnostic",
+    "raw/readout-aware Ramsey plot",
+    "FFT/least-squares amplitudes at det=1.0 MHz and det +/- 13C Larmor, plus check for fixed previous 0.884 MHz component"
+  ],
+  "success_criteria": [
+    "bridge execute completes with nonzero acquired data and final counts above 20 kcps gate",
+    "raw/readout-aware signal supports a Ramsey oscillation or supports a no-signal conclusion at the improved shot budget",
+    "if a carrier is present, its frequency follows the programmed det=1.0 MHz within FFT resolution and/or sidebands align with the 13C Larmor model",
+    "T2star fit is attempted only if signal presence and data shape support it"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "verifier or MATLAB advisory blocks execute",
+    "RunExperiment aborts or returns zero averages/no saved data",
+    "hard hardware/safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute managed single-item batch for auto__ramsey det=1.0 MHz 8 us 8 averages",
+  "candidate": {
+    "label": "image145844_reimage_r03",
+    "tracked_position_um": [
+      117.31443569593856,
+      117.76164407822792,
+      115.14167937743193
+    ],
+    "last_final_counts_kcps": 39.424,
+    "accepted_alignment_evidence": "image145844_reimage_r03_strong_podmr_raw_review_20260513_1741",
+    "fine_podmr_center_hz": 3875900000.0
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "auto__ramsey",
+    "scan_tau_s": [
+      0.0,
+      8e-06,
+      41
+    ],
+    "acquisition": {
+      "averages": 8,
+      "repetitions": 50000,
+      "average_continuously": false
+    },
+    "total_shots_per_point": 400000,
+    "float_vars": {
+      "mw_freq": 3875900000.0,
+      "det": 1000000.0,
+      "mod_depth": 1.0,
+      "length_pi_pulse": 5.2e-08,
+      "mw_ampl": -5.0,
+      "ampIQ": 5.0,
+      "freqIQ": 50000000.0,
+      "switch_delay": 1e-07,
+      "delay_wrt_1mus": 2e-07,
+      "wait_time": 2e-06,
+      "full_experiment": 0.0,
+      "sweep_range": 100000000.0,
+      "sweep_time": 1e-06,
+      "sample_rate": 250000000.0
+    },
+    "bool_vars": {
+      "do_adiabatic_inversion": true
+    },
+    "analysis_plan": "Terminal raw/readout review first, then FFT/least-squares screens at det=1.0 MHz and det +/- f13C. Fit T2star only if a carrier/decay shape is supported in raw/readout-aware data and not just normalization-only or fit-only evidence."
+  },
+  "model_and_resolvability": {
+    "refined_mw_freq_hz": 3875900000.0,
+    "B_G_from_ms_plus_resonance_working_model": 359.25,
+    "gamma_e_hz_per_G_used": 2800000.0,
+    "gamma_13c_hz_per_G_used": 1070.5,
+    "expected_13C_larmor_Hz": 384577.125,
+    "programmed_ramsey_det_Hz": 1000000.0,
+    "expected_fft_carrier_Hz_if_on_resonance": 1000000.0,
+    "expected_13C_sidebands_Hz_if_present": [
+      615422.875,
+      1384577.125
+    ],
+    "tau_span_s": 8e-06,
+    "points": 41,
+    "tau_step_s": 2e-07,
+    "nominal_fft_resolution_Hz": 125000.0,
+    "nyquist_Hz": 2500000.0,
+    "nyquist_guard": true,
+    "first_ramsey_mismatch_diagnostic": "First scout at det=1.5 MHz had a non-claim-grade exploratory component near 0.884 MHz. Repeating with det=1.0 MHz deliberately tests whether a real Ramsey carrier/sideband follows the programmed phase ramp; a fixed ~0.884 MHz feature would argue artifact/noise.",
+    "expected_raw_oscillation_scale": "order 2-6 kcps if Ramsey contrast is comparable to prior scout and bounded by the 11.9% fine-pODMR raw dip / ~22% setup mS=0 vs mS=+1 contrast.",
+    "distinguishability": "8 averages x 50000 repetitions doubles the first Ramsey shot count to 400000 shots per tau point. SEM should improve by about sqrt(2) relative to the 4x50000 scout while keeping each tracking window unchanged; 8 us span gives 125 kHz resolution for 1.0 MHz carrier and 0.615/1.385 MHz 13C sidebands."
+  },
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "completed",
+  "created_at": "2026-05-13T20:44:12",
+  "agent_authored": true,
+  "safety_verification": {
+    "checked_at": "2026-05-13T20:44:19",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507"
+  },
+  "updated_at": "2026-05-13T20:44:19",
+  "completed_at": "2026-05-13T22:40:48",
+  "result": {
+    "status": "completed",
+    "bridge_job_id": "nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg",
+    "terminal_result_path": "<NV_BRIDGE_ROOT>/done/nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg/result.json",
+    "project_result_copy": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg.result.json",
+    "data_path": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-13-204940.mat",
+    "raw_export_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_raw_export_20260513_2220.json",
+    "drift_analysis_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_drift_20260513_2220.json",
+    "review_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220.json",
+    "figure_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_ramsey_det1p0_8us_terminal_review_20260513_2220.png",
+    "final_counts_kcps": 44.184,
+    "drift_flagged_average_indices": [],
+    "interpretation": "Terminal raw/readout/FFT review found weak non-claim-grade Ramsey evidence; no supported T2star or nearby-13C claim from this job."
+  }
+}

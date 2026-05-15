@@ -1,0 +1,105 @@
+{
+  "intent_id": "image231924_c01_corrected_center_ramsey_repeat_20260512_0320",
+  "summary": "Run a corrected-center Ramsey/T2star repeat for image231924_c01 after narrow weak-pi pODMR shifted the usable center upward and downgraded the old 1.593 MHz peak to likely residual detuning.",
+  "scientific_rationale": "Terminal Ramsey showed a real oscillation but the 1.593 MHz peak was ambiguous. A terminal narrow weak-pi pODMR found the raw/fit-reference center at 3.8761166667 GHz, +0.250 MHz above the earlier Ramsey mw_freq (pointwise ratio allowed +0.500 MHz), making the old peak compatible with detuning from the programmed 2 MHz Ramsey carrier. A corrected-center Ramsey repeat is the direct test for T2star and 13C: the carrier should move toward 2 MHz if detuning was the issue, and any 13C sidebands near det +/- ~384 kHz can then be assessed without the previous center ambiguity.",
+  "comparison_targets": [
+    "terminal narrow weak-pi review: work/artifacts/analysis/image231924_c01_narrow_weak_podmr_after_ramsey_20260512_025521_review.json",
+    "terminal Ramsey review: work/artifacts/analysis/image231924_c01_ramsey_t2star_scout_terminal_review.json",
+    "Doherty et al. Physics Reports 528, 1-45 (2013), DOI 10.1016/j.physrep.2013.02.001, for general NV resonance/field context",
+    "NV memory Ramsey FFT guardrail: choose det/tau span/points together and keep Nyquist above det plus sideband"
+  ],
+  "expected_evidence": [
+    "terminal bridge result and savedexperiment path",
+    "raw/readout-aware Ramsey review comparing raw readouts, pointwise normalization, and fitted-reference normalization",
+    "FFT with actual tau grid checking carrier near 2 MHz and sideband windows near det +/- calculated 13C Larmor",
+    "separate claim classification for Ramsey signal, T2star, and 13C"
+  ],
+  "success_criteria": [
+    "bridge queue idle before submission and pre-enqueue advisory has no hard blockers",
+    "auto-align passes minimum 12 kcps gate",
+    "acquisition completes tau 0..8 us, 51 points, 6 stored averages, 100000 repetitions per average",
+    "terminal review can decide whether T2star is supported or still needs redesign, and whether 13C is supported, absent, or unresolved"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "verifier or pre-enqueue advisory reports hard blockers",
+    "auto-align counts collapse or bridge execution fails before acquiring data"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute auto__ramsey corrected-center Ramsey/T2star repeat via managed batch path",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [
+      112.80256804252183,
+      113.12985942371756,
+      113.50148188499783
+    ],
+    "seed_source": "latest narrow weak-pi pODMR auto-align tracked position",
+    "updated_weak_pi_center_hz": 3876116666.66667,
+    "updated_center_uncertainty_hz": 250000.0
+  },
+  "planned_measurement": {
+    "sequence_manifest_id": "auto__ramsey",
+    "scan": {
+      "vary_prop": [
+        "tau"
+      ],
+      "begin": 0.0,
+      "end": 8e-06,
+      "points": 51
+    },
+    "float_vars": {
+      "mw_freq": 3876116666.66667,
+      "det": 2000000.0,
+      "mod_depth": 1.0,
+      "length_pi_pulse": 5.2e-08
+    },
+    "acquisition": {
+      "averages": 6,
+      "repetitions": 100000,
+      "average_continuously": false
+    },
+    "fft_grid": {
+      "nyquist_hz": 3125000.0,
+      "bin_spacing_hz": 125000.0,
+      "expected_13c_larmor_hz": 384385.4003093041,
+      "expected_lower_sideband_hz": 1615614.5996906958,
+      "expected_upper_sideband_hz": 2384385.4003093042
+    }
+  },
+  "schema_version": 1,
+  "kind": "experiment_intent",
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "status": "verified",
+  "created_at": "2026-05-12T03:19:57",
+  "agent_authored": true,
+  "python_role": "safety_verifier_not_research_planner",
+  "safety_contract": {
+    "must_use_existing_bridge_validation": true,
+    "must_not_widen_hardware_or_manifest_safety_limits": true,
+    "python_verifies_queue_state_and_hard_boundaries": true
+  },
+  "safety_verification": {
+    "checked_at": "2026-05-12T03:19:57",
+    "verdict": "verified",
+    "hard_errors": [],
+    "blockers": [],
+    "warnings": [],
+    "bridge_touching": true,
+    "bridge_activity": {
+      "bridge_root": "<NV_BRIDGE_ROOT>",
+      "exists": true,
+      "queued": false,
+      "running": false,
+      "queued_items": [],
+      "running_items": [],
+      "busy": false
+    },
+    "python_role": "safety_queue_and_hard_boundary_verifier",
+    "agent_role": "scientific_intent_author",
+    "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319"
+  },
+  "updated_at": "2026-05-12T03:19:57"
+}

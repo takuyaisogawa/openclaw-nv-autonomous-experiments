@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "status": "active",
+  "operational_state": "active",
+  "created_at": "2026-05-13T15:07:45",
+  "updated_at": "2026-05-13T19:30:11",
+  "tick_count": 27,
+  "blocking_request_id": "",
+  "last_next_action": {
+    "kind": "advance_project",
+    "reason": "execution queue is empty; wake the agent to synthesize or update the research agenda and advance all currently runnable safe project work from objective, evidence, human advice, and safety policy",
+    "research_context": {
+      "brief_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/brief.md",
+      "research_state_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "research_agenda_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/state.md",
+      "shared_research_memory_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+      "shared_research_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+      "evidence_index_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/.manager/evidence.jsonl",
+      "experiment_intents_root": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/experiment_intents",
+      "evidence_count": 34,
+      "recent_evidence": [
+        {
+          "actor": "openclaw-project-manager",
+          "category": "bridge_result",
+          "evidence_id": "bridge_result_20260513_185733_669383_5965b6e853",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180419_pulsed_odmr_rabimodulated_v1.result.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_pulsed_odmr_rabimodulated_v1_20260513_180303.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Weak-pi pODMR terminal result copied for accepted r03; job completed with savedexperiment 1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-13-180435.mat, 4 averages x 50000 repetitions, final counts 43.890 kcps.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:57:33"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_weak_podmr_raw_review_20260513_1838",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.png",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_weak_podmr_drift_20260513_1835.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Raw/readout-aware weak-pi pODMR review supports a clear usable resonance at 3.876 GHz for r03: raw signal, point-wise ratio, and reference-line normalization all minimize at 3.876 GHz; all 4 averages share the signal minimum; raw signal drop is about 14.3% vs edge median. Average 4 is drift-flagged but does not invalidate the shared resonance-scale dip.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:57:33"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "analysis",
+          "evidence_id": "image145844_reimage_r03_ramsey_t2star_model_and_advisory_20260513_1849",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_model_plan_20260513_1844.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_advisory_preview_20260513_1844.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/analysis/image145844_reimage_r03_ramsey_t2star_advisory_preview_20260513_1849.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/image145844_reimage_r03_ramsey_t2star_scout_submit_spec_20260513_1849.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Ramsey/T2star scout model, protocol inspection, and advisory for accepted r03. The 8 us/51 point plan exceeded the 450 s tracking cap, so it was redesigned to 6 us/31 points with det=1.5 MHz, 4 x 50000 shots; revised advisory has no blockers and estimates 417.946 s per average under the 450 s cap.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:57:33"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "artifact",
+          "evidence_id": "nv23_ramsey_20260513_185505_image145844_reimage_r03_ramsey_t2star_job",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_185505_auto_ramsey.job.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_185505_auto_ramsey.status.json",
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/bridge_jobs/nv23_ramsey_20260513_185407.batch_state.json"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {},
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-evidence",
+          "summary": "Started first Ramsey/T2star scout on r03 as nv23_ramsey_20260513_185505_auto_ramsey. It scans tau 0..6 us in 31 points with mw_freq=3.876 GHz, det=1.5 MHz, length_pi_pulse=52 ns, 4 averages x 50000 repetitions. Live status shows running average 1/4 and final-count text 43.890 kcps; bridge occupancy blocks further submissions until terminal.",
+          "tags": [],
+          "timestamp": "2026-05-13T18:57:33"
+        },
+        {
+          "actor": "openclaw-project-manager",
+          "category": "figure",
+          "evidence_id": "figure_20260513_190058_673783_74e5300fdc",
+          "paths": [
+            "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.png"
+          ],
+          "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+          "provenance": {
+            "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+            "ledger_event": "lab_log_note"
+          },
+          "related_claims": [],
+          "schema_version": 1,
+          "source": "record-lab-log",
+          "summary": "Weak-pi pODMR accepted; Ramsey/T2star scout started: Weak-pi pODMR on accepted r03 completed and raw/readout-aware review supports a clear usable resonance at 3.876 GHz: raw signal, point-wise ratio, and reference-line normalization all minimize there, all 4 averages share the signal minimum, and raw drop is about 14.3% vs edge median. A first Ramsey/T2star scout is now running as nv23_ramsey_20260513_185505_auto_ramsey using tau 0..6 us in 31 points, det=1.5 MHz, mw_freq=3.876 GHz, 4 x 50000 repetitions. The initial 8 us/51 point Ramsey plan was rejected because advisory exceeded the 450 s tracking cap; the revised preview had no blockers and estimated 417.946 s per average. Next action is to wait for terminal Ramsey result and perform raw/FFT review before any T2star or 13C conclusion.",
+          "tags": [],
+          "timestamp": "2026-05-13T19:00:58"
+        }
+      ],
+      "experiment_intents": {
+        "queued": 0,
+        "verified": 1,
+        "rejected": 0,
+        "done": 10
+      },
+      "backlog_role": "execution_queue_and_audit_not_complete_research_plan",
+      "scheduler_role": "event_state_pointer_agent_selects_scientific_next_step"
+    },
+    "agent_prompt": "Treat this as an event-driven research wake. Read NV_RESEARCH_MEMORY.md startup memory first, then brief.md, human_advice.md, work/state.md, and compact project state. Use the Memory Index to read relevant sections from NV_RESEARCH_KNOWLEDGE.md only as needed. Read .manager/evidence.jsonl, project policy, detailed backlog entries, and directly relevant evidence only as needed, then use the same-wake runnable work loop to complete, update, or queue all currently runnable safe project work until a real stop condition is reached. Python should stay limited to state, queue safety, audit logs, and hard boundaries; the agent should own the scientific plan. Process advice inbox messages with list-advice-inbox/dispose-advice when present, record evidence, update backlog, write work/state.md, log.md, and work/notes files as useful, update NV_RESEARCH_KNOWLEDGE.md for reusable detailed lessons, and write the completion marker."
+  },
+  "shared_research_memory": {
+    "path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_MEMORY.md",
+    "detailed_knowledge_path": "<OPENCLAW_WORKSPACE>/NV_RESEARCH_KNOWLEDGE.md",
+    "read_required": true,
+    "read_policy": "read_startup_memory_every_wake; read_detailed_knowledge_sections_on_demand_by_memory_index",
+    "snapshot_truncated": true
+  },
+  "last_human_request": {
+    "recorded_at": "2026-05-13T15:07:45",
+    "human_advice_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/human_advice.md",
+    "preview": "Objective: Find a magnetic-field-aligned NV from image145844, then obtain a well-supported T2star and 13C conclusion. Start a project using the spatial range of <MATLAB_23C_ROOT>\\SavedImages\\3DXYZ-Image-2026-05-13-145844.mat as the initial search region. Identify an NV aligned to the magnetic field within that image range; if none is found, search different regions. Judge magnetic-field alignment using a strong-pi pulsed ODMR scan; if it does not show a clear usable resonance, reject ",
+    "source": "start-project"
+  },
+  "last_lab_log_entry": {
+    "title": "Weak-pi pODMR accepted; Ramsey/T2star scout started",
+    "event": "lab_log_note",
+    "summary": "Weak-pi pODMR on accepted r03 completed and raw/readout-aware review supports a clear usable resonance at 3.876 GHz: raw signal, point-wise ratio, and reference-line normalization all minimize there, all 4 averages share the signal minimum, and raw drop is about 14.3% vs edge median. A first Ramsey/T2star scout is now running as nv23_ramsey_20260513_185505_auto_ramsey using tau 0..6 us in 31 points, det=1.5 MHz, mw_freq=3.876 GHz, 4 x 50000 repetitions. The initial 8 us/51 point Ramsey plan was rejected because advisory exceeded the 450 s tracking cap; the revised preview had no blockers and estimated 417.946 s per average. Next action is to wait for terminal Ramsey result and perform raw/FFT review before any T2star or 13C conclusion.",
+    "figure_count": 1,
+    "lab_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md",
+    "daily_log_path": "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/log.md"
+  },
+  "last_evidence": {
+    "evidence_id": "figure_20260513_190058_673783_74e5300fdc",
+    "category": "figure",
+    "summary": "Weak-pi pODMR accepted; Ramsey/T2star scout started: Weak-pi pODMR on accepted r03 completed and raw/readout-aware review supports a clear usable resonance at 3.876 GHz: raw signal, point-wise ratio, and reference-line normalization all minimize there, all 4 averages share the signal minimum, and raw drop is about 14.3% vs edge median. A first Ramsey/T2star scout is now running as nv23_ramsey_20260513_185505_auto_ramsey using tau 0..6 us in 31 points, det=1.5 MHz, mw_freq=3.876 GHz, 4 x 50000 repetitions. The initial 8 us/51 point Ramsey plan was rejected because advisory exceeded the 450 s tracking cap; the revised preview had no blockers and estimated 417.946 s per average. Next action is to wait for terminal Ramsey result and perform raw/FFT review before any T2star or 13C conclusion.",
+    "paths": [
+      "<OPENCLAW_WORKSPACE>/.openclaw/projects/nv23_aligned_nv_t2star_13c_image145844_20260513_1507/work/artifacts/figures/image145844_reimage_r03_weak_podmr_raw_review_20260513_1838.png"
+    ],
+    "timestamp": "2026-05-13T19:00:58"
+  }
+}

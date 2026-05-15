@@ -1,0 +1,35 @@
+{
+  "job_id": "nv23_image231924_c01_track_recheck_20260511_2350",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "track_image231924_c01_recheck_20260511_2350",
+    "nv_name": "image231924_c01"
+  },
+  "tracking": {
+    "seed_position": [
+      113.23486686503394,
+      113.89749501792936,
+      114.79464747081711
+    ],
+    "minimum_final_kcps": 12.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5,
+      1.0,
+      -1.0
+    ],
+    "update_registry": true,
+    "nv_name": "image231924_c01"
+  }
+}

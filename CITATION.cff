@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: software
+title: "OpenClaw NV Autonomous Experiments"
+authors:
+  - name: "Takuya"
+version: "0.1.0"
+date-released: 2026-05-15
+license: "MIT AND CC-BY-4.0"
+abstract: >
+  Public case-study release for auditable LLM-agent workflows in NV-center
+  experiments, including sanitized completed project folders, current
+  execution-path source, and analysis artifacts.

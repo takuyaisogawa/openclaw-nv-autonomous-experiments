@@ -1,0 +1,29 @@
+{
+  "intent_id": "track_image145844_reimage_r02_20260513_1617",
+  "summary": "TrackCenter the second fresh re-image candidate after r01 did not show a clear usable strong-pi ODMR resonance.",
+  "scientific_rationale": "Human guidance says reject a candidate if strong-pi pODMR does not show a clear usable resonance and move on. The raw/readout-aware review of image145844_reimage_r01 pODMR did not support a clear resonance. The next fresh re-image candidate is rank 2 at [115.833333,118.166667,116.5] um with peak 36.0 kcps and local excess 32.0 kcps. Standalone TrackCenter is required before a pODMR screen.",
+  "comparison_targets": [
+    "image145844_reimage_candidate_selection_20260513_1550",
+    "image145844_reimage_r01_strong_podmr_raw_review_20260513_1615"
+  ],
+  "expected_evidence": [
+    "track_center_v1 terminal result with final counts and tracked position"
+  ],
+  "success_criteria": [
+    "TrackCenter completes with final_counts_kcps >= 8"
+  ],
+  "stop_conditions": [
+    "bridge queue becomes occupied before submission",
+    "TrackCenter fails or counts remain collapsed",
+    "hardware/stage safety uncertainty appears"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "queue standalone track_center_v1 execute via enqueue_nv_imaging_direct.py",
+  "candidate": {
+    "label": "image145844_reimage_r02",
+    "seed_position_um": [115.83333333333333, 118.16666666666667, 116.5],
+    "peak_kcps": 36.0,
+    "local_excess_kcps": 32.0
+  }
+}

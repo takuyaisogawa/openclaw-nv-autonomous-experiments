@@ -1,0 +1,32 @@
+{
+  "intent_id": "track_image231924_c01_recheck_20260511_2350",
+  "summary": "Execute standalone TrackCenter recheck for image231924_c01 after the strong-pi pODMR job failed its sequence pre-align count gate.",
+  "scientific_rationale": "A standalone TrackCenter pass at 36.008 kcps was followed minutes later by a pODMR execute failure before acquisition because the sequence auto-align TrackCenter returned only 4.065 kcps across z attempts. This recheck tests current trackability/count health from the last successful tracked position before deciding whether a bounded pODMR retry is justified or whether the candidate/image frame has drifted enough to require re-imaging or moving to another candidate.",
+  "comparison_targets": [
+    "done TrackCenter result nv23_image231924_c01_track_20260511_2330/result.json",
+    "failed pODMR result nv23_pulsed_odmr_rabimodulated_v1_20260511_234117_pulsed_odmr_rabimodulated_v1/result.json",
+    "work/notes/image231924_c01_strong_podmr_align_fail_20260511_2348.md"
+  ],
+  "expected_evidence": [
+    "terminal standalone TrackCenter bridge result with tracked position and final_counts_kcps",
+    "decision whether c01 remains trackable enough to retry pODMR or should be put on hold pending re-image/next candidate"
+  ],
+  "success_criteria": [
+    "TrackCenter completes successfully",
+    "final_counts_kcps >= 12 to match the sequence auto-align count gate for pODMR",
+    "tracked position remains plausibly associated with image231924_c01 or the movement is recorded as drift provenance"
+  ],
+  "stop_conditions": [
+    "bridge queue is not idle immediately before submission",
+    "project lifecycle is canceled or do_not_submit_or_mutate_bridge_queue is true",
+    "TrackCenter fails or final counts remain collapsed, in which case do not retry pODMR without re-image/next-candidate review"
+  ],
+  "touches_bridge_queue": true,
+  "requires_bridge_idle": true,
+  "bridge_action": "execute standalone TrackCenter direct helper",
+  "target": {
+    "candidate_id": "image231924_c01",
+    "seed_position_um": [113.23486686503394, 113.89749501792936, 114.79464747081711],
+    "seed_source": "last successful standalone TrackCenter tracked_position_um"
+  }
+}

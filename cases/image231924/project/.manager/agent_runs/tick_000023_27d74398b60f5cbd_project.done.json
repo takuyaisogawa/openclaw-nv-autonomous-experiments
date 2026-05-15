@@ -1,0 +1,36 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image231924_20260511_2319",
+  "completed_at": "2026-05-12T08:37:14.919576Z",
+  "status": "bridge_running_after_progress",
+  "summary": "Checked the corrected-center Ramsey/T2star repeat during execution; bridge remains running with no terminal/anomaly evidence and healthy counts. Force raw-exported the in-progress autosave after 4/6 averages, reviewed raw/readout-aware FFT/per-average evidence, generated figures, registered evidence analysis_20260512_043458_959412_c2f8680d83, wrote a note and lab-log entry, and updated work/state.md. Autosave is progress evidence only: carrier-nearest bin ranks 3rd and expected lower/upper 13C bins rank 6/20; T2star and 13C remain no-conclusion until terminal review.",
+  "touched_bridge_queue": false,
+  "bridge_queue_mutated": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job",
+    "bridge_job_id": "nv23_image231924_c01_corrected_center_ramsey_repeat_20260512_032137_image231924_c01_corrected_center_ramsey_repeat_20260512_0320_execute",
+    "running_status_at_handoff": {
+      "queue_state": "running",
+      "phase": "run_experiment_average_start",
+      "updated_at": "2026-05-12T04:37:14",
+      "elapsed_seconds": 4521,
+      "experiment_status_text": "(5/6) averages completed for 1 scans",
+      "average_index_status_field": 6,
+      "averages_total_status_field": 5,
+      "planned_averages_from_job": 6,
+      "date_time": "2026-05-12-032449",
+      "final_counts_text": "Final = 26.727 kcps",
+      "monitor_last_error": "",
+      "stop_requested": false
+    },
+    "autosave_mat": "<MATLAB_23C_ROOT>/savedexperiments/NV1/1DExp-seq-ramsey-vary-tau-2026-05-12-032449.mat",
+    "in_progress_review": {
+      "evidence_id": "analysis_20260512_043458_959412_c2f8680d83",
+      "summary": "Autosave avg4 review is not claim-grade; bridge remained healthy/running, carrier-nearest bin ranked 3rd, expected lower/upper 13C bins ranked 6/20, and terminal data is required for T2star/13C.",
+      "review_json": "work/artifacts/analysis/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_review.json",
+      "note": "work/notes/image231924_c01_corrected_center_ramsey_autosave_avg4_review_20260512_0433.md",
+      "primary_figure": "work/artifacts/figures/image231924_c01_corrected_center_ramsey_repeat_autosave_avg4_review.png"
+    },
+    "terminal_next_step": "When the bridge job completes, export the final savedexperiment, run raw/readout-aware terminal FFT/per-average/drift review on the actual tau grid, and decide Ramsey signal, T2star, and 13C statuses separately before any follow-up execute."
+  },
+  "updated_backlog_item_ids": []
+}

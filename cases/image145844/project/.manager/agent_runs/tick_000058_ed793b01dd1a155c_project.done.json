@@ -1,0 +1,22 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T02:37:31-04:00",
+  "status": "completed_waiting_for_running_bridge_job",
+  "summary": "Bridge job nv23_ramsey_20260514_015423_auto_ramsey remains running and healthy; no bridge queue mutation was performed. This wake did bridge-free progress review: copied live running status/control/log snapshots into project audit files, raw-exported the 2/12 autosave MAT, generated review JSON and PNG figure, wrote work note 20260514_0224_det1p5_shiftcheck_autosave_2avg_review.md, recorded evidence and a lab-log entry, and updated work/state.md. The 2-average autosave has 180000 shots per tau point; exploratory combined ratio LS screen is highest near 1.491 MHz, close to programmed 1.5 MHz, while the prior fixed 1.192 MHz artifact-control target is weaker. This is nonterminal context only: per-average screens are not stable, no hard anomaly was found, and no T2star or 13C claim is made. Latest live status before handoff was running at 3/12 averages with final-count text 42.922 kcps, monitor last_error empty, and stop_requested=false.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_running_bridge_job_terminal",
+    "bridge_job_id": "nv23_ramsey_20260514_015423_auto_ramsey",
+    "batch_id": "nv23_ramsey_20260514_015303",
+    "verified_intent_id": "image145844_reimage_r03_ramsey_det1p5_shiftcheck_shorttau_20260514_0142",
+    "reason": "Running bridge occupancy blocks further bridge-touching submissions; the autosave progress review and 3/12 live status found no hard anomaly.",
+    "when_complete": "Copy terminal job/result/status/control and batch state into work/bridge_jobs, complete the verified intent, raw-export the terminal savedexperiment, run scan-order-aware drift, and perform the full det-shift target review at programmed 1.5 MHz, predicted det-tracking ~1.692 MHz, predicted sidebands ~1.307/~2.076 MHz, programmed sidebands 1.115/~1.885 MHz, and prior artifact-control ~1.192 MHz before any T2star or 13C claim."
+  },
+  "updated_backlog_item_ids": [],
+  "artifacts": [
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_raw_export_20260514_0224.json",
+    "work/artifacts/analysis/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224.json",
+    "work/artifacts/figures/image145844_reimage_r03_ramsey_det1p5_shiftcheck_autosave_2avg_review_20260514_0224.png",
+    "work/notes/20260514_0224_det1p5_shiftcheck_autosave_2avg_review.md"
+  ]
+}

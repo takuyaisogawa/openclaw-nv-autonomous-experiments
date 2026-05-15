@@ -1,0 +1,33 @@
+{
+  "job_id": "nv23_image145844_r01_track_20260513_1509",
+  "mode": "execute",
+  "recipe": "track_center_v1",
+  "sample_id": "NV23",
+  "limits": {
+    "max_mw_power_dbm": 0,
+    "allow_stage_motion": true,
+    "allow_laser_profile": false
+  },
+  "metadata": {
+    "requested_by": "nv-researcher",
+    "queue_execute_opt_in": true,
+    "require_landmark_match": false,
+    "intent": "Project nv23_aligned_nv_t2star_13c_image145844_20260513_1507: TrackCenter initial image145844 ranked candidate r01 before strong-pi pODMR alignment screening.",
+    "nv_name": "image145844_r01"
+  },
+  "tracking": {
+    "seed_position": [
+      114.375,
+      117.75,
+      116.0
+    ],
+    "minimum_final_kcps": 8.0,
+    "tracking_z_seed_offsets_um": [
+      0.0,
+      -0.5,
+      0.5
+    ],
+    "update_registry": false,
+    "nv_name": "image145844_r01"
+  }
+}

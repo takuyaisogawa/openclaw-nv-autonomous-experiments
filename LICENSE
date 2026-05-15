@@ -1,0 +1,41 @@
+OpenClaw NV Autonomous Experiments Licensing
+
+This repository uses a split public license:
+
+- Code in `python/`, `matlab/`, and `tools/` is licensed under the MIT License
+  below.
+- Code and prompt artifacts in `openclaw_skills/` are licensed under the MIT
+  License below.
+- Documentation, public case-study copies, included data exports,
+  generated figures, reports, and analysis artifacts are licensed under the
+  Creative Commons Attribution 4.0 International License (CC BY 4.0):
+  https://creativecommons.org/licenses/by/4.0/
+- Third-party or vendor-origin files, if any, remain subject to their original
+  terms. No rights are granted for omitted live-laboratory backend components,
+  private configuration, or vendor files that are not included in this release.
+
+When reusing this repository, cite the release metadata in `CITATION.cff` and
+attribute the case-study data and documentation to the repository author.
+
+MIT License
+
+Copyright (c) 2026 Takuya
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the software and associated documentation files covered by the MIT-licensed
+portion of this repository (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and
+to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

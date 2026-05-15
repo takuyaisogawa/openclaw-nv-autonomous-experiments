@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-14T00:11:53.108784-04:00",
+  "status": "bridge_running_parallel_review_completed",
+  "summary": "Reviewed running short-tau r03 Ramsey autosave at 5/12 stored averages. Raw export, review JSON, figure, note, evidence record, lab-log entry, and work/state.md were updated. No hard anomaly found: monitor last_error empty, stop_requested=false, queued/staging empty, one running bridge job. Partial transient and LS screens remain nonterminal; no T2star/13C claim before terminal raw export and scan-order-aware drift review.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_completion",
+    "bridge_job_id": "nv23_ramsey_20260513_230331_auto_ramsey",
+    "reason": "Bridge is occupied by the healthy running short-tau/high-SNR Ramsey diagnostic; no further bridge-touching work is safe until terminal transition or hard anomaly.",
+    "on_completion": "Copy terminal job/result/status/control and batch state into work/bridge_jobs, complete verified intent image145844_reimage_r03_ramsey_shorttau_48ns_1968ns_12x90k_20260513_2257, raw-export final savedexperiment, run scan-order-aware drift, and perform raw/readout-aware carrier/decay plus target LS/FFT review before any T2star/13C claim."
+  },
+  "updated_backlog_item_ids": []
+}

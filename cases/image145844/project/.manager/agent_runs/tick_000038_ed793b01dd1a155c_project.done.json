@@ -1,0 +1,14 @@
+{
+  "project_id": "nv23_aligned_nv_t2star_13c_image145844_20260513_1507",
+  "completed_at": "2026-05-13T22:04:00-04:00",
+  "status": "completed_waiting_bridge_running",
+  "summary": "Completed a bridge-free in-progress autosave opportunity review while the second r03 Ramsey/T2star/13C job remains running. Raw-exported the autosave savedexperiment (5/8 stored averages), generated review JSON and figure, copied read-only live status/control/job plus batch state into work/bridge_jobs, updated work/state.md, wrote a note and lab-log entry, and registered analysis/figure evidence. No bridge queue mutation was performed. No hard anomaly, T2star claim, or 13C claim was made; copied live status had advanced to 6/8 averages with final-count text 38.253 kcps, monitor error empty, and stop_requested=false.",
+  "touched_bridge_queue": false,
+  "next_action": {
+    "kind": "wait_for_bridge_terminal",
+    "job_id": "nv23_ramsey_20260513_204925_image145844_reimage_r03_ramsey_det1p0_8us_8avg",
+    "batch_id": "nv23_ramsey_20260513_2047",
+    "reason": "Bridge job is still running; next bridge-touching work is blocked until terminal. On terminal, copy final bridge artifacts, reconcile/complete intent image145844_reimage_r03_ramsey_det1p0_8us_8avg_20260513_2042, raw-export final savedexperiment, run scan-order-aware drift, and perform full raw/readout plus FFT/least-squares review before any T2star or 13C claim."
+  },
+  "updated_backlog_item_ids": []
+}
