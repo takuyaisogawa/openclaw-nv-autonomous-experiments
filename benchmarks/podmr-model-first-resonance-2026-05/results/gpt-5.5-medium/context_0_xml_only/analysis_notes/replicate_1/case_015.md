@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The provided sequence XML has full_expt = 0, so the optional 1-level reference block is skipped. The active readouts are therefore: first detection after optical polarization as the true 0-level/reference readout, then a rabi_pulse_mod_wait_time pulse followed by the signal detection. The active microwave pulse uses length_rabi_pulse = 52 ns and mod_depth = 1 in the provided XML.
+
+The combined data show readout 1 staying in a relatively narrow band around the mid-30s without a matching central notch. Readout 2, the post-pulse signal, has a pronounced dip from the surrounding mid-30s values down to about 26-27 counts near 3.875-3.880 GHz. The per-average overlay shows the same dip in both averages, though with normal shot noise. Because the signal-channel dip is frequency-localized and not mirrored by the reference channel, this is consistent with a pODMR resonance.

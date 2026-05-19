@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The executable instructions acquire a true m_S = 0 reference first, then skip the optional m_S = +1 reference because full_expt = 0, then apply a modulated Rabi pulse and acquire the signal readout. Thus readout 1 is the 0-level fluorescence reference and readout 2 is the post-microwave pODMR signal.
+
+From the provided sequence XML and exported variable values, mod_depth is 1 and length_rabi_pulse is 52 ns. With the stated setup calibration, this is close to a pi pulse at resonance because the Rabi frequency is about 10 MHz at mod_depth = 1. A real resonance should therefore produce a fairly strong localized reduction of readout 2 relative to readout 1, on the order of the setup contrast scale, although imperfections can reduce it.
+
+The combined raw readouts do not show a convincing pODMR feature. Readout 2 is sometimes below readout 1, but the normalized contrast wanders from negative values to a maximum of only about 7%, with no clean, reproducible-looking resonance line shape. The largest contrast point near 3.895 GHz is not strong relative to the expected near-pi contrast and sits among other irregular fluctuations. The per-average traces mainly show large baseline/tracking offsets, and stored averages are not a strong independent repeatability test here.
+
+Decision: resonance_absent. The scan contains small fluctuations and occasional readout differences, but not enough localized contrast for a confident pODMR resonance under this pulse sequence.

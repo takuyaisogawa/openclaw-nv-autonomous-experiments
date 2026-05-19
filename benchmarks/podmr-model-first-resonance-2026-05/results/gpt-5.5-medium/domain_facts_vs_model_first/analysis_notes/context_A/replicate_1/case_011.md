@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect a true m_S=0 reference, so readout 1 is the pre-microwave bright reference. full_expt is zero, so the optional m_S=+1 reference block is skipped. The active measurement then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the post-pulse signal.
+
+Using the provided setup facts, mod_depth = 1 gives a Rabi frequency of about 10 MHz, making a 52 ns pulse close to a pi pulse. On resonance this should transfer population from m_S=0 toward m_S=+1 and reduce fluorescence by up to the setup contrast scale of roughly 22%, while off resonance readout 2 should not show such a localized reduction relative to the readout 1 reference.
+
+The combined data show a localized readout 2 depression around 3.900-3.905 GHz, with the lowest point near 3.905 GHz. At that point readout 2 is about 24.1 while readout 1 is about 27.6, a roughly 13% relative drop, and the neighboring points form a dip rather than a monotonic drift. The two stored averages have different offsets consistent with tracking cadence, but both are compatible with a low signal in this region after accounting for those offsets. Given the near-pi pulse and the size/localization of the dip, the evidence favors a pODMR resonance being present.

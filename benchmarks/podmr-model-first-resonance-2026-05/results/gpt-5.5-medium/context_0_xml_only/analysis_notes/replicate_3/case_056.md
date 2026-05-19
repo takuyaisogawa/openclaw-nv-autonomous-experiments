@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_056.
+
+The provided sequence is Rabimodulated.xml / Rabimodulated, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence sets up a polarization pulse, then a detection window labelled as the true 0-level reference, waits, skips the optional 1-level reference block because full_expt = 0, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then performs the second detection. Thus readout 1 is the reference after optical polarization, and readout 2 is the microwave-pulse signal readout. The pulse duration used for the pODMR drive is 52 ns.
+
+The raw readouts have noticeable drift across the sweep, so the decision should come from the signal behavior relative to the reference and from reproducibility across averages. The signal readout has a localized low point at about 3.875 GHz: combined readout 2 drops to 43.54 while readout 1 is 45.37, giving one of the more negative signal-reference contrasts in the scan. Both individual averages show readout 2 lower than readout 1 at this frequency, and the signal recovers at neighboring points. Other fluctuations exist, but the 3.875 GHz feature is centered in the swept range and is consistent with a pODMR dip rather than only monotonic drift.
+
+Decision: resonance_present, with modest confidence because the feature is noisy and the reference channel also varies.

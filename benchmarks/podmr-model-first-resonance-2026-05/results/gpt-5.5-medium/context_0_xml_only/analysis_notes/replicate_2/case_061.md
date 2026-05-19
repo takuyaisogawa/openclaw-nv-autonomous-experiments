@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect, then wait, then apply rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, then detect again. Because full_expt = 0, the optional 1-level reference block is skipped even though do_adiabatic_inversion is true.
+
+Readout role interpretation: readout 1 is the true 0-level polarized reference acquired before the microwave pulse, and readout 2 is the signal readout after the modulated Rabi pulse. The XML gives mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. At the 250 MHz sample rate this duration is already aligned to 13 samples, so the applied pulse duration is 52 ns.
+
+The raw readouts are noisy with only two averages, but the microwave-pulse readout relative to the reference shows a repeated negative contrast on the high-frequency side of the scan, especially around 3.905 to 3.920 GHz, in both individual averages and in the combined average. The endpoint at 3.925 GHz rebounds strongly, so the feature is not a monotonic drift. This pattern is consistent with a pODMR resonance being present, though the confidence is limited by the small number of averages and fluctuating contrast elsewhere in the sweep.

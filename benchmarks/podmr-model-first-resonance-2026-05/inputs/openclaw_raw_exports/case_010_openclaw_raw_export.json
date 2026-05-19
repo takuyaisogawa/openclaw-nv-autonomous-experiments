@@ -1,0 +1,266 @@
+{
+  "ok": true,
+  "source": "savedexperiment_mat_raw_export",
+  "data_path": "1DExp-seq-Rabimodulated-vary-mw_freq-2026-05-12-134151.mat",
+  "mat_variables": [
+    {
+      "name": "Scan",
+      "class": "ExperimentalScan",
+      "size": [
+        1,
+        1
+      ]
+    }
+  ],
+  "benchmark_case_id": "case_010",
+  "scan": {
+    "matlab_class": "ExperimentalScan",
+    "SequenceName": "Rabimodulated.xml",
+    "DateTime": "2026-05-12-134151",
+    "vary_prop": [
+      "mw_freq"
+    ],
+    "vary_begin": 3825000000.0,
+    "vary_end": 3925000000.0,
+    "vary_step_size": 5000000.0,
+    "vary_points": 21,
+    "Averages": 2,
+    "Repetitions": 100000,
+    "ScanOrderMode": "savedexperiment_export",
+    "ExperimentData": [
+      [
+        [
+          21.826923076923077,
+          22.884615384615383,
+          24.365384615384613,
+          23.903846153846153,
+          23.365384615384613,
+          22.192307692307693,
+          24.019230769230766,
+          21.480769230769234,
+          24.307692307692307,
+          21.846153846153847,
+          23.057692307692307,
+          22.173076923076923,
+          23.173076923076923,
+          22.134615384615383,
+          22.307692307692307,
+          22.576923076923077,
+          21.903846153846153,
+          22.884615384615387,
+          21.134615384615383,
+          21.653846153846153,
+          23.5
+        ],
+        [
+          24.076923076923077,
+          23.173076923076923,
+          23.634615384615387,
+          22.46153846153846,
+          23.211538461538463,
+          23.25,
+          21.923076923076923,
+          23.346153846153847,
+          23.5,
+          22.192307692307693,
+          22.53846153846154,
+          22.807692307692307,
+          23.634615384615387,
+          23.53846153846154,
+          21.923076923076923,
+          21.75,
+          22.5,
+          21.846153846153847,
+          22.5,
+          21.653846153846153,
+          22.673076923076923
+        ]
+      ]
+    ],
+    "ExperimentDataEachAvg": [
+      [
+        [
+          [
+            25.5,
+            27.19230769230769,
+            28.846153846153847,
+            26.153846153846153,
+            26.846153846153847,
+            25.30769230769231,
+            27.038461538461537,
+            23.30769230769231,
+            27.153846153846153,
+            23.69230769230769,
+            24.346153846153847,
+            22.846153846153847,
+            24.038461538461537,
+            21.69230769230769,
+            22.423076923076923,
+            19.884615384615383,
+            19.423076923076923,
+            19.961538461538463,
+            18.884615384615383,
+            17.923076923076923,
+            19.884615384615383
+          ],
+          [
+            29.038461538461537,
+            28.346153846153847,
+            28.423076923076923,
+            24.76923076923077,
+            25.115384615384617,
+            26.923076923076923,
+            24.923076923076923,
+            24.961538461538463,
+            26.461538461538463,
+            24.23076923076923,
+            23.80769230769231,
+            24.423076923076923,
+            25.26923076923077,
+            24.461538461538463,
+            21.076923076923077,
+            20.384615384615383,
+            19.576923076923077,
+            18.923076923076923,
+            19.884615384615383,
+            17.769230769230766,
+            19.076923076923077
+          ]
+        ],
+        [
+          [
+            18.153846153846153,
+            18.576923076923077,
+            19.884615384615383,
+            21.653846153846153,
+            19.884615384615383,
+            19.076923076923077,
+            21.0,
+            19.653846153846153,
+            21.461538461538463,
+            20.0,
+            21.76923076923077,
+            21.5,
+            22.30769230769231,
+            22.576923076923077,
+            22.19230769230769,
+            25.26923076923077,
+            24.384615384615383,
+            25.80769230769231,
+            23.384615384615383,
+            25.384615384615383,
+            27.115384615384617
+          ],
+          [
+            19.115384615384617,
+            18.0,
+            18.846153846153847,
+            20.153846153846153,
+            21.30769230769231,
+            19.576923076923077,
+            18.923076923076923,
+            21.73076923076923,
+            20.53846153846154,
+            20.153846153846153,
+            21.26923076923077,
+            21.19230769230769,
+            22.0,
+            22.615384615384617,
+            22.76923076923077,
+            23.115384615384617,
+            25.423076923076923,
+            24.76923076923077,
+            25.115384615384617,
+            25.538461538461537,
+            26.26923076923077
+          ]
+        ]
+      ]
+    ],
+    "Sequence": "<sequence>\r\n    \r\n    <variables>\t\r\n        sample_rate = float(250000000,1e7,5e9)\r\n        mw_freq     = float(3.8751e+09, 1e9, 15e9)\r\n        detuning    = float(0,-100e6,100e6)\r\n        freqIQ      = float(50e6, 0,500e6) \n        \r\n        length_rabi_pulse   = float(52e-9, 0, 0.5)\n        length_last_wait   = float(1e-6, 0, 0.5)\r\n        mod_depth           = float(0.3,0,1)\r\n        \r\n        mw_ampl = float(-5, -20, 15)\n        ampIQ = float(5,-30,17) %in dBm\n        \r\n        %adiabatic inversion\r\n        %full_expt       = float(1,0,1);\r\n        full_expt       = float(0,0,1);\r\n        do_adiabatic_inversion = boolean(1)\r\n        \r\n        sweep_range = float(100e6, 5e6, 500e6)\r\n        sweep_time  = float(1e-6, 20e-9, 20e-6)\r\n        \r\n        %delay_wrt_1mus  = float(-0.88e-6,-0.1,0.1) % 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2022-09-29-182523  %OLD -2.17e-6 calibrated by PL curve 11-08-05 13-17-48\r\n        delay_wrt_1mus  = float(0.2e-6,-0.1,0.1) % DLnsec LASER 1DExp-seq-Rabimodulated-vary-delay_wrt_1mus-2023-10-09-183857  \r\n        wait_time       = float(2e-6, 0,1)\r\n        switch_delay    = float(1.000000000000000e-07, -1e-6,1);\n        pumping_time = float(1e-6,0,1);\r\n        \r\n    </variables>\r\n    \r\n    <shaped_pulses>\r\n        \r\n    </shaped_pulses>\r\n    \r\n    <instructions>\r\n        mw_freq = mw_freq + detuning;\r\n        \r\n        length_rabi_pulse = round(length_rabi_pulse*sample_rate)/sample_rate;\r\n        \r\n        ch_on =  [1 1 1 0 0 0];\r\n        \r\n        PSeq = set_sample_rate(PSeq, sample_rate);\r\n        PSeq = enable_channels(PSeq, 1:6,ch_on); \r\n        PSeq = set_microwave(PSeq, mw_freq,mw_ampl,ampIQ,freqIQ);\r\n        \r\n        \r\n        % Acquiring true 0 level reference \r\n        PSeq = adj_polarize(PSeq,sample_rate,pumping_time,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n       \r\n        \r\n        %% Acquire 1 level reference\r\n        if abs(full_expt)>1e-12\r\n        %if do_adiabatic_inversion\r\n        %PSeq = adiabatic_inversion(PSeq,sample_rate,sweep_range,sweep_time,freqIQ,ch_on,0.4);\r\n        %else\r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,130e-9,1,switch_delay,ch_on);\r\n        %end\r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,52e-9,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,3000e-9,ch_on);\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus, ch_on);\r\n        PSeq = wait_for_awg(PSeq,sample_rate,wait_time,ch_on);\r\n        end\r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,500e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        \r\n        PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        \r\n        \r\n        %PSeq = wait_for_awg(PSeq,sample_rate,1600e-9,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        % detection\r\n        PSeq = detection(PSeq,sample_rate,delay_wrt_1mus,ch_on);\r\n        \r\n        PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n        %PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on);\r\n        %PSeq = wait_for_awg(PSeq,sample_rate,length_last_wait,ch_on);\r\n        \r\n    </instructions>\r\n    \r\n</sequence>\r\n\r\n",
+    "Variable_values": [
+      {
+        "name": "sample_rate",
+        "value": 250000000.0
+      },
+      {
+        "name": "mw_freq",
+        "value": 3925000000.0
+      },
+      {
+        "name": "detuning",
+        "value": 0
+      },
+      {
+        "name": "freqIQ",
+        "value": 50000000.0
+      },
+      {
+        "name": "length_rabi_pulse",
+        "value": 5.2e-08
+      },
+      {
+        "name": "length_last_wait",
+        "value": 1e-06
+      },
+      {
+        "name": "mod_depth",
+        "value": 1
+      },
+      {
+        "name": "mw_ampl",
+        "value": -5
+      },
+      {
+        "name": "ampIQ",
+        "value": 5
+      },
+      {
+        "name": "full_expt",
+        "value": 0
+      },
+      {
+        "name": "sweep_range",
+        "value": 100000000.0
+      },
+      {
+        "name": "sweep_time",
+        "value": 1e-06
+      },
+      {
+        "name": "delay_wrt_1mus",
+        "value": 2e-07
+      },
+      {
+        "name": "wait_time",
+        "value": 2e-06
+      },
+      {
+        "name": "switch_delay",
+        "value": 1e-07
+      },
+      {
+        "name": "pumping_time",
+        "value": 1e-06
+      }
+    ],
+    "Bool_values": [
+      {
+        "name": "do_adiabatic_inversion",
+        "value": 1
+      }
+    ]
+  },
+  "warnings": [],
+  "error_code": "",
+  "error_message": "",
+  "diagnostic_figures": {
+    "available": true,
+    "png_path": "../openclaw_raw_figures/case_010_raw_readouts.png",
+    "contents": [
+      "combined raw readouts",
+      "per-average raw readout overlay"
+    ],
+    "warnings": []
+  }
+}

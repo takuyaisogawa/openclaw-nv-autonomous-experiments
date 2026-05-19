@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+The XML shows full_expt = 0, so the optional 1-level reference block is inactive. The active pattern is polarization, detection of the 0-level/reference readout, wait, then a modulated Rabi pulse followed by the signal detection. The pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns. The exported variable list gives mod_depth = 1. The readout roles are therefore readout 1 as the pre-microwave 0-level/reference detection and readout 2 as the post-pulse pODMR signal detection.
+
+Using that role assignment, the relevant observable is the signal readout relative to the reference readout, not either raw trace alone. The combined readout2/readout1 contrast has a clear local depression around 3.885-3.890 GHz: about 0.931 at both points, bracketed by near-unity contrast at 3.875-3.880 GHz and a recovery above unity at 3.895-3.905 GHz. The per-average differences also show negative contrast at 3.885 GHz in both averages and at 3.890 GHz in both averages, although the dataset is noisy and has additional isolated negative excursions.
+
+Because the active pODMR signal channel shows a reproducible local dip relative to the reference near 3.885-3.890 GHz under the 52 ns modulated microwave pulse, I classify this case as resonance_present with moderate confidence.

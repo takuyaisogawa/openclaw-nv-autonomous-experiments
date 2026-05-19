@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active variables in inputs/sequence.xml set length_rabi_pulse to 52 ns and mod_depth to 1, with full_expt = 0, so the optional 1-level reference block is not executed. The active readouts are therefore: readout 1 after adj_polarize as the true 0/bright reference, then readout 2 after rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay) as the microwave-pulse signal readout.
+
+The plotted and exported data show readout 1 staying near the mid-40s over the scan, while readout 2 has a strong, localized depression centered around roughly 3.875 to 3.880 GHz. The feature is much larger than the point-to-point scatter and appears in the per-average traces as well, especially as the post-pulse readout drops to the mid-30s while the reference remains near the mid-40s. This frequency-localized loss of fluorescence in the microwave-pulse readout is consistent with a pODMR resonance.
+
+Decision: resonance_present.

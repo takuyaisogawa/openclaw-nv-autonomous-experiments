@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The provided XML has mod_depth = 1 and length_rabi_pulse = 52 ns; with the stated setup this is approximately a pi-scale pulse because the Rabi frequency is about 10 MHz at mod_depth = 1. full_expt = 0, so the active readouts are the initial polarized m_S = 0 reference detection followed by the signal detection after the modulated Rabi pulse. The optional m_S = +1 reference block is inactive.
+
+For a true pODMR resonance under this pulse condition, the post-pulse signal readout should show a clear drop relative to the m_S = 0 reference, with a contrast scale approaching the stated 22% between m_S = 0 and m_S = +1. The combined readouts show only small and irregular signal-reference differences, with the largest relative depressions about 6% and not forming a clean, robust resonance feature. The per-average traces also mainly show tracking-level offsets and fluctuations rather than a strong independent repeatability check.
+
+Decision: resonance_absent.

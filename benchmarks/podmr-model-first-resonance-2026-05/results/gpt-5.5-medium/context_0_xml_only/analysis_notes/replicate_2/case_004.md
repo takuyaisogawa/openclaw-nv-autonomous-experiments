@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence and readout interpretation:
+
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The relevant variables are length_rabi_pulse = 52 ns and mod_depth = 1 in the provided sequence.xml / Variable_values. The embedded raw-export sequence text contains mod_depth = 0.3, but the explicit Variable_values and provided sequence.xml indicate the active run value is mod_depth = 1. full_expt = 0, so the optional "Acquire 1 level reference" block is skipped even though do_adiabatic_inversion is true. The executed readouts are therefore a first detection after optical polarization, serving as the 0-level / baseline reference, followed by a modulated Rabi pulse and a second detection, serving as the microwave-affected signal readout.
+
+Data assessment:
+
+The two combined raw readouts fluctuate around roughly 30 to 34 counts over the microwave-frequency sweep. Comparing the second readout to the first does not show a clean, localized ODMR resonance feature. The signal/reference ratio has both negative and positive excursions, including dips near about 3.855 and 3.895 GHz and rises near about 3.845, 3.915, and 3.925 GHz. These excursions are comparable to the average-to-average scatter visible in the per-average overlay and do not form a consistent resonance line shape. With only two averages and no stable dip/peak tied to the active signal readout, the evidence supports resonance_absent.

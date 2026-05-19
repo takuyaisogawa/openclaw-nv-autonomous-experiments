@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz. The provided sequence has full_expt = 0, so the optional 1-level reference block is skipped. The first detection is the true 0-level/reference readout after optical polarization, and the second detection is the signal readout after rabi_pulse_mod_wait_time. The pulse used before the signal readout is length_rabi_pulse = 52 ns, with mod_depth = 1 in the provided XML.
+
+The reference readout stays roughly in the mid-40 count range without a matched sharp feature. The post-pulse signal readout has a pronounced local dip near 3.875 GHz, falling to about 36 compared with neighboring values in the low-to-mid 40s. The dip is also visible in the per-average overlay, so it is not just a single combined-point artifact. Given the sequence roles, this is consistent with a pODMR resonance.

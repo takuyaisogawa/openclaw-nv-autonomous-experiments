@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence inspection:
+
+The provided sequence is Rabimodulated.xml. The active path first polarizes the NV and performs a detection readout, which is the m_S = 0 / bright reference. The optional m_S = +1 reference block is skipped because full_expt = 0. After that, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then performs the second detection readout. Thus readout 1 is the polarized reference and readout 2 is the microwave-pulse measurement.
+
+From the provided sequence XML, mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns. With the stated calibration of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse. On resonance it should transfer substantial population out of m_S = 0 and produce a clear fluorescence drop in the post-pulse readout, on the scale of the setup contrast rather than only a few percent.
+
+The combined raw readouts do not show that behavior. Readout 2 is often comparable to or above readout 1, including a positive excursion near 3.915 GHz, and the readout-2 minus readout-1 differences are small and mixed in sign. The per-average overlays are dominated by average-to-average level offsets consistent with tracking cadence, not a robust repeated resonance feature. Because the expected signature for this active sequence is a clear dip in readout 2 relative to the bright reference and no such dip is present, I classify this case as resonance absent.

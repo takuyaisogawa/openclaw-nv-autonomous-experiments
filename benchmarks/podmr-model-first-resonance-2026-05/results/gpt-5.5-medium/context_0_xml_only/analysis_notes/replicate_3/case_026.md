@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided XML defines a Rabimodulated pODMR sequence. The active experiment has full_expt = 0, so the optional 1-level reference block is skipped. The first detection occurs immediately after optical polarization and serves as the true 0-level/bright reference. The second active detection occurs after rabi_pulse_mod_wait_time using length_rabi_pulse = 5.2e-08 s and mod_depth = 1, so readout 2 is the microwave-pulse readout to compare against the reference. The pulse duration is 52 ns, which is already aligned to the 250 MHz sample clock.
+
+Across the mw_freq scan, readout 1 remains relatively flat around the low-40s, while readout 2 has a pronounced, localized decrease centered near 3.875-3.88 GHz. The dip is visible in the combined trace and appears in both per-average overlays, reaching roughly 33 counts at the minimum compared with neighboring baseline values near 40-42. Because the contrast is localized in the microwave-affected readout and not mirrored as a comparable artifact in the reference readout, this is consistent with a pODMR resonance.

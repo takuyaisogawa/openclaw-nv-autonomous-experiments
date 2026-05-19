@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml varying mw_freq. With full_expt = 0, the sequence records a true mS = 0 reference first after optical polarization, skips the optional mS = +1 reference block, then applies rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth) and records the signal readout. Thus readout 1 is the bright reference and readout 2 is the post-microwave/Rabi readout.
+
+The active pulse parameters are mod_depth = 1 and length_rabi_pulse = 52 ns. Using the stated setup scale, the Rabi frequency is about 10 MHz, so this pulse is approximately a pi pulse. If the scan crossed a pODMR resonance for a single NV center, the post-pulse readout should show a clear contrast loss relative to the bright reference, potentially on the order of the 22% mS = 0 to mS = +1 contrast scale.
+
+The combined readouts do not show that behavior. Readout 2 fluctuates around readout 1 and often rises above it, with variations only at the few-percent level and no consistent localized dip at a frequency. The per-average overlay shows large average-to-average offsets that look like tracking or cadence drift, not reproducible resonance contrast. Because the expected near-pi pulse contrast signature is absent, I decide that no pODMR resonance is present.

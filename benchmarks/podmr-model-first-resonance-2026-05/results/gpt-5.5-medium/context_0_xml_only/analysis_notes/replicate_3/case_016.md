@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided XML sets length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s to 52 ns, with mod_depth = 1. Because full_expt = 0, the conditional 1-level reference block is inactive. The two acquired readouts are therefore the initial true 0-level reference after polarization/detection, and the detection after the modulated Rabi pulse.
+
+The MW-pulse readout has a clear localized drop over the middle of the scan, falling from about 39 near 3.865 GHz to about 32.2, 30.0, and 29.0 at the next points before recovering toward the high 30s. The initial reference readout stays comparatively near the high 30s, with only a smaller fluctuation near the same region. The dip is visible in both per-average overlays for the pulse readout, so it is not just a single-average artifact. This is consistent with a pODMR resonance being present.

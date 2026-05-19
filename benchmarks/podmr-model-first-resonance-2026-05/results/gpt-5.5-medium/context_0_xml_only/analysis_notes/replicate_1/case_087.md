@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence XML shows the active sequence is Rabimodulated.xml. The executed measurement takes a true 0-level reference after polarization, skips the 1-level reference because full_expt is 0, then applies rabi_pulse_mod_wait_time and performs the signal detection. The active pulse duration is length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns, with mod_depth = 1. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+Readout role interpretation: readout 1 is the pre-pulse 0-level reference, and readout 2 is the post-Rabi-pulse signal readout. I compared readout 2 against readout 1 across frequency. The signal/reference ratio stays close to unity with isolated fluctuations: the largest negative deviations occur near 3.855 GHz and 3.910 GHz, but they are single-point features rather than a reproducible resonance-shaped contrast. The two averaged traces are visibly noisy and do not show a stable shared dip or peak pattern.
+
+Decision: resonance_absent. The data do not provide a convincing pODMR resonance under this Rabimodulated sequence.

@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. In the active instructions, full_expt is 0, so the optional 1-level reference block is skipped even though do_adiabatic_inversion is set. The executed readouts are therefore: first detection after optical polarization as the true 0-level/bright reference, then a modulated Rabi microwave pulse followed by the signal detection. The active pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection after delay_wrt_1mus = 0.2 us.
+
+The raw readouts over 3.825-3.925 GHz show a broad upward drift and point-to-point noise. Readout 2 is generally lower than readout 1 but does not show a clear, localized, reproducible ODMR-like dip or peak against the reference; the per-average traces vary substantially and the prominent fluctuations are not consistent between averages. Because the apparent structure is comparable to noise/drift and lacks a distinct resonance feature, I classify this case as resonance absent.

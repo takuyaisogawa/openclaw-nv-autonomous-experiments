@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence XML sets length_rabi_pulse = 52 ns and mod_depth = 1, with full_expt = 0. Therefore the "Acquire 1 level reference" block is inactive: the first detection is the true 0-level/bright reference after laser polarization, and the second detection is the signal after the modulated Rabi pulse followed by detection.
+
+Readout interpretation: readout 1 is the initial reference detection, while readout 2 is the post-pulse readout that should carry any pODMR contrast. A resonance would be expected as a reproducible, frequency-localized reduction or contrast feature in the post-pulse readout relative to the reference, preferably visible across averages.
+
+Assessment: the two-readout traces fluctuate around roughly 48-50 counts with comparable noise. The combined data show several isolated peaks and dips, but no stable dip-like pODMR feature in the post-pulse channel relative to the reference. The per-average overlay indicates that the apparent excursions are not reproducible across the two averages; for example, high points near 3.88 and 3.90 GHz are not a resonance-like loss and are comparable to average-to-average scatter. The normalized relationship between the signal and reference does not show a convincing localized ODMR contrast.
+
+Decision: resonance_absent. Confidence is limited by the small number of averages and noisy photon counts, but the data do not support a clear pODMR resonance.

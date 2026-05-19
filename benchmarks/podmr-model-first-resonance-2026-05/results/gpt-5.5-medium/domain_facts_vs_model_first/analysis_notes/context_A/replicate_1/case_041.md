@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence and readout interpretation:
+
+The active sequence is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true mS = 0 reference readout, then waits, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, and detects again. Since full_expt = 0, the optional explicit mS = +1 reference block is skipped. Thus readout 1 is the bright mS = 0 reference and readout 2 is the post-microwave-pulse signal.
+
+At mod_depth = 1 the stated setup Rabi frequency is about 10 MHz, so a 52 ns pulse is near a strong transfer pulse on resonance. With a setup contrast scale of about 22% between mS = 0 and mS = +1, a genuine resonance under these conditions should produce a clear localized reduction of the post-pulse readout relative to the 0 reference, not just weak point-to-point fluctuations.
+
+The combined raw traces show readout 2 sometimes below readout 1, but the separation is irregular across the scan and not a coherent localized line. The largest differences are only a few raw-count units on a baseline near 53-55, and comparable excursions occur at isolated neighboring points without a stable resonance shape. The per-average overlay shows substantial tracking/noise variation, and the two stored averages should not be treated as a strong repeatability test. Overall the data do not show a convincing pODMR resonance.

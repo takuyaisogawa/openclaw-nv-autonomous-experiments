@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml. The provided XML sets full_expt = 0, so the active instruction path first acquires a true 0-level reference after polarization and detection, skips the conditional 1-level reference block, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1 before the final detection. Thus readout 1 is the 0-level reference and readout 2 is the microwave-pulsed signal readout.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz. Both readouts show a shared broad downward drift across the scan and the two averages are noisy. The pulsed signal readout does not show a reproducible localized ODMR-like dip or peak relative to the reference; features such as the high value near 3.85 GHz and later decline are also present as drift/noise rather than a distinct resonance. I therefore decide that a pODMR resonance is absent.

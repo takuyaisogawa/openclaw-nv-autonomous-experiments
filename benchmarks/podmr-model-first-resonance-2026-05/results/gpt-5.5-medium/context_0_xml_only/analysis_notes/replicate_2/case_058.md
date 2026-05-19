@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml / Rabimodulated with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The active pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, switch_delay = 100 ns, followed by detection. full_expt = 0, so the optional 1-level reference block is inactive.
+
+Readout roles: readout 1 is the true 0-level / bright reference acquired immediately after optical polarization and before the microwave pulse. Readout 2 is the signal readout acquired after the modulated Rabi microwave pulse. There is no active separate 1-level reference readout in this run.
+
+The signal-vs-reference contrast fluctuates around zero over the sweep. There is an isolated low contrast near 3.865 GHz, but it is not a coherent dip with neighboring support, and the per-average traces show broad noise/drift rather than a reproducible ODMR resonance shape. The final high-frequency points rise rather than form a resonant loss feature. Based on the active sequence and readout roles, I classify this as no clear pODMR resonance present.

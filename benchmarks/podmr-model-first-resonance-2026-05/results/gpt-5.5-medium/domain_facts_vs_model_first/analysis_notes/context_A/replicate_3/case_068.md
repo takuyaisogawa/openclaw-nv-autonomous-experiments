@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true m_S = 0 reference, then because full_expt = 0 it skips the explicit m_S = +1 reference branch, then applies one rabi_pulse_mod_wait_time pulse followed by detection. Thus readout 1 is the pre-microwave bright reference and readout 2 is the post-pulse signal readout. The provided sequence XML and exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1.
+
+At the stated setup calibration, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi-scale pulse on resonance and should produce a sizable post-pulse contrast change relative to the pre-pulse reference if an addressed NV resonance is present. With a 22% m_S = 0 to m_S = +1 contrast scale and raw counts near 42, a clear on-resonance response would be expected to be several counts and should appear as a reproducible frequency-localized feature in the post-pulse readout relative to the reference.
+
+The measured readouts do not show that. The combined readout 2 trace wanders around readout 1 with crossings and isolated point-to-point excursions, but there is no coherent dip or peak localized in frequency. The two stored averages mainly differ by a broad tracking-like offset and trend, so they do not provide strong independent confirmation of a spectral feature. The per-average overlays are dominated by drift between averages rather than a repeatable resonance-shaped response.
+
+Decision: resonance_absent.

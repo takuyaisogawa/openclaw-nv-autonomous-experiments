@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. With full_expt = 0, the enabled acquisition path is a polarized m_S = 0 reference detection followed by a single modulated Rabi pulse and a second detection; the optional m_S = +1 reference block is skipped. Thus readout 1 is the pre-microwave 0-level reference and readout 2 is the post-pulse signal.
+
+The sequence variables used here give length_rabi_pulse = 52 ns and mod_depth = 1. With the provided setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi-scale pulse. If a pODMR resonance were present and the pulse addressed the transition, the post-pulse readout should show a sizable contrast change relative to the 0-reference, on the order of the setup's 22% m_S = 0 to m_S = +1 contrast scale. At a count level near 50-54, that would be a much larger effect than the observed readout-to-readout differences.
+
+The measured combined traces do not show a reproducible resonant contrast feature. Readout 2 is not consistently depressed relative to readout 1 at any candidate frequency; the largest excursions are comparable to point-to-point and average-to-average scatter, and the two stored averages differ substantially in places, consistent with tracking/noise rather than an independent repeatable resonance. The apparent changes are only a few counts at most and lack the expected stable resonance signature for a near-pi pulse at mod_depth = 1.
+
+Decision: resonance absent.

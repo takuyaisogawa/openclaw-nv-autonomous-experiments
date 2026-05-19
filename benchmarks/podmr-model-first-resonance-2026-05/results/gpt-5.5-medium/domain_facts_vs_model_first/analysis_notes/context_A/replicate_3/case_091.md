@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz. The executed instruction flow first polarizes and detects a true mS=0 reference, waits, then because full_expt = 0 skips the optional mS=+1 reference block. It then applies one rabi_pulse_mod_wait_time pulse and detects again, so readout 1 is the bright reference and readout 2 is the post-microwave signal.
+
+The provided sequence XML has length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse on resonance, so a real pODMR resonance should drive substantial population into the darker mS=+1 state and produce an obvious readout-2 dip relative to readout 1, on the order of the 22% contrast scale for this setup.
+
+The measured readouts do not show that behavior. Readout 2 fluctuates around readout 1 and is often comparable or higher; the differences are only a few counts on a roughly 50-count level, with no coherent resonance-shaped darkening and no feature approaching the expected contrast. The per-average traces differ mostly by tracking offset/cadence and do not provide strong independent repeatability. Based on the sequence and the expected pulse effect, this scan is best classified as no pODMR resonance present.

@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The active instructions first acquire a true 0-level reference after optical polarization and detection, then skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the polarized no-MW reference and readout 2 is the post-MW-pulse readout. The provided XML/variable values give mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, so the active microwave pulse duration is 52 ns.
+
+The combined raw readouts are noisy with only two averages, but readout 2 shows a localized departure from readout 1, especially around 3.910-3.915 GHz where two adjacent points rise well above the reference, while nearby points return closer to baseline. There are also smaller departures elsewhere, so the feature is not clean, but the post-pulse channel has a frequency-dependent structure consistent with a pODMR response rather than a flat absent-resonance trace.
+
+Decision: resonance_present.

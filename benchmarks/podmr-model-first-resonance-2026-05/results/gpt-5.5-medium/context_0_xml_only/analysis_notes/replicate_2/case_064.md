@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active sequence first polarizes and detects a true 0-level/bright reference, then, because full_expt = 0, skips the optional 1-level reference block and applies one rabi_pulse_mod_wait_time before the second detection. The relevant pulse uses length_rabi_pulse = 52 ns after sample-rate rounding, with mod_depth = 1 from the provided sequence XML variable values.
+
+Readout role interpretation: readout 1 is the initial reference detection after optical polarization with no active rabi pulse immediately before it; readout 2 is the signal detection after the 52 ns modulated microwave pulse. A pODMR resonance should therefore appear as a reproducible frequency-dependent contrast change in the post-pulse readout relative to the reference, preferably with support across the two averages.
+
+The combined readouts show noisy fluctuations and two isolated negative readout2-minus-readout1 excursions near about 3.865 GHz and 3.910 GHz. These are single-point features rather than a smooth or repeated resonance dip, and the per-average overlay indicates that at least the stronger excursions are not consistently reproduced between averages. The readout2 trace also has comparable positive and negative point-to-point variation elsewhere. I therefore do not identify a reliable pODMR resonance in this scan.

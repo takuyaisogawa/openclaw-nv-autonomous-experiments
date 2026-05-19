@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_034.
+
+The provided sequence XML is Rabimodulated.xml with mw_freq as the swept variable. The active sequence first polarizes and detects the true 0-level/reference readout, waits, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time and performs the second detection. Thus readout 1 is the reference/background readout and readout 2 is the post-microwave-pulse signal readout. The XML parameters give mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s, so the active microwave pulse duration is 52 ns.
+
+The combined raw readouts are noisy with only two averages, but the post-pulse signal is usually lower than the reference and shows frequency-dependent depressions, especially near roughly 3.88 to 3.895 GHz, with another local depression near 3.855 GHz. The structure is not a clean single isolated line, and there is baseline drift between averages, but the reference/signal contrast is not flat across the sweep. I therefore classify this as a pODMR resonance present with low practical confidence.

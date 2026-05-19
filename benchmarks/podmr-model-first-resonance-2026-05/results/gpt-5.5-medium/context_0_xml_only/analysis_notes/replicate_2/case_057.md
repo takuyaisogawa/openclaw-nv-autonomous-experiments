@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_057
+
+The provided sequence XML defines a Rabimodulated pulse sequence with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence first acquires a true 0-level reference via polarization followed by detection, waits, skips the optional 1-level reference branch because full_expt = 0, then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the signal detection. Thus readout 1 is the 0-level reference and readout 2 is the post-Rabi-pulse measurement. The relevant active microwave pulse duration is length_rabi_pulse = 52 ns, rounded at 250 MHz sample rate to 52 ns, and the provided sequence XML/variable values give mod_depth = 1.
+
+The combined raw readouts show readout 2 varying around readout 1 but not as a clean, reproducible resonance feature. The largest positive readout2-reference differences occur around 3.860-3.870 GHz and again near 3.905 GHz, while negative differences occur at several isolated points including 3.825, 3.840, 3.885, 3.915, and 3.920 GHz. This alternating structure does not resemble a single ODMR resonance dip or robust localized contrast feature across the sweep. The per-average overlay also shows large average-to-average scatter, so the apparent excursions are not sufficiently reproducible.
+
+Decision: resonance_absent. The data do not provide convincing evidence for a pODMR resonance in this sweep.

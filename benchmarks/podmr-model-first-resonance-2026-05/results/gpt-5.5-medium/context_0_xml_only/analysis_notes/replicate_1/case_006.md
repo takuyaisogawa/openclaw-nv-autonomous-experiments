@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq as the swept variable from 3.825 to 3.925 GHz. The active path has full_expt = 0, so the intermediate "1 level reference" block is skipped. The two active detections are therefore the initial polarized true-0 reference readout and the detection after a rabi_pulse_mod_wait_time pulse.
+
+The rabi pulse duration is length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, i.e. 52 ns. The provided XML/variable values set mod_depth = 1. The post-pulse detection should be judged relative to the preceding true-0 reference because both readouts show average-to-average drift.
+
+The combined raw traces show a local reduction in post-pulse readout relative to the reference near 3.875 GHz, with the ratio reaching about 0.91 there and recovering immediately afterward. Looking at the two averages separately, the same reduced contrast appears in the 3.875-3.885 GHz region, although the baseline drifts strongly across the sweep. This localized, repeated contrast feature is consistent with a pODMR resonance rather than only monotonic drift.

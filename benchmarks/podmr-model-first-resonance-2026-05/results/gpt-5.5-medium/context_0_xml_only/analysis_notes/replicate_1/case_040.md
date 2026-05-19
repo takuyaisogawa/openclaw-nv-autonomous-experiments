@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence XML is Rabimodulated. The active instructions first acquire a true 0-level reference after optical polarization, then skip the 1-level reference branch because full_expt is 0, then apply rabi_pulse_mod_wait_time and acquire the second detection readout. Thus readout 1 is the 0-level reference and readout 2 is the post-Rabi-pulse pODMR signal readout. The active modulation depth from the provided XML/variable values is mod_depth = 1, and the Rabi pulse duration is length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The combined readouts fluctuate by a few counts, and the post-pulse signal does not show a clear, localized, repeatable ODMR contrast feature relative to the reference. Apparent dips or crossings are comparable to the per-average scatter and are not consistently reproduced between the two averages. I therefore classify this case as resonance absent.

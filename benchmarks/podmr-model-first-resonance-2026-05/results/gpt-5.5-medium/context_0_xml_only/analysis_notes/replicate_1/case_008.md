@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml. The active instructions set the microwave frequency and then acquire a true 0-level reference with adj_polarize followed by detection. Because full_expt is 0, the optional 1-level reference block is inactive. The sequence then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the final detection. Therefore readout 1 is the 0-level optical reference and readout 2 is the post-microwave pODMR signal readout.
+
+The active pulse settings are length_rabi_pulse = 5.2e-08 s, i.e. 52 ns, and mod_depth = 1 from the provided XML/current variable values. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+The combined readouts fluctuate by a few counts, and the signal/reference comparison has several isolated excursions. The lower signal points near about 3.865, 3.885, and 3.905-3.910 GHz are not a single consistent resonance feature and are comparable to the per-average scatter. The two averages do not show a repeatable narrow or broad pODMR dip at the same frequency. I therefore classify this case as resonance absent.

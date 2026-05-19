@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The executed instruction path has full_expt = 0, so the optional m_S = +1 reference block is skipped. The two stored readouts are therefore: readout 1, the true m_S = 0 bright reference after optical polarization and before the microwave pulse; readout 2, the signal readout after the Rabi-modulated microwave pulse. The pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, and the exported active variable list gives mod_depth = 1. With the supplied setup facts, this is approximately a pi pulse for a 10 MHz Rabi frequency.
+
+For a real pODMR resonance under this sequence, readout 2 should show a clear dip relative to the bright reference readout 1 near resonance, with a scale plausibly tied to the roughly 22% m_S = 0 to m_S = +1 contrast. The combined traces do not show a coherent resonance-like dip of that magnitude or shape. The readout difference changes sign across the scan and is only a few raw-count units, while the per-average overlays show strong common drift between averages that can explain much of the structure. There are local separations where readout 2 is below readout 1, but they are not stable enough, large enough, or shaped like a reliable ODMR feature for this near-pi pulse condition.
+
+Decision: resonance_absent.

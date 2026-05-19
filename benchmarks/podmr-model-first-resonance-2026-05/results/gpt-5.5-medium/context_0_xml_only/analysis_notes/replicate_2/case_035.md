@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The active pulse block first performs polarization and detection for the true 0-level/reference readout, waits, skips the full_expt 1-level reference because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, switch_delay = 100 ns, followed by the signal detection. Thus readout 1 is the polarized reference and readout 2 is the post-Rabi-pulse readout.
+
+The combined traces do not show a narrow, reproducible pODMR resonance. Readout 2 changes broadly across the scan and crosses the reference, while readout 1 also varies by a comparable amount. The per-average overlays show substantial average-to-average baseline drift, including opposite broad trends between averages, so the apparent changes are not a stable localized resonance feature. I therefore classify this case as resonance absent.

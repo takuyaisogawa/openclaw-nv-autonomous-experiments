@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence XML and raw export identify the active sequence as Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The active pulse sequence polarizes, detects a true 0-level reference, waits, then applies rabi_pulse_mod_wait_time followed by detection. Because full_expt is 0, the optional 1-level reference block is skipped, so the two saved readouts are the 0-level reference and the post-Rabi-pulse detection readout. The Rabi pulse duration is length_rabi_pulse = 52 ns, rounded at 250 MS/s, and mod_depth = 1.
+
+The combined readouts and per-average traces show substantial point-to-point variation. Comparing the post-pulse readout to the 0-level reference by difference or ratio does not reveal a consistent pODMR line shape: the contrast changes sign repeatedly, with isolated excursions near several frequencies rather than one reproducible resonance dip or peak. The two averages also show large drift/noise, so the apparent features in the combined trace are not reliable evidence of resonance.
+
+Decision: resonance_absent.

@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_057.
+
+The provided sequence XML is Rabimodulated. It sets up a microwave-frequency scan with a modulated Rabi pulse, with sample_rate 250 MHz, length_rabi_pulse 5.2e-08 s after rounding, mod_depth 1, switch_delay 1e-07 s, and length_last_wait 1e-06 s. The active instructions first polarize and detect the true 0-level reference, then skip the 1-level reference branch because full_expt is 0, then apply rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the second detection. Therefore readout 1 is the true 0 reference and readout 2 is the post-microwave-pulse signal readout.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The two averaged raw readouts fluctuate at the few-count level, and the signal/reference contrast does not show a clear, reproducible pODMR resonance dip or peak. The largest excursions are isolated points and are comparable to per-average scatter; the raw signal readout also does not form a coherent resonance feature across adjacent frequency points. With only two averages and no stable contrast feature, I classify this trace as resonance absent.

@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. The sequence first polarizes and detects the m_S = 0 / bright reference, then because full_expt = 0 it skips the separate m_S = +1 reference block, applies rabi_pulse_mod_wait_time, and detects the post-microwave signal. Thus readout 1 is the bright-state reference and readout 2 is the signal after the microwave pulse.
+
+The provided sequence XML has mod_depth = 1 and length_rabi_pulse = 52 ns. Using the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse. If the scan crossed a pODMR resonance, the post-pulse signal should show a substantial drop relative to the bright reference, on the order of the setup contrast scale between m_S = 0 and m_S = +1, about 22% in this setup.
+
+The combined raw traces do not show that behavior. Readout 2 stays close to readout 1 across the scan, with point-to-point fluctuations and occasional small positive or negative differences but no clear, localized contrast-scale dip at a resonance frequency. The two stored averages are not a strong independent repeatability test and show noisy variations rather than a stable resonance feature. Given the near-pi pulse condition, the absence of a large and coherent signal/readout separation argues against a present pODMR resonance.

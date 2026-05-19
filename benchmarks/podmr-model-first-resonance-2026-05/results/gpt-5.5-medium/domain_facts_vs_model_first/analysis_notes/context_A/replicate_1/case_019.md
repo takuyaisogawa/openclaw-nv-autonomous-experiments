@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz with 5 MHz steps. The executed logic has full_expt = 0, so the optional m_S = +1 reference block is skipped. Readout 1 is therefore the true m_S = 0 optical reference taken immediately after polarization, and readout 2 is the signal after the Rabi-modulated microwave pulse.
+
+The relevant microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 in the provided sequence values. With the stated setup calibration of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a half-period/pi pulse, so an on-resonance transition should produce close to the available m_S = 0 to m_S = +1 contrast scale of about 22%.
+
+The combined readout 2 trace shows a deep, localized suppression centered around 3.875-3.880 GHz, dropping from a baseline near 40-42 down to about 31.8-32.4 while readout 1 remains near 40-42. This is roughly a 20-22% reduction relative to the reference/baseline, matching the expected contrast for a resonant pi-like pulse. The two stored averages both show the same central dip in readout 2, although stored averages should not be overinterpreted as independent repeatability. Given the sequence roles and the contrast-scale consistency, this is a pODMR resonance.

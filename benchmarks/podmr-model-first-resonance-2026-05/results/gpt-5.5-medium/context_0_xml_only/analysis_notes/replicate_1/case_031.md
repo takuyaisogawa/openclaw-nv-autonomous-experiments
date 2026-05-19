@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz. The active instructions acquire a true 0-level reference first via polarization followed by detection, then because full_expt is 0 they skip the optional 1-level reference block and apply one rabi_pulse_mod_wait_time before the final detection. Thus readout 1 is the reference/background readout and readout 2 is the post-pulse ODMR-sensitive readout.
+
+The sequence variables indicate length_rabi_pulse = 52 ns after sample-rate rounding and mod_depth = 1 in the provided XML/variable values. Although the embedded historical sequence text in raw_export includes a default mod_depth of 0.3, the active provided sequence and Variable_values report mod_depth = 1, so I use mod_depth = 1.
+
+The raw data show readout 2 dropping strongly and locally around 3.875-3.880 GHz, from a baseline near 46-47 counts down to about 39.6 counts, while readout 1 remains comparatively flat in the 46-49 count range. The dip appears in both averages in the per-average overlay and is much larger than nearby point-to-point variation. This pattern is consistent with a pODMR resonance.

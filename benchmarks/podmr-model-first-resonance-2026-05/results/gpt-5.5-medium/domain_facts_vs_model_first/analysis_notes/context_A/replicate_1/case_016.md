@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The active experimental block polarizes the NV, performs a detection readout, waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before a second detection readout. Because full_expt = 0, the optional m_S = +1 reference block is skipped; readout 1 is therefore the polarized m_S = 0 reference, and readout 2 is the microwave-pulse-affected signal.
+
+With the stated setup, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is roughly a half Rabi period and should create a large population transfer when the microwave is resonant. The expected contrast scale is about 22% between m_S = 0 and m_S = +1. In the data, readout 2 shows a pronounced frequency-localized drop from about 38 counts to about 29-30 counts near 3.875-3.880 GHz, while readout 1 stays near its baseline aside from smaller tracking-scale variation. The dip depth is on the order of the expected single-NV contrast, and the two stored averages show the same central suppression in readout 2, although stored averages are not treated as a strong independent repeatability test.
+
+Decision: a pODMR resonance is present.

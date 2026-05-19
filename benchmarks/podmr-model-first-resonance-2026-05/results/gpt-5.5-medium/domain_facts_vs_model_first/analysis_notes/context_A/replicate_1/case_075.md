@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml. With full_expt = 0, the sequence first records a true m_S = 0 reference after optical polarization, skips the optional m_S = 1 reference block, then applies rabi_pulse_mod_wait_time and records the driven readout. Thus readout 1 is the undriven bright reference and readout 2 is the microwave-driven measurement. The provided XML/variable values show length_rabi_pulse = 52 ns and mod_depth = 1. Given the supplied setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse on resonance, so a real pODMR resonance should produce a noticeable drop in readout 2 relative to readout 1, with possible depth below the full 22 percent contrast because of noise and averaging.
+
+The scan is from 3.825 GHz to 3.925 GHz in 5 MHz steps. The strongest feature is around 3.880 GHz, where combined readout 2 drops to about 45.79 while readout 1 is about 49.52. That is a roughly 7.5 percent relative depletion of the driven readout versus the reference. This feature is also present in both stored averages: readout 2 is about 44.62 and 46.96 at the same point while readout 1 is about 49.77 and 49.27. Stored averages are limited and can reflect tracking cadence, but the same-frequency driven-readout dip, with the reference not showing an equal corresponding collapse, is consistent with an ODMR resonance under this near-pi-pulse sequence.
+
+Decision: resonance present.

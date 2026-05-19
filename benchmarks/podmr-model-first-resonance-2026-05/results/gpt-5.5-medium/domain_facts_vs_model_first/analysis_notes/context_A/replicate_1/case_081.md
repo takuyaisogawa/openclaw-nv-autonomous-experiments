@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml with mw_freq as the scanned parameter from 3.825 to 3.925 GHz. The active instructions first polarize the NV and perform detection, giving readout 1 as the bright m_S = 0 reference. The optional explicit m_S = +1 reference block is skipped because full_expt = 0. The active measurement then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, giving readout 2 as the post-microwave signal.
+
+With the supplied setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse. If the scan crossed a real pODMR resonance, readout 2 should show a clear reduction relative to the m_S = 0 reference, with the setup contrast scale around 22% for full m_S = 0 to m_S = +1 transfer. Instead, the combined data have readout 1 mean about 48.92 and readout 2 mean about 48.76, with readout2-readout1 mean about -0.16 counts and point-to-point scatter about 1.53 counts. The largest apparent dark points are only a few counts and are interspersed with bright excursions; the per-average traces look dominated by drift/tracking cadence rather than a repeatable resonance feature.
+
+Decision: resonance absent. The scan does not show the expected strong, coherent post-pulse darkening for an approximately pi-duration pulse at mod_depth = 1.

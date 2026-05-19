@@ -1,0 +1,22 @@
+context_id,replicate,case_id,timestamp,gold_label,prediction,confidence,correct,reasoning_summary,analysis_note_path,mentions_model
+context_A,1,case_005,2026-05-11-131831,absent,resonance_present,1,0,A 52 ns full-depth Rabi pulse gives a repeated post-pulse readout dip near 3.920-3.925 GHz.,,1
+context_A,1,case_011,2026-05-13-100213,absent,resonance_present,1,0,A near-pi 52 ns modulated Rabi pulse produces a localized post-pulse fluorescence dip near 3.905 GHz.,,1
+context_A,1,case_044,2026-05-16-194429,absent,resonance_present,1,0,The active post-pi-pulse readout shows a localized negative contrast dip near 3.895 GHz.,,1
+context_A,1,case_054,2026-05-16-222642,absent,resonance_present,1,0,A localized post-microwave readout drop near 3.885 GHz is consistent with a near-pi Rabimodulated pulse at mod_depth 1.,,1
+context_A,1,case_066,2026-05-17-015447,absent,resonance_present,1,0,A near-pi mod_depth 1 pulse produces a modest signal/reference dip on the high-frequency side.,,1
+context_A,1,case_072,2026-05-17-053345,absent,resonance_present,1,0,The near-pi post-pulse readout shows a localized dip below the mS=0 reference around 3.885-3.890 GHz.,,1
+context_A,1,case_075,2026-05-17-061719,absent,resonance_present,1,0,A repeatable driven-readout dip near 3.880 GHz is consistent with resonance for the 52 ns mod_depth 1 Rabi pulse.,,1
+context_A,1,case_083,2026-05-17-081236,absent,resonance_present,1,0,The post-pulse readout shows a coherent dip versus the 0-reference near 3.845 GHz for the 52 ns mod_depth 1 Rabi pulse.,,1
+context_A,2,case_006,2026-05-11-155154,absent,resonance_present,1,0,A localized post-pulse signal dip near 3.875 GHz is consistent with a 52 ns near-pi Rabi pulse at mod_depth 1.,,1
+context_A,2,case_011,2026-05-13-100213,absent,resonance_present,1,0,The near-pi MW-pulsed readout shows a localized dip below the m_S=0 reference around 3.90 GHz.,,1
+context_B,2,case_011,2026-05-13-100213,absent,resonance_present,1,0,The post-pulse readout has a negative-going dip near 3.904 GHz with the expected sign and order of magnitude for the 52 ns mod_depth 1 pulse.,,1
+context_A,2,case_056,2026-05-16-225623,absent,resonance_present,1,0,A local post-pulse readout dip near 3.875 GHz relative to the reference readout indicates a pODMR resonance.,,1
+context_A,2,case_060,2026-05-16-235726,absent,resonance_present,1,0,A near-pi modulated pulse gives a reproducible readout-2 drop near 3.860 GHz relative to the m_S=0 reference.,,1
+context_A,2,case_075,2026-05-17-061719,absent,resonance_present,1,0,The post-pulse readout shows a localized differential dip near 3.880 GHz under a near-pi Rabi pulse sequence.,,1
+context_A,2,case_083,2026-05-17-081236,absent,resonance_present,1,0,A near-pi 52 ns modulated pulse at mod_depth 1 produces a localized repeatable post-pulse readout drop versus the bright reference.,,1
+context_A,3,case_006,2026-05-11-155154,absent,resonance_present,1,0,Near 3.875 GHz the post-microwave readout is consistently suppressed relative to the bright reference for a near-pi Rabimodulated pulse.,,1
+context_A,3,case_011,2026-05-13-100213,absent,resonance_present,1,0,A localized readout-2 dip relative to the m_S=0 reference appears near 3.90-3.905 GHz with the expected sign for the 52 ns near-pi pulse.,,1
+context_A,3,case_044,2026-05-16-194429,absent,resonance_present,1,0,"The post-Rabi readout shows a localized dip near 3.895 GHz with a 52 ns mod_depth 1 pulse, consistent with a pODMR resonance.",,1
+context_A,3,case_056,2026-05-16-225623,absent,resonance_present,1,0,A localized post-pulse readout dip near 3.875 GHz is consistent with the near-pi Rabimodulated pulse condition.,,1
+context_A,3,case_060,2026-05-16-235726,absent,resonance_present,1,0,A near-pi modulated pulse produces a modest but correctly signed post-pulse fluorescence dip versus the zero-reference readout.,,1
+context_A,3,case_083,2026-05-17-081236,absent,resonance_present,1,0,"A 52 ns mod_depth 1 pulse should be near pi, and the post-pulse readout shows a repeatable localized depletion near 3.845 GHz.",,1

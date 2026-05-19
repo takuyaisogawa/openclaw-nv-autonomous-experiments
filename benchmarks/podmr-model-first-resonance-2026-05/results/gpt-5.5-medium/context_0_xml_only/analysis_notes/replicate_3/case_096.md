@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The provided sequence has full_expt = 0, so the optional 1-level reference block is inactive despite do_adiabatic_inversion being true. The active readouts are therefore: readout 1 is the true 0-level reference immediately after polarization and detection; readout 2 is the signal detection after the modulated Rabi microwave pulse.
+
+Pulse settings from the provided sequence/variables: length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s to 52 ns; mod_depth = 1; mw amplitude = -5 dBm; IQ amplitude = 5 dBm; freqIQ = 50 MHz.
+
+The combined traces are noisy with only two averages, and there are some isolated high and low points. However, the microwave-pulse signal readout is consistently below the 0-level reference over the upper part of the sweep, most notably around 3.895-3.915 GHz. The per-average overlay shows the same high-frequency depression in readout 2 relative to readout 1 more than a single isolated point would. This is compatible with a weak pODMR resonance rather than a flat/no-resonance scan.

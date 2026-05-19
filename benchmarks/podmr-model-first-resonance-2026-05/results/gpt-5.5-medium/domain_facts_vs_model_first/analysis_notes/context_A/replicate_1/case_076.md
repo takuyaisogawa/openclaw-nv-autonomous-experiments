@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+I used the provided sequence XML and the raw export rather than labels or prior outputs.
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML has mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied domain fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse on resonance, so a real pODMR resonance should produce a clear loss of fluorescence in the microwave readout relative to the mS = 0 reference, on the order of the setup contrast scale if well driven.
+
+Readout roles from the instructions: the first detection follows adj_polarize and is the true mS = 0 fluorescence reference. Because full_expt = 0, the explicit mS = 1 reference block is skipped. The second detection follows rabi_pulse_mod_wait_time with the swept microwave frequency and is the active pODMR readout.
+
+The combined readouts stay close together over the scan, generally around 48 to 51 counts. The second readout does not show a coherent, repeatable ODMR-like dip relative to the mS = 0 reference. The largest apparent deviations are isolated and comparable to average-to-average scatter; the stored averages are only two and should mainly be treated as tracking cadence rather than a strong repeatability test. Given the expected strong response for a 52 ns pulse at mod_depth = 1, the absence of a stable contrast feature supports resonance_absent.

@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The XML uses a pre-pulse detection after optical polarization as the bright mS = 0 reference readout. Since full_expt = 0, the separate mS = +1 reference block is skipped. The second acquired readout is after a single rabi_pulse_mod_wait_time pulse and is the pODMR signal readout.
+
+Relevant pulse settings from the provided sequence values: mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is approximately a pi pulse. If the swept microwave frequency crosses a real resonance, the post-pulse signal readout should show a sizable dip relative to the pre-pulse reference, on the order of the setup contrast scale of about 22% for mS = 0 to mS = +1.
+
+The combined data do not show that behavior. The readout2/readout1 ratio is close to unity over the scan, with mean near 0.994 and point-to-point scatter around a few percent. The most negative normalized excursions are about 6% near 3.865 GHz and about 4.6% near 3.910 GHz. The 3.865 GHz feature is dominated by a spike in readout1 rather than a strong readout2 depression, and the 3.910 GHz low point is narrow and small compared with the expected pi-pulse contrast. The two stored averages also mainly show vertical offsets consistent with tracking cadence and do not provide strong independent repeatability evidence.
+
+Decision: resonance absent. There are small noisy excursions, but no resonance-scale, reproducible pODMR dip consistent with the active near-pi pulse sequence.

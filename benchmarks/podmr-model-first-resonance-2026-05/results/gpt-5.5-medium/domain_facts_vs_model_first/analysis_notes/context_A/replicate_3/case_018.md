@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_018.
+
+I used the provided sequence.xml and raw export values to identify the active sequence before deciding. The sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active acquisition records the true m_S = 0 optical reference first: adj_polarize, detection, wait. The optional m_S = 1 reference block is disabled because full_expt = 0, so the second stored readout is not an independent reference; it is the readout after the applied Rabi pulse. The active contrast-carrying pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection.
+
+Given the setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse. Therefore, if the microwave frequency is resonant, the post-pulse readout should show a strong fluorescence reduction relative to the m_S = 0 reference. The combined data show exactly that: readout 2 is near the high-30 count level away from resonance but falls sharply around 3.875-3.880 GHz, reaching about 28 counts, while readout 1 remains around 36-40 counts and even peaks at the deepest point. The fractional drop is comparable to or larger than the expected 22% contrast scale, and it is localized in frequency rather than mirrored in the reference channel. The two stored averages differ by an offset/tracking shift, but both preserve the same central suppression in the post-pulse readout, so the average cadence caveat does not remove the resonance evidence.
+
+Decision: resonance_present.

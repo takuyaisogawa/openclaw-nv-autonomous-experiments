@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided XML is Rabimodulated.xml. The active sequence first polarizes the NV, performs a detection for the true 0-level reference, waits, then because full_expt = 0 skips the optional 1-level reference block. It then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the final detection. Therefore readout 1 is the reference readout before the microwave pulse, and readout 2 is the driven readout after the modulated 52 ns microwave pulse.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps with only two averages. A pODMR resonance should appear as a consistent frequency-localized decrease in the driven readout relative to the reference, or a clear feature in the normalized contrast. Here both readouts show broad drift and noisy point-to-point changes. The driven-minus-reference contrast changes sign repeatedly, and the stronger excursions near 3.900-3.925 GHz are not a coherent dip in the driven channel; they are comparable to the reference fluctuations and per-average scatter. There is no stable resonance-shaped feature across the scan.
+
+Decision: resonance_absent.

@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml with mw_freq as the varied parameter from 3.825 GHz to 3.925 GHz. The relevant active pulse path has full_expt = 0, so the optional "1 level reference" block is skipped. The executed readouts are therefore the initial polarized reference detection after adj_polarize, followed by a rabi_pulse_mod_wait_time and the final detection. The rabi pulse duration is length_rabi_pulse = 52 ns, rounded consistently at the 250 MHz sample rate, and mod_depth is 1 from the recorded variable values in this workspace.
+
+Because the first readout is a reference and the second readout is the post-pulse signal, I compared the second readout against the first rather than judging the two traces independently. The combined signal/reference ratio shows its strongest dip at 3.895 GHz, with readout 2 = 45.385 versus readout 1 = 50.000, giving a ratio of about 0.908. This same frequency is the lowest normalized point in each individual average as well, which argues against the feature being only a random single-average fluctuation. Neighboring points recover on both sides, especially by 3.900 GHz and 3.905 GHz.
+
+The feature is noisy and not broad or highly smooth, but the consistent normalized dip across averages at the same microwave frequency is compatible with a pODMR resonance in this single-NV measurement.

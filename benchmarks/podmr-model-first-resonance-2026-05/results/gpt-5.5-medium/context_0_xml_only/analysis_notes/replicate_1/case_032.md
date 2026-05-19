@@ -1,0 +1,5 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the provided sequence, full_expt is 0, so the optional 1-level reference block is skipped. The first detection occurs immediately after adj_polarize and is the true 0-level reference readout. The second active detection occurs after rabi_pulse_mod_wait_time and is the microwave-driven signal readout. The Rabi pulse duration is length_rabi_pulse = 52 ns, rounded at 250 MS/s to the same value, with mod_depth = 1 in the provided XML/variable values.
+
+The reference readout stays near the mid-40 count level without a narrow dip at the sweep center. The signal readout shows a pronounced, localized decrease centered near 3.875 GHz, dropping to about 34 counts from a surrounding baseline near 43-45 counts. The same dip is visible in both per-average traces, so it is not caused by a single average outlier. Because the dip is frequency-localized in the microwave-driven readout and not mirrored in the reference readout, this is consistent with a pODMR resonance being present.

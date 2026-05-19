@@ -1,0 +1,11 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_044
+
+Inputs used: inputs/sequence.xml and inputs/raw_export.json. The active sequence is Rabimodulated.xml. The instruction block first performs adj_polarize followed by detection, so readout 1 is the polarized m_S = 0 reference. The optional "Acquire 1 level reference" branch is disabled because full_expt = 0, so there is no separate m_S = +1 reference readout. The active microwave operation before the second detection is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1; therefore readout 2 is the signal after the microwave pulse.
+
+Quantitative expected-signal model: for resonant Rabi driving, the transferred population after a pulse of duration t is P = sin^2(pi f_R t), using the stated Rabi frequency scale f_R = 10 MHz * mod_depth. With mod_depth = 1 and t = 52 ns, f_R = 10 MHz and P = sin^2(pi * 10e6 * 52e-9) = 0.996. The stated contrast scale between m_S = 0 and m_S = +1 is about 22%, so a resonant point should show an expected fractional readout decrease of 0.22 * 0.996 = 0.219, about 21.9%. At the measured readout-1 mean of 53.51 counts, this corresponds to an expected drop of about 11.7 counts in the signal readout.
+
+Observed comparison: the combined readout means are readout 1 = 53.51 and readout 2 = 53.43 counts. The mean same-point difference readout2 - readout1 is -0.08 counts with standard deviation 1.26 counts. The largest same-point drop is at 3.895 GHz, where readout 1 = 52.58 and readout 2 = 49.81, a drop of 2.77 counts or 5.3% relative to readout 1. Relative to the readout-2 median of 53.5 counts, the deepest point is lower by 3.69 counts or 6.9%. Stored per-average traces show tracking-scale offsets between averages, so I do not treat them as an independent repeatability test.
+
+Decision: resonance_absent. The active pulse should nearly invert the addressed transition and produce an approximately 22% drop if a pODMR resonance were present, but the observed structure is only a few counts and far below the modeled expected resonant signal.

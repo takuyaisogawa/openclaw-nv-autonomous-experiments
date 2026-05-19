@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Provided sequence XML is Rabimodulated.xml, swept over mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The active instructions have full_expt = 0, so the optional 1-level reference block is skipped despite do_adiabatic_inversion being true. The active readouts are therefore: readout 1 after adj_polarize as the true 0-level / bright reference, then readout 2 after rabi_pulse_mod_wait_time as the microwave-driven signal readout.
+
+The active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns. The provided sequence XML has mod_depth = 1 for this pulse.
+
+Raw traces both show slow baseline variation over the frequency sweep. Comparing readout 2 to readout 1 gives small, sign-changing contrast values rather than a stable frequency-localized ODMR dip or peak. The largest apparent deviations are isolated and not reproduced as a coherent resonance shape across adjacent points or averages. I therefore classify this scan as not showing a resolvable pODMR resonance.

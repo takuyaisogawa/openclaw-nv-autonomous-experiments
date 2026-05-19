@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
+
+From the provided sequence XML, the active microwave operation is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, i.e. 52 ns, and mod_depth = 1. full_expt = 0, so the optional 1-level reference block is skipped. The readouts are therefore the initial post-polarization "true 0 level" detection followed by the final detection after the modulated Rabi pulse. I interpret readout 1 as the 0/reference detection and readout 2 as the microwave-pulsed signal detection.
+
+The raw final readout has several noisy excursions, but the signal/reference comparison shows the strongest repeatable negative contrast at 3.905 GHz: combined ratio about 0.948, with both averages also below baseline at that same point. Other dips are either edge-associated or not consistent between the two averages. This supports a pODMR resonance being present, with moderate confidence due to the sparse two-average data and narrow single-point feature.

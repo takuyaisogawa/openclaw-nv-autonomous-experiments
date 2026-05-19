@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Case case_008.
+
+The provided sequence and export identify the active sequence as Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The executed instructions first polarize and detect the true 0-level reference, then skip the optional 1-level reference block because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by the signal detection. Thus readout 1 is the 0-level/reference readout, and readout 2 is the post-microwave pulse signal readout. The relevant pulse is length_rabi_pulse = 52 ns, rounded at 250 MHz sample rate, with mod_depth = 1 in the variable values used for the run.
+
+I evaluated the post-pulse signal against the preceding reference, not just the absolute raw traces. The raw readouts are noisy at the few-count level and the apparent deviations in readout 2 are mostly isolated point-to-point fluctuations. Candidate dips around 3.885-3.910 GHz are not cleanly separated from reference fluctuations, and the per-average overlay shows poor reproducibility rather than a stable resonance feature shared across averages. The largest normalized excursions also occur where the reference trace itself moves strongly, which weakens the case for an ODMR-related contrast feature.
+
+Decision: resonance_absent. The data do not show a convincing, reproducible pODMR resonance under this Rabimodulated 52 ns, mod_depth 1 measurement.

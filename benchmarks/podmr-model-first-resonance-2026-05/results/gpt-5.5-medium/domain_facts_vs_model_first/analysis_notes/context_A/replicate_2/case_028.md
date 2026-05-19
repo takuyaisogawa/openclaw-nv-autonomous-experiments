@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. In the provided sequence, the first detection follows adj_polarize and is the true m_S = 0 reference readout. The full_expt flag is 0, so the optional separate m_S = +1 reference block is inactive despite do_adiabatic_inversion being true. The second detection follows rabi_pulse_mod_wait_time and is therefore the MW-pulse readout.
+
+The active pulse uses length_rabi_pulse = 52 ns and mod_depth = 1 in the provided XML/variable values. With the stated setup Rabi frequency near 10 MHz at mod_depth = 1, a 52 ns pulse is approximately a pi pulse on resonance. Thus a real pODMR resonance should appear as a strong reduction of the post-pulse readout relative to the m_S = 0 reference, with a maximum contrast on the order of the known 22% scale.
+
+The data show readout 1 staying near 43-46 counts while readout 2 has a pronounced, localized dip near 3.875-3.880 GHz, reaching about 34 counts. Relative to a nearby/reference level around 43-44 counts, this is roughly a 20-23% drop, matching the expected contrast scale for a near-pi pulse. The same dip is visible in both stored averages, though the averages should not be overinterpreted as independent repeatability because they can reflect tracking cadence. The feature is frequency-localized and physically consistent with the active pulse sequence, so I decide that a pODMR resonance is present.

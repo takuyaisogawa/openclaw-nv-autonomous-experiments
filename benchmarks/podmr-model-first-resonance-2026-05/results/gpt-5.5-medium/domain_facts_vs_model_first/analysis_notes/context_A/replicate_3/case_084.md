@@ -1,0 +1,9 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence assessment:
+
+The provided sequence is Rabimodulated.xml. The active instructions first polarize the NV and immediately detect, giving a true m_S = 0 fluorescence reference. Because full_expt = 0, the conditional m_S = 1 reference block is skipped, so there is no independent 1-level reference in the two readouts. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by a second detection. Thus readout 1 is the polarized reference and readout 2 is the post-microwave pulse signal while mw_freq is scanned.
+
+At mod_depth = 1 the stated Rabi frequency is about 10 MHz, so a 52 ns pulse is close to a pi pulse on resonance. With a setup contrast scale of about 22% between m_S = 0 and m_S = +1, a resonant point should show a clear reduction of the post-pulse readout relative to the reference. Instead, readout 2 differs from readout 1 by only roughly a few percent, sometimes above the reference and sometimes below it. Both readouts share a broad downward drift toward high scan values, and the largest negative differences are not a clean, localized resonance feature. The two stored averages should not be overinterpreted as independent repeatability because they may reflect tracking cadence.
+
+Decision: resonance absent. The data do not show the expected strong, localized post-pulse fluorescence dip for this near-pi Rabimodulated pulse.

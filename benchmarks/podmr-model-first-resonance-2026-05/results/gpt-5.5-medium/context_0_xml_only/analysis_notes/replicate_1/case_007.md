@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Sequence XML and raw export indicate the active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. The instructions first acquire a true 0-level reference by polarize + detection, then skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the no-pulse reference and readout 2 is the signal after the modulated Rabi pulse.
+
+The relevant pulse parameters are mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, i.e. 52 ns. The sequence also has do_adiabatic_inversion = 1, but that branch is commented/skipped in the active path.
+
+The combined raw readouts show readout 2 developing a pronounced dip relative to readout 1 near about 3.875-3.885 GHz, with the largest separation near the center of the scan. The per-average traces contain substantial opposing baseline drift between the two averages, but the signal-vs-reference contrast is still most negative in the same central frequency region rather than being only a monotonic drift artifact. This is consistent with a pODMR resonance being present.

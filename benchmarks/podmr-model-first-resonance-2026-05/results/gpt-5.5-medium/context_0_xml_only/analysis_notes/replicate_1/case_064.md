@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The provided sequence is Rabimodulated.xml. The active instructions first polarize and detect a true 0-level reference, then because full_expt is 0 they skip the optional 1-level reference block, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the second detection. Thus readout 1 is the no-microwave reference after optical polarization, and readout 2 is the signal after the modulated microwave Rabi pulse.
+
+The scan varies mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. In the combined data, readout 2 has its clearest low point at 3.910 GHz, about 2.46 counts below readout 1 and also the lowest absolute post-pulse readout value. The same point is lower than neighboring post-pulse values in both individual averages, whereas the reference readout does not have a matching sharp minimum. There is also a ratio dip near 3.865 GHz, but that is partly amplified by a high reference point. The 3.910 GHz feature is therefore the more credible resonance-like contrast.
+
+Decision: resonance_present, with low confidence because there are only two averages and the trace is noisy, but the active signal readout shows a reproducible frequency-local dip consistent with pODMR contrast.

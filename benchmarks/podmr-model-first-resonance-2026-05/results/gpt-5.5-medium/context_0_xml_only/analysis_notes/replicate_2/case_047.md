@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+Active sequence identified from inputs/sequence.xml: Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The sequence first polarizes and detects the bright/0-level reference, then waits, then because full_expt = 0 it skips the optional 1-level reference block. The active measurement pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, and switch_delay = 100 ns, followed by the second detection. Therefore readout 1 is the pre-pulse bright reference and readout 2 is the post-microwave-pulse readout.
+
+For a pODMR resonance in this sequence I would expect a reproducible frequency-localized contrast feature in the post-pulse readout relative to the reference, typically a dip in fluorescence on resonance for a pulse driving population out of the bright state. The two averaged raw traces are noisy and show slow drift plus isolated excursions, including a high point near the upper end of the sweep, but the feature is not a coherent resonance-shaped depression in the post-pulse readout and is not consistently supported by the per-average overlays. The apparent variations are comparable to the point-to-point scatter and average-to-average offsets.
+
+Decision: resonance_absent.

@@ -1,0 +1,7 @@
+<!-- Model-generated analysis note. Not a ground-truth label. -->
+
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a true 0-level/reference readout, wait 2 us, then apply rabi_pulse_mod_wait_time and detect the microwave-affected signal. The optional 1-level reference section is disabled because full_expt = 0, so the two recorded readouts should be interpreted as reference/background followed by the pulsed signal readout rather than a full three-readout reference experiment.
+
+Relevant pulse parameters from the provided XML/export are length_rabi_pulse = 5.2e-08 s, which is 52 ns and already aligned to the 250 MHz sample rate, and mod_depth = 1 in the file-level variable values for this run. The pulse is therefore a short, fully modulated Rabi pulse before the signal detection.
+
+The raw readouts fluctuate around roughly 50 to 52 counts with only two averages. The microwave-affected readout does not show a consistent localized ODMR-like dip or peak that is reproduced against the reference readout or across averages. The largest excursion near 3.915 GHz is a single positive point in readout 2 and is not a coherent resonance feature relative to readout 1; other deviations are comparable to point-to-point noise. I therefore classify this scan as resonance absent.
