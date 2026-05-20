@@ -18,6 +18,12 @@ The full reasoning-effort sweep is summarized in
 
 ![Reasoning-effort sweep for pODMR resonance classification](results/figures/podmr_reasoning_sweep.png)
 
+Example raw pODMR traces for one resonance-present case and one
+resonance-absent case are shown below.  The figure plots the unnormalized
+reference and signal readouts for each case.
+
+![Raw pODMR resonance-present and resonance-absent examples](results/figures/podmr_present_absent_examples.png)
+
 | Reasoning | Condition | TP | TN | FP | FN | Accuracy | False-positive rate | False-negative rate |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | low | XML only | 72 | 184 | 32 | 0 | 88.9% | 14.81% | 0.00% |

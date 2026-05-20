@@ -91,6 +91,12 @@ tables are included under
 
 ![Reasoning-effort sweep for pODMR resonance classification](benchmarks/podmr-model-first-resonance-2026-05/results/figures/podmr_reasoning_sweep.png)
 
+Example raw pODMR traces for one resonance-present case and one
+resonance-absent case are shown below.  The figure plots the unnormalized
+reference and signal readouts for each case.
+
+![Raw pODMR resonance-present and resonance-absent examples](benchmarks/podmr-model-first-resonance-2026-05/results/figures/podmr_present_absent_examples.png)
+
 | Reasoning | XML-only FPR | Domain-facts FPR | Model-first FPR |
 | --- | ---: | ---: | ---: |
 | low | 14.81% | 6.94% | 3.70% |
