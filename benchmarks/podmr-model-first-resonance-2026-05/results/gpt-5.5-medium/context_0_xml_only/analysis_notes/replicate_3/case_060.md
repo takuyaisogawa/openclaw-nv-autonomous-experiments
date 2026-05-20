@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active pulse path sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at the 250 MHz sample rate. The sequence first polarizes and detects, labeled in the XML as acquiring the true 0 level reference. Because full_expt = 0, the optional 1 level reference branch is not active. The active microwave-sensitive readout is therefore the second detection, after rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay).

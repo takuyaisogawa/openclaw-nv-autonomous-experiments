@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The provided sequence has full_expt = 0, so the enabled measurement path is:

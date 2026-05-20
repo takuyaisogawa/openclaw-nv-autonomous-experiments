@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_037.
+Case podmr_022_2026-05-16-172725.
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. The active microwave operation is:
 

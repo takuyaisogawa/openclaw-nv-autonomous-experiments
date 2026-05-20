@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_051.
+Case podmr_037_2026-05-16-213011.
 
 The provided sequence XML defines the active sequence as Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the active instructions, the sequence first performs adj_polarize followed by detection, so readout 1 is the polarized mS = 0 reference. The "Acquire 1 level reference" block is skipped because full_expt = 0, so no separate mS = +1 reference is acquired. The only microwave manipulation before the final detection is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, so readout 2 is the post-Rabi-pulse pODMR signal. Stored averages are treated only as tracking/cadence views, not independent repeatability evidence.
 

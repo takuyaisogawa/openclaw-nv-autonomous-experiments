@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The active instructions first polarize and detect a true m_S = 0 bright reference, then wait, then apply one rabi_pulse_mod_wait_time pulse, then detect again. Because full_expt = 0, the optional m_S = 1 reference block is skipped. Thus readout 1 is the bright reference/tracking readout and readout 2 is the post-microwave-pulse pODMR signal readout.

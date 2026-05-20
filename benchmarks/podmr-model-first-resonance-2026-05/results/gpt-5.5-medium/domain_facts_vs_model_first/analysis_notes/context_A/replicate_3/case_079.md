@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 - Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz.
 - The provided sequence has full_expt = 0, so the "Acquire 1 level reference" block is skipped even though do_adiabatic_inversion is true. The actual readouts are therefore:

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The provided sequence XML is Rabimodulated.xml. The active microwave operation in the measurement body is:

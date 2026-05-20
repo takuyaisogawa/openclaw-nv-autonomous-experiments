@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_016
+Case: podmr_001_2026-05-16-000631
 
 Active sequence identification:
 - SequenceName is Rabimodulated.xml.

@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. In the active instructions, the first detection follows optical polarization and is the true 0-level reference. The optional 1-level reference block is disabled because full_expt is 0, so it does not create an active readout. The final active readout follows rabi_pulse_mod_wait_time using length_rabi_pulse = 5.2e-08 s, which is 52 ns, and mod_depth = 1.
+
+The combined data therefore compare an initial reference readout against the final readout after the modulated microwave pulse. The reference readout stays near the mid-40s across the sweep without a matching narrow dip. The final readout has a localized depression centered near 3.875-3.880 GHz: the combined final readout reaches 35.865 at 3.875 GHz while the reference at the same point is 46.212, and adjacent points are also suppressed. The same low-frequency feature appears in both per-average final-readout traces, with minima around 3.875 GHz and 3.880 GHz.
+
+This is a frequency-localized drop in the microwave-pulsed readout, not a common-mode reference fluctuation, so I classify the pODMR resonance as present.

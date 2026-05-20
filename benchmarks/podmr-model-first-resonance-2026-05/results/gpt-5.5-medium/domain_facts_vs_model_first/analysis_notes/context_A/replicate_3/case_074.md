@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence context:
 
 The active sequence is Rabimodulated.xml. With full_expt = 0, the "Acquire 1 level reference" block is skipped. The executed readouts are:

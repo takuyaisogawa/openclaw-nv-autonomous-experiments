@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - Active sequence: Rabimodulated.xml.
 - The provided sequence sets full_expt = 0, so the optional "1 level reference" branch is skipped.

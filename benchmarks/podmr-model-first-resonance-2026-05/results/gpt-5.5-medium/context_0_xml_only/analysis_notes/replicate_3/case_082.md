@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence XML sets length_rabi_pulse = 5.2e-08 s, which rounds to 52 ns at the 250 MHz sample rate, and mod_depth = 1. full_expt = 0, so the optional "1 level reference" block is inactive. The executed readouts are therefore: readout 1 after adj_polarize, serving as the polarized 0-level/reference readout; readout 2 after the 52 ns modulated Rabi pulse, serving as the pODMR signal readout.
 
 The signal readout does not show a clean localized resonance relative to the reference. Both readouts share a downward trend at the high-frequency end around 3.915-3.925 GHz, indicating common-mode background or drift rather than an isolated microwave-dependent contrast feature. The readout2-readout1 difference changes sign repeatedly across the scan, with positive and negative excursions of comparable size, and the per-average overlays are not consistent enough to support a resolved dip or peak. I therefore classify this scan as resonance absent.

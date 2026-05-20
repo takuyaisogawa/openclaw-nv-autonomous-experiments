@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 - The sequence first performs adj_polarize followed by detection, giving the bright/0-level reference readout before the microwave pulse.

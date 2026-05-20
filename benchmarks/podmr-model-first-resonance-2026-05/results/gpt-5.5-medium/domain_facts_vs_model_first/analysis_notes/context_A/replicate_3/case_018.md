@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_018.
+Case podmr_003_2026-05-16-003531.
 
 I used the provided sequence.xml and raw export values to identify the active sequence before deciding. The sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active acquisition records the true m_S = 0 optical reference first: adj_polarize, detection, wait. The optional m_S = 1 reference block is disabled because full_expt = 0, so the second stored readout is not an independent reference; it is the readout after the applied Rabi pulse. The active contrast-carrying pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection.
 

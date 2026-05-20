@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize the NV and take a detection readout, then skip the optional 1-level reference because full_expt = 0, then apply a rabi_pulse_mod_wait_time pulse and take the second detection readout. Therefore readout 1 is the bright m_S = 0 reference for each scan point, and readout 2 is the post-microwave-pulse signal readout, not an independent dark-state reference.

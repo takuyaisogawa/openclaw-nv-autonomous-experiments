@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The executed instructions first polarize and detect, so readout 1 is the bright/0-level reference before the microwave pulse. Because full_expt is 0, the optional 1-level reference block is skipped. The active measurement pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection, so readout 2 is the microwave-affected signal readout.
 
 The raw traces have a slow downward baseline drift across the scan, and readout 1 also has structure, so the decision should not rely only on absolute PL. However, readout 2 shows its deepest localized depression at about 3.875 GHz, and this point is also lower than the same-frequency reference readout. The dip is visible in the per-average overlay as well, making it more consistent with a pODMR feature than with a single noisy point. I therefore classify this case as resonance present, with the caveat that the feature is modest and sits on top of common-mode drift.

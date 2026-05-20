@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. In the active path, full_expt = 0, so the "Acquire 1 level reference" block is skipped even though do_adiabatic_inversion is true. The sequence therefore records two readouts: readout 1 is the true m_S = 0 reference after adj_polarize and detection, and readout 2 is the detection after the modulated Rabi pulse.
+
+The active pulse is rabi_pulse_mod_wait_time(PSeq, sample_rate, length_rabi_pulse, mod_depth, switch_delay, ch_on). From the provided sequence and exported variable values, length_rabi_pulse is 52 ns and mod_depth is 1. At the stated setup scale this corresponds to about a 10 MHz Rabi frequency, so a 52 ns pulse is near a pi pulse. If the microwave frequency hits the transition, readout 2 should drop relative to the m_S = 0 reference, with the full available contrast scale around 22%.
+
+The combined signal/reference ratio has its strongest dip at 3.860 GHz: readout 1 is 53.44 and readout 2 is 48.85, a ratio of about 0.914 or an 8.6% drop. This is below the full contrast scale but is the clearest frequency-localized feature in the normalized data. The same frequency is also a dip in both stored averages, while other low absolute readout-2 points are less consistent after accounting for the reference channel. Because stored averages can reflect tracking cadence, I do not treat the two averages as a strong repeatability test, but the reference-normalized dip at 3.860 GHz is consistent with a modest pODMR resonance.
+
+Decision: resonance present.

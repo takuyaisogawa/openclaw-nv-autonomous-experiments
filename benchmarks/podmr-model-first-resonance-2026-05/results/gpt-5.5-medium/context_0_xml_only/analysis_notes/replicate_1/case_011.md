@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML sets mod_depth = 1 and length_rabi_pulse = 52 ns; after rounding at 250 MHz sample rate this remains consistent with a short Rabi pulse. full_expt = 0, so the optional 1-level reference branch is skipped.
 
 Readout roles: readout 1 is the initial true 0-level / bright reference after polarization and detection. readout 2 is the signal readout after the modulated Rabi microwave pulse and is the relevant MW-frequency-dependent channel for pODMR.

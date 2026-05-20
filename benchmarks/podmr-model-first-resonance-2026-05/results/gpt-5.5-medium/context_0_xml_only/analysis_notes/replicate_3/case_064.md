@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The pulse sequence first polarizes and detects a true 0-level reference, waits, skips the optional 1-level reference because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection. Thus the two combined readouts correspond to the reference detection and the post-pulse signal detection.

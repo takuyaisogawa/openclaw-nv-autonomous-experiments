@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml. With full_expt = 0, the sequence acquires a true m_S = 0 reference first, then applies a single rabi_pulse_mod_wait_time pulse and detects the post-pulse signal; the optional m_S = +1 reference block is skipped. Thus readout 1 is the bright reference-like readout and readout 2 is the microwave-pulse-affected readout.
 
 The provided sequence XML gives mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s to 52 ns. Given the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse, so an on-resonance transition should produce a large drop in the post-pulse readout, up to roughly the known 22% contrast scale.

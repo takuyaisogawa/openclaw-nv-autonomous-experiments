@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The instructions acquire a true m_S = 0 reference readout immediately after polarization, then because full_expt = 0 the optional m_S = 1 reference block is skipped, and then a single rabi_pulse_mod_wait_time is applied before the signal detection. Thus readout 1 is the m_S = 0 fluorescence reference and readout 2 is the post-Rabi-pulse signal readout.
 
 The provided sequence uses length_rabi_pulse = 52 ns and mod_depth = 1. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse. If the microwave scan crossed a real pODMR resonance, the post-pulse signal should show a strong fluorescence drop relative to the m_S = 0 reference, on the order of the 22% contrast scale.

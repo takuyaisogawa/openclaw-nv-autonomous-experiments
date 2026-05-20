@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 - The sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz.
 - The first detection occurs immediately after adj_polarize, so readout 1 is the true m_S = 0 optical reference.

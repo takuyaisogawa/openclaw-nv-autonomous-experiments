@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect the bright m_S = 0 level, then because full_expt = 0 they skip the separate m_S = +1 reference block. The active experimental readout is therefore the later detection after rabi_pulse_mod_wait_time, so readout 1 is the bright reference and readout 2 is the post-microwave signal.
+
+The provided sequence XML and exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1. With the supplied setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse on resonance. A real resonance should therefore drive population out of m_S = 0 and reduce the post-pulse fluorescence by a substantial fraction of the about 22 percent contrast scale, while off-resonant points should remain closer to the bright reference.
+
+The combined readouts show exactly this pattern: readout 1 stays near 47-50 counts without a comparable central dip, while readout 2 drops sharply near 3.875-3.880 GHz to about 39-40 counts. Relative to the local bright reference near 49 counts, that is about a 19-21 percent suppression, close to the expected contrast for a near-pi pulse. The two stored averages both show the central depression in the post-pulse readout, although the stored averages should not be treated as a strong independent repeatability test. The feature is frequency-localized and consistent with pODMR contrast rather than a common-mode tracking artifact.
+
+Decision: resonance_present.

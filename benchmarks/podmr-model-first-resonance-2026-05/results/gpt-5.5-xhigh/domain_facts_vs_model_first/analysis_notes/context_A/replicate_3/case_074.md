@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the active instruction path, the sequence first polarizes and detects a true m_S = 0 reference, then waits. Because full_expt = 0, the optional +1 reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection. Thus readout 1 is the pre-microwave bright reference and readout 2 is the post-pulse ODMR-sensitive readout.
+
+At mod_depth = 1 the setup Rabi frequency is about 10 MHz, so a 52 ns pulse is near a pi pulse. If the scan crossed a real transition, the second readout should show a large drop relative to the first readout, on the order of the stated 22% m_S = 0 to m_S = +1 contrast scale for this setup.
+
+The combined raw data do not show that. The deepest normalized drop is at 3.875 GHz, where readout2/readout1 is about 0.931, only about 6.9% contrast. Other points show several-percent positive and negative excursions, and the per-average overlay indicates the central dip is not a robust feature beyond the tracking-scale jaggedness. Since stored averages are not a strong independent repeatability test, the main point is that the active near-pi sequence should have produced a much larger and clearer post-pulse readout suppression if a pODMR resonance were present.
+
+Decision: resonance absent.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_079
+Case podmr_065_2026-05-17-071421
 
 Sequence interpretation from inputs/sequence.xml:
 - Active sequence: Rabimodulated pODMR with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps.

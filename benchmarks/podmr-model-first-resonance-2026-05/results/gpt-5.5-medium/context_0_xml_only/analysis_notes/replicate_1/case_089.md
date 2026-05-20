@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The provided XML sets length_rabi_pulse to 52 ns and mod_depth to 1, with full_expt = 0, so the optional 1-level reference block is skipped.
 
 Readout roles: the first detection after adj_polarize is the true 0-level/reference readout. The second detection follows rabi_pulse_mod_wait_time with the 52 ns modulated microwave pulse and is the signal readout. Therefore I compare readout 2 against readout 1 rather than treating the two traces as separate resonances.

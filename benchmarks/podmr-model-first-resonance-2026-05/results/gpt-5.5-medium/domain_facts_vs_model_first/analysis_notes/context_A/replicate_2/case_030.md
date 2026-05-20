@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - Active sequence: Rabimodulated.xml, scanned over mw_freq.
 - full_expt is 0, so the optional "1 level reference" branch is not active.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_050.
+Case podmr_036_2026-05-16-211536.
 
 The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a true mS = 0 reference, then skip the optional +1 reference branch because full_expt = 0, then apply one rabi_pulse_mod_wait_time pulse and detect again. Therefore readout 1 is the pre-pulse mS = 0 reference and readout 2 is the post-Rabi-pulse signal. The active pulse settings are length_rabi_pulse = 52 ns and mod_depth = 1.
 

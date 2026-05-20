@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The sequence sets sample_rate to 250 MHz, enables channels [1 1 1 0 0 0], and uses set_microwave with mw_freq plus detuning. full_expt is 0, so the optional 1-level reference block is inactive. The two active detection events are therefore:

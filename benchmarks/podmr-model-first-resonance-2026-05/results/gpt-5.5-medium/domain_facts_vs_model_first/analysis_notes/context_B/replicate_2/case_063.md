@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_063
+Case: podmr_049_2026-05-17-004217
 
 Sequence and readout roles
 

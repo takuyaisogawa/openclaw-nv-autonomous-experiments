@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The provided sequence is Rabimodulated.xml. The instructions first call adj_polarize followed by detection, which is the true m_S = 0 reference readout. The branch labelled "Acquire 1 level reference" is inside if abs(full_expt)>1e-12, and full_expt is 0, so that m_S = +1 reference readout is not active. After the skipped branch, the sequence applies rabi_pulse_mod_wait_time and then detection again; this second readout is the post-microwave signal readout.

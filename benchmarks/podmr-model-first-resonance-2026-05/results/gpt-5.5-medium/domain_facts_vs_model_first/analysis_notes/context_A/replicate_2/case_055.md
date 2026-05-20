@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated scan varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence XML sets length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup calibration, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse. On resonance, the post-pulse readout should therefore move strongly toward the mS = +1 level, with a contrast scale on the order of the stated 22% between mS = 0 and mS = +1.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml.
 
 The provided sequence first acquires a true m_S = 0 optical reference by polarizing and detecting before any microwave pulse. The m_S = +1 reference block is inactive because full_expt = 0, even though do_adiabatic_inversion is set. The active measurement readout is therefore the later detection after rabi_pulse_mod_wait_time.

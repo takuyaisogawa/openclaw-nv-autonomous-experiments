@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+The provided sequence sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. At the 250 MHz sample rate this pulse duration rounds to 13 samples, still 52 ns. The active instruction flow polarizes the NV, performs a detection readout, waits, skips the conditional 1-level reference block because full_expt = 0, applies the 52 ns rabi_pulse_mod_wait_time pulse with mod_depth = 1, then performs the second detection readout. Therefore readout 1 is the polarized/0-reference fluorescence, and readout 2 is the post-microwave-pulse signal.
+
+Readout 1 remains comparatively flat near the low-to-mid 40s across the scan. Readout 2 has a strong localized fluorescence decrease around 3.870 to 3.880 GHz, reaching about 34 counts while off-resonance points are mostly around 42 to 45 counts. The same dip is visible in both per-average overlays, not just a single noisy average. This frequency-localized contrast in the signal readout relative to the reference is consistent with a pODMR resonance.

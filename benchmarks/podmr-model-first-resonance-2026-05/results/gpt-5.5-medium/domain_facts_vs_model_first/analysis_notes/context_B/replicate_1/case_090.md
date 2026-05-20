@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout identification
 
 The provided sequence is Rabimodulated.xml. The active path polarizes the NV, immediately performs a detection readout, waits, then applies one rabi_pulse_mod_wait_time pulse and performs a second detection readout. The "Acquire 1 level reference" branch is inactive because full_expt = 0, so there is no separate m_S = +1 reference in the active sequence. Thus readout 1 is the m_S = 0 fluorescence reference after polarization, and readout 2 is the fluorescence after the scanned microwave Rabi pulse.

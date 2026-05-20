@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_012.
+Case podmr_030_2026-05-13-160024.
 
 I used inputs/sequence.xml as the sequence source. The active sequence is Rabimodulated.xml / Rabimodulated, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The microwave is applied with a modulated Rabi pulse:
 

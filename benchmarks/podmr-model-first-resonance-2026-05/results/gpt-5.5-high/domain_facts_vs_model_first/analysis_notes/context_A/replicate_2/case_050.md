@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The executable path first polarizes and detects the true m_S = 0 reference, then skips the m_S = +1 reference branch because full_expt = 0, then applies rabi_pulse_mod_wait_time and detects the pulsed signal. Thus readout 1 is the m_S = 0 reference and readout 2 is the microwave-pulsed measurement, not an independent +1 reference.
+
+The provided sequence variables give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup calibration, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse on resonance. If a pODMR resonance were present, the pulsed readout should show a strong negative contrast relative to the 0 reference, on the order of the setup contrast scale between m_S = 0 and m_S = +1, about 22%.
+
+The observed combined readouts do not show that behavior. The pulsed/reference ratio ranges only from about 0.946 to above 1, with the largest negative excursion near 3.920 GHz being roughly 5.4%, far smaller than the expected near-pi-pulse contrast. The differences also change sign across the scan and the per-average traces are inconsistent, which is consistent with noise/tracking variation rather than a robust resonance feature. Stored averages are only two and should not be treated as strong repeatability evidence.
+
+Decision: resonance_absent.

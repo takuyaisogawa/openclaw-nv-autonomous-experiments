@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence XML sets length_rabi_pulse = 5.2e-08 s, which is 52 ns after sample-rate rounding at 250 MHz, and mod_depth = 1. full_expt = 0, so the conditional "Acquire 1 level reference" block is inactive. The active readouts are therefore the initial detection after polarization, serving as the true 0-level/reference readout, followed by the detection after rabi_pulse_mod_wait_time, serving as the driven signal readout.

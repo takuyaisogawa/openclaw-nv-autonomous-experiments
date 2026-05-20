@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML and raw export indicate the active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. The instructions first acquire a true 0-level reference by polarize + detection, then skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the no-pulse reference and readout 2 is the signal after the modulated Rabi pulse.
 
 The relevant pulse parameters are mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, i.e. 52 ns. The sequence also has do_adiabatic_inversion = 1, but that branch is commented/skipped in the active path.

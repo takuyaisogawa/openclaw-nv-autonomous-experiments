@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml. The provided XML sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s; at the 250 MHz sample rate this pulse duration remains 52 ns after rounding. full_expt = 0, so the optional 1-level reference block is skipped. The acquired readouts are therefore the initial optical 0-level reference detection after polarization, followed by the detection after the modulated Rabi microwave pulse.
 
 The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. A pODMR resonance should appear as a frequency-dependent change in the microwave-pulse signal readout relative to the reference, not merely as common-mode readout noise. The clearest feature is near 3.895 GHz, where the signal readout drops to about 45.38 while the reference readout is about 50.0. In the per-average data, the two signal averages are both low at that point, while the reference remains high, so this is not just a single-average outlier. Other points are noisier and there are some common-mode variations, but this localized differential dip is consistent with a pODMR resonance.

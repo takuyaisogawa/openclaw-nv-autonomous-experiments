@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. The active sequence first performs adj_polarize followed by detection, giving a no-microwave true 0 reference readout. The optional 1-level reference block is inactive because full_expt is 0. The only active microwave manipulation before the second detection is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz to 52 ns, and mod_depth = 1.
+
+Thus readout 1 is the reference fluorescence after polarization without the microwave pulse, and readout 2 is the fluorescence after the 52 ns modulated microwave pulse. In the combined data, readout 2 drops below readout 1 over a localized region from about 3.875 to 3.885 GHz, with differences of roughly -2.42, -2.00, and -2.98 counts, corresponding to about -4.6%, -3.7%, and -5.5%. The same negative signal-reference feature appears in both averages at 3.875 and 3.885 GHz, while most other scan points fluctuate closer to zero or with mixed sign.
+
+This localized microwave-induced fluorescence reduction is consistent with a pODMR resonance being present.

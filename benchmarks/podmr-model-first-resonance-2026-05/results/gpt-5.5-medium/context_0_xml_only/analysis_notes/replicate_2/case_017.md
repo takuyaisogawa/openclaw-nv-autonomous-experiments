@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence is Rabimodulated.xml. The active instructions polarize and detect first, then wait, skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth before a second detection. Therefore readout 1 is the initial polarized/reference readout, and readout 2 is the microwave/Rabi-pulse signal readout.

@@ -1,0 +1,5 @@
+Sequence/readout interpretation:
+The provided sequence polarizes the NV, takes a detection readout as the true 0-level bright reference, waits, skips the optional 1-level reference because full_expt = 0, then applies rabi_pulse_mod_wait_time before the final detection. The active microwave pulse uses length_rabi_pulse = 5.2e-08 s, which is 52 ns at the 250 MHz sample rate, with mod_depth = 1. Therefore readout 1 is the pre-pulse bright reference and readout 2 is the post-pulse signal readout.
+
+Resonance decision:
+I compared the post-pulse readout against the reference rather than using either raw trace alone. The signal/reference contrast has negative excursions at several separated scan points, including near 3.86 GHz, 3.885 GHz, and 3.905-3.915 GHz, but these are not a single clean frequency-localized line. The two individual averages do not reproduce the same dip consistently, and the reference readout moves with the signal at the larger raw-intensity changes. I do not see a reliable pODMR resonance in this scan.

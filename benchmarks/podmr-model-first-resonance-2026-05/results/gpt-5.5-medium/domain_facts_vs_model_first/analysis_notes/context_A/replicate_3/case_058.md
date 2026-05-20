@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The active sequence is Rabimodulated.xml varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the provided sequence XML, mod_depth is 1 and length_rabi_pulse is 52 ns. The active instructions first polarize and detect a true mS = 0 reference, then wait, then apply rabi_pulse_mod_wait_time with the 52 ns pulse at the swept microwave frequency, then detect again. full_expt is 0, so the separate mS = +1 reference branch is inactive. Therefore readout 1 is the 0-state reference and readout 2 is the post-pulse signal, not an independent 1-state reference.

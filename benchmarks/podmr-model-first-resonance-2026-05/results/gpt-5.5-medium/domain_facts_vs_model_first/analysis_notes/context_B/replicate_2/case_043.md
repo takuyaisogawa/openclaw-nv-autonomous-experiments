@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_043
+Case: podmr_029_2026-05-16-193002
 
 I used the provided sequence XML to identify the active experiment as `Rabimodulated.xml`, a scan of `mw_freq` from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse after initialization is:
 

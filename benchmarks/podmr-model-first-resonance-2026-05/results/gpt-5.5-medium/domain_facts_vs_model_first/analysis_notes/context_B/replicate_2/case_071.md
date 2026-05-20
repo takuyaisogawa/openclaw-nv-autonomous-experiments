@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_071
+Case: podmr_057_2026-05-17-051839
 
 Input restrictions used: only inputs/sequence.xml, inputs/raw_export.json, and the provided raw readout plot.
 

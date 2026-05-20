@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - Active sequence name from the export is Rabimodulated.xml, matching the provided sequence XML.
 - The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

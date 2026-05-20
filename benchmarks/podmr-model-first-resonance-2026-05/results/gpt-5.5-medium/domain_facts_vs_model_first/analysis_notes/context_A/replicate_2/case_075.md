@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The provided XML is Rabimodulated.xml. The active instructions first polarize and detect, then wait, then apply a modulated Rabi pulse and detect again. Since full_expt is 0, the optional m_S = +1 reference block is skipped. Therefore readout 1 is the bright/0-state reference before the microwave pulse, and readout 2 is the post-pulse signal readout.

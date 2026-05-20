@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/readout interpretation:
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect, giving readout 1 as the bright m_S = 0 reference. Since full_expt = 0, the optional separate m_S = 1 reference block is inactive. The active experiment then applies one rabi_pulse_mod_wait_time pulse and detects again, so readout 2 is the post-Rabi-pulse signal. The active pulse parameters are mod_depth = 1 and length_rabi_pulse = 52 ns.

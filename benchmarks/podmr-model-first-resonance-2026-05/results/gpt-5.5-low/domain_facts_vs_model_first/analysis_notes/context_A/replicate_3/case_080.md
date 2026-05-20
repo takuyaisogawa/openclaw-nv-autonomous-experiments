@@ -1,0 +1,7 @@
+Sequence and readout assessment:
+
+The active sequence is Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction order first polarizes and detects the true m_S = 0 level reference, then waits. The optional m_S = 1 reference block is inactive because full_expt = 0, despite do_adiabatic_inversion being true. The active signal block then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Thus readout 1 is the no-microwave/polarized reference and readout 2 is the post-Rabi-pulse signal readout.
+
+The relevant pulse is 52 ns at mod_depth = 1. Given the setup estimate of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse, so on resonance the expected m_S = 0 to m_S = +1 transfer should be large enough to produce a clear fluorescence contrast on the order of the setup's 22% scale, not just a marginal fluctuation. The stored averages are only two averages and can reflect tracking cadence, so I do not treat the per-average repeatability as a strong independent test.
+
+The combined raw readouts do not show a convincing pODMR resonance. Readout 2 is sometimes below readout 1 and sometimes above it, with no stable, isolated dip of the signal readout relative to the reference near the scan center or elsewhere. The largest excursions are comparable to point-to-point drift/noise and are not organized like the expected strong resonance response from a near-pi pulse. Therefore I classify this case as resonance absent.

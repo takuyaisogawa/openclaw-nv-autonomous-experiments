@@ -1,0 +1,5 @@
+Sequence inspection: the active scan is Rabimodulated.xml varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The pulse program first acquires a true 0-level reference with optical polarization and detection, waits, skips the 1-level reference because full_expt is 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection. Thus the first readout is the optical reference role and the second readout is the microwave-pulse signal role.
+
+Data assessment: both raw readouts fluctuate around roughly 50-52 counts with only two averages, and the two per-average traces show large average-to-average offsets and noisy point-to-point variation. The signal channel does not show a reproducible, frequency-localized ODMR dip or peak relative to the reference across the sweep. Apparent excursions near individual frequency points are comparable to the noise and are not consistently supported by the per-average overlay.
+
+Decision: no clear pODMR resonance is present in this measurement.

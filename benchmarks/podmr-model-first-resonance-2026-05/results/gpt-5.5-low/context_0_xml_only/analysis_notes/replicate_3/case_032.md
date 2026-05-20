@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML shows full_expt = 0, so the optional 1-level reference block is inactive. The executed readouts are therefore: first detection after adj_polarize as the true 0-level/reference readout, then rabi_pulse_mod_wait_time followed by detection as the pODMR signal readout.
+
+Pulse parameters from the provided XML/export: length_rabi_pulse = 52 ns, mod_depth = 1, switch_delay = 100 ns, delay_wrt_1mus = 200 ns, pumping_time = 1 us, wait_time = 2 us, length_last_wait = 1 us. The pulse duration is rounded to the 250 MHz sample rate, but 52 ns is already an integer number of samples.
+
+The reference readout remains around 42-46 counts without a comparable central feature. The signal readout has a pronounced dip centered near 3.875 GHz, falling to about 34 counts, and the dip is visible in both averages. Because the drop appears only in the post-pulse signal readout and is repeatable across averages, this is consistent with a pODMR resonance.

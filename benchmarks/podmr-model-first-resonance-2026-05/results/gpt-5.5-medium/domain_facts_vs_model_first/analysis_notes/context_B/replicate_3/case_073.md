@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided XML is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence first polarizes the NV center and detects the true mS = 0 fluorescence reference. Because full_expt = 0, the conditional mS = 1 reference block is inactive. The only driven measurement is then a rabi_pulse_mod_wait_time pulse followed by detection. Thus readout 1 is the true 0-level reference, and readout 2 is the post-microwave driven readout, not an independent pair of equivalent resonance channels.

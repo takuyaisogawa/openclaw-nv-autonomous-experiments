@@ -1,0 +1,5 @@
+The provided XML defines the active sequence as Rabimodulated.xml. The scan varies mw_freq over 3.825 to 3.925 GHz. The sequence first polarizes the NV and performs a detection, which is the true 0-level / bright reference readout. The optional 1-level reference block is inactive because full_expt = 0, despite do_adiabatic_inversion being true. After the reference, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, mod_depth = 1, and switch_delay = 1e-07 s, then performs the second detection. Thus readout 1 is the polarized reference and readout 2 is the microwave-pulsed signal.
+
+The raw signal readout has a localized depression relative to the reference around about 3.895-3.910 GHz. The contrast is not perfectly smooth because there are only two averages and the reference is noisy, but the post-pulse readout shows a clustered dip over several adjacent scan points followed by recovery, consistent with a pODMR resonance response for this active pulse sequence.
+
+Decision: resonance_present.

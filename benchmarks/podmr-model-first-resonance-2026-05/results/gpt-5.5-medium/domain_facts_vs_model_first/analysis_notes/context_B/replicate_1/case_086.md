@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_086
+Case: podmr_072_2026-05-17-085551
 
 Input basis: I used the supplied sequence XML and the raw_export data only. The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instruction flow is:
 

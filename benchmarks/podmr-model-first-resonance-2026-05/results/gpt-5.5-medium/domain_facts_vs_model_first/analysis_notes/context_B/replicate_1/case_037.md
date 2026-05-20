@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_037.
+Case podmr_022_2026-05-16-172725.
 
 I used the provided sequence XML as the controlling sequence description. The active sequence is Rabimodulated.xml. It polarizes the NV, detects immediately to acquire the true m_S = 0 reference, waits, skips the m_S = 1 reference because full_expt = 0, applies one rabi_pulse_mod_wait_time pulse, then performs the final detection. Thus readout 1 is the polarized m_S = 0 reference and readout 2 is the post-pulse pODMR signal. The active pulse parameters are length_rabi_pulse = 52 ns and mod_depth = 1.
 

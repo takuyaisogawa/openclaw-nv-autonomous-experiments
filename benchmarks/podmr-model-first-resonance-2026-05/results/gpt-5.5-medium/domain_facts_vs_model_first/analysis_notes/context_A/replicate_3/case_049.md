@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The instruction flow first polarizes the NV and detects a true m_S = 0 reference. Because full_expt = 0, the optional separate m_S = 1 reference block is skipped. The second acquired readout is therefore the signal after the active Rabi-modulated microwave pulse, followed by detection.

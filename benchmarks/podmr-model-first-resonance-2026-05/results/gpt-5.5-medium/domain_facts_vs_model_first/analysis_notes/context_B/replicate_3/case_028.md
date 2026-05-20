@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection
 
 The provided sequence is Rabimodulated.xml / SequenceName Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence polarizes into the bright m_S = 0 state, takes a first detection readout, waits, applies one modulated Rabi pulse, then takes the second detection readout. full_expt = 0, so the conditional m_S = +1 reference branch is not executed. Therefore readout 1 is the bright m_S = 0 reference and readout 2 is the pODMR signal after the microwave pulse.

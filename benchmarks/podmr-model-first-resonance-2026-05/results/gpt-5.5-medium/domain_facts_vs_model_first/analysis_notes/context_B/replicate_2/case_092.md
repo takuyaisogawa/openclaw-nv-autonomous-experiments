@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_092
+Case podmr_078_2026-05-17-102220
 
 Sequence identification:
 The provided XML is Rabimodulated.xml. The active instructions first polarize the NV and perform a detection before any microwave pulse, then skip the optional "1 level reference" block because full_expt = 0, then apply one rabi_pulse_mod_wait_time pulse and perform a second detection. Therefore readout 1 is the bright m_S = 0 reference, and readout 2 is the post-microwave-pulse signal. The active pulse parameters from the provided XML are mod_depth = 1 and length_rabi_pulse = 52 ns after sample-rate rounding at 250 MHz.

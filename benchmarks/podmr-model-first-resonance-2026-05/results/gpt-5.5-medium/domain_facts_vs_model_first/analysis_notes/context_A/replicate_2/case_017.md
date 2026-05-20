@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence XML is Rabimodulated.xml. With full_expt = 0, the optional m_S = +1 reference block is skipped. The active readout roles are therefore:

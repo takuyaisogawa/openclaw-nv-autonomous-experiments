@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence first performs adj_polarize followed by detection, giving the true 0-level reference readout. Because full_expt = 0, the intermediate Acquire 1 level reference block is skipped even though do_adiabatic_inversion is set. The only driven measurement readout is after rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Thus readout 1 is the polarized reference and readout 2 is the post-modulated-Rabi-pulse readout.
+
+The raw traces do not show a convincing pODMR resonance. The driven readout and its difference or ratio relative to the reference are noisy and contain isolated highs and lows, but there is no reproducible, coherent dip or resonance-shaped feature across neighboring frequency points. The per-average traces also show strong average-to-average offsets and inconsistent contrast features, so the apparent single-point excursions are not sufficient evidence for a resonance.
+
+Decision: resonance_absent.

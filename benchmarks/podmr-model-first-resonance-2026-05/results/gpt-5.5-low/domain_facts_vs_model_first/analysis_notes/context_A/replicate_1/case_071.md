@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true m_S = 0 reference readout, then because full_expt = 0 it skips the optional m_S = +1 reference block. It then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection readout. Thus readout 1 is the bright reference and readout 2 is the post-microwave-pulse signal.
+
+Using the provided setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse on resonance. With the stated m_S = 0 to m_S = +1 contrast scale of about 22%, an on-resonance point should give a sizable drop of the signal readout relative to the reference. The observed readouts fluctuate by only a few raw-count percent, with readout 2 sometimes above and sometimes below readout 1, and no coherent dip or line shape persists across the scan. The two stored averages are not enough to establish repeatability, and the per-average traces look dominated by tracking/noise-scale variation rather than a resonance feature.
+
+Decision: resonance_absent.

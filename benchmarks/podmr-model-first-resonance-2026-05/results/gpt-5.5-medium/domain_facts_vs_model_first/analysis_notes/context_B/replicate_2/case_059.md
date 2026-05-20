@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_059
+Case: podmr_045_2026-05-16-234216
 
 Input basis and active sequence
 

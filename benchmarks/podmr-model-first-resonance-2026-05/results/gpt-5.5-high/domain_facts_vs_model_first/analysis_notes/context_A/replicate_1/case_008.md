@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a true mS=0 reference, then wait, then apply rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then detect the signal. Because full_expt = 0, the optional mS=+1 reference block is inactive; readout 1 is therefore the 0-reference readout and readout 2 is the post-microwave/Rabi-pulse readout.
+
+From the provided sequence XML and exported variable values, length_rabi_pulse is 5.2e-8 s, i.e. 52 ns, and mod_depth is 1. With the stated setup scale, the Rabi frequency is about 10 MHz at mod_depth = 1, so a 52 ns pulse is approximately a pi pulse on resonance. If the scan crossed a strong pODMR resonance for a single NV center, the signal readout after the microwave pulse should show a contrast-scale change relative to the 0-reference, on the order of the 22% mS=0 to mS=+1 contrast.
+
+The raw readouts do not show such a feature. Readout 2 fluctuates around readout 1 with point-to-point scatter of a few counts, sometimes above and sometimes below the reference. The largest local differences are not stable across the two stored averages, and the stored averages themselves look dominated by tracking/cadence variation rather than repeatable resonance structure. There is no clear dip or peak in the post-pulse readout at the expected contrast scale.
+
+Decision: resonance absent.

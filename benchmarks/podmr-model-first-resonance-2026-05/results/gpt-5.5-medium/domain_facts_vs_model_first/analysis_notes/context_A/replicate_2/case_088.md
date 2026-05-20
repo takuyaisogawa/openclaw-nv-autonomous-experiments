@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 - Active sequence: Rabimodulated-style pODMR sweep of mw_freq.

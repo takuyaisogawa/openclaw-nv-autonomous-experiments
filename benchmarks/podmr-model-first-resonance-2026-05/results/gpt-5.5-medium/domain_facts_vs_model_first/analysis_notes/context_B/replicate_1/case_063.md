@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence is Rabimodulated.xml. The active instructions first polarize the NV and detect immediately, so readout 1 is the bright mS=0 reference. The block labelled "Acquire 1 level reference" is skipped because full_expt = 0, so there is no independent dark-state reference in this run. The sequence then applies one rabi_pulse_mod_wait_time pulse and detects again, so readout 2 is the signal after the microwave pulse.

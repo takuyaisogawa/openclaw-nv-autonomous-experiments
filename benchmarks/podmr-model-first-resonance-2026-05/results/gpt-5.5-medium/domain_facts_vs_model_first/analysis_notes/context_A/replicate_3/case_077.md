@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided XML is Rabimodulated.xml with mw_freq as the swept parameter. The sequence first polarizes and detects the true mS = 0 bright reference. Because full_expt = 0, the optional mS = +1 reference block is skipped. It then applies one modulated Rabi pulse and performs the second detection, so readout 1 is the mS = 0 reference and readout 2 is the post-pulse signal.

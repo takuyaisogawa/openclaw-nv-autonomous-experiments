@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_055
+Case: podmr_041_2026-05-16-224136
 
 I used inputs/sequence.xml as the sequence source. The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect, then because full_expt = 0 they skip the optional m_S = +1 reference block, then apply one rabi_pulse_mod_wait_time pulse and detect again. Therefore readout 1 is the polarized m_S = 0 reference and readout 2 is the pODMR signal after the microwave pulse.
 

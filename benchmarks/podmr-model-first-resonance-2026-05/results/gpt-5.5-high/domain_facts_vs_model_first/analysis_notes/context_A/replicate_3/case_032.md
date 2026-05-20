@@ -1,0 +1,7 @@
+Using the provided sequence XML, the active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz. The sequence first polarizes and detects a true mS=0 reference, then because full_expt = 0 it skips the separate mS=+1 reference block. It then applies one rabi_pulse_mod_wait_time pulse and detects again. Therefore readout 1 is the polarized reference channel, while readout 2 is the frequency-dependent post-rabi-pulse pODMR signal.
+
+The relevant pulse settings are mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at the 250 MHz sample rate to 52 ns. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, a 52 ns pulse is approximately a pi pulse, so an on-resonance transition should give close to the full mS=0 to mS=+1 contrast. The stated contrast scale is about 22%.
+
+The data show readout 2 dropping sharply at the scan point near 3.875 GHz: from a local off-resonance level around 43 to 45 counts down to 34.17 counts. That is about a 20% to 22% reduction, matching the expected contrast for an on-resonance pi pulse. Readout 1 does not show a corresponding dip, so the feature is not a common-mode fluorescence/tracking artifact. The per-average traces both show the same dip qualitatively, although the stored averages are only weak evidence for repeatability because they can reflect tracking cadence.
+
+Decision: a pODMR resonance is present.

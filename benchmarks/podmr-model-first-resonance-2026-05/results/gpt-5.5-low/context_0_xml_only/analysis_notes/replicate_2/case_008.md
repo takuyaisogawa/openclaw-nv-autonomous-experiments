@@ -1,0 +1,5 @@
+Sequence inspection: the active sequence is Rabimodulated.xml with mw_freq swept over 3.825e9 to 3.925e9 Hz. The saved variable values set length_rabi_pulse to 5.2e-08 s (52 ns) and mod_depth to 1. full_expt is 0, so the optional 1-level reference block is inactive. The executed readout structure is therefore: polarize then detection for the true 0-level/reference readout, wait, then a rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by detection for the pulse-affected signal readout.
+
+The combined readouts fluctuate by a few counts across the scan, but the apparent features are not consistent between readout channels or between the two per-average traces. Readout 1 has local high points near about 3.865 GHz and 3.905 GHz, while readout 2 has a local high near about 3.87 GHz and a low near about 3.91 GHz; these are not a coherent ODMR-like resonance signature. The per-average overlay shows substantial average-to-average variation comparable to or larger than the combined features.
+
+Decision: no reliable pODMR resonance is present in this scan.

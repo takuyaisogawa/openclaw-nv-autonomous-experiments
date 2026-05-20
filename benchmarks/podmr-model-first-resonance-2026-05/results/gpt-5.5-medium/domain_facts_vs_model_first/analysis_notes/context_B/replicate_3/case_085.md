@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_085
+Case podmr_071_2026-05-17-084118
 
 Input sequence and active roles:
 - Sequence: Rabimodulated.xml / Rabimodulated.

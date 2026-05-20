@@ -1,0 +1,7 @@
+Using the provided sequence.xml, the active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The sequence first polarizes and detects a true mS = 0 reference, then because full_expt = 0 it skips the separate mS = +1 reference block, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, and performs the MW-pulsed detection. Thus readout 1 is the mS = 0 reference/tracking readout and readout 2 is the readout after the resonant MW pulse candidate.
+
+With the stated setup, mod_depth = 1 gives about a 10 MHz Rabi frequency, so a 52 ns pulse is essentially a pi pulse. If a pODMR resonance is present in the scanned range, the MW-pulsed readout should show a substantial fluorescence reduction relative to the mS = 0 reference, on the order of the setup contrast scale rather than only a small tracking-level fluctuation.
+
+The combined readouts both drift with scan position, and the readout-2/readout-1 ratio fluctuates without a consistent, localized ODMR-like dip. The largest combined ratio decreases are only roughly 4 to 6 percent, for example near 3.900 GHz and at the low-frequency edge, and the per-average traces are not a strong independent repeatability check because the stored averages can mainly reflect tracking cadence. The features visible in the raw readouts therefore look like drift/noise and average-to-average variation rather than a robust near-pi-pulse resonance.
+
+Decision: resonance_absent.

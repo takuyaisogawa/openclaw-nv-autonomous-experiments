@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence XML is Rabimodulated with mw_freq swept from 3.825 to 3.925 GHz. The active pulse sequence has full_expt = 0, so the intermediate 1-level reference block is skipped even though do_adiabatic_inversion is true. The executed readouts are therefore: first detection after optical polarization as the true 0-level/reference readout, then a rabi_pulse_mod_wait_time pulse, then a second detection as the MW-modulated signal readout. The active pulse uses length_rabi_pulse = 5.2e-08 s (52 ns) and mod_depth = 1.
 
 The combined traces show only weak, irregular variation with substantial average-to-average baseline drift. The signal readout has a shallow local low near the middle of the sweep, but it is not a clean, repeatable pODMR feature against the reference/readout drift and the two averages do not show a consistent resonance-shaped contrast. I therefore classify this scan as resonance absent.

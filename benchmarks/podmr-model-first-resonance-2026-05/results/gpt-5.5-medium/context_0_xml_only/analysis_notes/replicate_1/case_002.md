@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 
 The provided sequence XML is Rabimodulated.xml with mw_freq as the swept variable. The pulse program first polarizes the NV and performs detection to acquire the true 0-level reference. Since full_expt is 0, the optional 1-level reference block is inactive. The active experimental signal is then produced by rabi_pulse_mod_wait_time using length_rabi_pulse = 5.2e-08 s, mod_depth = 1, and switch_delay = 1e-07 s, followed by detection. Thus readout 1 is the no-microwave initialized reference and readout 2 is the microwave-pulse readout.

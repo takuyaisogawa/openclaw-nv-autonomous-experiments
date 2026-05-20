@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_068.
+Case podmr_054_2026-05-17-043636.
 
 I used the provided sequence XML and raw export only. The sequence name is Rabimodulated.xml. The active instructions are:
 

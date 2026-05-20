@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated with mw_freq swept across the scan. The active readout structure is: polarize and detect first for a true 0-level/bright reference, skip the optional 1-level reference because full_expt is 0, then apply rabi_pulse_mod_wait_time and detect the MW-affected signal. The active rabi pulse duration is length_rabi_pulse = 52 ns after sample-rate rounding, and mod_depth is 1 in the provided sequence values.
+
+Therefore readout 1 should be treated as the reference and readout 2 as the signal after the microwave pulse. Comparing readout 2 against readout 1, the low-frequency side is mostly at or above the reference, while the middle/high portion of the sweep contains a repeated negative contrast region, especially around roughly 3.865 to 3.900 GHz with several points near 4-5% below the reference. The data are noisy and there are positive outliers, but the contrast is frequency-dependent and not just a single isolated low point.
+
+I classify this as a pODMR resonance present, with low confidence because only two averages are available and the dip is irregular.

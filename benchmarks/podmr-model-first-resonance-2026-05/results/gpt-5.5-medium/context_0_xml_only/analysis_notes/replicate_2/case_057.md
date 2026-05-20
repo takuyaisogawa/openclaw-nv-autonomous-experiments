@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_057
+Case podmr_043_2026-05-16-231159
 
 The provided sequence XML defines a Rabimodulated pulse sequence with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence first acquires a true 0-level reference via polarization followed by detection, waits, skips the optional 1-level reference branch because full_expt = 0, then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the signal detection. Thus readout 1 is the 0-level reference and readout 2 is the post-Rabi-pulse measurement. The relevant active microwave pulse duration is length_rabi_pulse = 52 ns, rounded at 250 MHz sample rate to 52 ns, and the provided sequence XML/variable values give mod_depth = 1.
 

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The active sequence is Rabimodulated.xml. The microwave frequency is swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes the NV and performs a detection that serves as the true 0-level reference. Because full_expt is 0, the optional 1-level reference block is not executed. The active experiment then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, switch_delay = 100 ns, followed by the signal detection. Thus readout 1 is the 0-level reference and readout 2 is the microwave-driven signal readout.

@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml. The sequence first polarizes and detects a true mS=0 bright reference, then skips the optional mS=1 reference because full_expt is 0, then applies one modulated Rabi pulse and performs the second detection. Thus readout 1 is the pre-MW mS=0 reference and readout 2 is the post-pulse signal readout.
+
+The provided sequence parameters give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale, the Rabi frequency is about 10 MHz, so 52 ns is approximately a pi pulse if the microwave is resonant. A real resonance should therefore drive a substantial population transfer and lower the post-pulse signal by a large fraction of the roughly 22% mS=0 to mS=+1 contrast scale.
+
+The scan does not show that behavior. Readout 2 is not a clear dark dip relative to the mS=0 reference; it is often equal to or above readout 1, with only small isolated downward excursions of order a few percent. The two stored averages are also dominated by offset/tracking shifts and do not provide strong independent confirmation of a frequency-localized dip. I therefore classify this pODMR resonance as absent.

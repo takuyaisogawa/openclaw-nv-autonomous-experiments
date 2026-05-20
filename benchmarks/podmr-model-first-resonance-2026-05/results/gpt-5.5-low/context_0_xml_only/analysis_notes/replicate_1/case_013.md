@@ -1,0 +1,5 @@
+The sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect a true 0-level reference, then wait, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1 from the provided XML variable values, and detect again. The full_expt flag is 0, so the optional 1-level reference block is inactive despite the adiabatic inversion boolean being set.
+
+Readout role interpretation: readout 1 is the initial polarized reference detection before the microwave pulse, and readout 2 is the post-pulse measurement detection. The reference readout stays roughly flat around the mid-30-count level with only point-to-point scatter. The post-pulse readout has a pronounced reduction around approximately 3.875-3.880 GHz, dropping to about 29-30 counts while neighboring and edge points are mostly in the low-to-mid 30s. The per-average overlay shows the two averages have large baseline drift in opposite directions, but their combined post-pulse trace still forms a coherent frequency-localized dip not mirrored by the reference trace.
+
+Decision: a pODMR resonance is present.

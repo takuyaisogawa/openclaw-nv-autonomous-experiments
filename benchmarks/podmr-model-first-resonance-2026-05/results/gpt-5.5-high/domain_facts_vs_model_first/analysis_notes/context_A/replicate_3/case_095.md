@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects the bright m_S = 0 reference, then skips the optional m_S = 1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time and detects the signal readout. Thus readout 1 is the bright reference and readout 2 is the post-Rabi-pulse signal readout.
+
+The provided XML and variable values indicate length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse on resonance. If a pODMR resonance were present in the scanned range, the post-pulse signal should show a clear localized fluorescence reduction relative to the bright reference, with an expected scale comparable to the setup contrast of about 22% for a strong inversion.
+
+The combined raw readouts instead track each other closely over the frequency sweep, with only small point-to-point differences and a broad drift common to both readouts. The signal readout is sometimes above and sometimes below the reference, and there is no distinct dip near the center or elsewhere at the expected contrast scale. The per-average traces mainly show offset changes between averages, consistent with tracking cadence/drift rather than independent repeatability of a spectral feature.
+
+Decision: resonance_absent.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML identifies the active sequence as Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The instructions acquire an initial detection immediately after optical polarization as the true m_S = 0 bright reference, then because full_expt = 0 they skip the m_S = +1 reference block, apply one rabi_pulse_mod_wait_time pulse, and acquire the post-pulse signal detection. Thus the two stored readouts are the bright reference and the signal after the microwave pulse, not independent resonance repeats.
 
 The active pulse parameters from the provided XML are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup estimate of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse on resonance, so a real resonance should create a sizeable post-pulse fluorescence reduction, on the order of the setup contrast scale between m_S = 0 and m_S = +1, and localized in frequency.

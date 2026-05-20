@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_049 analysis note
+Case podmr_035_2026-05-16-210045 analysis note
 
 Sequence identification:
 - Active sequence: Rabimodulated.xml / rabi_pulse_mod_wait_time with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps.

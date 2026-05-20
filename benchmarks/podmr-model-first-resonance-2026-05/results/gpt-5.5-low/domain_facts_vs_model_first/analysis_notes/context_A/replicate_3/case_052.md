@@ -1,0 +1,7 @@
+Active sequence decision:
+
+The provided sequence XML is Rabimodulated.xml. In the active instruction path, the sequence first polarizes the NV and performs a detection readout that serves as the bright m_S = 0 reference. The optional m_S = +1 reference branch is disabled because full_expt = 0, so the second stored readout is not an independent dark-state reference. After the initial reference readout, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detects again. Thus readout 1 is the bright reference and readout 2 is the post-microwave signal readout.
+
+Using the supplied setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse on resonance. If the swept microwave frequency crosses a pODMR resonance, the post-pulse signal readout should show a clear fluorescence reduction relative to the bright reference, with scale comparable to the stated 22% contrast between m_S = 0 and m_S = +1. Instead, the two combined readouts are close together across the full 3.825-3.925 GHz scan, with point-to-point fluctuations and mild drift but no localized, repeatable contrast feature. The stored averages differ in baseline and shape enough that they mainly indicate tracking or cadence variation rather than robust repeatability.
+
+Decision: no convincing pODMR resonance is present in this scan.

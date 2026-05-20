@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence polarizes, takes a detection readout for the true 0-level reference, waits, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time followed by the measurement detection.

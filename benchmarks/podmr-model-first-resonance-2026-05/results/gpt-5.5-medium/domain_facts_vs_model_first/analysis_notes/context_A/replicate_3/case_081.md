@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instruction order first polarizes the NV and detects immediately, so readout 1 is the bright m_S = 0 reference. Because full_expt = 0, the optional m_S = +1 reference block is skipped. The active experiment readout is therefore readout 2, acquired after one rabi_pulse_mod_wait_time pulse followed by detection.

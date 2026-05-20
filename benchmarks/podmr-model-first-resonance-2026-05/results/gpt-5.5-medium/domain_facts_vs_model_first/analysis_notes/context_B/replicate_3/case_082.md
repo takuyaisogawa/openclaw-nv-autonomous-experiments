@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_082
+Case podmr_068_2026-05-17-075825
 
 Sequence and readout roles:
 - The active sequence is Rabimodulated.xml / Rabimodulated.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_070
+Case podmr_056_2026-05-17-050447
 
 I used only the provided XML and raw export. The active sequence is Rabimodulated.xml. It first polarizes and detects the bright m_S = 0 reference, then skips the explicit m_S = +1 reference because full_expt = 0, then applies one modulated Rabi pulse and detects again. Thus readout 1 is the pre-pulse m_S = 0 reference and readout 2 is the post-pulse pODMR signal readout.
 

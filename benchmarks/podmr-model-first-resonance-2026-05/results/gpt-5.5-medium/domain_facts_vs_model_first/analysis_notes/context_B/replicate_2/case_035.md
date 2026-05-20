@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_035
+Case: podmr_020_2026-05-16-165809
 
 Sequence interpretation from inputs/sequence.xml:
 - Active sequence: Rabimodulated.xml / Rabimodulated pulsed ODMR scan with mw_freq varied from 3.825 GHz to 3.925 GHz.

@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz. The provided sequence uses a 52 ns rabi_pulse_mod_wait_time pulse with mod_depth = 1 before the signal detection. Since full_expt = 0, the optional 1-level reference block is inactive. The first detection after polarization is the bright/0-level reference readout, and the second detection after the modulated Rabi pulse is the MW-affected signal readout.
+
+I compared the pulsed signal readout against the reference over the scan. A pODMR resonance should appear as a coherent frequency-dependent contrast feature in the pulsed readout, preferably reproducible across the two averages. The combined traces fluctuate by roughly the same scale as the apparent features. The lowest signal/reference contrast occurs near the high-frequency edge around 3.92 GHz, but it is edge-like and not a resolved dip with recovery, while other isolated excursions are present elsewhere. The per-average overlays also show substantial scatter rather than a consistent resonance profile.
+
+Decision: resonance_absent.

@@ -1,0 +1,5 @@
+Case podmr_070_2026-05-17-082720.
+
+The provided sequence XML is Rabimodulated.xml with mw_freq as the scanned parameter. The active instructions first polarize and detect immediately, giving the true 0-level/reference readout. The optional 1-level reference block is inactive because full_expt = 0. The experiment then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns, using mod_depth = 1, followed by the second detection. Thus readout 1 is the pre-microwave 0/reference readout and readout 2 is the post-Rabi-pulse signal readout.
+
+The combined readouts over 3.825 to 3.925 GHz do not show a localized pODMR resonance feature. Both channels drift downward across the sweep, with readout 2 generally lower than readout 1 at higher frequencies, but the behavior is broad and baseline-like rather than a distinct narrow dip or contrast feature. The two averages are noisy and not consistently reinforcing a centered resonance. I therefore classify this case as resonance absent.

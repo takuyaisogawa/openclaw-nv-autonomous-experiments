@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence assessment:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The relevant variables are length_rabi_pulse = 52 ns and mod_depth = 1 in the provided XML / variable values. full_expt = 0, so the optional 1-level reference block is inactive.

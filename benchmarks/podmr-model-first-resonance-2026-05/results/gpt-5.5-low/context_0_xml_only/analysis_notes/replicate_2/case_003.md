@@ -1,0 +1,5 @@
+The active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. With full_expt = 0, the conditional 1-level reference block is skipped. The executed readouts are therefore: first detection after optical polarization as the bright/0-level reference, then a modulated Rabi microwave pulse followed by the second detection as the pODMR signal readout. The microwave pulse uses length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns, and mod_depth = 1.
+
+The second readout shows a pronounced localized reduction around 3.875-3.885 GHz, reaching about 40.5 counts versus its neighboring baseline near 45-47 counts. The reference readout is noisier and has some variation, but it does not show the same sustained contrast depth across both averages. The per-average overlay indicates that the dip in the signal readout near the same frequency region is present in both averages, so this is consistent with a pODMR resonance rather than isolated single-point noise.
+
+Decision: resonance_present.

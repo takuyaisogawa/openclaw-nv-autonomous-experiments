@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect a true m_S = 0 reference, then because full_expt = 0 they skip the separate m_S = +1 reference block and execute one rabi_pulse_mod_wait_time pulse before the second detection. Thus readout 1 is the bright reference and readout 2 is the microwave-sensitive signal readout.
 
 The relevant pulse parameters are length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup calibration of about 10 MHz Rabi frequency at mod_depth = 1, the expected pi time is about 50 ns, so this is a near-pi pulse. On resonance, the second readout should therefore approach the m_S = +1 contrast level, with a possible drop on the order of the 22 percent setup contrast, while readout 1 should remain mostly flat.

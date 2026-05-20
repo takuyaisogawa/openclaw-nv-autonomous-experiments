@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence XML defines a Rabimodulated pODMR sequence. The scan varies mw_freq from 3.825 GHz to 3.925 GHz. The active variables include length_rabi_pulse = 5.2e-08 s, mod_depth = 1, delay_wrt_1mus = 2e-07 s, wait_time = 2e-06 s, and pumping_time = 1e-06 s.

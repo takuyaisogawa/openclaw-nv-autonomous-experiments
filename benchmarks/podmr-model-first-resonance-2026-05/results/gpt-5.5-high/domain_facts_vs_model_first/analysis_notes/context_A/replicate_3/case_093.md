@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml. With full_expt = 0, the enabled path acquires a true mS = 0 reference by polarization followed by detection, then applies one rabi_pulse_mod_wait_time pulse and detects the pulsed state. The conditional mS = +1 reference block is inactive. Therefore readout 1 is the mS = 0 reference/tracking readout, while readout 2 is the microwave-pulsed readout to test for resonance.
+
+The active pulse is length_rabi_pulse = 52 ns at mod_depth = 1, rounded at 250 MHz sampling without changing it. Given the stated setup, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so 52 ns is approximately a pi pulse on resonance. A real resonance should therefore drive substantial population out of mS = 0 and produce a pulsed readout contrast on the order of the setup contrast scale, about 22%, relative to the reference.
+
+The measured readout 2 values do not show such a feature. Across the 3.825 to 3.925 GHz scan, readout 2 stays close to readout 1, with the largest deficits only around 4% and comparable positive excursions elsewhere. The per-average traces show large baseline shifts consistent with tracking cadence, so the two stored averages are not strong independent confirmation of any narrow dip. The small alternating differences are much smaller than the expected near-pi resonance response and are not a coherent ODMR line.
+
+Decision: resonance_absent.

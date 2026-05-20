@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence polarizes the NV, takes a detection readout as the true 0-level reference, waits, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then takes the signal detection readout. full_expt = 0, so the optional 1-level reference block is skipped despite do_adiabatic_inversion being true.
 
 Readout role interpretation:

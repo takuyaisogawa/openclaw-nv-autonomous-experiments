@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML inspection:
 
 - Active sequence: Rabimodulated.xml.

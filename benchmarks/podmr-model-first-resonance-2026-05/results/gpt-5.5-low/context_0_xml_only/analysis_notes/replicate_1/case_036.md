@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. The active scan varies mw_freq from 3.825 to 3.925 GHz with 5 MHz spacing. In the instructions, full_expt is 0, so the optional "Acquire 1 level reference" block is inactive. The active readout roles are therefore: first detection after optical polarization as the true 0-level/reference readout, then a microwave rabi_pulse_mod_wait_time followed by the signal detection. The XML values give mod_depth = 1 and length_rabi_pulse = 5.2e-08 s; at 250 MHz sample rate this remains a 52 ns pulse after rounding.
+
+The combined traces show fluctuations of both the reference and signal readouts over the frequency sweep. The signal readout has a low region near 3.880-3.885 GHz, but the reference readout is also low in this neighborhood and the per-average overlays show substantial opposing drift between averages. The signal/reference difference and ratio change sign repeatedly across the scan rather than forming a stable, isolated resonance feature. The apparent dip is not convincing as a pODMR resonance when accounting for the active reference role and average-to-average variation.
+
+Decision: resonance_absent.

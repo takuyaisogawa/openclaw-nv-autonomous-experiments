@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz with 21 points.
 
 The provided XML sets length_rabi_pulse = 5.2e-08 s (52 ns) and mod_depth = 1. The instruction block first polarizes and detects a true 0-level reference, then waits. Because full_expt = 0, the optional "Acquire 1 level reference" block is inactive even though do_adiabatic_inversion is true. The active experimental block applies rabi_pulse_mod_wait_time using the scanned microwave frequency, 52 ns pulse duration, and mod_depth 1, then performs the second detection.

@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The instruction flow first polarizes and detects a true m_S=0 reference, then skips the +1 reference branch because full_expt=0, then applies the active rabi_pulse_mod_wait_time pulse and detects the signal readout. Thus readout 1 is the 0-state/reference readout and readout 2 is the pulse-dependent pODMR signal readout.
+
+Relevant pulse settings from the provided sequence/export are mod_depth=1 and length_rabi_pulse=52 ns. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth=1, the Rabi period is about 100 ns and a 52 ns pulse is approximately a pi pulse. If the microwave frequency hits the NV transition, a substantial transfer from m_S=0 to m_S=+1 should occur, giving a signal readout lower than the 0 reference by a scale comparable to the setup contrast, about 22% in the ideal strong case.
+
+The combined readouts do not show that behavior. The second readout is similar to the reference and sometimes higher. Some points in the middle/right of the scan have readout 2 lower than readout 1 by a few counts, but this is much smaller than the expected near-pi contrast and is not a clean, repeatable resonance-shaped feature across the stored averages. The per-average traces also show large tracking/drift offsets, and the averages should not be treated as a strong independent repeatability test.
+
+Decision: resonance_absent. There is no convincing pODMR resonance in this scan under the active pulse conditions.

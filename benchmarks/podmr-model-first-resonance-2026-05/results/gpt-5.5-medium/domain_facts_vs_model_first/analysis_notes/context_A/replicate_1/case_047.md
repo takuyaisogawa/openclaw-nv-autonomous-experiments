@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence is Rabimodulated.xml. The active path first polarizes the NV and performs a detection readout, which is the m_S = 0 / bright reference. The optional m_S = +1 reference block is skipped because full_expt = 0. After that, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then performs the second detection readout. Thus readout 1 is the polarized reference and readout 2 is the microwave-pulse measurement.

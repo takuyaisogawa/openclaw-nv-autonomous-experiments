@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 - Active sequence: Rabimodulated pODMR with mw_freq swept from 3.825 GHz to 3.925 GHz.
 - Readout 1 role: true m_S = 0 reference acquired immediately after optical polarization, before any microwave pulse.

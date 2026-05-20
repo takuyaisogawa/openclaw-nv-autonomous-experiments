@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence XML and exported sequence identify the active pulse sequence as Rabimodulated.xml, with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The executed pulse train first performs optical polarization and detection, then skips the optional 1-level reference because full_expt = 0, then applies rabi_pulse_mod_wait_time using length_rabi_pulse before the second detection. Therefore readout 1 is the true 0-level/no-microwave reference after polarization, and readout 2 is the readout after the microwave rabi-modulated pulse.
 
 The relevant pulse settings are length_rabi_pulse = 5.2e-08 s, which is 52 ns, and mod_depth = 1. At sample_rate = 250 MHz this duration is already aligned to the 4 ns sample grid.

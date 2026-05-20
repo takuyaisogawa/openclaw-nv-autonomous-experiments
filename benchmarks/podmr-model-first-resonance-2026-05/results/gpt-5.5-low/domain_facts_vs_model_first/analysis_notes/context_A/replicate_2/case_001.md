@@ -1,0 +1,7 @@
+Active sequence decision:
+
+The saved experiment sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions acquire a true m_S = 0 fluorescence reference immediately after optical polarization, then, because full_expt = 0, skip the separate m_S = 1 reference block. The final active block applies rabi_pulse_mod_wait_time followed by detection, so readout 1 is the polarized reference and readout 2 is the post-microwave-pulse signal.
+
+Key parameters from the run are mod_depth = 1 and length_rabi_pulse = 52 ns. With the provided setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is near a pi pulse. If a pODMR resonance were present for a single NV, the post-pulse readout should show a clear frequency-localized fluorescence change relative to the m_S = 0 reference, on the order of the stated 22% contrast scale for a good transition.
+
+The combined raw readouts do not show that behavior. Readout 2 is noisy and often above readout 1, with isolated excursions near the high-frequency end, but there is no stable localized dip or coherent resonance-like feature relative to the reference. The two stored averages differ strongly in baseline/trend, consistent with tracking cadence effects rather than independent repeatability of a resonance. Because the expected near-pi-pulse contrast would be much larger and more structured than the observed inconsistent readout differences, I judge the resonance absent.

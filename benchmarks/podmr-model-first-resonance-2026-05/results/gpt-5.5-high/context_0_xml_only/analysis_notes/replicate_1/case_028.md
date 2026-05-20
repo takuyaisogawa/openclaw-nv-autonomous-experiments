@@ -1,0 +1,5 @@
+Provided sequence XML identifies the active sequence as Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz with 21 points. The active instructions first polarize and detect, giving the true 0-level/reference readout. The optional 1-level reference block is inactive because full_expt = 0. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s (52 ns), mod_depth = 1, and switch_delay = 1e-07 s, followed by detection; this second detection is the microwave-pulse signal readout.
+
+The first readout is comparatively stable across the scan, mostly around 42-46 counts. The second readout has a strong localized dip around the middle of the sweep, falling from the low-to-mid 40s to about 34 counts near 3.875-3.880 GHz, then recovering toward the low-to-mid 40s. Both averages show the same central depression in the second readout while the reference does not show a matching collapse. This is the expected pODMR contrast pattern for a resonance under the active modulated Rabi pulse.
+
+Decision: pODMR resonance is present.

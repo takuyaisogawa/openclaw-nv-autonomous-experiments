@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825e9 to 3.925e9 Hz in 5 MHz steps. The executed variables include length_rabi_pulse = 5.2e-08 s and mod_depth = 1. The full_expt variable is 0, so the conditional one-level reference block is skipped.

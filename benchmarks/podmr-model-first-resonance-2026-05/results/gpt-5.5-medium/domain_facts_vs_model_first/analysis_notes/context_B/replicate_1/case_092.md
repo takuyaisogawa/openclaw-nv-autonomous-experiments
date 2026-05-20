@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_092
+Case: podmr_078_2026-05-17-102220
 
 Sequence and readout roles:
 - The run export identifies the active sequence as Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps.

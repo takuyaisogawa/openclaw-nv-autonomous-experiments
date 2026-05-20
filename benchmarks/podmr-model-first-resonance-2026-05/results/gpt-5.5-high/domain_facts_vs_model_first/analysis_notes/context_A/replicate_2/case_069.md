@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. In the provided sequence XML, full_expt is 0, so the intermediate m_S = +1 reference block is disabled even though do_adiabatic_inversion is true. The active readouts are therefore: readout 1 is the initial bright m_S = 0 reference after optical polarization, and readout 2 is the detection after the microwave Rabi pulse.
+
+The microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, mod_depth = 1, and switch_delay = 1e-07 s. With the stated setup calibration, mod_depth = 1 gives roughly 10 MHz Rabi frequency, so 52 ns is close to a pi pulse on resonance. If a pODMR resonance were present and well driven, readout 2 should show a localized fluorescence loss relative to readout 1, potentially on the order of the setup contrast scale (~22%) for strong inversion.
+
+The measured readout-2 minus readout-1 differences are small and irregular compared with that expected contrast. The largest negative fractional changes are only about 5-6%, and they occur at several separated scan points rather than as a clear localized resonance feature. Other nearby points have positive differences. The per-average overlay shows substantial tracking/baseline variation between the two stored averages, so the average traces do not provide a strong independent repeatability check.
+
+Decision: resonance_absent. The scan does not show a localized, contrast-scale post-microwave dip consistent with a pODMR resonance under this near-pi-pulse sequence.

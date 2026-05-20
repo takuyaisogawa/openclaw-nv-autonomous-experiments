@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 - The provided XML is the Rabimodulated sequence.

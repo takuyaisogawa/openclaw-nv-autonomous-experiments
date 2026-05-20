@@ -9,11 +9,12 @@ This repository has two parallel parts:
 - **Case studies:** sanitized completed OpenClaw project folders from real
   autonomous-agent NV experiments.
 - **Benchmarks:** offline pODMR resonance-classification tests that evaluate
-  how prompt context changes agent judgment on raw NV measurements.
+  how prompt context and reasoning effort change agent judgment on raw NV
+  measurements.
 
 The release preserves project state, evidence logs, bridge records, figures,
-reports, analysis artifacts, benchmark inputs, labels, predictions, and scoring
-scripts needed to inspect the results.
+reports, analysis artifacts, benchmark inputs, labels, predictions, per-run
+analysis notes, and scoring scripts needed to inspect the results.
 
 ## Public Scope
 
@@ -43,7 +44,7 @@ For a quick review:
 | Part | What It Shows | Main Artifacts |
 | --- | --- | --- |
 | Case studies | A safety-bounded LLM research agent operating real NV-center experiments | Project state, evidence logs, bridge records, figures, reports, pODMR/Ramsey/CPMG analyses |
-| Benchmarks | How prompt context affects pODMR resonance judgments | Raw export JSON, raw-readout figures, prompts, labels, predictions, analysis notes, scoring scripts |
+| Benchmarks | How prompt context and reasoning effort affect pODMR resonance judgments | Raw export JSON, raw-readout figures, prompts, labels, predictions, analysis notes, scoring scripts |
 | Source and docs | Public audit boundary for OpenClaw/NV project management and analysis | Python/MATLAB analysis code, public runtime source, system docs, safety notes |
 
 ## Case Studies
@@ -69,18 +70,31 @@ time using raw export JSON files, raw-readout figures, and prompt context.
 | [pODMR model-first resonance benchmark](benchmarks/podmr-model-first-resonance-2026-05/README.md) | 96 single-case pODMR classifications with prompts, raw inputs, labels, predictions, analysis notes, and scoring scripts |
 
 The pODMR benchmark contains 24 resonance-present and 72 resonance-absent
-strong-pi measurements. Each prompt condition was run for three GPT-5.5 medium
-replicates. The model-first condition adds a requirement to establish the
-expected physical signal with a simulation or explicit quantitative model
-calculation before deciding whether a resonance is present.
+strong-pi measurements. Each prompt condition was run for three replicates with
+GPT-5.5 at four reasoning-effort settings: `low`, `medium`, `high`, and
+`xhigh`.
 
-The included benchmark summary reports:
+The three prompt conditions are:
 
-| Condition | Accuracy | False-positive rate | False-negative rate |
+| Condition | Description |
+| --- | --- |
+| XML only | Uses the raw export, raw-readout figure, and sequence XML. |
+| Domain facts | Adds compact NV-domain facts such as contrast scale, mod-depth/Rabi scaling, and average interpretation. |
+| Model-first | Adds a requirement to establish the expected signal with a simulation or explicit quantitative model calculation before judging resonance presence. |
+
+The main trend is that higher reasoning effort alone can increase
+false-positive resonance calls, while the model-first condition suppresses
+false positives across reasoning-effort settings without introducing false
+negatives in this dataset. Full predictions, per-run analysis notes, and scoring
+tables are included under
+[benchmarks/podmr-model-first-resonance-2026-05/results](benchmarks/podmr-model-first-resonance-2026-05/results).
+
+| Reasoning | XML-only FPR | Domain-facts FPR | Model-first FPR |
 | --- | ---: | ---: | ---: |
-| XML only | 75.3% | 32.9% | 0.0% |
-| Domain facts | 93.1% | 9.3% | 0.0% |
-| Model-first | 99.7% | 0.46% | 0.0% |
+| low | 14.81% | 6.94% | 3.70% |
+| medium | 32.87% | 9.26% | 0.46% |
+| high | 44.44% | 12.04% | 0.46% |
+| xhigh | 53.24% | 6.48% | 0.46% |
 
 ## Repository Layout
 
@@ -94,6 +108,14 @@ cases/
     project/
 benchmarks/
   podmr-model-first-resonance-2026-05/
+    inputs/
+    labels/
+    prompts/
+    results/
+      gpt-5.5-low/
+      gpt-5.5-medium/
+      gpt-5.5-high/
+      gpt-5.5-xhigh/
 python/
   openclaw_runtime/
   openclaw_nv_execution_source/

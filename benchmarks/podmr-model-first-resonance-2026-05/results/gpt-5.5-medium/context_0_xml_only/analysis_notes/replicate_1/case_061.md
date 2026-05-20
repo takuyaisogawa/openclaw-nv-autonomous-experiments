@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned parameter. The active microwave operation is rabi_pulse_mod_wait_time after the initial polarization/reference detection. The active pulse duration is length_rabi_pulse = 5.2e-08 s, which is 52 ns and is exactly 13 samples at the 250 MHz sample rate. The active mod_depth is 1. The full_expt variable is 0, so the optional 1-level reference block is skipped.

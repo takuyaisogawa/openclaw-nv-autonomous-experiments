@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml / Rabimodulated, sweeping mw_freq from 3.825 GHz to 3.925 GHz. The microwave frequency is used with detuning added, and the active pulse before the signal readout is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, i.e. 52 ns. The provided sequence XML sets mod_depth = 1. The sample rate is 250 MHz, so the 52 ns pulse is rounded to the nearest 4 ns sample interval but remains 52 ns.

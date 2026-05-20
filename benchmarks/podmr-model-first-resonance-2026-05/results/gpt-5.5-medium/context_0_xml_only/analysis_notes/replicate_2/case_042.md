@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and role assessment:
 
 The provided XML is Rabimodulated.xml. The active scan varies mw_freq across the pODMR range. The active instruction path first polarizes and detects the true 0-level reference, then waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then performs the final detection. The full_expt variable is 0, so the optional 1-level reference block is inactive. Therefore readout 1 is the reference/polarization readout and readout 2 is the signal readout after the modulated microwave pulse.

@@ -1,0 +1,11 @@
+Case podmr_082_2026-05-17-111957.
+
+I used the provided sequence XML before deciding. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The active pulse is rabi_pulse_mod_wait_time after the initial bright-state reference detection. The pulse duration is length_rabi_pulse = 52 ns; at sample_rate = 250 MHz this is exactly 13 samples, so rounding does not change it. mod_depth = 1. full_expt = 0, so the optional 1-level reference block is inactive. Thus readout 1 is the true m_S = 0 fluorescence reference after polarization, and readout 2 is the post-Rabi-pulse signal.
+
+Physical model calculation: for a square resonant pulse, using the stated Rabi frequency f_R = 10 MHz at mod_depth = 1, the transition probability is
+P(detuning) = f_R^2 / (f_R^2 + detuning^2) * sin^2(pi * pulse_duration * sqrt(f_R^2 + detuning^2)).
+At zero detuning and pulse_duration = 52 ns, P = sin^2(pi * 10e6 * 52e-9) = 0.996. With the setup contrast scale C = 0.22, a resonance should therefore produce a fractional fluorescence drop C * P = 0.219, about 11 raw-count units on the observed roughly 50-count baseline. Since the scan step is 5 MHz, a resonance inside the scanned range would be at most 2.5 MHz from a sampled point; the same model still predicts about 20.4% contrast there. Even at 5 MHz detuning the predicted contrast is about 16.5%.
+
+Data check: the combined normalized contrast c = 1 - readout2/readout1 has mean 0.0067, standard deviation 0.0300, minimum -0.0527, and maximum 0.0660. The largest observed signal decrease is therefore only 6.6%, far below the expected 20-22% pODMR feature. The two stored averages differ with an estimated standard error of the mean near 0.036 in normalized contrast, consistent with noise/tracking-scale variation rather than a repeatable deep dip. Fitting the fixed physical resonance shape plus a linear baseline gives SSE 0.0207, worse than a linear baseline alone with SSE 0.0173. Allowing the resonance amplitude to float prefers a negative amplitude near 3.870 GHz, meaning a signal increase rather than the expected fluorescence decrease.
+
+Decision: resonance_absent. The pulse should be nearly a pi pulse if it is on resonance, but the signal trace lacks the required reference-normalized fluorescence dip and does not support the expected model.

@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz. The instructions first polarize and detect, giving readout 1 as the bright m_S = 0 reference. Because full_expt = 0, the optional m_S = 1 reference block is skipped. The active experimental readout is therefore readout 2 after a rabi_pulse_mod_wait_time pulse followed by detection.
+
+The active pulse uses length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, the Rabi period is about 100 ns and a pi pulse is about 50 ns, so this pulse should produce near-maximum transfer on resonance. The expected contrast scale between m_S = 0 and m_S = +1 is about 22%, so a valid resonance should look like a roughly 20% darkening of the post-pulse readout relative to the bright reference, not merely a tiny fluctuation.
+
+In the combined readouts, readout 2 drops from near 29-30 counts to about 24.2 counts around 3.875-3.880 GHz, while readout 1 remains near 30-31 counts there. That is a deficit of roughly 19-23% relative to the bright reference, matching the expected contrast for a near-pi pulse. The per-average traces show strong tracking or drift trends, so the stored averages are not a robust independent repeatability check, but the combined frequency-localized dip in the signal readout has the right sign, size, and location behavior for pODMR.
+
+Decision: resonance_present.

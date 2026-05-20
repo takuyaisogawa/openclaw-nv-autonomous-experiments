@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles:
 
 The provided sequence is Rabimodulated.xml. The active path sets full_expt = 0, so the optional "1 level reference" block is skipped. The two active detections are therefore:

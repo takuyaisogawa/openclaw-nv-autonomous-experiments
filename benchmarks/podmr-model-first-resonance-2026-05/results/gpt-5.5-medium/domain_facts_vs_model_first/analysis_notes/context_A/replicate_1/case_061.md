@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The provided sequence sets length_rabi_pulse = 52 ns and mod_depth = 1. The active instructions first polarize and detect the bright m_S = 0 reference. The full_expt variable is 0, so the optional m_S = +1 reference block is skipped. The second acquired readout is therefore the detection after a Rabi-modulated microwave pulse at the swept frequency.

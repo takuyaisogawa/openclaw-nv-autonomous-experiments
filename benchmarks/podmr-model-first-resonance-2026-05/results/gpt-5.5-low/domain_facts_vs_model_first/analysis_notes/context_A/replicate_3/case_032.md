@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The executed instructions first polarize and detect a true m_S = 0 reference, then skip the optional m_S = +1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection. Thus readout 1 is the 0 reference and readout 2 is the post-microwave signal readout.
+
+Using the stated setup scale, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse on resonance and can produce a large contrast between the reference and signal readouts. The combined data show a sharp, localized drop in readout 2 near 3.875 GHz, from a baseline around 43-45 raw counts down to about 34.2, while readout 1 remains near its usual level. This is about a 25 percent drop relative to the local reference, consistent with the expected m_S = 0 to m_S = +1 contrast scale. Both stored averages show the same central readout 2 depression, though the averages are not treated as a strong independent repeatability test.
+
+Decision: a pODMR resonance is present.

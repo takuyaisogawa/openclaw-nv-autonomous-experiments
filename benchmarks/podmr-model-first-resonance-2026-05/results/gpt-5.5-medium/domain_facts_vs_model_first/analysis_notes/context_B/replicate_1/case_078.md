@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml. The sequence first polarizes and detects the true m_S = 0 reference, then waits. The m_S = +1 reference block is inactive because full_expt = 0, so the only later readout is the signal after a Rabi-modulated microwave pulse. Thus readout 1 is the m_S = 0 reference and readout 2 is the post-pulse pODMR signal.
 
 Relevant pulse parameters from the sequence/export are length_rabi_pulse = 52 ns and mod_depth = 1. The setup fact gives a Rabi frequency of about 10 MHz at mod_depth = 1, scaling linearly with mod_depth, so the resonant pulse rotation is f_Rabi * t = 10 MHz * 52 ns = 0.52 cycles. A two-level square-pulse model gives resonant transfer probability P = sin^2(pi * f_Rabi * t) = sin^2(pi * 0.52) = 0.996. With an m_S = 0 to m_S = +1 contrast scale of about 22%, the expected on-resonance raw signal drop is 0.22 * 0.996 = 21.9% of the reference. The mean reference readout is 50.97 counts, so the expected on-resonance signal is lower by about 11.17 counts, near 39.8 counts.

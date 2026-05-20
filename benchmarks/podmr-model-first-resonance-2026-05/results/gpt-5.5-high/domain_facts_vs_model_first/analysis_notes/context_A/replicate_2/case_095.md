@@ -1,0 +1,7 @@
+The provided XML and export identify the active sequence as Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. The active readout structure has full_expt = 0, so the sequence records a true mS = 0 reference after optical polarization, skips the separate mS = +1 reference branch, then applies rabi_pulse_mod_wait_time and records the signal readout. Thus readout 1 is the zero-state reference and readout 2 is the post-microwave signal.
+
+The active pulse parameters are mod_depth = 1 and length_rabi_pulse = 52 ns. Using the supplied setup calibration of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse, so an on-resonance transition should produce a large fluorescence decrease in the signal readout relative to the zero reference, on the order of the stated 22% contrast scale if the resonance is well driven.
+
+The observed signal-reference differences are small, irregular, and change sign across the scan. The largest negative signal/reference deviations are only around 4% to 5%, and comparable positive excursions also appear. Both readouts show slow drift and average-to-average offsets consistent with tracking cadence effects rather than a reproducible resonance feature. There is no clear frequency-localized dip in the post-microwave signal relative to the reference at the expected contrast scale for this near-pi pulse.
+
+Decision: resonance_absent.

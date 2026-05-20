@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence decision:
 
 The provided sequence is Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz. The active microwave operation is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, i.e. 52 ns, and mod_depth = 1 from the provided sequence XML. The variable full_expt is 0, so the optional "Acquire 1 level reference" block is not active even though it appears in the instructions. Therefore the active readouts are the initial true 0-level reference detection after optical polarization, followed by the signal detection after the modulated 52 ns microwave pulse.

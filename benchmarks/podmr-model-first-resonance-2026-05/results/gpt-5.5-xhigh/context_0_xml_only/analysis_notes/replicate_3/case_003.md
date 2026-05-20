@@ -1,0 +1,5 @@
+The active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz. In the provided sequence, full_expt is 0, so the optional 1-level reference branch is inactive. The two active detections are the initial true 0-level reference after polarization, followed by detection after a rabi_pulse_mod_wait_time microwave pulse. The pulse duration is length_rabi_pulse = 5.2e-08 s, which is 52 ns and rounds exactly to 13 samples at 250 MS/s. The listed mod_depth is 1.
+
+The relevant pODMR contrast is therefore the post-pulse detection readout compared with the initial reference readout. Readout 2 shows a pronounced, contiguous depression around 3.875-3.885 GHz, reaching about 40.5-41.9 raw counts while nearby off-feature points recover into the mid-to-high 40s. This low feature is visible in both per-average traces for the post-pulse readout, and the initial reference readout does not show the same full three-point trough. That behavior is consistent with a microwave-frequency-dependent resonance rather than only common fluorescence drift.
+
+Decision: resonance_present.

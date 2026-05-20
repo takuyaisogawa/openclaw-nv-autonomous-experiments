@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided XML is Rabimodulated.xml. With full_expt = 0, the sequence first polarizes and detects the bright mS = 0 reference, then applies one rabi_pulse_mod_wait_time pulse before the second detection. Therefore readout 1 is the true 0-level reference and readout 2 is the microwave-pulse response. The active microwave pulse has length_rabi_pulse = 52 ns and mod_depth = 1.

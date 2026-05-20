@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml / Rabimodulated with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The active variables in the provided sequence are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is approximately a pi pulse and should give a large spin-state transfer when the microwave frequency is resonant.
+
+Readout roles from the XML instructions: the first detection occurs immediately after optical polarization and is the true mS = 0 bright reference. Because full_expt = 0, the optional mS = +1 reference branch is skipped. The second active detection occurs after the 52 ns rabi_pulse_mod_wait_time pulse and is the frequency-dependent pODMR signal.
+
+For a real resonance under these conditions, the post-pulse readout should show a clear dip relative to the bright reference on the order of the setup contrast scale, about 22% for a strong pi-pulse transfer. The measured combined post-pulse/reference ratios are instead near unity, with a minimum around 0.964 and both positive and negative readout differences across the scan. The largest deviations are only a few percent and do not form a consistent resonance-shaped dip. The per-average overlays vary substantially and are consistent with tracking cadence or noise rather than independent repeatability of a resonance.
+
+Decision: resonance_absent.

@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml. The active path polarizes the NV, performs an initial detection as the bright/0 reference, waits, skips the optional 1-level reference because full_expt is 0, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, and then performs the final detection. Thus readout 1 is the pre-pulse reference and readout 2 is the readout after the microwave pulse.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The raw readouts are noisy and have some average-to-average drift, but the relevant comparison is the pulsed readout against the preceding reference. Most points have readout 2 close to readout 1, while near 3.880 GHz and 3.890 GHz readout 2 is lower than readout 1 by about 3.3 and 3.2 counts respectively, corresponding to roughly 7 percent contrast. These localized negative-contrast points in the microwave-pulsed readout are consistent with an ODMR dip despite the sparse sampling and noise.
+
+Decision: resonance_present.

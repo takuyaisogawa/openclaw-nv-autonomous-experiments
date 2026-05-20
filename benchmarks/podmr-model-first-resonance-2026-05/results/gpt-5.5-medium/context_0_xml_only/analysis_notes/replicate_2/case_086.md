@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence XML is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence first polarizes, then performs a detection labeled in the XML as the true 0 level reference. Because full_expt is 0, the optional 1 level reference block is not executed. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, followed by a second detection. Thus readout 1 is the 0-level reference before the microwave pulse, and readout 2 is the post-pulse pODMR signal readout.

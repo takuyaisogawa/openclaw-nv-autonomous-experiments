@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and settings:
 
 - The provided XML is Rabimodulated. The active instruction path polarizes, performs a first detection, waits, then applies rabi_pulse_mod_wait_time and performs a second detection.

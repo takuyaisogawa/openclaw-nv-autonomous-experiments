@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml.
 
 The provided sequence first performs polarization and detection, giving the true m_S = 0 reference readout. The optional m_S = +1 reference block is inactive because full_expt = 0. The active experiment readout is then taken after a rabi_pulse_mod_wait_time pulse followed by detection.

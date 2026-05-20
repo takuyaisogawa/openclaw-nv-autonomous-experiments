@@ -1,0 +1,5 @@
+Active sequence inspected from the provided XML/raw export: Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The active path sets the microwave, acquires a true 0-level reference by adj_polarize followed by detection, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time and performs the signal detection.
+
+Readout roles: readout 1 is the 0-level/reference detection immediately after polarization; readout 2 is the post-microwave signal detection. The active pulse uses length_rabi_pulse = 5.2e-08 s, which is 52 ns and exactly 13 samples at the 250 MHz sample rate. The active mod_depth is 1.
+
+Decision: the combined readouts share drift and substantial point-to-point noise, but the signal-reference contrast has its strongest localized negative feature at about 3.865 GHz, where readout 2 is lower than readout 1 by about 2.42 counts, or -4.78 percent. Both individual averages have negative signal-reference contrast at that frequency. The feature is not very clean, but it is the most consistent ODMR-like contrast feature in the scan, so I classify the case as resonance present.

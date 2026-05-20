@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The instructions first polarize and take a detection readout that is explicitly the true 0-level reference. Because full_expt = 0, the optional 1-level reference block is inactive. The active microwave operation is rabi_pulse_mod_wait_time followed by the second detection readout, so readout 1 is the 0-level/reference readout and readout 2 is the post-microwave signal readout.
+
+The provided sequence XML sets length_rabi_pulse = 5.2e-08 s, which remains 52 ns after rounding at the 250 MHz sample rate, and mod_depth = 1. The raw export variable values agree with these active values.
+
+Decision: resonance present. The combined post-pulse signal readout has a clear loss relative to the reference around 3.875-3.880 GHz, with signal/reference contrast reaching about -20% near 3.880 GHz while off-resonant points are mostly near zero contrast. The per-average ratios also show a central contrast dip in both averages, so the feature is not only an artifact of the opposing baseline drift visible in the raw per-average traces.

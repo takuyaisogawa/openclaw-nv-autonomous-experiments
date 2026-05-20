@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml. The active experiment has full_expt = 0, so the optional 1-level reference block is skipped. The executed readout roles are therefore: readout 1 is the initial "true 0 level" optical reference taken after adj_polarize and before the microwave pulse, and readout 2 is the signal readout taken after the rabi_pulse_mod_wait_time call.
 
 From inputs/sequence.xml, the active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, so the pulse duration remains 52 ns. The XML variable list gives mod_depth = 1. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

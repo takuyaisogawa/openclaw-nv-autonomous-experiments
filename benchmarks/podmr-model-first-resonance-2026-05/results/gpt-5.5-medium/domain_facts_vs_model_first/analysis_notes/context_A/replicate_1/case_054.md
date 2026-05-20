@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active sequence first polarizes and detects the true m_S = 0 reference, then waits, applies a modulated Rabi microwave pulse, and detects again. Since full_expt = 0, the optional m_S = 1 reference block is inactive. Therefore readout 1 is the optical 0-level reference and readout 2 is the post-microwave readout used to look for spin transfer.

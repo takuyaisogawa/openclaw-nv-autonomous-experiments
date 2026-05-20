@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 
 The provided sequence XML is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The active instructions first polarize the NV and take a detection readout, which is the true m_S = 0 reference. The optional m_S = 1 reference block is inactive because full_expt = 0. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by a second detection readout. Thus readout 1 is the reference before the microwave pulse, and readout 2 is the post-pulse signal used to detect resonance.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - SequenceName is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz.
 - The provided XML sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s, so the active Rabi-modulated microwave pulse duration is 52 ns.

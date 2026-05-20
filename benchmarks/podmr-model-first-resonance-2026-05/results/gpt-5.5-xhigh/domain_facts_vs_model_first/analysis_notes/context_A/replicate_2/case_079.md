@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with a sweep of mw_freq. The active instructions first polarize and detect a true m_S = 0 bright reference, then, because full_expt = 0, skip the separate m_S = 1 reference block, apply one rabi_pulse_mod_wait_time pulse, and detect the signal readout. Thus readout 1 is the bright reference before the microwave pulse and readout 2 is the post-pulse signal.
+
+The active pulse parameters are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, this is very close to a pi pulse, so at a real resonance the signal readout should be substantially darker than the bright reference, on the order of the known 22% m_S = 0 to m_S = +1 contrast scale.
+
+The combined data do not show that behavior. Readout 1 and readout 2 mostly track the same slow upward drift across the frequency scan. The pointwise normalized difference (readout1 - readout2) / readout1 averages only about 0.6%, ranges roughly from -4.3% to +4.8%, and changes sign. The two stored averages sit at different absolute brightness levels, consistent with tracking cadence or drift rather than a repeatable resonance feature; within each average, the normalized contrast likewise fluctuates by only a few percent and is not a stable resonance-shaped dip. This is far below the expected near-pi-pulse contrast for an on-resonance transition.
+
+Decision: resonance_absent.

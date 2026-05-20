@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles:
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned parameter. The active instructions first polarize and detect, giving readout 1 as the mS = 0 bright reference. The optional mS = 1 reference block is disabled because full_expt = 0, so readout 2 is the detection after the modulated Rabi microwave pulse, not an independent dark reference.

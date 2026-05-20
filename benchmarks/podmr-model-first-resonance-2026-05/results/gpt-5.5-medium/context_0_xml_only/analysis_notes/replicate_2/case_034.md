@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML enables channels [1 1 1 0 0 0], sets the microwave source, polarizes, detects a true 0-level reference, waits, then applies a modulated Rabi pulse and detects again. Because full_expt is 0, the optional 1-level reference block is skipped.

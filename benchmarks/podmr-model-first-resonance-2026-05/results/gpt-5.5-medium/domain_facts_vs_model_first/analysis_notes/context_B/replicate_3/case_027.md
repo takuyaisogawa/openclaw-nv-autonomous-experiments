@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-pODMR decision analysis for case_027
+pODMR decision analysis for podmr_012_2026-05-16-121601
 
 Inputs used:
 - inputs/sequence.xml

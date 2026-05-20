@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence XML is Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The active experiment has full_expt = 0, so the optional m_S = +1 reference block is skipped. The two active detections are therefore:

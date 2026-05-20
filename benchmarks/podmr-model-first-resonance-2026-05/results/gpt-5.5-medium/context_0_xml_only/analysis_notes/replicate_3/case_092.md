@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence:
 - Sequence file: Rabimodulated.xml.
 - Scan variable: mw_freq, swept from 3.825 GHz to 3.925 GHz in 5 MHz steps.

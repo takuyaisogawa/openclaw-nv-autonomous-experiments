@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml. The instructions first polarize and detect a true 0-level reference, then wait. Because full_expt is 0, the optional 1-level reference block is inactive. The active measurement then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth before the final detection, followed by a final wait.
+
+Readout role interpretation: readout 1 is the pre-microwave true 0-level/reference readout, and readout 2 is the post-Rabi-pulse signal readout. The sequence variables show mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, i.e. 52 ns.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz. Readout 1 stays near 38-40 counts without a comparable narrow feature. Readout 2 has a pronounced dip centered near 3.875 GHz, falling to about 28.8 counts in the combined trace, and both per-average traces show the same local depression around that frequency. This looks like a real microwave-frequency-dependent ODMR contrast rather than a shared laser/counting artifact, so a pODMR resonance is present.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML has full_expt = 0, so the optional 1-level reference block is inactive even though do_adiabatic_inversion is true; only the initial polarized true-0 detection is acquired before the driven measurement. Thus readout 1 is the m_S = 0/reference detection after optical pumping, and readout 2 is the detection after the modulated Rabi microwave pulse.
 
 The active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1. With the provided setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this is near a pi pulse scale and should produce a large fluorescence change on resonance, comparable to the stated 22% m_S = 0 to m_S = +1 contrast. On a raw level near 46 counts, that would be an order of magnitude larger than a one-count fluctuation if the resonance were well driven.

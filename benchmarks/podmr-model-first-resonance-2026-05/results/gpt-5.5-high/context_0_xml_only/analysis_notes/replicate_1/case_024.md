@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. The active instructions polarize and detect first, so readout 1 is the true 0-level reference. Because full_expt is 0, the intermediate 1-level reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1, followed by detection, making readout 2 the pulsed pODMR signal readout.
+
+The combined 0-reference readout stays near 28-31 counts across the scan and does not show a corresponding sharp feature. The signal readout has a pronounced dip around 3.875-3.885 GHz, dropping to about 24-25 counts while adjacent/off-resonance points are near 29-30 counts. The readout2/readout1 ratio reaches about 0.77-0.81 in that region, and the same relative dip is visible within both averages after comparing each average's signal readout to its own reference readout. This is consistent with a pODMR resonance rather than common-mode drift.
+
+Decision: resonance_present.

@@ -1,0 +1,7 @@
+Active sequence identified from the provided XML/export as Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The pulse program first acquires a true m_S = 0 optical reference, skips the explicit m_S = 1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the second detection. Thus readout 1 is the reference and readout 2 is the microwave-pulse signal.
+
+With the stated setup calibration, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is near a pi pulse. If the scan crossed a clear pODMR resonance, I would expect a systematic drop of the signal readout relative to the m_S = 0 reference on or near resonance, potentially on the order of the 22 percent contrast scale for a strong pi-like transfer.
+
+The combined readouts do not show that behavior. The signal/reference difference is small, inconsistent, and changes sign across the scan. The largest negative excursions are only around 3 to 5 percent and are comparable to positive excursions elsewhere; the mean ratio of readout 2 to readout 1 is approximately unity. The per-average traces mainly show baseline/tracking drift between averages rather than a repeatable spectral dip. Stored averages are not a strong independent repeatability test here, but they also do not reveal a stable resonance feature.
+
+Decision: resonance_absent.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The provided XML is Rabimodulated.xml. The instructions first polarize the NV and call detection, then wait. Because full_expt = 0, the optional "Acquire 1 level reference" block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, followed by a second detection. Therefore readout 1 is the direct polarized m_S = 0 reference, and readout 2 is the post-Rabi-pulse signal readout. The active pulse is a rectangular modulated Rabi pulse, not the adiabatic inversion path. From the XML variable values, length_rabi_pulse = 52 ns and mod_depth = 1.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_051
+Case podmr_037_2026-05-16-213011
 
 I used the provided sequence XML and raw export values, not any labels or outside cases. The active sequence is Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction flow is: polarize, detect the true m_S = 0 reference, wait, skip the m_S = +1 reference block because full_expt = 0, apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detect the signal readout. Therefore readout 1 is the bright 0-level reference and readout 2 is the microwave-pulse signal readout.
 

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated behavior.
 
 The provided XML has full_expt = 0, so the optional m_S = +1 reference block is skipped. The active readouts are therefore:

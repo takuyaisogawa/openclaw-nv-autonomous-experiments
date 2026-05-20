@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_093 analysis note
+Case podmr_079_2026-05-17-103702 analysis note
 
 I used the provided sequence information for this case before deciding. The active sequence is Rabimodulated.xml with full_expt = 0, so the executed readout roles are:
 

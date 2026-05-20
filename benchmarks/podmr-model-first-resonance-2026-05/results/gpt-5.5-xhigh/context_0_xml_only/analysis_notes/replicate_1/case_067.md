@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml pODMR scan varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The sequence polarizes, performs a detection immediately after polarization, waits, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time followed by a second detection. Thus readout 1 is the post-polarization no-microwave reference and readout 2 is the signal after the scanned microwave pulse.
+
+The active microwave pulse uses length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns, with mod_depth = 1. The final detection after this pulse is the resonance-sensitive readout.
+
+Using readout 2 relative to readout 1, the combined contrast has localized negative excursions at 3.880 GHz and 3.890 GHz of about -7 percent. Both averages show negative signal-minus-reference contrast at these same two scan points, while many other excursions are not as consistent between averages. The absolute raw traces also drift with frequency, but the repeated signal/reference dips near the microwave pulse readout indicate a pODMR resonance is present.

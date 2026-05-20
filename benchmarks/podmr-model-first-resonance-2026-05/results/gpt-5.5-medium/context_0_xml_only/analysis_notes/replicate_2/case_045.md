@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated pODMR with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML enables channels 1-3, sets the microwave source, then acquires a polarized reference detection before the microwave pulse. Because full_expt is 0, the optional 1-level reference block is skipped. The final detection is taken after rabi_pulse_mod_wait_time, so readout 1 is the polarized reference and readout 2 is the microwave-pulse readout.
 
 The active pulse uses length_rabi_pulse = 52 ns, rounded at the 250 MHz sample rate, and mod_depth = 1 according to the provided sequence variable values. The scan therefore tests whether this fixed 52 ns, fully modulated pulse produces a frequency-dependent fluorescence change.

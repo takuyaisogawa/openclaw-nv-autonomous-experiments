@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_028
+Case podmr_013_2026-05-16-123121
 
 I used the supplied sequence XML and raw export only. The active sequence is Rabimodulated.xml. The instruction block first performs adj_polarize followed by detection, so readout 1 is the true m_S = 0 fluorescence reference. The m_S = +1 reference block is inside if abs(full_expt)>1e-12, and full_expt is 0, so that block is inactive. The second active detection occurs after PSeq = rabi_pulse_mod_wait_time(PSeq,sample_rate,length_rabi_pulse,mod_depth,switch_delay,ch_on), so readout 2 is the signal after the Rabi-modulated microwave pulse.
 

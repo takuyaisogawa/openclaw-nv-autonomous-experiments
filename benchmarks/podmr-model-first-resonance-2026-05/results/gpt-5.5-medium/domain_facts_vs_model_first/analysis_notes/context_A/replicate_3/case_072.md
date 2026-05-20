@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/readout interpretation:
 
 The active sequence is Rabimodulated.xml while varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect, then, because full_expt = 0, skip the optional m_S = +1 reference block. The remaining active microwave operation is a single rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the polarized m_S = 0 reference and readout 2 is the post-pulse signal readout.

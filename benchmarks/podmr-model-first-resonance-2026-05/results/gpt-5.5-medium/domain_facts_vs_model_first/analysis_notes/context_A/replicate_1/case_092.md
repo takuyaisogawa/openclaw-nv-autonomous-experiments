@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided XML is Rabimodulated.xml. It polarizes first, then performs a detection before any microwave pulse; with full_expt = 0, the optional m_S = +1 reference block is skipped. The active measurement after that is a single rabi_pulse_mod_wait_time followed by detection. Therefore readout 1 is the true m_S = 0 reference and readout 2 is the post-microwave pulse readout.

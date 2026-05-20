@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML executes an initial polarize/detect block before any microwave pulse, then skips the "1 level reference" block because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the final detection. Thus readout 1 is the true 0-level/reference fluorescence before the driven pulse, and readout 2 is the fluorescence after the 52 ns modulated Rabi pulse.
 
 The combined readouts show a slow upward drift with frequency in both channels. The relevant pODMR contrast is readout 2 relative to readout 1. That contrast fluctuates around zero with isolated negative points near 3.830, 3.850-3.875, and 3.900 GHz, but the dips are not broad or reproducible enough to form a convincing resonance. The two individual averages disagree at several of the apparent features, including sign changes at nearby points, and the largest deviations are comparable to the single-point noise. I therefore do not identify a reliable pODMR resonance in this scan.

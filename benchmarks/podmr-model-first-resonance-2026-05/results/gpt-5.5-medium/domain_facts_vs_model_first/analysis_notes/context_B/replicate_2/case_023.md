@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_023 analysis note
+Case podmr_008_2026-05-16-014743 analysis note
 
 I used only inputs/raw_export.json, inputs/raw_readouts.png, and inputs/sequence.xml.
 

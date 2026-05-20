@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz.
 
 From the provided sequence XML, the microwave frequency is set by mw_freq plus detuning, and the active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s (52 ns) and mod_depth = 1. The optional "Acquire 1 level reference" block is gated by full_expt, which is 0, so that block is inactive despite do_adiabatic_inversion being true.

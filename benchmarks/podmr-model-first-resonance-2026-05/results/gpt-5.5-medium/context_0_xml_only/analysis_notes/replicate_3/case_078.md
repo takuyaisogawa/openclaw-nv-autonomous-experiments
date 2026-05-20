@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a true 0-level/reference readout, wait 2 us, then apply rabi_pulse_mod_wait_time and detect the microwave-affected signal. The optional 1-level reference section is disabled because full_expt = 0, so the two recorded readouts should be interpreted as reference/background followed by the pulsed signal readout rather than a full three-readout reference experiment.
 
 Relevant pulse parameters from the provided XML/export are length_rabi_pulse = 5.2e-08 s, which is 52 ns and already aligned to the 250 MHz sample rate, and mod_depth = 1 in the file-level variable values for this run. The pulse is therefore a short, fully modulated Rabi pulse before the signal detection.

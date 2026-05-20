@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided XML is Rabimodulated.xml. It polarizes the NV and immediately detects once before any active microwave pulse; this is the true m_S = 0 reference readout. Because full_expt = 0, the optional m_S = +1 reference block is skipped. The active signal block then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection readout. Thus readout 1 is the bright reference and readout 2 is the post-microwave signal.

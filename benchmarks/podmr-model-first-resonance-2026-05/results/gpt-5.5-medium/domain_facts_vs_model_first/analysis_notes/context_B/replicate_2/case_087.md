@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_087
+Case podmr_073_2026-05-17-090948
 
 I used the provided sequence XML and the raw export values for the active scan. The sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active readouts are:
 

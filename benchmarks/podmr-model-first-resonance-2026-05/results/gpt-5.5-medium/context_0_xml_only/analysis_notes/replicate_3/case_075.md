@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 - The provided XML is Rabimodulated.xml / Rabimodulated sequence logic.
 - Active variables from the provided XML include mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, which is rounded at 250 MHz sample rate and used in rabi_pulse_mod_wait_time.

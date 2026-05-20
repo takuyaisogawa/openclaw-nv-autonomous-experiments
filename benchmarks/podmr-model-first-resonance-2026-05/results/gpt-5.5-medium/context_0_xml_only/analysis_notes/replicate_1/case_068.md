@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence context:
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The active microwave operation is rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1 from the provided sequence XML/variable values. full_expt = 0, so the optional 1-level reference block is inactive.

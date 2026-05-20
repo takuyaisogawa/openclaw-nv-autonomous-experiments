@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect a true m_S=0 reference, then skip the explicit m_S=1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by the signal detection. Thus readout 1 is the polarized reference and readout 2 is the post-microwave-pulse readout.
+
+The provided sequence values give mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup scaling, mod_depth = 1 gives about a 10 MHz Rabi frequency, so a 52 ns pulse is essentially a pi pulse. A real resonance should therefore drive close to full m_S=0 to m_S=+1 transfer and produce a large readout-2 depression, on the order of the 22% contrast scale, relative to readout 1.
+
+The combined raw readouts do not show that behavior. The readout-2 minus readout-1 contrast fluctuates between positive and negative values, with the largest combined negative point about -7% near 3.895 GHz and several neighboring or other points much smaller or opposite-signed. The per-average traces mainly show a large tracking offset between averages; the apparent depressions are not a strong independent repeatability test and do not form a clean, expected pODMR dip. Given the active pi-pulse-like sequence, the observed response is too small and irregular for a confident resonance.
+
+Decision: resonance_absent.

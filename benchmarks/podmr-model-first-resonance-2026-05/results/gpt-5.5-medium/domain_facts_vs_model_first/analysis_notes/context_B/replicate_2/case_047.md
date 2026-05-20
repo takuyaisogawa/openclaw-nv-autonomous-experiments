@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and roles
 
 The active sequence is Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The executed instructions first polarize the NV and perform detection; this is readout 1, the mS = 0 bright reference. The conditional mS = 1 reference block is disabled because full_expt = 0. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection; this is readout 2, the signal after the microwave pulse.

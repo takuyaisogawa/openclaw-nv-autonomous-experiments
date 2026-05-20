@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect the "true 0 level reference", then wait, then apply rabi_pulse_mod_wait_time, then detect again. Because full_expt = 0, the conditional "Acquire 1 level reference" block is skipped even though do_adiabatic_inversion is true. Thus readout 1 is the pre-MW bright mS = 0 reference and readout 2 is the post-MW-pulse signal.

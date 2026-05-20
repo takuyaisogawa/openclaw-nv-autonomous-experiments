@@ -1,0 +1,7 @@
+Sequence XML identifies the active sequence as Rabimodulated.xml. The active detections are a true m_S = 0 reference after optical polarization, followed by a detection after a modulated Rabi microwave pulse; the m_S = +1 reference block is disabled because full_expt = 0. The relevant pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1.
+
+Using the supplied setup facts, mod_depth = 1 corresponds to roughly 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse. If the frequency sweep crossed a real NV resonance, the post-pulse readout should show a substantial dip relative to the m_S = 0 reference, on the order of the available contrast scale (about 22%) after allowing for experimental imperfections.
+
+The combined readouts do not show that. The post-pulse readout is usually only slightly below the reference, with the deepest normalized point around 3.895 GHz at roughly 0.93 of the reference, and neighboring points are irregular rather than forming a clear resonance-shaped feature. Some points even have the post-pulse readout above the reference. The per-average traces mainly show offset/tracking changes, and stored averages are not a strong independent repeatability test here.
+
+Decision: resonance_absent. The active sequence and pulse settings make this a sensitive pODMR check, but the observed contrast feature is too shallow and inconsistent to call a resonance.

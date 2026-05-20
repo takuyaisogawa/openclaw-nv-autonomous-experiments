@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/XML interpretation:
 
 The provided sequence is Rabimodulated.xml / Rabimodulated. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active microwave operation is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, and mod_depth = 1 from the provided sequence XML/variable values. full_expt = 0, so the optional "1 level reference" block is skipped even though do_adiabatic_inversion is true. The active readouts are therefore the first detection after adj_polarize, serving as the polarized/0-level reference, and the later detection after the modulated Rabi pulse, serving as the microwave-affected signal readout.

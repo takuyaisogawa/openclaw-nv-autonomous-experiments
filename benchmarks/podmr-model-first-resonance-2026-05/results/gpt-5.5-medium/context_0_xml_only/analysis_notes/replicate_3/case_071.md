@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz. The active variables include mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, which rounds to 52 ns at the 250 MHz sample rate. full_expt = 0, so the optional "Acquire 1 level reference" block is inactive even though do_adiabatic_inversion is true. The active readouts are therefore:

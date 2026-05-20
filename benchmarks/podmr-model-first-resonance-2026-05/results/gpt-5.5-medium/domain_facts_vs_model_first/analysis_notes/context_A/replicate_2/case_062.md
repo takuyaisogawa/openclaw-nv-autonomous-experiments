@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and pulse context:
 
 The provided sequence is Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse sequence first acquires a true m_S = 0 reference via adj_polarize followed by detection, waits, then applies rabi_pulse_mod_wait_time and detects again. The full_expt variable is 0, so the optional m_S = 1 reference block is not acquired. Thus readout 1 is the polarized m_S = 0 reference and readout 2 is the signal after the microwave pulse.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_065
+Case podmr_051_2026-05-17-011109
 
 I used the provided sequence XML rather than labels or outside context. The active
 sequence is Rabimodulated.xml. In the instructions, full_expt = 0, so the

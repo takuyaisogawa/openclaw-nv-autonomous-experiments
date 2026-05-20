@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz. The sequence first polarizes and detects a true m_S = 0 reference, then skips the optional m_S = 1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time and detects the signal readout. Thus readout 1 is the per-point bright/reference readout and readout 2 is the microwave-pulse readout.
+
+The provided sequence XML has mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup Rabi frequency near 10 MHz at mod_depth = 1, this is approximately a resonant pi pulse, so an on-resonance pODMR feature should drive substantial population transfer and produce a readout-2 drop approaching the 22% contrast scale relative to readout 1.
+
+The observed combined traces show only small, noisy differences between readout 2 and readout 1, typically a few counts around a 50-count baseline, with sign changes and no clear localized resonance-shaped dip at the expected contrast scale. The per-average overlay is also consistent with tracking/noise fluctuations rather than a reproducible strong resonance. I therefore classify this case as resonance absent.

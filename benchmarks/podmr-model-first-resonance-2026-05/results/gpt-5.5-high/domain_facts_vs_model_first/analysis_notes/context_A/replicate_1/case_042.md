@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The active acquisition has full_expt = 0, so the sequence records a true ms=0 optical reference first, then applies a rabi_pulse_mod_wait_time pulse and records the post-microwave readout. The ms=+1 reference block is inactive.
+
+Key pulse settings from the provided XML/raw metadata are length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse, so a real resonance should transfer population out of ms=0 and make the post-pulse readout lower than the zero-reference readout near resonance. The setup contrast scale is about 22%, so a partial but coherent few-percent normalized dip can still be physically plausible.
+
+The combined raw readouts show a localized region near 3.875-3.885 GHz where the post-pulse readout is lower than the zero-reference readout by roughly 2 to 3 counts, about 4-6% of the baseline. Outside that region the two readouts mostly track one another or cross with smaller/nonlocalized differences, with a rebound around 3.890 GHz. The per-average traces are noisy and the two stored averages should not be treated as a strong independent repeatability test, but the normalized readout contrast has the expected sign and frequency-localized structure for pODMR under this sequence.
+
+Decision: resonance_present.

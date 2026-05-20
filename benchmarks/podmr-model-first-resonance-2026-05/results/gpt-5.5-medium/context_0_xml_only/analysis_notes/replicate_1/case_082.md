@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML review:
 
 - Active sequence: Rabimodulated.xml / Rabimodulated sequence, scanning mw_freq from 3.825 GHz to 3.925 GHz.

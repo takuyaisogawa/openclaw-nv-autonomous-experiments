@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_062
+Case: podmr_048_2026-05-17-002650
 
 I used only the provided files in this workspace. The provided sequence XML is Rabimodulated.xml. The active pulse sequence first polarizes and detects a true m_S = 0 reference, waits, skips the optional m_S = +1 reference block because full_expt = 0, then applies one rabi_pulse_mod_wait_time pulse and detects again. Therefore readout 1 is the m_S = 0 reference fluorescence and readout 2 is the fluorescence after the microwave Rabi pulse. The active microwave pulse has length_rabi_pulse = 52 ns after sample-clock rounding at 250 MHz, mod_depth = 1, mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps, and detuning = 0.
 

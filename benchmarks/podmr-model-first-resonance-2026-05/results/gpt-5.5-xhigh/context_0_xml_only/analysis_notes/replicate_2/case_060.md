@@ -1,0 +1,5 @@
+Using the provided sequence XML, this is the Rabimodulated pulse sequence with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first polarize and acquire a true 0-level reference readout, then wait, skip the optional 1-level reference because full_expt = 0, apply rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1, and acquire the second detection readout. Thus readout 1 is the 0-level reference and readout 2 is the post-microwave-pulse signal.
+
+The resonance decision should be based on the post-pulse signal relative to the reference. The combined readout2/readout1 contrast shows a pronounced minimum at 3.860 GHz, with ratio about 0.914 and difference about -4.60 counts. This point is also present in both individual averages, with ratios about 0.921 and 0.907, making it more credible than the other isolated noisy excursions. Adjacent points recover toward baseline, so the feature is narrow, but it is repeatable across the two averages and has the largest contrast in the sweep.
+
+Decision: resonance_present.

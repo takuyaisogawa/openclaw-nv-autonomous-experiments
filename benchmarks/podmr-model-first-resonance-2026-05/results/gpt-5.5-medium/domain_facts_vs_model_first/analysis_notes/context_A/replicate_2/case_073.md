@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence XML is Rabimodulated.xml with mw_freq as the scanned variable. With full_expt = 0, the "Acquire 1 level reference" block is skipped, so the active detection roles are:

@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml. The instructions first polarize and detect a true m_S=0 reference, then skip the optional m_S=+1 reference because full_expt=0, then apply rabi_pulse_mod_wait_time followed by the measurement detection. Thus readout 1 is the 0-state reference and readout 2 is the post-microwave-pulse readout.
+
+Sequence settings relevant to the decision: length_rabi_pulse is 52 ns and mod_depth is 1 in the provided sequence/variable values. With the given setup calibration of about 10 MHz Rabi frequency at mod_depth=1, a 52 ns pulse is near a pi pulse. The expected full resonance contrast scale is therefore close to the stated m_S=0 to m_S=+1 contrast, about 22%, if the microwave frequency is on resonance.
+
+The combined data show readout 2 dropping sharply near the middle of the scan, around 3.875-3.880 GHz, from a surrounding level near 37-39 down to about 30.3-30.6. That is roughly an 18-22% drop relative to the local/reference level, while readout 1 remains comparatively flat and does not show the same dip. The per-average overlay preserves the same feature in the stored averages, though those averages should not be overinterpreted as independent repeatability because they may mainly reflect tracking cadence.
+
+Decision: resonance_present. The depth, sign, and frequency-localized nature of the readout-2 dip are consistent with pODMR contrast for a near-pi pulse, and the reference readout does not explain it as a common-mode PL change.

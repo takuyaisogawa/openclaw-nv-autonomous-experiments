@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence has full_expt = 0, so the "Acquire 1 level reference" block is inactive. The two active detections are therefore:

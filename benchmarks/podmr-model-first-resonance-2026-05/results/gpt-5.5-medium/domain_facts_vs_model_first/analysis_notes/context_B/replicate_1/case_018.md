@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles:
 
 The provided XML is the Rabimodulated sequence. It first runs adj_polarize followed by detection, giving the true m_S=0 reference readout. The conditional "Acquire 1 level reference" block is disabled because full_expt = 0, so there is no separate m_S=1 reference readout in this run. The active signal readout is therefore the later detection after:

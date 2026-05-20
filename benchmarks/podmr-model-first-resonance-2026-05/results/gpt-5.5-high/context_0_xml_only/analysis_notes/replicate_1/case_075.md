@@ -1,0 +1,5 @@
+Case podmr_061_2026-05-17-061719.
+
+The provided sequence XML is a Rabimodulated pODMR sequence scanning mw_freq. The active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s, so 52 ns. The XML variable mod_depth is 1. The full_expt variable is 0, so the conditional "Acquire 1 level reference" block is inactive even though do_adiabatic_inversion is true. Therefore the acquired readouts are the initial detection after adj_polarize, serving as the true 0/reference readout, and the later detection after the modulated Rabi pulse, serving as the signal readout.
+
+The signal readout has a clear isolated dip at 3.880 GHz: combined readout 2 is 45.788 while readout 1 is 49.519. This same dip is present in both averages for readout 2 at that frequency, with values 44.615 and 46.962, while the corresponding reference values remain near 49.8 and 49.3. Other fluctuations exist, but the 3.880 GHz depression is the strongest reproducible signal-channel feature relative to the reference. I therefore classify the scan as showing a pODMR resonance.

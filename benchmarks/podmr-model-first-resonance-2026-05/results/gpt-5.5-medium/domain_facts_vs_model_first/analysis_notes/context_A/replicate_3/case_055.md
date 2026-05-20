@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated pODMR style scan with mw_freq varied from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The active XML has full_expt = 0, so the "Acquire 1 level reference" block is disabled. The two active detections are therefore:

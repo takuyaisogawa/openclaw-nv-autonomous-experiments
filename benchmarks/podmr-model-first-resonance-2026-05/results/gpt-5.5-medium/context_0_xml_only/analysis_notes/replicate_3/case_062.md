@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence XML has full_expt = 0, so the optional "Acquire 1 level reference" branch is not active. The executed structure is:

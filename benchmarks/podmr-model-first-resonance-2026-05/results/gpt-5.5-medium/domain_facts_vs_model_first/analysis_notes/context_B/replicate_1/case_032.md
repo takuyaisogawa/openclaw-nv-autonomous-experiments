@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_032
+Case podmr_017_2026-05-16-132945
 
 I used the provided sequence XML and raw export only. The active sequence is Rabimodulated.xml with a microwave-frequency scan. The executable instruction block first polarizes the NV and performs detection, then waits. Because full_expt is 0, the optional m_S=+1 reference block is skipped. The final active operation is a rabi_pulse_mod_wait_time followed by detection. Therefore readout 1 is the polarized m_S=0 optical reference and readout 2 is the post-Rabi-pulse signal. The active pulse duration is length_rabi_pulse = 52 ns, and mod_depth = 1 from the provided XML variable values.
 

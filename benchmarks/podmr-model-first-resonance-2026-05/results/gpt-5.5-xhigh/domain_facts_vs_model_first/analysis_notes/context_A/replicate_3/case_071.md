@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML sets full_expt = 0, so the optional m_S = +1 reference block is skipped. The acquired pair is therefore a true m_S = 0 reference readout after polarization, followed by the test readout after a modulated Rabi pulse and detection.
+
+The active test pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, mod_depth = 1, and switch_delay = 1e-07 s. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is close to a pi pulse. If the microwave sweep hit a single-NV pODMR resonance cleanly, the second readout should be depressed relative to the m_S = 0 reference by a sizable fraction of the approximately 22% contrast scale.
+
+The combined raw readouts do not show such a feature. The pointwise readout2/readout1 changes are mostly small, sign-changing fluctuations. The largest combined drop is about 4.5% at the high-frequency endpoint, and that endpoint is not consistent across the two stored averages; one average shows a large drop while the other goes the opposite way. A smaller drop near 3.910 GHz appears in both stored averages, but it is only around 3% and is comparable to other tracking/noise-scale variations. Because stored averages mainly reflect tracking cadence here, this is not enough independent repeatability to support a resonance call.
+
+Decision: resonance_absent.

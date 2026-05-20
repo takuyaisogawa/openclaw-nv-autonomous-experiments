@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active readout structure is a polarized reference detection followed by, because full_expt is 0, no optional 1-level reference branch, then a modulated Rabi pulse and a post-pulse detection. Therefore readout 1 is the bright/polarized reference and readout 2 is the signal after the microwave pulse.

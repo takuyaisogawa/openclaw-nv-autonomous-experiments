@@ -1,0 +1,5 @@
+The active XML sequence is Rabimodulated with mw_freq swept from 3.825 GHz to 3.925 GHz. The sequence first polarizes and detects, giving the true m_S = 0 reference readout. Because full_expt = 0, the optional one-level reference block is skipped. The second active detection occurs after rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, so this second readout is the microwave-driven signal readout.
+
+At mod_depth = 1 the setup Rabi frequency is about 10 MHz, so a 52 ns pulse is close to a pi pulse. If the microwave is resonant, this should transfer population out of m_S = 0 and reduce the signal readout by roughly the available contrast scale. The combined data show the signal readout dipping most strongly near 3.875-3.880 GHz while the preceding 0-reference remains near its usual level. The largest same-point signal/reference drop is about 19%, close to the stated 22% contrast scale. Stored averages show a similar dip region but are not treated as a strong independent repeatability test because they can reflect tracking cadence.
+
+This is consistent with a real pODMR resonance in the swept range.

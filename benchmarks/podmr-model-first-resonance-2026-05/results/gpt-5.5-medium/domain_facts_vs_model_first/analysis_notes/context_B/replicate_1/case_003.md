@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation
 
 The active sequence is Rabimodulated.xml. The XML variables and instructions show:

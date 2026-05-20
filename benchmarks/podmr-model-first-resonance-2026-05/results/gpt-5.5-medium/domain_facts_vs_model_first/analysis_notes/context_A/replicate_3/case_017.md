@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence interpretation:
 
 The provided sequence is Rabimodulated.xml, swept over mw_freq. The instructions first polarize and detect, giving the true mS = 0 fluorescence reference. The optional mS = 1 reference block is disabled because full_expt = 0, so there is no separate active 1-level reference in this acquisition. The active signal readout is the detection after a rabi_pulse_mod_wait_time pulse.

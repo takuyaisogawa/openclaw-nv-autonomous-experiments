@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided sequence XML is Rabimodulated. It sets sample_rate = 250 MHz, sweeps mw_freq, and uses length_rabi_pulse = 5.2e-08 s, which rounds to 52 ns at this sample rate. The XML variable mod_depth is 1. The active instructions first polarize and detect a true 0-level reference, then wait. The optional "Acquire 1 level reference" block is guarded by full_expt, and full_expt = 0, so that block is inactive. The active experiment then applies rabi_pulse_mod_wait_time with the 52 ns pulse and mod_depth = 1, followed by the second detection. Thus readout 1 is the 0-level reference-like raw readout, and readout 2 is the microwave-pulse readout whose frequency dependence should reveal pODMR contrast.

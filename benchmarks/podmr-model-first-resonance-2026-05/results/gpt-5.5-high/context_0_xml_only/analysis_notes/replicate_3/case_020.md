@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML instructions first polarize and detect a true 0/reference readout, skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time and detect again. Thus readout 1 is the reference/background detection and readout 2 is the signal after the microwave pulse.
+
+Key active parameters from the provided XML/export values: length_rabi_pulse = 52 ns, mod_depth = 1, mw_ampl = -5 dBm, ampIQ = 5 dBm, freqIQ = 50 MHz, delay_wrt_1mus = 0.2 us, wait_time = 2 us, length_last_wait = 1 us.
+
+The combined data show readout 2 dropping sharply from the high-30s to about 30.3-30.6 counts around 3.875-3.880 GHz, while readout 1 stays near 39-41 counts and does not show a matching background dip. The same readout-2 depression appears in both per-average traces, so it is not just a single-average artifact. This is the expected pODMR contrast signature for a resonance in the driven readout channel.

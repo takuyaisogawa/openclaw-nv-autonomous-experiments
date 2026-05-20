@@ -1,0 +1,7 @@
+Active sequence decision:
+
+The provided sequence XML is Rabimodulated.xml. It sweeps mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active microwave operation before the signal detection is rabi_pulse_mod_wait_time(PSeq, sample_rate, length_rabi_pulse, mod_depth, switch_delay, ch_on). The pulse duration is length_rabi_pulse = 5.2e-08 s, which is already aligned to the 250 MHz sample clock as 52 ns. The XML variable mod_depth is 1. The full_expt variable is 0, so the conditional "Acquire 1 level reference" block is not active despite do_adiabatic_inversion being true. Thus the measured readouts correspond to an initial true-0/reference detection followed by the final post-rabi-pulse detection, with two recorded readout channels/roles rather than a complete 0/1/signal reference set.
+
+Resonance assessment:
+
+The combined raw readouts and the per-average overlays show a broad downward drift across the sweep, but no stable, localized ODMR-like dip or peak that is repeated consistently in the active post-pulse readout relative to the reference/readout partner. Apparent excursions, such as near 3.88 GHz or around 3.895 GHz, are not consistently reproduced across the two averages and are comparable to point-to-point noise and baseline drift. Because the feature is not coherent across averages/readouts and lacks a distinct resonance shape over the 100 MHz sweep, I judge this case as resonance_absent.

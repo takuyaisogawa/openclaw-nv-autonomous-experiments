@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. With full_expt = 0, the optional 1-level reference block is inactive. The executed sequence therefore polarizes and detects the true 0-level reference first, waits, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detects the post-pulse signal readout. Thus readout 1 is the pre-pulse/reference fluorescence and readout 2 is the microwave-pulse-affected signal fluorescence.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz. The raw combined traces show fluctuations and a gradual downward drift, especially in readout 2, but not a localized pODMR dip or peak with a consistent resonance shape. The per-average overlay indicates strong opposite drift between the two averages, so the combined behavior is likely dominated by averaging/drift rather than a stable resonance feature. The largest point-to-point excursions are not reproducible resonance-like structure across the readout roles.
+
+Decision: resonance_absent.

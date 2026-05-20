@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The sequence first performs adj_polarize followed by detection, so readout 1 is the true mS = 0 reference. The full_expt variable is 0, so the optional mS = 1 reference block is inactive even though do_adiabatic_inversion is set. The active microwave operation before the second detection is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, and switch_delay = 100 ns, so readout 2 is the signal after the resonant microwave pulse.
+
+At mod_depth = 1 the expected Rabi frequency is about 10 MHz, making a 52 ns pulse close to a pi pulse. The expected pODMR response on resonance is therefore a substantial drop of the second readout relative to the mS = 0 reference, with a scale near the stated 22% contrast.
+
+The combined data show readout 2 dropping from about 39-40 counts off resonance to a minimum of 31.2 counts near 3.875 GHz, while readout 1 remains about 40.9 counts at that point. This is roughly a 24% drop relative to the local reference, close to the expected contrast. The per-average traces should not be treated as strong independent repeatability evidence because the stored averages can reflect tracking cadence, but the same frequency-localized signal dip is visible in the averaged signal channel and is not mirrored as a comparable reference-channel feature.
+
+Decision: a pODMR resonance is present.

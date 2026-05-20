@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml / Rabimodulated. The XML performs an initial optical polarization followed by detection, giving the first readout as the true m_S = 0 reference. The optional m_S = +1 reference block is disabled because full_expt = 0, so the later readout is the signal after a modulated Rabi pulse and not an independently acquired +1 reference.
+
+Key parameters from the provided sequence context are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, the Rabi period is about 100 ns and a pi pulse is about 50 ns. Therefore the 52 ns pulse should strongly transfer population on resonance, making a pODMR resonance appear as a substantial drop in the post-pulse signal readout relative to the m_S = 0 reference.
+
+The raw combined data show readout 1 staying near the high reference level, while readout 2 has a pronounced localized dip around 3.875-3.880 GHz, reaching about 39.6 compared with nearby off-resonance values around 46-47 and the readout-1 reference around 48. This is a roughly 15-18% drop, reasonably close to the expected 22% contrast scale given noise and sequence/readout details. The stored averages show the same broad depression in the signal channel, but because stored averages often reflect tracking cadence, I do not treat them as a strong independent repeatability test.
+
+Decision: resonance present.

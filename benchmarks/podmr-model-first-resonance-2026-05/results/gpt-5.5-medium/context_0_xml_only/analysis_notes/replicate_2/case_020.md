@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml, sweeping mw_freq. The active instructions first polarize and detect a true 0-level reference, then skip the optional 1-level reference because full_expt is 0, then apply rabi_pulse_mod_wait_time followed by the signal detection. Thus readout 1 is the pre-pulse 0-level reference and readout 2 is the post-rabi-pulse signal readout.
 
 From the provided sequence XML, length_rabi_pulse is 5.2e-08 s, which is 52 ns, and mod_depth is 1. The pulse duration is rounded to the sample clock but remains 52 ns at 250 MHz sampling.

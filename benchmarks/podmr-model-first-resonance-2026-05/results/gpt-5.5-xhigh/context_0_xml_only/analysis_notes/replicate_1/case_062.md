@@ -1,0 +1,5 @@
+Active sequence read from inputs/sequence.xml: Rabimodulated.xml with mw_freq as the swept parameter. The instructions polarize and detect first, then skip the one-level reference block because full_expt = 0, then apply rabi_pulse_mod_wait_time and detect again. That makes readout 1 the true 0-level reference before the microwave pulse, and readout 2 the post-pulse signal readout used for the pODMR response.
+
+The provided XML gives mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With sample_rate = 250 MHz, the rounded pulse duration remains 52 ns.
+
+The post-pulse readout has a contiguous depressed region around 3.895 to 3.910 GHz: combined readout 2 falls to about 48.17, 48.40, 48.79, and 49.10 counts there, compared with nearby values of about 50.58 at 3.885 GHz, 50.46 at 3.915 GHz, and 52.04 at 3.920 GHz. The per-average contrast is noisy, but both averages show negative signal-reference contrast through this region. Because the feature is localized in frequency and appears in the post-pulse readout under the active modulated Rabi sequence, I classify this case as resonance_present.

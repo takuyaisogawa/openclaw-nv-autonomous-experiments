@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. The active scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the XML, full_expt is 0, so the optional one-level reference block is skipped. The active readout roles are therefore: readout 1 is the true 0-level/polarized reference taken after adj_polarize, and readout 2 is the detection after the modulated Rabi microwave pulse. The Rabi pulse duration is length_rabi_pulse = 5.2e-08 s, i.e. 52 ns after sample-rate rounding, and the provided sequence XML sets mod_depth = 1.
+
+The combined traces fluctuate around roughly 50 counts with only small point-to-point differences between the reference and post-pulse readout. The ratio/readout contrast has a few isolated negative excursions, notably near 3.855 GHz and 3.910 GHz, but these are not a single smooth dip or repeatable resonance-shaped feature across neighboring frequency points. The per-average overlay also shows sizable scatter, so the isolated low points are consistent with noise rather than a stable pODMR resonance.
+
+Decision: resonance_absent.

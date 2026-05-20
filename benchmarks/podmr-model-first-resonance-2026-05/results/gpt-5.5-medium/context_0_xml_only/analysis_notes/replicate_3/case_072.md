@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The XML shows full_expt = 0, so the optional 1-level reference block is inactive. The active pattern is polarization, detection of the 0-level/reference readout, wait, then a modulated Rabi pulse followed by the signal detection. The pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns. The exported variable list gives mod_depth = 1. The readout roles are therefore readout 1 as the pre-microwave 0-level/reference detection and readout 2 as the post-pulse pODMR signal detection.

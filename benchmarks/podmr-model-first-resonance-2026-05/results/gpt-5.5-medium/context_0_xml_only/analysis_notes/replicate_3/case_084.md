@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML and raw export indicate the active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The relevant active pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Because full_expt = 0, the optional 1-level reference block is skipped; the two stored readouts are the initial polarized/reference detection before the swept microwave pulse and the detection after the modulated Rabi pulse.
 
 The raw readouts have only two averages and both channels show a broad downward drift toward the high-frequency side. The post-pulse readout relative to the pre-pulse reference alternates in sign over adjacent frequency points rather than forming a stable localized dip or peak. Apparent low points around 3.865, 3.885, and 3.905 GHz are not isolated from the readout noise and drift, and the per-average overlay does not show a consistent resonance-shaped response.

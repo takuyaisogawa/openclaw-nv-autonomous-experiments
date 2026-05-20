@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml. The active scan varies mw_freq from 3.825 GHz to 3.925 GHz with detuning at zero. The active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns; at the 250 MHz sample rate this remains 52 ns after rounding. The provided sequence XML and exported variable values give mod_depth = 1.
+
+The readout order matters. The first detection occurs immediately after adj_polarize and is the true 0-level/reference readout. Because full_expt = 0, the optional "1 level reference" branch is skipped even though do_adiabatic_inversion is true. The second detection occurs after the modulated Rabi pulse and is the driven pODMR signal readout.
+
+The combined and per-average traces are noisy with only two averages, but the driven readout is brighter near the off-resonant sweep edges and shows lower fluorescence through the central part of the sweep relative to the reference, especially around roughly 3.88-3.90 GHz. The shape is not clean, but the contrast pattern is consistent enough with a weak pODMR dip to call a resonance present.

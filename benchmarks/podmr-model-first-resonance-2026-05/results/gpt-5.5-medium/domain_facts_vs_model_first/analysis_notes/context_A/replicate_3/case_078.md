@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active pulse sequence: Rabimodulated.xml.
 
 The sequence first polarizes the NV and detects a true m_S = 0 reference. Since full_expt = 0, the optional 1-level reference block is skipped. The second acquired readout is therefore the signal after a microwave-modulated Rabi pulse, followed by detection.

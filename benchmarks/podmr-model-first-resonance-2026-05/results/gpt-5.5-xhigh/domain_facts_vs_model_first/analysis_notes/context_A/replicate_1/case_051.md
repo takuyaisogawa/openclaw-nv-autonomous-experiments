@@ -1,0 +1,7 @@
+The provided sequence XML is Rabimodulated.xml with mw_freq as the scanned variable. The active instructions first polarize and detect a true m_S = 0 reference, then the full_expt block is skipped because full_expt = 0, then a single rabi_pulse_mod_wait_time pulse is applied followed by detection. Therefore readout 1 is the pre-microwave 0-level reference and readout 2 is the post-rabi-pulse signal, not a stored 0/1 reference pair.
+
+The XML gives mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With a 250 MHz sample rate this is exactly 13 samples, or 52 ns. Using the stated setup calibration, mod_depth = 1 corresponds to about a 10 MHz Rabi frequency, so 52 ns is close to a pi pulse. If the scan crossed a real pODMR resonance, the post-pulse readout should show a clear fluorescence reduction relative to the 0-reference, on the scale expected from the approximately 22% m_S = 0 to m_S = +1 contrast, allowing for imperfect transfer.
+
+The measured combined readouts do not show that behavior. Across the 21 frequency points, readout 2 divided by readout 1 ranges only from about 0.956 to 1.062, with a mean near 1.007. The largest negative contrast is at the low-frequency edge rather than a coherent spectral feature, and many neighboring or central points have readout 2 above the reference. The visually obvious low point near 3.900 GHz is primarily in readout 1, not a post-pulse darkening in readout 2. The two stored averages show substantial baseline/tracking variation and are not enough independent evidence for repeatability.
+
+Decision: resonance_absent.

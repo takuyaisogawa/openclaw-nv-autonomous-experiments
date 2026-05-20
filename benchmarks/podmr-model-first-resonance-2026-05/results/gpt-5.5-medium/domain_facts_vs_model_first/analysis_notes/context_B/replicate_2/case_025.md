@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_025
+Case podmr_010_2026-05-16-114624
 
 Sequence/readout interpretation
 

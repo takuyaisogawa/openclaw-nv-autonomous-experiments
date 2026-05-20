@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz with 5 MHz steps. The XML executes an initial polarization and detection as the true 0-level reference, skips the optional 1-level reference because full_expt is 0, then applies rabi_pulse_mod_wait_time followed by the second detection. The exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1.
+
+Readout role interpretation: readout 1 is the reference detection after polarization, and readout 2 is the measurement detection after the microwave/Rabi pulse. For a pODMR resonance I would expect a localized frequency-dependent contrast feature in the signal readout relative to the reference, not just shared drift or noisy point-to-point variation.
+
+The raw readouts both show a broad upward trend across the sweep with comparable fluctuations. There is no stable, localized dip or peak in the post-pulse readout relative to the reference that stands out across the two averages; the largest excursions look like noise or drift rather than a resonance line. I therefore classify this case as resonance absent.

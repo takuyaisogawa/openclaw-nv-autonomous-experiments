@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_083
+Case: podmr_069_2026-05-17-081236
 
 Sequence identification:
 - Active sequence: Rabimodulated.xml / Rabi-modulated pODMR scan varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

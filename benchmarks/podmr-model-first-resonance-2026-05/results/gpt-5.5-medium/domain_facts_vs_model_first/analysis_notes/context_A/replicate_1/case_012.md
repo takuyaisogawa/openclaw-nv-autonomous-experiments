@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence decision:
 
 The sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect a true m_S = 0 reference readout. The optional m_S = +1 reference block is inactive because full_expt = 0, despite do_adiabatic_inversion being true. The active microwave-dependent readout is therefore the final detection after rabi_pulse_mod_wait_time.

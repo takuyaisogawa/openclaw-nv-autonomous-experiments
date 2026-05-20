@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+The provided XML sets up a polarization pulse followed by detection as a true 0-level reference, then skips the optional 1-level reference because full_expt = 0. It then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s (52 ns), mod_depth = 1, and switch_delay = 1e-07 s, followed by the signal detection. Thus readout 1 is the reference/readout before the microwave pulse and readout 2 is the post-pulse signal readout.
+
+The combined traces are noisy at the roughly 1 count level, and the signal/reference difference has multiple isolated dips and rises rather than a single coherent ODMR-like feature. The larger negative contrast points near 3.850, 3.865, 3.895-3.910, and 3.925 GHz do not make a stable line shape, and the two average overlays are not mutually consistent. With only two averages and no reproducible localized dip in the post-pulse signal relative to the reference, I do not identify a pODMR resonance in this scan.

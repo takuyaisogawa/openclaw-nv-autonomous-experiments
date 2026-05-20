@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_013
+Case podmr_032_2026-05-14-161051
 
 I used the provided sequence XML as the deciding sequence. The active sequence is Rabimodulated.xml with mw_freq varied from 3.825 GHz to 3.925 GHz. The sequence first acquires a true mS = 0 reference after optical polarization and detection. Because full_expt = 0, the optional mS = +1 reference block is skipped. The second acquired readout is therefore the signal after a Rabi-modulated microwave pulse followed by detection.
 

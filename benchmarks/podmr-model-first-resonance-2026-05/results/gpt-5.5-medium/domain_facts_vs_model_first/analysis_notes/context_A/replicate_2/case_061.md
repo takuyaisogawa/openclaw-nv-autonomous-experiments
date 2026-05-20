@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The XML sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With the given setup estimate of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse. The sequence first polarizes and detects the bright m_S = 0 reference, then skips the optional m_S = +1 reference because full_expt = 0, then applies the 52 ns modulated microwave pulse and detects the post-pulse signal. Thus readout 1 is the m_S = 0/reference readout and readout 2 is the post-microwave signal readout.

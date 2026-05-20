@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 I used the provided sequence XML and the raw export rather than labels or prior outputs.
 
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML has mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied domain fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse on resonance, so a real pODMR resonance should produce a clear loss of fluorescence in the microwave readout relative to the mS = 0 reference, on the order of the setup contrast scale if well driven.

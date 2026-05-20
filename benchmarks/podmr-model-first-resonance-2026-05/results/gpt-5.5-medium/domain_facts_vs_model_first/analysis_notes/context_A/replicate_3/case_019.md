@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated pulse sequence, scanning mw_freq.
 
 The provided sequence XML has full_expt = 0, so the optional 1-level reference block is skipped. The first detection after adj_polarize is the true m_S = 0 / bright reference readout. The later detection after rabi_pulse_mod_wait_time is the signal readout after the microwave pulse.

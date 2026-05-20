@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The active sequence is Rabimodulated.xml. With full_expt = 0, the conditional "Acquire 1 level reference" block is skipped. The executed readouts are therefore:

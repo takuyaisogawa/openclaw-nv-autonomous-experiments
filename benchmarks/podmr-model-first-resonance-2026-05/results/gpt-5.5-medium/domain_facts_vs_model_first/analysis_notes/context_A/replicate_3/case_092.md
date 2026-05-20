@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_092.
+Case podmr_078_2026-05-17-102220.
 
 The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz in 5 MHz steps. The active variables include mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is close to a pi pulse on resonance.
 

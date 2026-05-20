@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The provided XML is the Rabimodulated sequence. It varies mw_freq over the scan and sets the microwave with mw_freq + detuning. The active readout structure is:

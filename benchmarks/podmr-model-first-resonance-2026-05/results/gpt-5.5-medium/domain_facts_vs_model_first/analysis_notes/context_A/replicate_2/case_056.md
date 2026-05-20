@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_056.
+Case podmr_042_2026-05-16-225623.
 
 I used only the provided sequence XML and raw export for this case. The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions acquire an initial fluorescence readout after polarization, then because full_expt is 0 they skip the separate m_S=1 reference block, apply the active modulated Rabi pulse, and acquire the second detection. Thus readout 1 is the pre-pulse/0-reference-like readout and readout 2 is the post-Rabi-pulse readout.
 

@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq as the swept parameter. The XML sequence first polarizes the NV and records a detection readout as the bright m_S = 0 reference. The optional "1 level reference" block is inactive because full_expt = 0, so the second recorded readout comes after a rabi_pulse_mod_wait_time pulse and is the pODMR signal readout.
+
+The pulse context supports expecting a strong dip if the microwave frequency is resonant. The provided sequence has mod_depth = 1 and length_rabi_pulse = 52 ns, which is rounded to 13 samples at 250 MHz and remains 52 ns. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, this is close to a pi pulse, so a resonant transition from m_S = 0 to m_S = +1 can approach the setup contrast scale of about 22%.
+
+The raw data show readout 1 staying near the bright baseline while readout 2 has a localized trough centered around 3.875-3.880 GHz. At 3.875 GHz readout 1 is about 49.27 and readout 2 is about 39.77, a drop of about 19.3% relative to the reference; at 3.880 GHz the drop is about 17.2%. This is much larger than the neighboring point-to-point scatter and is close to the expected contrast for a near-pi pulse. The two stored averages should not be overinterpreted as independent repeatability, but they show the same trough location rather than a single isolated outlier.
+
+Decision: a pODMR resonance is present.

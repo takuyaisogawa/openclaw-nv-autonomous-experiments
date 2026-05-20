@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true m_S = 0 reference readout, then because full_expt = 0 it skips the explicit m_S = +1 reference block and performs one rabi_pulse_mod_wait_time followed by the signal detection. Thus readout 1 is the 0-level reference and readout 2 is the post-microwave-pulse signal readout.
 
 The provided XML variables set mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse, so an on-resonance point should transfer population away from m_S = 0 and produce a localized darkening of the second readout relative to the first, with possible contrast up to the setup scale of about 22%.

@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+Pulse/readout structure from the XML: the sequence polarizes and immediately detects the first readout as the true 0-level reference. The optional 1-level reference branch is inactive because full_expt = 0. After the reference readout, the active experiment applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, and switch_delay = 100 ns, then performs the second detection. Thus readout 1 is the reference-like polarized readout and readout 2 is the post-microwave-pulse signal readout.
+
+The combined raw traces and the per-average overlays do not show a stable, reproducible resonance feature across the frequency scan. Variations in readout 2 are comparable to the scatter between the two averages, and apparent dips or peaks are not consistent or structured relative to readout 1. With only two averages and noisy point-to-point fluctuations, there is no convincing pODMR resonance signature.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The provided XML is Rabimodulated.xml. The active instructions first polarize the NV and perform detection, giving the true m_S = 0 reference readout. The optional "Acquire 1 level reference" branch is disabled because full_expt = 0, so there is no active independent m_S = +1 reference. The active microwave-dependent measurement is then a single rabi_pulse_mod_wait_time followed by detection, giving the signal readout after the pulse. Thus readout 1 is the m_S = 0 reference and readout 2 is the post-microwave signal readout.

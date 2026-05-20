@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation
 
 The active sequence is Rabimodulated.xml. It first polarizes the NV and performs a detection, then waits. Because full_expt = 0, the optional "1 level reference" block is inactive. The only microwave manipulation before the second detection is:

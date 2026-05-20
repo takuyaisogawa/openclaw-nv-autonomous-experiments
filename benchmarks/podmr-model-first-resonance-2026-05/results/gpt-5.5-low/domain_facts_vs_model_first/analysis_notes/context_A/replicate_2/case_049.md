@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml. It first polarizes and detects a true m_S=0 reference readout, waits, skips the explicit m_S=1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection readout. Thus readout 1 is the reference and readout 2 is the microwave-pulse signal readout.
+
+Using the stated setup scale, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is roughly a half Rabi period and should create a sizeable contrast change near resonance, on the order of a meaningful fraction of the 22 percent m_S=0 to m_S=+1 contrast. The scan instead shows both readouts drifting upward with frequency, and the difference between the pulse readout and reference is irregular rather than a localized dip or peak that repeats cleanly across the stored averages. The strongest excursions are comparable to the per-average scatter and tracking-like baseline movement.
+
+Decision: no reliable pODMR resonance is present.

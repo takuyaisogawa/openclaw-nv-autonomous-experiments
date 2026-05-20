@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML shows mod_depth = 1 and length_rabi_pulse = 52 ns, rounded at a 250 MHz sample rate. Because full_expt = 0, the optional 1-level reference block is skipped; the executed readouts are the initial polarized/0-level reference detection followed by the detection after one modulated 52 ns microwave pulse. Thus readout 1 is the reference-like polarized readout and readout 2 is the microwave-pulse readout to compare against it.
 
 The combined traces are noisy and show isolated point-to-point excursions rather than a consistent pODMR line shape. The most negative readout2-minus-readout1 values occur near the high-frequency edge around 3.920-3.925 GHz, but they are edge-localized and not supported by a clear centered dip with recovery. Per-average overlays also show large average-dependent fluctuations, including sign changes and unrelated spikes at other frequencies. With only two averages and no stable, repeatable contrast feature across the scan, I do not identify a reliable pODMR resonance.

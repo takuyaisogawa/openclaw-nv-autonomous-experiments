@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz. The XML sets full_expt = 0, so the optional 1-level reference block is not executed. The executed readouts are:

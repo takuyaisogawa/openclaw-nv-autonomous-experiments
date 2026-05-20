@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect the true m_S = 0 level reference, then because full_expt = 0 they skip the separate m_S = +1 reference block, then apply rabi_pulse_mod_wait_time followed by a second detection. Thus readout 1 is the m_S = 0 reference and readout 2 is the post-microwave-pulse signal readout.
 
 The active pulse parameters in the provided sequence XML are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse, so a resonance should be capable of producing a substantial fluorescence reduction, on the order of the setup contrast scale, if the microwave is resonant.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout roles
 
 The provided sequence is Rabimodulated.xml. The active microwave block is a single `rabi_pulse_mod_wait_time(PSeq, sample_rate, length_rabi_pulse, mod_depth, switch_delay, ch_on)` followed by detection. `full_expt = 0`, so the intermediate mS = +1 reference block is inactive even though it appears in the XML. Therefore readout 1 is the bright mS = 0 reference acquired immediately after optical polarization, and readout 2 is the post-microwave readout after the active Rabi pulse.

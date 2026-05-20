@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_003
+Case podmr_006_2026-05-11-020739
 
 I used inputs/sequence.xml as the sequence source. The active sequence is Rabimodulated.xml. With full_expt = 0, the enabled detections are:
 

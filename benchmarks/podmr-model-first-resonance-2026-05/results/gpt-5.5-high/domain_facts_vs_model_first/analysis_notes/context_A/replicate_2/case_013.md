@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The provided sequence XML and exported variable values give mod_depth = 1 and length_rabi_pulse = 52 ns; with the stated setup scale this is approximately a pi pulse because the Rabi frequency is about 10 MHz at mod_depth = 1.
+
+Readout roles: full_expt = 0, so the optional "1 level reference" branch is skipped. The first detection is the bright m_S = 0 reference after optical polarization. The second detection is the signal after the microwave rabi_pulse_mod_wait_time pulse.
+
+Decision: a resonance is present. Around 3.875-3.880 GHz the post-microwave readout drops to about 29-30 while the bright reference is about 32-36, with the strongest point near 3.880 GHz giving roughly an 18% reduction relative to the simultaneous reference. That is close to the expected contrast scale for a near-pi pulse in this setup. The per-average traces show substantial slow drift/tracking cadence effects, so they are not treated as an independent repeatability test, but the combined readouts still show a localized, physically plausible contrast dip rather than only broadband drift.

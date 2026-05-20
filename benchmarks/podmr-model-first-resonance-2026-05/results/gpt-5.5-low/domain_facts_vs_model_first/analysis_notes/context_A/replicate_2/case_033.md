@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The instructions acquire a true m_S = 0 level reference first using polarize then detection, and because full_expt = 0 the optional m_S = +1 reference block is inactive. The only microwave-dependent readout is after rabi_pulse_mod_wait_time followed by detection, so readout 1 is the bright reference and readout 2 is the signal after the Rabi pulse.
+
+The provided sequence XML has mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this is close to a pi pulse, so at resonance the signal readout can plausibly approach the full m_S = 0 to m_S = +1 contrast scale of about 22 percent. The combined readout 2 trace shows a localized dip around 3.875-3.880 GHz from a baseline near 47-49 down to about 39, roughly 17-20 percent, while readout 1 does not show a matching dip. The same feature is visible in both stored averages, though the stored averages should not be treated as a strong repeatability test because they may reflect tracking cadence.
+
+Decision: a pODMR resonance is present.

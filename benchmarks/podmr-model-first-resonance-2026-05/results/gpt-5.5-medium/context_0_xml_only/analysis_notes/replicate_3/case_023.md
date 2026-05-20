@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_023.
+Case podmr_008_2026-05-16-014743.
 
 The provided sequence XML is Rabimodulated.xml. The active instructions first polarize and detect a true 0-level/reference readout, then wait. The optional 1-level reference branch is inactive because full_expt is set to 0, so the second acquired readout is the measurement after a rabi_pulse_mod_wait_time pulse. The microwave frequency is scanned by mw_freq. The modulated pulse uses length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, i.e. 52 ns, with mod_depth = 1 from the provided XML. Other relevant settings are freqIQ = 50 MHz, mw_ampl = -5 dBm, ampIQ = 5 dBm, delay_wrt_1mus = 0.2 us, and length_last_wait = 1 us.
 

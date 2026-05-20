@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_064
+Case: podmr_050_2026-05-17-005655
 
 Sequence identification from inputs/sequence.xml:
 - Active sequence: Rabimodulated.xml / Rabimodulated pulse sequence.

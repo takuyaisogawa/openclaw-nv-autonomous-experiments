@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout assessment:
 
 The active sequence is Rabimodulated.xml. The sequence polarizes the NV, performs a first detection before the microwave pulse, waits, then applies rabi_pulse_mod_wait_time and performs a second detection. Because full_expt is 0, the optional 1-level reference block is disabled. The two active readout roles are therefore:

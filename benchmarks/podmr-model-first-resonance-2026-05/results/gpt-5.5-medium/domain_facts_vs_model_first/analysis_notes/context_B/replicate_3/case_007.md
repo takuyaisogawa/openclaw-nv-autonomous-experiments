@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_007.
+Case podmr_011_2026-05-11-181506.
 
 Sequence inspection:
 - SequenceName is Rabimodulated.xml.

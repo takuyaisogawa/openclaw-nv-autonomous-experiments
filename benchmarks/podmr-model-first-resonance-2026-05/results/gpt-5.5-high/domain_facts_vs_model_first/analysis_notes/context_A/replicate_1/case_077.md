@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. In the supplied sequence XML and active variable values, mod_depth is 1 and length_rabi_pulse is 52 ns. With the stated setup calibration, mod_depth 1 gives about a 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse on resonance and should produce a large darkening of the microwave readout relative to the bright reference.
+
+The readout roles are set by the instructions. The sequence first polarizes and detects immediately, giving readout 1 as the true m_S = 0 bright reference. Since full_expt is 0, the optional m_S = +1 reference block is skipped. The only microwave pulse executed before the second detection is rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, so readout 2 is the post-microwave pODMR test readout.
+
+The raw data do not show a convincing resonance. The two readouts share a broad downward drift across the scan, and the post-microwave readout is sometimes lower and sometimes higher than the bright reference. The largest depletion of readout 2 relative to readout 1 is only about 2.7 counts, roughly 5 percent, and similar excursions occur at multiple separated frequencies rather than forming one localized resonance. Given the expected contrast scale of about 22 percent for m_S = 0 versus m_S = +1 and the near-pi pulse area, a real resonance should be substantially clearer than the observed alternating scatter. The stored two averages are also not a strong independent repeatability test.
+
+Decision: resonance absent.

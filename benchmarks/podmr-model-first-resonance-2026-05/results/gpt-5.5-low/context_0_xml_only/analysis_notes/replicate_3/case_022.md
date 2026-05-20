@@ -1,0 +1,5 @@
+The provided sequence XML is a Rabimodulated pulse sequence scanned over mw_freq from 3.825 GHz to 3.925 GHz. The active variables show length_rabi_pulse = 52 ns after rounding at 250 MS/s, mod_depth = 1, full_expt = 0, delay_wrt_1mus = 0.2 us, and length_last_wait = 1 us.
+
+Because full_expt is zero, the conditional 1-level reference block is skipped. The sequence therefore performs an initial polarize and detection before the microwave pulse, which acts as the 0-level/bright reference readout, then applies rabi_pulse_mod_wait_time with the scanned mw_freq, 52 ns duration, and mod_depth 1, followed by a second detection that is the microwave-affected signal readout.
+
+The combined raw readouts show readout 1 staying near 35-37 counts without a clear resonant feature, while readout 2 has a pronounced dip from the mid-30s down to about 28-29 counts near 3.875-3.880 GHz. The same dip appears in both individual averages in the per-average overlay, so it is not just a single-average artifact. This behavior is consistent with a pODMR resonance in the microwave-affected readout.

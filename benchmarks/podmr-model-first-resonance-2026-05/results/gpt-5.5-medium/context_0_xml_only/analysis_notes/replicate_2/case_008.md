@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_008.
+Case podmr_014_2026-05-12-081841.
 
 The provided sequence and export identify the active sequence as Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The executed instructions first polarize and detect the true 0-level reference, then skip the optional 1-level reference block because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by the signal detection. Thus readout 1 is the 0-level/reference readout, and readout 2 is the post-microwave pulse signal readout. The relevant pulse is length_rabi_pulse = 52 ns, rounded at 250 MHz sample rate, with mod_depth = 1 in the variable values used for the run.
 

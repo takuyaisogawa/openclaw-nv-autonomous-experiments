@@ -1,8 +1,6 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 # pODMR decision note
 
-Case: case_091
+Case: podmr_077_2026-05-17-100811
 
 Sequence identification from inputs/sequence.xml: the active sequence is Rabimodulated.xml. The instructions first polarize and detect, giving readout 1 as the true m_S=0 fluorescence reference. Because full_expt = 0, the optional m_S=1 reference branch is skipped. The sequence then applies one rabi_pulse_mod_wait_time pulse and detects again, so readout 2 is the pulsed pODMR signal readout. The active pulse uses length_rabi_pulse = 52 ns and mod_depth = 1. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 

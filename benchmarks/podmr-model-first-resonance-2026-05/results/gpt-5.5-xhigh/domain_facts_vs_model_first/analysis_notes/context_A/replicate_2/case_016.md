@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The instruction flow first polarizes and detects the bright m_S = 0 reference, then waits. The optional "Acquire 1 level reference" branch is inactive because full_expt = 0, so there is no independent dark-state reference readout in this run. The active pODMR signal readout is the detection after rabi_pulse_mod_wait_time.
+
+Using the provided sequence XML, the active Rabi pulse is length_rabi_pulse = 52 ns with mod_depth = 1. With the stated setup calibration, that corresponds to about a 10 MHz Rabi frequency and a near-pi pulse duration, so an on-resonance transition should be able to approach the full setup contrast scale of about 22%.
+
+The combined raw readouts show readout 1 staying mostly near the bright reference level while readout 2 develops a localized dip centered near 3.875-3.880 GHz. At 3.880 GHz, readout 1 is 37.13 and readout 2 is 28.98, a ratio of about 0.780, or a roughly 22.0% reduction. The same dip appears in both stored averages at the same frequency region, although the averages should mainly be treated as tracking-cadence snapshots rather than a strong repeatability test.
+
+Because the active pulse is strong enough and long enough to produce near-full contrast, and because the observed readout-2 dip has the expected sign, localization, and contrast scale relative to the m_S = 0 reference readout, I classify this case as a pODMR resonance present.

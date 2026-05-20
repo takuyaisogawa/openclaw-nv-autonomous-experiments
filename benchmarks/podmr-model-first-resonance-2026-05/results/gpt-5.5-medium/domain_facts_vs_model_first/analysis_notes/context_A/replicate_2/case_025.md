@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect, which is explicitly labeled as acquiring the true 0 level reference. The full_expt variable is 0, so the conditional block that would acquire a 1 level reference is skipped. After that, the sequence applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, then performs the second detection. Therefore readout 1 is the m_S = 0 bright reference and readout 2 is the post-microwave-pulse signal, not an independently acquired dark reference.

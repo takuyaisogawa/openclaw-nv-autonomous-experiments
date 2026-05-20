@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml. It polarizes first, then takes a detection readout that serves as the true m_S = 0 fluorescence reference. The optional m_S = +1 reference block is inactive because full_expt = 0, even though do_adiabatic_inversion is set. The active measurement readout is after a rabi_pulse_mod_wait_time pulse followed by detection.
 
 From the provided sequence XML, length_rabi_pulse is 52 ns and mod_depth is 1. With the stated setup scale, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse. On resonance this should produce a lower post-pulse readout relative to the zero-reference readout, with an ideal scale up to roughly the stated 22% contrast.

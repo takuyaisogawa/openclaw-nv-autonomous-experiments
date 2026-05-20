@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_062
+Case: podmr_048_2026-05-17-002650
 
 Inputs used:
 - Active sequence: Rabimodulated.xml, scanned mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect a true m_S = 0 reference, then skip the optional m_S = 1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time and detect the post-pulse signal. Thus readout 1 is the bright reference and readout 2 is the microwave-pulse signal.

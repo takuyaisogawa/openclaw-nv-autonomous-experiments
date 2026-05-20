@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml. The XML sets full_expt = 0, so the optional 1-level reference block is skipped. The executed readouts are therefore:

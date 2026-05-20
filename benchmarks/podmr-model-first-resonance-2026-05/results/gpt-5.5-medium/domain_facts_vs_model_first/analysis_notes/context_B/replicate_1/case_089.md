@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_089
+Case: podmr_075_2026-05-17-093901
 
 Active sequence and readout roles:
 The provided sequence XML is Rabimodulated.xml. With full_expt = 0, the optional m_S = +1 reference block is skipped. The active detections are therefore:

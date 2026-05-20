@@ -1,0 +1,7 @@
+Sequence and readout interpretation:
+
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects the bright m_S = 0 reference. Because full_expt = 0, the conditional "Acquire 1 level reference" block is skipped, so the two stored readouts are the initial 0-level reference and the detection following the modulated Rabi pulse. The pulse duration is length_rabi_pulse = 52 ns. The provided XML/variable values give mod_depth = 1, so using the stated 10 MHz per mod_depth scale, the resonant Rabi period is about 100 ns and a 52 ns pulse is close to a pi pulse. If a pODMR resonance were present, the post-pulse readout should show a substantial resonant reduction relative to the 0 reference, on the order of the setup contrast scale.
+
+Data assessment:
+
+The combined readouts fluctuate around 48-50 counts with point-to-point noise comparable to or larger than the differences between readout 1 and readout 2. There is no clear, localized, reproducible contrast feature where the post-pulse readout is systematically depressed relative to the reference. The per-average traces do not provide strong independent repeatability because the averages can reflect tracking cadence, and the apparent excursions are not consistent enough to support a resonance assignment. Given the expected near-pi-pulse contrast at mod_depth = 1, the absence of a coherent dip is more consistent with no detectable pODMR resonance in this scan.

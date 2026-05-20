@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 I used only the provided local XML/raw export for this case.
 
 Active sequence and roles:

@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz. The active instructions polarize the NV, take a first detection as the true 0-level reference, wait, then apply a rabi_pulse_mod_wait_time pulse and take the second detection as the signal readout. The full_expt variable is 0, so the optional 1-level reference block is skipped. The active pulse uses length_rabi_pulse = 5.2e-08 s (52 ns) and mod_depth = 1.
+
+For pODMR contrast, the relevant comparison is the second readout after the microwave pulse against the first 0-level reference readout at each scan frequency. The signal/reference difference has a few negative excursions, notably around 3.860 GHz and 3.885 GHz, but the trace does not form a clean, reproducible ODMR-like dip or line shape. Neighboring points fluctuate strongly and there are comparable positive excursions, so the apparent dips are better treated as noise in this low-average scan rather than evidence of a resonance.
+
+Decision: resonance_absent.

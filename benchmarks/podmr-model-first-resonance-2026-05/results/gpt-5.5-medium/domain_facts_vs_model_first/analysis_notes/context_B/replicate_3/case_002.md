@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_002.
+Case podmr_005_2026-05-10-173726.
 
 I used the provided sequence XML, not prior labels or sibling context. The active
 sequence is Rabimodulated.xml / Rabimodulated, scanned over mw_freq from

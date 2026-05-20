@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The programmed sequence first polarizes and detects a true m_S = 0 reference, then waits. The optional m_S = +1 reference block is guarded by full_expt, and full_expt is 0, so that block is skipped. The second active detection is after a rabi_pulse_mod_wait_time call with length_rabi_pulse = 52 ns and mod_depth = 1.

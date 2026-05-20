@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect a true m_S = 0 reference, then wait, then apply rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then detect the post-pulse signal. Because full_expt is 0, the optional m_S = +1 reference branch is inactive; the two stored readouts are therefore the pre-pulse 0 reference and the post-microwave signal readout, not independent signal repeats.
+
+The active pulse parameters from the provided XML/raw variable values are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, this pulse is near a pi pulse. If the scan crossed a pODMR resonance, the post-pulse readout should show a substantial fluorescence change relative to the m_S = 0 reference, on the order of the setup contrast scale rather than a few-count tracking fluctuation.
+
+The raw readouts do not show a consistent resonance-shaped signal feature. Readout 2 is noisy and sometimes higher than the reference, including a high excursion near the upper end of the scan, while readout 1 also drifts and the two averages differ in a way consistent with tracking cadence. There is no stable dip or contrast feature near the expected microwave condition that is comparable to the approximately 22% m_S = 0 to m_S = +1 contrast scale.
+
+Decision: resonance_absent.

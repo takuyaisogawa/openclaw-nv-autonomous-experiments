@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Sequence and decision note for case_018
+Sequence and decision note for podmr_003_2026-05-16-003531
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. The active instructions first polarize and detect, giving a true m_S = 0 bright reference readout. Because full_expt = 0, the optional m_S = 1 reference block is skipped. The second active detection occurs after rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, so readout 2 is the microwave-pulse-affected pODMR signal readout.
 

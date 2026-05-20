@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq as the scanned variable. In the provided sequence XML, full_expt is 0, so the conditional "Acquire 1 level reference" block is not executed despite do_adiabatic_inversion being true. The active readouts are therefore the initial polarized/detected true m_S=0 bright reference, followed by a 52 ns rabi_pulse_mod_wait_time pulse and a second detection that is the pODMR signal readout.
+
+The provided sequence XML sets mod_depth to 1 and length_rabi_pulse to 52 ns. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth 1, the Rabi period is about 100 ns and a pi pulse is about 50 ns, so this pulse duration is close to a pi pulse on resonance. A real resonance should therefore produce a large reduction in the post-microwave signal readout relative to the bright reference, on the order of the stated 22% contrast scale.
+
+The combined data show readout 1 staying relatively smooth near 20-22 counts, while readout 2 has a pronounced localized dip around 3.87-3.88 GHz, reaching about 17 counts before recovering to the low 20s at higher frequency. The dip depth is comparable to the expected contrast for a near-pi pulse. The two stored averages have strong opposite tracking-like drifts, so they are not a clean repeatability test by themselves, but the averaged post-pulse readout still shows a frequency-localized contrast feature with the correct role and magnitude.
+
+Decision: a pODMR resonance is present.

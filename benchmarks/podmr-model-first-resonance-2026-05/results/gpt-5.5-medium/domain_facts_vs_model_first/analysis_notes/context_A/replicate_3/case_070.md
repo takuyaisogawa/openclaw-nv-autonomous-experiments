@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence is Rabimodulated.xml. The active scan variable is mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. In the provided sequence XML, mod_depth is 1 and length_rabi_pulse is 52 ns. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse, so a true resonance should produce a sizable post-pulse fluorescence reduction, potentially on the order of the 22% mS=0 to mS=+1 contrast scale.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 
 The provided sequence is Rabimodulated.xml. The instructions first polarize and detect, giving the true 0-level/reference readout. The optional 1-level reference block is inactive because full_expt = 0, so that block does not contribute an active readout. The active signal path then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by detection. Thus readout 1 is the no-MW reference and readout 2 is the post-microwave Rabi-modulated signal readout.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz.
 
 The provided sequence sets full_expt = 0, so the active acquisition is a true 0-level reference detection after laser polarization, followed by one modulated Rabi pulse and a second detection. The conditional 1-level reference block is inactive. Thus readout 1 is the reference/0-level fluorescence channel and readout 2 is the signal after the microwave pulse.

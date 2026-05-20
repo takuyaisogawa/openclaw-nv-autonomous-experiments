@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_087.
+Case podmr_073_2026-05-17-090948.
 
 I used the provided sequence XML to identify the active experiment. The sequence is Rabimodulated.xml. The instruction path is:
 

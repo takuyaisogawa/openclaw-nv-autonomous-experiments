@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspected before deciding.
 
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz.

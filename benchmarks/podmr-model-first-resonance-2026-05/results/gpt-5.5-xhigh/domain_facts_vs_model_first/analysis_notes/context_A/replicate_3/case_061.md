@@ -1,0 +1,7 @@
+Sequence decision note for podmr_047_2026-05-17-001223
+
+The provided XML is Rabimodulated with mw_freq swept. The active blocks are an initial adj_polarize plus detection readout, then a wait, then the optional full_expt 1-level reference block is skipped because full_expt = 0, followed by a single rabi_pulse_mod_wait_time and final detection. Thus readout 1 is the true mS = 0 reference, and readout 2 is the MW-pulse readout to test resonance.
+
+The relevant pulse parameters from the provided sequence/variable values are mod_depth = 1 and length_rabi_pulse = 5.2e-08 s = 52 ns. With the supplied setup fact of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse on resonance, so a real resonance should drive close to the full mS = 0 to mS = +1 optical contrast scale, about 22% lower fluorescence in the MW readout relative to the 0-reference.
+
+The measured readout2-minus-readout1 normalized difference is small and inconsistent with that expectation: the strongest negative point is about -5.3%, the strongest positive point is about +5.1%, and the mean difference is about -0.6%. Several apparent dips are isolated or ride on reference drift/tracking structure, and the stored two averages are not enough to treat this as independent repeatability. Because the expected near-pi-pulse resonance contrast would be much larger and more coherent than the observed few-percent fluctuations, I classify this case as resonance absent.

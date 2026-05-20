@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML and raw export were inspected before deciding. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz, using a 52 ns rabi_pulse_mod_wait_time pulse, mod_depth = 1 from the variable values, and full_expt = 0. Because full_expt is zero, the "Acquire 1 level reference" block is inactive; the first detection after adj_polarize is the true 0-level reference, and the later detection after the modulated Rabi pulse is the pODMR-sensitive readout.
 
 Readout 1 is therefore the 0-level reference and remains near 40-42 counts without a comparable resonant dip. Readout 2 is the active modulated pulse readout and shows a pronounced, repeatable decrease from about 40 counts down to about 32 counts around 3.875-3.880 GHz in both averages. This frequency-localized contrast relative to the reference is consistent with a pODMR resonance.

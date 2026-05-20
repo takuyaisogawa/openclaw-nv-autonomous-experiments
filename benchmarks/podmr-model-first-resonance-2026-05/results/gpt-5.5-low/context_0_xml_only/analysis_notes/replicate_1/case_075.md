@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence performs an initial adj_polarize followed by detection for the true 0-level reference, then because full_expt = 0 it skips the 1-level reference block and applies rabi_pulse_mod_wait_time before the second detection. The active microwave pulse is length_rabi_pulse = 52 ns after sample-rate rounding, with mod_depth = 1 in the provided sequence variable values.
+
+Readout role interpretation: readout 1 is the pre-microwave 0-level reference detection; readout 2 is the signal after the modulated 52 ns rabi pulse. Since full_expt is disabled, no separate 1-level reference readout is acquired.
+
+Resonance assessment: readout 2 shows a pronounced local minimum at about 3.880 GHz, dropping to roughly 45.8 counts while adjacent points are near 49.2 and 49.2 counts. The per-average traces both show the same dip at this frequency, while the reference readout does not show a matching reference artifact. This supports a real pODMR resonance rather than random readout fluctuation.

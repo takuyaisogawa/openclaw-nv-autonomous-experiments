@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the active instructions, the sequence first polarizes and detects a true mS=0 reference, then waits, applies rabi_pulse_mod_wait_time using length_rabi_pulse, and detects the MW-pulsed signal. The optional "Acquire 1 level reference" block is disabled because full_expt = 0, so the two stored readouts are the 0-reference and the post-rabi-pulse signal, not an independent 0/1 reference pair.
+
+The sequence XML and exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup calibration of about 10 MHz Rabi frequency at mod_depth = 1, the pulse is close to a pi pulse on resonance. A real pODMR resonance should therefore drive a large population transfer and make the signal readout substantially darker than the 0-reference, on the order of the 22% mS=0 to mS=+1 contrast scale.
+
+The combined raw readouts do not show that behavior. The reference mean is about 50.99 and the MW-pulsed signal mean is about 50.48, only about 1% lower overall. The strongest signal/reference suppression is near 3.920 GHz, where the ratio is about 0.946, still far below the expected contrast and occurring as a small edge fluctuation rather than a clear resonance feature. The per-average traces show broad tracking-level offsets and point-to-point scatter, and the stored averages are not a strong independent repeatability check here.
+
+Decision: resonance_absent.

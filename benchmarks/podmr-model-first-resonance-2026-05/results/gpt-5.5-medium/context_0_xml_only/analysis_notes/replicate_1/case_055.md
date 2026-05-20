@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 - Active sequence: Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz.
 - The provided XML uses a microwave-modulated Rabi pulse via rabi_pulse_mod_wait_time followed by detection.

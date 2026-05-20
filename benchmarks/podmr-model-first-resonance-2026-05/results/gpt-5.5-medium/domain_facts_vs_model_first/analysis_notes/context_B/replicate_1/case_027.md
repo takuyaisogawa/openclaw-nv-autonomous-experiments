@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_027
+Case: podmr_012_2026-05-16-121601
 
 I used only the provided sequence XML and raw export values for this decision.
 

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active microwave operation is rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, so the pulse duration is 52 ns. The provided XML has mod_depth = 1. The full_expt variable is 0, so the optional 1-level reference block is skipped even though do_adiabatic_inversion is true. The active readouts are therefore:

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Free-form analysis note for case_016
+Free-form analysis note for podmr_001_2026-05-16-000631
 
 Inputs used: inputs/sequence.xml and inputs/raw_export.json only. No labels, sibling cases, previous outputs, or external context were used.
 

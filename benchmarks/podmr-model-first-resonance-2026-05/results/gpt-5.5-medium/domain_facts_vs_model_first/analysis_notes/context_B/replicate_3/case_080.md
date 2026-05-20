@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_080
+Case podmr_066_2026-05-17-072831
 
 I used the provided sequence XML as the active sequence definition. The active sequence is Rabimodulated.xml. It first polarizes and detects a true m_S = 0 reference, then because full_expt = 0 it skips the optional m_S = 1 reference block. It then applies one rabi_pulse_mod_wait_time pulse and performs the second detection. Thus readout 1 is the pre-microwave m_S = 0 reference and readout 2 is the post-Rabi-pulse signal readout. The active pulse duration is length_rabi_pulse = 52 ns and the active mod_depth is 1.
 

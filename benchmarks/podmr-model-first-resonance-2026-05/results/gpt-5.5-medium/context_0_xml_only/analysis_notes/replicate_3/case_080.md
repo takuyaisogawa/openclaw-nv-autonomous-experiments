@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_080.
+Case podmr_066_2026-05-17-072831.
 
 The provided sequence XML is Rabimodulated.xml, varying mw_freq. The active instruction path has full_expt = 0, so the optional "1 level reference" block is skipped even though do_adiabatic_inversion is true. The two acquired readouts are therefore:
 

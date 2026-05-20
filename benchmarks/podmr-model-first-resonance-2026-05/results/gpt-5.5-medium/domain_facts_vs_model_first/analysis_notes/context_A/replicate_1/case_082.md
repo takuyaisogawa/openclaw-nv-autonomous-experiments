@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The provided sequence XML is Rabimodulated.xml. It polarizes the NV, performs a detection event as the true m_S = 0 reference, waits, skips the optional m_S = +1 reference because full_expt = 0, then applies one rabi_pulse_mod_wait_time pulse and detects again. Thus the two stored readouts are the 0-reference readout and the post-microwave-pulse signal readout, not independent repeated ODMR traces.

@@ -1,0 +1,5 @@
+Using inputs/sequence.xml and the exported variable values, the active pulse sequence is Rabimodulated.xml while sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The active variables give sample_rate = 250 MS/s, length_rabi_pulse = 52 ns after rounding to the sample grid, mod_depth = 1, full_expt = 0, delay_wrt_1mus = 0.2 us, and length_last_wait = 1 us.
+
+Because full_expt is zero, the optional 1-level reference block is skipped. The first detection occurs immediately after adj_polarize and is the true 0-level/reference readout. The second detection occurs after rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay), so it is the pODMR-sensitive post-pulse readout.
+
+The combined traces and the two per-average overlays do not show a reliable resonance. The post-pulse readout changes with frequency, but much of the structure is shared with or contradicted by the 0-reference, and the per-average behavior is not reproducible. The strongest contrast excursion near 3.900 GHz is narrow and is driven substantially by a reference excursion rather than a clean dip in the post-pulse channel. I therefore classify this case as resonance absent.

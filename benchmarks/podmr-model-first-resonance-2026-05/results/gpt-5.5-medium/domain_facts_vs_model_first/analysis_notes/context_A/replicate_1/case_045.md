@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/readout interpretation:
 
 The active XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to

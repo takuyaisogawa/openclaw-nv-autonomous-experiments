@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated sequence while scanning mw_freq from 3.825 GHz to 3.925 GHz.
 
 The provided sequence has full_expt = 0, so the optional m_S = +1 reference block is skipped even though do_adiabatic_inversion is true. The active readouts are therefore:

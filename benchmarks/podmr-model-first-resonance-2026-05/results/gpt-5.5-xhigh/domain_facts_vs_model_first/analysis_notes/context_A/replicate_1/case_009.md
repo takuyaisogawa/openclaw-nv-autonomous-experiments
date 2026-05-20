@@ -1,0 +1,9 @@
+Sequence XML: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a true m_S = 0 reference, then wait. The optional 1-level reference block is inactive because full_expt = 0, even though do_adiabatic_inversion is true. The only microwave-probed readout is therefore after rabi_pulse_mod_wait_time(length_rabi_pulse, mod_depth, switch_delay), followed by detection.
+
+Readout roles: readout 1 is the true 0-level reference detection before the microwave pulse. Readout 2 is the signal detection after the Rabi-modulated microwave pulse.
+
+Pulse parameters: mod_depth = 1 and length_rabi_pulse = 52 ns after sample-rate rounding at 250 MHz. With the supplied scale of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi pulse, so a real on-resonance response should drive population toward m_S = +1 and make readout 2 clearly dimmer than readout 1. The setup contrast scale is about 22%, so a convincing resonance would be expected as a coherent reference-normalized dip, not just a small isolated mismatch.
+
+Data assessment: the combined readouts have strong slow drift across the scan. The normalized signal-minus-reference is mostly small and sign-changing: readout 2 is higher than the 0-reference over much of the low-frequency side, with negative excursions of only about 5% near 3.895 and 3.915 GHz. Those excursions are well below the expected near-pi contrast scale and do not form a clean, localized resonance profile. The per-average traces also show large opposing baseline/tracking behavior, so the stored averages do not provide strong independent confirmation.
+
+Decision: resonance absent. The active near-pi microwave pulse should have produced a more coherent and larger signal depletion relative to the true 0-reference if a pODMR resonance were present.

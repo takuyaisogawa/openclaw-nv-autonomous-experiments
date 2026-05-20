@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence XML defines the active pulse sequence as Rabimodulated.xml. It sets a 250 MHz sample rate and uses mw_freq as the swept parameter. The microwave pulse is applied by rabi_pulse_mod_wait_time after the initial reference detection, with length_rabi_pulse = 5.2e-08 s, which rounds to 52 ns at the sample rate. The XML sets mod_depth = 1. full_expt = 0, so the optional 1-level reference block is inactive.
 
 Readout roles from the instructions:

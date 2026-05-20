@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 Readout roles: because full_expt = 0, the optional mS=+1 reference block is skipped. The first detection after adj_polarize is the true mS=0 reference. The second detection is the signal readout after rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth.

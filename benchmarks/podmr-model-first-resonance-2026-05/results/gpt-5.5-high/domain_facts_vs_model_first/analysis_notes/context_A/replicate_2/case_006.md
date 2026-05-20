@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. With full_expt = 0, the active sequence acquires an initial polarized bright mS = 0 reference readout, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then acquires the post-microwave measurement readout. The optional mS = +1 reference block is inactive because full_expt is zero.
+
+At mod_depth = 1 the stated Rabi frequency is about 10 MHz, so a 52 ns pulse is close to a pi pulse. On resonance, the post-pulse readout should become darker than the initial reference by a noticeable fraction of the setup's roughly 22 percent full contrast. The combined readouts show the largest localized darkening of readout 2 relative to readout 1 at 3.875 GHz, about 9 percent, with a neighboring dark point at 3.870 GHz. This feature is not full contrast, and the stored averages show tracking-related baseline shifts, but both averages still show excess darkening near 3.870-3.875 GHz.
+
+Decision: a pODMR resonance is present.

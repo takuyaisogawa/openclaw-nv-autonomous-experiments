@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence sets full_expt = 0, so the optional 1-level reference branch is inactive. The two active detections are therefore a true 0-level/bright reference readout immediately after polarization, followed by the signal readout after a modulated Rabi pulse.
+
+Pulse parameters used for the decision: mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. At the 250 MHz sample rate this pulse length is already an integer 13 samples, so the effective pulse duration is 52 ns.
+
+The combined raw readouts stay close together with point-to-point scatter and slow drift. The signal/reference contrast has several isolated low points, including the strongest drop at the high-frequency edge of the scan, but there is no well-formed resonance dip with recovery on both sides. The two averages also do not reproduce a stable feature at the same frequency; their per-average contrasts show different isolated dips and substantial drift. I therefore classify this trace as not showing a reliable pODMR resonance.

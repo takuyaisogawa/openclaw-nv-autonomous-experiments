@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence XML is the Rabimodulated pulse sequence. It polarizes the NV center and immediately detects, giving readout 1 as the bright m_S = 0 reference. The explicit m_S = 1 reference branch is inactive because full_expt is 0, so the next active microwave operation is a rabi_pulse_mod_wait_time pulse followed by detection, making readout 2 the microwave-sensitive signal readout.
 
 The active pulse uses mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse on resonance. A real resonance should therefore make readout 2 drop substantially relative to the readout 1 bright reference, with a possible contrast approaching the stated 22% scale.

@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instruction block first polarizes and detects a "true 0 level reference", then because full_expt = 0 it skips the separate m_S = +1 reference branch, then applies one rabi_pulse_mod_wait_time pulse followed by the second detection. Thus readout 1 is the bright/polarized reference and readout 2 is the post-microwave pODMR readout.
+
+The relevant pulse is length_rabi_pulse = 52 ns. The provided sequence XML has mod_depth = 1, and the export variable values also list mod_depth = 1, so with the stated setup this is approximately a 10 MHz Rabi rate and a near-pi pulse duration. If the sweep crosses a real resonance, the second readout should show a localized fluorescence loss relative to the first on a scale that could approach the 22 percent m_S = 0 to m_S = +1 contrast, although imperfections and tracking can reduce it.
+
+The observed readouts show a broad common upward drift with scan value. Readout 2 is often lower than readout 1, but not by a localized resonant feature; the difference changes sign at some points and the per-average traces show large tracking-like offsets. There is no convincing narrow dip or reproducible contrast feature in the post-microwave readout relative to the reference. Stored averages are only two and look consistent with tracking cadence rather than an independent repeatability test.
+
+Decision: resonance_absent.

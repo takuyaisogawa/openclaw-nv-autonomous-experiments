@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_074
+Case: podmr_060_2026-05-17-060259
 
 I used the provided sequence XML and raw export only. The active sequence is Rabimodulated.xml / Rabi-modulated pODMR with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instruction flow is:
 

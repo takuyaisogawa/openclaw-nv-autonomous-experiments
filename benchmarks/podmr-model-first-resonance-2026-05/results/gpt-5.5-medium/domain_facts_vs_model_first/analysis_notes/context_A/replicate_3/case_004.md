@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_004.
+Case podmr_007_2026-05-11-064944.
 
 The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence first polarizes and detects the bright m_S = 0 reference, then because full_expt = 0 it skips the separate m_S = +1 reference branch. It then applies one rabi_pulse_mod_wait_time pulse and detects again. Therefore readout 1 is the polarized bright reference and readout 2 is the microwave-pulse signal readout, not an independent dark reference.
 

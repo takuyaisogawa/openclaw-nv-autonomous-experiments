@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction path first polarizes and detects a true m_S = 0 reference, then skips the optional 1-level reference because full_expt = 0, then applies rabi_pulse_mod_wait_time followed by the second detection. Thus readout 1 is the no-MW 0-level reference and readout 2 is the MW-pulsed signal readout.
+
+Using the provided sequence XML / variable values, mod_depth is 1 and length_rabi_pulse is 52 ns. At the stated setup scale, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is approximately a pi pulse. A real resonance should therefore drive a large pulsed-readout depression, on the order of the 22% m_S = 0 to m_S = +1 contrast scale, and should not look like a single isolated frequency-bin fluctuation given the short pulse bandwidth.
+
+The combined data do not show that behavior. The pulsed readout is not consistently below the 0-reference; the mean readout 2 is slightly higher than readout 1. The strongest combined drop is about 5.7% at 3.900 GHz, with similarly sized opposite-sign excursions elsewhere and no broad neighboring depression. The two stored averages are mainly tracking-cadence snapshots; while 3.900 GHz is lower in both averages, the adjacent points do not support a stable pulse-width-limited resonance. This is more consistent with noise/tracking scatter than a pODMR resonance.
+
+Decision: resonance_absent.

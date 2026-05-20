@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_092
+Case: podmr_078_2026-05-17-102220
 
 Inputs used: inputs/sequence.xml and inputs/raw_export.json only.
 

@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+The executed instructions are a polarized reference detection followed by a wait, then the optional 1-level reference block is skipped because full_expt = 0. The second executed readout occurs after rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Thus readout 1 is the true 0-level / laser reference and readout 2 is the microwave-pulse signal readout.
+
+The signal readout has a large, localized dip at 3.875-3.880 GHz: combined readout 2 falls from about 37.9 at 3.865 GHz to 31.9 and 30.8 at 3.875 and 3.880 GHz, then recovers to 34.3 and 38.0. This feature is much larger than the point-to-point noise and appears in both averages, with each average reaching its readout-2 minimum at 3.880 GHz. Readout 1 does not show a matching fluorescence drop at the same points; it is actually high near 3.875-3.880 GHz, which makes the contrast stronger rather than common-mode. This is consistent with a pODMR resonance being present.

@@ -1,0 +1,7 @@
+Case podmr_028_2026-05-13-100213.
+
+The provided sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz in 5 MHz steps. The active sequence polarizes and immediately detects first, giving the bright mS = 0 reference readout. Because full_expt = 0, the optional mS = 1 reference block is skipped. The second active detection follows rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, so it is the microwave-pulse-sensitive readout. At the stated setup calibration, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, making 52 ns approximately a pi pulse on resonance.
+
+With a near-pi pulse, a real pODMR resonance should appear as a localized reduction of readout 2 relative to the bright reference readout 1, up to the setup contrast scale of about 22%. The combined data show the strongest relative drop near 3.905 GHz: readout 2/readout 1 is about 0.873 there, compared with near unity or positive offsets at nearby high-frequency points. The neighboring 3.900 GHz point is also depressed, while 3.910 GHz recovers, giving a localized feature rather than a broad tracking offset. The stored averages differ strongly in absolute level, consistent with tracking cadence, but both averages contribute a relative depression at the same frequency region near 3.905 GHz.
+
+Decision: a pODMR resonance is present, centered approximately near 3.905 GHz, though the evidence is noisy and based on only two stored averages.

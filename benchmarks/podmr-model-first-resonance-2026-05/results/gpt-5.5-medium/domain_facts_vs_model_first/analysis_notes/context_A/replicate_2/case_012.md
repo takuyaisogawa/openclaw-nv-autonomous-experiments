@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles:
 
 The provided sequence is Rabimodulated.xml, swept over mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect the bright m_S = 0 reference, then wait, then conditionally acquire a 1-level reference only if full_expt is nonzero. Here full_expt = 0, so that branch is inactive. The measured readouts are therefore readout 1 as the 0-level reference and readout 2 as the detection after the modulated Rabi microwave pulse.

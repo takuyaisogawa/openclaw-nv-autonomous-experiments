@@ -1,0 +1,5 @@
+The sequence is Rabimodulated.xml with mw_freq swept from 3.825e9 to 3.925e9 Hz in 5e6 Hz steps. The active instructions first polarize and detect a true 0-level/reference readout, wait, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the signal detection readout. The full_expt-controlled 1-level reference block is not active because full_expt = 0, so the two exported readouts correspond to the reference/background detection and the post-microwave-pulse detection, not separate 0/1 calibration references.
+
+Across the sweep, both combined readouts fluctuate at the few-count level and partly track run-to-run brightness changes. The post-pulse readout does not show a clean, localized ODMR dip or peak that is reproducible relative to the reference across the two averages. The apparent excursions, including the stronger point near 3.86 GHz and the high reference near 3.885 GHz, look comparable to noise/drift and are not a coherent resonance feature.
+
+Decision: resonance_absent.

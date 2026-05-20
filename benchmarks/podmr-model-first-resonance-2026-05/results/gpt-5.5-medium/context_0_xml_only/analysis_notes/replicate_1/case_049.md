@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The provided sequence is Rabimodulated.xml. The active microwave pulse is

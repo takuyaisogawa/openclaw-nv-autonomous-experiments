@@ -1,0 +1,7 @@
+Active sequence assessment:
+
+The provided sequence is Rabimodulated.xml with mw_freq as the scanned parameter. The instruction order is polarization, detection, wait, optional +1 reference block, Rabi pulse, detection, final wait. Since full_expt = 0, the optional +1 reference block is skipped. Therefore readout 1 is the true 0-level reference after polarization, and readout 2 is the signal after the modulated Rabi pulse.
+
+The active pulse settings from the provided XML/exported variables are length_rabi_pulse = 5.2e-8 s (52 ns) and mod_depth = 1. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is very close to a pi pulse. If the scan crossed a real mS = 0 to mS = +1 resonance, the post-pulse readout should show a clear fluorescence decrease relative to the 0-reference readout, on the order of the setup contrast scale (about 22%, roughly 10 counts for readouts near 50).
+
+The observed combined traces do not show that behavior. The difference between readout 2 and readout 1 is only a few counts, changes sign across the scan, and does not form a coherent localized dip. The stored per-average traces also show that the small structure is not a strong independent repeatability test; the largest conspicuous feature is instead a readout 2 increase near the high-frequency side, which has the wrong sign for the expected post-pulse resonance contrast. I therefore classify this scan as lacking a pODMR resonance.

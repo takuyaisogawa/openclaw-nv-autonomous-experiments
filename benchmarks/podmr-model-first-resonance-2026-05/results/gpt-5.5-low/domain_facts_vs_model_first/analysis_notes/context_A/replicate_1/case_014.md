@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated pODMR with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The instructions first polarize and detect the bright m_S = 0 reference, then because full_expt = 0 the optional m_S = +1 reference block is skipped, then a modulated Rabi pulse is applied and a second detection is taken. Thus readout 1 is the polarized m_S = 0 reference and readout 2 is the post-microwave signal readout.
+
+The provided sequence XML and exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, a 52 ns pulse is close to a pi pulse, so an on-resonance transition should produce a large reduction in the signal readout, on the order of the known 22% contrast between m_S = 0 and m_S = +1.
+
+The combined readouts show readout 1 remaining near 38 to 40 counts across the scan, while readout 2 has a pronounced dip centered around 3.875 GHz, reaching about 28.8 counts. Relative to the local reference this is roughly a 25% drop, consistent with the expected contrast for a near-pi pODMR pulse. The per-average overlay shows the same dip location and shape despite the two averages being offset, and the stored averages are not treated as a strong independent repeatability test. The feature is therefore physically consistent with an NV resonance rather than only tracking drift.
+
+Decision: resonance_present.

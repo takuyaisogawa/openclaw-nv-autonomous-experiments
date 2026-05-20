@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml with mw_freq as the scanned variable. The active sequence first polarizes and detects a true 0-level/reference readout, waits, skips the optional 1-level reference because full_expt is 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the second detection. Thus readout 1 is the pre-microwave polarized reference and readout 2 is the post-microwave pulsed ODMR signal readout.
+
+The scan covers 3.825 to 3.925 GHz in 5 MHz steps. The post-pulse readout has a distinct minimum at 3.895 GHz: readout 2 falls to about 49.81 while readout 1 is about 52.58, giving the largest negative signal-reference contrast in the scan. The same point is low in both per-average signal traces, so the feature is not only a single combined-average artifact. Other fluctuations are present, but this localized post-pulse dip is consistent with a pODMR resonance under the active 52 ns modulated Rabi pulse.
+
+Decision: resonance_present.

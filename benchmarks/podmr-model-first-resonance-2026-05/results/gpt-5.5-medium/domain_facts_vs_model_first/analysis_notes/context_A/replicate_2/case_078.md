@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided XML defines the active sequence as Rabimodulated.xml with mw_freq swept across the scan. The active instructions first polarize and detect a true mS=0 reference, then wait; the optional 1-level reference block is disabled because full_expt = 0. The sequence then applies rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1 before a second detection, so readout 1 is the mS=0 reference and readout 2 is the driven pODMR signal.
 
 With the stated setup, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse on resonance. A real resonance should therefore produce a large readout-2 fluorescence drop relative to the readout-1 reference, on the order of the setup contrast scale of about 22% between mS=0 and mS=+1.

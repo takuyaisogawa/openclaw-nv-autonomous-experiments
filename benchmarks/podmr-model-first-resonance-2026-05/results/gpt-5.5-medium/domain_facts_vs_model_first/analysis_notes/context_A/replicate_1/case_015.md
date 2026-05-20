@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml. The instructions first polarize and detect, giving readout 1 as the true mS = 0 reference. Because full_expt = 0, the optional mS = 1 reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the microwave-addressed signal.
 
 With the given setup scale, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse. On resonance this should transfer population out of mS = 0 and lower the post-pulse fluorescence readout by roughly the setup contrast scale. The combined data show a pronounced readout 2 dip near 3.875-3.880 GHz, from the mid-30s down to about 26 counts, while readout 1 remains near its normal level without a corresponding dip. Both stored averages show the same readout 2 depression in this region, though the averages are not treated as a strong independent repeatability test.

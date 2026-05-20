@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active pulse sequence first polarizes the NV center, performs a detection readout as the true 0-level reference, waits, then applies rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection readout. The full_expt variable is 0, so the optional "Acquire 1 level reference" block is inactive despite do_adiabatic_inversion being true; therefore the two stored raw readouts are the pre-pulse polarized reference and the post-pulse pODMR signal, not separate 0 and 1 references.
+
+Comparing the post-pulse readout to the reference, the clearest feature is near 3.845 GHz: readout 2 drops to 43.94 while readout 1 is 48.23, giving a signal/reference ratio of about 0.91. Neighboring points are also somewhat suppressed before the trace returns toward baseline, and both averages show the post-pulse readout lower than its corresponding reference at this frequency. Other fluctuations exist across the sweep, but this reference-normalized dip is the strongest resonance-like contrast in the scan.
+
+Decision: pODMR resonance present.

@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction order makes readout 1 the detection immediately after optical polarization, so it is the true mS=0 reference. Because full_expt = 0, the optional mS=+1 reference block is skipped. Readout 2 is the detection after rabi_pulse_mod_wait_time, so it is the microwave-pulse signal readout.
+
+The provided sequence XML and exported variable values give mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With the 250 MS/s sample rate this is 13 samples, still 52 ns. Given the setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is essentially a pi pulse. If a resonance were well covered by the scan, I would expect a large reduction of readout 2 relative to the mS=0 reference, on the order of the 22% mS=0 to mS=+1 contrast scale.
+
+The combined data have the largest normalized drop at 3.885 GHz: readout 1 = 48.365 and readout 2 = 44.673, or about 7.6% contrast. Neighboring points are much smaller, several scan points have readout 2 equal to or above readout 1, and the raw traces show noticeable tracking/readout drift. The stored averages both show a local contrast maximum at that same point, but the averages mostly reflect tracking cadence and are not a strong independent repeatability test. Relative to the expected response for a 52 ns mod_depth 1 pulse, the observed feature is too small and too point-like to call a clear pODMR resonance.
+
+Decision: resonance absent.

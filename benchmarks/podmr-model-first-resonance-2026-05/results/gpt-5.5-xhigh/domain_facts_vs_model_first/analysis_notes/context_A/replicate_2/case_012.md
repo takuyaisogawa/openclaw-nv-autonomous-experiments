@@ -1,0 +1,7 @@
+Sequence and readout interpretation:
+
+The active sequence is Rabimodulated.xml while sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize the NV and immediately perform detection; this first detection is the true m_S = 0 optical reference readout. Because full_expt = 0, the optional m_S = 1 reference branch is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection; this second readout is the microwave-pulsed signal readout.
+
+At mod_depth = 1 the given setup implies a Rabi frequency near 10 MHz, so a 52 ns pulse is approximately a pi pulse on resonance. If a pODMR resonance were present, the pulsed signal readout should show a clear localized fluorescence decrease relative to the m_S = 0 reference, with a possible contrast scale up to roughly 22% for strong transfer.
+
+The combined raw readouts do not show that behavior. The second readout is sometimes above and sometimes below the reference, with the largest negative and positive excursions appearing at different scan points rather than forming a coherent resonance feature. Near the middle of the sweep the difference is small, and the per-average traces mainly show large tracking/cadence drift rather than repeatable resonance structure. Given the expected near-pi pulse strength, the absence of a consistent dip in the pulsed readout supports classifying this scan as resonance absent.

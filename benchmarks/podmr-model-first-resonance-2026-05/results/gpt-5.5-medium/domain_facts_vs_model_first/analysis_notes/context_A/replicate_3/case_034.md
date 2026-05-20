@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided XML is Rabimodulated.xml with mw_freq as the scanned variable. The active path has full_expt = 0, so the optional "1 level reference" block is skipped. The first detection immediately follows optical polarization and is therefore the true mS = 0 reference readout. The second detection follows rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, so it is the microwave-pulse signal readout.

@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. It first polarizes and detects a true m_S = 0 bright reference, waits, skips the optional m_S = +1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection. Thus readout 1 is the pre-microwave bright reference and readout 2 is the post-microwave pODMR signal.
+
+Using the supplied setup facts, mod_depth = 1 gives about a 10 MHz Rabi frequency, so a 52 ns pulse is essentially a pi pulse. At resonance this can drive strong transfer from m_S = 0 to m_S = +1 and should produce a post-pulse fluorescence drop approaching the stated 22% contrast scale. The combined data show readout 2 dropping from the high-30s baseline to about 28.8 near 3.875e9, while readout 1 stays near 38-39. This is a roughly 25% drop relative to the local bright reference and is localized in the scanned microwave frequency. The two stored averages have different offsets, consistent with tracking cadence, but both support a dip in the post-pulse readout near the same region rather than a comparable dip in the reference.
+
+Decision: a pODMR resonance is present.

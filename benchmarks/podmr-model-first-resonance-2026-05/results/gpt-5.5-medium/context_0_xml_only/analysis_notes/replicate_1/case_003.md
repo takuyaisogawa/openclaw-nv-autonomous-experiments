@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_003.
+Case podmr_006_2026-05-11-020739.
 
 The provided XML sequence is Rabimodulated with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active experiment uses sample_rate = 250 MHz, length_rabi_pulse = 52 ns, mod_depth = 1, and full_expt = 0. The 52 ns pulse is unchanged by sample-rate rounding because it is 13 samples at 250 MHz.
 

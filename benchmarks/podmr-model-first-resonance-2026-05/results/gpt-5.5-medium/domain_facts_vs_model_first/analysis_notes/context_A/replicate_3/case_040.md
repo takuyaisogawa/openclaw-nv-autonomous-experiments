@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The XML instructions acquire a polarized m_S=0 reference readout first, skip the optional m_S=+1 reference because full_expt is 0, then apply one modulated Rabi pulse and acquire the second readout. The relevant pulse is length_rabi_pulse = 52 ns with mod_depth = 1.
 
 Given the setup facts, mod_depth = 1 corresponds to about a 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse. If the sweep crossed an addressed pODMR resonance, the post-pulse readout should show a substantial decrease relative to the m_S=0 reference on the order of the available 22% contrast scale. Instead, readout 1 and readout 2 have nearly the same mean, and the pointwise readout2/readout1 ratios fluctuate around 1 with only small, isolated excursions. The deepest apparent depletion is about 6%, comparable to the noisy point-to-point scatter and not a convincing resonance feature. The stored two averages should not be overinterpreted as independent repeatability because they may reflect tracking cadence.

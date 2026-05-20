@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 
 The sequence is Rabimodulated.xml / Rabimodulated. It polarizes the NV, performs a detection readout for the true m_S = 0 reference, waits, then conditionally would acquire an m_S = 1 reference only if full_expt were nonzero. Here full_expt = 0, so that branch is inactive. The active measurement after the reference is a single rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the initial polarized reference readout and readout 2 is the post-Rabi-pulse signal readout.

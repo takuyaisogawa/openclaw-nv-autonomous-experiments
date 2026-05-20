@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided XML is Rabimodulated.xml. The active path sets the microwave frequency, polarizes, takes an initial detection labeled in the comments as the true 0 level reference, waits, skips the optional 1 level reference block because full_expt is 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth before the final detection. From the XML variable values, length_rabi_pulse is 5.2e-08 s, i.e. 52 ns, and mod_depth is 1. The scan varies mw_freq from about 3.825 GHz to 3.925 GHz.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. In the provided sequence XML, full_expt = 0, so the intermediate "1 level reference" branch is inactive even though do_adiabatic_inversion is true. The active acquisition is therefore: polarize and detect the true m_S = 0 reference, wait, apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detect the post-pulse signal.
 
 Given the setup facts, mod_depth = 1 implies about a 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse on resonance. If a pODMR resonance were present, the post-pulse readout should show a substantial local reduction relative to the m_S = 0 reference, on the order of the available 22% contrast scale for good transfer.

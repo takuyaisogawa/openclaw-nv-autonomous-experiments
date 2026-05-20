@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_081 analysis.
+Case podmr_067_2026-05-17-074342 analysis.
 
 I used the provided sequence XML. The active sequence is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instruction path first polarizes and detects, then waits, then skips the optional "Acquire 1 level reference" block because full_expt = 0, then applies one modulated Rabi pulse and detects again. Therefore readout 1 is the polarized m_S = 0 reference, and readout 2 is the post-Rabi-pulse signal. There is no separate m_S = +1 reference readout in the active path. The relevant pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1.
 

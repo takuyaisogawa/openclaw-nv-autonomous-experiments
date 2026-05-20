@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_022
+Case podmr_007_2026-05-16-013306
 
 I used only inputs/sequence.xml, inputs/raw_export.json, and the provided raw readout plot for this decision.
 

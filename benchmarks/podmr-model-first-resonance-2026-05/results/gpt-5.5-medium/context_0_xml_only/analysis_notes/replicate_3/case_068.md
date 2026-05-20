@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz.
 
 The provided sequence uses sample_rate = 250 MHz, length_rabi_pulse = 52 ns, and mod_depth = 1. The pulse duration rounds exactly to 52 ns at this sample rate. full_expt = 0 disables the optional 1-level reference block, so the active readout roles are:

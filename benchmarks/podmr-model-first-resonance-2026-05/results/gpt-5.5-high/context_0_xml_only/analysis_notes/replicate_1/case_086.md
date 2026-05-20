@@ -1,0 +1,5 @@
+Sequence XML review: the active sequence is Rabimodulated with mw_freq scanned from 3.825 GHz to 3.925 GHz. The always-active first detection follows laser polarization and serves as the true 0-level/reference readout. The optional 1-level reference block is skipped because full_expt = 0. The measurement readout follows a rabi_pulse_mod_wait_time pulse with length_rabi_pulse = 52 ns, mod_depth = 1, and switch_delay = 100 ns, then detection.
+
+Data review: the two averaged readout channels are both noisy around 50 counts. The driven readout relative to the reference does not show a stable ODMR-like resonance feature over the scan. The contrast has several isolated negative points, including near 3.840, 3.850, 3.870-3.875, and the high-frequency end, but these are comparable to point-to-point fluctuations and are not supported by a consistent dip shape in the per-average traces. The largest high-frequency drop is not a clear centered resonance and the neighboring behavior is inconsistent.
+
+Decision: no reliable pODMR resonance is present in this scan.

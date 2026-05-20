@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 - Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 - Active pulse path: polarize, detection, wait, then a rabi_pulse_mod_wait_time pulse, then detection. The optional 1-level reference block is skipped because full_expt = 0.

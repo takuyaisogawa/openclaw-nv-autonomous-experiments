@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml. The XML has full_expt = 0, so the optional m_S = +1 reference block is skipped. The active readouts are therefore the initial polarized/true-0 detection followed by a final detection after a modulated Rabi pulse. The pulse uses length_rabi_pulse = 52 ns and mod_depth = 1.
 
 Given the setup facts, mod_depth = 1 corresponds to about a 10 MHz Rabi frequency, so a 52 ns pulse is close to a pi pulse on resonance. The scan varies mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The raw traces show common slow drift in both readouts, but the post-pulse readout has a localized deeper dip around 3.875 GHz. At that point the combined readouts are approximately 45.37 for the initial reference and 43.54 after the pulse, and both stored averages show the same sign of contrast at the same scan point. Neighboring points recover toward the baseline difference.

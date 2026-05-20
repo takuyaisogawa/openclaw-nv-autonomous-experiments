@@ -1,0 +1,5 @@
+The active XML sequence is Rabimodulated with mw_freq swept from 3.825 GHz to 3.925 GHz. The full_expt variable is 0, so the optional +1 reference branch is inactive. The first detection occurs after optical polarization and is the bright m_S = 0 reference. The second detection occurs after rabi_pulse_mod_wait_time using length_rabi_pulse = 5.2e-08 s and mod_depth = 1, so it is the microwave-driven probe readout.
+
+At mod_depth = 1 the stated Rabi frequency is about 10 MHz, making a 52 ns pulse approximately a pi pulse. With the stated setup contrast scale of about 22% between m_S = 0 and m_S = +1, an on-resonance response should produce a much larger reduction of the post-pulse probe relative to the bright reference. The combined data instead show only small, noisy relative changes: the mean probe/reference shift is about -0.3%, and the largest combined negative excursions are roughly -4% to -5%, with sign changes and a positive excursion in the same region. The two stored averages do not provide a strong repeatability test, and their pointwise dips are not consistently aligned enough to overcome the small contrast scale seen here.
+
+Decision: resonance_absent.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML sets length_rabi_pulse to 5.2e-08 s, which rounds to 52 ns at the 250 MHz sample rate. The provided XML variable block has mod_depth = 1, and the exported variable values also report mod_depth = 1. The embedded saved sequence text contains an older/default-looking mod_depth = 0.3 line, but the explicit sequence XML and exported variable value indicate the active modulation depth for this run is 1.

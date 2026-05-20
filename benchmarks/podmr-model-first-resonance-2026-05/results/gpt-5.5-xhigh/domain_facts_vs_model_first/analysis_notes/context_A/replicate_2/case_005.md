@@ -1,0 +1,7 @@
+The provided XML and exported variable values identify the active sequence as Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The sequence first polarizes and detects a true m_S = 0 reference, then skips the explicit m_S = +1 reference because full_expt = 0, then applies rabi_pulse_mod_wait_time and detects the experimental readout. Thus readout 1 is the m_S = 0 reference and readout 2 is the post-microwave Rabi-pulse readout.
+
+The relevant pulse is length_rabi_pulse = 52 ns after sample-rate rounding, with mod_depth = 1. Using the supplied setup facts, this is essentially a pi-length pulse for a 10 MHz Rabi frequency, so an on-resonance point should drive substantial population transfer and reduce readout 2 relative to readout 1 on the order of the 22% contrast scale.
+
+The combined pointwise contrasts, computed as (readout 2 - readout 1) / readout 1, include some negative excursions such as about -11.9% near 3.840 GHz, -8.9% near 3.865 GHz, and roughly -7% to -9% near the high-frequency edge. However, these dips are not a clean broad resonance-shaped feature: adjacent points often return positive or nearly zero, and the strongest deficits are below the expected near-pi-pulse contrast. The per-average traces show strong tracking drift, so I do not treat the stored averages as an independent repeatability test; they mainly reinforce that raw baseline motion is significant.
+
+Decision: resonance_absent. There are noisy negative excursions, but not a coherent pODMR resonance consistent with the active near-pi Rabimodulated pulse sequence.

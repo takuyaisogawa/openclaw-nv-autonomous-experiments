@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz.
 
 The instruction block first polarizes and detects the true mS=0 level, so readout 1 is the reference before the microwave pulse. The full_expt branch is disabled, so there is no active mS=+1 reference acquisition. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection; readout 2 is therefore the post-microwave signal.

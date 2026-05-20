@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_014.
+Case podmr_033_2026-05-15-233800.
 
 The provided sequence is Rabimodulated.xml and scans mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect a reference readout, then, because full_expt is 0, skip the optional 1-level reference block. The active signal operation is rabi_pulse_mod_wait_time followed by detection.
 

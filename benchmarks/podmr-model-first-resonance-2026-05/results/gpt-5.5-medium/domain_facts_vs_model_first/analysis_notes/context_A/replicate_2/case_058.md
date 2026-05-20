@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated, varying mw_freq from 3.825 GHz to 3.925 GHz. In the provided sequence XML, mod_depth is 1 and length_rabi_pulse is 52 ns. The sequence first polarizes and detects a true m_S = 0 bright reference, then because full_expt = 0 it skips the optional m_S = +1 reference branch, applies one rabi_pulse_mod_wait_time pulse, and detects the post-microwave signal.
 
 Readout role interpretation: readout 1 is the bright-state reference acquired before the microwave pulse; readout 2 is the signal after the 52 ns microwave pulse. The stored per-average traces show large average-to-average offsets consistent with tracking cadence, so I do not treat the two stored averages as independent repeatability evidence.

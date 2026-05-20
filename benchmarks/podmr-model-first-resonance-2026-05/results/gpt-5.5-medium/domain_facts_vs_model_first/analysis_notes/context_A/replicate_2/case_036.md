@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/readout analysis:
 
 The provided XML is Rabimodulated.xml with mw_freq varied. The instructions first polarize with the laser and immediately call detection, giving the true m_S = 0-like reference readout. The optional "Acquire 1 level reference" block is disabled because full_expt = 0, so no independent m_S = +1 reference readout is acquired. After that, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detects again. Thus readout 1 is the polarized/reference readout and readout 2 is the post-microwave-pulse signal readout.

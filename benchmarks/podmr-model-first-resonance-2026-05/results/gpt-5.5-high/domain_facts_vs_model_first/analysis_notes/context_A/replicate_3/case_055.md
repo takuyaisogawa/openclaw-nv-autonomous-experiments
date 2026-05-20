@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The active instructions first polarize and detect a true mS=0 reference, then skip the optional mS=+1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by the second detection. Thus readout 1 is the polarized reference and readout 2 is the post-Rabi-pulse signal.
+
+The relevant microwave pulse is length_rabi_pulse = 52 ns with mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse on resonance. A resonance should therefore appear mainly as a reduced post-pulse readout relative to the initial reference, not as a separate +1 reference comparison.
+
+The combined data show readout 2 dipping below readout 1 over a localized region near 3.88-3.90 GHz, with the largest point around 3.895 GHz giving about a 5.6% reduction relative to readout 1. This is smaller than the full expected mS=0 to mS=+1 contrast scale of about 22%, and the per-average traces should not be overinterpreted because averages can reflect tracking cadence. Still, the dip is in the correct readout role, occurs over a plausible frequency region for the swept Rabi-modulated pODMR pulse, and is more structured than the relatively flat reference channel.
+
+Decision: a pODMR resonance is present, with modest confidence in the physical signature because the observed contrast is partial and the data are noisy.

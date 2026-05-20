@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_044
+Case podmr_030_2026-05-16-194429
 
 Inputs used: inputs/sequence.xml and inputs/raw_export.json. The active sequence is Rabimodulated.xml. The instruction block first performs adj_polarize followed by detection, so readout 1 is the polarized m_S = 0 reference. The optional "Acquire 1 level reference" branch is disabled because full_expt = 0, so there is no separate m_S = +1 reference readout. The active microwave operation before the second detection is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1; therefore readout 2 is the signal after the microwave pulse.
 

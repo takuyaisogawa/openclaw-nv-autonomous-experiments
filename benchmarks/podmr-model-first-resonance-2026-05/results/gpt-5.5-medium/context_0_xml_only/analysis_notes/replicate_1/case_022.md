@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence identified from inputs/sequence.xml: Rabimodulated.xml, with mw_freq scanned and the microwave frequency set as mw_freq + detuning. The active instructions first polarize and detect the true 0-level reference, then wait. The 1-level reference branch is inactive because full_expt = 0, so the subsequent measured pulse is the main signal readout after rabi_pulse_mod_wait_time.
 
 Readout roles: the first raw readout is the 0-level optical reference after polarization with no active Rabi pulse. The second raw readout is the signal readout after the modulated Rabi pulse. The configured mod_depth in the provided sequence XML is 1. The Rabi pulse duration is length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate, i.e. 52 ns.

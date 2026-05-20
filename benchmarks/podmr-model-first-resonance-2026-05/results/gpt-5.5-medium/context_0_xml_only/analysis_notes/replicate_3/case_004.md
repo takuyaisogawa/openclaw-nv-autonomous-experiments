@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_004.
+Case podmr_007_2026-05-11-064944.
 
 I used the provided sequence XML and raw export rather than labels or external context. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active variable values give length_rabi_pulse = 52 ns and mod_depth = 1. full_expt = 0, so the conditional "Acquire 1 level reference" block is skipped. The active readouts are therefore the initial detection after adj_polarize, used as the true 0-level reference/readout 1, and the final detection after rabi_pulse_mod_wait_time with the swept microwave frequency, used as the driven readout/readout 2.
 

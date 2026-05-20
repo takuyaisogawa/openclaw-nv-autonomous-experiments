@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated pODMR scan varying mw_freq from 3.825 GHz to 3.925 GHz.
 
 Readout roles: because full_expt = 0, the optional m_S = +1 reference block is skipped. Each point contains the initial post-polarization detection as the bright/0-level reference, followed by a rabi_pulse_mod_wait_time pulse and then the signal detection. Thus readout 1 is the 0/reference readout and readout 2 is the microwave-pulsed signal readout.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_060
+Case podmr_046_2026-05-16-235726
 
 The provided sequence is Rabimodulated.xml. The active instructions first polarize and detect, giving the true 0-level/reference readout. Because full_expt = 0, the optional 1-level reference block is skipped. The second active detection follows rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, so the microwave-affected signal readout is after a 52 ns modulated Rabi pulse. The provided XML variable list gives mod_depth = 1.
 

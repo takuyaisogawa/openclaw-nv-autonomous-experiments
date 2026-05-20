@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz with 5 MHz spacing.
 
 The sequence has full_expt = 0, so the optional "1 level reference" branch is not active. Each sweep point acquires a true m_S = 0 / bright reference first, then applies rabi_pulse_mod_wait_time and acquires the post-pulse readout. Thus readout 1 is the pre-microwave bright reference and readout 2 is the microwave-affected pODMR readout, not an independent dark-state reference.

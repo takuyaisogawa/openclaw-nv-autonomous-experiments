@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_066.
+Case podmr_052_2026-05-17-015447.
 
 I used the provided sequence XML and the exported sequence values before deciding. The active sequence is Rabimodulated.xml. The instructions first polarize and detect a true m_S = 0 reference, then skip the optional m_S = 1 reference block because full_expt = 0, then apply one rectangular rabi_pulse_mod_wait_time pulse followed by the signal detection. Thus readout 1 is the unpulsed m_S = 0 reference and readout 2 is the microwave-pulsed pODMR signal readout.
 

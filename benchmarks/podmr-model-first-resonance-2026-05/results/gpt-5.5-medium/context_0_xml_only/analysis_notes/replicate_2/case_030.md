@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 I inspected inputs/sequence.xml and inputs/raw_export.json directly.
 
 Active sequence and parameters:

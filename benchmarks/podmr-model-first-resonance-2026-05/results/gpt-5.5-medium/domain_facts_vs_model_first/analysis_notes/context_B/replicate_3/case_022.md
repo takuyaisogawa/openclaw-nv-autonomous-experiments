@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and roles
 
 The active sequence is Rabimodulated.xml. The saved scan varies mw_freq from

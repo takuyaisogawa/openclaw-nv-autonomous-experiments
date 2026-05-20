@@ -1,0 +1,5 @@
+Active pulse sequence: Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence has mod_depth = 1 and length_rabi_pulse = 52 ns, rounded at a 250 MHz sample rate. The optional full experiment branch is inactive because full_expt = 0, so the active readout roles are: readout 1 is the polarized true-0 reference immediately after adj_polarize, and readout 2 is the signal readout after the modulated Rabi pulse.
+
+For a pODMR resonance I would expect a frequency-localized, reproducible contrast feature in the signal readout relative to the reference. The combined data show noisy excursions rather than a stable line: readout 2 / readout 1 ranges from about 0.955 to 1.040, with both positive and negative swings of similar size. The lowest ratio is at the high-frequency endpoint, and other low points around 3.87, 3.89-3.895, and 3.91 GHz are not part of a consistent single dip. With only two averages, the per-average traces show substantial scatter and do not make the apparent endpoint drop reliable as a resonance.
+
+Decision: resonance_absent.

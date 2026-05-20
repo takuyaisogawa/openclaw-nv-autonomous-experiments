@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_006
+Case: podmr_010_2026-05-11-155154
 
 I used the provided sequence XML and the raw export values, not labels or sibling cases. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes the NV and detects the true m_S = 0 reference. Since full_expt = 0, the optional m_S = +1 reference block is skipped. The second active detection occurs after a Rabi-modulated microwave pulse, so readout 1 is the m_S = 0 reference and readout 2 is the signal after the microwave pulse.
 

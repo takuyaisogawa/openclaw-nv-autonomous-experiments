@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles:
 
 The provided sequence is Rabimodulated.xml. The active instructions polarize the NV, acquire a detection immediately afterward as the true m_S = 0 bright reference, wait, skip the optional m_S = +1 reference because full_expt = 0, apply one rabi_pulse_mod_wait_time pulse, then acquire a second detection as the post-microwave signal readout. Thus readout 1 is the bright reference and readout 2 is the pODMR-sensitive signal readout. The optional adiabatic inversion flag is not active in the executed path because the whole +1 reference block is gated by full_expt.

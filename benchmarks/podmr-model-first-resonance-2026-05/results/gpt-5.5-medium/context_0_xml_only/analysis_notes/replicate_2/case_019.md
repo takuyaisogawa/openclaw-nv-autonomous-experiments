@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated sequence, sweeping mw_freq.
 
 The provided sequence XML sets length_rabi_pulse = 5.2e-08 s, which is rounded at 250 MHz sample rate and remains 52 ns. mod_depth is set to 1 in the provided XML. full_expt = 0, so the "Acquire 1 level reference" block is inactive even though do_adiabatic_inversion is true. The executed readouts are therefore:

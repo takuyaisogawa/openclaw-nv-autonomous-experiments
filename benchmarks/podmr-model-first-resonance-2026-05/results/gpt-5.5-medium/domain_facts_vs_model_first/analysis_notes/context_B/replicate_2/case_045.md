@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_045
+Case podmr_031_2026-05-16-195907
 
 Sequence interpretation:
 - The provided sequence is Rabimodulated.xml, varied over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

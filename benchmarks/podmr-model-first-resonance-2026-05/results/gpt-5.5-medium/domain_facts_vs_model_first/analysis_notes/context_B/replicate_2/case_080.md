@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_080
+Case: podmr_066_2026-05-17-072831
 
 I used only the provided raw export and sequence XML.
 

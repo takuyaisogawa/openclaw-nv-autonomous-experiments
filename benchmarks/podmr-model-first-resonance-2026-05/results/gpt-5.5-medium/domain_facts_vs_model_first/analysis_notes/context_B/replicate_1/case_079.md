@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_079
+Case: podmr_065_2026-05-17-071421
 
 Sequence and roles
 

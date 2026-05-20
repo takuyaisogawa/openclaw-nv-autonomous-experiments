@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. In the active instructions, the experiment first polarizes and detects a true m_S = 0 reference, then waits; the m_S = +1 reference block is inactive because full_expt = 0. The only microwave-driven measurement is therefore the second detection after rabi_pulse_mod_wait_time(PSeq, sample_rate, length_rabi_pulse, mod_depth, switch_delay, ch_on).
+
+The pulse settings in the provided sequence XML are length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so 52 ns is approximately a pi pulse. If the microwave sweep crossed a real resonance, the second readout should show a large fluorescence reduction relative to the first readout, on the order of the setup's m_S = 0 to m_S = +1 contrast scale of about 22%.
+
+The data do not show that behavior. The two combined readouts have nearly identical means, about 49.61 for the reference readout and 49.58 for the pulsed signal readout. The pointwise signal-reference differences are only a few percent, change sign across the sweep, and do not form a stable resonance-shaped dip. The apparent low points around 3.895 to 3.900 GHz are much smaller than expected for the active near-pi pulse and are comparable to the readout scatter and per-average drift. Stored averages are not strong independent repeatability evidence here because they may reflect tracking cadence.
+
+Decision: no pODMR resonance is present in this isolated case.

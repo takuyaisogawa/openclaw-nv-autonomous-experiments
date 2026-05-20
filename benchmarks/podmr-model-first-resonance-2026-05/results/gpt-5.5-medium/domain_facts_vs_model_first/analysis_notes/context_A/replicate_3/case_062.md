@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The provided sequence has full_expt = 0, so the conditional m_S = +1 reference block is disabled despite do_adiabatic_inversion being true. The first detection after adj_polarize is therefore the polarized m_S = 0 reference/readout 1. The second active detection is after a rabi_pulse_mod_wait_time call and is the microwave-pulse-affected signal/readout 2.

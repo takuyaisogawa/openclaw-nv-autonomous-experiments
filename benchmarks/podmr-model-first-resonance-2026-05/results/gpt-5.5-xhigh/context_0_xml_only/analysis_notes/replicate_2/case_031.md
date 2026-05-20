@@ -1,0 +1,5 @@
+Using the provided sequence XML, the active sequence is Rabimodulated with a microwave-frequency sweep. The instructions first polarize and detect the true 0-level reference, then skip the "Acquire 1 level reference" branch because full_expt = 0, then apply rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth followed by a second detection. Therefore readout 1 is the initial 0-level reference and readout 2 is the post-rabi-pulse signal readout.
+
+The relevant pulse settings are mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With sample_rate = 250000000 Hz, this is already aligned to the 4 ns sample grid, so the pulse duration remains 52 ns.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. Readout 2 shows a localized drop around 3.875-3.880 GHz: combined readout 2 is about 39.6 counts there while readout 1 remains about 47.7-47.8 counts. The same dip is visible in both individual averages, with the largest negative readout2-readout1 differences clustered at 3.875-3.885 GHz. This frequency-localized contrast in the post-pulse signal, absent from the reference readout, is consistent with a pODMR resonance.

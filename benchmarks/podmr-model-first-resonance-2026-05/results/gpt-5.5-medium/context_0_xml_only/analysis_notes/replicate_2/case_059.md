@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence XML sets length_rabi_pulse = 52 ns and mod_depth = 1, with full_expt = 0. Therefore the "Acquire 1 level reference" block is inactive: the first detection is the true 0-level/bright reference after laser polarization, and the second detection is the signal after the modulated Rabi pulse followed by detection.
 
 Readout interpretation: readout 1 is the initial reference detection, while readout 2 is the post-pulse readout that should carry any pODMR contrast. A resonance would be expected as a reproducible, frequency-localized reduction or contrast feature in the post-pulse readout relative to the reference, preferably visible across averages.

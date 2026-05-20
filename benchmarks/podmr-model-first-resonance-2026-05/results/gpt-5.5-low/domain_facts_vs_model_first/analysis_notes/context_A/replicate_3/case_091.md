@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction flow acquires a true m_S = 0 reference detection after optical polarization, skips the m_S = 1 reference because full_expt = 0, then applies one modulated Rabi pulse and acquires the signal detection. Thus readout 1 is the pre-pulse bright/reference readout and readout 2 is the post-pulse test readout.
+
+The provided XML sets length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse on resonance, so a real pODMR resonance should produce a substantial change in the post-pulse readout relative to the m_S = 0 reference, with the setup contrast scale allowing an order-20% effect between m_S = 0 and m_S = +1.
+
+The combined raw readouts fluctuate around 50-52 counts with no clear, localized, repeatable resonance feature. The readout2/readout1 ratio ranges roughly from 0.958 to 1.053 with mean about 0.997 and changes sign across the sweep rather than forming a consistent dip. The per-average traces mainly show offsets and tracking-like variation, so I do not treat the stored averages as a strong independent repeatability test. Given the expected near-pi pulse and contrast scale, the observed few-percent, non-systematic fluctuations are not convincing evidence of a pODMR resonance.
+
+Decision: resonance_absent.

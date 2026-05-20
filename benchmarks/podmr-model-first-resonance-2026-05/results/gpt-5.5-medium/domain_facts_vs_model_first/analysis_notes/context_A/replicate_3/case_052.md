@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq as the scan variable over 3.825 to 3.925 GHz in 5 MHz steps. The active microwave operation is a rabi_pulse_mod_wait_time call before the final detection. full_expt is 0, so the optional 1-level reference block is skipped.

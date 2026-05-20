@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided XML is Rabimodulated.xml, with mw_freq swept and a modulated microwave pulse before the final detection. The active readout structure is:

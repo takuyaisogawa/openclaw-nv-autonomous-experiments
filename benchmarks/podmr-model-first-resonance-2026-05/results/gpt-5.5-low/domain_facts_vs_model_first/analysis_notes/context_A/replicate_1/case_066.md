@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz. In the provided sequence XML, full_expt is 0, so the optional "1 level reference" block is skipped. The acquisition therefore consists of a true 0-level reference detection after optical polarization, followed by a single modulated Rabi pulse and a second detection. Readout 1 is the pre-microwave 0-level reference; readout 2 is the post-pulse signal readout.
+
+The standalone sequence XML gives mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, a 52 ns pulse is approximately a pi pulse, so a real resonance should be capable of producing a sizable signal change, on the order of the stated 22% contrast scale between m_S = 0 and m_S = +1.
+
+The raw combined traces do not show a clean, localized pODMR dip or peak at a scan frequency. The post-pulse readout is often slightly below the 0-level reference, but the effect is small compared with the expected contrast for this pulse and is spread broadly across the scan rather than forming a distinct resonance feature. The per-average overlay also shows strong opposing baseline drift between the two stored averages, consistent with tracking cadence or normalization artifacts rather than repeatable spectral structure.
+
+Decision: resonance_absent. The data are compatible with drift/noise and a weak broad offset, not a resolved single-NV pODMR resonance under this near-pi-pulse condition.

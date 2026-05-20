@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_049.
+Case podmr_035_2026-05-16-210045.
 
 Sequence inspection:
 - Active sequence is Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz.

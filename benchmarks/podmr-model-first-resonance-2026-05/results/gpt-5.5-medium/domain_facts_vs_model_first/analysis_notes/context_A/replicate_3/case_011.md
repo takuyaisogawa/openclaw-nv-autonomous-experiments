@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml. The XML sets full_expt = 0, so the intermediate +1 reference block is skipped. The active readouts are therefore readout 1 as the optically polarized m_S = 0 reference, followed by a modulated microwave pulse and readout 2 as the signal readout.
 
 The active microwave pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1. Given the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, 52 ns is close to a pi pulse. Thus, on resonance, readout 2 should become darker than the m_S = 0 reference, with an expected contrast scale up to roughly the stated 22%, though tracking and averaging cadence can limit repeatability evidence.

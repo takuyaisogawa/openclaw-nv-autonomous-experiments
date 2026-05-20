@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_016 analysis note
+Case podmr_001_2026-05-16-000631 analysis note
 
 Sequence identification:
 - The provided XML and embedded scan metadata identify the active sequence as Rabimodulated.xml.

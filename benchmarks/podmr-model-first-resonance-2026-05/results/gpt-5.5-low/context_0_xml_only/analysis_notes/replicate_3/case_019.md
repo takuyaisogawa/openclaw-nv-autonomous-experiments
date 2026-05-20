@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml / Rabimodulated sequence, varying mw_freq from 3.825 GHz to 3.925 GHz. The instructions first polarize and detect a true 0-level reference, then skip the optional 1-level reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the 0-level/reference readout and readout 2 is the signal after the microwave Rabi-modulated pulse.
+
+The sequence XML values used for the decision are length_rabi_pulse = 5.2e-08 s, which rounds to 52 ns at the 250 MHz sample rate, and mod_depth = 1. The exported scan also lists length_rabi_pulse = 52 ns and mod_depth = 1.
+
+The reference/readout 1 trace is relatively flat around 40-42 counts over the sweep. Readout 2 has a pronounced localized decrease centered around roughly 3.875-3.880 GHz, dropping to about 32 counts, and this dip is visible in both per-average traces. Because the dip is tied to the microwave-pulse readout and not mirrored in the reference channel, it is consistent with a pODMR resonance.

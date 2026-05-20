@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The active readout structure has an initial polarization/detection block that serves as the true m_S = 0 reference. The optional m_S = +1 reference block is disabled because full_expt = 0, so the second stored readout is the final detection after the Rabi-modulated microwave pulse, not an independent +1 reference. The relevant pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1. With the setup estimate of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a pi-pulse duration on resonance.

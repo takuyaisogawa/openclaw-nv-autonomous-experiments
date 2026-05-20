@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence first performs polarization and detection for the true 0-level reference. Since full_expt is 0, the optional 1-level reference block is inactive. The active experiment then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Thus readout 1 is the 0-level reference and readout 2 is the post-pulse pODMR signal.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout identification
 
 The provided sequence is Rabimodulated.xml. The active scan variable is mw_freq from

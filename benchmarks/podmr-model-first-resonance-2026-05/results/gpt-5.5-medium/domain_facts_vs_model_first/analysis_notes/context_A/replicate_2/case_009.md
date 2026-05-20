@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence assessment:
 
 The provided sequence XML is Rabimodulated.xml. It sets mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at a 250 MHz sample rate. With the stated setup calibration of about 10 MHz Rabi frequency at mod_depth = 1, this is approximately a 52 ns pulse, close to a pi pulse scale.

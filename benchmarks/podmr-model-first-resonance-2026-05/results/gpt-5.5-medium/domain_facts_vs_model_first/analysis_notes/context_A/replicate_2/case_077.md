@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 The provided sequence XML has full_expt = 0, so the active acquisition is not a three-readout full reference experiment. The first detection after adj_polarize is the true m_S = 0 reference. The conditional m_S = 1 reference block is skipped. The second active detection follows rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, so it is the microwave-pulse signal readout.

@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz. The sequence first polarizes the NV and performs a detection labelled as the true 0-level reference. Because full_expt is 0, the optional 1-level reference block is skipped. It then applies a rabi_pulse_mod_wait_time pulse and performs the second detection, so readout 1 is the m_S = 0 reference and readout 2 is the post-microwave-pulse signal.
+
+The provided sequence XML and exported variable values give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup Rabi frequency of about 10 MHz at mod_depth = 1, a 52 ns pulse is essentially a pi pulse if the microwave frequency is resonant. A real resonance should therefore produce a large post-pulse contrast relative to the 0-level reference, on the order of the stated 22% m_S = 0 to m_S = +1 contrast scale.
+
+The combined raw readouts do not show that behavior. Readout 2 minus readout 1 ranges from about -2.46 to +3.96 counts on a roughly 44-count baseline, and the most negative point is only about a 6% reduction. The strongest excursions are sign-changing, including positive peaks, rather than a clear resonant transfer feature. The two stored averages also have large baseline offsets and differing point-to-point structure, consistent with tracking cadence or drift rather than an independent repeatability check.
+
+Given the active readout roles, near-pi pulse duration, mod_depth, and expected contrast scale, the scan lacks a credible pODMR resonance.

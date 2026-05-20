@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_022
+Case: podmr_007_2026-05-16-013306
 
 Sequence and readout roles:
 - The provided XML is Rabimodulated.xml.

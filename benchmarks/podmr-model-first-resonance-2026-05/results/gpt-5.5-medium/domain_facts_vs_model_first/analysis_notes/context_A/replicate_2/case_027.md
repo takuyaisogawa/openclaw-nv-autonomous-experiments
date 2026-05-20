@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml while sweeping mw_freq from 3.825 to 3.925 GHz. The instructions first polarize and detect the true m_S = 0 level, then skip the optional m_S = 1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the polarized reference and readout 2 is the microwave-pulse signal channel.
 
 The active pulse duration is length_rabi_pulse = 52 ns and mod_depth = 1. With the supplied setup scale of about 10 MHz Rabi frequency at mod_depth = 1, the Rabi period is about 100 ns, so 52 ns is close to a pi pulse. On resonance this should drive population from m_S = 0 toward m_S = +1 and produce a fluorescence/readout dip approaching the stated 22% contrast scale.

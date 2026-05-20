@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The XML instructions set microwave parameters, polarize, then perform a detection before any microwave pulse. Since full_expt = 0, the optional "Acquire 1 level reference" block is inactive. The active signal block applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then performs the second detection.

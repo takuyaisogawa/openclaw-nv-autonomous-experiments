@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 - Provided XML sequence: Rabimodulated.xml.
 - Active pulse sequence polarizes, detects the true 0-level reference, waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, then detects the driven signal.

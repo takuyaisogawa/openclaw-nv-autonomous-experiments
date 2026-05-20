@@ -1,0 +1,7 @@
+The provided sequence is Rabimodulated.xml, scanned over mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize the NV and take a detection readout, then because full_expt = 0 the optional m_S = +1 reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection. Thus readout 1 is the bright polarized reference and readout 2 is the signal after the MW pulse.
+
+Given the domain facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is near a pi-scale pulse. If the mw_freq sweep crossed a pODMR resonance, I would expect a clear readout-2 suppression relative to readout 1 with contrast on the order of the setup's approximately 22% m_S = 0 to m_S = +1 scale, or at least a localized, repeatable dip in the normalized signal.
+
+The combined raw readouts do not show that pattern. Readout 2 stays close to readout 1 across the scan, sometimes below and sometimes above it, with no localized dip of the expected scale. The per-average traces mainly show large offsets between the two stored averages, consistent with tracking cadence rather than independent repeatability, and the averaged signal does not form a convincing resonance feature. The largest local variations are small compared with the expected near-pi-pulse contrast and are not shaped like a robust ODMR resonance.
+
+Decision: resonance absent.

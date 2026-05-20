@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Active-sequence analysis for case_033
+Active-sequence analysis for podmr_018_2026-05-16-134409
 
 The provided sequence is Rabimodulated.xml. The active acquisition path is:
 

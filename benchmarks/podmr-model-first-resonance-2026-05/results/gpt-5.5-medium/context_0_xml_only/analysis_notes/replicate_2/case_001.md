@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / 1DExp-seq-Rabimodulated-vary-mw_freq.
 
 The sequence varies mw_freq from 3.825 GHz to 3.925 GHz. It polarizes the NV, performs a first detection immediately after optical pumping, waits, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the second detection. Therefore the two readouts are not two equivalent signal channels: readout 1 is the true-0/reference readout, and readout 2 is the post-microwave-pulse signal readout.

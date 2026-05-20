@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active pulse sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 From the provided sequence XML, full_expt = 0, so the optional 1-level reference block is inactive even though do_adiabatic_inversion is true. The active detections are therefore:

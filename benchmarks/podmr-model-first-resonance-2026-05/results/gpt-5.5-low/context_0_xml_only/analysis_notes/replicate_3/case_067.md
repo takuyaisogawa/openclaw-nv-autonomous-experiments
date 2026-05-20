@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml with mw_freq swept from 3.825e9 to 3.925e9 Hz in 5 MHz steps. The active microwave pulse is rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1; full_expt = 0, so the optional 1-level reference branch is not acquired despite do_adiabatic_inversion being true.
+
+Readout roles: readout 1 is the detection immediately after optical polarization, serving as the bright/0-level reference. Readout 2 is the detection after the modulated 52 ns microwave pulse, so a pODMR resonance would be expected as a reproducible frequency-localized contrast change between readout 2 and the reference, not merely as common drift in both readouts.
+
+Assessment: both averaged readouts are noisy with only two averages, and the prominent variations are not a clean, repeatable resonance feature. There is a broad downward drift across the sweep and scattered point-to-point changes, including a sharp readout-2 low point near 3.88 GHz, but it is not supported by a stable, localized contrast pattern relative to readout 1 or by consistent per-average behavior. I therefore classify this as resonance absent.

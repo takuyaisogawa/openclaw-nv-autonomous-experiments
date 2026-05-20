@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_056.
+Case podmr_042_2026-05-16-225623.
 
 The provided sequence is Rabimodulated.xml / Rabimodulated, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active sequence sets up a polarization pulse, then a detection window labelled as the true 0-level reference, waits, skips the optional 1-level reference block because full_expt = 0, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then performs the second detection. Thus readout 1 is the reference after optical polarization, and readout 2 is the microwave-pulse signal readout. The pulse duration used for the pODMR drive is 52 ns.
 

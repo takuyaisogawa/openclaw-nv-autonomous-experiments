@@ -1,0 +1,7 @@
+The provided sequence XML is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The active sequence polarizes, detects the polarized m_S = 0 reference, waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the signal detection. Because full_expt = 0, the optional m_S = +1 reference block is inactive; readout 1 is the m_S = 0 reference and readout 2 is the post-microwave-pulse signal.
+
+Using the stated setup calibration, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse. On resonance this should transfer population out of m_S = 0 and reduce readout 2 relative to readout 1, with the available contrast scale about 22%.
+
+The combined readouts show the clearest signal/reference suppression near 3.845 GHz: readout 1 is 48.23 while readout 2 is 43.94, an about 8.9% drop. The stored averages are not a strong independent repeatability test because they can reflect tracking cadence, but this feature is present in both averages at the same scan point, with per-average drops of about 7.3% and 10.7%. Neighboring points around 3.850-3.860 GHz also lean toward reduced signal, while other apparent excursions are smaller or not consistent between averages.
+
+Decision: a pODMR resonance is present. The observed dip is below the full 22% contrast scale but is directionally correct for the active near-pi pulse sequence and is the dominant coherent signal/reference feature in the scan.

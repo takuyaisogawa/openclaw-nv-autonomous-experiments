@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and role identification:
 
 The provided sequence XML is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active microwave operation is a rabi_pulse_mod_wait_time call after the initial reference detection, with length_rabi_pulse = 5.2e-08 s, i.e. 52 ns. The XML variable table gives mod_depth = 1. The full_expt variable is 0, so the conditional 1-level reference block is inactive despite being present in the file.

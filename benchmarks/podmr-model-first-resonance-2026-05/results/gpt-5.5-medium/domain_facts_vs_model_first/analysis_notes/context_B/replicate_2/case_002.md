@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_002
+Case podmr_005_2026-05-10-173726
 
 Sequence interpretation:
 - Active sequence: Rabimodulated.xml / Rabimodulated pulse ODMR.

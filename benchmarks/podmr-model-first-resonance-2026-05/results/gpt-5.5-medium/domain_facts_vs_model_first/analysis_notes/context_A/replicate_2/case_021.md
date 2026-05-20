@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz. The active instructions acquire a true mS = 0 reference first by polarizing and detecting, then skip the optional mS = +1 reference because full_expt = 0, then apply one rabi_pulse_mod_wait_time pulse followed by the second detection. Thus readout 1 is the bright reference and readout 2 is the signal after the microwave pulse.
 
 The sequence variables give length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is close to a pi pulse on resonance. The expected on-resonance response is therefore a large reduction in readout 2 compared with readout 1, with a contrast scale around the stated 22% mS = 0 to mS = +1 contrast.

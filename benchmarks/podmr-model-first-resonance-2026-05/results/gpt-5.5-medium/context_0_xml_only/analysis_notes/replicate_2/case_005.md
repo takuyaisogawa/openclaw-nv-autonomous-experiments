@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_005.
+Case podmr_008_2026-05-11-131831.
 
 The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active sequence has full_expt = 0, so the intermediate "1 level reference" branch is skipped. The active readouts are therefore:
 

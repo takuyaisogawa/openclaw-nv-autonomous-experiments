@@ -1,0 +1,7 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The instructions first polarize the NV and immediately detect, so readout 1 is the bright m_S = 0 reference. Because full_expt = 0, the optional m_S = +1 reference block is skipped. The active measurement pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the post-microwave readout.
+
+Using the supplied setup facts, mod_depth = 1 gives about a 10 MHz Rabi frequency, making a 52 ns pulse essentially a pi pulse. If the sweep hit a real pODMR resonance, readout 2 should be strongly lower than readout 1, on the order of the approximately 22% m_S = 0 to m_S = +1 contrast scale.
+
+The observed combined traces do not show that. Readout 1 averages about 48.92 and readout 2 about 48.76, a mean difference of only -0.16 counts, or about -0.3%. The largest readout-2 deficits are only about 4-5%, and there are comparable positive excursions where readout 2 is brighter than readout 1. The two stored averages also place their strongest deficits at different frequencies, which is not strong independent evidence given that averages can reflect tracking cadence.
+
+Decision: resonance_absent. The pulse sequence should have produced a much larger, localized readout-2 drop at resonance, and the data instead show small noisy fluctuations without a credible pODMR feature.

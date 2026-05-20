@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml. The active instructions acquire a true ms=0 optical reference first: adj_polarize, detection, wait. Because full_expt is 0, the conditional +1 reference branch is inactive even though do_adiabatic_inversion is true. The sequence then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the second detection. Thus readout 1 is the bright ms=0 reference and readout 2 is the post-microwave signal readout.
 
 Using the provided sequence XML, length_rabi_pulse is 52 ns and mod_depth is 1. With the stated setup calibration of about 10 MHz Rabi frequency at mod_depth 1, this is approximately a pi-pulse duration near resonance, so a real resonance should produce a clear localized reduction in the post-pulse signal relative to the ms=0 reference, on the order of the available contrast scale rather than only random percent-level crossings.

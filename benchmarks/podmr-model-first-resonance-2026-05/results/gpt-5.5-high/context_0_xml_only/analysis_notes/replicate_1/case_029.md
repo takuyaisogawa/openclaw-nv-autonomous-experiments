@@ -1,0 +1,5 @@
+The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML shows a Rabimodulated sequence using rabi_pulse_mod_wait_time before detection. full_expt is 0, so the optional 1-level reference block is inactive. The active detections are therefore: readout 1 is the true 0-level/no-microwave polarized reference after adj_polarize, and readout 2 is the signal after the modulated Rabi pulse. The provided sequence variables give mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s to a 52 ns pulse duration.
+
+The resonance decision should use the signal readout against the reference, not the labels alone. Readout 1 stays roughly flat near 46-49 counts across the sweep, while readout 2 has a strong, reproducible dip centered around 3.875-3.880 GHz, dropping to about 39 counts in the combined data. Both per-average traces show the same dip in readout 2, and the reference does not show a matching drop. This is the expected pODMR contrast signature for a resonance in this sequence.
+
+Decision: resonance_present.

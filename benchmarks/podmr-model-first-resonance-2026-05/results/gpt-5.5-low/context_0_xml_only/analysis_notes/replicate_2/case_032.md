@@ -1,0 +1,5 @@
+Sequence inspection: the active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The provided sequence XML sets length_rabi_pulse to 5.2e-08 s (52 ns), mod_depth to 1, and full_expt to 0. Because full_expt is zero, the optional 1-level reference block is not active. The executed readouts are therefore the initial polarized/reference detection after adj_polarize, followed by the detection after the modulated Rabi pulse.
+
+Readout role interpretation: readout 1 is the reference/polarized baseline. Readout 2 is the signal after the active microwave pulse and is the relevant pODMR contrast channel.
+
+Data assessment: readout 1 stays near 42-46 counts without a matching central feature. Readout 2 shows a pronounced, localized dip centered near 3.875 GHz, falling to about 34 counts while neighboring points recover toward the low-to-mid 40s. The dip is visible in both averages, so it is not just a single-average artifact. This is consistent with a pODMR resonance in the active readout channel.

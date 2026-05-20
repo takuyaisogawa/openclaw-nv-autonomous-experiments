@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_081.
+Case podmr_067_2026-05-17-074342.
 
 I used only the provided sequence XML/raw export for this case. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the instructions, full_expt = 0, so the "Acquire 1 level reference" block is inactive even though it is present in the file. The active readouts are therefore:
 

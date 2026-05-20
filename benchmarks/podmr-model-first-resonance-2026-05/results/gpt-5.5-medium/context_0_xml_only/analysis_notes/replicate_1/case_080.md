@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active pulse path uses adj_polarize followed by detection for the true 0-level reference, then a wait, then rabi_pulse_mod_wait_time followed by detection for the microwave-driven signal. The optional 1-level reference block is inactive because full_expt = 0. The provided sequence variables show length_rabi_pulse = 52 ns and mod_depth = 1, with sample_rate = 250 MHz. The pulse duration is rounded to the sample grid, and 52 ns remains compatible with the 4 ns sample period.

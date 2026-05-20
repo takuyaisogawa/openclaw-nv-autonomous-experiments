@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence is Rabimodulated.xml. The active sweep variable is mw_freq over 3.825 to 3.925 GHz. The sequence first polarizes the NV and performs a detection readout, then because full_expt = 0 it skips the optional m_S = +1 reference block. It then applies one rabi_pulse_mod_wait_time pulse followed by the second detection readout.

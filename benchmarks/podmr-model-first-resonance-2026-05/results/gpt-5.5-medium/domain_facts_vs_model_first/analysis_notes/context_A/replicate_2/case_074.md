@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml. It first polarizes and records a true m_S = 0 reference, then waits. The optional m_S = +1 reference block is disabled because full_expt = 0, so the active measured pair is:
 
 - readout 1: pre-microwave m_S = 0 optical reference

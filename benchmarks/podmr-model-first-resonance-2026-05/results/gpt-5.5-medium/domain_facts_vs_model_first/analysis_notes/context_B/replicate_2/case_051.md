@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_051
+Case podmr_037_2026-05-16-213011
 
 Sequence/XML interpretation:
 - Active sequence: Rabimodulated.xml.

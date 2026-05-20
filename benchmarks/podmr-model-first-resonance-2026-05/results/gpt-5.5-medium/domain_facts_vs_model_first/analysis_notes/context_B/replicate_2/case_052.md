@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_052
+Case podmr_038_2026-05-16-214551
 
 I used the provided sequence XML as the active pulse program. The sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active detections are:
 

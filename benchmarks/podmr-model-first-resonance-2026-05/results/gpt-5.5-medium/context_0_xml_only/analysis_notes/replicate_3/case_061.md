@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The provided sequence is Rabimodulated.xml with mw_freq as the swept parameter. The active sequence first performs adj_polarize followed by detection, which is the true 0-level/reference readout. The optional 1-level reference block is skipped because full_expt is 0. The active microwave-dependent measurement is then a rabi_pulse_mod_wait_time pulse followed by detection.

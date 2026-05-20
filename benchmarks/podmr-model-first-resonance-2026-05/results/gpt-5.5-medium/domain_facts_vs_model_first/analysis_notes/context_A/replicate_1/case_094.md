@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and role assessment:
 
 The provided sequence XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect, giving readout 1 as the bright m_S = 0 reference. Because full_expt is 0, the optional m_S = 1 reference block is inactive. The active microwave-dependent measurement is then a rabi_pulse_mod_wait_time pulse followed by detection, giving readout 2 as the post-pulse signal.

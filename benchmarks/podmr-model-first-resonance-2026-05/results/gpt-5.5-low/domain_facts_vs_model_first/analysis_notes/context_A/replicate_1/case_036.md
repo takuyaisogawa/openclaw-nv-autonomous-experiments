@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true mS=0 reference, then because full_expt = 0 it skips the separate mS=+1 reference block, applies one rabi_pulse_mod_wait_time, and detects the post-pulse signal. Therefore readout 1 is the per-point optical reference before the microwave pulse, and readout 2 is the signal after the microwave pulse.
+
+Relevant pulse settings from the provided XML/export are mod_depth = 1 and length_rabi_pulse = 52 ns. With the supplied calibration of about 10 MHz Rabi frequency at mod_depth = 1, the pulse is close to a pi pulse on resonance. If a real pODMR resonance were present, the post-pulse readout should show a substantial reduction relative to the mS=0 reference, on the order of the setup contrast scale between mS=0 and mS=+1, about 22%.
+
+The combined raw traces do not show that behavior. Readout 2 is only slightly below readout 1 near the lowest portion around 3.88 GHz, while it is comparable to or above readout 1 across many other scan points. The apparent structure is only a few percent and the per-average overlays show large baseline/tracking changes, so the stored averages are not a strong independent repeatability test. The observed post-pulse/reference separation is far smaller and less consistent than expected for a resonant pi pulse.
+
+Decision: resonance absent.

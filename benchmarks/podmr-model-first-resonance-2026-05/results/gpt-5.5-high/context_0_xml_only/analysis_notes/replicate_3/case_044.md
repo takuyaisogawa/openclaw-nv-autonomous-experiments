@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect, giving readout 1 as the true 0-level/pre-pulse reference. Because full_expt = 0, the optional 1-level reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the post-microwave-pulse signal readout.
+
+The relevant contrast is therefore the behavior of the post-pulse signal relative to the pre-pulse reference, not either raw trace alone. Across the scan, readout 2 shows a localized downward feature around 3.895 GHz: the combined signal reaches its lowest value there while the reference does not show an equally large matching drop. In the per-average traces, this point also gives negative signal-minus-reference contrast in both averages, reducing the likelihood that it is only an average-specific fluctuation. The feature is narrow and noisy, but it is aligned with the expected pODMR signature for this readout role.
+
+Decision: resonance present.

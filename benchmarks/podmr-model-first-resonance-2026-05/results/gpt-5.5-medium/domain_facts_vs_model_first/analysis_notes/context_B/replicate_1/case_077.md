@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout roles
 
 The provided XML is Rabimodulated.xml. The executed scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the sequence, full_expt = 0, so the "Acquire 1 level reference" block is skipped. Therefore the two combined readouts are:

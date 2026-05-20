@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Using only the provided sequence and raw readouts:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The sequence first polarizes and detects the bright m_S = 0 reference. Because full_expt = 0, the optional m_S = +1 reference block is skipped, despite do_adiabatic_inversion being true. The second active readout is after rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1.

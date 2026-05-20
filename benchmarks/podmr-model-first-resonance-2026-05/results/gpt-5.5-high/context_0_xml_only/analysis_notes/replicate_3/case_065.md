@@ -1,0 +1,5 @@
+The provided sequence XML is Rabimodulated.xml. The active path polarizes the NV, immediately performs a detection used as the true 0-level/reference readout, waits, skips the optional 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time followed by the signal detection. Thus the first readout is the pre-microwave polarized reference and the second readout is the post-Rabi-pulse measurement readout.
+
+From the sequence XML, mod_depth = 1 and length_rabi_pulse = 5.2e-08 s. With sample_rate = 250 MHz, the pulse duration rounds to the same 52 ns value.
+
+The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The post-pulse readout shows a localized negative feature relative to the reference near 3.895 GHz: the combined readout difference there is about -4.6 counts, and both individual averages show a negative contrast at that same frequency. Other fluctuations are present, but this frequency-localized, repeatable dip is stronger than the surrounding point-to-point noise and is consistent with a pODMR resonance.

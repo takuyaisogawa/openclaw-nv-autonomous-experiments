@@ -1,0 +1,7 @@
+Case podmr_080_2026-05-17-105113.
+
+I used the provided sequence XML and the saved active variable values to identify the measurement. The active sequence is Rabimodulated.xml with mw_freq varied from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects the bright mS=0 level. Because full_expt = 0, the optional mS=+1 reference block is skipped. The second saved readout is therefore the signal after a microwave rabi_pulse_mod_wait_time pulse, not an independent dark-state calibration. The active pulse has length_rabi_pulse = 52 ns and mod_depth = 1. With the stated setup scale of about 10 MHz Rabi frequency at mod_depth = 1, this is near a pi pulse and should produce a strong dip on resonance, on the order of the 22 percent mS=0 to mS=+1 contrast scale if the resonance is well addressed.
+
+The combined readouts do not show that behavior. Readout 2 mostly tracks the bright reference readout, and the readout2/readout1 ratio varies only by a few percent. The largest apparent combined dip is around 3.895 GHz, about 3.5 percent below the reference, far smaller than expected for a near-pi pulse. It is also not consistent across the stored averages: one average has readout 2 above the reference at that location while the other is low, so the feature is compatible with tracking or averaging drift rather than a reproducible pODMR response.
+
+Given the sequence roles, pulse strength, expected contrast, and lack of a repeatable resonant dip, I decide that no pODMR resonance is present.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review: the provided sequence XML is Rabimodulated. The active microwave pulse is `rabi_pulse_mod_wait_time` followed by detection while sweeping `mw_freq`. The XML variables give `length_rabi_pulse = 5.2e-08` s, rounded at 250 MS/s to 52 ns, and `mod_depth = 1`. `full_expt = 0`, so the optional 1-level reference branch is disabled. The detections that remain are the initial post-polarization bright/0 reference detection and the post-Rabi-pulse signal detection. Two raw readout channels are recorded for the same sweep.
 
 Data assessment: both combined raw readouts vary only by a few counts over the 3.825-3.925 GHz sweep and show a broad upward drift with point-to-point noise. There is no narrow, repeatable, coincident fluorescence decrease or contrast feature at a plausible resonance frequency. The per-average overlay also shows substantial average-to-average offsets and drift rather than a stable local resonance feature. Because the apparent structure is not localized and is not consistently expressed across the readout channels and averages, I classify this case as no pODMR resonance.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided XML and embedded scan sequence identify the active sequence as Rabimodulated.xml with mw_freq as the swept variable from 3.825 GHz to 3.925 GHz. The active pulse program first performs adj_polarize followed by detection, which is the true 0-level optical reference. Because full_expt is 0, the optional 1-level reference block is skipped. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, followed by the second detection; this second readout is therefore the MW-driven modulated Rabi readout. The variable values give length_rabi_pulse = 5.2e-08 s (52 ns) and mod_depth = 1.

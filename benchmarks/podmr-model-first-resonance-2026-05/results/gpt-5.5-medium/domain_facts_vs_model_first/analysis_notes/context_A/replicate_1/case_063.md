@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided XML is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The sequence first polarizes and detects a true m_S = 0 bright reference. The m_S = +1 reference block is inactive because full_expt = 0, so the two stored readouts are not 0 and 1 references; they are the bright reference readout followed by the experimental readout after the microwave pulse. The active experimental pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence review:
 
 The scan uses Rabimodulated.xml and varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML sets length_rabi_pulse to 52 ns, mod_depth to 1, full_expt to 0, and do_adiabatic_inversion to true, but the adiabatic inversion code path is inside the skipped full_expt block. The active sequence therefore polarizes and detects a true 0-level reference, waits, applies rabi_pulse_mod_wait_time with the 52 ns pulse and mod_depth 1, then detects the post-pulse signal. The optional 1-level reference readout is not active because full_expt is zero.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_026
+Case: podmr_011_2026-05-16-120107
 
 I used only the provided sequence XML, raw export, and raw readout plot. The active sequence is Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz in 5 MHz steps. The instructions contain two active detections because full_expt = 0 disables the intermediate "Acquire 1 level reference" block. Therefore readout 1 is the true m_S = 0 fluorescence reference after laser polarization, and readout 2 is the signal after the modulated Rabi pulse. The active Rabi pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, and switch_delay = 100 ns.
 

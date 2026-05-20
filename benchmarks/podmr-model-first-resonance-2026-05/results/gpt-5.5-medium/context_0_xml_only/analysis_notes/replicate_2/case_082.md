@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided XML has full_expt = 0, so the optional "Acquire 1 level reference" branch is inactive. The executed sequence first polarizes and detects the true zero-level reference, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then performs the second detection. Thus readout 1 is the zero-level reference and readout 2 is the microwave-pulse signal readout.

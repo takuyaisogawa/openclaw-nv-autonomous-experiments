@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation
 
 The provided sequence is Rabimodulated.xml. The active instruction path first performs optical polarization and detection, giving the true m_S = 0 reference readout. The conditional "Acquire 1 level reference" block is inactive because full_expt = 0, so no independent m_S = +1 reference is acquired. The sequence then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, followed by detection. Therefore readout 1 is the m_S = 0 optical reference and readout 2 is the signal after the MW pulse.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence XML review:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instructions first polarize the NV center and take a detection readout, then wait, skip the optional mS=+1 reference block because full_expt = 0, apply a Rabi-modulated microwave pulse, and take a second detection readout.

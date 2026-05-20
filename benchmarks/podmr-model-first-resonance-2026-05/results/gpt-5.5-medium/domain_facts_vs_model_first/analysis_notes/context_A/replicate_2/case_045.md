@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence review:
 
 The sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active instructions first polarize and detect, then wait, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, then detect again. full_expt = 0, so the intermediate mS=+1 reference block is not active despite being present in the XML. Thus readout 1 is the polarized mS=0 reference fluorescence and readout 2 is the post-microwave signal fluorescence for the Rabi-modulated pulse.

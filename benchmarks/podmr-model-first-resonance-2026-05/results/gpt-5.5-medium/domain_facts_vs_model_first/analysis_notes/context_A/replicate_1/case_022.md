@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml with mw_freq scanned from 3.825 to 3.925 GHz. The provided sequence has full_expt = 0, so the optional "1 level reference" block is inactive. The active readouts are therefore:
 
 - readout 1: polarized m_S = 0 reference after adj_polarize and detection

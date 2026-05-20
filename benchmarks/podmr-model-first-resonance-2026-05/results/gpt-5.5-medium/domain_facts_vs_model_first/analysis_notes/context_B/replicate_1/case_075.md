@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_075.
+Case podmr_061_2026-05-17-061719.
 
 Sequence identification:
 - The provided XML is Rabimodulated.xml / Rabimodulated pODMR with mw_freq scanned.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_026.
+Case podmr_011_2026-05-16-120107.
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. In the active instructions, full_expt is 0, so the optional "Acquire 1 level reference" block is skipped even though do_adiabatic_inversion is true. The sequence therefore performs an initial polarization and detection for the bright/reference readout, waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the signal detection. The active pulse duration is rounded at 250 MS/s, remaining 52 ns.
 

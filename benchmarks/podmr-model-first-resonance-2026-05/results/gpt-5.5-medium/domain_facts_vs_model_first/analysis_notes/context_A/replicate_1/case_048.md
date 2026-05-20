@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated pODMR with mw_freq swept from 3.825 to 3.925 GHz in 5 MHz steps.
 
 Readout roles: because full_expt = 0, the optional m_S = +1 reference block is skipped. The first active detection follows adj_polarize and is the bright m_S = 0 reference. The second active detection follows rabi_pulse_mod_wait_time and is the microwave-pulse response readout.

@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_018.
+Case podmr_003_2026-05-16-003531.
 
 The provided sequence is Rabimodulated.xml with mw_freq as the scanned variable. The active instructions first acquire a true 0-level reference after polarization and detection, then skip the 1-level reference block because full_expt = 0, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1 before the final detection. Thus readout 1 is the initial reference readout and readout 2 is the microwave-pulse signal readout.
 

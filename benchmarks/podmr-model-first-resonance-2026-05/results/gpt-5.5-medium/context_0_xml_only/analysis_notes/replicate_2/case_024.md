@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The provided sequence is Rabimodulated.xml. The active scan variable is mw_freq. The active sequence first polarizes, then performs a detection before the microwave pulse; this is the true 0-level reference readout. The "Acquire 1 level reference" block is inactive because full_expt is 0, so no separate 1-level reference readout is acquired. The active microwave operation is rabi_pulse_mod_wait_time followed by detection; this post-pulse detection is the signal readout. From the provided sequence XML, mod_depth is 1 and length_rabi_pulse is 5.2e-08 s, rounded at 250 MHz sampling to 52 ns.

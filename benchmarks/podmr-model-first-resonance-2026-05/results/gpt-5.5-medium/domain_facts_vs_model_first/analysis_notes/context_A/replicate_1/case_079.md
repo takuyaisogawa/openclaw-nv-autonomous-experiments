@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence decision:
 
 The provided XML is Rabimodulated. It first polarizes the NV and performs detection, which is the true bright m_S = 0 reference readout. Because full_expt = 0, the optional m_S = +1 reference block is inactive, even though do_adiabatic_inversion is set. The active swept measurement then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection. Thus readout 1 is the per-point bright reference and readout 2 is the post-microwave-pulse signal.

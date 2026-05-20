@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_039.
+Case podmr_024_2026-05-16-175646.
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instructions acquire a true m_S = 0 bright reference first: adj_polarize, detection, and wait. The optional m_S = 1 reference branch is disabled because full_expt = 0, so it does not contribute an additional reference readout. The final active experiment pulse is rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by the second detection. Thus readout 1 is the pre-pulse bright/reference readout, and readout 2 is the post-pulse signal after the microwave pulse.
 

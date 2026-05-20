@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_073
+Case podmr_059_2026-05-17-054846
 
 I used the provided sequence XML rather than labels or prior outputs. The active sequence is Rabimodulated.xml. With full_expt = 0, the sequence does not acquire the optional m_S = +1 reference. It first performs adj_polarize followed by detection, giving the true m_S = 0 optical reference readout. It then applies one rabi_pulse_mod_wait_time pulse and performs a second detection, giving the post-microwave-pulse readout. Thus readout 1 is the bright reference and readout 2 is the signal after the microwave pulse.
 

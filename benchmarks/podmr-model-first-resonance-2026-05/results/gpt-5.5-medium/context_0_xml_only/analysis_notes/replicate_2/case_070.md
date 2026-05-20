@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided XML sets full_expt = 0, so the optional 1-level reference block is inactive even though do_adiabatic_inversion is true. The executed readout roles are therefore:

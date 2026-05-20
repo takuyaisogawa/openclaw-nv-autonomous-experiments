@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence XML and raw export identify the active sequence as Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The relevant variables are length_rabi_pulse = 52 ns, mod_depth = 1 in the provided XML/variable values, sample_rate = 250 MHz, and full_expt = 0. Because full_expt is zero, the conditional 1-level reference block is not active; the executed readouts are the initial polarized/detected 0-level reference followed later by the detection after the modulated rabi pulse.
 
 The first readout is therefore the reference/0-level readout and remains fairly flat around 38-40 counts across the microwave-frequency sweep. The second readout is the post-pulse signal readout and shows a large localized drop near the center of the scan, reaching about 28.8 counts while the reference remains near 38.5 counts. The same feature is visible in the per-average traces, so it is not only a single combined-average artifact.

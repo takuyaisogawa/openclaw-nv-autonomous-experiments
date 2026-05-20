@@ -1,0 +1,5 @@
+The active sequence is Rabimodulated.xml with mw_freq as the scanned parameter. In the provided sequence XML, full_expt is 0, so only the true mS=0 reference detection and the post-pulse detection are acquired: readout 1 is the polarized reference before the microwave pulse, and readout 2 is the signal after the Rabi-modulated microwave pulse. The active pulse is rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, with no active adiabatic inversion branch because full_expt is zero.
+
+Given the supplied setup facts, mod_depth = 1 corresponds to about 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse. If the scan crossed a pODMR resonance, the post-pulse readout should show a substantial contrast relative to the mS=0 reference, on the order of the stated 22% scale. The combined readouts instead stay close together and fluctuate by only a few counts around 54-58, with no consistent resonance-shaped dip in the post-pulse readout relative to the reference. The per-average traces differ mainly by tracking/offset cadence and do not provide a strong independent repeatability check.
+
+Decision: resonance_absent.

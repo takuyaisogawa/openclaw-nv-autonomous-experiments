@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz.
 
 The instructions first polarize and detect a true m_S = 0 bright reference, then skip the optional m_S = +1 reference because full_expt = 0. The final measured signal is after rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection. Thus readout 1 is the bright reference and readout 2 is the microwave-pulse signal.

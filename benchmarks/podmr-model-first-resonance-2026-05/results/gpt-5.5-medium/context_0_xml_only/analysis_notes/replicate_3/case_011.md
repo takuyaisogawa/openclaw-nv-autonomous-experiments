@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The sequence first performs adj_polarize followed by detection, which is the true 0-level/reference readout. Because full_expt = 0, the optional 1-level reference block is inactive. The active microwave-dependent measurement is then a rabi_pulse_mod_wait_time pulse followed by detection, so the second acquired readout is the modulated signal readout after the pulse.

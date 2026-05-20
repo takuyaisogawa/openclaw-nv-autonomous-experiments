@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_059
+Case podmr_045_2026-05-16-234216
 
 I used the provided sequence XML and the exported active variable values to identify the sequence and readout roles before deciding. The sequence is Rabimodulated.xml with mw_freq scanned from 3.825 GHz to 3.925 GHz in 5 MHz steps. Because full_expt = 0, the optional "1 level reference" block is skipped. The two active detections are therefore:
 

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The instruction order first polarizes and detects a true m_S = 0 reference, then skips the m_S = +1 reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, and finally detects the post-pulse signal. Therefore readout 1 is the 0-reference and readout 2 is the driven signal readout.

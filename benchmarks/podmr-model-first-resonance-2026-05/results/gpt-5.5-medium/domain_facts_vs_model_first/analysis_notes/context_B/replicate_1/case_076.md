@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_076
+Case podmr_062_2026-05-17-063134
 
 I used the provided sequence XML, not prior labels or sibling cases. The active pulse sequence is Rabimodulated.xml / Rabimodulated: it polarizes the NV, detects the true m_S = 0 level, waits, then applies rabi_pulse_mod_wait_time with length_rabi_pulse and mod_depth, followed by detection of the pulsed state. The full_expt variable is 0, so the optional "Acquire 1 level reference" block is inactive. Thus the two readouts are: readout 1 = m_S = 0 optical reference after polarization, and readout 2 = signal after the modulated microwave pulse. The relevant pulse duration is length_rabi_pulse = 52 ns, and mod_depth = 1 in the provided XML.
 

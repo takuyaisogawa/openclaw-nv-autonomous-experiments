@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_047
+Case: podmr_033_2026-05-16-203113
 
 Input restrictions followed: I used only inputs/sequence.xml and inputs/raw_export.json in this isolated workspace, not labels, sibling cases, previous outputs, or external context.
 

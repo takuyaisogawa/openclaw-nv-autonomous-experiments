@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 The provided XML is Rabimodulated.xml. The scan varies mw_freq across 3.825 to 3.925 GHz. The active sequence first polarizes and detects a true 0-level reference, waits, skips the 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1 before the second detection. Thus readout 1 is the no-microwave 0-level reference and readout 2 is the signal after the 52 ns modulated microwave pulse.

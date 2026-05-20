@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
 
 Readout roles: full_expt is 0, so the sequence acquires a true bright m_S=0 reference first after optical polarization, skips the optional m_S=+1 reference block, then applies the microwave pulse and acquires the signal readout. Thus readout 1 is the bright reference and readout 2 is the post-microwave signal readout.

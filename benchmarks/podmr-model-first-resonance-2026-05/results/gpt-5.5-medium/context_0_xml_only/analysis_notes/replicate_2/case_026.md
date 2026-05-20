@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence/readout interpretation:
 
 The active scan is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The XML instructions first run adj_polarize followed by detection, then wait. Because full_expt is 0, the optional 1-level reference block is not executed. The sequence then runs rabi_pulse_mod_wait_time followed by detection. Thus readout 1 is the polarized/true-0 reference detection, and readout 2 is the detection after the modulated Rabi pulse.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence inspection:
 
 The active sequence is Rabimodulated.xml. It first polarizes the NV and records a detection readout as the true m_S = 0 bright reference. Because full_expt = 0, the optional m_S = +1 reference block is skipped. The active measurement block is then a modulated Rabi pulse followed by detection, so the two combined raw readouts correspond to the initial bright reference and the post-microwave-pulse signal readout.

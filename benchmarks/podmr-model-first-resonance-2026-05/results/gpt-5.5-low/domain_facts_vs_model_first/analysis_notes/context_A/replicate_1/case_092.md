@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects, so readout 1 is the bright m_S = 0 reference. Because full_expt = 0, the optional m_S = +1 reference branch is skipped. The second active measurement is after rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the microwave-pulse readout.
+
+Using the stated setup scale, mod_depth = 1 gives about 10 MHz Rabi frequency, so a 52 ns pulse is near a pi pulse. If the swept microwave frequency hit a strong single-NV pODMR resonance, readout 2 should show a clear localized fluorescence reduction relative to the readout-1 reference, on a scale approaching the setup's roughly 22% m_S = 0 to m_S = +1 contrast for an effective pi pulse.
+
+The combined traces instead fluctuate around 50 to 54 counts with no narrow, repeatable resonance-like feature. Readout 2 is sometimes above and sometimes below readout 1; the larger negative differences are only on the order of 1 to 1.6 counts, roughly a few percent of the signal and far below the expected contrast for this pulse. The per-average overlays show substantial tracking/noise variation, and the stored two averages should not be treated as strong independent confirmation. The broad low region near the high-frequency end is not cleanly localized and is comparable to average-to-average scatter.
+
+Decision: resonance absent.

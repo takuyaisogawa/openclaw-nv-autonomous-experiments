@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_021
+Case: podmr_006_2026-05-16-011837
 
 I used only the provided sequence XML and raw readout export. The active sequence is Rabimodulated.xml. The instructions first polarize the NV and perform a detection, then because full_expt = 0 the optional mS=1 reference block is skipped. The sequence then applies one rabi_pulse_mod_wait_time pulse and performs the second detection. Therefore readout 1 is the polarized mS=0 reference readout, and readout 2 is the signal after the microwave pulse. The active pulse settings are length_rabi_pulse = 52 ns and mod_depth = 1.
 

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The provided sequence first polarizes and detects a true 0-level reference, then skips the optional 1-level reference because full_expt = 0. The active experiment readout after that is a Rabi-modulated microwave pulse followed by detection. Readout 1 is therefore the reference detection, and readout 2 is the MW-modulated detection. The sequence values show length_rabi_pulse = 52 ns and mod_depth = 1, with the pulse length rounded to the 250 MHz sample clock.

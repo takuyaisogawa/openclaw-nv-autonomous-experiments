@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated, scanning mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 
 The XML has full_expt = 0, so the active loop acquires the true 0-level reference first: adj_polarize, then detection. The optional 1-level reference block is skipped. After that it applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, mod_depth = 1, and switch_delay = 1e-07 s, followed by the second detection. Thus readout 1 is the no-microwave-pulse reference after polarization, and readout 2 is the microwave-pulse readout for the pODMR test.

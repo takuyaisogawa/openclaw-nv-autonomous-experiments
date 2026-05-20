@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and readout interpretation
 
 The provided sequence is Rabimodulated.xml. The active instructions set the microwave frequency, polarize the NV, acquire a detection immediately after polarization as the true 0 level reference, wait, apply a rabi_pulse_mod_wait_time pulse, then acquire the detection used as the pODMR signal. The optional 1-level reference block is inactive because full_expt = 0.

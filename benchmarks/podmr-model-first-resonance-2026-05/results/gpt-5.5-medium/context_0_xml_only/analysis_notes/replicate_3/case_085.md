@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 
 - Active sequence: Rabimodulated.xml / Rabimodulated pODMR scan with mw_freq varied from 3.825 GHz to 3.925 GHz in 5 MHz steps.

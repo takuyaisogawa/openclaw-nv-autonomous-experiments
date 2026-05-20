@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The provided sequence has mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup Rabi rate of about 10 MHz at mod_depth = 1, this is near a pi pulse, so a resonant transition should lower the post-pulse readout relative to the initial polarized reference.
+
+Readout roles: full_expt = 0, so the optional m_S = +1 reference block is skipped. The first detection after adj_polarize is the true m_S = 0 / bright reference. The second detection follows the modulated Rabi pulse and is the pODMR signal readout.
+
+The combined post-pulse readout has its clearest dip at 3.880 GHz: readout 2 is 45.79 while the reference readout 1 is 49.52, a ratio of about 0.925. The same frequency is low in both stored averages for readout 2, while the reference channel does not show a matching collapse. Neighboring post-pulse points recover near 49-50 counts, making this a localized frequency-dependent reduction. Other low-ratio points exist, especially 3.830 and 3.845 GHz, but they are less clean or less repeatable across averages.
+
+The dip is smaller than the nominal full 22% m_S = 0 to m_S = +1 contrast expected for an ideal pi pulse, so the confidence should not be high. However, because the active sequence is a near-pi pODMR pulse and the post-pulse channel shows a reproducible localized reduction near 3.880 GHz, I classify this case as resonance present.

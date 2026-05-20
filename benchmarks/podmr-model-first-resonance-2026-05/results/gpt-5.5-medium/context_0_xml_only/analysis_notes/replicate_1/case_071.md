@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and roles:
 - Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz.
 - full_expt is 0, so the optional 1-level reference block is skipped.

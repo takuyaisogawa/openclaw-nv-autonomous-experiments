@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml / Rabimodulated pulse sequence. The sequence first polarizes and detects a true mS=0 reference, then skips the mS=1 reference block because full_expt = 0, then applies a Rabi-modulated microwave pulse and performs the signal detection. Thus readout 1 is the zero-level reference and readout 2 is the microwave-pulse pODMR signal.
+
+Active pulse settings from the provided sequence/variable values: mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup estimate, the Rabi frequency is about 10 MHz at mod_depth = 1, so a 52 ns pulse is approximately pi-like. If the scanned microwave frequency crossed a real resonance, readout 2 should show a strong drop toward the mS=+1 contrast scale, roughly of order the 22% setup contrast relative to readout 1.
+
+The combined readouts do not show that scale of response. The largest normalized readout-2 drop relative to readout 1 is about 5.2% near 3.905 GHz, with a comparable 5.1% excursion at the scan edge near 3.825 GHz and other scattered fluctuations. Looking at the two stored averages is not a strong repeatability test because those averages can reflect tracking cadence, and the per-average overlays show baseline movement and isolated excursions rather than a clean resonance-shaped feature. The candidate dip is much smaller than expected for the active near-pi pulse at full modulation depth.
+
+Decision: resonance_absent.

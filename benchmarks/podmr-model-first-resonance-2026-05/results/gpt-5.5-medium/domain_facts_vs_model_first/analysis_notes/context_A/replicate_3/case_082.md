@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence interpretation:
 
 The provided sequence is Rabimodulated.xml / Rabimodulated. It sets up a microwave frequency scan from 3.825 GHz to 3.925 GHz with two active detection events because full_expt = 0 skips the optional mS = +1 reference block. The first detection follows optical polarization and is the true mS = 0 reference readout. The second detection follows a rabi_pulse_mod_wait_time microwave pulse and is the post-pulse signal readout.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 to 3.925 GHz.
 
 The sequence first performs optical polarization and detection, giving a true m_S = 0 reference in readout 1. The optional m_S = 1 reference block is disabled because full_expt = 0, so readout 2 is the signal after one modulated Rabi pulse followed by detection.

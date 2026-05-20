@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_079
+Case podmr_065_2026-05-17-071421
 
 I used the provided sequence.xml as the sequence source. The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The pulse program first polarizes the NV and performs a detection readout for the true 0-level reference, then waits, applies rabi_pulse_mod_wait_time with length_rabi_pulse, and performs a second detection readout. Because full_expt is 0, the optional 1-level reference branch is inactive even though do_adiabatic_inversion is true.
 

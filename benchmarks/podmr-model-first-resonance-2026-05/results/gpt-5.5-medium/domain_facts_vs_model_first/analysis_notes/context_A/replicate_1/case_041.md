@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation:
 
 The active sequence is Rabimodulated.xml. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true mS = 0 reference readout, then waits, applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, and detects again. Since full_expt = 0, the optional explicit mS = +1 reference block is skipped. Thus readout 1 is the bright mS = 0 reference and readout 2 is the post-microwave-pulse signal.

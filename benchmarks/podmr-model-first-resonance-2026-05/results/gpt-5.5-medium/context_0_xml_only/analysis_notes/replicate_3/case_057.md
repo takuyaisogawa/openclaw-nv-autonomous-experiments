@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_057.
+Case podmr_043_2026-05-16-231159.
 
 The provided sequence XML is Rabimodulated. It sets up a microwave-frequency scan with a modulated Rabi pulse, with sample_rate 250 MHz, length_rabi_pulse 5.2e-08 s after rounding, mod_depth 1, switch_delay 1e-07 s, and length_last_wait 1e-06 s. The active instructions first polarize and detect the true 0-level reference, then skip the 1-level reference branch because full_expt is 0, then apply rabi_pulse_mod_wait_time using length_rabi_pulse and mod_depth, followed by the second detection. Therefore readout 1 is the true 0 reference and readout 2 is the post-microwave-pulse signal readout.
 

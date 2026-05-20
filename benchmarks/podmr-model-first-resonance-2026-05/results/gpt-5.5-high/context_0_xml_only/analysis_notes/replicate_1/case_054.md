@@ -1,0 +1,5 @@
+The provided sequence is Rabimodulated.xml. With full_expt = 0, the "Acquire 1 level reference" block is skipped, so the active readouts are the initial post-polarization detection as the bright-state/0-level reference and the later detection after the rabi_pulse_mod_wait_time pulse as the driven signal. The pulse used for the scan is length_rabi_pulse = 52 ns, rounded at 250 MHz sample rate without changing it, with mod_depth = 1 and mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps.
+
+For pODMR, a resonance should appear as a reduction of the post-pulse signal relative to the bright reference. The combined normalized contrast (readout1 - readout2) / readout1 reaches its largest value at 3.885 GHz, about 0.076, where readout1 is 48.37 and readout2 is 44.67. This feature is also present in both averages at the same scan point: about 0.093 contrast in average 0 and about 0.062 contrast in average 1. Other points fluctuate and the feature is narrow, but the same-frequency contrast maximum in both averages supports a real pODMR dip rather than a single-average artifact.
+
+Decision: resonance_present.

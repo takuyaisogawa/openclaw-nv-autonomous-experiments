@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active pulse sequence: Rabimodulated.xml, sweeping mw_freq from 3.825 GHz to 3.925 GHz.
 
 The provided sequence has full_expt = 0, so the optional 1-level reference block is skipped. The active readouts are therefore:

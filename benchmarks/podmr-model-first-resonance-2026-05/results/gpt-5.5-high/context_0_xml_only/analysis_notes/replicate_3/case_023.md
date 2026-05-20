@@ -1,0 +1,7 @@
+Case podmr_008_2026-05-16-014743.
+
+The scan metadata names the sequence as Rabimodulated.xml and varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps. In the provided sequence, the active measurement is a polarization/readout reference followed by a modulated Rabi pulse and a second detection. The optional 1-level reference block is inside `if abs(full_expt)>1e-12`, and full_expt is 0, so that block is inactive. Therefore readout 1 is the true 0-level/reference readout after laser polarization, and readout 2 is the signal readout after the MW/Rabi pulse. The Rabi pulse duration is length_rabi_pulse = 5.2e-08 s, rounded at 250 MHz sample rate to 52 ns. The provided variable table reports mod_depth = 1 for the active pulse.
+
+The first/readout reference stays near 40-43 counts across the sweep without a matching narrow depression. The second/post-pulse readout has a clear, repeated dip near the middle of the sweep: the combined signal falls from about 40-43 counts to about 31.3 at 3.875 GHz and about 32.3 at 3.880 GHz, then recovers above 41 counts by about 3.890 GHz. The per-average traces both show the same depression in the second readout, with minima around 32.4/30.2 at the central point and adjacent low points, so this is not just a single-average fluctuation.
+
+Because the active signal readout shows a strong localized ODMR-like contrast while the reference readout does not, I classify this case as resonance present.

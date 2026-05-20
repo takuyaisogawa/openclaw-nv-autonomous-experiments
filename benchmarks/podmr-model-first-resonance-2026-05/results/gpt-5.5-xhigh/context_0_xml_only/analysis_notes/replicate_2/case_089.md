@@ -1,0 +1,5 @@
+Active sequence: Rabimodulated.xml, scanning mw_freq from 3.825 to 3.925 GHz in 5 MHz steps.
+
+The provided XML uses a polarize/detect reference first, then skips the optional 1-level reference because full_expt = 0, then applies the active rabi_pulse_mod_wait_time pulse and detects again. Thus readout 1 is the pre-microwave true-0/reference readout and readout 2 is the post-Rabi-pulse pODMR signal readout. The active pulse uses mod_depth = 1 and length_rabi_pulse = 5.2e-08 s, which is 52 ns and is exactly 13 samples at the 250 MHz sample rate.
+
+The raw readouts mostly share a slow upward drift with scan frequency. The signal-reference difference has mean about -0.13 counts and standard deviation about 1.19 counts, with negative excursions at 3.830 GHz and 3.900 GHz but positive excursions of comparable size at other points. The per-average data do not show a stable, localized resonance shape; the apparent dips are isolated noisy contrast fluctuations rather than a reproducible ODMR line. I therefore classify this scan as resonance absent.

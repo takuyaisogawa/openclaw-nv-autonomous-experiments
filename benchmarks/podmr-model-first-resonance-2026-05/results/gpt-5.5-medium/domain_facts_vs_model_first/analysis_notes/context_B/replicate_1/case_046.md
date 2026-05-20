@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_046
+Case: podmr_032_2026-05-16-201700
 
 Input files used only from this isolated workspace:
 - inputs/sequence.xml

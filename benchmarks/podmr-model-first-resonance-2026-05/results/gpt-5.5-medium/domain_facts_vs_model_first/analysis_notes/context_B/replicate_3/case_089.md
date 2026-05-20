@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_089
+Case podmr_075_2026-05-17-093901
 
 I used the provided sequence XML as the active pulse program. The sequence is Rabimodulated.xml. It first polarizes and records a detection readout as the true m_S = 0 reference. Since full_expt = 0, the optional m_S = 1 reference branch is skipped. It then applies one rabi_pulse_mod_wait_time pulse and records the second detection readout as the microwave-affected signal. Thus readout 1 is the bright reference and readout 2 is the post-microwave signal. The relevant pulse parameters are length_rabi_pulse = 52 ns and mod_depth = 1.
 

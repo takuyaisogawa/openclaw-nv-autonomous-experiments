@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_069
+Case: podmr_055_2026-05-17-045046
 
 Sequence/readout identification:
 - The provided sequence is Rabimodulated.xml.

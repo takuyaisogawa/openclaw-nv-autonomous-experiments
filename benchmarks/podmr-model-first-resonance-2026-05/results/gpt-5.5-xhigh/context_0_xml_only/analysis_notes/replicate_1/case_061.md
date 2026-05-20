@@ -1,0 +1,5 @@
+Using the provided inputs/sequence.xml, the active sequence is Rabimodulated with mw_freq swept from 3.825 to 3.925 GHz. The active path first polarizes and detects the bright/0-level reference, then skips the full_expt 1-level reference block because full_expt = 0, then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s and mod_depth = 1 before the second detection. Thus readout 1 is the 0-level reference and readout 2 is the post-microwave-pulse signal readout.
+
+The combined traces are noisy, but the relevant comparison is readout 2 relative to readout 1. In the averaged data, readout 2 falls below readout 1 over a contiguous high-frequency region: about -2.73 at 3.905 GHz, -1.27 at 3.910 GHz, -1.48 at 3.915 GHz, and -2.42 at 3.920 GHz, then recovers positive at 3.925 GHz. The two individual averages both show negative contrast across much of this same region, especially 3.905-3.920 GHz, so this is more consistent with a weak pODMR resonance than with a single isolated noise point.
+
+Decision: resonance_present.

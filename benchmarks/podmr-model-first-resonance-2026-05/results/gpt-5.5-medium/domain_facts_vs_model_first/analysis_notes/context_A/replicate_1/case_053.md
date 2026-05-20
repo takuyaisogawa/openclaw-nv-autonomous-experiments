@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence: Rabimodulated.xml / Rabimodulated sequence from the provided XML. The instructions first polarize and detect a true m_S=0 bright reference. Because full_expt = 0, the optional m_S=+1 reference block is inactive even though do_adiabatic_inversion is true. The active measurement readout is then taken after rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1.
 
 Readout roles: readout 1 is the bright m_S=0 reference, and readout 2 is the post-microwave-pulse signal. A pODMR resonance should therefore appear as readout 2 dropping below readout 1 at resonant microwave frequency.

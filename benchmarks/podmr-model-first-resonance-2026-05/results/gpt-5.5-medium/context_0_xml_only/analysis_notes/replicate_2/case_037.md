@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence review:
 - Active sequence: Rabimodulated.xml, swept variable mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.
 - The active microwave operation is rabi_pulse_mod_wait_time followed by detection.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence inspection:
 
 The provided XML is Rabimodulated.xml. The active path first performs optical polarization and a detection window that is explicitly the true m_S = 0 reference. The optional m_S = +1 reference branch is not active because full_expt = 0, even though do_adiabatic_inversion is set. After the reference, the sequence applies rabi_pulse_mod_wait_time with length_rabi_pulse, mod_depth, and switch_delay, then performs the second detection window. Thus readout 1 is the m_S = 0 reference and readout 2 is the post-microwave signal readout.

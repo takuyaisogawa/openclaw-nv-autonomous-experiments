@@ -1,0 +1,5 @@
+The active sequence is Rabimodulated.xml. With full_expt = 0, the intermediate "1 level reference" block is inactive, so the recorded readouts are a bright mS = 0 reference detection followed by a 52 ns modulated Rabi pulse and its detection. The provided sequence variables give mod_depth = 1 and length_rabi_pulse = 52 ns, which is close to a pi pulse for the stated approximately 10 MHz Rabi frequency at mod_depth = 1.
+
+That means a true resonance should make the post-microwave readout darker than the bright reference. In the combined data, this occurs most clearly near 3.875 GHz: readout 1 is about 42.12 while readout 2 is about 38.25, giving a normalized driven/reference ratio near 0.91. The adjacent point at 3.880 GHz returns close to parity, so the feature has the expected sign and is reasonably localized. The contrast is smaller than the full 22 percent setup scale and the per-average traces show substantial tracking/baseline changes, so the evidence is not strong, but stored averages are not a clean repeatability test here.
+
+Decision: pODMR resonance present.

@@ -1,0 +1,5 @@
+Using the provided sequence XML, the active sequence is Rabimodulated with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first polarize and detect a true 0-level/reference readout, then because full_expt = 0 they skip the optional 1-level reference block, then apply rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1 before the final detection. Thus the first readout is the pre-pulse reference and the second readout is the microwave-pulse signal readout.
+
+The reference readout is relatively flat across the scan, mostly near 46 counts. The signal readout is noisy, but it drops below the reference through a contiguous portion of the sweep around roughly 3.88 to 3.90 GHz, including the strongest negative contrast near 3.895 GHz. The per-average traces support that this is not only a single averaged-point artifact: the signal is lower than its corresponding reference in this region for both averages. The feature is not perfectly smooth and there are high-noise excursions, but the reference-normalized dip is consistent with a pODMR resonance.
+
+Decision: resonance_present.

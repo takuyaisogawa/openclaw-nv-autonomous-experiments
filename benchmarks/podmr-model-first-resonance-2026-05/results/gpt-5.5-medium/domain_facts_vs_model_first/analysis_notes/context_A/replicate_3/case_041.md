@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The active sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The instructions first acquire a true m_S = 0 reference after optical polarization, then skip the optional m_S = 1 reference because full_expt = 0, then apply rabi_pulse_mod_wait_time and acquire the driven readout. Thus readout 1 is the 0-level reference and readout 2 is the post-microwave driven signal.
 
 From the provided sequence XML, length_rabi_pulse is 5.2e-08 s (52 ns) and mod_depth is 1. With the stated setup estimate of about 10 MHz Rabi frequency at mod_depth = 1, this pulse is approximately a pi pulse on resonance. If an NV pODMR resonance were present under these conditions, the driven readout should show a strong reduction relative to the 0 reference, on the order of the setup contrast scale between m_S = 0 and m_S = +1 (about 22%), allowing for imperfections.

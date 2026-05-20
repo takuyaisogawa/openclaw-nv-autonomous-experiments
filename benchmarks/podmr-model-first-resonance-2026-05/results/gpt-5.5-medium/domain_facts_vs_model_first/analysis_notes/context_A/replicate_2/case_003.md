@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 
 The provided XML is Rabimodulated.xml with mw_freq as the swept parameter. The sequence first polarizes and detects a true m_S = 0 bright reference. Because full_expt = 0, the conditional m_S = +1 reference block is skipped. The later readout follows a rabi_pulse_mod_wait_time pulse and is therefore the signal readout after the microwave pulse.

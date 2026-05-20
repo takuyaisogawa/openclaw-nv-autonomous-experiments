@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated with mw_freq as the swept parameter. In the active instruction path, full_expt is 0, so the optional 1-level reference block is not executed. The first detection occurs immediately after adj_polarize and serves as the 0/bright reference readout. The second detection follows rabi_pulse_mod_wait_time with length_rabi_pulse = 5.2e-08 s, mod_depth = 1 from the provided XML variable values, and switch_delay = 1e-07 s; this second readout is therefore the microwave-pulse-sensitive pODMR signal.
 
 Across the mw_freq scan from 3.825 to 3.925 GHz, the first readout remains roughly flat near 35 to 37 counts, while the second readout shows a pronounced, localized dip from its baseline near 35 to 37 counts down to about 29, 28.2 counts around 3.875 to 3.880 GHz before recovering. The dip is visible in the averaged data and appears consistently in both per-average traces, whereas the reference readout does not show a matching feature. This is the expected signature of a pODMR resonance in the signal readout rather than common-mode count drift.

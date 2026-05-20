@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence and roles:
 - The active pulse sequence is Rabimodulated.xml, varying mw_freq from 3.825 GHz to 3.925 GHz.
 - The XML has full_expt = 0, so the conditional m_S = +1 reference block is inactive.

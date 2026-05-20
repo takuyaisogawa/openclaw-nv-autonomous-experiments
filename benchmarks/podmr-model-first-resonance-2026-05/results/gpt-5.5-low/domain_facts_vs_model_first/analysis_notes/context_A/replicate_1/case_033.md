@@ -1,0 +1,7 @@
+The provided sequence XML is Rabimodulated.xml with mw_freq as the scanned variable. In the active instructions, the first detection occurs immediately after optical polarization, so readout 1 is the true m_S = 0 reference. The optional separate m_S = +1 reference block is disabled because full_expt = 0. The second detection occurs after rabi_pulse_mod_wait_time using length_rabi_pulse = 52 ns and mod_depth = 1, so readout 2 is the driven pODMR signal channel.
+
+Using the supplied setup facts, mod_depth = 1 gives an expected Rabi frequency of about 10 MHz, so a 52 ns pulse is very close to a pi pulse. Therefore a resonant microwave frequency should transfer population toward m_S = +1 and reduce the second readout by up to roughly the setup contrast scale of 22%, while readout 1 should remain a tracking/reference trace.
+
+The combined raw data show readout 2 has a pronounced, localized dip centered near 3.875-3.880 GHz, dropping from an off-resonant level around 47-49 to about 39. This is an approximately 18-20% reduction, consistent with the expected contrast for a near-pi pulse. Readout 1 does not show a matching dip at the same position, so the feature is not simply common-mode tracking. The two stored averages show the same qualitative dip in readout 2, although the averages should not be over-weighted as a repeatability test because they may mainly reflect tracking cadence.
+
+Decision: a pODMR resonance is present.

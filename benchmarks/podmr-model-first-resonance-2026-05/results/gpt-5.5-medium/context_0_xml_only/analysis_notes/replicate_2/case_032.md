@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active path has full_expt = 0, so the optional 1-level reference block is skipped. The sequence first performs adj_polarize followed by detection, giving the true 0-level/reference readout. It then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1 from the provided XML/variable values, and switch_delay = 100 ns, followed by the signal detection readout.
 
 Thus readout 1 is the pre-pulse reference/background fluorescence and readout 2 is the microwave-pulse-dependent pODMR signal. The reference readout is broadly flat around the mid-40 count level across the scan, while the signal readout shows a pronounced, localized drop centered near 3.875 GHz, falling to about 34 counts. The same dip appears in both per-average signal traces, so it is not explained by a single noisy average. Because the dip is localized in frequency, occurs in the microwave-dependent readout, and is much larger than the reference fluctuations, this is consistent with a pODMR resonance.

@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The provided sequence is Rabimodulated.xml. In the active instructions, full_expt is 0, so the optional 1-level reference block is skipped. The executed readouts are therefore the initial polarized/laser-only detection after adj_polarize, followed by detection after a rabi_pulse_mod_wait_time call.
 
 The active microwave pulse uses length_rabi_pulse = 5.2e-08 s, i.e. 52 ns, with mod_depth = 1 from the provided sequence XML and variable values. The scan varies mw_freq from 3.825 GHz to 3.925 GHz.

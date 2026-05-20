@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_081.
+Case podmr_067_2026-05-17-074342.
 
 The provided sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz. The active instructions first perform adj_polarize and detection to acquire the true 0-level reference. The optional 1-level reference block is inactive because full_expt = 0, so only two readouts are active: readout 1 is the pre-microwave 0-level/reference detection and readout 2 is the detection after the Rabi-modulated microwave pulse.
 

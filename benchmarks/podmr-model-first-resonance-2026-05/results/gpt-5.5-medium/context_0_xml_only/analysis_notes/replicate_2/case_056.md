@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Active sequence inspection:
 
 The provided XML/raw export identifies the active sequence as Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The runtime variables list length_rabi_pulse = 5.2e-08 s, mod_depth = 1, full_expt = 0, and delay_wrt_1mus = 2e-07 s.

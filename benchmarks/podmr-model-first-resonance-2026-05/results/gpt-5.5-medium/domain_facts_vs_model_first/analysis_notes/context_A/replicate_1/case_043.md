@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 The sequence is Rabimodulated.xml with mw_freq swept from 3.825 GHz to 3.925 GHz in 5 MHz steps. The active values are mod_depth = 1 and length_rabi_pulse = 52 ns. With the stated setup calibration, mod_depth = 1 gives about a 10 MHz Rabi frequency, so a 52 ns pulse is approximately a resonant pi pulse and should produce a large readout change if the microwave sweep crosses a driven NV transition.
 
 The instruction flow has full_expt = 0, so the optional mS = +1 reference block is skipped. The two stored readouts therefore correspond to the initial polarized mS = 0 reference detection and the detection after the modulated Rabi pulse. Readout 1 is the bright reference, and readout 2 is the post-pulse signal to compare against it.

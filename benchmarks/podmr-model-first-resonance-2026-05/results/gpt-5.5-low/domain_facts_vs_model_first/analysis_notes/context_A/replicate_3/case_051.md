@@ -1,0 +1,7 @@
+Active sequence: Rabimodulated.xml, varying mw_freq from 3.825 to 3.925 GHz in 5 MHz steps. The sequence first polarizes and detects a true mS=0 reference. The mS=+1 reference block is inactive because full_expt = 0, even though do_adiabatic_inversion is set. After the reference readout, the active experiment applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns, mod_depth = 1, switch_delay = 100 ns, then performs the second detection.
+
+Readout roles: readout 1 is the mS=0 bright reference; readout 2 is the signal after the modulated Rabi pulse. With the provided setup facts, mod_depth = 1 gives roughly 10 MHz Rabi frequency, so a 52 ns pulse is approximately a pi pulse. If the microwave frequency crosses a real transition, readout 2 should show a distinct fluorescence loss relative to readout 1, potentially on the order of the stated 22% contrast scale for strong transfer.
+
+The combined raw readouts do not show a consistent ODMR-like dip in the signal channel. The readout2/readout1 differences fluctuate in sign and are typically only a few percent, with positive excursions near 3.865, 3.900, and 3.920 GHz rather than a stable negative resonance feature. The per-average overlay also looks dominated by tracking/average-dependent drift rather than repeatable spectral structure. Since stored averages are not a strong independent repeatability test here, the lack of a clear, correctly signed signal dip is decisive.
+
+Decision: resonance_absent.

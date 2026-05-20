@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case case_096.
+Case podmr_082_2026-05-17-111957.
 
 The provided sequence XML is Rabimodulated.xml. It sweeps mw_freq over the scan while using a rabi_pulse_mod_wait_time block before the final detection. The active variables show length_rabi_pulse = 5.2e-08 s, rounded at 250 MS/s, and mod_depth = 1. The full_expt variable is 0, so the conditional "1 level reference" block is not active. The two observed readouts therefore correspond to the initial true 0-level reference detection after optical polarization, followed by the measurement detection after the modulated 52 ns microwave pulse.
 

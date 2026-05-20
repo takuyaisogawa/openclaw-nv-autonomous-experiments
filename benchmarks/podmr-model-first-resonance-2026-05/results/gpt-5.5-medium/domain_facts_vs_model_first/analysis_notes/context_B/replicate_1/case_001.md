@@ -1,5 +1,3 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
 Sequence and readout interpretation
 
 The provided sequence XML is Rabimodulated.xml. It polarizes the NV and performs a first detection before any microwave pulse, so readout 1 is the true m_S = 0 optical reference. The branch that would acquire an m_S = 1 reference is inactive because full_expt = 0. The active signal measurement then applies rabi_pulse_mod_wait_time with length_rabi_pulse = 52 ns and mod_depth = 1, followed by detection, so readout 2 is the post-microwave readout. The scan varies mw_freq from 3.825 GHz to 3.925 GHz in 5 MHz steps.

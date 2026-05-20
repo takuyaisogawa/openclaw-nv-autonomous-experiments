@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_070
+Case: podmr_056_2026-05-17-050447
 
 I used only the provided XML/raw export for this isolated case.
 

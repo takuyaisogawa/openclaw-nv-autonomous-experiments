@@ -1,6 +1,4 @@
-<!-- Model-generated analysis note. Not a ground-truth label. -->
-
-Case: case_042
+Case: podmr_028_2026-05-16-185605
 
 Input restriction followed: only inputs/raw_export.json, inputs/raw_readouts.png, and inputs/sequence.xml were used.
 
